@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  enable-auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - run: gh pr merge ${{ github.event.pull_request.number }} --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
