@@ -24,7 +24,7 @@ For each of the five files below:
    environment variables, never a `.env` file — see `../CLAUDE.md` and each
    prompt's ENVIRONMENT VARIABLES block for why).
 7. Toggle on **"Allow unrestricted branch pushes"**. Without this, `git push
-   origin main` silently fails with a proxy error — the #1 reason first-time
+origin main` silently fails with a proxy error — the #1 reason first-time
    setups break.
 8. Set the cron schedule and timezone (see table below).
 9. Paste the prompt from the matching file below into the prompt field.
@@ -32,15 +32,14 @@ For each of the five files below:
 10. Save, then click **"Run now"** once to test. Don't wait until tomorrow
     morning to discover it's broken.
 
-## The five cron schedules (`America/Chicago`)
+## The five cron schedules (`America/New_York`)
 
-| Routine | Cron | Local time |
-|---|---|---|
-| `pre-market.md` | `0 6 * * 1-5` | 6:00 AM weekdays |
-| `market-open.md` | `30 8 * * 1-5` | 8:30 AM weekdays (market opens 8:30 AM CT) |
-| `midday.md` | `0 12 * * 1-5` | Noon weekdays |
-| `daily-summary.md` | `0 15 * * 1-5` | 3:00 PM weekdays (market closes 3:00 PM CT) |
-| `weekly-review.md` | `0 16 * * 5` | 4:00 PM Fridays only |
+| Routine            | Cron           | America/New_York time                       |
+| ------------------ | -------------- | ------------------------------------------- |
+| `pre-market.md`    | `0 6 * * 1-5`  | 6:00 AM weekdays                            |
+| `market-open.md`   | `30 8 * * 1-5` | 8:30 AM weekdays (market opens 8:30 AM ET)  |
+| `midday.md`        | `0 12 * * 1-5` | Noon weekdays                               |
+| `daily-summary.md` | `0 15 * * 1-5` | 3:00 PM weekdays (market closes 3:00 PM ET) |
+| `weekly-review.md` | `0 16 * * 5`   | 4:00 PM Fridays only                        |
 
-See the main [README.md](../README.md) for an approximate Europe/Berlin
-conversion.
+**Not in the `America/New_York` timezone?** See the main [README.md](../README.md) for details.

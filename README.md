@@ -173,20 +173,20 @@ between runs.
 See [SETUP-MANUAL-STEPS.md](./SETUP-MANUAL-STEPS.md) for the full step-by-step
 walkthrough of everything only you (the human) can do.
 
-## Cron schedule (`America/Chicago` — market-anchored)
+## Cron schedule (`America/New_York` — market-anchored)
 
-| Routine       | Cron (America/Chicago) | Local time                      | Approx. Europe/Berlin        |
-| ------------- | ---------------------- | ------------------------------- | ---------------------------- |
-| Pre-market    | `0 6 * * 1-5`          | 6:00 AM weekdays                | ~13:00 (CET) / ~13:00 (CEST) |
-| Market-open   | `30 8 * * 1-5`         | 8:30 AM weekdays (market open)  | ~15:30                       |
-| Midday        | `0 12 * * 1-5`         | Noon weekdays                   | ~19:00                       |
-| Daily-summary | `0 15 * * 1-5`         | 3:00 PM weekdays (market close) | ~22:00                       |
-| Weekly-review | `0 16 * * 5`           | 4:00 PM Fridays only            | ~23:00                       |
+| Routine       | Cron (America/New_York) | America/New_York time           |
+| ------------- | ----------------------- | ------------------------------- |
+| Pre-market    | `0 6 * * 1-5`           | 6:00 AM weekdays                |
+| Market-open   | `30 8 * * 1-5`          | 8:30 AM weekdays (market open)  |
+| Midday        | `0 12 * * 1-5`          | Noon weekdays                   |
+| Daily-summary | `0 15 * * 1-5`          | 3:00 PM weekdays (market close) |
+| Weekly-review | `0 16 * * 5`            | 4:00 PM Fridays only            |
 
-Berlin offsets shift by an hour depending on whether US or EU daylight saving
-is in effect at the time — treat these as approximate. Set the actual cron
-timezone to `America/Chicago` on every routine regardless of where you live;
-it stays correctly anchored to US market hours across DST transitions.
+> **Not in the `America/New_York` timezone?** These cron expressions are
+> written for the `America/New_York` timezone because the bot's schedule is
+> anchored to US market hours. If you don't live in New York, adjust the cron
+> expressions to match your local time, but make sure they run at `America/New_York` local time.
 
 ## First-run troubleshooting
 

@@ -13,20 +13,16 @@ selections on your behalf.
 - [ ] **Perplexity** — sign up for API access at perplexity.ai. Note your
       `PERPLEXITY_API_KEY`.
 - [ ] **ClickUp** — sign up at clickup.com. Create a **Chat channel**
-      dedicated to bot notifications. Note:
-      - `CLICKUP_API_KEY` (personal API token)
-      - `CLICKUP_WORKSPACE_ID` (numeric)
-      - `CLICKUP_CHANNEL_ID` (format `4-XXXXXXX-X`)
+      dedicated to bot notifications. Note: - `CLICKUP_API_KEY` (personal API token) - `CLICKUP_WORKSPACE_ID` (numeric) - `CLICKUP_CHANNEL_ID` (format `4-XXXXXXX-X`)
 
 ## 2. GitHub repository
 
 - [ ] Create a new **private** GitHub repository.
 - [ ] Push this scaffold to it:
-      ```
-      cd "~/Claude Workspace/alpacaTradingBot"
-      git remote add origin <your-repo-url>
-      git push -u origin main
-      ```
+      `     cd "~/Claude Workspace/alpacaTradingBot"
+  git remote add origin <your-repo-url>
+  git push -u origin main
+  `
 
 ## 3. Local smoke test
 
@@ -60,8 +56,7 @@ Repeat for each of the five files in `routines/` (full walkthrough also in
 - [ ] Toggle on **"Allow unrestricted branch pushes"** in the routine's
       environment settings. Skipping this is the #1 reason first-time
       setups break (`git push` fails silently with a proxy error).
-- [ ] Set the cron schedule + timezone `America/Chicago` (see
-      `routines/README.md` for the five expressions).
+- [ ] Set the cron schedule.
 - [ ] Paste the corresponding `routines/*.md` file verbatim into the prompt
       field.
 - [ ] Save, then click **"Run now"** once to verify it works before relying
