@@ -220,4 +220,4 @@ then you miss the one that mattered).
 ## International Wire Transfers
 
 To save fees of international wire transfers from banks to Alpaca, it is recommended to transfer
-the money through a Revolut account, because Revolut participates in the ACH network.
+the money through a Wise account, because Wise participates in the ACH network.
