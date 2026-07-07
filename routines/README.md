@@ -23,9 +23,9 @@ For each of the five files below:
 6. Add all environment variables listed in `env.template` (as routine
    environment variables, never a `.env` file — see `../CLAUDE.md` and each
    prompt's ENVIRONMENT VARIABLES block for why).
-7. Toggle on **"Allow unrestricted branch pushes"**. Without this, `git push
-origin main` silently fails with a proxy error — the #1 reason first-time
-   setups break.
+7. Toggle on **"Allow unrestricted branch pushes"**. Without this,
+   `git push origin main` silently fails with a proxy error — the #1
+   reason first-time setups break.
 8. Set the cron schedule and timezone (see table below).
 9. Paste the prompt from the matching file below into the prompt field.
    Copy everything verbatim — do not paraphrase.

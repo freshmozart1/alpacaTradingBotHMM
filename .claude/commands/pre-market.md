@@ -14,12 +14,17 @@ STEP 1 — Read memory for context:
 - tail of memory/RESEARCH-LOG.md
 
 STEP 2 — Pull live account state:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Research market context via Perplexity. Run
-bash scripts/perplexity.sh "<query>" for each of the following, and for
+```bash
+./scripts/perplexity.sh "<query>"
+```
+for each of the following, and for
 EVERY currently-held ticker:
 - "WTI and Brent oil price right now"
 - "S&P 500 futures premarket today"
@@ -41,7 +46,9 @@ STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Decision: trade or HOLD (default HOLD — patience > activity)
 
 STEP 5 — Notification: silent unless urgent.
-  bash scripts/clickup.sh "<one line>"
+```bash
+./scripts/clickup.sh "<one line>"
+```
 
 This is a local run — do not commit or push. Leave the diff on disk for
 review.

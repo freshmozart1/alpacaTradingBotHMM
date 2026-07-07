@@ -14,15 +14,19 @@ STEP 1 — Read memory for full week context:
 - memory/TRADING-STRATEGY.md
 
 STEP 2 — Pull week-end state:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+```
 
 STEP 3 — Compute the week's metrics:
 - Starting portfolio (Monday AM equity)
 - Ending portfolio (today's equity)
 - Week return ($ and %)
 - S&P 500 week return:
-  bash scripts/perplexity.sh "S&P 500 weekly performance week ending $DATE"
+  ```bash
+  ./scripts/perplexity.sh "S&P 500 weekly performance week ending $DATE"
+  ```
 - Trades taken (W/L/open)
 - Win rate (closed trades only)
 - Best trade, worst trade
@@ -43,7 +47,9 @@ badly), also update memory/TRADING-STRATEGY.md and call out the change in
 the review.
 
 STEP 6 — Send ONE ClickUp message. <= 15 lines:
-  bash scripts/clickup.sh "Week ending MMM DD ..."
+```bash
+./scripts/clickup.sh "Week ending MMM DD ..."
+```
 
 This is a local run — do not commit or push. Leave the diff on disk for
 review.

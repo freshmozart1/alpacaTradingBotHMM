@@ -19,10 +19,11 @@ selections on your behalf.
 
 - [ ] Create a new **private** GitHub repository.
 - [ ] Push this scaffold to it:
-      `     cd "~/Claude Workspace/alpacaTradingBot"
-  git remote add origin <your-repo-url>
-  git push -u origin main
-  `
+      ```bash
+      cd "~/Claude Workspace/alpacaTradingBot"
+      git remote add origin <your-repo-url>
+      git push -u origin main
+      ```
 
 ## 3. Local smoke test
 

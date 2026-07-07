@@ -14,13 +14,17 @@ STEP 1 — Read memory so you know what's open and why:
 - today's memory/RESEARCH-LOG.md entry
 
 STEP 2 — Pull current state:
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Cut losers immediately. Evaluate EVERY open position
 individually. For every position where unrealized_plpc <= -0.07:
-  bash scripts/alpaca.sh close SYM
-  bash scripts/alpaca.sh cancel ORDER_ID
+```bash
+./scripts/alpaca.sh close SYM
+./scripts/alpaca.sh cancel ORDER_ID
+```
 Log the exit to TRADE-LOG: exit price, realized P&L, "cut at -7% per
 rule".
 
@@ -38,12 +42,20 @@ STEP 6 — Optional intraday research via Perplexity if something is moving
 sharply with no obvious cause. Append afternoon addendum to
 RESEARCH-LOG.
 
-STEP 7 — Verify every action from STEPS 3-5 actually landed
-(bash scripts/alpaca.sh positions / orders) before logging or announcing
-it.
+STEP 7 — Verify every action from STEPS 3-5 actually landed with
+```bash
+./scripts/alpaca.sh positions
+```
+and
+```bash
+./scripts/alpaca.sh orders
+```
+before logging or announcing it.
 
 STEP 8 — Notification: only if action was taken.
-  bash scripts/clickup.sh "<action summary>"
+```bash
+./scripts/clickup.sh "<action summary>"
+```
 
 This is a local run — do not commit or push. Leave the diff on disk for
 review.

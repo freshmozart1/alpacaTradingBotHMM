@@ -13,10 +13,12 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
-    for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
-             CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
-      [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
-    done
+  ```bash
+  for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
+           CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
+    [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
+  done
+  ```
 
 IMPORTANT — PERSISTENCE:
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
@@ -29,14 +31,18 @@ STEP 1 — Read memory so you know what's open and why:
 - today's memory/RESEARCH-LOG.md entry
 
 STEP 2 — Pull current state:
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Cut losers immediately. Evaluate EVERY open position
 individually — do not skip any. For every position where
 unrealized_plpc <= -0.07:
-  bash scripts/alpaca.sh close SYM
-  bash scripts/alpaca.sh cancel ORDER_ID   # cancel its trailing stop
+```bash
+./scripts/alpaca.sh close SYM
+./scripts/alpaca.sh cancel ORDER_ID   # cancel its trailing stop
+```
 Log the exit to TRADE-LOG: exit price, realized P&L, "cut at -7% per
 rule".
 
@@ -56,17 +62,27 @@ sharply with no obvious cause. Append afternoon addendum to
 RESEARCH-LOG.
 
 STEP 7 — Verify every action from STEPS 3-5 actually landed. Run
-bash scripts/alpaca.sh positions and bash scripts/alpaca.sh orders and
-confirm: closed positions no longer appear, cancelled stops no longer
+```bash
+./scripts/alpaca.sh orders
+```
+and
+```bash
+./scripts/alpaca.sh positions
+```
+and confirm: closed positions no longer appear, cancelled stops no longer
 appear as open orders, and every new/tightened stop appears with the
 expected trail_percent. Do not log or announce any action you cannot
 confirm this way.
 
 STEP 8 — Notification: only if action was taken.
-  bash scripts/clickup.sh "<action summary>"
+```bash
+./scripts/clickup.sh "<action summary>"
+```
 
 STEP 9 — COMMIT AND PUSH (if any memory files changed):
-  git add memory/TRADE-LOG.md memory/RESEARCH-LOG.md
-  git commit -m "midday scan $DATE"
-  git push origin main
+```bash
+git add memory/TRADE-LOG.md memory/RESEARCH-LOG.md
+git commit -m "midday scan $DATE"
+git push origin main
+```
 Skip commit if no-op. On push failure: rebase and retry.

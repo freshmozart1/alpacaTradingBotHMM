@@ -4,9 +4,11 @@ description: Read-only snapshot of account, positions, open orders, and stops
 
 Print a clean ad-hoc snapshot. No state changes, no orders, no file writes.
 
-1. bash scripts/alpaca.sh account
-2. bash scripts/alpaca.sh positions
-3. bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 Format the output as a single concise summary:
 

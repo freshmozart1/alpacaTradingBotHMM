@@ -14,9 +14,11 @@ STEP 1 — Read memory for continuity:
 - Count trades Mon-today this week (for 3/week cap)
 
 STEP 2 — Pull final state of the day:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Compute metrics:
 - Day P&L ($ and %) = today_equity - yesterday_equity
@@ -32,7 +34,9 @@ STEP 4 — Append EOD snapshot to memory/TRADE-LOG.md:
 
 STEP 5 — Send ONE ClickUp message (always, even on no-trade days). <= 15
 lines:
-  bash scripts/clickup.sh "EOD MMM DD ..."
+```bash
+./scripts/clickup.sh "EOD MMM DD ..."
+```
 
 This is a local run — do not commit or push. Leave the diff on disk for
 review.

@@ -18,12 +18,23 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask.
 3. For SELL, confirm position exists with right qty. No other checks.
 4. Print order JSON + validation results, ask "execute? (y/n)".
 5. On confirm:
-   bash scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"buy|sell","type":"market","time_in_force":"day"}'
+   ```bash
+   ./scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"buy|sell","type":"market","time_in_force":"day"}'
+   ```
 6. For BUYs, immediately place 10% trailing stop GTC (same flow as
    market-open).
 7. Verify the order and stop actually landed:
-   bash scripts/alpaca.sh orders and bash scripts/alpaca.sh positions —
-   confirm the symbol appears with the expected quantity before logging
+   ```bash
+   ./scripts/alpaca.sh orders
+   ```
+   and
+   ```bash
+   ./scripts/alpaca.sh positions
+   ```
+   — confirm the symbol appears with the expected quantity before logging
    or notifying.
-8. Log to memory/TRADE-LOG.md with full thesis, entry, stop, target, R:R.
-9. bash scripts/clickup.sh with trade details.
+8. Log to `./memory/TRADE-LOG.md` with full thesis, entry, stop, target, R:R.
+9. ```bash
+   ./scripts/clickup.sh
+   ```
+   with trade details.

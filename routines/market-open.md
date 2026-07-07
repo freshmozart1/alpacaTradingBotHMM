@@ -13,10 +13,12 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
-    for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
-             CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
-      [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
-    done
+  ```bash
+  for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
+           CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
+    [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
+  done
+  ```
 
 IMPORTANT — PERSISTENCE:
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
@@ -29,9 +31,11 @@ STEP 1 — Read memory for today's plan:
 - tail of memory/TRADE-LOG.md (for weekly trade count)
 
 STEP 2 — Re-validate with live data:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh quote <each planned ticker>
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh quote <each planned ticker>
+```
 
 STEP 3 — Hard-check rules BEFORE every single planned order. Evaluate
 EACH planned trade independently against ALL of these; skip any trade
@@ -45,20 +49,32 @@ that fails any check and log the specific reason:
 - The instrument is a stock, not an option or anything else
 
 STEP 4 — Execute the buys (market orders, day TIF), one at a time:
-  bash scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"buy","type":"market","time_in_force":"day"}'
+```bash
+./scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"buy","type":"market","time_in_force":"day"}'
+```
 Wait for fill confirmation before placing the stop.
 
 STEP 5 — Immediately place a 10% trailing stop GTC for each new position:
-  bash scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}'
+```bash
+./scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}'
+```
 If Alpaca rejects with a PDT error, fall back to a fixed stop 10% below
 entry:
-  bash scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"sell","type":"stop","stop_price":"X.XX","time_in_force":"gtc"}'
+```bash
+./scripts/alpaca.sh order '{"symbol":"SYM","qty":"N","side":"sell","type":"stop","stop_price":"X.XX","time_in_force":"gtc"}'
+```
 If also blocked, queue the stop in TRADE-LOG as "PDT-blocked, set
 tomorrow AM".
 
 STEP 6 — Verify every fill and every stop actually landed. Run
-bash scripts/alpaca.sh orders and bash scripts/alpaca.sh positions and
-confirm each symbol you believe you bought appears with the expected
+```bash
+./scripts/alpaca.sh orders
+```
+and
+```bash
+./scripts/alpaca.sh positions
+```
+and confirm each symbol you believe you bought appears with the expected
 quantity, and each stop you believe you placed appears as an open order.
 Do not proceed to logging or notification for any trade you cannot
 confirm this way — if a trade doesn't show up, investigate before
@@ -69,10 +85,14 @@ existing format): Date, ticker, side, shares, entry price, stop level,
 thesis, target, R:R.
 
 STEP 8 — Notification: only if a trade was actually placed and confirmed.
-  bash scripts/clickup.sh "<tickers, shares, fill prices, one-line why>"
+```bash
+./scripts/clickup.sh "<tickers, shares, fill prices, one-line why>"
+```
 
 STEP 9 — COMMIT AND PUSH (mandatory if any trades executed):
-  git add memory/TRADE-LOG.md
-  git commit -m "market-open trades $DATE"
-  git push origin main
+```bash
+git add memory/TRADE-LOG.md
+git commit -m "market-open trades $DATE"
+git push origin main
+```
 Skip commit if no trades fired. On push failure: rebase and retry.

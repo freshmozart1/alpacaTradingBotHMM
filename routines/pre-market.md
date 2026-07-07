@@ -14,10 +14,12 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
-    for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
-             CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
-      [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
-    done
+  ```bash
+  for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
+           CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
+    [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
+  done
+  ```
 
 IMPORTANT — PERSISTENCE:
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
@@ -29,12 +31,17 @@ STEP 1 — Read memory for context:
 - tail of memory/RESEARCH-LOG.md
 
 STEP 2 — Pull live account state:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Research market context via Perplexity. Run
-bash scripts/perplexity.sh "<query>" for each of the following, and for
+```bash
+./scripts/perplexity.sh "<query>"
+```
+for each of the following, and for
 EVERY currently-held ticker (not just some of them):
 - "WTI and Brent oil price right now"
 - "S&P 500 futures premarket today"
@@ -58,12 +65,16 @@ STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 STEP 5 — Notification: silent unless urgent (a held position is already
 below -7% in pre-market, a thesis broke overnight, a major geopolitical
 event).
-  bash scripts/clickup.sh "<one line>"
+```bash
+./scripts/clickup.sh "<one line>"
+```
 
 STEP 6 — COMMIT AND PUSH (mandatory):
-  git add memory/RESEARCH-LOG.md
-  git commit -m "pre-market research $DATE"
-  git push origin main
+```bash
+git add memory/RESEARCH-LOG.md
+git commit -m "pre-market research $DATE"
+git push origin main
+```
 
 On push failure: git pull --rebase origin main, then push again. Never
 force-push.

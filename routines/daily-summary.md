@@ -13,10 +13,12 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
   ClickUp alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
-    for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
-             CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
-      [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
-    done
+  ```bash
+  for v in ALPACA_API_KEY ALPACA_SECRET_KEY PERPLEXITY_API_KEY \
+           CLICKUP_API_KEY CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
+    [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
+  done
+  ```
 
 IMPORTANT — PERSISTENCE:
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
@@ -29,9 +31,11 @@ STEP 1 — Read memory for continuity:
 - Count trades Mon-today this week (for 3/week cap)
 
 STEP 2 — Pull final state of the day:
-  bash scripts/alpaca.sh account
-  bash scripts/alpaca.sh positions
-  bash scripts/alpaca.sh orders
+```bash
+./scripts/alpaca.sh account
+./scripts/alpaca.sh positions
+./scripts/alpaca.sh orders
+```
 
 STEP 3 — Compute metrics:
 - Day P&L ($ and %) = today_equity - yesterday_equity
@@ -47,17 +51,21 @@ STEP 4 — Append EOD snapshot to memory/TRADE-LOG.md:
 
 STEP 5 — Send ONE ClickUp message (always, even on no-trade days). <= 15
 lines:
-  bash scripts/clickup.sh "EOD MMM DD
-  Portfolio: \$X (±X% day, ±X% phase)
-  Cash: \$X
-  Trades today: <list or none>
-  Open positions:
-    SYM ±X.X% (stop \$X.XX)
-  Tomorrow: <one-line plan>"
+```bash
+./scripts/clickup.sh "EOD MMM DD
+Portfolio: \$X (±X% day, ±X% phase)
+Cash: \$X
+Trades today: <list or none>
+Open positions:
+  SYM ±X.X% (stop \$X.XX)
+Tomorrow: <one-line plan>"
+```
 
 STEP 6 — COMMIT AND PUSH (mandatory — tomorrow's Day P&L depends on
 this):
-  git add memory/TRADE-LOG.md
-  git commit -m "EOD snapshot $DATE"
-  git push origin main
+```bash
+git add memory/TRADE-LOG.md
+git commit -m "EOD snapshot $DATE"
+git push origin main
+```
 On push failure: rebase and retry.

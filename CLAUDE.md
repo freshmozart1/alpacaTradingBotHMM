@@ -36,13 +36,13 @@ runs per trading day plus two ad-hoc helpers.
 
 ## API Wrappers
 
-Use `bash scripts/alpaca.sh`, `scripts/perplexity.sh`, `scripts/clickup.sh`.
+Use `./scripts/alpaca.sh`, `./scripts/perplexity.sh`, `./scripts/clickup.sh`.
 Never curl these APIs directly.
 
 ## Order Verification
 
 After placing any order, confirm it landed by calling
-`bash scripts/alpaca.sh orders` (or `positions` for a closed trade) before
+`./scripts/alpaca.sh orders` (or `positions` for a closed trade) before
 logging it or notifying it as placed. Never log or announce a trade you
 haven't confirmed against live Alpaca state.
 
