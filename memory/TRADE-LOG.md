@@ -5,3 +5,12 @@
 **Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0 | **Phase P&L:** $0
 
 No positions yet. Bot launches tomorrow.
+
+### Jul 06 — EOD Snapshot (Day 1, Monday)
+**Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** $0.00 (0.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
+
+**Notes:** Bot launch day. No position-level catalyst cleared the buy-side gate per pre-market research (sector rotation into defensives/cyclicals noted, but no name-level entry). Zero trades placed, zero positions held. Account flat at $100,000 starting equity. Watchlist carried to next session: XLI, XLB, Energy sector names.
