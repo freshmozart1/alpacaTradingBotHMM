@@ -2,7 +2,7 @@ name: Refactor
 description: Propose a code change that doesn't alter external behavior
 labels: ["refactor"]
 assignees: ["freshmozart1"]
-projects: ["freshmozart1/9"]
+projects: ["freshmozart1/10"]
 body:
   - type: textarea
     id: scope

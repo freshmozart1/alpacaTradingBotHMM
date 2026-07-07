@@ -2,7 +2,7 @@ name: Feature request
 description: Suggest an idea for this project
 labels: ["feature"]
 assignees: ["freshmozart1"]
-projects: ["freshmozart1/9"]
+projects: ["freshmozart1/10"]
 body:
   - type: textarea
     id: problem
