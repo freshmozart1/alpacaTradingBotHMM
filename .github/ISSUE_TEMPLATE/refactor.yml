@@ -1,0 +1,45 @@
+name: Refactor
+description: Propose a code change that doesn't alter external behavior
+labels: ["refactor"]
+assignees: ["freshmozart1"]
+projects: ["freshmozart1/9"]
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: What part of the codebase needs refactoring?
+      description: A clear and concise description of the file(s), module(s), or pattern involved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong with the current approach?
+      description: "Explain the issue: duplication, poor readability, tight coupling, outdated pattern, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Describe the proposed change
+      description: A clear and concise description of how you'd refactor it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Confirm that external behavior should remain unchanged after the refactor.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context, related issues, or code references here.
+    validations:
+      required: false
