@@ -1,6 +1,14 @@
+name: Enable Auto Merge
+
 on:
   pull_request:
     types: [opened]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number
+        required: true
+        type: number
 
 jobs:
   enable-auto-merge:
@@ -10,6 +18,9 @@ jobs:
       contents: write
 
     steps:
-      - run: gh pr merge ${{ github.event.pull_request.number }} --auto --merge
+      - name: Enable auto-merge
+        run: |
+          PR="${{ github.event.pull_request.number || inputs.pr }}"
+          gh pr merge "$PR" --auto --merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
