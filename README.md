@@ -37,7 +37,7 @@ See [Why Sonnet 5](#why-sonnet-5) below for what changed and why.
 ## Why Sonnet 5
 
 This bot never calls the Anthropic API directly from the wrapper scripts —
-Claude Code itself *is* the trading agent. So "migrating" this blueprint to
+Claude Code itself _is_ the trading agent. So "migrating" this blueprint to
 Sonnet 5 is really about which model powers the Claude Code sessions and
 routines, not any SDK code.
 
@@ -142,13 +142,13 @@ Full strategy detail, the buy-side gate, and the sell-side rules live in
 Five markdown files, all committed to `main`, are the agent's only state
 between runs.
 
-| File | Purpose | Write Cadence |
-|---|---|---|
+| File                  | Purpose                                        | Write Cadence                                  |
+| --------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | `TRADING-STRATEGY.md` | The rulebook. Every workflow reads this first. | Only updated Friday if a rule proves out/fails |
-| `TRADE-LOG.md` | Every trade + daily EOD snapshot | Every trade, every EOD |
-| `RESEARCH-LOG.md` | One dated entry per day | Every pre-market, optional midday addendum |
-| `WEEKLY-REVIEW.md` | Friday recaps with letter grade | Weekly |
-| `PROJECT-CONTEXT.md` | Static background, mission, platform | Rarely updated |
+| `TRADE-LOG.md`        | Every trade + daily EOD snapshot               | Every trade, every EOD                         |
+| `RESEARCH-LOG.md`     | One dated entry per day                        | Every pre-market, optional midday addendum     |
+| `WEEKLY-REVIEW.md`    | Friday recaps with letter grade                | Weekly                                         |
+| `PROJECT-CONTEXT.md`  | Static background, mission, platform           | Rarely updated                                 |
 
 ## Replication checklist
 
@@ -175,13 +175,13 @@ walkthrough of everything only you (the human) can do.
 
 ## Cron schedule (`America/Chicago` — market-anchored)
 
-| Routine | Cron (America/Chicago) | Local time | Approx. Europe/Berlin |
-|---|---|---|---|
-| Pre-market | `0 6 * * 1-5` | 6:00 AM weekdays | ~13:00 (CET) / ~13:00 (CEST) |
-| Market-open | `30 8 * * 1-5` | 8:30 AM weekdays (market open) | ~15:30 |
-| Midday | `0 12 * * 1-5` | Noon weekdays | ~19:00 |
-| Daily-summary | `0 15 * * 1-5` | 3:00 PM weekdays (market close) | ~22:00 |
-| Weekly-review | `0 16 * * 5` | 4:00 PM Fridays only | ~23:00 |
+| Routine       | Cron (America/Chicago) | Local time                      | Approx. Europe/Berlin        |
+| ------------- | ---------------------- | ------------------------------- | ---------------------------- |
+| Pre-market    | `0 6 * * 1-5`          | 6:00 AM weekdays                | ~13:00 (CET) / ~13:00 (CEST) |
+| Market-open   | `30 8 * * 1-5`         | 8:30 AM weekdays (market open)  | ~15:30                       |
+| Midday        | `0 12 * * 1-5`         | Noon weekdays                   | ~19:00                       |
+| Daily-summary | `0 15 * * 1-5`         | 3:00 PM weekdays (market close) | ~22:00                       |
+| Weekly-review | `0 16 * * 5`           | 4:00 PM Fridays only            | ~23:00                       |
 
 Berlin offsets shift by an hour depending on whether US or EU daylight saving
 is in effect at the time — treat these as approximate. Set the actual cron
@@ -190,17 +190,17 @@ it stays correctly anchored to US market hours across DST transitions.
 
 ## First-run troubleshooting
 
-| Symptom | Cause | Fix |
-|---|---|---|
-| "Repository not accessible" / clone fails | Claude GitHub App not installed | Install it, grant access to the specific repo |
-| `git push` fails with proxy/permission error | "Allow unrestricted branch pushes" toggle is off | Enable it in the routine's environment |
-| `ALPACA_API_KEY` not set in environment | Env var missing from routine env | Add it in the routine config, not the repo's `.env` |
-| Agent creates a `.env` file anyway | Prompt was paraphrased and lost the "DO NOT create .env" block | Re-paste prompt from `routines/*.md` exactly |
-| Yesterday's trades missing from today's run | Previous run didn't commit+push | Check `git log origin/main`. Re-verify the commit-and-push step of the prompt |
-| Push fails "fetch first" / non-fast-forward | Another run pushed between this one's clone and push | The prompt handles this with `git pull --rebase`. If looping, check for an actual merge conflict |
-| ClickUp message didn't arrive | One of the three `CLICKUP_*` vars is missing | Script silently falls back to a local file. Add the missing vars |
-| Perplexity calls didn't happen | `PERPLEXITY_API_KEY` missing | Script exits 3, agent falls back to WebSearch. Add the key or accept fallback |
-| Alpaca rejects stop with PDT error | Same-day stop on same-day buy | Prompt's fallback ladder handles this. If not cascading, re-paste that step verbatim |
+| Symptom                                      | Cause                                                          | Fix                                                                                              |
+| -------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| "Repository not accessible" / clone fails    | Claude GitHub App not installed                                | Install it, grant access to the specific repo                                                    |
+| `git push` fails with proxy/permission error | "Allow unrestricted branch pushes" toggle is off               | Enable it in the routine's environment                                                           |
+| `ALPACA_API_KEY` not set in environment      | Env var missing from routine env                               | Add it in the routine config, not the repo's `.env`                                              |
+| Agent creates a `.env` file anyway           | Prompt was paraphrased and lost the "DO NOT create .env" block | Re-paste prompt from `routines/*.md` exactly                                                     |
+| Yesterday's trades missing from today's run  | Previous run didn't commit+push                                | Check `git log origin/main`. Re-verify the commit-and-push step of the prompt                    |
+| Push fails "fetch first" / non-fast-forward  | Another run pushed between this one's clone and push           | The prompt handles this with `git pull --rebase`. If looping, check for an actual merge conflict |
+| ClickUp message didn't arrive                | One of the three `CLICKUP_*` vars is missing                   | Script silently falls back to a local file. Add the missing vars                                 |
+| Perplexity calls didn't happen               | `PERPLEXITY_API_KEY` missing                                   | Script exits 3, agent falls back to WebSearch. Add the key or accept fallback                    |
+| Alpaca rejects stop with PDT error           | Same-day stop on same-day buy                                  | Prompt's fallback ladder handles this. If not cascading, re-paste that step verbatim             |
 
 ## Notification philosophy
 
@@ -216,3 +216,8 @@ Most bots are chatty. This one is not.
 The cost of a missed notification is low (you can always check the portfolio
 ad-hoc). The cost of a chatty bot is high (you stop reading the messages, and
 then you miss the one that mattered).
+
+## International Wire Transfers
+
+To save fees of international wire transfers from banks to Alpaca, it is recommended to transfer
+the money through a Revolut account, because Revolut participates in the ACH network.
