@@ -3,7 +3,7 @@
 ## Overview
 
 - What: Autonomous trading bot challenge
-- Starting capital: ~$10,000
+- Starting capital: ~$100,000.00
 - Platform: Alpaca
 - Model: Claude Sonnet 5 (`claude-sonnet-5`)
 - Duration: [your challenge window]
