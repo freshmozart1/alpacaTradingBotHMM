@@ -36,10 +36,10 @@ origin main` silently fails with a proxy error — the #1 reason first-time
 
 | Routine            | Cron           | America/New_York time                       |
 | ------------------ | -------------- | ------------------------------------------- |
-| `pre-market.md`    | `0 6 * * 1-5`  | 6:00 AM weekdays                            |
-| `market-open.md`   | `30 8 * * 1-5` | 8:30 AM weekdays (market opens 8:30 AM ET)  |
+| `pre-market.md`    | `20 9 * * 1-5` | 9:20 AM weekdays                            |
+| `market-open.md`   | `25 9 * * 1-5` | 9:25 AM weekdays (market opens 9:30 AM ET)  |
 | `midday.md`        | `0 12 * * 1-5` | Noon weekdays                               |
-| `daily-summary.md` | `0 15 * * 1-5` | 3:00 PM weekdays (market closes 3:00 PM ET) |
-| `weekly-review.md` | `0 16 * * 5`   | 4:00 PM Fridays only                        |
+| `daily-summary.md` | `0 16 * * 1-5` | 3:00 PM weekdays (market closes 3:00 PM ET) |
+| `weekly-review.md` | `0 17 * * 5`   | 4:00 PM Fridays only                        |
 
 **Not in the `America/New_York` timezone?** See the main [README.md](../README.md) for details.

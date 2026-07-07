@@ -177,11 +177,11 @@ walkthrough of everything only you (the human) can do.
 
 | Routine       | Cron (America/New_York) | America/New_York time           |
 | ------------- | ----------------------- | ------------------------------- |
-| Pre-market    | `0 6 * * 1-5`           | 6:00 AM weekdays                |
-| Market-open   | `30 8 * * 1-5`          | 8:30 AM weekdays (market open)  |
-| Midday        | `0 12 * * 1-5`          | Noon weekdays                   |
-| Daily-summary | `0 15 * * 1-5`          | 3:00 PM weekdays (market close) |
-| Weekly-review | `0 16 * * 5`            | 4:00 PM Fridays only            |
+| Pre-market    | `20 9 * * 1-5`          | 9:20 AM weekdays                |
+| Market-open   | `25 9 * * 1-5`          | 9:25 AM weekdays (market open)  |
+| Midday        | `00 12 * * 1-5`         | Noon weekdays                   |
+| Daily-summary | `0 16 * * 1-5`          | 4:00 PM weekdays (market close) |
+| Weekly-review | `0 17 * * 5`            | 5:00 PM Fridays only            |
 
 > **Not in the `America/New_York` timezone?** These cron expressions are
 > written for the `America/New_York` timezone because the bot's schedule is
