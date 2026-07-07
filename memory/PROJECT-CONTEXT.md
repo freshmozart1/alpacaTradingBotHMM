@@ -6,7 +6,7 @@
 - Starting capital: ~$100,000.00
 - Platform: Alpaca
 - Model: Claude Sonnet 5 (`claude-sonnet-5`)
-- Duration: [your challenge window]
+- Duration: 1 year
 - Strategy: Swing trading stocks, no options
 
 ## Rules
