@@ -21,6 +21,6 @@ jobs:
       - name: Enable auto-merge
         run: |
           PR="${{ github.event.pull_request.number || inputs.pr }}"
-          gh pr merge "$PR" --auto --merge
+          gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --auto --merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
