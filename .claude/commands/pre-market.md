@@ -24,8 +24,8 @@ STEP 3 — Research market context via Perplexity. Run
 ```bash
 ./scripts/perplexity.sh "<query>"
 ```
-for each of the following, and for
-EVERY currently-held ticker:
+for each of the following, for EVERY currently-held ticker, and for EVERY
+watchlist name carried forward in the most recent RESEARCH-LOG entry:
 - "WTI and Brent oil price right now"
 - "S&P 500 futures premarket today"
 - "VIX level today"
@@ -34,6 +34,10 @@ EVERY currently-held ticker:
 - "Economic calendar today CPI PPI FOMC jobs data"
 - "S&P 500 sector momentum YTD"
 - News on each currently-held ticker (one query per ticker)
+- News on each watchlist name (one query per ticker):
+  "TICKER stock news catalyst $DATE". Only a fresh catalyst dated today
+  counts toward the buy-side gate — stale analyst pieces or general
+  sentiment do not.
 
 If Perplexity exits 3, fall back to native WebSearch and note the fallback
 in the log entry.
