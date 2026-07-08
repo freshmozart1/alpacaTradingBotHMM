@@ -93,3 +93,37 @@ Screened Industrials/Materials for name-level catalysts (per Day-1 watchlist): K
 
 ### Decision
 HOLD — no name-level catalyst dated today clears the buy-side gate. Day 2 flat. Carry forward watchlist: XLI names (KALU, GRC, CENX, FTAI), Energy (mixed signal). Revisit at midday scan for any dated triggers.
+
+## 2026-07-08 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 2)
+
+### Market Context
+- WTI / Brent: WTI ~$75.01/bbl (+6.5% intraday), Brent ~$78.94/bbl (+~6.4% intraday, prior close $74.16); surge driven by active US-Iran military escalation and revocation of Iran's oil-sale license.
+- S&P 500 futures: ES ~7,580.25, -0.15% premarket; Nasdaq 100 futures -0.6% (chip/AI weakness); Dow futures +0.08%. Mixed/cautious tone.
+- VIX: Prior close 16.13; intraday spiking to ~18.08-18.91 (+12-13%) as war headlines hit tape — sharp risk-off move.
+- Today's catalysts: **Active US-Iran war escalation** — US struck 80+ Iranian targets overnight and reinstated oil sanctions; Iran retaliated with strikes on US bases in Bahrain/Kuwait and hit 3 tankers in the Strait of Hormuz. Trump declared the prior ceasefire MoU "over." This is the dominant catalyst today, driving the oil/VIX spike. Secondary: Costco June sales report, wholesale inventories (10am), continued AI/semis profit-taking.
+- Earnings before open: LEVI, AZZ, HELE, RVSN — none portfolio-relevant, no positions held.
+- Economic calendar: No CPI/PPI/FOMC today. Next: CPI Tue 7/14, PPI Wed 7/15, FOMC Jul 29-30. June NFP already out (+57K, weak).
+- Sector momentum: Leading — Energy (+23.3% YTD, dominant, now turbocharged by war), Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%). Improving — Utilities, Real Estate. Lagging — Communication Services (-1.2%), Info Tech (-3.3%), Consumer Discretionary (-3.8%), Financials (-6.9%).
+- Market regime (HMM): Bull, confidence 96.8%, 20 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Trade Ideas
+No trade idea clears the buy-side gate today. Energy sector momentum is real (+23.3% YTD, leading quadrant) and today's war-driven oil spike reinforces it short-term, but a name-level entry into Energy right now would mean buying into a live, fast-moving geopolitical shock — thesis durability is unknown until the conflict trajectory is clearer (de-escalation vs. further Hormuz disruption). Watching only:
+1. Energy (XLE constituents) — leading momentum + war-driven crude spike, but entry timing risk is extreme intraday; wait for the news to stabilize before treating as an actionable long.
+2. Watch only — Industrials (XLI: KALU, GRC, CENX, FTAI) — sector momentum intact, no fresh name-level catalyst today.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- **Active shooting war between US and Iran** — Strait of Hormuz (world's key oil transit chokepoint) directly threatened; three tankers already hit. Extreme headline/gap risk in both directions (further escalation = oil/vol spike higher; de-escalation = sharp reversal). Avoid fresh entries until the situation stabilizes.
+- VIX spiking ~12-13% intraday — elevated near-term volatility regime shift risk, watch for follow-through.
+- AI/semis names remain fragile amid the broader tech selloff (Nasdaq 100 futures -0.6%).
+- Zero open positions — no existing-position risk today, but patience must hold against the temptation to chase the oil/energy headline trade.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate; today's dominant catalyst (US-Iran war escalation) is a live, fast-moving geopolitical shock, not a stable entry setup. Day 3 flat. Carry forward watchlist: Energy (post-stabilization), XLI names (KALU, GRC, CENX, FTAI). Revisit at midday scan.
