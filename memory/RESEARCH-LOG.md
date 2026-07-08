@@ -18,6 +18,7 @@ Daily pre-market research entries will be appended here. Format each entry:
 - Earnings before open:
 - Economic calendar:
 - Sector momentum:
+- Market regime (HMM):
 
 ### Trade Ideas
 1. TICKER — catalyst, entry $X, stop $X, target $X, R:R X:1
