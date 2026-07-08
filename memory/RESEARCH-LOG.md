@@ -127,3 +127,44 @@ No trade idea clears the buy-side gate today. Energy sector momentum is real (+2
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate; today's dominant catalyst (US-Iran war escalation) is a live, fast-moving geopolitical shock, not a stable entry setup. Day 3 flat. Carry forward watchlist: Energy (post-stabilization), XLI names (KALU, GRC, CENX, FTAI). Revisit at midday scan.
+
+## 2026-07-08 — Pre-market Research (Update — watchlist catalyst re-scan)
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 3)
+
+### Market Context
+- WTI / Brent: WTI ~$75.01-75.68/bbl (+~6.5-7.4%), Brent ~$78.94-79.75/bbl (+~6.4-7.5%) — Middle East tensions still the driver; prior close $74.16 Brent.
+- S&P 500 futures: Weaker than this morning's read — ES continuous ~7,508 (-0.57%), Sep E-mini (ESU26) ~7,487 (-0.85%), Nasdaq 100 futures ~-1.34% to -0.6%. Cautious/negative tone deepening intraday.
+- VIX: Prior close 16.13 (up from 15.57); intraday spiking to 18-21 range (+12-13%+) — risk-off accelerating from this morning's initial VIX tick.
+- Today's catalysts: US-Iran ceasefire officially declared "over" by Trump after US struck Iran overnight; Treasury revoked Iran's oil export license — same war-escalation thread as this morning's entry, now confirmed with market reaction (Dow -100+, S&P -0.5%, Nasdaq -1.2% intraday). SpaceX trading below its IPO price post Nasdaq-100 inclusion. Fed June minutes due today — market parsing for Warsh hawkishness clues.
+- Earnings before open: None material confirmed before-open today (LEVI, AZZ, HELE reporting, timing unclear/some after-close). No change to portfolio relevance — zero positions.
+- Economic calendar: No CPI/PPI/FOMC/jobs data today, confirmed. Wholesale inventories 10am (+0.6% actual), consumer credit, EIA crude inventories. Next CPI Tue 7/14.
+- Sector momentum: Confirms prior read — Energy still dominant leader, materials/staples/industrials behind. Broad market breadth note: S&P Equal Weight, Russell 2000, Dow showing bullish broadening even as Nasdaq sits below its 50-day SMA.
+- Market regime (HMM): Bull, confidence 96.9%, 21 days in current regime (501 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Watchlist Catalyst Scan (carried-forward names)
+Per the updated pre-market workflow, ran a dated-news catalyst check on every watchlist name carried forward from yesterday — none produced a fresh, dated catalyst for today:
+- **KALU** — no catalyst dated today; next hard catalyst is Q2 earnings July 22 (AH) / call July 23. Stock in a downward technical trend since July 2, below its 50-day MA. Today's only "news" is a generic Simply Wall St narrative piece, not a tradeable catalyst.
+- **GRC** — no catalyst dated today; next earnings July 24. Recent moves (dividend hike, Q1 beat) are stale, already priced in.
+- **CENX** — no catalyst dated today; Zacks #1 Strong Buy rank and a Brimstone/Century alumina-supply MOU are the standing narrative, but neither is a today-dated news event. Next earnings unscheduled/no Q2 date confirmed yet.
+- **FTAI** — no catalyst dated today; next earnings July 29. Standing tailwind (lower oil boosting air travel demand) is a macro read-through, not a name-specific dated catalyst.
+- **XLE (Energy sector proxy)** — no new today-dated catalyst distinct from the ongoing Iran/Hormuz oil-price shock already logged this morning; XLE press against multi-year resistance ($54.64-56.71), trading ~$55.40. Still a "watch the macro, not a fresh entry trigger" situation.
+
+### Trade Ideas
+No trade idea clears the buy-side gate. Confirms this morning's read: none of the four carried-forward XLI names (KALU, GRC, CENX, FTAI) produced a dated catalyst today, and Energy's only catalyst remains the live geopolitical oil shock, which is not a stable entry setup.
+1. Watch only — Energy (XLE) — leading momentum + war-driven crude spike persists, VIX intraday spike (12-13%+) argues for waiting out volatility before any entry.
+2. Watch only — XLI names (KALU, GRC, CENX, FTAI) — sector momentum intact, but each confirmed to have zero today-dated catalyst; nearest hard catalysts are July 22-29 earnings.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Active US-Iran war escalation continues to be the dominant risk; VIX intraday move accelerating (12-13%+ vs. this morning's initial 3% tick) signals the risk-off move is broadening, not stabilizing.
+- Fed June minutes release today adds a second live catalyst layer on top of the geopolitical shock — Warsh hawkish-commentary risk could compound volatility if minutes confirm a hawkish tilt.
+- Zero open positions — no existing-position risk, but continued patience is the active risk being managed against headline-chasing.
+
+### Decision
+HOLD — unchanged from this morning. Watchlist re-scan confirms none of the four carried-forward XLI names (KALU, GRC, CENX, FTAI) has a today-dated catalyst; Energy's only catalyst is the ongoing geopolitical oil shock, not a stable entry. Day 3 flat. Carry forward same watchlist: Energy (XLE, post-stabilization), XLI names (KALU, GRC, CENX, FTAI) — next hard catalysts July 22-29 earnings. Revisit at midday scan.
