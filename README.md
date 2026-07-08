@@ -173,6 +173,12 @@ between runs.
 See [SETUP-MANUAL-STEPS.md](./SETUP-MANUAL-STEPS.md) for the full step-by-step
 walkthrough of everything only you (the human) can do.
 
+## Planned work
+
+- [docs/hmm-regime-plan.md](./docs/hmm-regime-plan.md) — design for adding a
+  pure-Python HMM market-regime classifier (Bull/Bear/High-Vol) as an
+  advisory pre-market signal. Plan only, not yet implemented.
+
 ## Cron schedule (`America/New_York` — market-anchored)
 
 | Routine       | Cron (America/New_York) | America/New_York time           |
