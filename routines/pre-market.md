@@ -55,9 +55,26 @@ EVERY currently-held ticker (not just some of them):
 If Perplexity exits 3, fall back to native WebSearch and note the fallback
 in the log entry.
 
+STEP 3.5 — Market regime classification (HMM, SPY, 2y daily):
+```bash
+END=$(date +%Y-%m-%d)
+START=$(date -d "730 days ago" +%Y-%m-%d)
+BARS_JSON=$(./scripts/alpaca.sh bars SPY 1Day "$START" "$END") || BARS_JSON=""
+if [[ -n "$BARS_JSON" ]]; then
+  REGIME_OUT=$(echo "$BARS_JSON" | python3 scripts/regime_hmm.py) || REGIME_OUT='{"regime":"Unavailable"}'
+else
+  REGIME_OUT='{"regime":"Unavailable"}'
+fi
+```
+This is a read-only, advisory context signal only — never a standalone
+entry/exit trigger. Any failure (fetch, insufficient history, low
+confidence) collapses to a neutral status; log it and continue, never abort
+the routine.
+
 STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Account snapshot (equity, cash, buying power, daytrade count)
-- Market context (oil, indices, VIX, today's releases)
+- Market context (oil, indices, VIX, today's releases, market regime — see
+  STEP 3.5's `$REGIME_OUT`)
 - 2-3 actionable trade ideas WITH catalyst + entry/stop/target
 - Risk factors for the day
 - Decision: trade or HOLD (default HOLD — patience > activity)
