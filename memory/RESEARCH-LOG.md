@@ -93,3 +93,36 @@ Screened Industrials/Materials for name-level catalysts (per Day-1 watchlist): K
 
 ### Decision
 HOLD — no name-level catalyst dated today clears the buy-side gate. Day 2 flat. Carry forward watchlist: XLI names (KALU, GRC, CENX, FTAI), Energy (mixed signal). Revisit at midday scan for any dated triggers.
+
+## 2026-07-08 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — flat for third straight day)
+
+### Market Context
+- WTI / Brent: Spiking — WTI ~$70-73/bbl (+2.5-3%), Brent ~$74-77/bbl (+3.2%), on U.S. strikes on Iran overnight shortly after canceling Iran's oil-export license. Sharp reversal from Sunday night's reported ceasefire.
+- S&P 500 futures: Slightly negative, ES ~7,538-7,540 (-0.15 to -0.18%); Nasdaq 100 futures weaker (-0.24 to -0.6%); Dow futures flat/slightly positive.
+- VIX: ~16.1, up from 15.57 prior close (+3.6%) — mild risk-off tick, still low absolute level.
+- Today's catalysts: U.S.-Iran military escalation (strikes + oil license cancellation) driving crude spike — largest single-day market-moving event since launch. AI data-center capex demand still a tailwind (HPE +25-27% Tue on earnings beat). Pending polysilicon tariff decision (solar). Nasdaq Composite below 50-day SMA; SOX broke uptrend — tech/semis technical damage continuing. Fed Chair Warsh hawkish commentary weighing on rate-cut odds.
+- Earnings before open: Light — AZZ, HELE, IMMR, LEVI, PriceSmart (none in current watchlist sectors). Costco June sales report also due today.
+- Economic calendar: No CPI/PPI/FOMC today. Wholesale inventories 10am ET, consumer credit 3pm ET, crude oil inventories (elevated relevance given Iran situation). Next CPI Tue 7/14.
+- Sector momentum: Unchanged — Leading: Consumer Staples (XLP), Industrials (XLI), Materials (XLB), Energy (XLE). Lagging: Technology (XLK), Communications (XLC), Consumer Discretionary (XLY), Financials (XLF). Improving: Real Estate (XLRE), Utilities (XLU).
+- Market regime (HMM, SPY 2y daily): **Bull**, confidence 96.79%, 20 days in current regime (500 obs). Advisory context only, not a standalone signal.
+
+### Trade Ideas
+1. Watch only — Energy (XLE) — fresh dated catalyst (Iran strikes + oil license cancellation spiking crude) and sector already in "Leading" momentum quadrant. Not entering: this is the second oil-driven reversal in 48h (Sun night ceasefire → Tue night strikes) — geopolitical whipsaw risk too high for a same-day long; want to see if the move holds past today's session before sizing a real entry.
+2. Watch only — Industrials/Materials (XLI/XLB constituents KALU, GRC, CENX, FTAI, CAT, GE) — sector momentum intact, still no fresh name-level catalyst dated today.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Geopolitical whipsaw: ceasefire (Sun) → strikes + license cancellation (Tue night) in under 48h — any further reversal could gap oil/energy names against a fresh position fast.
+- Tech/semis technical breakdown continuing (Nasdaq below 50-day SMA, SOX broke uptrend) — spillover risk to broader market if it accelerates.
+- Hawkish Fed chair commentary could reprice rate-cut expectations further if it continues.
+- VIX ticking up (+3.6%) alongside the oil shock — still low absolute level but a trend worth watching intraday.
+- Zero track record, zero positions, third consecutive no-trade day — patience vs. activity-bias remains the actual risk being managed.
+
+### Decision
+HOLD — no single-name catalyst clears the buy-side gate; Iran-driven Energy sector catalyst is fresh but too whipsaw-prone for immediate entry. Day 3 flat. Carry forward watchlist: XLI (KALU, GRC, CENX, FTAI, CAT, GE), XLB, and XLE pending confirmation the oil-spike move holds. Revisit at midday scan.
