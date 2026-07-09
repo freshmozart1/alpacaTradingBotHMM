@@ -168,3 +168,44 @@ No trade idea clears the buy-side gate. Confirms this morning's read: none of th
 
 ### Decision
 HOLD — unchanged from this morning. Watchlist re-scan confirms none of the four carried-forward XLI names (KALU, GRC, CENX, FTAI) has a today-dated catalyst; Energy's only catalyst is the ongoing geopolitical oil shock, not a stable entry. Day 3 flat. Carry forward same watchlist: Energy (XLE, post-stabilization), XLI names (KALU, GRC, CENX, FTAI) — next hard catalysts July 22-29 earnings. Revisit at midday scan.
+
+## 2026-07-09 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 4)
+
+### Market Context
+- WTI / Brent: WTI ~$73.52-73.60/bbl (+4.4% vs prior close), Brent ~$78.06-79.43/bbl (+5.3-7.1%) — still driven by Iran/Hormuz escalation, off yesterday's intraday highs but elevated.
+- S&P 500 futures: ~7,543-7,553, roughly flat (+0.02-0.21%); ESU26 was down ~0.96% earlier then reversed to slight gains. Mixed positioning (51% of IG traders short).
+- VIX: Prior close 16.90; intraday ~17.07 (+1.01%), day range 16.53-17.27 — elevated vs. last week's ~16 baseline but well off Tuesday's 18-21 spike; moderate, not extreme.
+- Today's catalysts: AI capex/data-center theme lifting industrial-battery and med-distribution names (ENS, CAH); semis still giving back gains (2/3 of tech >20% off highs); quantum/AI-hype names (INFQ, TEM) fading. Fed Chair Warsh hawkish commentary pulling back rate-cut bets. Iran/Hormuz conflict remains the macro overhang.
+- Earnings before open: None portfolio-relevant (small caps BMNR, RR, AREC). Nike reports after the bell (irrelevant, no position).
+- Economic calendar: May PPI 8:30am ET (core +0.5% MoM forecast). May CPI already out yesterday (+0.5% MoM, +4.2% YoY headline, core +2.9% YoY). No FOMC today; next FOMC Jul 29-30, next CPI Jul 14.
+- Sector momentum: YTD leaders now show Info Tech +19.8% (top, after this week's bounce), Materials +12.0%, Consumer Staples +11.4%, Discretionary +10.7%; Energy weakest YTD (+5.1%) despite a strong trailing-6-month gain (+21.7%) and today's Hormuz-driven pop. Broad-market technicals bifurcated: SPXEW/RUT/Dow bullish, Nasdaq Composite below 50-day SMA.
+- Market regime (HMM): Bull, confidence 97.2%, 21 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — one today-dated item: a small institutional buy (Cvfg LLC, ~$791K, 6,560 sh) disclosed today. Weak signal — stock is below its 50-day MA in a downward technical trend, consensus rating is Hold, and the buy is too small to count as a real catalyst. Does not clear the gate.
+- **GRC** — no catalyst dated today; still trading on stale Q1 earnings beat (+28% EPS surprise) from weeks ago. Strong YTD performer (+76%) but median analyst target implies -14% downside from here — no fresh trigger.
+- **CENX** — no catalyst dated today; standing tailwinds (steel/aluminum tariffs, Mt. Holly restart, debt refi) all old news, no new dated event.
+- **FTAI** — no catalyst dated today; the AEI freighter-conversion partnership was announced July 7 (two days stale, not today). Next hard catalyst is Q2 earnings July 29.
+- **XLE (Energy proxy)** — up 2.8% intraday today on the collapsed Iran ceasefire / Hormuz blockade fear — a live, fast-moving geopolitical catalyst, not a stable entry (mirrors Jul 8 read). Technicals conflicted: broke above upper Bollinger Band with a bearish Aroon signal (short-term pullback risk) but positive MACD.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — KALU — today-dated institutional buy is real but too small/weak against a downward technical trend and Hold consensus; not an entry trigger. Next hard catalyst: Q2 earnings Jul 22.
+2. Watch only — XLE / Energy — live Hormuz-blockade headline risk driving today's pop; entry timing risk remains extreme, technicals conflicted (Bollinger breakout vs. bearish Aroon). Wait for stabilization.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Iran/Hormuz conflict still the dominant macro risk — oil and VIX both elevated vs. last week, any escalation could re-spike volatility fast (mirrors Jul 8 shock).
+- Semis/AI-momentum names continue giving back gains (2/3 of tech >20% off highs) — risk of further tech-led index drag even as broader market (SPXEW, RUT, Dow) holds up.
+- Fed Chair Warsh's hawkish tone is repricing rate-cut expectations; May PPI at 8:30am ET today could add a second inflation-surprise catalyst layer.
+- Zero open positions — no existing-position risk; the live risk being managed is activity bias against four straight flat days.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 4 flat. Carry forward same watchlist: KALU (weak today-dated institutional buy, downward trend), GRC, CENX, FTAI (all no fresh catalyst, next triggers Jul 22-29 earnings), XLE/Energy (live geopolitical catalyst, not a stable entry). Revisit at midday scan.
