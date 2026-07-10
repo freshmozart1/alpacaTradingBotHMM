@@ -209,3 +209,44 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 4 flat. Carry forward same watchlist: KALU (weak today-dated institutional buy, downward trend), GRC, CENX, FTAI (all no fresh catalyst, next triggers Jul 22-29 earnings), XLE/Energy (live geopolitical catalyst, not a stable entry). Revisit at midday scan.
+
+## 2026-07-10 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 5)
+
+### Market Context
+- WTI / Brent: WTI ~$71.85-72.26/bbl (-0.3% to flat), Brent ~$76.18-76.43/bbl (down ~2% intraday, -15.9% over the past month) — Iran-ceasefire/Hormuz-reopening trade continuing to unwind off last week's war-spike highs.
+- S&P 500 futures: ES ~7,578, -0.14% (-11pts); underlying SPX cash up +0.48% — mixed/flat premarket tone.
+- VIX: ~16.15, down ~6% vs prior session, day range 15.76-17.27 — moderate, back near last week's calmer baseline, well off Tuesday's 18-21 spike.
+- Today's catalysts: **Semiconductor/memory chip rally** — Micron (MU) +4.5% on a $250B US plant-spending plan for HBM/AI memory; Philadelphia Semiconductor Index +3%; SK Hynix debuts on Nasdaq tomorrow, order book already 7x oversubscribed. NVDA -0.7% (light profit-taking). This is today's dominant single-stock/sector catalyst but cuts against the standing YTD sector-momentum read (Tech has been a laggard).
+- Earnings before open: Delta Air Lines (DAL) — main name; smaller/immaterial: FNGR, MHGU, BMNG. No portfolio-relevant names, zero positions held.
+- Economic calendar: No CPI/PPI/FOMC/jobs data today. Next CPI Tue Jul 14. No other market-moving releases confirmed today.
+- Sector momentum: Leading — Energy, Consumer Staples, Industrials, Materials (Energy YTD ~+22%, breaking out of a multi-year consolidation). Lagging — Technology, Communications, Consumer Discretionary, Financials. Weakening — Healthcare. Improving — Real Estate, Utilities. Note: today's chip-sector pop is a single-day move, not yet a confirmed rotation back into Tech.
+- Market regime (HMM): Bull, confidence 96.8%, 22 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no market-moving catalyst dated today; only a small ($1.78M) institutional buy (Y Intercept Hong Kong Ltd) disclosed today — too small/weak, stock still in a downward technical trend with Hold consensus. Next hard catalyst: Q2 earnings Jul 22 (AH) / call Jul 23.
+- **GRC** — no catalyst dated today; next hard catalyst is Q2 earnings call Jul 24. Up ~76% YTD, stale Q1 beat already priced in.
+- **CENX** — has a today-dated catalyst, but it's **negative**: Zacks Research downgraded CENX from Hold to **Strong Sell** on Jul 10. Does not clear the buy-side gate (gate requires a bullish, tradeable catalyst); rules CENX out as a long idea today. Standing long-term story (Inola, OK smelter JV with EGA) unchanged but not a today trigger.
+- **FTAI** — no FTAI-specific news surfaced for today at all; search results returned unrelated biotech/cannabis catalysts. No dated catalyst, no entry trigger. Next hard catalyst: Q2 earnings Jul 29.
+- **XLE (Energy proxy)** — no bullish catalyst today; read has flipped bearish-to-neutral. Iran/Hormuz risk premium unwinding as reopening becomes more likely, oil pulling back, XLE broke below its 50-day MA with a "Dark Cloud Cover" pattern; support at $57.04, resistance $59.90/$63.50. The prior "wait for stabilization" read now carries real downside risk, not just entry-timing risk.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — Semiconductors (MU, chip complex) — genuine today-dated catalyst (MU $250B capex raise, Philly Semi Index +3%, SK Hynix Nasdaq debut) but conflicts with the standing YTD laggard status of Tech; one-day pop is not a confirmed sector-momentum shift. Needs multi-session confirmation before treating as an entry.
+2. Watch only — KALU — today-dated institutional buy is real but too small/weak against a downward trend and Hold consensus. Next hard catalyst Jul 22.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Energy/XLE technical breakdown risk building as the Hormuz-reopening trade unwinds — the sector's 2026 leadership was largely a geopolitical risk-premium trade that's now deflating; watch for further downside before considering any Energy entry.
+- CENX freshly downgraded to Strong Sell — reinforces avoiding despite the long-term Inola smelter story.
+- Five straight flat/no-trade days — activity bias remains the primary risk being actively managed; strategy default is patience > activity.
+- Today's chip-sector rally is a single-session event; premature to chase without a confirmed multi-day trend, especially given Tech's YTD laggard status.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 5 flat. Updated watchlist: drop CENX (fresh negative catalyst — Strong Sell downgrade), keep KALU/GRC/FTAI (all no fresh catalyst, next triggers Jul 22-29 earnings), downgrade XLE/Energy conviction (bearish technical turn as Hormuz-reopening trade unwinds, no longer just an entry-timing question), add Semiconductors/MU as a new watch-only item pending multi-session confirmation. Revisit at midday scan.
