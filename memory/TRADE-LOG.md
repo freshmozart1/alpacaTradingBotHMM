@@ -50,3 +50,12 @@ No positions yet. Bot launches tomorrow.
 | — | — | — | — | — | — | — |
 
 **Notes:** Fifth consecutive no-trade day, closing out week 1. No open positions, no orders on the books. Account remains flat at $100,000 starting equity, fully in cash. Zero trades placed this week (0/3 cap used). Watchlist unchanged: XLI, XLB, Energy sector names.
+
+### Jul 13 — EOD Snapshot (Day 6, Monday)
+**Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** $0.00 (0.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
+
+**Notes:** Sixth consecutive no-trade day, opening week 2. No open positions, no orders on the books. Account remains flat at $100,000 starting equity, fully in cash. Zero trades placed this week (0/3 cap used). Watchlist unchanged: XLI, XLB, Energy sector names.
