@@ -250,3 +250,44 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 5 flat. Updated watchlist: drop CENX (fresh negative catalyst — Strong Sell downgrade), keep KALU/GRC/FTAI (all no fresh catalyst, next triggers Jul 22-29 earnings), downgrade XLE/Energy conviction (bearish technical turn as Hormuz-reopening trade unwinds, no longer just an entry-timing question), add Semiconductors/MU as a new watch-only item pending multi-session confirmation. Revisit at midday scan.
+
+## 2026-07-13 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 5/Week 1)
+
+### Market Context
+- WTI / Brent: WTI ~$73.77-73.88/bbl (+3.3-3.5%), Brent ~$78.15-78.42/bbl (+3.2%) — renewed US-Iran missile-strike escalation disrupting Strait of Hormuz shipping, reviving the Middle East risk premium.
+- S&P 500 futures: ES ~7,585-7,587, -0.44% to -0.46% premarket — tech/chip weakness dragging futures lower.
+- VIX: 15.03, -5.11% vs prior close (16.06 open, 14.96-16.16 range) — calm, well below 20, no near-term stress signal despite the oil spike.
+- Today's catalysts: Q2 earnings season kicks off tomorrow (Tue Jul 14) with major banks (JPM, GS, WFC, C, BAC) plus semis (ASML, TSM). No confirmed material before-open earnings today. Broadcom (AVGO) recently sold off -12% despite record AI-chip revenue (unraised guidance) — read-through risk for chip-complex sentiment. Dominant live catalyst remains US-Iran conflict driving oil.
+- Earnings before open: none material/portfolio-relevant confirmed for today.
+- Economic calendar: No CPI/PPI/FOMC/jobs data today. June CPI releases tomorrow (Tue Jul 14, 8:30am ET), consensus 3.8% YoY (down from May's 4.2%). No FOMC this week (next Jul 29-30).
+- Sector momentum: Leading — Consumer Staples (XLP), Industrials (XLI), Materials (XLB), Energy (XLE) — Energy still the dominant YTD leader (~+22%) on the Hormuz/inflation-hedge trade. Improving — Real Estate, Utilities. Weakening — Healthcare. Lagging — Technology (XLK), Communications (XLC), Consumer Discretionary (XLY), Financials (XLF). Leadership continues favoring defensive/cyclical over broad tech.
+- Market regime (HMM): Bull, confidence 97.1%, 15 days in current regime (498 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no catalyst dated today; only news is a small ($1.78M, Jul 10) institutional buy, already logged and stale. Next hard catalyst: Q2 earnings Jul 22 (AH) / call Jul 23. Does not clear the gate.
+- **GRC** — no catalyst dated today; standing story is the stale Q1 beat and consistent dividend. Next hard catalyst: Q2 earnings Jul 24. Does not clear the gate.
+- **FTAI** — no catalyst dated today; next hard catalyst confirmed as Q2 earnings release Jul 29 (AH), call Jul 30. AI-data-center power narrative and preferred-share redemption are standing tailwinds, not today-dated. Does not clear the gate.
+- **XLE (Energy proxy)** — no fresh bullish catalyst dated today distinct from the ongoing Iran/Hormuz oil shock already logged; sector-wide headwind flagged (Goldman Sachs warning China oil demand "may never fully recover"). Still a live-geopolitical / no-clean-entry situation, unchanged from Jul 10 read.
+- **Semiconductors/MU** — stale catalyst (Jul 9 announcement of $250B US semiconductor investment plan) already 4 days old; today MU is trading **down ~4.7% premarket**, extending a 13% five-session loss on broad chip-sector weakness (echoes Broadcom's post-earnings guidance selloff). This is a bearish signal, not a buy trigger — watchlist item downgraded, not actionable as a long today.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — Energy/XLE — still the dominant YTD sector leader and today's live Iran/Hormuz catalyst reinforces it short-term, but remains a fast-moving geopolitical trade, not a stable entry; Goldman's China-demand warning adds a fresh bearish crosscurrent.
+2. Watch only — KALU/GRC/FTAI — all confirmed with zero today-dated catalysts; next hard triggers are Jul 22/24/29 earnings.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Active US-Iran conflict continues driving oil higher (WTI/Brent +3%+) — Hormuz shipping disruption is the dominant macro risk; VIX still calm (15.03) but a further escalation could re-spike volatility quickly.
+- Chip-sector weakness (MU -4.7% premarket, Broadcom's post-earnings selloff) signals fragility heading into tomorrow's bank/semis earnings kickoff — risk of a broader tech-led index drag.
+- June CPI tomorrow (Tue) is a live catalyst layer on top of the oil-driven inflation risk; a hot print alongside rising energy costs could reprice rate-cut expectations.
+- Zero open positions, six consecutive flat days closing week 1 — patience vs. activity-bias remains the actively managed risk, not any existing-position risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 6 (Week 2 start) flat. Carry forward watchlist: KALU/GRC/FTAI (no fresh catalyst, next triggers Jul 22-29 earnings), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (downgraded — today's move is bearish, not a buy signal). Revisit at midday scan.
