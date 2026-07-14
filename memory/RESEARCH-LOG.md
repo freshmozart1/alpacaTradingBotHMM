@@ -291,3 +291,45 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 6 (Week 2 start) flat. Carry forward watchlist: KALU/GRC/FTAI (no fresh catalyst, next triggers Jul 22-29 earnings), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (downgraded — today's move is bearish, not a buy signal). Revisit at midday scan.
+
+## 2026-07-14 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 6/Week 1 close)
+
+### Market Context
+- WTI / Brent: WTI ~$79.10-79.26/bbl (+1.2-1.4%), Brent ~$83.21-83.30/bbl (+~9.6% intraday, some feeds showing surge to $86+) — renewed US-Iran escalation (Strait of Hormuz blockade threat reinstated) driving a third consecutive session of oil gains; XLE-specific reads flag WTI printing $84.81 and Brent $86.26 intraday, energy sector's strongest single-day move in ~7 years.
+- S&P 500 futures: ES ~7,556, -0.10% to -0.25% premarket — modest, cautious tone ahead of bank earnings and CPI.
+- VIX: Official close 15.03 (Jul 10); intraday quotes today ranging ~15.7-18.6 depending on feed, generally 17-18 area — elevated vs. last week's calm baseline but below the acute stress zone (20+).
+- Today's catalysts: **Q2 earnings season kicks off** — JPMorgan, Bank of America, Goldman Sachs, Citigroup report before the bell today (Morgan Stanley/BNY/PNC tomorrow); FactSet expects ~22% S&P 500 earnings growth for the season. **June CPI released 8:30am ET**, consensus 3.8% YoY (down from May's 4.2%) — a cooling print, in tension with the oil-driven inflation risk. SK Hynix Nasdaq debut (+14% over offer price). Dominant background risk remains the live US-Iran conflict driving crude.
+- Earnings before open: JPM, BAC, GS, C (major banks) — none held, not portfolio-relevant. Nike and Dell report after the bell today (irrelevant, no positions).
+- Economic calendar: June CPI 8:30am ET (3.8% YoY consensus, down from 4.2%). No PPI/FOMC/jobs data today — May PPI already out (+1.1%), June jobs report already out July 11 (+57K). Next FOMC Sep 16-17 (per one source; strategy log has previously tracked Jul 29-30 — treat FOMC date as unconfirmed/needs reconfirmation next cycle).
+- Sector momentum: Unchanged from recent reads — Energy still dominant YTD leader (~+23.3%), Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Info Tech (-3.3%), Consumer Discretionary (-3.8%), Communication Services (-1.2%), Financials (-6.9%) lagging. Today's bank earnings kickoff is a potential Financials-sector inflection point to watch, not yet a confirmed rotation.
+- Market regime (HMM): Bull, confidence 94.9%, 16 days in current regime (499 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no catalyst dated today; standing items are the Q2 earnings date (Jul 22 AH / call Jul 23) and a quarterly dividend (record date Jul 24, payable Aug 14) — both scheduled, not today-dated triggers. Consensus remains Hold. Does not clear the gate.
+- **GRC** — no catalyst dated today; all located news (Q1 beat, dividend) is stale from April/earlier. Consensus Hold. Does not clear the gate.
+- **FTAI** — has a today-dated item, but it's **negative**: FTAI fell ~5.6% Tuesday (today) amid a broader market pullback in higher-beta industrial names — not a name-specific bearish catalyst, but not a buy trigger either. Next hard catalyst: Q2 earnings Jul 29 (AH). Does not clear the gate.
+- **XLE (Energy proxy)** — today-dated catalyst confirmed: crude oil surge (WTI/Brent both up sharply) on renewed US-Iran/Hormuz escalation, sector's strongest single-day move in ~7 years per one read. Same pattern as prior sessions — a live, fast-moving geopolitical catalyst, not a stable entry setup. Does not clear the gate.
+- **Semiconductors/MU** — catalyst is now 4 days stale (Jul 10 blowout earnings + $250B capex raise); no fresh today-dated news. Downgraded further — watch only, no actionable trigger.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — Bank earnings (JPM/BAC/GS/C) — today's kickoff of Q2 season could be a Financials-sector inflection point (sector is the weakest YTD laggard at -6.9%), but no position held and reaction needs to be observed before treating as a sector-momentum shift.
+2. Watch only — Energy/XLE — dominant YTD leader, today's crude spike (Iran/Hormuz escalation) is the most powerful single-day move in years for the sector, but remains a live geopolitical trade, not a stable entry, consistent with every prior read this cycle.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Active US-Iran conflict entering a third session of escalation — Strait of Hormuz blockade threat reinstated, oil surging sharply (Brent +9.6%+ intraday on some feeds); further escalation could re-spike VIX quickly from its current 17-18 area.
+- Bank earnings (JPM, BAC, GS, C) before the open — first real test of Q2 season, could move Financials sharply in either direction given its YTD laggard status.
+- June CPI at 8:30am ET is a live catalyst layered on top of the oil-driven inflation risk — a hot surprise (despite consensus expecting a cooler 3.8%) combined with rising energy costs could reprice rate-cut expectations quickly.
+- FTAI's -5.6% move today signals fragility in higher-beta industrials broadly — worth monitoring for read-through to other Industrials watchlist names.
+- Zero open positions, closing week 1 fully flat — patience vs. activity-bias remains the actively managed risk, not any existing-position risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 7 (Week 2) flat. Carry forward watchlist: KALU/GRC (no fresh catalyst, next triggers Jul 22-24), FTAI (negative today-dated move, not a buy trigger, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (catalyst now 4 days stale, downgraded further). New watch-only item: bank earnings kickoff (JPM/BAC/GS/C) as a potential Financials inflection point. Revisit at midday scan.
