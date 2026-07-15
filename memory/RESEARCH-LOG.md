@@ -333,3 +333,46 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 7 (Week 2) flat. Carry forward watchlist: KALU/GRC (no fresh catalyst, next triggers Jul 22-24), FTAI (negative today-dated move, not a buy trigger, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (catalyst now 4 days stale, downgraded further). New watch-only item: bank earnings kickoff (JPM/BAC/GS/C) as a potential Financials inflection point. Revisit at midday scan.
+
+## 2026-07-15 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 7/Week 2 open)
+
+### Market Context
+- WTI / Brent: WTI ~$79.84-79.93/bbl (+0.6-2.2%), Brent ~$84.73-84.89/bbl (+1.7-1.9%) — extending the multi-session US-Iran/Hormuz-driven climb; some feeds report a fresh US strike on Iranian targets and a reinstated naval blockade pushing Brent toward $86.
+- S&P 500 futures: ES ~7,546-7,599, +0.1% to +0.4% premarket — modest gain as markets digest yesterday's bank earnings and a cooler-than-expected CPI print.
+- VIX: ~16.50 (Jul 14 close), day range 16.15-17.56 — down ~3.9% vs prior close, calm, well off any stress zone despite the oil spike.
+- Today's catalysts: June CPI (released yesterday, not today — see econ calendar) surprised to the downside at 3.5% YoY / -0.4% MoM (largest monthly drop since Apr 2020), core flat MoM/+2.6% YoY — cooling inflation supporting rate-cut bets. Q2 bank earnings continue rolling through (Citigroup +11% Q2 revenue beat reported today; JPM/BAC/GS/MS/C all reported yesterday BMO with a mixed reaction — JPM/MS disappointing, Citi strong). Fed Chair Warsh testifies before the House Financial Services Committee at 10:00am ET today — a live macro-policy catalyst. US-Iran conflict remains the dominant geopolitical overhang.
+- Earnings before open: no major BMO reporters confirmed for today (sources conflict/likely stale-dated); BlackRock (BLK) and Johnson & Johnson (JNJ) listed by one source but unconfirmed as today's date. Dell (DELL) reports AMC today. None portfolio-relevant, zero positions held.
+- Economic calendar: No CPI/PPI/FOMC/jobs data today — June CPI already released yesterday (3.5% YoY, cooler than 3.8% consensus); May PPI already out (+1.1%), June PPI not yet released; June jobs already out Jul 11 (+57K). Next FOMC in ~2 weeks (late July, exact date still unconfirmed across sources — flagged previously, needs reconfirmation). Next CPI Aug 12.
+- Sector momentum: Unchanged leadership from recent reads — Energy (+23.3% YTD) still dominant, Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Financials worst YTD (-6.9%), Consumer Discretionary (-3.8%), Info Tech (-3.3%), Communication Services (-1.2%) lagging broad-index-level, though Semiconductors/Hardware sub-sectors show strong standalone momentum (+16.3%/+19.2%). Yesterday's bank earnings kickoff has not yet flipped Financials out of the laggard quadrant.
+- Market regime (HMM): Bull, confidence 96.75%, 17 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag:** Perplexity results for MU and XLE today contained internally implausible/unverifiable figures (MU quoted at "~$1,180" with "270-282% YTD gain" and a fabricated-looking "fiscal Q1 2026" earnings narrative; XLE response cited unfamiliar events — "Maduro capture Jan 2026," "Strait of Hormuz closure with Brent hitting $138 in April" — that don't match any prior session's logged research and read as hallucinated/mis-sourced). Discounted both as unreliable; did not use them to inform trade ideas below. Flagging for awareness only.
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no catalyst dated today; standing items are Q2 earnings (Jul 22 AH / call Jul 23) and the $0.77 quarterly dividend (record date Jul 24, payable Aug 14). Consensus Hold; Wells Fargo downgraded to Underweight ($158 PT) vs. UBS raising to $179 Neutral — mixed, no fresh trigger. Does not clear the gate.
+- **GRC** — no catalyst dated today; today's Perplexity response resurfaced the April Q1 2026 earnings beat (+11.1% day, EPS beat 29.5%) framed as if current, but this is the same stale, already-priced-in April event flagged in every prior log entry, not a new dated catalyst. Next hard catalyst: Q2 earnings ~Jul 24. Does not clear the gate.
+- **FTAI** — has a specific today-dated item: preferred-share (Series C, 4.2M shares, 8.25%) redemption plus a raised 2026 EBITDA guide ($1.525B-$1.625B) and dividend increase to $0.40/share, reportedly sending shares +9.8% intraday. Real-sounding and specific, but given today's data-quality flag on this same source (MU/XLE hallucinations), treating as unconfirmed pending independent verification rather than a clean gate-clearing catalyst. Next hard catalyst regardless: Q2 earnings Jul 29.
+- **XLE (Energy proxy)** — no clean, verifiable catalyst dated today after discounting the unreliable narrative above; standing read is unchanged — live Iran/Hormuz geopolitical risk premium, not a stable entry, OPEC+ supply-revival headline is a bearish crosscurrent to watch.
+- **Semiconductors/MU** — discounted per data-quality flag; no reliable today-dated read. Last verified data point (Jul 13) was a ~4.7% premarket decline extending a 5-session slide. Watch only, no actionable trigger either direction.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — FTAI — preferred redemption / EBITDA guide raise is a specific, dated catalyst structure that would normally warrant a closer look, but flagged for independent re-verification next session given today's source reliability concerns. Do not enter on unconfirmed data.
+2. Watch only — Energy/XLE — still YTD sector leader on live geopolitical tailwind, but entry timing remains unstable and today's specific narrative details are unverifiable.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- US-Iran conflict continues to be the dominant macro risk — oil elevated, any escalation could re-spike VIX quickly from its currently calm ~16.5 level.
+- Fed Chair Warsh testifies at 10am ET — headline risk on rate-cut messaging following yesterday's cooler CPI print.
+- Bank earnings reaction has been mixed (JPM/MS soft, Citi strong) — Financials remains the worst YTD sector; still no confirmed rotation signal.
+- Data-quality risk: today's Perplexity output for MU and XLE contained results that appear hallucinated or badly mis-sourced — a reminder to treat single-source AI search output skeptically before it ever informs an entry decision, and to independently re-verify FTAI's reported catalyst before acting on it.
+- Zero open positions, Day 7/Week 2 open flat — patience vs. activity-bias remains the actively managed risk, not any existing-position risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 8 (Week 2) flat. Carry forward watchlist: KALU (mixed analyst signals, next earnings Jul 22), GRC (stale April beat re-surfaced, not new, next earnings ~Jul 24), FTAI (specific-sounding preferred-redemption catalyst reported today but unverified given data-quality concerns — re-check next session, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (discounted, no reliable read today). Revisit at midday scan.
