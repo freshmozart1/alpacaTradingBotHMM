@@ -376,3 +376,44 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 8 (Week 2) flat. Carry forward watchlist: KALU (mixed analyst signals, next earnings Jul 22), GRC (stale April beat re-surfaced, not new, next earnings ~Jul 24), FTAI (specific-sounding preferred-redemption catalyst reported today but unverified given data-quality concerns — re-check next session, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (discounted, no reliable read today). Revisit at midday scan.
+
+## 2026-07-16 — Pre-market Research (run inline during market-open)
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — still flat after Day 8/Week 2)
+
+### Market Context
+- WTI / Brent: Sources highly inconsistent this session — WTI quotes ranged $78.77-$90.54, Brent $84.01-$93.09 depending on feed/date (some stale futures-roll data mixed in). Most current-looking reads: WTI ~$80.05 (+0.57%), Brent ~$85.31 (+0.42%), both still elevated on the ongoing US-Iran/Hormuz conflict, though off the acute spike highs of a few sessions ago. One source flags a countervailing "Hormuz Peace Deal" narrative with Goldman cutting Brent target to $80 — genuine crosscurrent, not just noise.
+- S&P 500 futures: ES ~7,614, roughly flat (-0.01%) premarket — investors digesting ongoing bank earnings, cautious tone.
+- VIX: Official Jul 15 close 15.76 (-4.48%); intraday Jul 16 reads inconsistent across feeds (17.38-20.95) — likely mixed stale/live data again, but directionally elevated vs. yesterday's calm close. Treat as "modestly elevated, not stressed."
+- Today's catalysts: Q2 earnings continue — GE Aerospace, UnitedHealth, Abbott before the bell; Netflix, Intuitive Surgical, TSM after close. US-Iran conflict remains the dominant macro overhang, now with a competing de-escalation ("Hormuz Peace Deal") narrative emerging. No CPI/PPI/FOMC/jobs data today — June CPI (Jul 14, 3.5% YoY) and PPI (Jul 15, -0.3% MoM) already out; next FOMC Jul 28-29. Minor releases: ADP employment, jobless claims, NAHB housing index.
+- Earnings before open: GE, UNH, ABT — none held, not portfolio-relevant.
+- Economic calendar: No major releases today. Next FOMC Jul 28-29 (confirmed this session, resolving prior ambiguity). Next CPI ~Aug 12, next jobs report Aug 7.
+- Sector momentum: Unchanged leadership — Energy (+23.3% YTD) still dominant, Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Financials worst YTD (-6.9%), Consumer Discretionary (-3.8%), Info Tech (-3.3%), Communication Services (-1.2%) lagging. No confirmed rotation signal yet.
+- Market regime (HMM): Bull, confidence 97.46%, 18 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag (repeat):** Oil and VIX quotes across sources remain badly inconsistent this session (stale futures-roll data mixed with live spot/intraday quotes). MU catalyst read is again ambiguous/possibly stale-sourced (references to "fiscal Q1 2026" earnings dated inconsistently across citations from Dec 2025 through Jul 2026). Continuing to discount single-source AI search output where internally contradictory.
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no fresh today-dated catalyst; standing items are Q2 earnings (Jul 22 AH / call Jul 23) and the $0.77 dividend (record date Jul 24). Consensus Hold, mixed analyst signals (Wells Fargo Underweight vs. UBS Neutral). Does not clear the gate.
+- **GRC** — no fresh catalyst; today's search again resurfaced the stale April Q1 2026 earnings beat (+11.1% day) as if current — same pattern flagged in every prior log entry. Consensus Hold. Does not clear the gate.
+- **FTAI** — no single specific catalyst dated today; narrative is a cluster of recent-but-not-today items (FTAI Power launch, Q1 earnings beat, EBITDA guide raise, preferred redemption, bridge loan). Next hard catalyst: FTAI Infrastructure (FIP) Q2 earnings Aug 5. Does not clear the gate — nothing new today specifically.
+- **XLE (Energy proxy)** — today-dated catalyst present (continued Iran/Hormuz escalation, oil elevated) but now contradicted by a same-day "Hormuz Peace Deal" de-escalation narrative (Goldman cutting Brent target to $80) — live, two-sided, unstable geopolitical trade, not a clean entry. Does not clear the gate.
+- **Semiconductors/MU** — catalyst read remains internally inconsistent/unreliable per repeated data-quality flag; no fresh, verifiable today-dated trigger. Watch only.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — Energy/XLE — still YTD sector leader, but today's Iran/Hormuz catalyst is now countered by a same-day de-escalation narrative, making entry timing worse than prior sessions, not better.
+2. Watch only — Q2 earnings continuation (GE/UNH/ABT before open, NFLX/TSM after close) — none held, no sector-momentum read-through established yet.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- US-Iran conflict now has a genuine two-sided narrative (continued escalation vs. a reported "Hormuz Peace Deal") — expect volatility in oil-sensitive names (XLE, Financials-adjacent) either direction.
+- VIX and oil price data across sources are unusually inconsistent this session — reduces confidence in any single-source read; treat headline numbers skeptically until confirmed across 2+ sources at execution time.
+- Zero open positions, Day 9 (Week 2) flat — patience vs. activity-bias remains the actively managed risk, not any existing-position risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 9 (Week 2) flat. Carry forward watchlist: KALU (no fresh catalyst, next earnings Jul 22), GRC (stale April beat re-surfaced again, not new, next earnings ~Jul 24), FTAI (no single today-dated catalyst, cluster of recent-but-not-new items, next earnings/FIP Aug 5), XLE/Energy (live but now two-sided geopolitical catalyst — escalation vs. peace-deal narrative — not a stable entry), Semiconductors/MU (data-quality flag repeats, no reliable read). Revisit at midday scan.
