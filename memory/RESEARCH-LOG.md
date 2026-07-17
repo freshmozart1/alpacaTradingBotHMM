@@ -419,3 +419,46 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 9 (Week 2) flat. Carry forward watchlist: KALU (Hold consensus, Sell-equivalent from Wells Fargo, next earnings Jul 22), GRC (stale April beat re-surfaced again, next earnings ~Jul 24), FTAI (stale redemption/EBITDA narrative, next earnings Jul 29-30 per drifting sources), XLE/Energy (live geopolitical catalyst, still not a stable entry), Semiconductors/MU (bearish tone today — sector selloff/profit-taking, not a buy signal). New watch item: VIX crossing above 20 for the first time this cycle — monitor for follow-through. Revisit at midday scan.
+
+## 2026-07-17 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — Day 10/Week 2, still flat)
+
+### Market Context
+- WTI / Brent: WTI ~$79.51-79.90/bbl (+0.7-1.2%), Brent ~$84.84-85.09/bbl (+0.7-1.0%) — modest continuation of the multi-session US-Iran/Hormuz climb, no fresh acceleration vs. yesterday's levels per the cross-checked source cluster.
+- S&P 500 futures: conflicting reads due to a contract-rollover artifact (Jun→Sep 2026 contract) — live active-contract quotes show futures down ~0.9-1.1% premarket, while stale/delayed feeds referencing the old contract show a false +0.9% read. Treating the down ~1% active-contract read as the operative signal: **modestly bearish premarket tone**, a change from recent sessions' calm-to-positive drift.
+- VIX: reported at 20.95 (+12.39%, prior close 16.73, open 18.01) — **flagging as suspect**: this is the exact level and percentage move already logged verbatim in yesterday's (Jul 16) entry, a recurring pattern of stale/recycled data on this query. Directionally consistent with an elevated-volatility backdrop (Iran escalation, futures down), but not treating 20.95 as a confirmed fresh print — re-verify at midday.
+- Today's catalysts: Q2 earnings season continues (Netflix, UnitedHealth, GE Aerospace, Truist, State Street among today's reporters); Pending Home Sales and Export Price Index at 8:30am ET; Fed Chair Warsh testimony continuation and University of Michigan Consumer Sentiment are live sentiment catalysts. Dominant background risk remains active US-Iran conflict — one source cites a fresh US strike on Iran and formal collapse of the ceasefire, driving the oil bid.
+- Earnings before open: no portfolio-relevant names. Confirmed pre-open reporters are small-cap financials (WAFD, SFNC, ALV, FNB, SPFI) — Thursday's batch (CELH, SHAK, BIDU, NFLX, AA) already reported. None held.
+- Economic calendar: No CPI/PPI/FOMC/jobs data today — June CPI (Jul 14) already in at 3.5% YoY (cooler than 3.8% consensus), core 2.6% YoY; June PPI -0.3% MoM. Next FOMC Jul 29-30; next CPI Aug 12.
+- Sector momentum: Unchanged leadership — Energy (+23.3% YTD), Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Financials worst YTD (-6.9%), Consumer Discretionary (-3.8%), Info Tech (-3.3%), Communication Services (-1.2%) lagging at the broad-index level, though Semiconductors (+16.3%) and Hardware (+19.2%) sub-sectors remain strong standalone.
+- Market regime (HMM): Bull, confidence 96.67%, 19 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag (recurring, worsening):** XLE response repeated the same fabricated/mismatched figures already flagged and discounted on Jul 16 — "Brent jumps 6.2% to $78.73" and "WTI to $71.87" — numbers that don't reconcile with today's actual cross-checked oil read (WTI ~$79.5-79.9, Brent ~$84.8-85.1) and that match the exact hallucinated framing called out two sessions ago. MU response cited an unverifiable "~250% YTD" gain and a "$1,421.94" analyst price target alongside a plausible-sounding but unconfirmed "GM/Ford supply agreement" narrative. GRC query response was internally contradictory/confused (conflated Gorman-Rupp with an unrelated Gold Resource Corp merger) before self-correcting to conclude Gorman-Rupp (the actual GRC) has no Jul 17 catalyst. VIX figure also suspect (see above, verbatim match to yesterday's logged print). Treating XLE and MU catalyst claims as fully discounted again this session; GRC's final self-corrected answer (no catalyst) used, all speculative merger content ignored.
+
+### Watchlist Catalyst Scan (carried-forward names)
+- **KALU** — no catalyst dated today; standing items are Q2 earnings (Jul 22 AH / call Jul 23) and the $0.77 quarterly dividend (record date Jul 24, payable Aug 14), both already logged. Consensus Hold, avg PT ~$159.50 vs. price ~$160.41 (near fair value); Zacks cut Strong Buy→Hold Jul 1. Does not clear the gate.
+- **GRC (Gorman-Rupp)** — no catalyst dated today per the self-corrected final read; standing catalyst is the already-logged Q2 earnings beat (record $188M orders, $0.60 EPS). Note: query response initially confused this ticker with an unrelated Gold Resource Corp (GORO) merger — discounted as a search-tool error, not a real GRC event. Does not clear the gate.
+- **FTAI** — no catalyst dated today; next hard catalyst remains Q2 earnings Jul 29 (AH). Preferred-share redemption, FTAI Power/data-center narrative, and PMA-approval speculation are all previously-logged, non-dated tailwinds. Does not clear the gate.
+- **XLE (Energy proxy)** — no clean, verifiable today-dated catalyst after discounting the repeated hallucinated figures above; standing read unchanged — still YTD sector leader on a live but unstable Iran/Hormuz geopolitical premium.
+- **Semiconductors/MU** — no reliable today-dated read after discounting unverifiable figures above; last independently-verified data point remains the Jul 13 premarket weakness / broader chip-sector selloff. Watch only, no actionable trigger.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — Energy/XLE — still the dominant YTD sector leader on a live geopolitical tailwind, but today's specific figures are unverifiable (recurring hallucination pattern) and entry timing remains unstable.
+2. Watch only — KALU/GRC/FTAI — all confirmed with zero clean today-dated catalysts; next hard triggers are Jul 22-29 earnings.
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Premarket S&P futures reading down ~1% (active contract) is a shift from recent sessions' calm/positive drift — worth confirming at the open given no held positions are directly exposed.
+- VIX read (20.95) is suspect as a stale repeat of yesterday's exact figure, but directionally the elevated-volatility backdrop (Iran escalation, futures weakness) is plausible — re-verify at midday rather than trust this print.
+- Active US-Iran conflict remains the dominant macro risk, with one source citing a fresh US strike and ceasefire collapse — any confirmed escalation could drive a real (not hallucinated) oil/VIX spike quickly.
+- Data-quality risk has worsened, not resolved: XLE and MU repeated the exact same fabricated figures flagged two sessions ago rather than fresh hallucinations — treat this as a persistent tool-reliability issue on these two names specifically, not a one-off.
+- Zero open positions, tenth consecutive flat day — patience vs. activity-bias remains the actively managed risk, not any existing-position risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 10 (Week 2) flat. Carry forward watchlist: KALU (Hold consensus, near fair value, next earnings Jul 22), GRC/Gorman-Rupp (no fresh catalyst, prior Q2 beat already logged), FTAI (no fresh catalyst, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry, data quality unreliable), Semiconductors/MU (no reliable read, data quality unreliable). Watch items: premarket futures weakness (~-1%) and VIX ~20-21 area — both need midday-scan confirmation given today's data-quality concerns. Revisit at midday scan.
