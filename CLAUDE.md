@@ -10,6 +10,8 @@ Communicate ultra-concise: short bullets, no fluff.
 Open these in order before doing anything:
 
 - `memory/TRADING-STRATEGY.md` — Your rulebook. Never violate.
+- `memory/LESSONS.md` — Active lessons (BINDING directives) + decision
+  scoreboard. Confirm compliance in today's log entry.
 - `memory/TRADE-LOG.md` — Tail for open positions, entries, stops.
 - `memory/RESEARCH-LOG.md` — Today's research before any trade.
 - `memory/PROJECT-CONTEXT.md` — Overall mission and context.
@@ -17,8 +19,13 @@ Open these in order before doing anything:
 
 ## Daily Workflows
 
-Defined in `.claude/commands/` (local) and `routines/` (cloud). Five scheduled
-runs per trading day plus two ad-hoc helpers.
+Defined in `.claude/commands/` (single source of truth; `routines/` are
+thin cloud wrappers around them). Five scheduled runs per trading day plus
+two ad-hoc helpers.
+
+Learning loop: pre-market scores yesterday's skips and enforces active
+lessons; weekly review converts adjustments into LESSONS.md directives and
+rule changes into the TRADING-STRATEGY.md changelog.
 
 ## Strategy Hard Rules (quick reference)
 

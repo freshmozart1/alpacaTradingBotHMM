@@ -30,7 +30,10 @@ STEP 4 — Append EOD snapshot to memory/TRADE-LOG.md:
 ### MMM DD — EOD Snapshot (Day N, Weekday)
 **Portfolio:** $X | **Cash:** $X (X%) | **Day P&L:** ±$X (±X%) | **Phase P&L:** ±$X (±X%)
 | Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
-**Notes:** one-paragraph plain-english summary.
+**Notes:** one-paragraph plain-english summary. MUST state the
+consecutive no-trade-day count ("Nth consecutive no-trade day") or
+"streak reset — trade(s) placed today". Pre-market's stall-breaker reads
+this counter.
 
 STEP 5 — Send ONE ClickUp message (always, even on no-trade days). <= 15
 lines:

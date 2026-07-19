@@ -8,6 +8,19 @@ container: clone, run, destroy.
 commit-and-push step are load-bearing — Claude skips the final push in
 roughly 10% of runs without the loud persistence reminder.
 
+**Single source of truth:** the workflow step text lives ONLY in
+`.claude/commands/`. Each routine prompt here is a thin wrapper: env
+preflight -> execute the matching command file -> commit and push.
+Editing a command file takes effect on the next cloud firing
+automatically (each firing is a fresh clone of `main`). Editing a
+*wrapper* (the ENV block or the `git add` list) requires re-pasting the
+prompt into the routine UI.
+
+**Migration note (one-time):** after the wrapper restructure merges,
+re-paste all five prompts below into their routines and click
+**"Run now"** on each once (step 10 below). Until re-pasted, cloud runs
+keep executing the old self-contained prompts.
+
 ## Setting up a routine
 
 For each of the five files below:

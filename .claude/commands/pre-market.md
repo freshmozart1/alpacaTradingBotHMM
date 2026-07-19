@@ -10,7 +10,10 @@ DATE=$(date +%Y-%m-%d).
 
 STEP 1 — Read memory for context:
 - memory/TRADING-STRATEGY.md
-- tail of memory/TRADE-LOG.md
+- memory/LESSONS.md (Active Lessons are BINDING; note the Decision
+  Scoreboard)
+- tail of memory/TRADE-LOG.md (also note the consecutive no-trade-day
+  count from the latest Notes — STEP 3's stall-breaker uses it)
 - tail of memory/RESEARCH-LOG.md
 
 STEP 2 — Pull live account state:
@@ -19,6 +22,17 @@ STEP 2 — Pull live account state:
 ./scripts/alpaca.sh positions
 ./scripts/alpaca.sh orders
 ```
+
+STEP 2.5 — Yesterday's skip check (Alpaca data only). For each ticker on
+yesterday's watchlist that has an open Decision Scoreboard row in
+memory/LESSONS.md:
+```bash
+./scripts/alpaca.sh quote SYM
+```
+Compute % vs that row's Ref close (skip tickers with no row or an
+unfilled Ref). Produce one line for today's log entry:
+"Yesterday's skip check: KALU +0.4%, GRC -0.2%, ... — skips look
+right/wrong so far." Never use Perplexity numbers here.
 
 STEP 3 — Research market context via Perplexity. Run
 ```bash
@@ -42,6 +56,20 @@ watchlist name carried forward in the most recent RESEARCH-LOG entry:
 If Perplexity exits 3, fall back to native WebSearch and note the fallback
 in the log entry.
 
+STALL-BREAKER (mandatory, not optional): read the consecutive
+no-trade-day count from the latest TRADE-LOG Notes (STEP 1). If >= 5,
+refresh the watchlist BEFORE the per-ticker news queries:
+- DROP any name with no today-dated catalyst for 5+ sessions, unless it
+  has a hard dated event (earnings, dividend record) within 5 sessions.
+- ADD >= 3 fresh names from the top-2 leading sectors via a broadened
+  screen, e.g.:
+  "best <sector> stocks with news catalysts this week $DATE"
+  "<sector ETF> largest holdings with earnings or upgrades this week"
+  Cross-check each candidate's price with ./scripts/alpaca.sh quote.
+- State in today's entry: "Stall-breaker: FIRED (dropped X,Y; added
+  A,B,C)" or "Stall-breaker: not armed (streak N < 5)".
+This changes the SEARCH, never the buy-side gate or any risk rule.
+
 STEP 3.5 — Market regime classification (HMM, SPY, 2y daily):
 ```bash
 END=$(date +%Y-%m-%d)
@@ -62,9 +90,19 @@ STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 - Account snapshot (equity, cash, buying power, daytrade count)
 - Market context (oil, indices, VIX, today's releases, market regime — see
   STEP 3.5's `$REGIME_OUT`)
+- Lessons check: one line per active lesson in memory/LESSONS.md —
+  "L-001 complied (XLE claim cross-checked via WebSearch)" etc.
+- Yesterday's skip check line (from STEP 2.5)
+- Stall-breaker status line (from STEP 3)
 - 2-3 actionable trade ideas WITH catalyst + entry/stop/target
 - Risk factors for the day
 - Decision: trade or HOLD (default HOLD — patience > activity)
+
+Also update memory/LESSONS.md: append a Decision Scoreboard row for each
+NEW watchlist name and each trade idea with entry/stop/target that ends
+in HOLD (Ref = prior-session close via ./scripts/alpaca.sh bars SYM 1Day;
+one row per ticker per watchlist streak — no duplicate rows for names
+already on the board).
 
 STEP 5 — Notification: silent unless urgent.
 ```bash

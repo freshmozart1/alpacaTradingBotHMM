@@ -59,3 +59,14 @@ Evaluated at the midday scan and opportunistically:
 - Is the sector in momentum?
 - What is the stop level (7-10% below entry)?
 - What is the target (minimum 2:1 risk/reward)?
+
+## Rule Changelog
+
+Every change to this file must be recorded here by the weekly review,
+citing scoreboard/log evidence (memory/LESSONS.md, TRADE-LOG,
+RESEARCH-LOG). Risk rules (trailing stops, -7% cut, position sizing caps,
+max 3 trades/week, no options) may be tightened but NEVER loosened.
+
+| Date | Rule | Old -> New | Reason / Evidence |
+|------|------|------------|-------------------|
+| 2026-07-06 | (baseline) | — -> v1 scaffold ruleset | Initial rules; no changes yet |
