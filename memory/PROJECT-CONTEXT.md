@@ -21,6 +21,7 @@
 
 - memory/PROJECT-CONTEXT.md (this file)
 - memory/TRADING-STRATEGY.md
+- memory/LESSONS.md
 - memory/TRADE-LOG.md
 - memory/RESEARCH-LOG.md
 - memory/WEEKLY-REVIEW.md

@@ -9,6 +9,7 @@ via: DATE=$(date +%Y-%m-%d).
 
 STEP 1 — Read memory for today's plan:
 - memory/TRADING-STRATEGY.md
+- memory/LESSONS.md (Active Lessons — binding on today's entries)
 - TODAY's entry in memory/RESEARCH-LOG.md (if missing, run pre-market
   STEPS 1-3 inline)
 - tail of memory/TRADE-LOG.md (for weekly trade count)
@@ -30,6 +31,11 @@ log the specific reason:
 - Catalyst documented in today's RESEARCH-LOG
 - daytrade_count leaves room (PDT: 3/5 rolling business days)
 - The instrument is a stock, not an option or anything else
+
+For every planned trade skipped by the gate, besides logging the reason,
+append a Decision Scoreboard row to memory/LESSONS.md: Date, ticker,
+"gate-fail: <which check>", Ref = last close via ./scripts/alpaca.sh bars
+(skip if the ticker already has an open row).
 
 STEP 4 — Execute the buys (market orders, day TIF), one at a time:
 ```bash
