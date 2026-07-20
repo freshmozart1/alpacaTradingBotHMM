@@ -462,3 +462,63 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 10 (Week 2) flat. Carry forward watchlist: KALU (Hold consensus, near fair value, next earnings Jul 22), GRC/Gorman-Rupp (no fresh catalyst, prior Q2 beat already logged), FTAI (no fresh catalyst, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry, data quality unreliable), Semiconductors/MU (no reliable read, data quality unreliable). Watch items: premarket futures weakness (~-1%) and VIX ~20-21 area — both need midday-scan confirmation given today's data-quality concerns. Revisit at midday scan.
+
+## 2026-07-20 — Pre-market Research (run inline by market-open, no entry existed)
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — Day 11/Week 3, still flat)
+
+### Market Context
+- WTI / Brent: Sources wildly inconsistent this session (WTI quoted anywhere from $69.96 to $90.54 across cited pages; Brent $76.49-$93.09) — mostly stale/mismatched dates on the underlying pages. Most internally-consistent recent cluster: WTI ~$82-84, Brent ~$88-91, both still elevated on the Iran/Hormuz premium. Treat any single figure skeptically.
+- S&P 500 futures: Also inconsistent (7,491-7,625 range across sources of varying freshness); most-recent-dated reads cluster ~7,500-7,530, roughly flat/modest gain premarket.
+- VIX: Perplexity itself flagged the conflict — Cboe/Investing.com spot cluster ~18.3-18.5 (down from Thu close), vs. a MarketWatch page repeating the exact 20.95/+12.39% figure already logged verbatim on Jul 16 AND Jul 17 (three sessions running now). Per L-002: this is now a confirmed stale/recycled print, not a fresh signal — discounted. Treating ~18.3-18.5 (down day-over-day) as the operative read.
+- Today's catalysts: US-Iran ceasefire-status headlines remain the dominant macro overhang (conflicting reports on deal vs. collapse); Fed Chair Warsh inflation commentary ahead of Jul 28-29 FOMC; China's approval of Apple's AI service boosting Chinese tech (Alibaba, Tencent); AI-spending anxiety pressuring Nasdaq/semis (Japan AI-hardware names sliding). None held, not portfolio-relevant.
+- Earnings before open: TRV, FITB, RF, SPFI reporting BMO; AMC/SBUX/T/VFC/PGR/ADP already out. NKE reports AMC today. None held.
+- Economic calendar: No CPI/PPI/FOMC/jobs today. June CPI (Jul 14, +3.5% YoY) and PPI (Jul 15, -0.3% MoM) already in. Next FOMC Jul 28-29. Today: US Leading Indicators 10am ET, Canadian CPI 8:30am ET.
+- Sector momentum: Unchanged leadership — Energy (+21-26% YTD) still #1, Materials (+10-17%), Consumer Staples (+10-16%), Industrials (+10-14%) leading; Financials worst (-5.7 to -6.9%), Consumer Discretionary, Info Tech, Communication Services lagging.
+- Market regime (HMM): Bull, confidence 92.98%, 22 days in current regime (498 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag (L-001/L-002, ongoing):** VIX 20.95/+12.39% confirmed as a 3-session-running verbatim repeat (Jul 16/17/20) — treated as stale, discounted per L-002. Oil and futures reads also showed wide dispersion across cited pages this session; used only the most internally-consistent recent cluster.
+
+### Lessons Check
+- L-001 (XLE/MU unreliable) complied — no XLE/MU catalyst used toward the buy-side gate; MU dropped from watchlist this session (see stall-breaker below), partly on this lesson's basis.
+- L-002 (verify suspect repeated prints) complied — VIX 20.95 print flagged as a 3-session verbatim repeat and discounted; see Market Context above.
+- L-003 (widen watchlist when stall-breaker armed) **was NOT being complied with** — the streak has been >=5 consecutive no-trade days since well before today (Day 9 logged Jul 16, no stall-breaker action taken Jul 16 or Jul 17) and no prior RESEARCH-LOG entry ever recorded firing it. Corrected this session — stall-breaker fired below. Flagging this gap for the weekly review.
+
+### Yesterday's Skip Check (Alpaca bars only, `quote` bid/ask spreads too wide to trust this session — e.g. KALU ap 199.50/bp 84.47 — so used last daily bar close instead)
+- KALU: Jul 17 close $157.67 vs Ref close $178.81 (2026-07-06 row) = -11.8% — skip looks right (would have been a loser).
+- GRC: Jul 17 close $79.59 vs Ref close $84.84 (2026-07-06 row) = -6.2% — skip looks right.
+- FTAI: Jul 17 close $207.50 vs Ref close $241.45 (2026-07-06 row) = -14.1% — skip looks right.
+- MU: Jul 17 close $849.46 vs Ref close $979.36 (2026-07-10 row) = -13.3% — skip looks right; reinforces treating MU as unreliable/weak, consistent with dropping it below.
+
+### Stall-breaker: FIRED (dropped FTAI, XLE/Energy-proxy, MU; added CEG, LNG, FCX)
+Streak is well past the >=5-session trigger (Day 11, ~11th consecutive no-trade day) and this is the first session it has actually been executed — L-003 compliance gap noted above and corrected now.
+- DROP FTAI — no today-dated catalyst for 5+ sessions; next earnings Jul 29-30 is outside the 5-session window.
+- DROP generic "XLE/Energy proxy" watch item — no clean today-dated catalyst for 5+ sessions (repeated data-quality issue per L-001); replaced with concrete Energy names below.
+- DROP MU — no reliable today-dated catalyst for 5+ sessions, repeated data-quality issue per L-001, and today's skip-check confirms the name has been a genuine loser to have skipped.
+- KEEP KALU — hard dated event within 5 sessions (Q2 earnings Jul 22 AH).
+- KEEP GRC — hard dated event within 5 sessions (Q2 earnings ~Jul 24).
+- ADD CEG (Constellation Energy, Energy sector) — no today-dated catalyst (bearish near-term: Citi downgrade, lock-up unlock, PJM grid-emergency friction), but a real dated event within 5 sessions (Q2 earnings Jul 30 is just outside 5 sessions — actually watch-only pending confirmation); noting PJM 2028-29 capacity-auction clearance (Jul 14) as the most recent concrete event. Quote cross-check: ask $267.25 / bid $241.30 (wide spread, treat cautiously).
+- ADD LNG (Cheniere Energy, Energy sector) — thesis is a guidance raise off Q1 results plus a Qatari-LNG-facility-damage supply-shock narrative; no clean today-dated news item, watch-only. Quote cross-check: ask $276.15 / bid $247.00 (wide spread, treat cautiously).
+- ADD FCX (Freeport-McMoRan, Materials sector) — hard dated event within 5 sessions (Q2 earnings call Jul 23); today's narrative is a copper-output guidance cut (Grasberg mine delay) already priced into an described "11% drop" — unclear if that move is today-dated or a stale recap, treat cautiously. Quote cross-check: ask $62.08 / bid $55.90 (wide spread, treat cautiously).
+New watchlist carried forward: KALU, GRC, CEG, LNG, FCX.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today — this is a stall-breaker/watchlist-refresh session, not a trade session.
+1. Watch only — KALU/GRC — unchanged Hold consensus, next hard triggers are Jul 22/24 earnings.
+2. Watch only — CEG/LNG/FCX (new) — all Energy/Materials sector-momentum names, but none have a clean, verifiable TODAY-dated catalyst (CEG/FCX moves may be stale recaps per the data-quality pattern this bot keeps hitting; LNG catalyst is an older Q1-report guidance raise, not fresh). FCX has the nearest hard catalyst (Jul 23 earnings).
+3. No idea reaches TRADE threshold today.
+
+### Risk Factors
+- Data quality across almost every query this session was inconsistent (oil, futures, VIX all showed multi-dollar/multi-point spreads across cited sources) — treated the most internally-consistent, recently-dated cluster in each case and flagged single-source outliers.
+- VIX's exact stale print (20.95/+12.39%) has now repeated verbatim for 3 straight sessions (Jul 16/17/20) — strong confirmation this specific query has a broken/cached data source; continue discounting per L-002.
+- Quote-endpoint bid/ask spreads were unusually wide across every ticker checked today (e.g., FTAI ask $224.65/bid $197.60) — used daily bars instead of live quotes for the skip-check math this session; flag if this persists at midday.
+- L-003 (stall-breaker) had gone uncomplied-with for multiple sessions past its trigger — process gap now corrected, flag for weekly review to confirm it stays armed going forward.
+- Active US-Iran conflict / oil-price volatility remains the dominant macro risk; Fed Chair Warsh's hawkish-leaning inflation comments ahead of Jul 28-29 FOMC add a rate-risk layer.
+- Zero open positions, eleventh consecutive flat day — patience vs. activity-bias remains the actively managed risk.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 11 (Week 3) flat. Stall-breaker fired this session (see above) — watchlist refreshed to KALU, GRC, CEG, LNG, FCX. Revisit at midday scan; flag the L-003 compliance gap and this session's pervasive data-quality noise for the weekly review.

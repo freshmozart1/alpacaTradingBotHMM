@@ -59,11 +59,10 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-07-06 | KALU | HOLD — no dated catalyst | backfill | | |
-| 2026-07-06 | GRC | HOLD — no dated catalyst | backfill | | |
-| 2026-07-06 | FTAI | HOLD — no dated catalyst | backfill | | |
-| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | backfill | | |
-
-Backfill note (first live session with Alpaca access): replace each
-"backfill" with the ticker's close on the row's Date via
-`./scripts/alpaca.sh bars SYM 1Day <date> <date>`, then delete this note.
+| 2026-07-06 | KALU | HOLD — no dated catalyst | 178.81 | | |
+| 2026-07-06 | GRC | HOLD — no dated catalyst | 84.84 | | |
+| 2026-07-06 | FTAI | HOLD — no dated catalyst | 241.45 | | |
+| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | 979.36 | | |
+| 2026-07-20 | CEG | HOLD — stall-breaker add, no today-dated catalyst | 252.36 | | |
+| 2026-07-20 | LNG | HOLD — stall-breaker add, no today-dated catalyst | 262.60 | | |
+| 2026-07-20 | FCX | HOLD — stall-breaker add, no today-dated catalyst | 58.37 | | |
