@@ -63,6 +63,10 @@ than 10 sessions are pruned.
 | 2026-07-06 | GRC | HOLD — no dated catalyst | backfill | | |
 | 2026-07-06 | FTAI | HOLD — no dated catalyst | backfill | | |
 | 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | backfill | | |
+| 2026-07-20 | LNG | HOLD — Qatar supply-shock claim uncorroborated | 262.60 | | |
+| 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | | |
+| 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | | |
+| 2026-07-20 | FCX | HOLD — no dated catalyst, awaiting Jul 23 earnings | 58.37 | | |
 
 Backfill note (first live session with Alpaca access): replace each
 "backfill" with the ticker's close on the row's Date via

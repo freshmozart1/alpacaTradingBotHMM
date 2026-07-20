@@ -462,3 +462,61 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 10 (Week 2) flat. Carry forward watchlist: KALU (Hold consensus, near fair value, next earnings Jul 22), GRC/Gorman-Rupp (no fresh catalyst, prior Q2 beat already logged), FTAI (no fresh catalyst, next earnings Jul 29), XLE/Energy (live geopolitical catalyst, still not a stable entry, data quality unreliable), Semiconductors/MU (no reliable read, data quality unreliable). Watch items: premarket futures weakness (~-1%) and VIX ~20-21 area — both need midday-scan confirmation given today's data-quality concerns. Revisit at midday scan.
+
+## 2026-07-20 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $400,000 (margin, effective); Reg-T: $200,000
+- Daytrade count: 0 (no positions, no orders — Day 11/Week 3, still flat)
+
+### Market Context
+- WTI / Brent: wide source dispersion — WTI cluster ~$81.5-82.5/bbl, Brent cluster ~$85-88/bbl; both still elevated vs. two weeks ago on the ongoing US-Iran/Hormuz overhang, but no single figure trusted given the spread (some feeds show +4-4.6% day moves, others near-flat) — treating as "elevated, no fresh acceleration confirmed" rather than endorsing any one spike print.
+- S&P 500 futures: ES cluster ~7,497-7,528, roughly flat to +0.4% depending on contract/feed — modestly positive-to-flat premarket tone.
+- VIX: **conflicting reads** — MarketWatch showed 20.95 (+12.39%), which is an **exact verbatim repeat of the Jul 16 logged print** (flag per L-002, discounted); Cboe's own site (most authoritative source) showed **18.28** (-2.61%, prior close 18.77); Investing.com showed 18.53. Using Cboe's 18.28 as the operative read — calm-to-modest backdrop, no acute stress.
+- Today's catalysts: Fed Chair Warsh commentary that prices are "too high" is feeding rate-cut-timing debate; Tesla reports Wednesday (first "Mag 7" this earnings season, 83 S&P 500 names reporting this week); TSMC raised 2026 capex guidance ($60-64B) on AI demand; China approved Apple's AI service, boosting Alibaba/Tencent (not portfolio-relevant). One source repeated the exact fabricated "Brent +6.2% to $78.73 / WTI +6.3% to $74.71" figures already flagged and discounted on Jul 16-17 — discounted again per L-001-style skepticism, not used.
+- Earnings before open: none confirmed for today (Monday) — multiple sources agree. Bank earnings (JPM/BAC/GS/C/WFC) shift to Tuesday Jul 21 BMO.
+- Economic calendar: no CPI/PPI/FOMC/jobs today. June data already in (CPI 3.5% YoY, PPI -0.3% MoM, payrolls +57K). **Next FOMC date is inconsistent across sources this session** (one cites Jul 28, another Aug 6) — flagging for reconciliation, not yet resolved. Next CPI Aug 12.
+- Sector momentum: unchanged leadership — Energy (+23.3% YTD), Materials (+17.4%), Consumer Staples (+15.6%), Industrials (+14.1%) leading; Financials worst YTD (-6.9%), Consumer Discretionary (-3.8%), Info Tech (-3.3%), Communication Services (-1.2%) lagging at broad-index level; Semiconductors (+16.3%) and Hardware (+19.2%) sub-sectors remain strong standalone despite broad Tech's negative YTD.
+- Market regime (HMM): Bull, confidence 92.98%, 22 days in current regime (498 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag (recurring, still active):** XLE query stated today's date as a "Sunday" (factually wrong — today is Monday) and repeated the same fabricated "$138/bbl Brent in April" / "Hormuz closed since late February" claims discounted on Jul 16-17. GRC query again confused the held Gorman-Rupp ticker with an unrelated Gold Resource Corp/Goldgroup merger (same confusion flagged Jul 17) before resurfacing the identical stale April Q1-beat figures ($176.6M revenue, $0.68 EPS, $247.9M backlog) logged verbatim in every prior session. VIX repeated Jul 16's exact print (see above). Treating XLE and GRC catalyst claims as fully discounted again; used only independently-plausible content elsewhere.
+
+### Lessons Check
+- L-001 (XLE/MU unreliable) — complied. XLE catalyst content discounted (fabricated figures, wrong day-of-week). MU dropped from the watchlist this session via the stall-breaker given no independently-verified catalyst in 5+ sessions.
+- L-002 (verify suspect repeated macro prints) — complied. VIX 20.95 flagged as an exact repeat of Jul 16's print; used Cboe's official 18.28 instead.
+- L-003 (widen watchlist when stall-breaker armed) — complied. Stall-breaker fired this session (see below); watchlist refreshed rather than recycled unchanged.
+
+### Yesterday's Skip Check
+N/A this session — all four open Decision Scoreboard rows (KALU, GRC, FTAI, MU) still carry the unfilled "backfill" placeholder Ref close; per STEP 2.5, tickers with an unfilled Ref are skipped. No valid % comparison computed.
+
+### Stall-Breaker
+**FIRED** — consecutive no-trade-day count is 10+ (TRADE-LOG's latest Notes, Jul 16, read "Ninth"; this log's Jul 17 entry already confirmed "Day 10"), well past the 5-session threshold, and no refresh had been executed in the intervening sessions despite L-003. Dropped **FTAI** (no today-dated catalyst in 5+ sessions; next hard event, Q2 earnings Jul 29-30, falls outside the next 5 sessions) and **MU** (L-001 unreliable-data flag persists; last independently-verified data point remains Jul 13). Added **LNG, FANG, VMC, FCX** — sourced from a broadened Energy/Materials screen (the top-2 leading YTD sectors), cross-checked against live Alpaca quotes. KALU and GRC retained (hard dated events — earnings Jul 22 and ~Jul 24 respectively — fall within the next 5 sessions). XLE/Energy retained as the sector proxy (near-daily dated content, just not stable/verifiable enough to clear the gate).
+
+### Watchlist Catalyst Scan
+- **KALU** — no catalyst dated today; Q2 earnings tomorrow AH (Jul 22), call Jul 23, $0.77 dividend (record Jul 24). Mixed analyst backdrop unchanged (KeyBanc OW $183, UBS Neutral $176, JPM UW $142 despite target raise). Does not clear the gate.
+- **GRC (Gorman-Rupp)** — no catalyst dated today after discounting the recycled/confused response above (see Data-quality flag). Does not clear the gate.
+- **FTAI** — dropped from active watchlist this session (stall-breaker); no fresh catalyst, next earnings Jul 29-30.
+- **XLE (Energy proxy)** — no clean, verifiable today-dated catalyst after discounting the fabricated figures above; standing read unchanged, live but unstable Iran/Hormuz geopolitical premium.
+- **Semiconductors/MU** — dropped from active watchlist this session (stall-breaker); persistent data-quality flag, no independently-verified catalyst since Jul 13.
+- **LNG (Cheniere, new)** — cites a "missile attack on Qatar's Ras Laffan complex" as a supply-shock catalyst, but this is **uncorroborated** by any other query today (including the general market-catalysts scan) and the same response contained internally inconsistent prices ($240 / $262 / $297 all cited). Treating as unconfirmed — does not clear the gate. Next earnings unconfirmed this session.
+- **FANG (Diamondback, new)** — cites a Mizuho "top pick" $220 PT reportedly sparking a premarket move, layered on stale Q1 earnings/guidance. Analyst-action date not confirmed as today-dated. Does not clear the gate. Next earnings ~Aug 3-4.
+- **VMC (Vulcan Materials, new)** — cites a completed portfolio transaction (CA ready-mix sale / Brannan Sand & Gravel acquisition) with a **negative** "sell the news" reaction (-2.5%); not a buy trigger even if the underlying claim holds up. Next earnings Aug 5.
+- **FCX (Freeport-McMoRan, new)** — no catalyst dated today; market in "wait and see" mode ahead of Q2 earnings call Jul 23. Does not clear the gate.
+
+### Trade Ideas
+No trade idea clears the buy-side gate today.
+1. Watch only — FANG — Mizuho top-pick call is a real-looking analyst action but unconfirmed as today-dated; re-verify next session before treating as a catalyst.
+2. Watch only — LNG — Qatar supply-shock claim is specific but uncorroborated elsewhere and paired with internally inconsistent pricing in the same response; do not act without independent confirmation.
+3. No idea reaches TRADE threshold today; KALU/GRC/XLE/VMC/FCX all confirmed with zero clean today-dated catalysts (VMC's dated item is a negative reaction, not a buy signal).
+
+### Risk Factors
+- Data-quality issue has widened, not resolved: today's XLE response mis-stated the day of the week and repeated fabricated figures already discounted twice; GRC was again confused with an unrelated corporate-action headline; VIX repeated a prior session's exact print verbatim. Treat every single-source Perplexity "today" catalyst claim with default skepticism until cross-checked.
+- Active US-Iran/Hormuz conflict remains the dominant macro overhang; oil elevated but exact levels unconfirmed given source dispersion — any independently-confirmed fresh escalation (not a recycled claim) could still move markets quickly.
+- FOMC date inconsistency (Jul 28 vs Aug 6) across sources needs reconciling before it matters for position risk — no positions currently exposed.
+- VIX read uncertain (18.28 official vs. suspect 20.95 repeat); treating 18.28 as operative — calm-to-moderate backdrop, no confirmed stress signal.
+- Zero open positions, 11th consecutive flat day entering today — patience vs. activity-bias remains the actively managed risk. Stall-breaker fired to address the name-pool bottleneck per L-003, but no idea cleared today's buy-side gate regardless of the refreshed pool.
+
+### Decision
+HOLD — no name-level catalyst clears the buy-side gate. Day 11 (Week 3) flat. Stall-breaker FIRED: dropped FTAI, MU; added LNG, FANG, VMC, FCX. Carry forward watchlist: KALU (earnings Jul 22), GRC (no fresh catalyst, next earnings ~Jul 24), XLE/Energy (live geopolitical catalyst, still not a stable entry, data quality unreliable), LNG (uncorroborated Qatar claim, re-verify), FANG (unconfirmed analyst-action timing, re-verify), VMC (negative dated reaction, not a buy trigger), FCX (no catalyst, awaiting Jul 23 earnings). Revisit at midday scan.
