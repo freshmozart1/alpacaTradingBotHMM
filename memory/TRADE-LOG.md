@@ -86,3 +86,12 @@ No positions yet. Bot launches tomorrow.
 | — | — | — | — | — | — | — |
 
 **Notes:** Ninth consecutive no-trade day. No open positions, no orders on the books. Account remains flat at $100,000 starting equity, fully in cash. Zero trades placed this week (0/3 cap used). Watchlist unchanged: XLI, XLB, Energy sector names.
+
+### Jul 20 — EOD Snapshot (Day 11, Monday)
+**Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** $0.00 (0.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
+
+**Notes:** 11th consecutive no-trade day (streak per RESEARCH-LOG stall-breaker count; Jul 17's EOD snapshot was not found committed to TRADE-LOG — Day 10 gap, flagging for awareness, not backfilled here). No open positions, no orders on the books. Account remains flat at $100,000 starting equity, fully in cash. Zero trades placed this week (0/3 cap used, Week 3). Stall-breaker fired at today's pre-market: dropped FTAI/MU, added LNG, FANG, VMC, FCX. No idea cleared the buy-side gate today. Watchlist: KALU (earnings Jul 22), GRC (~Jul 24), XLE/Energy, LNG, FANG, VMC, FCX.
