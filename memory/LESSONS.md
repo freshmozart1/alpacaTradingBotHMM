@@ -67,6 +67,9 @@ than 10 sessions are pruned.
 | 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | | |
 | 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | | |
 | 2026-07-20 | FCX | HOLD — no dated catalyst, awaiting Jul 23 earnings | 58.37 | | |
+| 2026-07-21 | XOM | HOLD — oil-driven momentum, no fresh dated catalyst | 148.40 | | |
+| 2026-07-21 | CVX | HOLD — oil-driven momentum, no fresh dated catalyst | 189.25 | | |
+| 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | | |
 
 Backfill note (first live session with Alpaca access): replace each
 "backfill" with the ticker's close on the row's Date via
