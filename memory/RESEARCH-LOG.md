@@ -639,3 +639,18 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 HOLD — no name-level catalyst clears the buy-side gate. Day 13 (Week 3) flat. Stall-breaker FIRED again (still armed, streak > 5): no drops, added GEV (Industrials screen); Staples screen ran but yielded no qualifying fresh name, none added. Carry forward watchlist: KALU (earnings AMC today, resolves tonight), GRC (no fresh catalyst, next earnings Jul 24), XLE/Energy (still not a stable entry, data quality unreliable), LNG (no fresh catalyst, next earnings Aug 6), FANG (no fresh catalyst, next earnings Aug 3-4), VMC (no fresh catalyst, next earnings Aug 5), FCX (earnings timing unconfirmed — re-verify), XOM/CVX (oil-driven momentum, no fresh trigger, earnings Jul 24/31), ECL (no fresh catalyst, next earnings Jul 28), GEV (new — reports before today's open, watch the reaction). Revisit at midday scan; KALU/GEV/FCX earnings are the key items to check.
+
+## 2026-07-22 — Midday Scan Addendum
+
+### Account
+- Confirmed via `alpaca.sh positions`/`orders`: zero open positions, zero open orders. 13th consecutive no-trade day. Steps 3-5 (cut losers, tighten stops, thesis check) N/A — nothing to evaluate.
+
+### GEV
+- Reported Q2 before today's open. Reaction is sharply negative despite Morgan Stanley's positive-surprise call: Jul 21 close $1077.75 -> Jul 22 intraday ~$1002-1025 (bid $999.05/ask $1025), roughly -5% to -7%. Obvious cause (earnings reaction) — no Perplexity research needed. Not held; not an entry candidate mid-selloff with no confirmed reversal.
+
+### FCX
+- Jul 21 close $62.52 -> Jul 22 intraday ~$64.76-64.80, +3.6%. Ran the planned re-verification via Perplexity on earnings timing (before-open Jul 22 vs. Jul 23) — query returned no reliable confirmation either way; timing stays **unconfirmed**. Move is modest, not "sharp with no cause" — treating as continuation of the standing copper/energy tailwind, not confirmed earnings-driven. No fresh gate-clearing catalyst regardless.
+
+### Actions
+- No positions to cut/tighten/thesis-check.
+- No trade placed today — no idea clears the buy-side gate. No ClickUp alert sent (no action taken).
