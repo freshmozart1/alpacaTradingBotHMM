@@ -59,10 +59,10 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-07-06 | KALU | HOLD — no dated catalyst | backfill | | |
-| 2026-07-06 | GRC | HOLD — no dated catalyst | backfill | | |
-| 2026-07-06 | FTAI | HOLD — no dated catalyst | backfill | | |
-| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | backfill | | |
+| 2026-07-06 | KALU | HOLD — no dated catalyst | 178.81 | | |
+| 2026-07-06 | GRC | HOLD — no dated catalyst | 84.84 | | |
+| 2026-07-06 | FTAI | HOLD — no dated catalyst | 241.45 | | |
+| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | 979.36 | | |
 | 2026-07-20 | LNG | HOLD — Qatar supply-shock claim uncorroborated | 262.60 | | |
 | 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | | |
 | 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | | |
@@ -70,7 +70,4 @@ than 10 sessions are pruned.
 | 2026-07-21 | XOM | HOLD — oil-driven momentum, no fresh dated catalyst | 148.40 | | |
 | 2026-07-21 | CVX | HOLD — oil-driven momentum, no fresh dated catalyst | 189.25 | | |
 | 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | | |
-
-Backfill note (first live session with Alpaca access): replace each
-"backfill" with the ticker's close on the row's Date via
-`./scripts/alpaca.sh bars SYM 1Day <date> <date>`, then delete this note.
+| 2026-07-22 | GEV | HOLD — reports before today's open, not buyable pre-print | 1077.75 | | |
