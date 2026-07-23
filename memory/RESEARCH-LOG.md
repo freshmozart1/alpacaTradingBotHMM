@@ -654,3 +654,63 @@ HOLD — no name-level catalyst clears the buy-side gate. Day 13 (Week 3) flat. 
 ### Actions
 - No positions to cut/tighten/thesis-check.
 - No trade placed today — no idea clears the buy-side gate. No ClickUp alert sent (no action taken).
+
+## 2026-07-23 — Pre-market Research
+
+### Account
+- Equity: $100,000.00
+- Cash: $100,000.00
+- Buying power: $100,000 (cash account, options-approved but stocks-only per mandate)
+- Daytrade count: 0 (no positions, no orders — Day 14/Week 4, still flat entering today)
+
+### Market Context
+- WTI / Brent: wide source dispersion continues (WTI cluster $86.55-90.18/bbl, Brent cluster $93.45-98.30/bbl) but all independently-dated sources agree on direction: fresh 6-week highs, Brent pushing toward $96-98, on continued Middle East/Hormuz supply-risk fears. Treating as a real, confirmed move (multi-source agreement on direction/magnitude), not any single spike print.
+- S&P 500 futures: modestly negative premarket (-0.14% to -0.40% across sources) — market digesting last night's mega-cap earnings (Alphabet, Tesla, Microsoft, IBM, Texas Instruments, GE Vernova) with some "spending fears" commentary on AI capex, plus oil-driven macro pressure.
+- VIX: **17.44** (Cboe, live) / 17.56 (Investing.com) — calm, roughly flat vs Jul 21's 17.05 close. MarketWatch's 20.95/+12.39% print resurfaced again but its own source snippet is dated **2026-02-05** — confirmed stale, not just suspected; discounted per L-002. Using ~17.4-17.6 as the operative read.
+- Today's catalysts: Big Tech earnings aftermath dominates — Tesla and Microsoft beat; Alphabet reported after Wed's close (results "reignite spending fears" per MarketWatch); Amazon, AT&T, Intel report later today. GM reports before today's open (consensus EPS $3.20, rev $47.01B) — not held. AI infra capex still supporting chips (Goldman raised NVDA data-center estimates this morning). Defense names (LMT) flagged for a missile-replenishment catalyst tied to the Iran conflict — not on our watchlist.
+- Earnings before open: GM (not held). FCX earnings today, timing still not cleanly confirmed before/after open (see per-ticker scan).
+- Economic calendar: No CPI/PPI/FOMC/jobs data today. Next CPI Aug 12 (last print: -0.4% m/m, +3.5% y/y). No FOMC today.
+- Sector momentum: Energy, Materials, Consumer Staples, Industrials remain YTD leaders (Energy +15.9-23.3%, Materials +11.7-17.4%, Staples +11.3-15.6%, Industrials +14.1%); SSGA's momentum scorecard has Tech and Energy leading on momentum/earnings-sentiment measures specifically (separate from YTD level).
+- Market regime (HMM): Bull, confidence 97.66%, 25 days in current regime (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: none (zero open positions).
+- **Data-quality flag:** VIX's 20.95 MarketWatch print is now confirmed stale-dated (Feb 2026 snapshot) rather than just a suspected repeat — same discounting as before, per L-002. No fabricated-figure issue observed for XLE this session (query returned plausible, dated content); still treating XLE with default skepticism per L-001's standing directive.
+
+### Lessons Check
+- L-001 (XLE/MU unreliable) — complied. No XLE catalyst is being used to justify a trade this session (Energy proxy remains sector color only); MU not on watchlist (dropped Jul 20).
+- L-002 (verify suspect repeated macro prints) — complied. VIX 20.95 flagged and confirmed stale (source itself dated Feb 2026); used Cboe's 17.44 instead.
+- L-003 (widen watchlist when stall-breaker armed) — complied. Stall-breaker still armed (streak 13 entering today, well past 5); ran a broadened Financials/Healthcare screen (the two sector pairs not yet scanned) — JPM, LLY, BLK, JNJ surfaced but none carried a clean today-dated catalyst (earnings-cluster mentions and pipeline news, all stale or non-specific to Jul 23). No name added — consistent with not force-fitting weak candidates onto the board.
+
+### Yesterday's Skip Check (vs Jul 22 close, via `bars` — `quote` endpoint again showing corrupted pre-open spreads, e.g. KALU ap=205.20/bp=104.13, GRC/LNG/FCX/XOM/GEV all ap=0 — same recurring anomaly, cross-checked via bars instead)
+KALU -8.47% (163.67 vs 178.81 Jul 6 Ref — but see below, catalyst just landed, thesis changing today), GRC -5.48% (80.19 vs 84.84), LNG +1.81% (267.35 vs 262.60), FANG +3.86% (203.09 vs 195.55), VMC -3.60% (277.79 vs 288.17), FCX +11.33% (64.985 vs 58.37 — standout move, earnings today), XOM +4.10% (154.485 vs 148.40), CVX +1.98% (192.99 vs 189.25), ECL -0.60% (267.035 vs 268.66), GEV -8.34% (987.86 vs 1077.75 — post-earnings selloff continuing to validate Jul 22's "don't buy mid-selloff" read). FCX's and XOM's skips are drifting toward "missed" territory — no action taken, weekly review will score at +5d.
+
+### Stall-Breaker
+**Still ARMED** — consecutive no-trade-day count entering today is 13 (per Jul 22 TRADE-LOG Notes), day 14 overall. No existing name hits the mandatory 5+ session drop threshold this session: GRC/ECL protected by earnings inside 5 sessions (Jul 24/28), FCX/KALU resolve via earnings today, VMC's earnings date is now clarified as **Jul 29** (within 5 sessions — also protected, correcting the earlier "Aug 5" read), LNG/FANG/XOM/CVX are only on their 3rd-4th scan since being added (not yet at the 5-session mark). No drops. Broadened Financials/Healthcare screen (see Lessons Check) yielded no qualifying today-dated name — no adds this session either.
+
+### Watchlist Catalyst Scan
+- **KALU — CLEARS THE GATE.** Reported record Q2 2026 results after Tuesday's close (Jul 22 AH): record revenue/profitability, **raised FY26 guidance** (Adjusted EBITDA growth now expected **45-55%** YoY, up from prior 10-15% conversion-revenue-growth framing). Conference call today at 10:00 a.m. ET. Market reaction is genuinely positive and confirmed across sources: AH print ~$171-173 (MarketBeat ~$171.41, Investing.com AH ~$173.28) vs Jul 22 close $163.67, moderating to **~$167.65 premarket** as of this morning — still up ~+2.4% vs Jul 22 close and a clean break of the multi-session $156-165 range. Materials sector is a confirmed YTD leader. This is a specific, today-relevant, non-XLE/MU catalyst — no data-quality flag on this name this session. Aerospace demand/pricing power cited as the underlying driver (aligns with prior "Zacks Rank" and dividend context already logged). Also has a **$0.77 dividend, record date tomorrow (Jul 24)** — secondary, not the driver.
+- **GRC (Gorman-Rupp)** — no fresh Jul 23-dated catalyst; standing Q1 beat / Zacks momentum narrative is stale. Query also returned an unrelated "Gold Resource Corp / GORO merger" hit for the GRC ticker collision — discounted as off-target, not our Gorman-Rupp position. Next earnings Jul 24 (tomorrow). Does not clear the gate.
+- **XLE (Energy proxy)** — catalyst content plausible this session (oil-driven sector rotation, near-breakout technical setup) but still just sector color, not a single-name trigger; no specific action from it. Does not clear the gate (not treated as a discrete buy candidate).
+- **LNG** — today's catalyst is a fresh **EIA natural gas storage report** (smaller-than-expected injection) plus recycled Cheniere expansion/Asia-demand analyst notes (stale, previously logged). The storage print is dated today but is a sector-wide gas-market data point, not company-specific news — thin. Next earnings Aug 6. Does not clear the gate.
+- **FANG** — no fresh Jul 23-dated catalyst; Q1 beat, dividend hike, and oil-geopolitics reaction are all previously logged. Next earnings early August. Does not clear the gate.
+- **VMC** — no fresh today-dated catalyst; standing Jul 29 earnings and prior divestiture "sell the news" pullback already logged. Quote ~$277.83, still digesting. Does not clear the gate.
+- **FCX** — Q2 2026 earnings scheduled today (Jul 23), consensus ~$0.60 EPS / ~$6.47-6.75B revenue, but before/after-open timing is still not cleanly confirmed this session (same ambiguity flagged Jul 22). S&P Global raised FCX's outlook to Positive post-Grasberg/Indonesia agreement — a real but not brand-new item. Not actionable pre-print; revisit at midday once the print is public.
+- **XOM** — no fresh today-dated catalyst beyond continued oil/Hormuz macro tailwind (already logged); next earnings Jul 31. Does not clear the gate.
+- **CVX** — no fresh today-dated catalyst; Q2 earnings Jul 31, Guyana/Uaru and Microsoft data-center power deal are standing items, analyst target raises (TD Cowen/Wolfe/UBS/BofA) are not dated to today specifically. Does not clear the gate.
+- **ECL** — no fresh today-dated catalyst; Citi's "90-day catalyst watch" Buy call and CoolIT Q3-close mix-shift are standing items ahead of Jul 28 earnings. Does not clear the gate.
+- **GEV** — no fresh today-dated catalyst; today's query just recaps Tuesday's already-priced-in Q2 print (EPS miss, revenue beat, orders surged, guidance raised) and the negative post-earnings reaction already logged Jul 22. Does not clear the gate; thesis unchanged (avoid buying into a post-earnings selloff with no confirmed reversal).
+
+### Trade Ideas
+1. **TRADE — KALU** — Catalyst: record Q2 2026 earnings + raised FY26 guidance (Adj. EBITDA growth 45-55% YoY), released Jul 22 AH, confirmed positive reaction (~+2.4% vs Jul 22 close as of premarket ~$167.65), conference call today 10am ET. Sector (Materials) in confirmed YTD momentum. Entry: ~$167.65 (re-validate at market-open with live quote). Stop: 10% trailing GTC per standard rule (~$150.89 initial). Target: ~$201 (+20%, 2:1 R/R off the 10% stop). Flagging to market-open workflow for gate re-validation and execution — this is the first name to clear the buy-side gate since bot launch (Day 1, Jul 6).
+2. Watch only — FCX — earnings today, timing unconfirmed; re-check reaction at midday, do not chase pre-print.
+3. Watch only — LNG — today's EIA storage catalyst is real but sector-wide/thin; no company-specific trigger yet.
+4. No other idea reaches TRADE threshold today: GRC/XLE/FANG/VMC/XOM/CVX/ECL/GEV all confirmed with zero clean today-dated, name-specific catalysts.
+
+### Risk Factors
+- KALU's AH pop has already partially faded (~$173 AH high -> ~$167.65 premarket) — confirm the reaction holds after the 10am ET call before executing; do not chase if it gaps down through premarket support.
+- Oil continuing to climb (WTI ~$86-90, Brent ~$96-98) on Middle East/Hormuz risk — supportive of the Energy watchlist names but a real inflation/macro risk if it persists.
+- Mega-cap earnings aftermath (Alphabet/Tesla/Microsoft/GE Vernova) is driving broad index chop this morning ("spending fears" headline) — expect elevated index-level volatility independent of KALU's setup.
+- VIX still calm (~17.4-17.6) despite the oil rally and earnings-driven index jitters — no confirmed stress signal.
+- 13th consecutive no-trade day entering today — if KALU's gate-clearing setup holds through market-open re-validation, this ends the streak; if it fades, patience remains the correct call.
+
+### Decision
+**TRADE (conditional) — KALU.** First name to clear the buy-side gate since Day 1. Catalyst: record Q2 earnings + raised guidance, confirmed positive multi-session reaction, Materials-sector momentum, no data-quality flag on this name. Entry/stop/target above; market-open workflow must re-validate live quote and all gate checks before executing — do not execute off this premarket snapshot alone. All other watchlist names remain HOLD (no fresh today-dated, name-specific catalyst). Stall-breaker still armed (streak 13); no drops (all protected by near-term earnings or under 5 sessions on the list); broadened Financials/Healthcare screen yielded no qualifying add. Carry forward watchlist: KALU (trade signal — see above), GRC (earnings tomorrow Jul 24), XLE/Energy (sector color only), LNG (thin EIA-driven catalyst, re-verify), FANG (no fresh catalyst, earnings early Aug), VMC (no fresh catalyst, earnings Jul 29 — corrected from Aug 5), FCX (earnings today, timing unconfirmed), XOM/CVX (oil-driven momentum, earnings Jul 31), ECL (no fresh catalyst, earnings Jul 28), GEV (thesis unchanged, avoid).
