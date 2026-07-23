@@ -113,3 +113,11 @@ No positions yet. Bot launches tomorrow.
 | — | — | — | — | — | — | — |
 
 **Notes:** 13th consecutive no-trade day — streak reset not triggered, no trades placed today. No open positions, no orders on the books. Account remains flat at $100,000 starting equity, fully in cash. Zero trades placed this week (0/3 cap used, Week 3). Watchlist: KALU (earnings Jul 22), GRC (~Jul 24), XLE/Energy, LNG, FANG, VMC, FCX, XOM, CVX, ECL (earnings Jul 28).
+
+### Jul 23 — BUY KALU (Day 14, Thursday) — streak broken (0/3 trades this week used)
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|---|---|---|---|---|---|---|---|---|
+| 2026-07-23 | KALU | BUY | 112 | $176.79 (avg fill) | $158.34 (10% trailing GTC, order 653bbed1) | Record Q2 2026 earnings + raised FY26 guidance (Adj. EBITDA growth 45-55% YoY, up from 10-15%), released Jul 22 AH; confirmed positive multi-session reaction; Materials sector in confirmed YTD momentum; conference call today 10am ET. First name to clear the buy-side gate since bot launch. | ~$212 (+20%, exceeds min 2:1 R/R off 10% stop) | ~2.3:1 |
+
+**Fill details:** Market buy order d238c536, filled 112 shares @ avg $176.785714 (cost basis $19,800.00, 19.8% of equity — within 20% cap). Trailing stop GTC (10%) confirmed resting, stop price $158.3415, HWM $175.935. Note: Alpaca `quote` endpoint showed corrupted/nonsensical bid-ask for KALU pre-open (ap=204.36/bp=148.09, same known anomaly logged in today's RESEARCH-LOG) — execution price validated via `bars` (real trades, $171.05→$177.51 in the first two 5-min bars post-open) instead, consistent with the data-quality workaround already in use this session.
