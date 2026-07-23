@@ -714,3 +714,17 @@ KALU -8.47% (163.67 vs 178.81 Jul 6 Ref — but see below, catalyst just landed,
 
 ### Decision
 **TRADE (conditional) — KALU.** First name to clear the buy-side gate since Day 1. Catalyst: record Q2 earnings + raised guidance, confirmed positive multi-session reaction, Materials-sector momentum, no data-quality flag on this name. Entry/stop/target above; market-open workflow must re-validate live quote and all gate checks before executing — do not execute off this premarket snapshot alone. All other watchlist names remain HOLD (no fresh today-dated, name-specific catalyst). Stall-breaker still armed (streak 13); no drops (all protected by near-term earnings or under 5 sessions on the list); broadened Financials/Healthcare screen yielded no qualifying add. Carry forward watchlist: KALU (trade signal — see above), GRC (earnings tomorrow Jul 24), XLE/Energy (sector color only), LNG (thin EIA-driven catalyst, re-verify), FANG (no fresh catalyst, earnings early Aug), VMC (no fresh catalyst, earnings Jul 29 — corrected from Aug 5), FCX (earnings today, timing unconfirmed), XOM/CVX (oil-driven momentum, earnings Jul 31), ECL (no fresh catalyst, earnings Jul 28), GEV (thesis unchanged, avoid).
+
+## 2026-07-23 — Midday Scan Addendum
+
+### Account
+- Confirmed via `alpaca.sh positions`/`orders`: 1 open position (KALU, 112 sh), 1 open order (KALU trailing-stop GTC, id 653bbed1, trail 10%, stop $165.105, HWM $183.45).
+
+### KALU
+- Entry (market-open fill) $176.785714 avg -> current $182.21, unrealized +3.07% (+$607.52). Below both the +15%/+7%-trail and +20%/+5%-trail tighten thresholds — trailing stop left at standard 10% GTC, untouched (never move a stop down, not applicable here). Not a loser (-7% cut rule N/A). Move is the continuation of this morning's confirmed catalyst (record Q2 earnings + raised FY26 guidance, 10am ET conference call today) — obvious cause, no Perplexity research needed. Thesis intact, no break.
+
+### Actions
+- Step 3 (cut losers <= -7%): N/A, no losers.
+- Step 4 (tighten trail on winners >= +15%/+20%): N/A, KALU at +3.07%, below threshold.
+- Step 5 (thesis check): KALU thesis intact, no cut.
+- No trade placed, no stop change, no exit. No ClickUp alert sent (no action taken).
