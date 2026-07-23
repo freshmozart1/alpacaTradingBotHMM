@@ -121,3 +121,12 @@ No positions yet. Bot launches tomorrow.
 | 2026-07-23 | KALU | BUY | 112 | $176.79 (avg fill) | $158.34 (10% trailing GTC, order 653bbed1) | Record Q2 2026 earnings + raised FY26 guidance (Adj. EBITDA growth 45-55% YoY, up from 10-15%), released Jul 22 AH; confirmed positive multi-session reaction; Materials sector in confirmed YTD momentum; conference call today 10am ET. First name to clear the buy-side gate since bot launch. | ~$212 (+20%, exceeds min 2:1 R/R off 10% stop) | ~2.3:1 |
 
 **Fill details:** Market buy order d238c536, filled 112 shares @ avg $176.785714 (cost basis $19,800.00, 19.8% of equity — within 20% cap). Trailing stop GTC (10%) confirmed resting, stop price $158.3415, HWM $175.935. Note: Alpaca `quote` endpoint showed corrupted/nonsensical bid-ask for KALU pre-open (ap=204.36/bp=148.09, same known anomaly logged in today's RESEARCH-LOG) — execution price validated via `bars` (real trades, $171.05→$177.51 in the first two 5-min bars post-open) instead, consistent with the data-quality workaround already in use this session.
+
+### Jul 23 — EOD Snapshot (Day 14, Thursday)
+**Portfolio:** $100,427.20 | **Cash:** $80,200.00 (79.86%) | **Day P&L:** +$427.20 (+0.43%) | **Phase P&L:** +$427.20 (+0.43%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| KALU | 112 | $176.7857 | $180.60 | +9.91% | +$427.20 (+2.16%) | $167.85 (10% trail, GTC 653bbed1, HWM $186.50) |
+
+**Notes:** Streak reset — trade(s) placed today. KALU buy filled this morning (112 sh @ $176.79 avg, 19.8% of equity) on record Q2 earnings + raised FY26 guidance; position closed the day up 2.16% unrealized, trailing stop confirmed resting and has already ratcheted up to $167.85 as HWM climbed to $186.50 intraday. One trade this week (1/3 cap used, Week 3). Portfolio now 20.14% deployed / 79.86% cash, below the 75-85% target deployment band — room for 1-2 more names before hitting the 5-6 position cap. Watchlist unchanged: GRC (~Jul 24), XLE/Energy, LNG, FANG, VMC, FCX, XOM, CVX, ECL (earnings Jul 28).
