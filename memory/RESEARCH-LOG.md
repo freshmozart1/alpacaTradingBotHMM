@@ -784,3 +784,10 @@ No trade idea clears the buy-side gate today.
 
 ### Decision
 **HOLD** — no name-level catalyst clears the buy-side gate today. GRC's earnings-day setup is the one item to revisit once the print is confirmed (data-quality issue currently blocks using it). Stall-breaker not armed (streak reset yesterday). No new watchlist names added, no Decision Scoreboard rows added (no new names, no new trade-idea-with-entry/stop/target ending in HOLD). Carry forward watchlist: GRC (earnings today, print unconfirmed), XLE/Energy (sector color only), LNG (no fresh catalyst, earnings Aug 6), FANG (no fresh catalyst, earnings Aug 3-4), VMC (no fresh catalyst, earnings ~Jul 29), FCX (no fresh catalyst, post-earnings), XOM/CVX (oil-driven momentum, earnings Jul 31), ECL (no fresh catalyst, earnings Jul 28), GEV (thesis unchanged, avoid). KALU (held, thesis intact, no new catalyst) — standard midday-scan monitoring applies.
+
+### Jul 24 — Midday Addendum
+
+- KALU's 10% GTC trailing stop triggered automatically at 13:53 UTC (before this scan ran), well ahead of the -7% manual-cut threshold — stop mechanics working as designed, not a rule violation. Position now flat (confirmed via `alpaca.sh positions`/`orders` = `[]` and `orders closed` showing the fill). Full detail logged in TRADE-LOG 2026-07-24 SELL KALU entry.
+- Perplexity check on the drop (13:35-14:00 UTC intraday fade from ~$175 to ~$168 per `bars`): no fresh operational/fundamental catalyst break. Attributed to a Wells Fargo downgrade to Underweight (PT cut to $158), today's ex-dividend date ($0.77/share), and profit-taking after the Jul 22 earnings pop. Thesis not invalidated — exit was stop-driven, not thesis-driven.
+- Account now 100% cash: equity $98,809.91, 0 positions, 0 open orders. No other positions existed to evaluate for tightening/thesis checks. GRC earnings print still unconfirmed this session (data-quality issue noted in pre-market) — not re-checked this addendum, no action taken on it.
+- Action taken this scan: none initiated (stop pre-executed); logged and notified per STEP 8.
