@@ -138,3 +138,12 @@ No positions yet. Bot launches tomorrow.
 | 2026-07-24 | KALU | SELL | 112 | $166.16 (avg fill) | -$1,190.08 (-6.01%) | GTC 10% trailing stop (order 653bbed1) triggered automatically pre-scan at 13:53 UTC; HWM $186.50, stop price $167.85, filled $166.16 (slippage/gap through stop). Stop had already ratcheted up per rule (never moved down) since Jul 23 entry. |
 
 **Detail:** Stop was resting from entry (Jul 23, 112 sh @ $176.7857 avg, cost $19,800.00) and triggered automatically before this midday scan ran — no manual close needed at STEP 3 (position was already flat: `alpaca.sh positions` → `[]`, `orders` → `[]` at scan start). Confirmed via `alpaca.sh orders closed`: order 653bbed1, filled_qty 112, filled_avg_price 166.16, status filled. Perplexity check found no operational/fundamental catalyst break — decline attributed to (1) Wells Fargo downgrade to Underweight, PT cut to $158, (2) KALU went ex-dividend today ($0.77/share), (3) profit-taking/valuation reset after the Jul 22 earnings pop. Thesis (record Q2 earnings + raised FY26 guidance) was not invalidated; exit was the trailing-stop rule functioning as designed, not a thesis-break cut. No other open positions to evaluate (STEPS 4-5 N/A). Account now flat: equity $98,809.91, cash $98,809.91 (100%), 0 positions, 0 open orders. Zero trades placed this week is now inaccurate — 1 trade (KALU buy) placed Jul 23/this week; this SELL does not count against the 3-new-trades/week cap (exits are not new entries). Watchlist unchanged: GRC (~Jul 24, print still unconfirmed), XLE/Energy, LNG, FANG, VMC, FCX, XOM, CVX, ECL (earnings Jul 28).
+
+### Jul 24 — EOD Snapshot (Day 15, Friday)
+**Portfolio:** $98,809.91 | **Cash:** $98,809.91 (100.00%) | **Day P&L:** -$1,617.28 (-1.61%) | **Phase P&L:** -$1,190.09 (-1.19%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
+
+**Notes:** 1st consecutive no-trade day (streak restarted — KALU's 10% GTC trailing stop triggered automatically pre-market today, an exit not a new BUY entry; last new-entry trade was Jul 23's KALU buy). Account flat: 0 open positions, 0 open orders, 100% cash. Day P&L -$1,617.28 (-1.61%) driven entirely by the KALU stop-out (realized -$1,190.08); Phase P&L now -$1,190.09 (-1.19%) since $100,000 start. One trade (BUY) placed this week (1/3 cap used, Week 3) — the SELL exit does not count against the cap. Watchlist unchanged: GRC (~Jul 24, print still unconfirmed), XLE/Energy, LNG, FANG, VMC, FCX, XOM, CVX, ECL (earnings Jul 28).
