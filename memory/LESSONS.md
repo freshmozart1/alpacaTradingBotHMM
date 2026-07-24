@@ -33,18 +33,43 @@ Template:
   value, flag it suspect and cross-check before using it in Risk Factors.
 - Status: active | Review-by: 2026-07-31
 
-### L-003 — Widen watchlist beyond recycled tickers
-- Date: 2026-07-10 | Source: WEEKLY-REVIEW 2026-07-10 Adjustments (not acted on wk of Jul 13)
-- Lesson: 4 fixed tickers scanned 5+ days produced 0 dated catalysts; the
-  name pool, not the market, is the bottleneck.
-- Directive: When the stall-breaker in pre-market STEP 3 is armed (>= 5
-  consecutive no-trade days), the watchlist refresh is mandatory, not
-  optional.
-- Status: active | Review-by: 2026-07-24
+### L-004 — Widen earnings-print verification beyond XLE/MU
+- Date: 2026-07-24 | Source: WEEKLY-REVIEW 2026-07-24 Adjustments (GRC Jul 24 earnings misattribution)
+- Lesson: Perplexity misattributed a 2025-dated GRC earnings print as
+  today's Jul 24 2026 result — the same stale-source-as-fresh-data failure
+  mode already tracked for XLE/MU under L-001, just on a different ticker.
+- Directive: No earnings-print claim (any ticker) counts toward the
+  buy-side gate unless the source snippet's own date matches today, or the
+  print is confirmed via `alpaca.sh bars`/quote post-release.
+- Status: active | Review-by: 2026-08-07
+
+### L-005 — Cross-check extreme oil/WTI source dispersion
+- Date: 2026-07-24 | Source: WEEKLY-REVIEW 2026-07-24 Adjustments (Jul 24 WTI $70-71 vs Jul 22-23 $86-90 dispersion)
+- Lesson: Oil price reads swung >15% across sources/sessions with no
+  resolution, undermining the Energy/Materials sector-momentum thesis
+  behind several watchlist names.
+- Directive: When WTI/Brent cross-source dispersion exceeds ~10% in a
+  single session, cross-check via `alpaca.sh bars` on a liquid oil proxy
+  (USO/XLE) before treating either cluster as the operative read.
+- Status: active | Review-by: 2026-08-07
+
+### L-006 — Flag same-week ex-div/analyst-action risk at entry
+- Date: 2026-07-24 | Source: WEEKLY-REVIEW 2026-07-24 Adjustments (KALU stopped out after downgrade + ex-div + profit-taking stacked within 24h of entry)
+- Lesson: KALU's entry had three negative-for-price events land within a
+  day of the fill (Wells Fargo downgrade, ex-dividend, profit-taking) —
+  none were flagged at entry because the checklist only checks the
+  headline catalyst.
+- Directive: At market-open re-validation for any new entry, explicitly
+  check for a same-week ex-dividend date or a recent/pending analyst
+  action and note it in the trade log, even if it doesn't block entry.
+- Status: active | Review-by: 2026-08-07
 
 ## Retired Lessons
 
-- (none yet — one line each: L-NNN, title, retired YYYY-MM-DD, reason)
+- L-003, "Widen watchlist beyond recycled tickers", retired 2026-07-24,
+  promoted to a permanent process rule (TRADING-STRATEGY.md Buy-Side Gate)
+  after 2 straight weeks of compliance sustaining the pipeline that
+  surfaced KALU's catalyst.
 
 ## Decision Scoreboard
 
@@ -59,10 +84,10 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-07-06 | KALU | HOLD — no dated catalyst | 178.81 | | |
-| 2026-07-06 | GRC | HOLD — no dated catalyst | 84.84 | | |
-| 2026-07-06 | FTAI | HOLD — no dated catalyst | 241.45 | | |
-| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | 979.36 | | |
+| 2026-07-06 | KALU | HOLD — no dated catalyst | 178.81 | -11.68% | avoided-loss |
+| 2026-07-06 | GRC | HOLD — no dated catalyst | 84.84 | -7.50% | avoided-loss |
+| 2026-07-06 | FTAI | HOLD — no dated catalyst | 241.45 | -13.09% | avoided-loss |
+| 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | 979.36 | -13.26% | avoided-loss |
 | 2026-07-20 | LNG | HOLD — Qatar supply-shock claim uncorroborated | 262.60 | | |
 | 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | | |
 | 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | | |

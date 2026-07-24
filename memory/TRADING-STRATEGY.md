@@ -38,6 +38,11 @@ If any fail, the trade is skipped and the reason is logged.
   account).
 - A specific catalyst is documented in today's research log entry.
 - The instrument is a stock (not an option, not anything else).
+- If the no-trade streak has reached 5+ consecutive sessions (stall-breaker
+  armed), the day's pre-market research MUST include a watchlist refresh
+  (drop stale/unverifiable names, add fresh candidates from a broadened
+  sector screen) before the gate is evaluated — a refresh is not optional
+  while the stall-breaker is armed.
 
 ## Sell-Side Rules
 
@@ -70,3 +75,4 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | Date | Rule | Old -> New | Reason / Evidence |
 |------|------|------------|-------------------|
 | 2026-07-06 | (baseline) | — -> v1 scaffold ruleset | Initial rules; no changes yet |
+| 2026-07-24 | Buy-Side Gate | (none) -> mandatory watchlist refresh when stall-breaker armed (>=5 no-trade sessions) | Promoted from LESSONS.md L-003 (2026-07-10), complied with every session for 2 straight weeks (Jul 10-24), directly sustaining the pipeline that surfaced KALU's catalyst. Process addition only, not a risk-rule change. |
