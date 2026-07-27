@@ -147,3 +147,12 @@ No positions yet. Bot launches tomorrow.
 | — | — | — | — | — | — | — |
 
 **Notes:** 1st consecutive no-trade day (streak restarted — KALU's 10% GTC trailing stop triggered automatically pre-market today, an exit not a new BUY entry; last new-entry trade was Jul 23's KALU buy). Account flat: 0 open positions, 0 open orders, 100% cash. Day P&L -$1,617.28 (-1.61%) driven entirely by the KALU stop-out (realized -$1,190.08); Phase P&L now -$1,190.09 (-1.19%) since $100,000 start. One trade (BUY) placed this week (1/3 cap used, Week 3) — the SELL exit does not count against the cap. Watchlist unchanged: GRC (~Jul 24, print still unconfirmed), XLE/Energy, LNG, FANG, VMC, FCX, XOM, CVX, ECL (earnings Jul 28).
+
+### Jul 27 — EOD Snapshot (Day 16, Monday)
+**Portfolio:** $98,809.88 | **Cash:** $98,809.88 (100.00%) | **Day P&L:** -$0.03 (0.00%) | **Phase P&L:** -$1,190.12 (-1.19%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
+
+**Notes:** 2nd consecutive no-trade day (weekend gap since Jul 24's KALU stop-out; no trades placed today). Account flat: 0 open positions, 0 open orders, 100% cash. Day P&L essentially flat (-$0.03) vs Friday's close; Phase P&L -$1,190.12 (-1.19%) since $100,000 start. Zero trades this week so far (0/3 cap used, Week 4). Pre-market HOLD — US-Iran ceasefire drove an oil selloff (headwind for oil-linked watchlist names), no name-level catalyst cleared the buy-side gate; XOM's -3% premarket reaction was dated but negative, not a buy trigger. Watchlist unchanged: GRC, XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3-4), VMC (earnings Jul 29), FCX, XOM (earnings Jul 31), CVX (earnings Jul 31), ECL (earnings Jul 28), GEV (avoid).
