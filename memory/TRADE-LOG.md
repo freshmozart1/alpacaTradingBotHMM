@@ -156,3 +156,11 @@ No positions yet. Bot launches tomorrow.
 | — | — | — | — | — | — | — |
 
 **Notes:** 2nd consecutive no-trade day (weekend gap since Jul 24's KALU stop-out; no trades placed today). Account flat: 0 open positions, 0 open orders, 100% cash. Day P&L essentially flat (-$0.03) vs Friday's close; Phase P&L -$1,190.12 (-1.19%) since $100,000 start. Zero trades this week so far (0/3 cap used, Week 4). Pre-market HOLD — US-Iran ceasefire drove an oil selloff (headwind for oil-linked watchlist names), no name-level catalyst cleared the buy-side gate; XOM's -3% premarket reaction was dated but negative, not a buy trigger. Watchlist unchanged: GRC, XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3-4), VMC (earnings Jul 29), FCX, XOM (earnings Jul 31), CVX (earnings Jul 31), ECL (earnings Jul 28), GEV (avoid).
+
+### Jul 28 — BUY ECL (Day 19, Tuesday) — streak broken (0/3 trades this week used before this trade)
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|---|---|---|---|---|---|---|---|---|
+| 2026-07-28 | ECL | BUY | 70 | $281.93 (avg fill) | $251.01 (10% trailing GTC, order 64b1066c, HWM $278.905) | Q2 2026 earnings released before today's open — first fresh, today-dated, name-specific catalyst to clear the gate this week; positive market reaction confirmed via `alpaca.sh bars` (first 5-min bar closed $278.84, +2.7% vs Jul 27 close $271.48; `quote` endpoint again showed the known corrupted wide-spread anomaly, cross-checked via bars per standing workaround). Specific EPS/revenue beat-miss detail not yet indexed by Perplexity at trade time (checked, no confirmed print in secondary sources) — catalyst counted per L-004's bars-confirmation clause, not a stale/fabricated claim. Materials/Chemicals sector in confirmed YTD momentum. L-006 check: no same-week ex-dividend (last ex-div Jun 16, next not until ~Sept) or pending analyst action found. | ~$338 (+20%, exceeds min 2:1 R/R off 10% stop) | ~2.2:1 |
+
+**Fill details:** Market buy order ed882ba4, filled 70 shares @ avg $281.93 (cost basis $19,735.10, 19.97% of equity — within 20% cap). Trailing stop GTC (10%) order 64b1066c confirmed resting, stop price $251.0145, HWM $278.905. Confirmed via `alpaca.sh orders`/`positions` before logging. Account after fill: equity $98,598.13, cash $79,074.78. One trade placed this week (1/3 cap used, Week 4).
