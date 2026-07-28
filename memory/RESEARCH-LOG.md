@@ -910,3 +910,11 @@ No trade idea clears the buy-side gate as of this pre-open check. One name to re
 
 ### Decision
 **HOLD (pending ECL re-check at market-open)** — no name-level catalyst clears the buy-side gate as of this pre-open scan. ECL's today-dated Q2 earnings is the one item to re-verify the moment trading starts (STEP 2 of market-open.md); every other watchlist name has zero clean today-dated, gate-clearing catalyst. Stall-breaker not armed (streak 2). No new watchlist names added, no new Decision Scoreboard rows (ECL/LNG/FANG/VMC/FCX/XOM/CVX/GEV already have open rows from prior sessions). Carry forward watchlist: GRC (no fresh catalyst), XLE/Energy (sector color), LNG (recycled stale narrative, earnings Aug 6), FANG (no fresh catalyst, earnings Aug 3), VMC (no fresh catalyst, earnings Jul 29), FCX (no fresh catalyst, post-earnings), XOM (no fresh catalyst, earnings Jul 31), CVX (unconfirmed PT-raise date, earnings Jul 31), ECL (fresh but unconfirmed catalyst — re-check at open), GEV (negative-dated downgrade, thesis unchanged, avoid).
+
+### Jul 28 — Midday Addendum
+
+- ECL (only open position, 70 sh @ $281.93 avg entry, filled this morning): unrealized -0.30% (-$59.50), current $281.08 vs entry $281.93 — flat/slightly down since fill but still +3.57% vs yesterday's close ($271.38). No action per STEP 3 (nowhere near -7% cut) or STEP 4 (nowhere near +15%/+20% tighten thresholds). Trailing stop GTC 64b1066c confirmed still resting, stop $256.491, HWM $284.99, unchanged since this morning's fill.
+- Thesis check (STEP 5): Perplexity check on ECL midday news found no new catalyst or analyst action since this morning's Q2 print — EPS $1.70 matched consensus, revenue +10% YoY, consensus rating still Buy (median PT ~$285.55). Sources were the usual mix of stale/mistimed snippets (per L-001/L-002 pattern) but nothing contradicts the entry thesis. Thesis intact, no cut warranted.
+- STEP 6 (optional intraday research): not triggered — no sharp/unexplained move today.
+- STEP 7 verification: `alpaca.sh positions`/`orders` re-checked after review, confirms no drift (position and stop order both unchanged).
+- Action taken this scan: none. STEP 8 notification skipped per routine (no action taken).
