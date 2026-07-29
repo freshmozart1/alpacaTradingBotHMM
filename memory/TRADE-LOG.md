@@ -174,3 +174,12 @@ No positions yet. Bot launches tomorrow.
 | ECL | 70 | $281.93 | $282.90 | +4.25% | +$67.90 (+0.34%) | $256.49 (10% trail, GTC 64b1066c, HWM $284.99) |
 
 **Notes:** Streak reset — trade(s) placed today (ECL buy this morning, 70 sh @ $281.93 avg, 19.97% of equity, on Q2 earnings). Position closed the day up 0.34% unrealized (+4.25% vs yesterday's close), trailing stop confirmed resting and already ratcheted to $256.49 as HWM climbed to $284.99 intraday. One trade this week (1/3 cap used, Week 4). Portfolio 20.03% deployed / 79.97% cash, below the 75-85% target band — room for 1-2 more names before hitting the 5-6 position cap. Watchlist unchanged: GRC, XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3-4), VMC (earnings Jul 29), FCX, XOM (earnings Jul 31), CVX (earnings Jul 31), GEV (avoid).
+
+
+### Jul 29 — Market-Open Check (Day 20, Wednesday) — no new trade
+
+**Account:** Equity $98,863.07 | Cash $79,074.77 (79.97%) | 1 open position (ECL, 70 sh), 1 open order (ECL trailing stop GTC).
+
+**Held position check:** ECL unrealized -0.64% (-$126.35), current $280.125 vs entry $281.93 — small pullback, nowhere near -7% cut or +15%/+20% tighten thresholds. Trailing stop GTC 64b1066c confirmed resting, stop $257.112, HWM $285.68 (ratcheted up from $284.99). No action taken.
+
+**Gate check on new entries:** Confirmed real, today-dated, bars-confirmed oil/energy-sector catalyst (Iran/Strait of Hormuz escalation) — XLE +2.8%, XOM +3.32%, CVX +2.95%, FANG +4.03% at market-open re-validation (13:30-13:34 UTC), resolving the usual pre-open WTI/Brent source dispersion in favor of "real move" per L-005. All three technically clear the mechanical buy-side gate checklist (positions/trades/cash/size caps all pass, catalyst documented+bars-confirmed). Held off anyway: today's 2:00pm ET FOMC decision is the single biggest scheduled catalyst of the session and could sharply reverse a headline-driven morning spike within hours of any new entry; XOM/CVX additionally stack Jul 31 earnings two sessions out. VMC's Q2 earnings pop (own watchlist name) faded from +2.7% to +0.85% within 3 minutes of open and carries a pre-existing negative-ESP/Russell-removal overhang — not a clean trigger either. Full reasoning in RESEARCH-LOG.md 2026-07-29 entry. No trade placed today — trades this week remain at 1/3 used (Week 4, ECL buy Jul 28), 2 slots still available. Watchlist unchanged: GRC, XLE/Energy, LNG, FANG (re-check post-FOMC), VMC (fading pop, avoid), FCX, XOM (re-check post-FOMC, earnings Jul 31), CVX (re-check post-FOMC, earnings Jul 31), GEV (avoid).
