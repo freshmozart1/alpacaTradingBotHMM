@@ -183,3 +183,19 @@ No positions yet. Bot launches tomorrow.
 **Held position check:** ECL unrealized -0.64% (-$126.35), current $280.125 vs entry $281.93 — small pullback, nowhere near -7% cut or +15%/+20% tighten thresholds. Trailing stop GTC 64b1066c confirmed resting, stop $257.112, HWM $285.68 (ratcheted up from $284.99). No action taken.
 
 **Gate check on new entries:** Confirmed real, today-dated, bars-confirmed oil/energy-sector catalyst (Iran/Strait of Hormuz escalation) — XLE +2.8%, XOM +3.32%, CVX +2.95%, FANG +4.03% at market-open re-validation (13:30-13:34 UTC), resolving the usual pre-open WTI/Brent source dispersion in favor of "real move" per L-005. All three technically clear the mechanical buy-side gate checklist (positions/trades/cash/size caps all pass, catalyst documented+bars-confirmed). Held off anyway: today's 2:00pm ET FOMC decision is the single biggest scheduled catalyst of the session and could sharply reverse a headline-driven morning spike within hours of any new entry; XOM/CVX additionally stack Jul 31 earnings two sessions out. VMC's Q2 earnings pop (own watchlist name) faded from +2.7% to +0.85% within 3 minutes of open and carries a pre-existing negative-ESP/Russell-removal overhang — not a clean trigger either. Full reasoning in RESEARCH-LOG.md 2026-07-29 entry. No trade placed today — trades this week remain at 1/3 used (Week 4, ECL buy Jul 28), 2 slots still available. Watchlist unchanged: GRC, XLE/Energy, LNG, FANG (re-check post-FOMC), VMC (fading pop, avoid), FCX, XOM (re-check post-FOMC, earnings Jul 31), CVX (re-check post-FOMC, earnings Jul 31), GEV (avoid).
+
+### Jul 29 — Midday Scan (Day 20, Wednesday) — no action
+
+**Account:** Equity check via `alpaca.sh positions`: ECL 70 sh, market value $19,693.10, unrealized -0.21% (-$42.00), current $281.33 vs entry $281.93 (intraday -0.55% vs yesterday's $282.90 close). 1 open order (ECL trailing stop GTC 64b1066c, stop $257.112, HWM $285.68, unchanged from market-open check).
+
+**STEP 3 (cut losers):** N/A — ECL unrealized -0.21%, nowhere near -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — ECL not up +15%/+20%; no tightening triggered. Stop unchanged at $257.112.
+
+**STEP 5 (thesis check):** ECL thesis (Q2 earnings beat, positive market reaction) intact — today's -0.55% intraday move is a modest pullback, not a thesis break; no midday news found suggesting the earnings catalyst was invalidated. No action.
+
+**STEP 6 (optional research):** Skipped — no unexplained sharp move in ECL or elsewhere requiring a Perplexity check. 2:00pm ET FOMC decision (flagged in this morning's research) has not yet occurred at scan time (16:02 UTC); remains the key risk factor for the rest of the session, to be reassessed at next scan/pre-market if it moves ECL or watchlist names.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (1 position, 1 order, both unchanged).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
