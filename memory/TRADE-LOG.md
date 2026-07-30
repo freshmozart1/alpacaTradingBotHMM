@@ -216,3 +216,19 @@ No positions yet. Bot launches tomorrow.
 **Held position check:** ECL unrealized -1.16% (-$229.60), current $278.65 vs entry $281.93 — intraday -1.78% vs yesterday's $283.70 close, broad post-FOMC/GDP-data digestion pullback, nowhere near -7% cut or thesis break (no negative ECL-specific news found; FY26 guidance raise from Jul 28 print still stands). Trailing stop GTC 64b1066c confirmed resting, stop $257.112, HWM $285.68 (unchanged). No action taken — sell-side rules evaluated at midday scan per strategy.
 
 **Gate check on new entries:** GRC's Q2 2026 EPS beat ($0.74 vs ~$0.69-0.71 est) was the lead candidate from pre-market research, but its dating was already flagged unconfirmed per L-004. Re-validated live at market-open (13:30-13:47 UTC): `alpaca.sh bars` (1Min and 5Min) returned zero prints for GRC ~17 minutes into the session, and `quote` showed the standing corrupted wide-spread anomaly — no bars-confirmable reaction available, so the catalyst cannot be counted per L-004's confirmation standard. Gate-fail logged (Decision Scoreboard row added in RESEARCH-LOG.md pre-market entry, Ref close $78.46). No other watchlist name (LNG, FANG, VMC, FCX, XOM, CVX, GEV) had a fresh today-dated catalyst per the pre-market scan. No trade placed today — trades this week remain at 1/3 used (Week 4, ECL buy Jul 28), 2 slots still available. Full reasoning in RESEARCH-LOG.md 2026-07-30 entry. Watchlist unchanged: GRC (thin liquidity, unconfirmed), XLE/Energy (sector color), LNG (recycled narrative), FANG (earnings Aug 3), VMC (already-actioned Jul 29, avoid), FCX (no fresh catalyst), XOM/CVX (earnings Jul 31), GEV (avoid).
+
+### Jul 30 — Midday Scan (Day 21, Thursday) — no action
+
+**Account:** ECL 70 sh, market value $19,374.25, unrealized -1.83% (-$360.85), current $276.775 vs entry $281.93 (intraday -2.44% vs yesterday's $283.70 close). 1 open order (ECL trailing stop GTC 64b1066c, stop $257.112, HWM $285.68, unchanged from market-open check).
+
+**STEP 3 (cut losers):** N/A — ECL unrealized -1.83%, nowhere near -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — ECL not up +15%/+20%; no tightening triggered. Stop unchanged at $257.112.
+
+**STEP 5 (thesis check):** Perplexity check on today's ECL move found no fundamental/thesis break — Q2 beat and raised FY26 guidance ($8.05-$8.25) still stand; decline attributed to post-earnings profit-taking/valuation reset (one source flagged ~30% overvalued on AI-cooling growth story), CoolIT acquisition near-term EPS drag (~$0.20 2H) already known at entry, and commodity/logistics cost inflation pressuring margins. BofA reaffirmed Buy, $335 PT, unchanged. Thesis intact — no action.
+
+**STEP 6 (optional research):** Perplexity check run under STEP 5 (intraday move not sharp enough alone to trigger, but folded into thesis check). No further research needed.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (1 position, 1 order, both unchanged).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
