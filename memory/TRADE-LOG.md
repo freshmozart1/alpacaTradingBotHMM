@@ -199,3 +199,12 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (1 position, 1 order, both unchanged).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Jul 30 — EOD Snapshot (Day 21, Thursday)
+**Portfolio:** $98,933.77 | **Cash:** $79,074.77 (79.93%) | **Day P&L:** +$56.00 (+0.06%) | **Phase P&L:** -$1,066.23 (-1.07%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| ECL | 70 | $281.93 | $283.70 | 0.00% | +$123.90 (+0.63%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
+
+**Notes:** 2nd consecutive no-trade day (Jul 29 = 1st; no trade today). No EOD snapshot was logged for Jul 29 (routine gap — only Market-Open and Midday Scan entries exist that day); Day P&L here is computed against Alpaca's `last_equity` ($98,877.77), which reflects Jul 29's actual close, so continuity is unbroken despite the missing log entry. One trade placed this week (1/3 cap used, Week 4, ECL buy Jul 28) — 2 slots still available. Portfolio 20.07% deployed / 79.93% cash, below the 75-85% target band. ECL flat on the day (HWM unchanged at $285.68, stop unchanged $257.112, unrealized +0.63%) — nowhere near -7% cut or +15%/+20% tighten thresholds. Watchlist unchanged: GRC, XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3-4), VMC (fading pop, avoid), FCX, XOM (earnings Jul 31), CVX (earnings Jul 31), GEV (avoid).
