@@ -96,3 +96,4 @@ than 10 sessions are pruned.
 | 2026-07-21 | CVX | HOLD — oil-driven momentum, no fresh dated catalyst | 189.25 | | |
 | 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | | |
 | 2026-07-22 | GEV | HOLD — reports before today's open, not buyable pre-print | 1077.75 | | |
+| 2026-07-30 | GRC | HOLD — Q2 beat catalyst, source dating unconfirmed (L-004), pending bars re-check at open | 78.46 | | |
