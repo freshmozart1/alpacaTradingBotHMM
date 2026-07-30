@@ -975,3 +975,57 @@ LNG -4.03% (252.14 vs 262.60 Ref) — avoided-loss holding up. FANG -2.70% (190.
 
 ### Decision
 **HOLD (no new entries today)** — the oil/energy catalyst behind XOM/CVX/FANG is genuinely fresh and bars-confirmed (unlike prior sessions' stale narratives), but today's 2pm ET FOMC decision is a major same-day event risk that could reverse a headline-driven morning spike within hours; XOM/CVX further stack Jul 31 earnings on top. Per "Patience > activity," deferring new entries until after the FOMC decision resolves — re-evaluate FANG/XOM/CVX at midday scan or tomorrow's pre-market if the sector move holds post-FOMC. VMC's earnings pop is separately unconvincing (fading fast, negative-ESP/Russell overhang) regardless of FOMC timing. No new watchlist names added; no new Decision Scoreboard rows (all watchlist tickers already have open rows from prior sessions). ECL (held) requires no action — thesis intact, stop resting. Stall-breaker not armed (streak 0).
+
+## 2026-07-30 — Pre-market Research (run inline at market-open, RESEARCH-LOG entry missing)
+
+### Account
+- Equity: $98,933.77 | Cash: $79,074.77 (79.93%) | Buying power: $371,904.28 (margin, effective)
+- Position market value: $19,859.00. 1 open position (ECL, 70 sh), 1 open order (ECL trailing stop GTC 64b1066c).
+- Daytrade count: 0. Day 21 (Week 4, Thursday). 1 consecutive no-trade day entering today (last trade ECL buy Jul 28; Jul 29 was a no-trade day).
+
+### Market Context
+- WTI/Brent: today-dated sources cluster $70-74 WTI / $74-78 Brent (Oilprice.com $71.10/$74.76, oilpriceapi.com $73.65/$78.27, crudeoilprices.today $70.32-70.42/$74.12) — dispersion under ~10%, no L-005 bars cross-check triggered; one stale Jun-5 Bloomberg print ($90.54/$93.09) and a stale Mar-2026 Markets Insider print correctly excluded.
+- S&P 500 futures: steadying premarket (E-minis ~+0.3-0.4%) after yesterday's post-FOMC selloff (S&P -1.3%, Nasdaq -1.7% on Jul 29 per Reuters/Bloomberg), helped by Microsoft's after-hours beat (stock +9% premarket) offsetting lingering Fed-hawkish/yield concerns.
+- VIX: ~18.91 (Jul 29 close 18.21), modestly elevated but no stress signal. MarketWatch's 20.95 "+12.39%" print resurfaced again — same stale Feb-2026 artifact flagged repeatedly under L-002, discounted.
+- FOMC: decision already landed yesterday (Jul 29, 2pm ET) — held rates 3.50-3.75%, no new decision today. Today's major releases: Q2 GDP advance estimate, June Core PCE, Personal Income/Spending, initial jobless claims, Chicago PMI, Michigan sentiment final — all 8:30-10:00am ET window. No CPI/PPI/jobs report today.
+- Earnings before open: Mastercard (MA), Altria (MO) confirmed BMO; own-watchlist names GRC (Gorman-Rupp) and VMC (Vulcan, per one source, though this conflicts with our own bars showing VMC's earnings reaction already happened Jul 29 — see Lessons Check L-004). Apple (AAPL) reports after close; Amazon (AMZN) time TBD.
+- Sector momentum: sources dispersed as usual but consistent story — Energy and Materials still top YTD leaders (ranges cited: Energy +15-24%, Materials +9-17% depending on source/date), Info Tech/Financials lagging in some cuts. Same qualitative picture as prior sessions.
+- Market regime (HMM): **Bull, confidence 85.7%, 36 days in current regime** (500 obs, SPY 2y daily). Advisory only.
+- Held tickers: ECL (70 sh, unrealized +0.63% / +$123.90 at last check, current $283.70 vs entry $281.93) — flat/small gain, nowhere near -7% cut, +15%/+20% tighten, or thesis break. Fresh catalyst check below confirms thesis intact and reinforced (raised FY26 guidance).
+
+### Lessons Check
+- L-001 (XLE/MU unreliable) — N/A, no XLE/MU query run today (XLE only referenced as sector color, not priced via Perplexity).
+- L-002 (verify suspect repeated macro prints) — complied. MarketWatch's 20.95 VIX print flagged again as the same recurring stale Feb-2026 artifact; used the 18.21/18.91 cluster instead.
+- L-004 (widen earnings-print verification) — **triggered, not yet resolved**. Two conflicts found: (1) GRC — Perplexity reports a Q2 2026 beat (EPS $0.74 vs ~$0.69-0.71 est, revenue $186.1M slight miss) but source dates are ambiguous; (2) VMC — one source dates Vulcan's "Q2 2026 earnings release and conference call" as **today, Jul 30**, directly conflicting with our own bars-confirmed record that VMC's Q2 print/reaction already happened **Jul 29** (opened $296.14 +2.7%, faded to close $284.00). Neither counts toward the gate until confirmed via `alpaca.sh bars`/quote post-open — GRC is the one to actively re-check at STEP 2 of market-open; VMC's Jul 30 dating is treated as a stale/mistimed source per the established pattern and NOT re-actioned as a fresh catalyst.
+- L-005 (cross-check extreme oil dispersion) — complied. Today-dated WTI/Brent reads cluster within ~10%; stale Jun-5/Mar outliers excluded, no bars cross-check needed.
+- L-006 (same-week ex-div/analyst-action risk at entry) — N/A, no new entry planned pre-open; noted for awareness only: ECL (held) has no same-week ex-div or fresh negative analyst action found (BofA reaffirmed Buy $335 PT).
+
+### Yesterday's Skip Check (vs Decision Scoreboard Ref close, via `bars` — `quote` endpoint again showing corrupted wide spreads for all watchlist names, cross-checked via bars instead)
+LNG -1.48% (258.705 vs 262.60 Ref), FANG +1.80% (199.08 vs 195.55), VMC -1.45% (284.00 vs 288.17), FCX +2.85% (60.035 vs 58.37), XOM +5.70% (156.86 vs 148.40 — now solidly in "missed" territory), CVX +1.46% (192.02 vs 189.25), GEV -16.51% (899.81 vs 1077.75 — avoided-loss confirming further). XOM remains the clearest "missed" skip; GEV remains the clearest "avoided-loss."
+
+### Stall-Breaker
+**Not armed** — consecutive no-trade-day count entering today is 1 (< 5-session threshold). No watchlist refresh required.
+
+### Watchlist Catalyst Scan
+- **GRC** — fresh Q2 2026 EPS beat ($0.74 vs ~$0.69-0.71 est) reported, revenue slight miss ($186.1M vs $188.1M est); debt reduced $33.0M in H1. Source dating unconfirmed (L-004) — re-verify via `bars` at market-open re-validation; if a clean, sustained positive reaction is bars-confirmed post-open, this is the lead candidate today.
+- **LNG** — Cheniere cited at "all-time high" on the recycled Qatar/Ras Laffan disruption narrative plus a new Galp LNG sales agreement and a routine $0.555 dividend declaration — no new dated catalyst beyond the same story flagged stale in prior sessions; does not clear the gate without a fresh, independently-dated trigger.
+- **FANG** — no fresh Jul 30-dated catalyst; earnings Aug 3 after close (unchanged).
+- **VMC** — per L-004, treated as already-actioned (Jul 29 earnings, faded reaction); the "Jul 30 call" date in today's Perplexity result is not trusted per the standing stale-source pattern. No fresh catalyst today.
+- **FCX** — no fresh catalyst; Grasberg guidance-cut overhang from last week persists.
+- **XOM / CVX** — no fresh Jul 30-dated catalyst; both report Q2 earnings tomorrow (Jul 31), oil-driven momentum narrative continues unchanged.
+- **GEV** — no fresh catalyst; thesis (avoid, post-earnings-selloff/guidance-raise already priced) unchanged.
+- **XLE (Energy proxy)** — sector color only, no name-specific catalyst.
+
+### Trade Ideas
+1. **GRC** — catalyst: Q2 2026 EPS beat ($0.74 vs ~$0.70 est), debt paydown. **Ends HOLD pending bars confirmation** — source dating unconfirmed per L-004; re-verify at market-open re-validation (STEP 2 of market-open.md) before this can clear the buy-side gate. If confirmed with a clean sustained pop, entry/stop/target to be set per the Entry Checklist (stop 7-10% below entry, target >=2:1 R/R) only after confirmation.
+2. No other watchlist name reaches TRADE threshold today: LNG (recycled stale narrative), FANG/XOM/CVX (no fresh dated catalyst, oil momentum unchanged), VMC (already-actioned per L-004), FCX/GEV (no fresh catalyst).
+
+### Risk Factors
+- GRC and VMC earnings-print dating both flagged under L-004 — do not act on either headline until independently confirmed via `alpaca.sh bars`/quote post-open.
+- Yesterday's post-FOMC selloff (S&P -1.3%, Nasdaq -1.7%) shows the market is still digesting a hawkish-leaning Fed hold; today's Q2 GDP/Core PCE prints (8:30am ET) could add fresh volatility ahead of any new entry.
+- Heavy earnings day (MA, MO, AAPL after close, AMZN) adds broad index volatility risk unrelated to the Energy/Materials watchlist but a general consideration.
+- XOM/CVX skip continues drifting into "missed" territory (+5.70%/+1.46% vs Ref) — no action required (both correctly skipped for lacking a dated catalyst at the time), flagging for weekly review scoring.
+- ECL (held): unrealized +0.63%, nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 64b1066c confirmed resting ($257.112, HWM $285.68). Thesis reinforced by yesterday's raised FY26 guidance/UBS-Citi bullishness — no action.
+
+### Decision
+**HOLD (pending GRC re-check at market-open)** — no name-level catalyst cleanly clears the buy-side gate as of this pre-open scan; GRC's Q2 beat is the one item to re-verify the moment trading starts (STEP 2 of market-open.md) per L-004. Every other watchlist name has zero clean today-dated, gate-clearing catalyst (LNG recycled, FANG/XOM/CVX oil-momentum-only, VMC already-actioned Jul 29, FCX/GEV unchanged-avoid). Stall-breaker not armed (streak 1). No new watchlist names added, no new Decision Scoreboard rows (all watchlist tickers already have open rows from prior sessions). ECL (held) requires no action — thesis intact and reinforced, stop resting. Carry forward watchlist: GRC (re-check bars at open), XLE/Energy (sector color), LNG (recycled narrative), FANG (earnings Aug 3), VMC (already-actioned, avoid), FCX (no fresh catalyst), XOM/CVX (earnings Jul 31), GEV (avoid).
