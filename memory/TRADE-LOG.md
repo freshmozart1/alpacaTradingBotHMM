@@ -199,3 +199,12 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (1 position, 1 order, both unchanged).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Jul 29 — EOD Snapshot (Day 20, Wednesday)
+**Portfolio:** $98,933.77 | **Cash:** $79,074.77 (79.93%) | **Day P&L:** +$56.00 (+0.06%) | **Phase P&L:** -$1,066.23 (-1.07%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| ECL | 70 | $281.93 | $283.70 | 0.00% | +$123.90 (+0.63%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
+
+**Notes:** 1st consecutive no-trade day (last trade was Jul 28's ECL buy). One trade placed this week (1/3 cap used, Week 4, ECL buy Jul 28) — 2 slots still available. Portfolio 20.07% deployed / 79.93% cash, below the 75-85% target band. ECL flat on the day (HWM unchanged at $285.68, stop unchanged $257.112, unrealized +0.63%) — nowhere near -7% cut or +15%/+20% tighten thresholds. FOMC decision (2:00pm ET) resolved with no thesis-breaking move in ECL. Watchlist unchanged: GRC, XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3-4), VMC (fading pop, avoid), FCX, XOM (earnings Jul 31), CVX (earnings Jul 31), GEV (avoid).
