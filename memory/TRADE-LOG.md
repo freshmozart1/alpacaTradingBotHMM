@@ -267,3 +267,19 @@ No positions yet. Bot launches tomorrow.
 | Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
 |------|--------|------|--------|-------|------|--------|--------|-----|
 | 2026-07-31 | CVX | BUY | 95 | $193.860947 (blended avg fill) | $174.366 / $173.6145 (two 10% trailing GTC orders, 7f5acb83 + e328a200) | Q2 2026 EPS $6.06 vs ~$5.79 est, highest quarterly profit in 6 years, Hess acquisition delivered $1.5B synergies 6 months ahead of schedule, dividend/buyback range maintained; bars-confirmed +1.15% reaction at open; Energy sector in confirmed YTD momentum; no same-week ex-div, no recent analyst action (L-006 checked) | ~$233 (+20%, meets min 2:1 R/R off 10% stop) | ~2:1 |
+
+### Jul 31 — Midday Scan (Day 22, Friday) — no action
+
+**Account:** 2 open positions — CVX 95 sh, unrealized +0.36% (+$66.41), current $194.56 vs entry $193.860947 (intraday +1.17% vs yesterday's $192.31 close); ECL 70 sh, unrealized -1.71% (-$337.75), current $277.105 vs entry $281.93 (intraday -0.8% vs yesterday's $279.34 close). 3 open orders: CVX trailing stops GTC 7f5acb83 (54 sh, stop $175.482, HWM $194.98) + e328a200 (41 sh, stop $175.482, HWM $194.98), both ratcheted up from this morning's fill-time HWM ($193.74/$192.905); ECL trailing stop GTC 64b1066c (70 sh, stop $257.112, HWM $285.68, unchanged).
+
+**STEP 3 (cut losers):** N/A — CVX +0.36%, ECL -1.71%, both nowhere near -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — neither position up +15%/+20%. No tightening triggered; both stops unchanged from market-open levels (CVX HWM ratcheted mechanically to $194.98 as price ticked up, ECL unchanged).
+
+**STEP 5 (thesis check):** CVX thesis (Q2 beat, highest quarterly profit in 6 years, Hess synergies ahead of schedule) intact — today's +1.17% intraday move extends this morning's bars-confirmed positive open reaction, no negative news found. ECL thesis (Q2 beat, raised FY26 guidance) intact — today's -0.8% intraday move is a modest continuation of the post-earnings pullback already explained (profit-taking/valuation reset, CoolIT EPS drag, cost inflation), not a new thesis break. No action.
+
+**STEP 6 (optional research):** Skipped — neither position moved sharply enough intraday (CVX +1.17%, ECL -0.8%) to warrant an unexplained-move Perplexity check.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (2 positions, 3 orders, all unchanged in structure; CVX stop HWM auto-ratcheted with price per normal trailing-stop mechanics).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
