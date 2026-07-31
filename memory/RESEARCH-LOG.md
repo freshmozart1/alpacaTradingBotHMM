@@ -1029,3 +1029,65 @@ LNG -1.48% (258.705 vs 262.60 Ref), FANG +1.80% (199.08 vs 195.55), VMC -1.45% (
 
 ### Decision
 **HOLD (pending GRC re-check at market-open)** — no name-level catalyst cleanly clears the buy-side gate as of this pre-open scan; GRC's Q2 beat is the one item to re-verify the moment trading starts (STEP 2 of market-open.md) per L-004. Every other watchlist name has zero clean today-dated, gate-clearing catalyst (LNG recycled, FANG/XOM/CVX oil-momentum-only, VMC already-actioned Jul 29, FCX/GEV unchanged-avoid). Stall-breaker not armed (streak 1). No new watchlist names added, no new Decision Scoreboard rows (all watchlist tickers already have open rows from prior sessions). ECL (held) requires no action — thesis intact and reinforced, stop resting. Carry forward watchlist: GRC (re-check bars at open), XLE/Energy (sector color), LNG (recycled narrative), FANG (earnings Aug 3), VMC (already-actioned, avoid), FCX (no fresh catalyst), XOM/CVX (earnings Jul 31), GEV (avoid).
+
+## 2026-07-31 — Pre-market Research
+
+### Account
+- Equity: $98,346.47 | Cash: $79,074.77 (80.42%) | Buying power: $370,259.84 (margin, effective)
+- Position market value: $19,271.70 (ECL only, 19.59% deployed). 1 open position (ECL, 70 sh), 1 open order (ECL trailing stop GTC 64b1066c).
+- Daytrade count: 0. Day 22 (Week 4, Friday). 2 consecutive no-trade days entering today (last trade ECL buy Jul 28; Jul 29 and Jul 30 were no-trade days).
+
+### Market Context
+- WTI / Brent: today-dated cluster (Investing.com, 2026-07-31) **$72.27 WTI / $76.46 Brent**, consistent with a second today/Jul-30-dated cluster ($70.42/$74.12, crudeoilprices.today) — dispersion ~2.5%, well under the ~10% L-005 threshold, no bars cross-check triggered. Stale Jun-5 Bloomberg print ($90.54/$93.09) correctly excluded.
+- S&P 500 futures: modestly higher, mixed by feed (+0.27% CNBC, -0.05% MarketWatch, roughly flat-to-positive elsewhere); Nasdaq futures notably stronger (chip-sector rebound + Amazon earnings).
+- VIX: cluster ~17-19 (17.38 Investing.com, 16.90 Barchart, 19.31 Investing.com secondary, 17.98 WSJ) — no fresh stress signal. MarketWatch's 20.95 print resurfaced yet again — same recurring stale Feb-2026 artifact flagged repeatedly under L-002, discounted.
+- Today's catalysts: (1) **Amazon Q2 earnings beat, stock +13% premarket**, driving a broad tech/Nasdaq rebound; (2) **Apple Q2 earnings miss (Services/China revenue), stock -7.2% premarket**; (3) heavy BMO earnings slate: **XOM, ABBV, CVX, LIN, ETN, SONY, ENB, CL, IMO, D**; (4) Employment Cost Index (Q2), Chicago PMI, Michigan Consumer Sentiment (final) — all 8:30-10:00am ET.
+- Earnings before open — **both XOM and CVX (own watchlist names) already reported this morning, before this scan**:
+  - **XOM**: adjusted Q2 2026 EPS **$3.52** (GAAP $3.48) vs consensus ~$3.87-3.88 — a **miss** despite +136% YoY growth off last year's low base. Company had pre-signaled a windfall from the oil spike; actual print fell short of the raised bar.
+  - **CVX**: adjusted Q2 2026 EPS **$6.06** vs consensus ~$5.79 — a genuine **beat**, Reuters calls it Chevron's **highest quarterly profit in at least six years**. Dividend/buyback range maintained; Hess acquisition delivered $1.5B in deal synergies, six months ahead of schedule.
+  - Both prints are confirmed via primary sources (Reuters, FINVIZ/BusinessWire) with specific published numbers — not a stale-source misattribution — but **no market reaction is bars-confirmable yet**: `alpaca.sh bars XOM/CVX 1Min` for today returned null (pre-open, no prints), and `quote` shows the standing corrupted wide-spread anomaly for both (XOM bp/ap ~1.3% spread; CVX quote stale-timestamped from yesterday's close with a >10% spread). Per L-004, neither counts toward the gate until confirmed via bars post-open.
+- Economic calendar: no CPI/PPI/FOMC/jobs today (FOMC decision already resolved Jul 29; next jobs report Aug 7). Today: Employment Cost Index (Q2), Chicago PMI, Michigan Consumer Sentiment final — all releases largely priced as secondary to the earnings-driven tape.
+- Sector momentum: unchanged YTD leadership — Energy still the clear #1 leader (15.9-24.2% depending on source/date), Materials and Consumer Staples next tier, Financials and Consumer Discretionary lagging. Same qualitative picture as prior sessions, sources dispersed as usual on exact magnitudes.
+- Market regime (HMM): **Bull, confidence 73.34%, 37 days in current regime** (500 obs, SPY 2y daily). Advisory only — not an entry/exit trigger.
+- Held tickers: ECL (70 sh, unrealized -2.35% / -$463.40, current $275.31 vs entry $281.93, lastday $279.34) — small-to-moderate pullback, nowhere near -7% cut or +15%/+20% tighten thresholds, no thesis break identified. Trailing stop GTC 64b1066c confirmed resting, stop $257.112, HWM $285.68 (unchanged).
+
+### Lessons Check
+- L-001 (XLE/MU unreliable) — N/A, no direct XLE/MU query run this session (XLE referenced only as sector color).
+- L-002 (verify suspect repeated macro prints) — complied. MarketWatch's 20.95 VIX print flagged again as the same recurring stale Feb-2026 artifact; used the ~17-19 cluster instead.
+- L-004 (widen earnings-print verification) — **triggered, complied**. XOM and CVX Q2 prints are genuinely today-dated and independently confirmed via primary sources (Reuters/FINVIZ), not a stale-source misattribution — but neither has a bars-confirmable market reaction pre-open (1Min bars null for both). Per L-004's confirmation standard, neither catalyst counts toward the gate until re-verified at market-open re-validation (STEP 2 of market-open.md).
+- L-005 (cross-check extreme oil dispersion) — complied. Today-dated WTI/Brent reads cluster within ~2.5% dispersion, well under the ~10% threshold; no bars cross-check needed. Stale Jun-5 outlier correctly excluded.
+- L-006 (same-week ex-div/analyst-action risk at entry) — N/A, no new entry planned pre-open; noted for awareness only: ECL (held) has no fresh same-week ex-div or new analyst action found today.
+
+### Yesterday's Skip Check (vs Decision Scoreboard Ref close, via `bars` — `quote` endpoint again showing corrupted wide spreads for watchlist names, cross-checked via bars instead)
+GRC +2.45% (80.38 vs 78.46 Ref), LNG -1.80% (257.87 vs 262.60), FANG +2.19% (199.83 vs 195.55), VMC -5.88% (271.22 vs 288.17), FCX +8.67% (63.43 vs 58.37 — continuing to drift deeper into "missed" territory), XOM +5.86% (157.09 vs 148.40 — also solidly in "missed" territory), CVX +1.74% (192.54 vs 189.25), GEV -8.81% (982.80 vs 1077.75 — avoided-loss holding up strongly). FCX and XOM remain the two skips most likely to score "missed" at the next weekly review.
+
+### Stall-Breaker
+**Not armed** — consecutive no-trade-day count entering today is 2 (well under the 5-session threshold). No watchlist refresh required per L-003/TRADING-STRATEGY Buy-Side Gate.
+
+### Watchlist Catalyst Scan
+- **GRC** — no fresh Jul 31-dated catalyst; the Jul 24 Q2 beat is now 5 sessions stale. Does not clear the gate.
+- **XLE (Energy proxy)** — sector color only, no fresh name-specific catalyst today.
+- **LNG** — no fresh Jul 31-dated catalyst; the Galp SPA and "Asia LNG four-month high" items are recycled from Jul 24 or earlier. Next earnings Aug 6.
+- **FANG** — no fresh Jul 31-dated catalyst; earnings Aug 3-4 unchanged.
+- **VMC** — no fresh catalyst; already-actioned per L-004 (Jul 29 earnings, faded reaction, Russell-removal overhang). A Jul 31-dated Simply Wall St piece only rehashes the already-known Jul 29 move, not a new trigger.
+- **FCX** — no fresh catalyst; last week's earnings/Grasberg guidance-cut already reflected and priced in.
+- **XOM — HAS a fresh, today-dated Q2 earnings print but it's a MISS vs consensus** ($3.52 adjusted vs ~$3.87-3.88 est) despite +136% YoY growth. Market reaction unconfirmed pre-open (no bars yet). Even if premarket sentiment is favorable on the oil-spike narrative, a headline consensus miss is a weak setup for a fresh long — treat with skepticism at market-open re-validation.
+- **CVX — HAS a fresh, today-dated Q2 earnings BEAT** ($6.06 adjusted vs ~$5.79 est, highest quarterly profit in 6 years, dividend/buyback range maintained, Hess synergies $1.5B ahead of schedule) but **UNCONFIRMED** market reaction (no premarket bars, quote corrupted). Does not clear the gate yet — re-verify at market-open re-validation (STEP 2 of market-open.md) once trading starts. Lead candidate today if a clean, bars-confirmed positive reaction emerges.
+- **GEV** — no fresh catalyst; all coverage rehashes the already-logged Jul 22/27/30 earnings-guidance moves. Thesis (avoid, post-earnings-selloff) unchanged.
+
+### Trade Ideas
+No trade idea clears the buy-side gate as of this pre-open check. Two names to re-verify the moment trading starts:
+1. Watch only — **CVX** — Q2 2026 earnings beat (adjusted EPS $6.06 vs ~$5.79 est), highest quarterly profit in six years, dividend/buyback range maintained, Hess deal synergies ahead of schedule. Catalyst is dated today but unconfirmed pre-open (no bars). If market-open re-validation (STEP 2) shows a clean, bars-confirmed positive reaction, this is the lead candidate to clear the gate today — entry/stop/target to be set only after confirmation, per the Entry Checklist (stop 7-10% below entry, target >=2:1 R/R).
+2. Watch only, lower conviction — **XOM** — Q2 2026 earnings released today but adjusted EPS ($3.52) missed the ~$3.87-3.88 consensus despite the large YoY jump. Not expected to clear the gate unless market-open reaction is unambiguously positive; treat with more skepticism than CVX.
+3. No other watchlist name reaches TRADE threshold today: GRC/XLE/LNG/FANG/VMC/FCX/GEV all confirmed with zero clean today-dated, gate-clearing catalyst.
+
+### Risk Factors
+- XOM and CVX earnings are both today-dated but **UNCONFIRMED via bars pre-open** — do not act on either reaction claim until independently confirmed via `alpaca.sh bars`/quote post-open, per L-004. `quote` endpoint again showing the standing corrupted wide-spread anomaly for both names — cross-check via bars only.
+- XOM's headline miss vs consensus (despite the YoY beat) creates asymmetric risk if any premarket pop were to fade at open — treat with more skepticism than CVX's clean beat.
+- Apple's -7.2% premarket miss vs Amazon's +13% premarket beat is driving a broad tech/Nasdaq cross-current — unrelated to our Energy/Materials watchlist but a general risk-on/risk-off signal worth noting into a heavy earnings day.
+- Employment Cost Index, Chicago PMI, and Michigan Consumer Sentiment (8:30-10:00am ET) could add incremental volatility ahead of any new entry.
+- FCX and XOM (skip) continue drifting deeper into "missed" territory (+8.67%/+5.86% vs Ref) — no action required (both correctly skipped at the time for lacking a dated catalyst), flagging for weekly review scoring.
+- ECL (held): unrealized -2.35% (-$463.40), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 64b1066c confirmed resting ($257.112, HWM $285.68). No action.
+
+### Decision
+**HOLD (pending CVX re-check at market-open)** — CVX's Q2 earnings beat is the lead item to re-verify the moment trading starts (STEP 2 of market-open.md) per L-004; XOM's earnings miss is a secondary, lower-conviction watch item, not expected to clear the gate. Every other watchlist name has zero clean today-dated, gate-clearing catalyst (GRC stale, LNG recycled, FANG/FCX no fresh catalyst, VMC already-actioned, GEV unchanged-avoid). Stall-breaker not armed (streak 2). No new watchlist names added; no new Decision Scoreboard rows (CVX and XOM already have open rows from Jul 21 — same watchlist streak, not a new name; today's watch-only ideas carry no entry/stop/target yet). ECL (held) requires no action — thesis intact, stop resting. Carry forward watchlist: GRC (no fresh catalyst), XLE/Energy (sector color), LNG (recycled narrative, earnings Aug 6), FANG (no fresh catalyst, earnings Aug 3-4), VMC (already-actioned, avoid), FCX (no fresh catalyst, post-earnings), XOM (earnings today, miss vs consensus, re-check), CVX (earnings today, beat, re-check — lead candidate), GEV (avoid).
