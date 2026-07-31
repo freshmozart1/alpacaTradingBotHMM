@@ -241,3 +241,29 @@ No positions yet. Bot launches tomorrow.
 | ECL | 70 | $281.93 | $279.34 | -1.54% | -$181.30 (-0.92%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
 
 **Notes:** 2nd consecutive no-trade day (last trade was Jul 28's ECL buy; no trades placed today). ECL drifted lower again intraday (-1.54% vs yesterday's close), unrealized -0.92%, nowhere near -7% cut or +15%/+20% tighten thresholds — trailing stop unchanged at $257.112, HWM unchanged at $285.68 (no new high made today). No thesis break identified at midday scan; post-earnings profit-taking/valuation reset remains the working explanation for the pullback. One trade placed this week (1/3 cap used, Week 4, ECL buy Jul 28) — 2 slots still available. Portfolio 19.83% deployed / 80.17% cash, below the 75-85% target band. Watchlist unchanged: GRC (thin liquidity, unconfirmed), XLE/Energy, LNG (earnings Aug 6), FANG (earnings Aug 3), VMC (already-actioned Jul 29, avoid), FCX, XOM/CVX (earnings Jul 31), GEV (avoid).
+
+### Jul 31 — BUY CVX (Day 22, Friday) — streak broken (2 no-trade days), 2/3 weekly trades used
+
+**Account pre-trade:** Equity $98,346.47 | Cash $79,074.77 (80.42%) | 1 open position (ECL, 70 sh, unrealized -2.35%).
+
+**Held position check (ECL):** Unrealized -2.35% (-$463.40) pre-open, drifted to -2.79% by trade time — nowhere near -7% cut or thesis break; no ECL-specific negative news. Trailing stop GTC 64b1066c confirmed resting, stop $257.112, HWM $285.68 (unchanged). No action.
+
+**Gate check — CVX:** Pre-market flagged CVX (Q2 2026 EPS $6.06 vs ~$5.79 est, highest quarterly profit in 6 years, Hess synergies $1.5B ahead of schedule, dividend/buyback maintained) as lead candidate pending a bars-confirmed positive reaction post-open, per L-004 (catalyst was today-dated but pre-open bars were null). Market-open re-validation (13:30-13:34 UTC): `alpaca.sh bars CVX 1Min` showed open $195.56 vs yesterday's $192.54 close (+1.57%), settling +1.15% — a genuine, bars-confirmed positive reaction; CVX `quote` endpoint itself remained corrupted (anomalous ~10%+ spread, ap $205.32/bp $182-194), consistent with the standing anomaly, so bars (not quote) were used per L-001/L-004 methodology. XOM's Q2 miss ($3.52 vs ~$3.87-3.88 est) was cross-checked the same way and confirmed negative (-1.34%, $154.99 vs $157.09 prior close) — correctly stays a pass, no new Decision Scoreboard row needed (existing open row since Jul 21).
+- Positions after fill: 2 <= 6 — pass.
+- Trades this week incl. this one: 2/3 (ECL Jul 28 + this) — pass.
+- Position cost <= 20% equity ($19,669.29 cap) — pass (see sizing below).
+- Position cost <= cash ($79,074.77) — pass.
+- Catalyst documented in today's RESEARCH-LOG + bars-confirmed live — pass.
+- Daytrade count: 0, room available — pass.
+- Instrument is a stock (CVX, NYSE) — pass.
+- L-006 same-week ex-div/analyst-action check (Perplexity): no ex-dividend this week (last was May 19, 2026; next ~Aug 19, 2026); no analyst rating/PT action found in the last 2 days. Noted, does not block entry.
+
+**Entry Checklist:** Catalyst = CVX Q2 beat, bars-confirmed +1.15% reaction at open. Sector = Energy, confirmed YTD #1 momentum leader. Stop = 10% trailing GTC. Target = min 2:1 R/R off the 10% stop, i.e. >= +20% from entry.
+
+**Order sizing:** Sized to 95 sh (~$19,500 est. at ~$195, safely under the $19,669.29 cap even against the corrupted-quote worst case). Market buy order (day TIF) filled in two tranches on thin post-open liquidity: 54 sh @ $194.34, then remaining 41 sh @ $193.16 (blended avg $193.860947, cost basis $18,416.79, 18.73% of equity — under 20% cap). A trailing stop was placed on each tranche as it confirmed (54 sh immediately, then the 41 sh increment once it filled) rather than waiting for full fill, per the 10%-stop-on-every-position rule.
+
+**Stops placed:** Two 10% trailing stop GTC orders covering the full 95 sh — order 7f5acb83 (54 sh, stop $174.366, HWM $193.74) and order e328a200 (41 sh, stop $173.6145, HWM $192.905). Confirmed via `alpaca.sh orders`/`positions`: qty_available = 0, full position covered.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-07-31 | CVX | BUY | 95 | $193.860947 (blended avg fill) | $174.366 / $173.6145 (two 10% trailing GTC orders, 7f5acb83 + e328a200) | Q2 2026 EPS $6.06 vs ~$5.79 est, highest quarterly profit in 6 years, Hess acquisition delivered $1.5B synergies 6 months ahead of schedule, dividend/buyback range maintained; bars-confirmed +1.15% reaction at open; Energy sector in confirmed YTD momentum; no same-week ex-div, no recent analyst action (L-006 checked) | ~$233 (+20%, meets min 2:1 R/R off 10% stop) | ~2:1 |
