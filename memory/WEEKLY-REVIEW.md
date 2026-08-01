@@ -227,3 +227,84 @@ Verdict counts: missed 0, skip-right 0, avoided-loss 4. Total missed gains: 0.00
 - L-003 ("widen watchlist beyond recycled tickers") hit its Jul 24 review-by date having been complied with every session for 2 straight weeks (Jul 10-24), directly sustaining the pipeline that surfaced KALU's catalyst. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted, not just complied-with.
 
 ### Overall Grade: B- (risk management worked exactly as designed — 10% trailing stop capped the loss at -6.01%/-1.19% of equity, and the skip-scoreboard evidence continues to validate the buy-side gate — but the week still nets a loss and lags the S&P by 0.60%)
+
+## Week ending 2026-07-31
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $98,809.88 |
+| Ending portfolio | $98,790.93 |
+| Week return | -$18.95 (-0.02%) |
+| S&P 500 week | +1.07% (SPY 738.90 -> 746.79, Jul 24 close -> Jul 31 close via `alpaca.sh bars`, ground-truth cross-check per established methodology) |
+| Bot vs S&P | -1.09% |
+| Trades | 2 (W:0 / L:0 / open:2) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades; CVX unrealized +1.53%) |
+| Worst trade | N/A (no closed trades; ECL unrealized -1.53%) |
+| Profit factor | N/A (no closed trades) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh, Jul 31 blended fill) | $196.83 | +$282.06 (+1.53%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $177.79725, HWM $197.5525 |
+| ECL | $281.93 (70 sh, Jul 28 fill) | $277.63 | -$301.00 (-1.53%) | 10% trailing GTC, order 64b1066c, stop $257.112, HWM $285.68 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| LNG | 262.60 (Jul 20) | 255.98 (Jul 27) | -2.52% | skip-right |
+| FANG | 195.55 (Jul 20) | 195.80 (Jul 27) | +0.13% | skip-right |
+| VMC | 288.17 (Jul 20) | 284.41 (Jul 27) | -1.30% | skip-right |
+| FCX | 58.37 (Jul 20) | 62.69 (Jul 27) | +7.40% | missed |
+| XOM | 148.40 (Jul 21) | 153.20 (Jul 28) | +3.23% | missed |
+| CVX | 189.25 (Jul 21) | 187.69 (Jul 28) | -0.82% | skip-right |
+| ECL | 268.66 (Jul 21) | 282.95 (Jul 28) | +5.32% | missed (but bot independently bought ECL same-day Jul 28 at $281.93 once the earnings catalyst confirmed — gate delayed, did not forfeit, most of this move) |
+| GEV | 1077.75 (Jul 22) | 899.81 (Jul 29) | -16.51% | avoided-loss |
+
+Verdict counts (new rows this week): missed 3, skip-right 4, avoided-loss 1. Total missed gains: +15.95%. Total avoided losses: -16.51%. Missed:avoided ratio: 3:1 — a clear reversal from last week's 0:4 all-avoided-loss result. **Gate calibration verdict: watch, not yet act.** One week of a missed-skewed mix isn't a trend by itself (L-007 opened to track this), and the largest "miss" (ECL) was substantially recaptured by the bot's own later entry, so the net cost of the tight gate this week is smaller than the raw ratio suggests. GRC (Jul 30 row) not yet 5 sessions old — carried forward. KALU/GRC(Jul 6)/FTAI(Jul 6) rows pruned (verdicts >10 sessions old); MU (Jul 10, verdict exactly 10 sessions old) retained one more week per the "older than 10" threshold.
+
+### What Worked
+
+- Buy-side gate converted two genuine, bars-confirmed catalysts this week — ECL (Jul 28, Q2 earnings beat) and CVX (Jul 31, Q2 beat, highest quarterly profit in 6 years) — both entered only after live post-open confirmation, not on pre-market headline claims alone.
+- Correctly held off XOM/CVX/FANG on Jul 28 despite a bars-confirmed oil-momentum pop, because the 2pm ET FOMC decision was a same-day event risk stacked on top; re-evaluated and entered CVX cleanly three sessions later once its own Q2 print (not the oil move) was the live catalyst.
+- L-001/L-002/L-004/L-005/L-006 all held up under real triggers this week (stale VIX print flagged repeatedly, XOM/CVX earnings-print dating cross-checked via bars per L-004, no same-week ex-div/analyst-action risk found for either new entry per L-006).
+- Neither open position needed a manual intervention — both trailing stops ratcheted mechanically and stayed clear of the -7% cut and +15%/+20% tighten thresholds all week.
+
+### What Didn't Work
+
+- Zero closed trades and a net -0.02% week left the bot -1.09% behind the S&P, which had a strong up week (+1.07%).
+- Portfolio ended just 38.6% deployed ($38,132.95 of $98,790.93) versus the 75-85% target band — 2 of 3 weekly trade slots used but still well under-deployed, with room for 3-4 more positions before the 5-6 cap.
+- Skip-scoreboard mix flipped to 3 missed / 1 avoided-loss this week (from 0 missed / 4 avoided-loss last week) — FCX (+7.40%) and XOM (+3.23%) were genuine misses with no offsetting entry; ECL's miss was largely recaptured by the bot's own later buy, but the raw scoreboard still counts it as missed at the +5d mark.
+- CVX's stop-order mechanics recreated two separate trailing-stop legs (7f5acb83/e328a200) from the two-tranche fill, both correctly resting at the same stop/HWM — functional, but worth watching for any drift between the legs as HWM ratchets going forward.
+
+### Key Lessons
+
+- The buy-side gate's FOMC-driven delay on Jul 28 (skipping XOM/CVX/FANG same-day) and its clean Jul 31 CVX entry days later demonstrate the gate doing exactly what "patience > activity" intends: waiting out a stacked-event-risk day, then acting once the position-specific catalyst was live.
+- A "missed" skip-scoreboard verdict doesn't always mean a forfeited move — ECL was scored missed but the bot captured most of the same move via its own later entry; verdicts should be read alongside the trade log, not in isolation.
+- Two straight weeks of clean data-quality-lesson compliance (L-001, L-002) with no fresh incidents is enough evidence to promote both from active lessons to permanent process rules — see Rule Changelog.
+
+### Adjustments for Next Week
+
+- Track the skip-scoreboard verdict mix again next week (L-007): if it stays missed-skewed (missed > avoided-loss), escalate to a buy-side-gate calibration review per STEP 5 rather than waiting for a third week.
+- With 2 of 3 weekly trade slots already used and the portfolio under-deployed (38.6% vs 75-85% target), keep actively scanning for 1-2 more name-level catalysts next week rather than letting the remaining slot go unused by default.
+- Watch the two CVX trailing-stop legs (7f5acb83/e328a200) for any HWM/stop drift between them as the position moves; consolidate manually only if they diverge (never move a stop down).
+
+### Rule Changes This Week
+
+- L-001 ("XLE/MU Perplexity output unreliable") hit its Jul 31 review-by date having been complied with every session since 2026-07-15 (2+ weeks) with zero fresh incidents. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-002 ("Verify suspect repeated macro prints") hit its Jul 31 review-by date having been complied with every session since 2026-07-17 (2+ weeks) — the stale VIX print recurred repeatedly and was correctly flagged/discounted each time. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- New lesson L-007 opened to track the Jul 31 skip-scoreboard shift toward "missed" (see LESSONS.md).
+
+### Overall Grade: C+ (two clean, well-reasoned entries following the gate's discipline and zero forced/marginal trades, but the week nets essentially flat, lags the S&P by 1.09%, and ends materially under-deployed against the 75-85% target)

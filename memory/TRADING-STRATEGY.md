@@ -43,6 +43,12 @@ If any fail, the trade is skipped and the reason is logged.
   (drop stale/unverifiable names, add fresh candidates from a broadened
   sector screen) before the gate is evaluated — a refresh is not optional
   while the stall-breaker is armed.
+- No XLE or MU catalyst counts toward the buy-side gate unless confirmed
+  by a second independent source (WebSearch, or ./scripts/alpaca.sh
+  quote/bars for any price claim).
+- Any macro print (VIX, futures, oil, or any other recurring data point)
+  that exactly matches the prior session's logged value must be flagged
+  suspect and cross-checked before being used in Risk Factors or the gate.
 
 ## Sell-Side Rules
 
@@ -76,3 +82,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 |------|------|------------|-------------------|
 | 2026-07-06 | (baseline) | — -> v1 scaffold ruleset | Initial rules; no changes yet |
 | 2026-07-24 | Buy-Side Gate | (none) -> mandatory watchlist refresh when stall-breaker armed (>=5 no-trade sessions) | Promoted from LESSONS.md L-003 (2026-07-10), complied with every session for 2 straight weeks (Jul 10-24), directly sustaining the pipeline that surfaced KALU's catalyst. Process addition only, not a risk-rule change. |
+| 2026-07-31 | Buy-Side Gate | (none) -> no XLE/MU catalyst counts without second-source confirmation | Promoted from LESSONS.md L-001 (2026-07-15), complied with every session for 2+ straight weeks (Jul 15-31) with zero fresh fabricated-data incidents. Process addition only, not a risk-rule change. |
+| 2026-07-31 | Buy-Side Gate | (none) -> any macro print matching the prior session's value must be flagged suspect and cross-checked | Promoted from LESSONS.md L-002 (2026-07-17), complied with every session for 2+ straight weeks (Jul 17-31); the stale VIX print recurred repeatedly and was correctly flagged/discounted each time. Process addition only, not a risk-rule change. |
