@@ -283,3 +283,13 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (2 positions, 3 orders, all unchanged in structure; CVX stop HWM auto-ratcheted with price per normal trailing-stop mechanics).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Jul 31 — EOD Snapshot (Day 22, Friday)
+**Portfolio:** $98,790.93 | **Cash:** $60,657.98 (61.40%) | **Day P&L:** +$162.36 (+0.16%) | **Phase P&L:** -$1,209.07 (-1.21%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $196.83 | +2.35% | +$282.06 (+1.53%) | $177.797 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $277.63 | -0.61% | -$301.00 (-1.53%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
+
+**Notes:** Streak reset — trade(s) placed today (CVX buy, Q2 beat + bars-confirmed open reaction). 2 trades placed this week (2/3 cap used, Week 4: ECL Jul 28 buy + CVX Jul 31 buy) — 1 slot remaining. Portfolio 38.60% deployed / 61.40% cash, still below the 75-85% target band despite the new CVX position. CVX up +2.35% on the day extending this morning's bars-confirmed open reaction, thesis intact (Q2 beat, Hess synergies ahead of schedule), nowhere near -7% cut or +15%/+20% tighten thresholds. ECL down modestly (-0.61%), continuation of the already-explained post-earnings pullback (profit-taking/valuation reset), nowhere near -7% cut. No thesis breaks identified. Backfilled: this snapshot reflects Friday Jul 31's close, logged during a Saturday Aug 1 cloud firing after Friday's scheduled EOD run did not commit (git history shows pre-market/market-open/midday commits for Jul 31 but no EOD snapshot commit); account balance_asof/last_equity confirm the pulled state is Jul 31's close, unchanged over the weekend.
