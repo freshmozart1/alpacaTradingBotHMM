@@ -15,24 +15,6 @@ Template:
 - Directive: <one concrete, checkable instruction>
 - Status: active | Review-by: YYYY-MM-DD
 
-### L-001 — XLE/MU Perplexity output unreliable
-- Date: 2026-07-15 | Source: RESEARCH-LOG 2026-07-15..17 data-quality flags
-- Lesson: Perplexity repeatedly returned fabricated/stale figures for XLE
-  and MU (invented geopolitical narratives, MU quoted at ~10x its real
-  price, verbatim-repeated prints), recurring across sessions.
-- Directive: No XLE or MU catalyst counts toward the buy-side gate unless
-  confirmed by a second independent source (WebSearch, or
-  ./scripts/alpaca.sh quote/bars for any price claim).
-- Status: active | Review-by: 2026-07-31
-
-### L-002 — Verify suspect repeated macro prints
-- Date: 2026-07-17 | Source: RESEARCH-LOG 2026-07-17 (VIX verbatim repeat)
-- Lesson: Macro quotes (VIX, futures) sometimes return the prior session's
-  print as "today"; futures also produced a contract-rollover artifact.
-- Directive: If any macro print exactly matches the prior session's logged
-  value, flag it suspect and cross-check before using it in Risk Factors.
-- Status: active | Review-by: 2026-07-31
-
 ### L-004 — Widen earnings-print verification beyond XLE/MU
 - Date: 2026-07-24 | Source: WEEKLY-REVIEW 2026-07-24 Adjustments (GRC Jul 24 earnings misattribution)
 - Lesson: Perplexity misattributed a 2025-dated GRC earnings print as
@@ -64,8 +46,30 @@ Template:
   action and note it in the trade log, even if it doesn't block entry.
 - Status: active | Review-by: 2026-08-07
 
+### L-007 — Monitor skip-scoreboard shift toward missed
+- Date: 2026-07-31 | Source: WEEKLY-REVIEW 2026-07-31 skip scoreboard (3
+  missed / 4 skip-right / 1 avoided-loss this week, vs 0 missed / 4
+  avoided-loss the prior week)
+- Lesson: This week's newly-scored skips shifted meaningfully toward
+  "missed" (FCX +7.40%, XOM +3.23%, ECL +5.32%) versus last week's
+  all-avoided-loss result, though ECL's move was independently recaptured
+  by a same-week buy.
+- Directive: At the next weekly review, if the skip-scoreboard verdict mix
+  again skews toward missed (missed count > avoided-loss count), escalate
+  to a buy-side-gate calibration review per weekly-review STEP 5
+  (catalyst-freshness window).
+- Status: active | Review-by: 2026-08-14
+
 ## Retired Lessons
 
+- L-001, "XLE/MU Perplexity output unreliable", retired 2026-07-31,
+  promoted to a permanent process rule (TRADING-STRATEGY.md Buy-Side Gate)
+  after 2+ straight weeks of compliance (2026-07-15 to 2026-07-31) with
+  zero fresh incidents.
+- L-002, "Verify suspect repeated macro prints", retired 2026-07-31,
+  promoted to a permanent process rule (TRADING-STRATEGY.md Buy-Side Gate)
+  after 2+ straight weeks of compliance (2026-07-17 to 2026-07-31), with
+  the stale VIX print recurring and being correctly flagged every time.
 - L-003, "Widen watchlist beyond recycled tickers", retired 2026-07-24,
   promoted to a permanent process rule (TRADING-STRATEGY.md Buy-Side Gate)
   after 2 straight weeks of compliance sustaining the pipeline that
@@ -84,16 +88,13 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-07-06 | KALU | HOLD — no dated catalyst | 178.81 | -11.68% | avoided-loss |
-| 2026-07-06 | GRC | HOLD — no dated catalyst | 84.84 | -7.50% | avoided-loss |
-| 2026-07-06 | FTAI | HOLD — no dated catalyst | 241.45 | -13.09% | avoided-loss |
 | 2026-07-10 | MU | HOLD — single-day breakout, gate needs dated catalyst | 979.36 | -13.26% | avoided-loss |
-| 2026-07-20 | LNG | HOLD — Qatar supply-shock claim uncorroborated | 262.60 | | |
-| 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | | |
-| 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | | |
-| 2026-07-20 | FCX | HOLD — no dated catalyst, awaiting Jul 23 earnings | 58.37 | | |
-| 2026-07-21 | XOM | HOLD — oil-driven momentum, no fresh dated catalyst | 148.40 | | |
-| 2026-07-21 | CVX | HOLD — oil-driven momentum, no fresh dated catalyst | 189.25 | | |
-| 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | | |
-| 2026-07-22 | GEV | HOLD — reports before today's open, not buyable pre-print | 1077.75 | | |
+| 2026-07-20 | LNG | HOLD — Qatar supply-shock claim uncorroborated | 262.60 | -2.52% | skip-right |
+| 2026-07-20 | FANG | HOLD — Mizuho PT unconfirmed as today-dated | 195.55 | +0.13% | skip-right |
+| 2026-07-20 | VMC | HOLD — dated reaction negative (-2.5%), not a buy trigger | 288.17 | -1.30% | skip-right |
+| 2026-07-20 | FCX | HOLD — no dated catalyst, awaiting Jul 23 earnings | 58.37 | +7.40% | missed |
+| 2026-07-21 | XOM | HOLD — oil-driven momentum, no fresh dated catalyst | 148.40 | +3.23% | missed |
+| 2026-07-21 | CVX | HOLD — oil-driven momentum, no fresh dated catalyst | 189.25 | -0.82% | skip-right |
+| 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | +5.32% | missed (recaptured by later ECL buy Jul 28) |
+| 2026-07-22 | GEV | HOLD — reports before today's open, not buyable pre-print | 1077.75 | -16.51% | avoided-loss |
 | 2026-07-30 | GRC | HOLD — Q2 beat catalyst, source dating unconfirmed (L-004), pending bars re-check at open | 78.46 | | |
