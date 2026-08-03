@@ -317,3 +317,13 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (2 positions, 3 orders, all unchanged).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 3 — EOD Snapshot (Day 23, Monday)
+**Portfolio:** $98,570.17 | **Cash:** $60,657.97 (61.54%) | **Day P&L:** -$220.75 (-0.22%) | **Phase P&L:** -$1,429.83 (-1.43%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $193.18 | -1.85% | -$64.69 (-0.35%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $279.43 | +0.65% | -$175.00 (-0.89%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
+
+**Notes:** 1st consecutive no-trade day (last trade was Jul 31's CVX buy; no trades placed today — market-open and midday scans both found no gate-clearing catalyst). CVX drifted down -1.85% intraday (unrealized -0.35%), ECL ticked up +0.65% (unrealized -0.89%), neither near -7% cut or +15%/+20% tighten thresholds; both stops unchanged (CVX $177.79725/HWM $197.5525, ECL $257.112/HWM $285.68). No thesis breaks identified. Zero trades placed this week (0/3 cap used, Week 5) — 3 slots available. Portfolio 38.46% deployed / 61.54% cash, below the 75-85% target band. Watchlist unchanged: GRC (stale, 8+ sessions), XLE/Energy (sector color), LNG (earnings Aug 6), FANG (earnings AMC today — lead item for tomorrow's market-open re-validation), VMC (already-actioned, avoid), FCX (no fresh catalyst), XOM (no fresh catalyst, Citi PT cut), GEV (avoid).
