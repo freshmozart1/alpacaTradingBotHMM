@@ -351,3 +351,13 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (2 positions, 3 orders, all unchanged in structure).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 4 — EOD Snapshot (Day 24, Tuesday)
+**Portfolio:** $98,565.77 | **Cash:** $60,657.97 (61.54%) | **Day P&L:** -$4.40 (-0.00%) | **Phase P&L:** -$1,434.23 (-1.43%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $190.40 | -1.44% | -$328.79 (-1.79%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $283.14 | +1.33% | +$84.70 (+0.43%) | $257.112 (10% trail, GTC 64b1066c, HWM $285.68) |
+
+**Notes:** 2nd consecutive no-trade day (last trade was Jul 31's CVX buy; no trades placed today — market-open found FANG gate-failed on a negative post-earnings reaction, midday found no thesis breaks). Zero trades placed this week (0/3 cap used, Week 5) — 3 slots available. CVX down -1.44% intraday (unrealized -1.79%), continuing the oil-linked pullback tracked since market-open, thesis intact (Q2 beat, Hess synergies ahead of schedule), nowhere near -7% cut or +15%/+20% tighten thresholds. ECL up +1.33% intraday (unrealized +0.43%), thesis intact (Q2 beat, post-earnings pullback stabilizing), nowhere near -7% cut. No thesis breaks identified. Portfolio 38.46% deployed / 61.54% cash, still below the 75-85% target band. Watchlist unchanged: GRC (stale, 9 sessions), XLE/Energy (sector color), LNG (earnings Aug 6), FANG (gate-failed today on negative reaction to Q2 beat — avoid pending thesis re-check), VMC (already-actioned, avoid), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
