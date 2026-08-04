@@ -98,3 +98,4 @@ than 10 sessions are pruned.
 | 2026-07-21 | ECL | HOLD — no dated catalyst, awaiting Jul 28 earnings | 268.66 | +5.32% | missed (recaptured by later ECL buy Jul 28) |
 | 2026-07-22 | GEV | HOLD — reports before today's open, not buyable pre-print | 1077.75 | -16.51% | avoided-loss |
 | 2026-07-30 | GRC | HOLD — Q2 beat catalyst, source dating unconfirmed (L-004), pending bars re-check at open | 78.46 | | |
+| 2026-08-04 | FANG | gate-fail: Q2 EPS beat ($6.48 vs $5.96 est) but bars-confirmed NEGATIVE reaction at open (-3.87%, $198.53 -> $190.85) | 198.53 | | |
