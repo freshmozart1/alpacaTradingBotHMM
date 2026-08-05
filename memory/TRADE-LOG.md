@@ -362,6 +362,21 @@ No positions yet. Bot launches tomorrow.
 
 **Notes:** 2nd consecutive no-trade day (last trade was Jul 31's CVX buy; no trades placed today — market-open found FANG gate-failed on a negative post-earnings reaction, midday found no thesis breaks). Zero trades placed this week (0/3 cap used, Week 5) — 3 slots available. CVX down -1.44% intraday (unrealized -1.79%), continuing the oil-linked pullback tracked since market-open, thesis intact (Q2 beat, Hess synergies ahead of schedule), nowhere near -7% cut or +15%/+20% tighten thresholds. ECL up +1.33% intraday (unrealized +0.43%), thesis intact (Q2 beat, post-earnings pullback stabilizing), nowhere near -7% cut. No thesis breaks identified. Portfolio 38.46% deployed / 61.54% cash, still below the 75-85% target band. Watchlist unchanged: GRC (stale, 9 sessions), XLE/Energy (sector color), LNG (earnings Aug 6), FANG (gate-failed today on negative reaction to Q2 beat — avoid pending thesis re-check), VMC (already-actioned, avoid), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
 
+### Aug 5 — Midday Scan (Day 25, Wednesday) — no action
+
+**Account:** Equity $98,311.52 | Cash $60,657.97 (61.71%). 2 open positions — CVX 95 sh, unrealized -3.31% (-$609.99), current $187.44 vs entry $193.860947 (intraday -1.55% vs Aug 4's $190.40 close); ECL 70 sh, unrealized +0.62% (+$123.20), current $283.69 vs entry $281.93 (intraday +0.19% vs Aug 4's $283.14 close). 3 open orders: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $177.79725, HWM $197.5525 (unchanged, no new high since Jul 31); ECL trailing stop GTC 64b1066c (70 sh), stop $257.65245, HWM $286.2805 (auto-updated intraday off a new high, broker-side trail mechanics — not an agent action).
+
+**STEP 3 (cut losers):** N/A — CVX -3.31%, ECL +0.62%, both nowhere near the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — neither position up +15%/+20%. No tightening triggered; both stops unchanged (ECL's HWM/stop moved automatically as a broker-side trailing-stop mechanic on a new high, not a manual STEP 4 tighten).
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; today's -1.55% intraday move is a continuation of the ongoing oil-linked pullback tracked since pre-market (Hormuz de-escalation narrative), Q2 beat/Hess-synergies thesis intact. ECL — no thesis-breaking news; +0.19% intraday is a minor uptick, post-earnings-pullback thesis unchanged. No action.
+
+**STEP 6 (optional research):** Skipped — neither position moved sharply enough intraday (CVX -1.55%, ECL +0.19%) to warrant an unexplained-move Perplexity check.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (2 positions, 3 orders, all unchanged in structure).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
 ### Aug 5 — Market-Open Check (Day 25, Wednesday) — no new trade
 
 **Account:** Equity $98,339.92 | Cash $60,657.97 (61.68%) | 2 open positions (CVX 95 sh, ECL 70 sh), 3 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC). 3rd consecutive no-trade-day (Aug 3, Aug 4, now Aug 5; last trade was Jul 31's CVX buy). 0/3 trades used this week (Week 5) — 3 slots available.
