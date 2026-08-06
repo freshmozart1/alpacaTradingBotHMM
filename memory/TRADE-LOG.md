@@ -394,3 +394,29 @@ No positions yet. Bot launches tomorrow.
 | ECL | 70 | $281.93 | $285.47 | +0.82% | +$247.80 (+1.26%) | $257.65245 (10% trail, GTC 64b1066c, HWM $286.2805) |
 
 **Notes:** 3rd consecutive no-trade day (last trade was Jul 31's CVX buy; market-open gate-failed VMC on a fading post-earnings reaction, midday found no thesis breaks). Zero trades placed this week (0/3 cap used, Week 5) — 3 slots available. CVX down another -2.10% intraday (unrealized -3.84%), continuing the oil-linked pullback (Hormuz de-escalation narrative), thesis intact (Q2 beat, Hess synergies ahead of schedule), still nowhere near the -7% cut threshold. ECL up +0.82% intraday (unrealized +1.26%), a new high pushed its stop up automatically to $257.65245 (HWM $286.2805) via broker-side trailing mechanics — not near +15%/+20% tighten thresholds. No thesis breaks identified. Portfolio 38.32% deployed / 61.68% cash, still below the 75-85% target band. Watchlist unchanged: GRC (stale, 11 sessions, deep in "missed"), XLE/Energy (sector color), LNG (earnings tomorrow Aug 6), FANG (already-actioned Aug 4, avoid), VMC (gate-failed Aug 5 on fading reaction — avoid pending thesis re-check), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
+
+### Aug 6 — BUY LNG (Day 26, Thursday) — streak broken (3 no-trade days), 1/3 weekly trades used
+
+**Account pre-trade:** Equity $98,405.05 | Cash $60,657.97 (61.64%) | 2 open positions (CVX 95 sh, unrealized -2.42%; ECL 70 sh, unrealized +0.21%).
+
+**Held position check:** CVX unrealized -2.42% (-$446.11), ECL unrealized +0.21% (+$41.30) pre-trade — neither near -7% cut or thesis break; no CVX/ECL-specific negative news today. Trailing stops confirmed resting unchanged (CVX $177.79725/HWM $197.5525; ECL $259.6005/HWM $288.445, auto-ratcheted). No action.
+
+**Gate check — LNG:** Cheniere Energy reported Q2 2026 results before today's open (today-dated, per its own IR press release). Market-open re-validation via `alpaca.sh bars` (1Min/5Min): opened $267.165 vs yesterday's $254.86 close (+4.83% gap), intraday high $267.965 (+5.14%), faded off the highs but held solidly positive through midday — last bars-confirmed print ~$263.3-263.6 (+3.3-3.5%) as of order time, a genuine and sustained bars-confirmed positive reaction (unlike VMC's Aug 5 fade-to-flat). `quote` endpoint showed an anomalous wide bid/ask spread (bp $255/ap $263.81) at order time — cross-checked via 1Min bars ($263.32-263.61 cluster) per L-001/L-004 methodology, bars used for sizing, not the corrupted quote.
+- Positions after fill: 3 <= 6 — pass.
+- Trades this week incl. this one: 1/3 (Week 5) — pass.
+- Position cost <= 20% equity ($19,681.01 cap) — pass (see sizing below).
+- Position cost <= cash ($60,657.97) — pass.
+- Catalyst documented in today's RESEARCH-LOG + bars-confirmed live — pass.
+- Daytrade count: 0, room available — pass.
+- Instrument is a stock (LNG, NYSE) — pass.
+- L-006 same-week ex-div/analyst-action check: Cheniere declared a $0.555/share quarterly dividend, record date Aug 10 (implying an ex-div date around Aug 7, tomorrow — same week). Flagged; does not block entry per L-006 (informational only). No negative analyst action found in recent coverage.
+
+**Entry Checklist:** Catalyst = LNG Q2 2026 earnings beat, bars-confirmed sustained +3.3-3.5% reaction through midday (vs a +5.14% opening high). Sector = Energy, confirmed YTD #1 momentum leader. Stop = 10% trailing GTC. Target = min 2:1 R/R off the 10% stop, i.e. >= +20% from entry.
+
+**Order sizing:** Sized to 74 sh (~$19,500 est. at ~$263.5, safely under the $19,681.01 cap even against quote-side noise). Market buy order (day TIF) filled in a single fill: 74 sh @ $263.63 (cost basis $19,508.62, 19.83% of equity — under 20% cap).
+
+**Stops placed:** One 10% trailing stop GTC order covering the full 74 sh — order 974c3bfc, stop $237.132, HWM $263.48. Confirmed via `alpaca.sh orders`/`positions`: qty_available = 0, full position covered.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-08-06 | LNG | BUY | 74 | $263.63 (fill) | $237.132 (10% trailing GTC, order 974c3bfc) | Q2 2026 earnings beat (Cheniere IR release, today-dated); opened +4.83% gap, faded off a +5.14% intraday high but held a sustained +3.3-3.5% bars-confirmed positive reaction through midday, unlike VMC's Aug 5 fade-to-flat pattern; Energy sector confirmed YTD #1 momentum leader; same-week ex-div flagged (L-006) but non-blocking; no negative analyst action found | ~$316-317 (+20%, meets min 2:1 R/R off 10% stop) | ~2:1 |
