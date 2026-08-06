@@ -420,3 +420,14 @@ No positions yet. Bot launches tomorrow.
 | Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
 |------|--------|------|--------|-------|------|--------|--------|-----|
 | 2026-08-06 | LNG | BUY | 74 | $263.63 (fill) | $237.132 (10% trailing GTC, order 974c3bfc) | Q2 2026 earnings beat (Cheniere IR release, today-dated); opened +4.83% gap, faded off a +5.14% intraday high but held a sustained +3.3-3.5% bars-confirmed positive reaction through midday, unlike VMC's Aug 5 fade-to-flat pattern; Energy sector confirmed YTD #1 momentum leader; same-week ex-div flagged (L-006) but non-blocking; no negative analyst action found | ~$316-317 (+20%, meets min 2:1 R/R off 10% stop) | ~2:1 |
+
+### Aug 6 — EOD Snapshot (Day 26, Thursday)
+**Portfolio:** $98,619.10 | **Cash:** $41,149.35 (41.73%) | **Day P&L:** +$269.28 (+0.27%) | **Phase P&L:** -$1,380.90 (-1.38%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $189.23 | +1.51% | -$439.94 (-2.39%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $283.46 | -0.70% | +$107.10 (+0.54%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $265.55 | +4.24% | +$142.08 (+0.73%) | $239.283 (10% trail, GTC 974c3bfc, HWM $265.87) |
+
+**Notes:** Streak reset — trade(s) placed today (LNG buy at market-open, 74 sh @ $263.63; 1/3 weekly trades used, Week 5). Portfolio equity $98,619.10, up +$269.28 (+0.27%) on the day, still down -$1,380.90 (-1.38%) cumulative phase P&L. 3 open positions, 58.27% deployed / 41.73% cash — below the 75-85% target band. CVX rebounded +1.51% intraday (unrealized narrowed to -2.39%), oil-linked pullback thesis intact, nowhere near -7% cut. ECL down -0.70% intraday (unrealized +0.54%), thesis intact. LNG (new position, first session) up +4.24% on continued post-earnings strength, unrealized +0.73%, 10% trailing stop placed at $239.283. No positions near -7% cut or +15%/+20% tighten thresholds. No thesis breaks identified.
