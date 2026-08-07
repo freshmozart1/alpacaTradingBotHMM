@@ -308,3 +308,79 @@ Verdict counts (new rows this week): missed 3, skip-right 4, avoided-loss 1. Tot
 - New lesson L-007 opened to track the Jul 31 skip-scoreboard shift toward "missed" (see LESSONS.md).
 
 ### Overall Grade: C+ (two clean, well-reasoned entries following the gate's discipline and zero forced/marginal trades, but the week nets essentially flat, lags the S&P by 1.09%, and ends materially under-deployed against the 75-85% target)
+
+## Week ending 2026-08-07
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $98,790.93 |
+| Ending portfolio | $97,790.18 |
+| Week return | -$1,000.75 (-1.01%) |
+| S&P 500 week | +3.53% (SPY 746.79 -> 773.16, Jul 31 close -> Aug 7 close via `alpaca.sh bars`; Perplexity again returned dispersed/incomplete week-ending figures — cross-checked against ground-truth SPY bars per established methodology) |
+| Bot vs S&P | -4.54% |
+| Trades | 1 (W:0 / L:0 / open:1) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week) |
+| Worst trade | N/A (no closed trades this week; LNG, the only trade placed, unrealized -2.83% as of Aug 7) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $186.5589 | -$693.69 (-3.77%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $177.79725, HWM $197.5525 |
+| ECL | $281.93 (70 sh) | $285.17 | +$226.80 (+1.15%) | 10% trailing GTC, order 64b1066c, stop $259.6005, HWM $288.445 |
+| LNG | $263.63 (74 sh) | $256.16 | -$552.78 (-2.83%) | 10% trailing GTC, order 974c3bfc, stop $239.283, HWM $265.87 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| GRC | 78.46 (Jul 30) | 84.61 (Aug 6) | +7.84% | missed |
+
+Verdict counts (new rows this week): missed 1, skip-right 0, avoided-loss 0. Total missed gains: +7.84%. Total avoided losses: 0.00%. Missed:avoided ratio: 1:0 — **L-007 triggered**: missed count (1) > avoided-loss count (0) for the second consecutive scored week (3:1 last week, 1:0 this week). Per L-007's binding directive, escalated to a buy-side-gate calibration review this session — see Rule Change below. FANG (Aug 4 gate-fail row) and VMC (Aug 5 gate-fail row) are not yet 5 sessions old, carried forward. MU (Jul 10 row, verdict filled Jul 24) pruned — its scoring reference point (Jul 17 +5d close) is now 15 trading sessions old, past the 10-session retention threshold.
+
+### What Worked
+
+- LNG (Aug 6) was a clean, well-confirmed entry: Cheniere's Q2 beat was today-dated, and the bars-confirmed reaction held a sustained +3.3-3.5% through midday (vs a +5.14% opening high) rather than fading to flat like VMC's Aug 5 gate-fail — the gate correctly distinguished a genuine sustained reaction from a fade.
+- L-004/L-005/L-006 all held up under real triggers again this week (GRC's earnings-print dating correctly stayed unconfirmed, oil dispersion cross-checked via XLE/USO bars on Aug 7, LNG's same-week ex-dividend flagged non-blocking at entry) — each has now run 2+ full weeks with zero fresh incidents, qualifying all three for promotion to permanent process rules (see Rule Changes).
+- FANG (Aug 4) and VMC (Aug 5) gate-fails continue to hold correct as of today's re-check (-4.52% and -1.29% vs their gate-fail Ref prices) — the gate is correctly filtering fade/negative reactions, not just requiring a catalyst to exist.
+- No risk-rule breaches all week: CVX's -3.77% unrealized drawdown (the week's largest) stayed well clear of the -7% cut, and no position hit the +15%/+20% tighten thresholds; all four resting GTC stops (2x CVX, 1x ECL, 1x LNG) confirmed unchanged/correctly ratcheted via `alpaca.sh orders`.
+
+### What Didn't Work
+
+- The bot lost -1.01% in a week the S&P gained +3.53% (its best week since mid-April per WSJ/CNBC) — a -4.54% relative gap, the largest of the challenge so far. Only 1 of 3 weekly trade slots was used, and being ~58% deployed for most of the week meant the bot captured little of a broad, strong up-move.
+- GRC's Jul 30 gate-fail is now confirmed "missed" (+7.84% by Aug 6) — the root cause was not catalyst staleness but thin liquidity: `alpaca.sh bars` returned zero prints for ~17 minutes post-open on a low-volume name (~5-10k shares/day), so L-004's bars-confirmation clause couldn't be satisfied even though the underlying Q2 beat catalyst was real and today-dated.
+- CVX continued to drift lower (-3.77% unrealized, its worst mark since entry) on the ongoing Hormuz de-escalation narrative pressuring oil — not a thesis break and nowhere near the -7% cut, but the largest single-position drag on the week's return.
+- Second consecutive week where the skip-scoreboard mix skewed missed > avoided-loss (3:1 last week, 1:0 this week), triggering L-007's escalation directive — see Rule Change.
+
+### Key Lessons
+
+- A "missed" skip-scoreboard verdict can stem from a confirmation-mechanism limitation (thin liquidity producing no bars prints) rather than the catalyst-freshness window itself being miscalibrated — GRC's Q2 beat was genuine and today-dated; the gate correctly required bars confirmation per L-004, but the standard confirmation window wasn't built for illiquid names. Fixing the actual mechanism (confirmation window for thin-liquidity names) is more precise than loosening the freshness bar broadly, which risked admitting stale/unconfirmed catalysts more generally.
+- A strong, broad up-week (S&P's best in ~4 months) is exactly when being under-deployed costs the most in relative terms — the -4.54% gap this week is a direct function of ~58% deployment plus only 1 trade, not any single bad decision.
+- Two full weeks (Jul 24 - Aug 7) of clean L-004/L-005/L-006 compliance with zero fresh incidents is enough evidence to promote all three to permanent process rules, following the same bar used for L-001/L-002/L-003.
+
+### Adjustments for Next Week
+
+- Track whether the new thin-liquidity bars-confirmation window (60 min for sub-~50k-volume names, added to TRADING-STRATEGY.md this week) changes gate outcomes on future low-volume watchlist names, without producing false-positive entries on names whose "reaction" only appears after a long delay.
+- With 1 of 3 weekly trade slots used and the portfolio still under the 75-85% deployment target after a week the S&P ran +3.53%, keep actively widening the name-level scan next week — current watchlist (GRC/FANG/VMC/FCX/XOM/GEV) is entirely stale or already-actioned.
+
+### Rule Changes This Week
+
+- L-004 ("widen earnings-print verification beyond XLE/MU") hit its Aug 7 review-by date having been complied with every session since 2026-07-24 (2+ weeks) with zero fresh incidents. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-005 ("cross-check extreme oil/WTI source dispersion") hit its Aug 7 review-by date having been complied with every session since 2026-07-24 (2+ weeks), correctly resolving oil-price dispersion via XLE/USO bars each time it triggered. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-006 ("flag same-week ex-div/analyst-action risk at entry") hit its Aug 7 review-by date having been complied with every session since 2026-07-24 (2+ weeks), checked at every new entry (ECL, CVX, LNG) with zero misses. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- New Buy-Side Gate calibration rule added per L-007's escalation directive (2nd consecutive missed-skewed skip-scoreboard week): for watchlist names with average daily volume under ~50,000 shares, the market-open bars-confirmation window extends to up to 60 minutes post-open (from the standard ~15-20 minutes) before ruling a catalyst reaction unconfirmed. Evidence: GRC (Jul 30, Ref $78.46) gate-failed on zero bars prints ~17 minutes post-open despite a genuine, today-dated Q2 beat, and was confirmed "missed" at +7.84% by Aug 6. Trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched. Review-by 2026-08-21 (2 weekly reviews out) to check for false-positive entries introduced by the wider window.
+- New lesson L-008 opened to monitor the new thin-liquidity confirmation window's effect on gate outcomes; L-009 opened to track continued under-deployment against the 75-85% target (see LESSONS.md).
+
+### Overall Grade: C- (risk management held — no rule breaches, one clean well-confirmed entry (LNG) — but the bot lagged the S&P by 4.54% in the index's best week since mid-April, driven mainly by persistent under-deployment rather than any bad decision)
