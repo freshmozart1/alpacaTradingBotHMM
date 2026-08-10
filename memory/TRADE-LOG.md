@@ -479,3 +479,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (3 positions, 4 orders, all unchanged in structure).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 10 — EOD Snapshot (Day 28, Monday)
+
+**Portfolio:** $99,262.23 | **Cash:** $41,149.34 (41.46%) | **Day P&L:** +$1,473.43 (+1.51%) | **Phase P&L:** -$737.77 (-0.74%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $194.91 | +4.48% | +$99.66 (+0.54%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $284.40 | -0.27% | +$172.90 (+0.88%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $266.06 | +3.87% | +$179.82 (+0.92%) | $239.877 (10% trail, GTC 974c3bfc, HWM $266.53, ratcheted up today) |
+
+**Notes:** 2nd consecutive no-trade day (Aug 7, Aug 10) since the Aug 6 LNG buy; 0/3 weekly trades used (Week 6). Portfolio equity $99,262.23, up +$1,473.43 (+1.51%) day-over-day and -$737.77 (-0.74%) cumulative phase P&L vs $100,000 starting capital. **Process gap flagged:** memory/TRADE-LOG.md has no Aug 7 EOD Snapshot entry (only Market-Open and Midday were logged that day; git history confirms no EOD commit) — the last logged EOD before today was Aug 6 ($98,619.10). Day P&L above uses Alpaca's own `last_equity` field ($97,788.80, balance_asof 2026-08-07) rather than the stale in-log reference, so it reflects a true 1-session change; the missing Aug 7 EOD commit itself should be investigated so this gap doesn't recur. 3 open positions (CVX, ECL, LNG), 58.55% deployed / 41.46% cash — still below the 75-85% target deployment band. All three positions green-to-flat intraday on a broad rebound (CVX +4.48%, LNG +3.87%, ECL -0.27%); LNG's trailing stop auto-ratcheted up today to $239.877 (new HWM $266.53) per the 10% trail mechanism — stop only moved up, correct behavior, no manual action taken. No positions near the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain is ECL +0.88%). No thesis breaks identified for any held position.
