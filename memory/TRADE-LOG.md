@@ -499,3 +499,19 @@ No positions yet. Bot launches tomorrow.
 **Held position check:** CVX 95 sh, current $195.12 vs entry $193.860947, unrealized +0.65% (+$119.61); trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $177.79725, HWM $197.5525 (unchanged). ECL 70 sh, current $285.15 vs entry $281.93, unrealized +1.14% (+$225.40); trailing stop GTC 64b1066c confirmed resting, stop $259.6005, HWM $288.445 (unchanged). LNG 74 sh, current $267.71 vs entry $263.63, unrealized +1.55% (+$301.92); trailing stop GTC 974c3bfc auto-ratcheted up overnight to stop $241.407, HWM $268.23 (mechanical 10% trail, stop only moved up, no manual action). None near -7% cut or +15%/+20% tighten thresholds; no thesis break for any (per today's RESEARCH-LOG pre-market entry — no CPI/PPI/FOMC/jobs today, all held-name coverage recycled prior-dated Q2 beats). No action.
 
 **Gate check on new entries:** Per pre-market research (RESEARCH-LOG.md 2026-08-11, run inline), no watchlist name clears the buy-side gate today — GRC (15 sessions stale, deep in "missed"), FANG/VMC (gate-fails from Aug 4/Aug 5 continuing to hold, both essentially flat), FCX/XOM/GEV all recycled coverage with no fresh Aug 11-dated catalyst; VMC's Mexico-arbitration ruling (~$15M, "negligible") and small insider sale are immaterial, not buy triggers. Live re-validation at market-open found no change to that assessment. No trade placed today; no new Decision Scoreboard rows (GRC/FANG/VMC already carry open rows from the current watchlist streak). Watchlist unchanged: GRC (stale, 15 sessions), XLE/Energy (sector color), FANG (avoid, gate-fail confirmed correct), VMC (avoid, gate-fail confirmed correct), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
+
+### Aug 11 — Midday Scan (Day 29, Tuesday) — no action
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +1.54% (+$283.96), current $196.85 vs entry $193.860947 (intraday +1.00% vs Aug 10's $194.91 close); ECL 70 sh, unrealized +1.20% (+$236.60), current $285.31 vs entry $281.93 (intraday +0.32% vs Aug 10's $284.40 close); LNG 74 sh, unrealized +1.75% (+$341.14), current $268.24 vs entry $263.63 (intraday +0.96% vs Aug 10's $265.68 close). 4 open orders: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $177.79725, HWM $197.5525 (unchanged, no new high since Jul 31); ECL trailing stop GTC 64b1066c (70 sh), stop $259.6005, HWM $288.445 (unchanged); LNG trailing stop GTC 974c3bfc (74 sh), stop $242.316, HWM $269.24 (auto-ratcheted up from this morning's $241.407/$268.23 on a new intraday high — broker-side mechanic, not a manual action).
+
+**STEP 3 (cut losers):** N/A — CVX +1.54%, ECL +1.20%, LNG +1.75%, all green, none within range of the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max is LNG +1.75%). No tightening triggered; all stops unchanged (LNG's HWM/stop moved automatically as a broker-side trailing-stop mechanic on a new high).
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; today's +1.00% intraday move extends the already-logged Q2 beat/Hess-synergies/Guyana-FCF thesis, nothing sharp or unexplained. ECL — no thesis-breaking news; +0.32% intraday is a minor continuation, post-earnings thesis unchanged. LNG — no thesis-breaking news; +0.96% intraday continues the post-earnings strength already tracked pre-market, thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no position moved sharply enough intraday (CVX +1.00%, ECL +0.32%, LNG +0.96%) to warrant an unexplained-move Perplexity check.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (3 positions, 4 orders; LNG stop/HWM auto-ratcheted per normal trailing-stop mechanics, all else unchanged in structure).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
