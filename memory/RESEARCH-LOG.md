@@ -1431,3 +1431,61 @@ No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
 
 ### Decision
 **HOLD** — no watchlist name has a fresh, today-dated, gate-clearing catalyst (GRC stale Q2 beat with flat reaction, FANG/VMC gate-fails continuing to hold, FCX/XOM/GEV all recycled coverage with no new trigger). Stall-breaker not armed (streak 1). 0/3 weekly trades used (new Week 6), 3 slots available but no qualifying setup today — patience > activity. No new watchlist names added; no new Decision Scoreboard rows (GRC/FANG/VMC already carry open rows from the same watchlist streak). CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged; LNG's ex-div today is mechanical/non-thesis. Carry forward watchlist: GRC (stale, 14 sessions, deep in "missed"), XLE/Energy (sector color), FANG (avoid, gate-fail confirmed correct), VMC (avoid, gate-fail confirmed correct), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
+
+## 2026-08-11 — Pre-market Research
+
+### Account
+- Equity: $99,121.09 | Cash: $41,149.34 (41.51%) | Buying power: $326,918.27 (margin, effective)
+- Position market value: $57,971.75 (CVX + ECL + LNG, 58.49% deployed). 3 open positions (CVX 95 sh, ECL 70 sh, LNG 74 sh), 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC, 1x LNG trailing stop GTC).
+- Daytrade count: 0. Day 29 (Week 6, Tuesday). 2 consecutive no-trade-days entering today (Aug 7, Aug 10; last trade was Aug 6's LNG buy). 0/3 trades used this week (Week 6) — 3 slots available. balance_asof 2026-08-10.
+
+### Market Context
+- WTI/Brent: tight cluster, **~$82.19-82.37 WTI / $87.74-87.94 Brent** — dispersion well within the L-005 ~10% threshold this session; no bars cross-check required. Oil surged Monday on Iran/Strait-of-Hormuz supply-disruption concerns.
+- S&P 500 futures: modestly higher premarket, September E-mini ~7,775-7,788 (+0.10% to +0.14% in the most recent quotes, one earlier snapshot showed -0.05%) — softer July jobs data continues to ease rate-hike fears.
+- VIX: **~15.5** (Cboe 15.51, CNBC 15.54) — no acute vol, no sign of the recurring 20.95 stale artifact (L-002) this session.
+- Today's catalysts: broad tape driven by easing rate-hike fears (soft jobs data) and oil-driven energy-sector rotation (Hormuz tensions). Notable single-name movers unrelated to our book: MarineMax (+46%, Blackstone/Safe Harbor buyout), Intel (-4.1%, $15B stock offering), Archer Aviation (+12%, Boeing subsidiary acquisition), AbCellera (+34.8%, Phase 2 data). None on our watchlist/held list.
+- Earnings before today's open: Sea Limited, Cardinal Health, Venture Global, Tencent Music, Aramark, On Holding, Smithfield Foods — none on our watchlist/held list.
+- Economic calendar: **light day** — no CPI/PPI/FOMC/jobs data today. Follow-up query confirmed July CPI is scheduled for **tomorrow, Wed Aug 12, 8:30am ET** (resolves an initial ambiguous read from the econ-calendar query that conflated it with today).
+- Sector momentum: unchanged YTD leadership — **Energy and Materials** leading, Consumer Staples/Industrials next tier; Financials, Info Tech, Consumer Discretionary, Communication Services lagging. Same qualitative picture as every prior session.
+- Market regime (HMM): **Bull, confidence 98.54%** (499 obs, SPY 2y daily, 90 days in regime) — consistent with Aug 10's Bull read (98.55%), stable. Advisory only — not an entry/exit trigger.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $193.6395, unrealized -0.11% (-$21.04). No new dated catalyst today — Q2 beat, Microsoft 20-year power deal, and the $1.78/share dividend (ex-div Aug 19, outside this week) are all previously known/logged. Thesis (Q2 beat, Hess synergies, Guyana FCF inflection) intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, combined stop $177.79725, HWM $197.5525 (unchanged). No action.
+  - **ECL** (70 sh, entry $281.93): current $284.70, unrealized +0.98% (+$193.90). No new catalyst today — coverage recycles the already-known Q2 beat/raised guidance, UBS Buy upgrade ($325 PT), and closed CoolIT acquisition. Thesis intact. No same-week ex-div or negative analyst action found (L-006 checked). Trailing stop GTC 64b1066c confirmed resting, stop $259.6005, HWM $288.445. No action.
+  - **LNG** (74 sh, entry $263.63, bought Aug 6): current $265.50, unrealized +0.71% (+$138.38). No new dated catalyst today beyond the already-logged Q2 beat and raised full-year EBITDA guidance ($7.9-8.4B). Ex-div already passed (Aug 10, record date), no new L-006 flag. Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $239.877, HWM $266.53 (ratcheted up Aug 10). No action.
+
+### Lessons Check
+- L-004 (widen earnings-print verification) — complied (N/A trigger today). No earnings-print claim was used toward the buy-side gate for any name — every watchlist ticker's coverage recycles prior-dated Q2 results with zero fresh today-dated print.
+- L-005 (cross-check extreme oil dispersion) — checked, not triggered. WTI/Brent cluster ($82.19-82.37 / $87.74-87.94) is tight and well within the ~10% dispersion threshold; no bars cross-check required.
+- L-006 (same-week ex-div/analyst-action risk) — checked for all 3 held names: CVX (ex-div Aug 19, outside this week, no flag), ECL (none found), LNG (ex-div already passed Aug 10, no new flag). VMC carries an Aug 13 ex-div (same-week from today) noted below for awareness, though VMC is not a buy candidate today. No new entry planned, so no additional pre-entry check required.
+- L-007 (monitor skip-scoreboard shift toward missed) — not due yet (next weekly review Review-by 2026-08-14, this Friday); ongoing awareness only. GRC continues in "missed" territory (+3.86% vs Ref). FANG has converged to nearly flat vs its Aug 4 gate-fail Ref (+0.21%, in from -3.15% Aug 10) after an outsized Aug 10 move — worth flagging for the upcoming weekly review scoring. VMC remains essentially flat vs its Aug 5 gate-fail Ref (+0.10%).
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing corrupted anomaly (ap=0) for GRC/FANG/VMC, cross-checked via bars instead)
+GRC +3.86% (81.49 vs 78.46 Ref, Aug 10 close) — still in "missed" territory but the gap has narrowed materially from Aug 10's +6.78% read. FANG +0.21% (198.94 vs 198.53 Ref, Aug 4 gate-fail row) — a sharp reversal from Aug 10's -3.15% read; the Aug 10 session bar shows FANG opened $192.275 and closed $198.94 (+3.5% intraday), erasing most of the prior gap versus the gate-fail Ref. Bears watching at the weekly review. VMC +0.10% (285.37 vs 285.08 Ref, Aug 5 gate-fail row) — essentially flat, continues confirming the Aug 5 gate-fail call was directionally correct (no clean sustained move either way).
+
+### Stall-Breaker
+**Not armed** — consecutive no-trade-day count entering today is 2 (Aug 7, Aug 10; last trade was Aug 6's LNG buy). No watchlist refresh required.
+
+### Watchlist Catalyst Scan
+- **GRC** — no fresh Aug 11-dated catalyst; coverage recycles the known Q1/Q2 2026 beats, the $0.19 dividend (record date Aug 14), and the CFO succession (James Kerr -> Ronald Stoops, effective Oct 1). Skip-scoreboard gap narrowing but still "missed." Does not clear the gate.
+- **XLE (Energy proxy)** — sector color only; Energy/Materials remain the confirmed YTD leaders.
+- **FANG** — no fresh Aug 11-dated catalyst; coverage recycles the Aug 3 Q2 beat (EPS $6.48 vs $5.96 est.), raised full-year production guidance, and the doubled $16B buyback authorization — all previously known. Aug 4 gate-fail Ref has nearly converged (+0.21%) after Aug 10's rally; avoid pending a genuinely new trigger.
+- **VMC** — no fresh Aug 11-dated catalyst; coverage recycles the known Q2 beat, the Mexico arbitration award ($15M, favorable but minor), and reaffirmed guidance. Same-week ex-div Aug 13 noted (L-006, informational). Aug 5 gate-fail continues to hold (flat vs Ref). Avoid.
+- **FCX** — no fresh Aug 11-dated catalyst; coverage recycles the known Grasberg guidance-cut (300M lb copper sales reduction) and Q2 beat. No new trigger.
+- **XOM** — no fresh Aug 11-dated catalyst; coverage recycles the known Q2 beat ($14.5B net income), the $1.03 dividend (ex-div Aug 17, not this week from today), and a TD Cowen PT raise to $168 (undated in results). No clean today-dated trigger.
+- **GEV** — no fresh Aug 11-dated catalyst; coverage recycles the known raised 2026 revenue guidance (~$44.5-46B) and prior analyst upgrades (Bernstein, Jefferies). Thesis (avoid) unchanged.
+
+### Trade Ideas
+No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
+1. **No trade today.** GRC/FANG/VMC/FCX/XOM/GEV all confirmed with zero clean today-dated catalyst — every item is recycled prior-session coverage (Q2 earnings beats already priced/logged, standing analyst targets/ratings, non-today-dated dividend/ex-div dates). Held positions (CVX, ECL, LNG) all have intact theses and resting stops; no action required.
+
+### Risk Factors
+- Light macro calendar today (no CPI/PPI/FOMC/jobs) — July CPI is confirmed for tomorrow, Wed Aug 12, 8:30am ET; a real volatility catalyst for the whole book, especially oil-linked CVX/LNG.
+- Oil surged on Iran/Strait-of-Hormuz supply-disruption concerns (WTI ~$82.2-82.4, Brent ~$87.7-87.9) — continued escalation or a swift de-escalation are both live risks for CVX/LNG/XOM-adjacent names.
+- Softer July jobs data continues to support broad risk-on/rate-cut sentiment — a hawkish surprise in tomorrow's CPI print would be a real reversal risk for the whole book.
+- CVX (held): unrealized -0.11% (-$21.04), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stops GTC 7f5acb83/e328a200 confirmed resting ($177.79725, HWM $197.5525). No action.
+- ECL (held): unrealized +0.98% (+$193.90), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 64b1066c confirmed resting ($259.6005, HWM $288.445). No action.
+- LNG (held): unrealized +0.71% (+$138.38), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 974c3bfc confirmed resting ($239.877, HWM $266.53). No action.
+- GRC (skip) still "missed" but narrowing (+3.86% vs Ref, down from +6.78%). FANG (skip/gate-fail) has sharply converged toward its Ref (+0.21%, up from -3.15%) after an outsized Aug 10 rally — flagging for the upcoming Aug 14 weekly review scoring. VMC (skip/gate-fail) remains flat and confirming (+0.10% vs Ref).
+
+### Decision
+**HOLD** — no watchlist name has a fresh, today-dated, gate-clearing catalyst (GRC/FANG/VMC/FCX/XOM/GEV all recycled prior-session coverage with no new trigger). Stall-breaker not armed (streak 2). 0/3 weekly trades used (Week 6), 3 slots available but no qualifying setup today — patience > activity. No new watchlist names added; no new Decision Scoreboard rows (GRC/FANG/VMC already carry open rows from the same watchlist streak). CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged. Carry forward watchlist: GRC (still "missed" but narrowing), XLE/Energy (sector color), FANG (avoid, gate-fail Ref nearly converged — watch at weekly review), VMC (avoid, gate-fail confirmed correct), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
