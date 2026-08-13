@@ -536,17 +536,17 @@ No positions yet. Bot launches tomorrow.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
 
-### Aug 13 — EOD Snapshot (Day 31, Thursday)
+### Aug 12 — EOD Snapshot (Day 30, Wednesday)
 
-**Portfolio:** $98,981.18 | **Cash:** $41,149.34 (41.57%) | **Day P&L:** -$175.40 (-0.18%) | **Phase P&L:** -$1,018.82 (-1.02%)
+**Portfolio:** $99,113.37 | **Cash:** $41,149.34 (41.52%) | **Day P&L:** -$358.59 (-0.36%) | **Phase P&L:** -$886.63 (-0.89%)
 
 | Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
 |---|---|---|---|---|---|---|
-| CVX | 95 | $193.860947 | $196.38 | -0.11% | +$239.31 (+1.30%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
-| ECL | 70 | $281.93 | $278.39 | -0.01% | -$247.80 (-1.26%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
-| LNG | 74 | $263.63 | $266.06 | -0.77% | +$179.82 (+0.92%) | $243.828 (10% trail, GTC 974c3bfc, HWM $270.92) |
+| CVX | 95 | $193.860947 | $196.462 | -0.10% | +$247.10 (+1.34%) | $177.79725 (10% trail, GTC 7f5acb83/e328a200, HWM $197.5525) |
+| ECL | 70 | $281.93 | $278.00 | -2.33% | -$275.10 (-1.39%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $268.11 | +1.01% | +$331.52 (+1.70%) | $243.828 (10% trail, GTC 974c3bfc, HWM $270.92, ratcheted up today) |
 
-**Notes:** 5th consecutive no-trade day (Aug 7, 10, 11, 12, 13) since the Aug 6 LNG buy; 0/3 weekly trades used (Week 6, resets Mon Aug 17). Portfolio equity $98,981.18, down -$175.40 (-0.18%) day-over-day (referenced against Alpaca's own `last_equity` field, $99,156.58, balance_asof 2026-08-12, since TRADE-LOG has no Aug 12 EOD snapshot to reference — see process gap below) and -$1,018.82 (-1.02%) cumulative phase P&L vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 58.43% deployed / 41.57% cash — still below the 75-85% target deployment band (L-009). CVX and LNG green on unrealized P&L, ECL modestly red; all three roughly flat-to-slightly-down intraday (CVX -0.11%, ECL -0.01%, LNG -0.77%). No position near the -7% cut or the +15%/+20% tighten thresholds (max gain CVX +1.30%, max loss ECL -1.26%). No thesis breaks identified. **Process gap (recurring):** no pre-market, market-open, or midday entries were logged in RESEARCH-LOG.md/TRADE-LOG.md for Aug 13, and no Aug 12 EOD snapshot exists either (git history confirms no EOD commit that day) — this EOD summary is the only routine activity logged today. This is the 2nd missing-EOD-snapshot incident in the last week (Aug 7's EOD was also skipped, flagged in the Aug 10 EOD notes) and the first day this phase with zero intraday routine activity logged at all; should be investigated as a scheduling/persistence failure in the cloud routines, not a trading decision.
+**Notes:** 4th consecutive no-trade day (Aug 7, Aug 10, Aug 11, Aug 12) since the Aug 6 LNG buy; 0/3 weekly trades used (Week 6). Portfolio equity $99,113.37, down -$358.59 (-0.36%) day-over-day and -$886.63 (-0.89%) cumulative phase P&L vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 58.48% deployed / 41.52% cash — still below the 75-85% target deployment band. ECL was the day's main drag (-2.33%, no thesis-breaking news per midday check), CVX flat (-0.10%), LNG the gainer (+1.01%) with its trailing stop mechanically ratcheting up to $243.828 (new HWM $270.92, stop-only-up, no manual action). No positions near the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain LNG +1.70%). No trades placed today (pre-market gate check found no watchlist name clearing buy-side entry; see Market-Open Check above).
 
 ### Aug 13 — Market-Open Check (Day 31, Thursday) — no new trade
 
