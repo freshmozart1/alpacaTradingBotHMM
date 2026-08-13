@@ -535,3 +535,21 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except LNG's stop mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 13 — Midday Scan (Day 31, Thursday) — no action
+
+**Process gap:** No pre-market entry found in RESEARCH-LOG.md for today at scan time — proceeded with held-position review and sell-side rules directly from live Alpaca state; a midday-only addendum was logged to RESEARCH-LOG.md.
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +1.34% (+$247.10), current $196.462 vs entry $193.860947 (intraday -0.10% vs Aug 12's $196.66 close); ECL 70 sh, unrealized -1.39% (-$275.10), current $278.00 vs entry $281.93 (intraday -2.33% vs Aug 12's $284.63 close); LNG 74 sh, unrealized +1.85% (+$360.38), current $268.50 vs entry $263.63 (intraday +1.16% vs Aug 12's $265.43 close). 4 open orders unchanged: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $177.79725, HWM $197.5525; ECL trailing stop GTC 64b1066c (70 sh), stop $259.6005, HWM $288.445; LNG trailing stop GTC 974c3bfc (74 sh), stop $243.828, HWM $270.92 (all unchanged from Aug 12 close).
+
+**STEP 3 (cut losers):** N/A — CVX +1.34%, ECL -1.39%, LNG +1.85%, none within range of the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max unrealized gain LNG +1.85%). No tightening triggered; all stops unchanged.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; -0.10% intraday is flat/in-line, Q2 beat/Hess-synergies/Guyana-FCF thesis intact. ECL — checked via Perplexity given the -2.33% intraday move (largest of the three); no fresh negative catalyst or downgrade found (most recent analyst action was a UBS upgrade to Buy), decline attributed to continued profit-taking/valuation concerns after ECL's strong run — same pattern as prior sessions, not a thesis break. LNG — no thesis-breaking news; +1.16% intraday is a modest continuation of recent strength, Q2 beat thesis intact. No action on any position.
+
+**STEP 6 (optional research):** Perplexity check run under STEP 5 on ECL's -2.33% intraday move (folded in above, no separate action).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (3 positions, 4 orders, all unchanged in structure).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.

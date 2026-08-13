@@ -1544,3 +1544,16 @@ No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
 
 ### Decision
 **HOLD** — no watchlist name has a fresh, today-dated, gate-clearing catalyst (GRC deep in "missed" and stale, FANG/VMC gate-fails continuing to hold near-flat, FCX/XOM/GEV all recycled coverage with no new trigger). Stall-breaker not armed (streak 3). 0/3 weekly trades used, 3 slots available but no qualifying setup today — patience > activity. No new watchlist names added; no new Decision Scoreboard rows (GRC/FANG/VMC already carry open rows from the same watchlist streak). CVX, ECL, and LNG (held) require no action — all three theses intact, all green, all stops resting unchanged. Carry forward watchlist: GRC (stale, 16 sessions, deep in "missed"), XLE/Energy (sector color), FANG (avoid, gate-fail confirmed correct so far), VMC (avoid, gate-fail confirmed correct so far), FCX (no fresh catalyst), XOM (no fresh catalyst), GEV (avoid).
+
+## 2026-08-13 — Midday Addendum
+
+**Process gap:** No pre-market entry found for today (Aug 13) at scan time — this is a midday-only addendum, not a full pre-market entry. Held-position review and gate check both run inline below using live Alpaca state.
+
+### Account (midday)
+- Equity/positions per `alpaca.sh positions`: CVX 95 sh unrealized +1.34% (+$247.10), current $196.462 vs entry $193.860947, intraday -0.10% vs Aug 12 close $196.66. ECL 70 sh unrealized -1.39% (-$275.10), current $278.00 vs entry $281.93, intraday -2.33% vs Aug 12 close $284.63. LNG 74 sh unrealized +1.85% (+$360.38), current $268.50 vs entry $263.63, intraday +1.16% vs Aug 12 close $265.43. 4 open orders unchanged: CVX trailing stops GTC 7f5acb83/e328a200, stop $177.79725, HWM $197.5525; ECL trailing stop GTC 64b1066c, stop $259.6005, HWM $288.445; LNG trailing stop GTC 974c3bfc, stop $243.828, HWM $270.92.
+
+### Perplexity Check — ECL intraday move
+ECL's -2.33% intraday move was the only one large enough to warrant a check (CVX -0.10%, LNG +1.16% both immaterial). Perplexity found no new company-specific negative catalyst or downgrade today — no fresh press release or 8-K, and the most recent analyst action found was a UBS **upgrade** to Buy (not a downgrade). Most plausible explanation: continued profit-taking/valuation concerns after ECL's strong 3-year run (one source flagged the stock as "overvalued"), consistent with the same post-earnings-pullback pattern already logged repeatedly since the Jul 28 buy. Q2 beat + raised FY26 guidance thesis intact — not a thesis break.
+
+### Decision
+**HOLD** — no positions near the -7% cut (max drawdown ECL -1.39%) or the +15%/+20% tighten thresholds (max gain LNG +1.85%). No thesis breaks. No new trade evaluated this addendum (gate check requires a full pre-market pass — deferred to tomorrow's pre-market routine, which should also address today's missing pre-market entry). No action taken.
