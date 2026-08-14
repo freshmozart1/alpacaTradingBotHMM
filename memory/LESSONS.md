@@ -108,3 +108,7 @@ than 10 sessions are pruned.
 | 2026-07-30 | GRC | HOLD — Q2 beat catalyst, source dating unconfirmed (L-004), pending bars re-check at open | 78.46 | +7.84% | missed |
 | 2026-08-04 | FANG | gate-fail: Q2 EPS beat ($6.48 vs $5.96 est) but bars-confirmed NEGATIVE reaction at open (-3.87%, $198.53 -> $190.85) | 198.53 | | |
 | 2026-08-05 | VMC | gate-fail: Q2 EPS beat ($2.59 vs $2.50 est) but bars-confirmed reaction faded from +1.47% intraday high ($289.285, 10:15am ET) to +0.49% ($286.47, 2:15pm ET) and still declining — not a clean sustained positive reaction to trade against | 285.08 | | |
+| 2026-08-14 | MPC | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Aug 4 Q2 beat/Mizuho pick | 356.67 | | |
+| 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | | |
+| 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | | |
+| 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | | |
