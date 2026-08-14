@@ -573,3 +573,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's stop mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 13 — EOD Snapshot (Day 31, Thursday)
+
+**Portfolio:** $98,998.79 | **Cash:** $41,149.34 (41.57%) | **Day P&L:** -$114.58 (-0.12%) | **Phase P&L:** -$1,001.21 (-1.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $197.81 | +0.61% | +$374.94 (+2.04%) | $178.254 (10% trail, GTC 7f5acb83/e328a200, HWM $198.06, ratcheted up today) |
+| ECL | 70 | $281.93 | $276.26 | -0.78% | -$396.90 (-2.01%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $266.48 | -0.61% | +$210.90 (+1.08%) | $243.828 (10% trail, GTC 974c3bfc, HWM $270.92) |
+
+**Notes:** 5th consecutive no-trade day (Aug 7, 10, 11, 12, 13) since the Aug 6 LNG buy; 0/3 weekly trades used (Week 6). Portfolio equity $98,998.79, down -$114.58 (-0.12%) day-over-day (vs Aug 12 EOD-logged $99,113.37; Alpaca's own `last_equity` field shows $99,156.58 for the same `balance_asof` 2026-08-12 — the same logged-vs-Alpaca discrepancy already flagged in the Aug 10 EOD note; logged figure used per continuity convention) and -$1,001.21 (-1.00%) cumulative phase P&L vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 58.44% deployed / 41.57% cash — still below the 75-85% target deployment band. CVX led gainers (+0.61% intraday, unrealized +2.04%), trailing stop mechanically ratcheted up today to $178.254 (new HWM $198.06, stop-only-up, no manual action); ECL was the day's drag (-0.78% intraday, unrealized -2.01%); LNG modestly lower (-0.61% intraday, unrealized +1.08%). No positions near the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain CVX +2.04%). No trades placed today (pre-market gate check found no watchlist name clearing buy-side entry; see Market-Open Check above).
