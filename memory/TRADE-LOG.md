@@ -609,3 +609,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 14 — EOD Snapshot (Day 32, Friday)
+
+**Portfolio:** $99,578.40 | **Cash:** $41,149.34 (41.32%) | **Day P&L:** +$579.61 (+0.59%) | **Phase P&L:** -$421.60 (-0.42%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $200.00 | +1.16% | +$583.21 (+3.17%) | $181.467 (10% trail, GTC 7f5acb83/e328a200, HWM $201.63, ratcheted up today) |
+| ECL | 70 | $281.93 | $276.11 | -0.05% | -$407.40 (-2.06%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $271.64 | +1.94% | +$592.74 (+3.04%) | $245.259 (10% trail, GTC 974c3bfc, HWM $272.51, ratcheted up today) |
+
+**Notes:** 6th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14) since the Aug 6 LNG buy; Week 6 (Aug 10-14) closes with 0/3 weekly trades used (resets Mon Aug 17). Portfolio equity $99,578.40, up +$579.61 (+0.59%) day-over-day (vs Aug 13 EOD-logged $98,998.79; Alpaca's own `last_equity` field shows $98,988.56 for the same `balance_asof` 2026-08-13 — same logged-vs-Alpaca discrepancy pattern flagged in prior EOD notes; logged figure used per continuity convention) and -$421.60 (-0.42%) cumulative phase P&L vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 58.68% deployed / 41.32% cash — still below the 75-85% target deployment band (per L-009, to be tallied at the next weekly review). CVX and LNG both led gainers intraday (CVX +1.16%, unrealized +3.17%; LNG +1.94%, unrealized +3.04%), both trailing stops mechanically ratcheted up today (stop-only-up, no manual action); ECL modestly lower (-0.05% intraday, unrealized -2.06%). No positions near the -7% cut or +15%/+20% tighten thresholds (max unrealized gain LNG +3.04%). No trades placed today (pre-market gate check found no watchlist name clearing buy-side entry; see Market-Open Check above).
