@@ -384,3 +384,78 @@ Verdict counts (new rows this week): missed 1, skip-right 0, avoided-loss 0. Tot
 - New lesson L-008 opened to monitor the new thin-liquidity confirmation window's effect on gate outcomes; L-009 opened to track continued under-deployment against the 75-85% target (see LESSONS.md).
 
 ### Overall Grade: C- (risk management held — no rule breaches, one clean well-confirmed entry (LNG) — but the bot lagged the S&P by 4.54% in the index's best week since mid-April, driven mainly by persistent under-deployment rather than any bad decision)
+
+## Week ending 2026-08-14
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $97,790.18 |
+| Ending portfolio | $99,587.90 |
+| Week return | +$1,797.72 (+1.84%) |
+| S&P 500 week | +0.41% (SPY 773.16 -> 776.30, Aug 7 close -> Aug 14 close via `alpaca.sh bars`; Perplexity again returned internally inconsistent figures — CNBC "+0.4%" vs WSJ's own Thursday "+0.65%"/Friday "-0.17%" reads, SPX close cited as both 7,798.99 and 7,785.76 — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | +1.43% |
+| Trades | 0 (W:0 / L:0 / open:0) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week; CVX unrealized +3.22% strongest mover) |
+| Worst trade | N/A (no closed trades this week; ECL unrealized -2.06% weakest mover) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $200.10 | +$592.71 (+3.22%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $181.467, HWM $201.63 |
+| ECL | $281.93 (70 sh) | $276.11 | -$407.40 (-2.06%) | 10% trailing GTC, order 64b1066c, stop $259.6005, HWM $288.445 |
+| LNG | $263.63 (74 sh) | $271.64 | +$592.74 (+3.04%) | 10% trailing GTC, order 974c3bfc, stop $245.259, HWM $272.51 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| FANG | 198.53 (Aug 4) | 200.55 (Aug 11) | +1.02% | skip-right |
+| VMC | 285.08 (Aug 5) | 279.86 (Aug 12) | -1.83% | skip-right |
+
+Verdict counts (new rows this week): missed 0, skip-right 2, avoided-loss 0. Total missed gains: 0.00%. Total avoided losses: 0.00%. Missed:avoided ratio: 0:0 — the first non-missed-skewed read since the Aug 7 escalation (1:0 that week, 3:1 the week before). L-007's escalation threshold (missed count > avoided-loss count) is not met (0 = 0), so no further gate-calibration escalation this week — see Rule Change note below on L-007's disposition. GRC (Jul 30 row, scored "missed" +7.84% at the Aug 7 review) is 6 sessions past its scoring point, not yet past the 10-session retention threshold — retained one more review. MPC/COP/NEM/NUE (Aug 14 stall-breaker refresh rows) not yet 5 sessions old — carried forward. Pruned this review: LNG/FANG/VMC/FCX (Jul 20 rows) and XOM/CVX/ECL (Jul 21 rows) and GEV (Jul 22 row) — all verdicts scored at the Jul 31 review, whose scoring reference points are now 12-14 trading sessions old, past the 10-session retention threshold (this pruning was overdue by one review; the Jul 31 batch should have been pruned Aug 7 using the scoring-reference-point convention established by the MU precedent, not the verdict-fill date — corrected here).
+
+### What Worked
+
+- The bot beat the S&P this week (+1.84% vs +0.41%, +1.43% relative) with zero new trades — pure mark-to-market gains on CVX and LNG, both riding continued post-earnings strength, show the hold/trail discipline on existing positions can outperform the index even with the buy-side gate fully closed to new entries.
+- Skip-scoreboard mix flipped back to non-missed-skewed this week — FANG and VMC (the Aug 4/Aug 5 gate-fails) both scored skip-right (+1.02%/-1.83%, 0 missed, 0 avoided-loss), reversing the two-review missed-skewed trend that triggered the Aug 7 thin-liquidity rule change. No further gate-tightening evidence needed right now.
+- The stall-breaker correctly fired on Day 5 (today) and refreshed a genuinely stale watchlist — dropped GRC/FANG/VMC/FCX/XOM/GEV (all >=7 sessions stale with zero fresh catalysts), added MPC/COP/NEM/NUE from the two leading YTD sectors (Energy, Materials).
+- Risk mechanics held clean all week: trailing stops on CVX and LNG mechanically ratcheted up multiple times with zero manual intervention, no position came within range of the -7% cut or the +15%/+20% tighten thresholds, and L-004/L-005/L-006 were checked every session with zero triggers or incidents.
+
+### What Didn't Work
+
+- Zero trades placed this week — the 3rd consecutive weekly-review close under the 75-85% deployment target (38.60% Jul 31, ~58% Aug 7, 58.68% Aug 14), with 0/3 weekly trade slots used. (Note: daily pre-market entries this week referred to this as the "5th/6th consecutive week/session" under-deployed — that count does not reconcile against the weekly-review record itself; flagged for correction, see Rule Change note.)
+- The stall-breaker's fixed 5-consecutive-no-trade-day trigger meant today's watchlist refresh (MPC/COP/NEM/NUE) landed on the week's last session — zero trading days remained to act on it before this review, so the refresh structurally could not help this week's deployment.
+- A third distinct EOD-snapshot data-integrity incident in two weeks: Aug 7's EOD entry was never logged, Aug 13's EOD entry was mislabeled with Aug 12's data (self-flagged same day), and Aug 10/13/14 all noted a logged-vs-Alpaca `last_equity` mismatch for the same `balance_asof` date — a recurring pattern, not isolated noise.
+- ECL remains the week's laggard (-2.06% unrealized), the only position showing meaningful drawdown, though nowhere near the -7% cut.
+
+### Key Lessons
+
+- A zero-trade week is not automatically a losing week — this week's +1.43% relative outperformance came entirely from letting winning positions (CVX, LNG) run under their trailing stops, not from new activity.
+- The stall-breaker's trigger timing is structurally mistimed: firing at exactly 5 no-trade days puts the refresh on a Thursday/Friday most weeks, leaving no runway in the same week to convert it into a trade.
+- Three EOD-logging incidents in two weeks (missing, mislabeled, and value-mismatched entries) share one root cause — the routine reading account state before Alpaca's `balance_asof` has settled to the current session — and need an explicit guard rather than a fresh flag-and-continue each time.
+
+### Adjustments for Next Week
+
+- Lower the stall-breaker's watchlist-refresh trigger from 5 to 3 consecutive no-trade sessions, so a broadened screen has more of the week left to convert into an entry (L-010).
+- Before logging any EOD snapshot, check the account's `balance_asof` field against today's date; if it lags, label the entry as provisional/live-pulled rather than committing it as the day's settled EOD close (L-011).
+- Continue L-008's 2-review thin-liquidity-window check and L-009's deployment tracking (both already active, not yet due) — no new entries needed for these.
+
+### Rule Change This Week
+
+- L-007 ("monitor skip-scoreboard shift toward missed") hit its Aug 14 review-by date. Retired rather than extended: it already delivered its one intended escalation (Aug 7, leading to the thin-liquidity bars-confirmation-window rule change), and this week's newly-scored rows (FANG, VMC) came back skip-right/skip-right with zero missed verdicts — no continuation of the trend it was tracking. Its monitoring function is subsumed by the weekly review's standing skip-scoreboard computation (STEP 3) and rule-change escalation path (STEP 5), so no standalone lesson is needed going forward. No TRADING-STRATEGY.md change — this is a LESSONS.md-only retirement, not a promoted rule.
+- No TRADING-STRATEGY.md rule changes this week. Trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
+
+### Overall Grade: B (beat the S&P by 1.43% and kept risk management clean with zero rule breaches, but zero trading activity for the third straight under-deployed week and a recurring EOD-logging data-integrity gap keep this from a higher grade)
