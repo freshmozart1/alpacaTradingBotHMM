@@ -659,3 +659,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 17 — EOD Snapshot (Day 33, Monday)
+
+**Portfolio:** $99,468.41 | **Cash:** $41,149.34 (41.37%) | **Day P&L:** -$109.99 (-0.11%) | **Phase P&L:** -$531.59 (-0.53%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $202.71 | +1.36% | +$840.66 (+4.57%) | $183.312 (10% trail, GTC 7f5acb83/e328a200, HWM $203.68, ratcheted up today) |
+| ECL | 70 | $281.93 | $275.84 | -0.10% | -$426.30 (-2.16%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $266.93 | -1.73% | +$244.20 (+1.25%) | $246.087 (10% trail, GTC 974c3bfc, HWM $273.43) |
+
+**Notes:** Portfolio equity $99,468.41, down -$109.99 (-0.11%) day-over-day (vs Aug 14 EOD-logged $99,578.40) and -$531.59 (-0.53%) cumulative phase P&L vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 58.63% deployed / 41.37% cash — still below the 75-85% target deployment band (per L-009, to be tallied at the next weekly review). CVX led gainers intraday (+1.36%, unrealized +4.57%), trailing stop mechanically ratcheted up to $183.312 (new HWM $203.68, stop only moved up). LNG's morning pullback stabilized into the close (-1.73% intraday vs Friday, unrealized +1.25%); no thesis-breaking news per the midday check, stop unchanged from midday at $246.087 (HWM $273.43). ECL modestly lower (-0.10% intraday, unrealized -2.16%), stop unchanged at $259.6005. No positions near the -7% cut or +15%/+20% tighten thresholds (max unrealized gain CVX +4.57%). No trades placed today — 0/3 weekly trades used (Week 7, Aug 17-21) — 7th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17).
