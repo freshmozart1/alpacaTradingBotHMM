@@ -1663,3 +1663,15 @@ No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
 
 ### Decision
 **HOLD** — no watchlist name (refreshed or otherwise) has a fresh, today-dated, gate-clearing catalyst. Stall-breaker fired (streak 5) and the watchlist was refreshed per directive (dropped GRC/FANG/VMC/FCX/XOM/GEV, added MPC/COP/NEM/NUE from the top-2 leading sectors), but this changes search breadth only — none of the new names clear the buy-side gate today either. 0/3 weekly trades used, 3 slots available but no qualifying setup today — patience > activity. New Decision Scoreboard rows appended for MPC/COP/NEM/NUE (new watchlist names); GRC/FANG/VMC rows remain open/untouched pending weekly-review scoring. CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged. Carry forward refreshed watchlist: MPC, COP, NEM, NUE (Energy/Materials, no fresh dated catalyst yet), Energy/Materials sector color. Today is also the scheduled weekly-review day (L-007/L-009 escalation checks due) — deferred to that separate routine.
+
+### Aug 17 — Midday Addendum (Day 33, Monday)
+
+No same-day pre-market RESEARCH-LOG entry exists (Aug 17's pre-market/market-open research was run inline per market-open.md STEP 1 and logged only in TRADE-LOG.md's Aug 17 Market-Open Check; see that entry for full pre-market context — WTI/Brent dispersion tight, no L-005 trigger, stale "CPI today" claim caught and discarded per L-002, no watchlist name (MPC/COP/NEM/NUE) cleared the gate).
+
+**Midday account state** (via `alpaca.sh positions`/`orders`): CVX 95 sh, unrealized +3.99% ($201.60 vs entry $193.860947); ECL 70 sh, unrealized -2.58% ($274.67 vs entry $281.93); LNG 74 sh, unrealized +0.86% ($265.89 vs entry $263.63, intraday -2.12% vs Friday's $271.64 close). All 4 GTC trailing stops confirmed resting, auto-ratcheted per the 10% mechanism where price made new highs (CVX both tranches stop $181.89/HWM $202.10; LNG stop $246.087/HWM $273.43; ECL unchanged, stop $259.6005/HWM $288.445). None near the -7% cut or +15%/+20% tighten thresholds.
+
+**LNG thesis check:** LNG's -2.12% intraday drop was the session's sharpest unexplained move, so a Perplexity check was run. Result: no thesis-breaking news — likely ordinary post-earnings consolidation/profit-taking after the Aug 6 Q2-beat/guidance-raise rally (Reuters confirmed the stock jumped ~3.5% same-day on Aug 6); Q2 beat and raised full-year guidance both stand, no negative company-specific catalyst found. Thesis intact — no action.
+
+**CVX/ECL:** No sharp intraday moves (CVX +0.80%, ECL -0.52% today) and no new thesis-breaking news for either; Q2-beat/Hess-synergies (CVX) and Q2-beat/raised-FY26-guidance (ECL) theses remain intact. No action.
+
+**Decision:** HOLD on all three positions — no cuts, no manual stop changes, no thesis breaks. No new trade evaluated at midday (gate check is a pre-market/market-open function, not re-run intraday). No ClickUp notification per STEP 8 (no action taken).
