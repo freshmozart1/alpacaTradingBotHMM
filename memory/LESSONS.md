@@ -122,3 +122,6 @@ than 10 sessions are pruned.
 | 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | | |
 | 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | | |
 | 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | | |
+| 2026-08-17 | MP | HOLD — stall-breaker refresh add (Materials), no fresh Aug 17-dated catalyst, recycled Aug 13 Q2 beat/gadolinium offtake deal | 58.74 | | |
+| 2026-08-17 | ET | HOLD — stall-breaker refresh add (Energy), no fresh Aug 17-dated catalyst, Mizuho top midstream pick (AI data-center power demand) | 21.05 | | |
+| 2026-08-17 | VLO | HOLD — stall-breaker refresh add (Energy), no fresh Aug 17-dated catalyst, broad oil-price/refining-margin strength | 341.55 | | |
