@@ -1675,3 +1675,65 @@ No same-day pre-market RESEARCH-LOG entry exists (Aug 17's pre-market/market-ope
 **CVX/ECL:** No sharp intraday moves (CVX +0.80%, ECL -0.52% today) and no new thesis-breaking news for either; Q2-beat/Hess-synergies (CVX) and Q2-beat/raised-FY26-guidance (ECL) theses remain intact. No action.
 
 **Decision:** HOLD on all three positions — no cuts, no manual stop changes, no thesis breaks. No new trade evaluated at midday (gate check is a pre-market/market-open function, not re-run intraday). No ClickUp notification per STEP 8 (no action taken).
+
+## 2026-08-18 — Pre-market Research
+
+### Account
+- Equity: $99,908.39 | Cash: $41,149.34 (41.19%) | Buying power: $329,122.70 (margin, effective)
+- Position market value: $58,759.05 (CVX + ECL + LNG, 58.81% deployed). 3 open positions (CVX 95 sh, ECL 70 sh, LNG 74 sh), 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh positions`/`orders`.
+- Daytrade count: 0. Day 34 (Week 7, Tuesday). 7 consecutive no-trade-days entering today (Aug 7, 10, 11, 12, 13, 14, 17; last trade was Aug 6's LNG buy). 0/3 trades used this week (Week 7, resets Mon Aug 24) — 3 slots available. balance_asof 2026-08-17.
+
+### Market Context
+- WTI/Brent: **~$84.9-85.15 WTI / $91.0-91.4 Brent** (Oilprice.com $85.06/$91.40, Markets Insider $85.15/$91.00, MarketWatch $84.93/$91.17) — dispersion ~7.2%, within the L-005 ~10% threshold, no bars cross-check required.
+- S&P 500 futures: **modestly negative premarket**, cluster ~7,766-7,795 (roughly -0.13% to -0.45% depending on source) — first negative premarket read after last week's calm/positive tone.
+- VIX: **~15.0-15.9** (MarketWatch 15.9, Yahoo/Investing/CNBC/TradingView ~15.0-15.1) — up modestly from Friday/Monday's ~14.3-14.9 read; not a repeated-value L-002 trigger (genuine move, not a stale duplicate), but consistent with the softer futures tone.
+- Today's catalysts: **Industrial Production/Capacity Utilization (9:15am ET)** is the day's scheduled US macro release; CPI/PPI already printed earlier this month, FOMC Minutes due Aug 19 (tomorrow), no jobs report today. Heavy BMO earnings slate (HD, BIDU, KEYS, DY, HSAI, JKHY, IQ, AS, KLAR) — none held/watchlisted. Reddit (RDDT) set to replace AvalonBay in the S&P 500 (index-flow catalyst, unrelated to held/watchlist names).
+- Sector momentum: **Energy still #1, independently confirmed via XLE at +40.36% YTD** (Yahoo Finance and TotalRealReturns, both through 8/14) — a notable step-up from the ~+15.9% figure repeated in prior sessions' entries, which in hindsight looks to have been a stale/recycled read given this session's two-source ETF confirmation. **Materials confirmed #2 via XLB at ~+16.8% YTD** (range $12.1-18.4% across providers). A separate Perplexity sector-momentum query also claimed Technology +33.3% YTD and Industrials +20.6% YTD, but neither could be cross-confirmed via XLK/XLI in this session — treated as unverified and excluded from the stall-breaker sector pick; Energy + Materials used instead, consistent with every prior week's leadership read.
+- Market regime (HMM): **Bull, confidence 98.06%** (499 obs, SPY 2y daily, 49 days in regime) — continuing the Bull read from recent sessions. Advisory only — not an entry/exit trigger.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $204.95, unrealized +5.72% (+$1,053.46). No new dated catalyst today — coverage recycles the known Angola offshore discovery and Q2 beat/raised-guidance thesis. **Ex-dividend date conflict**: CNN shows Aug 18 (today), Yahoo shows Aug 19 — flagged per L-006, non-blocking (mechanical, no held-position action either way). Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, combined stop $183.312, HWM $203.68. No action.
+  - **ECL** (70 sh, entry $281.93): current $275.84, unrealized -2.16% (-$426.30). No new dated catalyst today — coverage recycles the Q2 beat/raised guidance, UBS Buy upgrade ($325 PT), and the CoolIT-acquisition $5.0B note issuance. Thesis intact; today's pullback not a break. No same-week ex-div found (L-006 checked; next dividend $0.73/sh payable Oct 15, not this week). Trailing stop GTC 64b1066c confirmed resting, stop $259.6005, HWM $288.445. No action.
+  - **LNG** (74 sh, entry $263.63): current $270.00, unrealized +2.42% (+$471.38). No new dated catalyst — today is the **$0.555/sh dividend payment date** (already known/informational, not a buy trigger, ex-div/record date Aug 10 already passed; L-006 checked, no flag). Q2 beat/raised-EBITDA-guidance thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $246.087, HWM $273.43. No action.
+
+### Lessons Check
+- L-008 (monitor thin-liquidity bars-confirmation window) — not due for reporting (review-by 2026-08-21, next weekly review); no new entries made under the extended window since Aug 7, nothing new to note this session.
+- L-009 (track persistent under-deployment) — checked: 58.81% deployed today, still below the 75-85% band; formal consecutive-week tally deferred to the next weekly review (Fri Aug 21) per L-009's directive.
+- L-010 (lower stall-breaker trigger to 3 consecutive no-trade sessions) — **complied, triggered**: today's entering streak is 7 (well past both the old 5 and new 3 threshold), and this is the first full pre-market STEP-3 run since the Aug 14 refresh (Aug 17 was an inline market-open-only run per that day's TRADE-LOG entry). Stall-breaker FIRED — see Stall-Breaker section below.
+- L-011 (EOD balance_asof/settlement check) — N/A this session (pre-market entry, not an EOD snapshot); account `balance_asof` is 2026-08-17, expected for a pre-open pull.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing corrupted wide-spread/zero-ask anomaly for MPC/COP/NEM/NUE today, cross-checked via bars instead)
+MPC +0.43% (358.21 vs 356.67 Ref, 2026-08-14 row) — flat, no confirming move either way. COP +2.30% (127.59 vs 124.72 Ref, 2026-08-14 row) — modest positive drift. NEM +5.40% (120.34 vs 114.18 Ref, 2026-08-14 row) — approaching "missed" territory on the gold rally, worth flagging for the next weekly-review scoring pass. NUE +0.11% (272.78 vs 272.49 Ref, 2026-08-14 row) — flat, no confirming move either way.
+
+### Stall-Breaker
+**FIRED** — consecutive no-trade-day count entering today is 7 (Aug 7, 10, 11, 12, 13, 14, 17; last trade was Aug 6's LNG buy), meeting both the old >=5 and the L-010-lowered >=3 threshold. Watchlist refresh executed before per-ticker news queries:
+- **DROPPED**: none. MPC/COP/NEM/NUE have gone without a fresh dated catalyst for only 3 sessions since their Aug 14 addition (Aug 14, 17, 18) — under the 5+-session DROP threshold in TRADING-STRATEGY.md's stall-breaker rule. All four remain on the active watchlist.
+- **ADDED** (broadened screen, top-2 leading sectors Energy + Materials, both independently confirmed via XLE/XLB above): **MP** (Materials — MP Materials, Q2 revenue +89% YoY beat, new long-term aerospace/defense gadolinium offtake deal, government price-support backing), **MATV** (Materials — Mativ Holdings, Q2 EPS $0.50 vs $0.28 est beat, record adjusted EBITDA $75M, leverage down to 3.8x; note small-cap/low-price name, thin-liquidity window (L-008) would apply if it ever nears the gate), **XOM** (Energy — Q2 earnings $14.5B, Q3 dividend declared $1.03/sh, Rovuma LNG project contract wins, BofA upgrade to Buy), **PBF** (Energy — PBF Energy, Q2 EPS $6.22 vs ~$4.15 est beat, Goldman PT raised to $81, Martinez refinery back to full operations). Ref closes (Aug 17, via bars): MP $58.49, MATV $12.24, XOM $161.53, PBF $75.04 — new Decision Scoreboard rows appended below.
+Stall-breaker: **FIRED** (dropped none; added MP, MATV, XOM, PBF).
+
+### Watchlist Catalyst Scan (refreshed watchlist)
+- **MPC** — no fresh Aug 18-dated catalyst; all coverage recycles the Aug 4 Q2 beat ($17.73 EPS), buyback authorization, and TD Cowen's $375 PT. Ex-div Aug 19 (tomorrow, mechanical). Does not clear the gate.
+- **COP** — no fresh Aug 18-dated catalyst; coverage recycles the Q2 beat, the $0.84 dividend (record date was Aug 17, already passed), and the Ryan Lance CEO-succession storyline. Does not clear the gate.
+- **NEM** — no fresh Aug 18-dated catalyst; the Barrick/Nevada settlement is now 6 sessions stale (Aug 10). Gold's continued strength (~$4,400/oz) is a macro tailwind, not a company-specific dated trigger. Does not clear the gate.
+- **NUE** — no fresh Aug 18-dated catalyst; coverage recycles the Q2 beat, KeyBanc's upgrade, and the Vulcraft Indiana expansion (Aug 13-14, now stale). Does not clear the gate.
+- **MP** — no confirmed Aug 18-dated catalyst; Q2 beat/gadolinium-deal coverage does not carry a today-specific date in sourcing. Does not clear the gate.
+- **MATV** — no confirmed Aug 18-dated catalyst; Q2 beat/surge was "early August." A Seaport Research investor-conference appearance is dated today, but a conference appearance alone is not a qualifying catalyst (no associated news content found) — treated as non-qualifying per the stale-analyst-piece/general-sentiment exclusion. Does not clear the gate.
+- **XOM** — no fresh Aug 18-dated catalyst; dividend declaration and Rovuma LNG contract coverage do not carry a confirmed today-specific date; ex-div already passed Aug 17. Does not clear the gate.
+- **PBF** — no confirmed Aug 18-dated catalyst; Q2 beat/Goldman PT raise coverage recycles early-August earnings-period news. Does not clear the gate.
+
+### Trade Ideas
+No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
+1. **No trade today.** MPC/COP/NEM/NUE (carried forward) and MP/MATV/XOM/PBF (newly added) all confirmed with zero clean Aug 18-dated catalyst — every item is recycled prior-week/prior-session coverage (Q2 earnings beats, analyst targets, already-passed ex-div/record dates). Held positions (CVX, ECL, LNG) all have intact theses and resting stops; no action required.
+
+### Risk Factors
+- S&P 500 futures modestly negative premarket (-0.13% to -0.45%) alongside VIX ticking up to ~15.0-15.9 from last week's ~14.3-14.9 — first softer premarket tone in over a week; Industrial Production/Capacity Utilization (9:15am ET) is today's main scheduled data risk.
+- Oil-quote dispersion is moderate this session (~$84.9-85.15 WTI / $91.0-91.4 Brent, ~7.2%) — no L-005 trigger, but WTI/Brent both up meaningfully from last week's ~$81-84/$87-89 cluster, a genuine tailwind for held/watchlisted Energy names.
+- CVX (held): unrealized +5.72% (+$1,053.46), nowhere near -7% cut; also not yet at the +15% tighten-to-7%-trail trigger. Ex-div date conflict (Aug 18 vs Aug 19 across sources) flagged, non-blocking. Trailing stops GTC 7f5acb83/e328a200 confirmed resting ($183.312, HWM $203.68). No action.
+- ECL (held): unrealized -2.16% (-$426.30), nowhere near -7% cut; trailing stop GTC 64b1066c confirmed resting ($259.6005, HWM $288.445). No action.
+- LNG (held): unrealized +2.42% (+$471.38), nowhere near -7% cut; trailing stop GTC 974c3bfc confirmed resting ($246.087, HWM $273.43). No action.
+- Stall-breaker fired today (7th consecutive no-trade day, past both old and L-010-lowered thresholds) — watchlist widened (added MP/MATV/XOM/PBF, nothing dropped); this changes search breadth only, not the buy-side gate or any risk rule.
+- Deployment (L-009): 58.81% today, still below the 75-85% band — to be formally tallied at the next weekly review (Fri Aug 21) per L-009's escalation-consideration directive.
+- NEM (dropped-from-active-search-but-still-open skip row) is now +5.40% vs its Aug 14 Ref — approaching missed-territory on the continued gold rally; flag for the next weekly-review skip-scoreboard scoring pass.
+- Sector-momentum data anomaly: this session's XLE/XLB cross-check (+40.36%/+16.8% YTD) is materially higher than the ~+15.9%/+11.7% figures repeated across every prior-week entry — likely those earlier figures were the stale/recycled read, not today's. Noted for awareness; does not change the Energy > Materials leadership ranking either way.
+
+### Decision
+**HOLD** — no watchlist name (refreshed or otherwise) has a fresh, today-dated, gate-clearing catalyst. Stall-breaker fired (streak 7, past the L-010-lowered 3-session threshold) and the watchlist was widened per directive (added MP/MATV/XOM/PBF from the two independently-confirmed leading sectors, Energy + Materials; nothing dropped — MPC/COP/NEM/NUE are only 3 sessions stale, under the 5-session DROP threshold), but this changes search breadth only — none of the eight names clear the buy-side gate today. 0/3 weekly trades used, 3 slots available in Week 7 but no qualifying setup today — patience > activity. New Decision Scoreboard rows appended for MP/MATV/XOM/PBF (new watchlist names); MPC/COP/NEM/NUE rows remain open/untouched pending weekly-review scoring. CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged. Carry forward watchlist: MPC, COP, NEM, NUE, MP, MATV, XOM, PBF (Energy/Materials, no fresh dated catalyst yet).

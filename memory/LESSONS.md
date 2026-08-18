@@ -122,3 +122,7 @@ than 10 sessions are pruned.
 | 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | | |
 | 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | | |
 | 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | | |
+| 2026-08-18 | MP | HOLD — stall-breaker refresh add (Materials), no confirmed Aug 18-dated catalyst, recycled Q2 beat/gadolinium-deal coverage | 58.49 | | |
+| 2026-08-18 | MATV | HOLD — stall-breaker refresh add (Materials), no confirmed Aug 18-dated catalyst, recycled early-Aug Q2 beat, small-cap/thin-liquidity name | 12.24 | | |
+| 2026-08-18 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 18-dated catalyst, recycled Q2 beat/dividend/Rovuma LNG coverage | 161.53 | | |
+| 2026-08-18 | PBF | HOLD — stall-breaker refresh add (Energy), no confirmed Aug 18-dated catalyst, recycled Q2 beat/Goldman PT raise | 75.04 | | |
