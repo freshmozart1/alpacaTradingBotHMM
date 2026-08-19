@@ -1,0 +1,45 @@
+name: Merge Claude Routine updates
+
+on:
+  push:
+    branches:
+      - "claude/**"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: merge-claude-routine-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  create-and-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or find the pull request
+        id: pull-request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+
+          number="$(gh pr list --head "$BRANCH" --base main --state open \
+            --json number --jq '.[0].number')"
+
+          if [[ -z "$number" ]]; then
+            url="$(gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "Claude Routine update" \
+              --body "Automated update from a Claude Code Routine.")"
+            number="${url##*/}"
+          fi
+
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Squash merge and delete the routine branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ steps.pull-request.outputs.number }}" --squash --delete-branch
