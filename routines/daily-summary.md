@@ -4,6 +4,7 @@ You are running the daily summary workflow (cloud). Resolve today's date
 via: DATE=$(date +%Y-%m-%d).
 
 IMPORTANT — ENVIRONMENT VARIABLES:
+
 - Every API key is ALREADY exported as a process env var: ALPACA_API_KEY,
   ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
   PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY,
@@ -21,11 +22,13 @@ IMPORTANT — ENVIRONMENT VARIABLES:
   ```
 
 IMPORTANT — PERSISTENCE:
+
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
   commit and push at STEP B — tomorrow's Day P&L depends on this.
 
 STEP A — Open `.claude/commands/daily-summary.md` in this repo and
 execute its STEPS 1-5 exactly as written, with two overrides:
+
 - IGNORE its closing "local run — do not commit or push" paragraph;
   persistence is handled at STEP B below.
 - If the file cannot be read, STOP: send one ClickUp alert
@@ -34,10 +37,10 @@ execute its STEPS 1-5 exactly as written, with two overrides:
 
 STEP B — COMMIT AND PUSH (mandatory — tomorrow's Day P&L depends on
 this):
+
 ```bash
+BRANCH=$(git branch --show-current)
 git add memory/TRADE-LOG.md
 git commit -m "EOD snapshot $DATE"
-git push origin main
+git push -u origin "$BRANCH"
 ```
-On push failure: git pull --rebase origin main, then push again. Never
-force-push.

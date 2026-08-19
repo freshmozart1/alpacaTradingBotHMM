@@ -4,6 +4,7 @@ You are running the Friday weekly review workflow (cloud). Resolve
 today's date via: DATE=$(date +%Y-%m-%d).
 
 IMPORTANT — ENVIRONMENT VARIABLES:
+
 - Every API key is ALREADY exported as a process env var: ALPACA_API_KEY,
   ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
   PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY,
@@ -21,12 +22,14 @@ IMPORTANT — ENVIRONMENT VARIABLES:
   ```
 
 IMPORTANT — PERSISTENCE:
+
 - Fresh clone. File changes VANISH unless committed and pushed. MUST
   commit and push at STEP B.
 
 STEP A — Open `.claude/commands/weekly-review.md` in this repo and
 execute its STEPS 1-6 exactly as written (including STEP 4.5), with two
 overrides:
+
 - IGNORE its closing "local run — do not commit or push" paragraph;
   persistence is handled at STEP B below.
 - If the file cannot be read, STOP: send one ClickUp alert
@@ -34,12 +37,13 @@ overrides:
   and exit.
 
 STEP B — COMMIT AND PUSH (mandatory):
+
 ```bash
+BRANCH=$(git branch --show-current)
 git add memory/WEEKLY-REVIEW.md memory/LESSONS.md memory/TRADING-STRATEGY.md
 git commit -m "weekly review $DATE"
-git push origin main
+git push -u origin "$BRANCH"
 ```
+
 Add only the files that actually changed (WEEKLY-REVIEW.md and LESSONS.md
-always change; TRADING-STRATEGY.md only on a rule change). On push
-failure: git pull --rebase origin main, then push again. Never
-force-push.
+always change; TRADING-STRATEGY.md only on a rule change).
