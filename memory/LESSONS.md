@@ -122,3 +122,7 @@ than 10 sessions are pruned.
 | 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | | |
 | 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | | |
 | 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | | |
+| 2026-08-19 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, recycled Q2 beat/Mozambique LNG investment | 165.61 | | |
+| 2026-08-19 | PSX | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, diesel-margin narrative recycled, same-day insider sale flagged negative | 243.475 | | |
+| 2026-08-19 | STLD | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Q2 beat/2026 outlook | 249.85 | | |
+| 2026-08-19 | MLM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Lhoist NA combination/dividend raise | 522.88 | | |
