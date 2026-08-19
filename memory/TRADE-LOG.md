@@ -675,3 +675,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 19 — EOD Snapshot (Day 34, Wednesday)
+
+**Portfolio:** $100,988.14 | **Cash:** $41,149.34 (40.75%) | **Day P&L:** +$433.78 (+0.43%) | **Phase P&L:** +$988.14 (+0.99%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $205.76 | +0.01% | +$1,130.41 (+6.14%) | $186.912 (10% trail, GTC 7f5acb83/e328a200, HWM $207.68) |
+| ECL | 70 | $281.93 | $285.62 | +2.01% | +$258.30 (+1.31%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $274.30 | +0.19% | +$789.58 (+4.05%) | $247.95 (10% trail, GTC 974c3bfc, HWM $275.50) |
+
+**Notes:** 9th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19) since the Aug 6 LNG buy; Week 7 (Aug 17-21) at 0/3 weekly trades used. Portfolio equity $100,988.14, up +$433.78 (+0.43%) day-over-day vs Alpaca's own `last_equity` ($100,554.36, `balance_asof` 2026-08-18) — used per continuity convention since the last *logged* EOD is Aug 14's $99,578.40 and no Market-Open/Midday/EOD entries exist for Aug 18 (a process gap; same pattern as the earlier Aug 7 gap, flag for weekly review). Cumulative phase P&L +$988.14 (+0.99%) vs $100,000 starting capital — first time crossing into positive territory this phase. 3 open positions (CVX, ECL, LNG), 59.25% deployed / 40.75% cash — still below the 75-85% target deployment band (L-009, now 5 straight weeks under-deployed heading into the Fri Aug 21 weekly review). All three positions green (CVX +6.14% unrealized, ECL +1.31%, LNG +4.05%); ECL led intraday (+2.01%), CVX and LNG roughly flat intraday (+0.01%/+0.19%) after large prior-week gains. No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain CVX +6.14%). No trades placed today — no watchlist name (MPC/COP/NEM/NUE) cleared the buy-side gate per the last-logged Aug 17 Market-Open Check; no separate Aug 19 market-open/pre-market entry exists in this log to re-confirm the gate today.
