@@ -17,6 +17,9 @@ jobs:
   create-and-merge:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
       - name: Create or find the pull request
         id: pull-request
         env:
