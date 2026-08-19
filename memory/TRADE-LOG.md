@@ -659,3 +659,19 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 19 — Midday Scan (Day 34, Wednesday) — no action
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +6.62% (+$1,218.76), current $206.69 vs entry $193.860947 (intraday +0.46% vs Aug 18's $205.74 close); ECL 70 sh, unrealized +0.36% (+$71.05), current $282.945 vs entry $281.93 (intraday +1.05% vs Aug 18's $280.00 close); LNG 74 sh, unrealized +3.51% (+$685.24), current $272.89 vs entry $263.63 (intraday -0.33% vs Aug 18's $273.78 close). 4 open orders: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $186.912, HWM $207.68 (auto-ratcheted up intraday); ECL trailing stop GTC 64b1066c (70 sh), stop $259.6005, HWM $288.445 (unchanged); LNG trailing stop GTC 974c3bfc (74 sh), stop $247.95, HWM $275.50 (auto-ratcheted up intraday from this morning's $247.284/$274.76).
+
+**STEP 3 (cut losers):** N/A — CVX +6.62%, ECL +0.36%, LNG +3.51%, all positive, none near the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max unrealized gain CVX +6.62%). No tightening triggered; all stops unchanged except CVX's and LNG's mechanical 10%-trail ratchet.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +0.46% intraday continuation of the Q2 beat/Hess-synergies/Guyana-FCF thesis, in line with today's watchlist scan (XOM Mozambique LNG coverage recycled, no held-name-specific catalyst); trailing stop auto-ratcheted to $186.912 (new HWM $207.68) per the 10% mechanism, stop only moved up. ECL — no thesis-breaking news; +1.05% intraday continuation of the post-earnings-pullback-stabilizing thesis. LNG — no thesis-breaking news; -0.33% intraday is flat, in line with the pre-market read (+4.41% unrealized then), Q2 beat/raised-EBITDA-guidance thesis intact; trailing stop auto-ratcheted to $247.95 (new HWM $275.50) per the 10% mechanism, stop only moved up. No action on any position.
+
+**STEP 6 (optional research):** Skipped — no position moved sharply enough intraday with an unexplained cause (CVX +0.46%, ECL +1.05%, LNG -0.33%, all modest/in-line moves) to warrant a Perplexity check.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except CVX's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
