@@ -19,6 +19,11 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          # `gh pr merge --delete-branch` needs the base branch available
+          # locally before it can remove the just-merged head branch.
+          ref: main
+          fetch-depth: 0
 
       - name: Create or find the pull request
         id: pull-request
