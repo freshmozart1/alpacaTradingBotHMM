@@ -36,7 +36,10 @@ If any fail, the trade is skipped and the reason is logged.
 - Position cost is no more than available cash.
 - Pattern day trader day-trade count leaves room (under 3 on a sub-$25k
   account).
-- A specific catalyst is documented in today's research log entry.
+- A specific catalyst is documented in today's research log entry, dated
+  today OR dated within the prior 2 trading sessions if confirmed by a
+  second independent source (WebSearch, or a distinct outlet from the
+  original).
 - The instrument is a stock (not an option, not anything else).
 - If the no-trade streak has reached 5+ consecutive sessions (stall-breaker
   armed), the day's pre-market research MUST include a watchlist refresh
@@ -102,3 +105,4 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-08-07 | Buy-Side Gate | (none) -> WTI/Brent dispersion >10% requires a USO/XLE bars cross-check before use | Promoted from LESSONS.md L-005 (2026-07-24), complied with every session for 2+ straight weeks (Jul 24-Aug 7), correctly resolving oil-price dispersion via bars each time it triggered. Process addition only, not a risk-rule change. |
 | 2026-08-07 | Buy-Side Gate | (none) -> flag same-week ex-div/analyst-action risk at every new entry | Promoted from LESSONS.md L-006 (2026-07-24), complied with every session for 2+ straight weeks (Jul 24-Aug 7), checked at every new entry (ECL, CVX, LNG) with zero misses. Process addition only, not a risk-rule change. |
 | 2026-08-07 | Buy-Side Gate | bars-confirmation window ~15-20 min post-open -> up to 60 min for sub-~50k-avg-volume names | Escalation per LESSONS.md L-007 (2nd consecutive missed-skewed skip-scoreboard week, missed 1 / avoided-loss 0 on 2026-08-07 vs missed 3 / avoided-loss 1 on 2026-07-31). Evidence: GRC (2026-07-30 gate-fail, Ref $78.46) returned zero bars prints ~17 min post-open on ~5-10k avg daily volume despite a genuine, today-dated Q2 beat, and was confirmed "missed" at +7.84% by Aug 6. Targets the actual confirmation-mechanism failure rather than loosening the catalyst-freshness window broadly. Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options all untouched. Review-by 2026-08-21 (LESSONS.md L-008) to check for false-positive entries introduced by the wider window. |
+| 2026-08-21 | Buy-Side Gate | catalyst must be dated today -> dated today OR within the prior 2 trading sessions if confirmed by a second independent source | Escalation per LESSONS.md L-009 (6th consecutive week under the 75-85% deployment target, 2026-08-21) and this review's skip-scoreboard evidence: COP (+8.18%) and NEM (+15.23%) both scored "missed", passed over solely for lacking a same-day-dated catalyst despite genuine, still-live multi-session catalysts (Q2 beat/CEO transition; Nevada Gold Mines settlement + gold rally) — missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses 10.60%, the most missed-skewed read of the challenge so far. Also satisfies STEP 5's 2nd-consecutive-zero-trade-week requirement (Week 6 Aug 10-14, Week 7 Aug 17-21). Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options all untouched. Review-by 2026-09-04 (LESSONS.md L-012) to check for false-positive entries introduced by the wider window. |
