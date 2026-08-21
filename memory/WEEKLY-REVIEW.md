@@ -458,4 +458,80 @@ Verdict counts (new rows this week): missed 0, skip-right 2, avoided-loss 0. Tot
 - L-007 ("monitor skip-scoreboard shift toward missed") hit its Aug 14 review-by date. Retired rather than extended: it already delivered its one intended escalation (Aug 7, leading to the thin-liquidity bars-confirmation-window rule change), and this week's newly-scored rows (FANG, VMC) came back skip-right/skip-right with zero missed verdicts — no continuation of the trend it was tracking. Its monitoring function is subsumed by the weekly review's standing skip-scoreboard computation (STEP 3) and rule-change escalation path (STEP 5), so no standalone lesson is needed going forward. No TRADING-STRATEGY.md change — this is a LESSONS.md-only retirement, not a promoted rule.
 - No TRADING-STRATEGY.md rule changes this week. Trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
 
+## Week ending 2026-08-21
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $99,748.44 (Aug 17 Market-Open equity) |
+| Ending portfolio | $100,920.73 (live pull; `balance_asof` 2026-08-20, one session lagged per L-011 — provisional) |
+| Week return | +$1,172.29 (+1.18%) |
+| S&P 500 week | -1.37% (SPY 776.30 -> 765.64, Aug 14 close -> Aug 21 close via `alpaca.sh bars`; Perplexity again returned dispersed reads — FRED -1.9%, ChartRow -1.1% for a "week ending Aug 18" row, Morningstar/WSJ tables inconsistent — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | +2.55% |
+| Trades | 0 (W:0 / L:0 / open:0) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week; CVX unrealized +6.00% strongest mover) |
+| Worst trade | N/A (no closed trades this week; ECL unrealized -0.11% weakest mover) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $205.49 | +$1,104.76 (+6.00%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $188.082, HWM $208.98 |
+| ECL | $281.93 (70 sh) | $281.63 | -$21.00 (-0.11%) | 10% trailing GTC, order 64b1066c, stop $259.6005, HWM $288.445 |
+| LNG | $263.63 (74 sh) | $277.51 | +$1,027.12 (+5.27%) | 10% trailing GTC, order 974c3bfc, stop $253.56591, HWM $281.7399 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| MPC | 356.67 (Aug 13) | 360.595 (Aug 21) | +1.10% | skip-right |
+| COP | 124.72 (Aug 13) | 134.92 (Aug 21) | +8.18% | missed |
+| NEM | 114.18 (Aug 13) | 131.57 (Aug 21) | +15.23% | missed |
+| NUE | 272.49 (Aug 13) | 243.61 (Aug 21) | -10.60% | avoided-loss |
+
+Verdict counts (new rows this week): missed 2, skip-right 1, avoided-loss 1. Total missed gains: 23.41%. Total avoided losses: 10.60%. Missed:avoided ratio: 2:1 — the most missed-skewed read of the challenge so far, driven by COP (Q2 beat/CEO-transition thesis kept running) and especially NEM (Nevada Gold Mines settlement + gold-price rally, +15.23%), both skipped solely for lacking a same-day-dated catalyst. One-line judgment: the buy-side gate's catalyst-freshness requirement is now demonstrably too tight — half of this week's scored rows were missed gains more than double the one avoided loss — see Rule Change below. GRC (Jul 30 row, scored "missed" +7.84% at the Aug 7 review) is now 10 sessions past its scoring point — pruned this review per the 10-session retention threshold. FANG/VMC (Aug 4/Aug 5 rows, scored skip-right/skip-right at the Aug 14 review) are 5 sessions past their scoring point, not yet past the 10-session threshold — retained. XOM/PSX/STLD/MLM (Aug 19 refresh rows) are only 2 sessions old — not yet 5, carried forward.
+
+### What Worked
+
+- The bot beat the S&P this week (+1.18% vs -1.37%, +2.55% relative) with zero new trades — pure mark-to-market gains on CVX (+6.00% unrealized) and LNG (+5.27% unrealized) carried the week, echoing the Aug 14 review's pattern: hold/trail discipline on existing winners outperforming a down index even with the buy-side gate fully closed to new entries.
+- Risk mechanics held clean all week: CVX and LNG trailing stops mechanically ratcheted up multiple times (stop-only-up, zero manual intervention), no position came within range of the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain CVX +7.42% intraday Thursday, closed the week at +6.00%), and L-004/L-005/L-006 equivalents (now permanent Buy-Side Gate rules) plus L-008/L-009/L-010/L-011 were checked every session with zero fresh incidents.
+- The Aug 18 full-day gap (no pre-market/market-open/midday/EOD entries logged at all) was correctly root-caused at the Aug 19 pre-market session — a Claude Code weekly usage-limit exhaustion, not a missed risk event or a commit/push failure — and confirmed benign against live account state (positions/stops unchanged, `balance_asof` advanced normally). No further action needed beyond the record noted here.
+
+### What Didn't Work
+
+- Zero trades placed this week — the 2nd consecutive zero-trade week (Week 6 Aug 10-14, Week 7 Aug 17-21) and the 6th consecutive weekly-review close under the 75-85% deployment target (~58.6% Aug 14, ~59.3% Aug 21), with 0/3 weekly trade slots used both weeks.
+- The skip-scoreboard flipped hard missed-skewed this week (2 missed / 1 avoided-loss / 1 skip-right, vs 0/0/0 the prior review) — COP and NEM both cleared +3% within 5 sessions of being passed over, with NEM's +15.23% the single largest missed-gain read of the challenge so far. This is the concrete cost of the catalyst-freshness gate finally showing up in the numbers, not just a deployment-percentage abstraction.
+- The Aug 18 full-day logging gap (pre-market/market-open/midday/EOD all missing) is a fourth distinct data-integrity incident of the challenge (after the Aug 7 gap and the two Aug-13-area EOD mislabeling/mismatch incidents) — this one has a confirmed benign external cause (usage-limit exhaustion), but the pattern of gaps in the persisted record continues.
+- ECL remains the week's laggard (-0.11% unrealized, essentially flat), with a CEO insider sale (Aug 20) noted as informational-only but worth continued monitoring.
+
+### Key Lessons
+
+- A zero-trade week can still beat the index on pure hold/trail discipline (+2.55% relative this week), but that is not evidence the buy-side gate is correctly calibrated — this week's skip-scoreboard scoring shows the gate is leaving real money on the table (23.41% combined missed gains vs 10.60% avoided losses) by requiring same-day-dated catalysts on names whose theses (Q2 beats, a legal-overhang settlement) were genuine and still live 5+ sessions later.
+- Two consecutive zero-trade weeks plus a 6th consecutive week under the deployment band plus a 2:1 missed-skewed skip-scoreboard is a convergence of three independent signals pointing at the same root cause — the catalyst-freshness window, not watchlist breadth or position sizing, is now the binding constraint on deployment.
+- An external infrastructure gap (Claude Code usage-limit exhaustion) can silently take an entire trading day offline with zero risk-management exposure if positions/stops are already GTC and self-managing — the resilience of GTC trailing stops is what made the Aug 18 gap a non-event rather than an incident.
+
+### Adjustments for Next Week
+
+- Widen the buy-side gate's catalyst-freshness requirement from "must be dated today" to "dated today OR dated within the prior 2 trading sessions if confirmed by a second independent source" (L-012) — applied to TRADING-STRATEGY.md this week, see Rule Change below. Monitor at the next 2 weekly reviews for false-positive entries (a catalyst admitted under the wider window that reverses shortly after fill).
+- Broaden the stall-breaker's sector screen beyond the current top-2 YTD sectors (Energy/Materials have now supplied 8 of the last 8 watchlist names across two refresh cycles) to include a 3rd sector when a refreshed watchlist goes through its first full re-arm cycle without producing a gate-clearing catalyst, so repeated refreshes stop recycling within the same two sectors (L-013).
+- L-009 (track persistent under-deployment): extended rather than closed out — this week's 6-consecutive-week checkpoint was the trigger for this week's gate-calibration change (L-012); keep tracking consecutive under-deployed weeks post-change to see whether the wider catalyst-freshness window actually moves the deployment number.
+
+### Rule Change This Week
+
+- L-008 ("monitor thin-liquidity bars-confirmation window") hit its Aug 21 review-by date. Retired: zero new entries were made under the extended 60-minute window since the original Jul 30 GRC case across the full 2-review monitoring cycle, so there was nothing further to report and no false-positive evidence either way. No TRADING-STRATEGY.md change — the underlying rule (added Aug 7) stands; this is a LESSONS.md-only retirement of the monitoring lesson.
+- New Buy-Side Gate calibration rule: catalyst-freshness requirement widened from "dated today" to "dated today OR dated within the prior 2 trading sessions if confirmed by a second independent source" — promoted from this week's LESSONS.md L-009 escalation (6th consecutive week under the 75-85% deployment target) and this week's skip-scoreboard evidence: COP (+8.18%) and NEM (+15.23%) both scored "missed" this review, passed over solely for lacking a same-day-dated catalyst despite genuine, still-live multi-session catalysts (Q2 beat/CEO transition; Nevada Gold Mines settlement + gold rally) — missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses 10.60%, the most missed-skewed read of the challenge. Also satisfies STEP 5's second-consecutive-zero-trade-week requirement (Week 6 Aug 10-14, Week 7 Aug 17-21). Process/gate calibration only — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options all remain untouched. Review-by 2026-09-04 (LESSONS.md L-012) to check for false-positive entries introduced by the wider window.
+
+### Overall Grade: B- (beat the S&P by 2.55% this week purely on existing-position mark-to-market gains and kept risk management perfectly clean, but a 2nd consecutive zero-trade week and a hard missed-skewed skip-scoreboard (23.41% missed vs 10.60% avoided) quantified, for the first time, a real cost to the catalyst-freshness gate's tightness — addressed this week with a bounded calibration change, not yet proven out)
+
 ### Overall Grade: B (beat the S&P by 1.43% and kept risk management clean with zero rule breaches, but zero trading activity for the third straight under-deployed week and a recurring EOD-logging data-integrity gap keep this from a higher grade)

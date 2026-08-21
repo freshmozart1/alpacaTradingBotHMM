@@ -15,6 +15,55 @@ Template:
 - Directive: <one concrete, checkable instruction>
 - Status: active | Review-by: YYYY-MM-DD
 
+### L-012 — Monitor widened catalyst-freshness window for false positives
+- Date: 2026-08-21 | Source: WEEKLY-REVIEW 2026-08-21 (2nd consecutive
+  zero-trade week; skip-scoreboard scored COP +8.18% and NEM +15.23% as
+  "missed" this review, both passed over solely for lacking a same-day-
+  dated catalyst despite genuine, still-live multi-session catalysts;
+  missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses
+  10.60%)
+- Lesson: The Buy-Side Gate's catalyst-freshness requirement ("dated
+  today") was too tight — it left COP and NEM off the book despite real,
+  still-live theses, at a combined missed-gains cost of 23.41% this
+  review alone. Widened to admit catalysts dated within the prior 2
+  trading sessions if two-source confirmed (TRADING-STRATEGY.md, this
+  week).
+- Directive: At each of the next 2 weekly reviews, note whether any entry
+  made under the widened 2-session/two-source catalyst window held up or
+  reversed shortly after fill, and whether deployment moves toward the
+  75-85% band.
+- Status: active | Review-by: 2026-09-04
+
+### L-013 — Broaden stall-breaker sector screen beyond Energy/Materials
+- Date: 2026-08-21 | Source: WEEKLY-REVIEW 2026-08-21 (Energy/Materials
+  have supplied all 8 watchlist names across the last two stall-breaker
+  refresh cycles — Aug 14: MPC/COP/NEM/NUE, Aug 19: XOM/PSX/STLD/MLM —
+  with the sector pool showing signs of running out of fresh, undated
+  names)
+- Lesson: Repeatedly screening only the top-2 YTD sectors risks recycling
+  the same names/coverage across refresh cycles rather than surfacing
+  genuinely new catalysts.
+- Directive: When a refreshed watchlist completes a full re-arm cycle
+  (per L-010's 3-session trigger) without producing a gate-clearing
+  catalyst, include a 3rd sector (next-highest YTD momentum) in the next
+  refresh's screen alongside the top-2.
+- Status: active | Review-by: 2026-09-04
+
+### L-009 — Track persistent under-deployment against 75-85% target
+- Date: 2026-08-07 | Source: WEEKLY-REVIEW 2026-08-07 Adjustments (portfolio ~58% deployed in a week the S&P gained +3.53%, 4th straight week below the 75-85% band)
+- Lesson: The bot has now been below the 75-85% deployment target for 6
+  consecutive weeks (Jul 14 - Aug 21). This week's 6-consecutive-week
+  checkpoint triggered the L-012 catalyst-freshness gate widening
+  (WEEKLY-REVIEW 2026-08-21) — extending this lesson rather than closing
+  it out, to track whether deployment actually moves toward the band now
+  that the gate calibration has changed.
+- Directive: At each weekly review, report consecutive weeks under the
+  75-85% deployment band. If deployment has not improved within 3 weeks
+  of the L-012 gate change (by 2026-09-11), treat that as evidence the
+  gate was not the binding constraint and reconsider watchlist breadth
+  or position-sizing pacing instead.
+- Status: active | Review-by: 2026-09-04
+
 ### L-010 — Stall-breaker refresh timing too late in the week
 - Date: 2026-08-14 | Source: WEEKLY-REVIEW 2026-08-14 (zero trades this
   week; the Aug 14 stall-breaker fired on the week's last session, leaving
@@ -41,29 +90,6 @@ Template:
   explicitly as provisional/live-pulled rather than committing it as
   today's official settled EOD close.
 - Status: active | Review-by: 2026-08-28
-
-### L-008 — Monitor thin-liquidity bars-confirmation window
-- Date: 2026-08-07 | Source: WEEKLY-REVIEW 2026-08-07 Adjustments (GRC Jul 30 gate-fail confirmed "missed" +7.84%, root cause was zero bars prints on a thin-liquidity name, not catalyst staleness)
-- Lesson: The new 60-minute bars-confirmation window for sub-~50k-volume
-  names (TRADING-STRATEGY.md) needs to be checked for false positives —
-  a longer window could admit a reaction that later reverses, not just
-  catch genuine slow-to-print moves.
-- Directive: At each of the next 2 weekly reviews, note whether any entry
-  made under the extended thin-liquidity window held up or reversed
-  shortly after fill.
-- Status: active | Review-by: 2026-08-21
-
-### L-009 — Track persistent under-deployment against 75-85% target
-- Date: 2026-08-07 | Source: WEEKLY-REVIEW 2026-08-07 Adjustments (portfolio ~58% deployed in a week the S&P gained +3.53%, 4th straight week below the 75-85% band)
-- Lesson: The bot has been below the 75-85% deployment target for 4
-  consecutive weeks (Jul 28 - Aug 7), and this week's -4.54% relative gap
-  vs the S&P was driven mainly by that under-deployment, not by any bad
-  individual decision.
-- Directive: At each weekly review, report consecutive weeks under the
-  75-85% deployment band; if it reaches 6 consecutive weeks, treat it as
-  a signal to review whether the buy-side gate itself (not just watchlist
-  breadth) is too conservative.
-- Status: active | Review-by: 2026-08-21
 
 ## Retired Lessons
 
@@ -101,6 +127,13 @@ Template:
   verdicts — no continuation of the trend it tracked. Its monitoring
   function is subsumed by the weekly review's standing skip-scoreboard
   computation (STEP 3) and rule-change escalation path (STEP 5).
+- L-008, "Monitor thin-liquidity bars-confirmation window", retired
+  2026-08-21 (hit review-by, not promoted). Zero new entries were made
+  under the extended 60-minute thin-liquidity window since the original
+  Jul 30 GRC case across the full 2-review monitoring cycle — nothing
+  further to report, no false-positive evidence either way. The
+  underlying TRADING-STRATEGY.md rule (added 2026-08-07) stands
+  unchanged; only the monitoring lesson is retired.
 
 ## Decision Scoreboard
 
@@ -115,13 +148,12 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-07-30 | GRC | HOLD — Q2 beat catalyst, source dating unconfirmed (L-004), pending bars re-check at open | 78.46 | +7.84% | missed |
 | 2026-08-04 | FANG | gate-fail: Q2 EPS beat ($6.48 vs $5.96 est) but bars-confirmed NEGATIVE reaction at open (-3.87%, $198.53 -> $190.85) | 198.53 | +1.02% | skip-right |
 | 2026-08-05 | VMC | gate-fail: Q2 EPS beat ($2.59 vs $2.50 est) but bars-confirmed reaction faded from +1.47% intraday high ($289.285, 10:15am ET) to +0.49% ($286.47, 2:15pm ET) and still declining — not a clean sustained positive reaction to trade against | 285.08 | -1.83% | skip-right |
-| 2026-08-14 | MPC | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Aug 4 Q2 beat/Mizuho pick | 356.67 | | |
-| 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | | |
-| 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | | |
-| 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | | |
+| 2026-08-14 | MPC | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Aug 4 Q2 beat/Mizuho pick | 356.67 | +1.10% | skip-right |
+| 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | +8.18% | missed |
+| 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | +15.23% | missed |
+| 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | -10.60% | avoided-loss |
 | 2026-08-19 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, recycled Q2 beat/Mozambique LNG investment | 165.61 | | |
 | 2026-08-19 | PSX | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, diesel-margin narrative recycled, same-day insider sale flagged negative | 243.475 | | |
 | 2026-08-19 | STLD | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Q2 beat/2026 outlook | 249.85 | | |
