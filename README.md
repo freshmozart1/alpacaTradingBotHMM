@@ -1,6 +1,6 @@
 # Alpaca Trading Bot — Sonnet 5 Edition
 
-A fully autonomous swing-trading agent that runs on a daily schedule. Five cron
+A fully autonomous ai trading agent that runs on a daily schedule. Five cron
 jobs fire throughout each weekday, each one spinning up a fresh Claude Code
 cloud container that clones this repo, reads memory, pulls live account
 state, decides on action, places real orders if warranted, writes new memory,
@@ -8,10 +8,6 @@ commits everything back to Git, and sends a chat notification.
 
 There is no separate Python bot process. Claude is the bot. Every scheduled
 run is a fresh LLM invocation reading a well-defined prompt.
-
-This is an adaptation of Nate Herk's original "Opus 4.7 Trading Bot" blueprint,
-updated to run on **Claude Sonnet 5** (`claude-sonnet-5`) instead of Opus 4.7.
-See [Why Sonnet 5](#why-sonnet-5) below for what changed and why.
 
 ## The five daily jobs at a glance
 
@@ -34,31 +30,6 @@ See [Why Sonnet 5](#why-sonnet-5) below for what changed and why.
 - **Hard rules as gates** — strategy discipline is enforced programmatically
   before every order, not left to interpretation.
 
-## Why Sonnet 5
-
-This bot never calls the Anthropic API directly from the wrapper scripts —
-Claude Code itself _is_ the trading agent. So "migrating" this blueprint to
-Sonnet 5 is really about which model powers the Claude Code sessions and
-routines, not any SDK code.
-
-- **Model ID:** `claude-sonnet-5` (no date suffix). Pinned locally in
-  `.claude/settings.json`; must be selected explicitly on each cloud routine
-  (see [SETUP-MANUAL-STEPS.md](./SETUP-MANUAL-STEPS.md)).
-- **Pricing:** $3 / $15 per million input/output tokens (introductory $2 / $10
-  through 2026-08-31), versus $5 / $25 for Opus-tier. At five runs per weekday,
-  this is meaningfully cheaper while reaching near-Opus quality on the
-  agentic/coding-shaped work this bot does (reading logs, calling wrappers,
-  writing structured markdown).
-- **Behavior notes baked into the prompts below:**
-  - Sonnet 5 follows instructions more literally than Opus 4.7 — the routine
-    prompts spell out scope explicitly (e.g. "for **every** open position")
-    rather than relying on the model to generalize.
-  - Sonnet 5 is more agentic by default and handles self-verification loops
-    well, so every routine now confirms an order landed against live Alpaca
-    state (via `scripts/alpaca.sh orders`/`positions`) before logging or
-    announcing it — closing a partial-failure gap in the original blueprint.
-  - Claude Code defaults Sonnet 5 to `xhigh` effort, which is the right
-    setting for the order-gating logic in market-open and midday.
 
 ## Repository layout
 
@@ -109,8 +80,7 @@ Two parallel execution modes share this codebase:
 
 ## Paper trading by default
 
-Unlike the original blueprint (which defaulted straight to a live account),
-`env.template` here defaults to **Alpaca paper trading**
+`env.template` defaults to **Alpaca paper trading**
 (`https://paper-api.alpaca.markets/v2`). The live endpoint is included but
 commented out with a warning. Switching to live trading is a deliberate,
 manual step — see `env.template`.
@@ -225,5 +195,4 @@ then you miss the one that mattered).
 
 ## International Wire Transfers
 
-To save fees of international wire transfers from banks to Alpaca, it is recommended to transfer
-the money through a Wise account, because Wise participates in the ACH network.
+To save fees of international wire transfers from European banks to Alpaca (US broker), it is recommended to transfer the money through a Wise account.
