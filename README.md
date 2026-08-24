@@ -1,4 +1,4 @@
-# Alpaca Trading Bot — Sonnet 5 Edition
+# Alpaca Trading Bot
 
 A fully autonomous ai trading agent that runs on a daily schedule. Five cron
 jobs fire throughout each weekday, each one spinning up a fresh Claude Code
