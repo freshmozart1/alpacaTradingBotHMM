@@ -775,3 +775,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (3 positions, 4 orders, all unchanged in structure and stop levels from this morning's market-open check).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 24 — EOD Snapshot (Day 37, Monday)
+
+**Portfolio:** $101,325.15 | **Cash:** $41,149.34 (40.61%) | **Day P&L:** +$404.42 (+0.40%) | **Phase P&L:** +$1,325.15 (+1.33%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $203.25 | -0.98% | +$891.96 (+4.84%) | $188.082 (10% trail, GTC 7f5acb83/e328a200, HWM $208.98) |
+| ECL | 70 | $281.93 | $286.98 | +1.90% | +$353.50 (+1.79%) | $259.6005 (10% trail, GTC 64b1066c, HWM $288.445) |
+| LNG | 74 | $263.63 | $280.79 | +1.18% | +$1,269.84 (+6.51%) | $253.56591 (10% trail, GTC 974c3bfc, HWM $281.7399) |
+
+**Notes:** 12th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24) since the Aug 6 LNG buy; Week 8 (Aug 24-28) opens at 0/3 weekly trades used. **L-011 flag:** `balance_asof` returned by this live pull is `2026-08-21`, not today's date — per L-011 this snapshot is provisional/live-pulled rather than a confirmed settled close; Day P&L above is computed against the prior logged EOD (Aug 21, $100,920.73) per continuity convention and should be reconciled against Alpaca's settled figure at the next session. Portfolio equity $101,325.15, up +$404.42 (+0.40%) day-over-day. Cumulative phase P&L +$1,325.15 (+1.33%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.39% deployed / 40.61% cash — 7th straight week below the 75-85% target deployment band (L-009). LNG led gainers (+1.18% intraday, unrealized +6.51%), ECL also up (+1.90% intraday, unrealized +1.79%), CVX pulled back slightly (-0.98% intraday, unrealized +4.84%); no stops changed (none of the three made a new HWM today, all closes below their respective HWMs). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +6.51%). No trades placed today — Midday scan found no watchlist name (VST/CEG/MP/AMAT) clearing the buy-side gate.
