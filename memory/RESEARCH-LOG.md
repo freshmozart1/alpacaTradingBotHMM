@@ -1911,3 +1911,57 @@ No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
 **Held position check:** CVX 95 sh, current $203.57 vs entry $193.860947, unrealized +5.01% (+$922.36); trailing stops GTC 7f5acb83 (54 sh)/e328a200 (41 sh) confirmed resting, stop $188.082, HWM $208.98. No thesis break vs today's pre-market read. ECL 70 sh, current $283.77 vs entry $281.93, unrealized +0.65% (+$128.80); trailing stop GTC 64b1066c confirmed resting, stop $259.6005, HWM $288.445. No thesis break. LNG 74 sh, current $277.8885 vs entry $263.63, unrealized +5.41% (+$1,055.13); trailing stop GTC 974c3bfc confirmed resting, stop $253.56591, HWM $281.7399. No thesis break. None near -7% cut or +15%/+20% tighten thresholds (max unrealized gain LNG +5.41%).
 
 **Gate check on new entries:** Live quotes pulled for the refreshed watchlist (VST, CEG, MP, AMAT) at 9:24am ET (6 min pre-open) show the standing wide-spread quote anomaly (e.g. VST ask $143.00/bid $128.86, ~10% spread) and `bars` returned empty (no session data yet, checked pre-open) — consistent with the known pre-open data-quality pattern already flagged in today's pre-market entry, not a new catalyst signal either way. No fresh Aug 24-dated catalyst surfaced for VST, CEG, MP, or AMAT beyond what pre-market already assessed (all recycled Aug 6-13 coverage) — live re-validation confirms no change to that read. No trade placed today; no additional Decision Scoreboard rows needed (VST/CEG/MP/AMAT rows already appended by today's pre-market stall-breaker refresh). Watchlist unchanged: VST, CEG, MP, AMAT.
+
+## 2026-08-25 — Pre-market Research
+
+### Account
+- Equity: $100,716.97 | Cash: $41,149.34 (40.86%) | Buying power: $331,386.72 (margin, effective)
+- Position market value: $59,567.63 (CVX + ECL + LNG, 59.14% deployed). 3 open positions (CVX 95 sh, ECL 70 sh, LNG 74 sh), 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Daytrade count: 0. Day 38 (Week 8, Tuesday — 2nd session). 13 consecutive no-trade-days entering today (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24; last trade was Aug 6's LNG buy). 0/3 trades used this week (Week 8, Aug 24-28) — 3 slots available. balance_asof 2026-08-24 (one-session lag, expected).
+
+### Market Context
+- WTI/Brent: wide cross-source cluster this session — **WTI ~$82.0-85.8**, **Brent ~$89.6-93.9** (many quotes carry Aug 21-24 timestamps mixed with live feeds). Taking the freshest same-day (2026-08-25) reads: WTI **$85.77** (Investing.com, real-time) / **$85.43** (Oilprice.com, 11-min delay); Brent **$92.09** (Trading Economics, live) — dispersion within that same-day subset is ~0.4-0.7% WTI, ~0% Brent, well under the L-005 ~10% threshold. The wider cluster spread reflects stale-dated snippets in the search results, not real intraday dispersion — no cross-check needed.
+- S&P 500 futures: soft, **~7,660-7,685**, down roughly -0.1% to -0.4% premarket.
+- VIX: **~15.8** (range 15.76-15.93 across sources) — modestly above Friday's levels, not a stale repeat of a prior day's exact print (L-002 checked, not triggered).
+- Today's catalysts: **New Home Sales, Conference Board Consumer Confidence, Richmond Fed Manufacturing Index** (10:00am ET), **PPI + weekly jobless claims** (12:30pm ET per one calendar — date conflicts with jobless claims' usual Thursday slot, treated as low-confidence and not used for gate purposes), **Fed Barkin speech**, and **2yr/5yr Treasury auctions**. No CPI or FOMC minutes today. Pre-open earnings: DKS, BNS, BMO, VIPS, EH, GFI, SLQT, WSM — none are held/watchlist names.
+- Sector momentum: Energy #1 YTD (+44.3%), Technology #2 (+27.6%), Materials #3 (+19.0%), Industrials #4 (+16.8%) — identical figures to Aug 24's read; YTD cumulative data is expected to be near-static day-to-day and this is not a "recurring data point" under the L-002/macro-print-match rule (that targets VIX/futures/oil-style single-session prints), so not flagged suspect, just noted as unchanged.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.25%** (499 obs, 54 days in regime) — continuing the Bull read. Advisory only, not an entry/exit trigger.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $200.33, unrealized +3.34% (+$614.56). No fresh Aug 25-dated catalyst; coverage recycles the Q2 beat ($6.11 EPS), Angola discovery, new treasurer appointment (effective Nov 1, informational), and Morgan Stanley's $218 PT (Aug 20). Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $188.082, HWM $208.98. No action.
+  - **ECL** (70 sh, entry $281.93): current $284.686, unrealized +0.98% (+$192.92). No fresh Aug 25-dated catalyst; coverage recycles the Q2 beat/raised guidance ($8.05-8.25 EPS) and the $0.73 dividend declaration. Thesis intact. Trailing stop GTC 64b1066c confirmed resting, stop $259.6005, HWM $288.445. No action.
+  - **LNG** (74 sh, entry $263.63): current $278.49, unrealized +5.64% (+$1,099.64). No fresh Aug 25-dated catalyst; coverage recycles the Aug 6 Q2 beat/raised EBITDA-DCF guidance and Morgan Stanley/Barclays PT raises. Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $253.56591, HWM $281.7399. No action.
+- None of the three held positions are near the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain LNG +5.64%).
+
+### Lessons Check
+- L-009 (track persistent under-deployment) — checked: 59.14% deployed today, still below the 75-85% band. Week 8 (Aug 24-28) continues the same trend; formal tally due at Friday's (Aug 28) review.
+- L-010 (lower stall-breaker re-arm to 3 consecutive no-trade sessions) — checked, not yet due to re-fire. Current refreshed watchlist (VST/CEG/MP/AMAT) added Aug 24; today is only its 2nd trading session — re-arming at 2 sessions would thrash the same names one session early. Will re-evaluate once the watchlist reaches 3 sessions old (tomorrow) if it remains catalyst-free.
+- L-011 (EOD balance_asof check) — N/A, this is a pre-market entry, not an EOD snapshot; `balance_asof` (2026-08-24) is current/one-session-lagged as expected.
+- L-012 (monitor widened catalyst-freshness window for false positives) — not due for reporting until 2026-09-04; no new entries have been made under the widened 2-session/two-source catalyst window since it was adopted — nothing new to report.
+- L-013 (broaden stall-breaker sector screen beyond Energy/Materials) — not due for reporting until 2026-09-04; last applied at the Aug 24 refresh, no new refresh cycle triggered today (see Stall-Breaker below) — nothing new to report.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing wide-spread/zero-ask anomaly across VST/CEG/MP/AMAT today, cross-checked via bars instead)
+VST -0.40% (135.665 vs 136.21 Ref, 2026-08-24 row). CEG +0.22% (273.435 vs 272.83 Ref). MP -4.33% (57.42 vs 60.02 Ref) — largest move of the four, already past the -3% avoided-loss threshold if it held, though only one session old. AMAT -1.55% (484.51 vs 492.12 Ref). All four still within their first session since the Aug 24 refresh — too early for formal weekly-review missed/skip-right/avoided-loss scoring, but directionally the skips look right so far (three of four negative/flat, none showing a missed-gain move).
+
+### Stall-Breaker
+**Not armed** — current refreshed watchlist (VST/CEG/MP/AMAT) is only 1 trading session old since its Aug 24 addition; L-010's 3-consecutive-no-trade-session re-arm trigger is not yet met on this watchlist streak (see Lessons Check above). No refresh executed today.
+
+### Watchlist Catalyst Scan (carried-forward watchlist, unchanged)
+- **VST** — closest thing to a fresh catalyst on the list: CEO James Burke bought 2,000 shares (~$270K) on **Aug 24** (yesterday, two independent trackers — Robinhood, StockAnalysis), plus reaffirmed FY26 adjusted EBITDA guidance ($6.8-7.6B) from the Aug 7 Q2 print and a Wells Fargo Buy reiteration (PT $212, not new). Aug 24 is within the prior-2-session window, but a $270K insider buy is a modest-size signal, not a standalone specific catalyst on the scale the gate has required historically (Q2 beats, deal announcements) — treated as informational, does not clear the gate today.
+- **CEG** — no fresh Aug 25-dated catalyst; Q2 beat-and-raise (Aug 6), Brazos Valley divestiture, and the 11M-share secondary offering are all prior coverage. Does not clear the gate.
+- **MP** — no fresh Aug 25-dated catalyst; Q2 report/gadolinium deal (Aug 6) and the $110.9M price-support news are ~2-3 weeks old; stock down -4.33% vs Ref over the past session (see skip check). Does not clear the gate.
+- **AMAT** — no fresh Aug 25-dated catalyst; Q3 earnings (Aug 13) and Citi catalyst watch remain over a week old. Does not clear the gate.
+
+### Trade Ideas
+No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
+1. **No trade today.** VST's Aug 24 insider buy is the only new item since yesterday's refresh, and it's a modest-size, single-signal event — not treated as a standalone gate-clearing catalyst absent a fresh dated news event or bars-confirmed reaction. CEG/MP/AMAT all recycle prior coverage with zero fresh Aug 25-dated catalyst. Held positions (CVX, ECL, LNG) all have intact theses and resting stops; no action required.
+
+### Risk Factors
+- **10:00am ET data cluster** (New Home Sales, Consumer Confidence, Richmond Fed) plus Fed Barkin speech and 2yr/5yr Treasury auctions are today's scheduled catalysts — two-sided risk for rate-sensitive names, not specific to held/watchlist tickers.
+- CVX (held): unrealized +3.34% (+$614.56), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stops GTC 7f5acb83/e328a200 confirmed resting ($188.082, HWM $208.98). No action.
+- ECL (held): unrealized +0.98% (+$192.92), nowhere near the -7% cut; trailing stop GTC 64b1066c confirmed resting ($259.6005, HWM $288.445). No action.
+- LNG (held): unrealized +5.64% (+$1,099.64), nowhere near the -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 974c3bfc confirmed resting ($253.56591, HWM $281.7399). No action.
+- MP (watchlist, not held): -4.33% vs its Aug 24 Ref close in one session, past the -3% avoided-loss line already — reinforces that skipping it was directionally correct so far, though still early (1 session).
+- Deployment (L-009): 59.14% today, still below the 75-85% band — continuing the multi-week under-deployment trend; formal tally at Friday's (Aug 28) weekly review.
+
+### Decision
+**HOLD** — no watchlist name (VST/CEG/MP/AMAT) has a fresh, today-dated, gate-clearing catalyst. VST's Aug 24 insider buy is noted but treated as informational, not gate-clearing, given its modest size relative to the bar set by prior clean signals (Q2 beats, deal announcements). Stall-breaker not armed (current watchlist only 1 session old per L-010's 3-session re-arm trigger) — watchlist carried forward unchanged: VST, CEG, MP, AMAT. 0/3 weekly trades used, 3 slots available but no qualifying setup on the 2nd session of Week 8 — patience > activity. No new Decision Scoreboard rows needed (VST/CEG/MP/AMAT already carry open rows from the Aug 24 refresh, same watchlist streak). CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged, none near any risk threshold.
