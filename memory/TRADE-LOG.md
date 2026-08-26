@@ -811,3 +811,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except ECL's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 26 — EOD Snapshot (Day 39, Wednesday)
+
+**Portfolio:** $101,508.68 | **Cash:** $41,149.34 (40.54%) | **Day P&L:** +$183.53 (+0.18%) | **Phase P&L:** +$1,508.68 (+1.51%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $200.21 | +0.16% | +$603.16 (+3.28%) | $188.082 (10% trail, GTC 7f5acb83/e328a200, HWM $208.98) |
+| ECL | 70 | $281.93 | $290.31 | +0.27% | +$586.60 (+2.97%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LNG | 74 | $263.63 | $284.0229 | +1.87% | +$1,509.07 (+7.74%) | $256.068 (10% trail, GTC 974c3bfc, HWM $284.52) |
+
+**Notes:** 14th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26) since the Aug 6 LNG buy — Aug 25 had no logged session but held-position quantities were unchanged (95/70/74 sh), confirming no trade occurred that day either (per today's Market-Open operational-gap note). Week 8 (Aug 24-28) at 0/3 weekly trades used, two sessions left (Thu Aug 27, Fri Aug 28). **L-011 flag:** `balance_asof` returned by this live pull is `2026-08-25`, not today's date — per L-011 this snapshot is provisional/live-pulled rather than a confirmed settled close; Day P&L above is computed against the prior logged EOD (Aug 24, $101,325.15) per continuity convention and should be reconciled against Alpaca's settled figure at the next session. Portfolio equity $101,508.68, up +$183.53 (+0.18%) day-over-day. Cumulative phase P&L +$1,508.68 (+1.51%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.46% deployed / 40.54% cash — 8th straight week below the 75-85% target deployment band (L-009). LNG led gainers (+1.87% intraday, unrealized +7.74%), ECL also up (+0.27% intraday, unrealized +2.97%), CVX ticked up (+0.16% intraday, unrealized +3.28%); ECL's and LNG's trailing stops mechanically ratcheted up today (stop-only-up, no manual action), CVX unchanged. No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +7.74%). No trades placed today — Market-Open and Midday scans both found no watchlist name (ET/FCX/MRVL) clearing the buy-side gate.
