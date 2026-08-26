@@ -162,3 +162,6 @@ than 10 sessions are pruned.
 | 2026-08-24 | CEG | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat-and-raise/nuclear PPA wins | 272.83 | | |
 | 2026-08-24 | MP | HOLD — stall-breaker refresh add (Materials), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat/gadolinium deal | 60.02 | | |
 | 2026-08-24 | AMAT | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector broadening), no fresh Aug 24-dated catalyst, recycled Aug 13 Q3 beat | 492.12 | | |
+| 2026-08-26 | ET | HOLD — stall-breaker refresh add (Energy), no fresh Aug 26-dated catalyst, recycled Aug 6-7 Q2 beat/guidance raise, Mizuho top-midstream-pick call | 21.03 | | |
+| 2026-08-26 | FCX | HOLD — stall-breaker refresh add (Materials), no fresh Aug 26-dated catalyst, recycled copper-rally/Q2-beat momentum | 79.895 | | |
+| 2026-08-26 | MRVL | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector), no catalyst yet, reports Thu Aug 27 AMC | 240.38 | | |
