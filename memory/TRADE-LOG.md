@@ -847,3 +847,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made; state matches pre-scan (3 positions, 4 orders, all stop levels and HWMs unchanged from this morning's market-open check, consistent with today's intraday pullback keeping prices below each position's HWM).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 27 — EOD Snapshot (Day 40, Thursday)
+
+**Portfolio:** $100,905.19 | **Cash:** $41,149.34 (40.78%) | **Day P&L:** -$603.49 (-0.59%) | **Phase P&L:** +$905.19 (+0.91%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $199.61 | -0.30% | +$546.16 (+2.97%) | $188.082 (10% trail, GTC 7f5acb83/e328a200, HWM $208.98) |
+| ECL | 70 | $281.93 | $285.91 | -1.61% | +$278.60 (+1.41%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LNG | 74 | $263.63 | $280.80 | -1.16% | +$1,270.58 (+6.51%) | $256.068 (10% trail, GTC 974c3bfc, HWM $284.52) |
+
+**Notes:** 15th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27) since the Aug 6 LNG buy; Week 8 (Aug 24-28) at 0/3 weekly trades used, 1 session left (Fri Aug 28). Portfolio equity $100,905.19, down -$603.49 (-0.59%) day-over-day on a broad, non-name-specific pullback (Jackson Hole options expiry, dense earnings slate per today's pre-market/midday reads) — all three holdings pulled back intraday (CVX -0.30%, ECL -1.61%, LNG -1.16%), none thesis-breaking. Cumulative phase P&L +$905.19 (+0.91%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.22% deployed / 40.78% cash — 9th straight week below the 75-85% target deployment band (L-009). No stops changed today (all three closed below their respective HWMs, no new ratchets). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +6.51%). No trades placed today — Market-Open and Midday scans both found no watchlist name (ET/FCX/MRVL) clearing the buy-side gate; MRVL reports after today's close, to be bars-confirmed tomorrow.
