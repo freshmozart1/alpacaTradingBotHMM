@@ -2025,3 +2025,60 @@ No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
 
 ### Decision
 **HOLD** — no watchlist name (ET/FCX/MRVL) has a fresh, today-dated, gate-clearing catalyst; MRVL hasn't reported yet. Stall-breaker fired per L-010 (Aug 24 refresh watchlist stale after 3 sessions) and refreshed per L-013's standing 3-sector screen (dropped VST/CEG/MP/AMAT for staleness — added ET (Energy), FCX (Materials), MRVL (Technology, reports Thursday)), but this changes search breadth only — none of the new names clear the buy-side gate today either. 0/3 weekly trades used, 3 slots available but no qualifying setup on the 3rd session of Week 8 — patience > activity. New Decision Scoreboard rows appended for ET/FCX/MRVL (new watchlist names); VST/CEG/MP/AMAT rows remain open/untouched pending weekly-review scoring. CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged (ECL's ratcheted up mechanically), none near any risk threshold. Carry forward refreshed watchlist: ET, FCX, MRVL (Energy/Materials/Technology, no fresh dated catalyst yet).
+
+## 2026-08-27 — Pre-market Research
+
+### Account
+- Equity: $101,337.22 | Cash: $41,149.34 (40.61%) | Buying power: $333,123.42 (margin, effective)
+- Position market value: $60,187.88 (CVX + ECL + LNG, 59.39% deployed). 3 open positions (CVX 95 sh, ECL 70 sh, LNG 74 sh), 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Daytrade count: 0. Day 40 (Week 8, Aug 24-28 — Thursday, 4th session). 14 consecutive no-trade-days entering today (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26; last trade was Aug 6's LNG buy). 0/3 trades used this week — 3 slots available, 2 sessions left (today, Fri Aug 28). balance_asof 2026-08-26 (one-session lag, expected).
+
+### Market Context
+- WTI/Brent: freshest same-day (2026-08-27) reads cluster tight — WTI **~$81.7-82.6** (TradingEconomics $81.86, MarketWatch $81.71 settlement, CNBC $82.55), Brent **~$87.4-87.6** (TradingEconomics $87.39-87.40, Bloomberg $87.44, Oilprice.com $87.44) — both roughly flat to modestly down (~-0.5%). Dispersion within the same-day subset well under the L-005 ~10% threshold (WTI ~1%, Brent ~0.2%); wider multi-day cluster in raw results reflects stale-dated snippets — no cross-check needed.
+- S&P 500 futures: mixed but net higher, **~7,690-7,727**, roughly flat to **+0.3% to +0.5%** premarket, boosted by strong overnight reactions to NVIDIA/Salesforce/CrowdStrike earnings (all reported Aug 26).
+- VIX: **~15.1-15.6** (Cboe spot $15.09, other feeds 15.4-15.6) — essentially flat to modestly lower vs Wednesday's ~15.45-15.65 range, not a stale exact-repeat (L-002 checked, not triggered).
+- Today's catalysts: **dense earnings slate** — Dollar General, Dollar Tree, Autodesk, Workday, Hormel, Ulta Beauty, Best Buy, Gap, Affirm, and **Marvell (MRVL, watchlist) all report today**; MRVL specifically reports **after market close** (call at 4:45pm ET), not before open. **Jackson Hole (Aug 27-29) has ~$2.8B in options expiring**, a volatility amplifier. No held/watchlist name reports before today's open.
+- Economic calendar: no CPI/PPI/FOMC today. **Initial Jobless Claims** at 8:30am ET is the key U.S. release, alongside Trade Balance, Wholesale/Retail Inventories, and Kansas City Fed Manufacturing Activity. Next CPI (Sep 11), PPI (Sep 10), Jobs Report (Sep 4) all in September.
+- Sector momentum: Energy #1 YTD (+43.1%), Technology #2 (+25.4%), Materials #3 (+19.1%) — essentially identical to Aug 26's read (43.1/25.4/19.0); YTD cumulative data is expected to be near-static day-to-day, not a suspect single-session repeat under L-002 (that rule targets VIX/futures/oil-style prints).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.6%** (500 obs, 56 days in regime) — continuing the Bull read. Advisory only, not an entry/exit trigger.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $199.50, unrealized +2.91% (+$535.71). No fresh Aug 27-dated catalyst; coverage recycles the Angola offshore discovery, Q2 beat, and Morgan Stanley's $218 PT (Aug 20); a Robinhood snippet mentions Chevron joining a nuclear-fusion R&D effort alongside Shell/Equinor/Cenovus but carries no clear today-date and is informational only. Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $188.082, HWM $208.98. No action.
+  - **ECL** (70 sh, entry $281.93): current $289.25, unrealized +2.60% (+$512.40). No fresh Aug 27-dated catalyst; coverage recycles the Nov 17 Investor Day announcement, the $0.73 dividend, and the (dated) UBS upgrade to Buy/$325 PT. Thesis intact. Trailing stop GTC 64b1066c confirmed resting, stop $265.797, HWM $295.33. No action.
+  - **LNG** (74 sh, entry $263.63): current $283.62, unrealized +7.58% (+$1,479.26). No fresh Aug 27-dated catalyst; coverage recycles the Aug 6 Q2 beat/raised EBITDA-DCF guidance ($7.9-8.4B); Morgan Stanley ($310) and Barclays ($279) PT-raise snippets carry an ambiguous "today" label traceable to older syndicated articles, not treated as fresh per the buy-side gate's dating standard (informational only, no action implication since this is a held position, not a new entry). Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $256.068, HWM $284.52. No action.
+- None of the three held positions are near the -7% cut or the +15%/+20% tighten thresholds (max unrealized gain LNG +7.58%).
+
+### Lessons Check
+- L-009 (track persistent under-deployment) — checked: 59.39% deployed today, still below the 75-85% band. Week 8 (Aug 24-28) continues the multi-week under-deployment trend; formal tally due at tomorrow's (Aug 28) weekly review.
+- L-010 (lower stall-breaker re-arm to 3 consecutive no-trade sessions) — checked, not yet due to re-fire. Current refreshed watchlist (ET/FCX/MRVL) was added Aug 26; today is only its 2nd trading session (Aug 26, 27) — re-arming would need a 3rd session with zero fresh catalysts. Will re-evaluate tomorrow (Aug 28) if it remains catalyst-free.
+- L-011 (EOD balance_asof check) — N/A, this is a pre-market entry, not an EOD snapshot; `balance_asof` (2026-08-26) is current/one-session-lagged as expected.
+- L-012 (monitor widened catalyst-freshness window for false positives) — not due for reporting until 2026-09-04; no new entries have been made under the widened 2-session/two-source catalyst window since it was adopted — nothing new to report.
+- L-013 (broaden stall-breaker sector screen beyond Energy/Materials) — not due for reporting until 2026-09-04; last applied at the Aug 26 refresh, no new refresh cycle triggered today (see Stall-Breaker below) — nothing new to report.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing wide-spread/zero-ask/zero-bid anomaly across ET/FCX/MRVL pre-open, cross-checked via bars instead)
+ET +1.85% (21.42 vs 21.03 Ref, 2026-08-26 row). FCX -1.11% (79.01 vs 79.895 Ref). MRVL +1.97% (245.115 vs 240.38 Ref). All three still within their first session since the Aug 26 refresh — too early for formal weekly-review missed/skip-right/avoided-loss scoring, but directionally the skips look right so far (largest move +1.97%, well inside the +3% missed threshold; well inside the -3% avoided-loss threshold too).
+
+### Stall-Breaker
+**Not armed** — current refreshed watchlist (ET/FCX/MRVL) is only 2 trading sessions old since its Aug 26 addition (Aug 26, 27); L-010's 3-consecutive-no-trade-session re-arm trigger is not yet met on this watchlist streak (see Lessons Check above). No refresh executed today. Watchlist carried forward unchanged: ET, FCX, MRVL.
+
+### Watchlist Catalyst Scan (carried-forward watchlist, unchanged)
+- **ET** — no fresh Aug 27-dated catalyst; the Aug 4 Q2 beat/guidance-raise and analyst PT hikes (Citi, Barclays, Morgan Stanley) are all prior coverage. Does not clear the gate today.
+- **FCX** — no fresh Aug 27-dated catalyst; the copper rally has been building over the past week and Q2 results (Aug 21 reaction) are already priced in; a negative/informational Aug 26 headline (FCX moves to dismiss an investor securities suit over the Grasberg mine accident) does not help the buy case either. Does not clear the gate today.
+- **MRVL** — no catalyst yet; reports **after today's close** (call 4:45pm ET) — nothing to confirm pre-earnings. Google's $12.2B custom-chip deal (Aug 19) and Wells Fargo's $310 PT (Aug 24) are recycled pre-earnings setup, not a fresh dated catalyst. Does not clear the gate today; tomorrow's pre-market/market-open will need to bars-confirm the actual reaction before this can be considered.
+
+### Trade Ideas
+No watchlist name has a genuinely fresh, today-dated, gate-clearing catalyst:
+1. **No trade today.** ET/FCX both recycle prior-week coverage with zero fresh Aug 27-dated catalyst; MRVL reports after the close today, so there is no confirmable reaction yet. Held positions (CVX, ECL, LNG) all have intact theses and resting stops; no action required.
+
+### Risk Factors
+- **MRVL reports after today's close** (4:45pm ET call) — options pricing implies a ~14% potential move; not held, but a name on the watchlist and a key read on AI/chip sentiment heading into tomorrow's session.
+- **Jackson Hole options expiry (Aug 27-29, ~$2.8B)** — a volatility amplifier around Fed-speech positioning and hedging flows, two-sided risk not specific to any held/watchlist name.
+- **Initial Jobless Claims** at 8:30am ET is today's key scheduled U.S. data point; no CPI/PPI/FOMC today.
+- Oil roughly flat to modestly down (~-0.5%) — a mild, non-directional factor for the Energy-heavy watchlist/held names; CVX/LNG/ET theses are earnings/demand-driven, not purely oil-price-driven. Dispersion tight, no L-005 trigger.
+- CVX (held): unrealized +2.91% (+$535.71), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stops GTC 7f5acb83/e328a200 confirmed resting ($188.082, HWM $208.98). No action.
+- ECL (held): unrealized +2.60% (+$512.40), nowhere near the -7% cut; trailing stop GTC 64b1066c confirmed resting ($265.797, HWM $295.33). No action.
+- LNG (held): unrealized +7.58% (+$1,479.26), nowhere near the -7% cut or +15%/+20% tighten thresholds; trailing stop GTC 974c3bfc confirmed resting ($256.068, HWM $284.52). No action.
+- Stall-breaker not armed today (L-010, watchlist only 2 sessions old) — no refresh executed; this doesn't change the buy-side gate or any risk rule.
+- Deployment (L-009): 59.39% today, still below the 75-85% band — Week 8 continues the multi-week under-deployment trend; formal tally at tomorrow's (Aug 28) weekly review.
+
+### Decision
+**HOLD** — no watchlist name (ET/FCX/MRVL) has a fresh, today-dated, gate-clearing catalyst; MRVL reports after today's close, so there's no reaction to confirm yet. Stall-breaker not armed (current watchlist only 2 sessions old per L-010's 3-session re-arm trigger) — watchlist carried forward unchanged: ET, FCX, MRVL. 0/3 weekly trades used, 3 slots available but no qualifying setup on the 4th session of Week 8 — patience > activity. No new Decision Scoreboard rows needed (ET/FCX/MRVL already carry open rows from the Aug 26 refresh, same watchlist streak). CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged, none near any risk threshold. Tomorrow's pre-market/market-open must bars-confirm MRVL's post-earnings reaction before it can be considered for the gate.
