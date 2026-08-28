@@ -535,3 +535,86 @@ Verdict counts (new rows this week): missed 2, skip-right 1, avoided-loss 1. Tot
 ### Overall Grade: B- (beat the S&P by 2.55% this week purely on existing-position mark-to-market gains and kept risk management perfectly clean, but a 2nd consecutive zero-trade week and a hard missed-skewed skip-scoreboard (23.41% missed vs 10.60% avoided) quantified, for the first time, a real cost to the catalyst-freshness gate's tightness — addressed this week with a bounded calibration change, not yet proven out)
 
 ### Overall Grade: B (beat the S&P by 1.43% and kept risk management clean with zero rule breaches, but zero trading activity for the third straight under-deployed week and a recurring EOD-logging data-integrity gap keep this from a higher grade)
+
+## Week ending 2026-08-28
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $100,920.73 (Aug 21 close) |
+| Ending portfolio | $101,290.96 |
+| Week return | +$370.23 (+0.37%) |
+| S&P 500 week | +0.48% (SPY 765.64 -> 769.28, Aug 21 close -> Aug 28 close via `alpaca.sh bars`; Perplexity again returned a higher, dispersed read (+0.7% per FRED) — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | -0.11% |
+| Trades | 0 (W:0 / L:0 / open:0) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week; LNG unrealized +7.09% strongest mover) |
+| Worst trade | N/A (no closed trades this week; ECL unrealized +1.71% weakest mover, still positive) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $201.86 | +$759.91 (+4.13%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $188.082, HWM $208.98 |
+| ECL | $281.93 (70 sh) | $286.75 | +$337.40 (+1.71%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+| LNG | $263.63 (74 sh) | $282.33 | +$1,383.80 (+7.09%) | 10% trailing GTC, order 974c3bfc, stop $256.068, HWM $284.52 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> latest close as of this review, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| XOM | 165.61 (Aug 19) | 156.695 (Aug 28) | -5.38% | avoided-loss |
+| PSX | 243.475 (Aug 19) | 244.095 (Aug 28) | +0.25% | skip-right |
+| STLD | 249.85 (Aug 19) | 234.745 (Aug 28) | -6.05% | avoided-loss |
+| MLM | 522.88 (Aug 19) | 530.91 (Aug 28) | +1.54% | skip-right |
+| VST | 136.21 (Aug 21) | 137.10 (Aug 28) | +0.65% | skip-right |
+| CEG | 272.83 (Aug 21) | 276.84 (Aug 28) | +1.47% | skip-right |
+| MP | 60.02 (Aug 21) | 56.12 (Aug 28) | -6.50% | avoided-loss |
+| AMAT | 492.12 (Aug 21) | 461.50 (Aug 28) | -6.22% | avoided-loss |
+
+Verdict counts (new rows this week): missed 0, skip-right 4, avoided-loss 4. Total missed gains: 0.00%. Total avoided losses: -24.15% (sum of the four). Missed:avoided ratio: 0:4 — the most gate-favorable read since the Aug 21 catalyst-freshness widening (2:1 that week, 0:0 the week before), and a sharp reversal from the missed-skewed evidence that drove L-012. **Gate calibration verdict: sound this week — zero evidence the gate is too tight; if anything, every scored skip this week would have lost money or gone nowhere if bought.** ET/FCX/MRVL (Aug 26 refresh rows) are only 3 sessions old — not yet 5, carried forward. WMB/CRM/CRWD (Aug 28 refresh rows) are 1 session old — carried forward. Pruned this review: FANG (Aug 4 row, scored skip-right at the Aug 14 review, now 13 sessions past its scoring reference) and VMC (Aug 5 row, scored skip-right at the Aug 14 review, now 12 sessions past its scoring reference) — both past the 10-session retention threshold.
+
+### What Worked
+
+- The buy-side gate's discipline was fully vindicated this week: 0 missed / 4 skip-right / 4 avoided-loss on the newly-scored rows (XOM, PSX, STLD, MLM, VST, CEG, MP, AMAT) — a sharp reversal from the Aug 21 review's missed-skewed read that triggered the L-012 catalyst-freshness widening, with no evidence the gate is too tight this cycle.
+- CRM and CRWD (Aug 28) were correctly identified as having genuine, well-confirmed, gate-clearing catalysts (Q2 beats, raised guidance, both independently confirmed by 4+ outlets) — and correctly NOT chased after already-realized +22.6%/+20.3% single-session moves, avoiding a same-day entry with real stop-out/give-back risk into a weekend gap. Flagged for a Tuesday Sept 1 pullback re-check (L-014) rather than abandoned.
+- L-010's lowered stall-breaker trigger (5 -> 3 sessions) ran a full 2-week validation cycle cleanly: it correctly re-armed and refreshed the watchlist three separate times this week alone (Aug 24, 26, 28), giving each cycle more of the week's runway to convert, with zero fresh incidents — promoted to a permanent rule (see Rule Changes).
+- Risk mechanics held clean all week: CVX/ECL/LNG all stayed positive (+4.13%/+1.71%/+7.09% unrealized at week end), no position came within range of the -7% cut or the +15%/+20% tighten thresholds (LNG's +7.09% is the closest, still well below +15%), and every L-011 EOD balance_asof check this week correctly flagged provisional snapshots with zero mislabeling incidents — promoted to a permanent Operational Rule (see Rule Changes).
+
+### What Didn't Work
+
+- Zero trades placed this week — the 3rd consecutive zero-trade week (Aug 10-14, Aug 17-21, Aug 24-28) and the 9th straight weekly-review close under the 75-85% deployment target (~59.37% today), despite the Aug 21 L-012 gate-widening intended to address exactly this.
+- Unlike the Aug 21 review, this week's inaction wasn't a gate-calibration failure — CRM/CRWD cleared the widened L-012 window on catalyst grounds but were skipped on chase-risk/extension grounds instead, a distinct problem the gate was never designed to solve (opened as L-015 to track going forward).
+- The Aug 28 stall-breaker refresh's Materials leg came up empty (recycled MP coverage, an illiquid micro-cap, a stale Aug 10 settlement) — the first time one of L-013's three sector legs has failed to produce a usable name, worth watching for recurrence (L-016).
+- The bot finished the week -0.11% behind the S&P (+0.37% vs +0.48%) — essentially flat, tracking the index closely on existing-position mark-to-market gains alone, in a week the index itself was only modestly positive.
+
+### Key Lessons
+
+- A fully vindicated skip-scoreboard (0 missed, 4 avoided-loss) in the same week the bot also correctly passed on two genuinely gate-clearing catalysts (CRM/CRWD, on chase-risk grounds) shows two different mechanisms can both be working correctly at once while the deployment number still doesn't move — the binding constraint has shifted from "no catalyst" toward "catalyst confirmed but the move already happened," which needs a different fix (a pullback-entry process, not further gate widening).
+- Two full weeks (Aug 14 - Aug 28) of clean L-010/L-011 compliance with zero fresh incidents is enough evidence to promote both to permanent rules, following the same bar used for L-001 through L-006.
+- A single empty sector leg in an otherwise-working 3-sector screen (L-013) is not yet a pattern — worth tracking for a second consecutive occurrence before treating it as a screen-design problem.
+
+### Adjustments for Next Week
+
+- Re-check CRM (would-be entry ~$250-253, stop ~$232-235) and CRWD (would-be entry ~$225-230, stop ~$207-209) at the next session (Tue Sep 1, after the Labor Day close) and through the following 2-3 sessions for a clean pullback/consolidation entry; take it if the range tightens and the gate still clears (L-014).
+- Track at the Sept 4 and Sept 11 reviews whether zero-trade weeks are being driven by "no catalyst" (would support further gate widening) or "catalyst confirmed but already realized" (would support building a bounded pullback-entry rule instead) (L-015).
+- Watch whether the Materials leg of the L-013 3-sector screen comes up empty again on the next refresh cycle; if so on 2 consecutive cycles, propose a 4th sector or a loosened liquidity/market-cap floor for that leg (L-016).
+- Continue L-009's deployment tracking (9th straight under-deployed week, checkpoint due 2026-09-04) and L-012's false-positive monitoring (review-by 2026-09-04) — both already active, not yet due for a decision.
+
+### Rule Changes This Week
+
+- L-010 ("lower stall-breaker re-arm trigger to 3 consecutive no-trade sessions") hit its Aug 28 review-by date having been complied with every session since 2026-08-14 (2 straight weeks) with zero fresh incidents — correctly re-armed and refreshed the watchlist 3 times this week alone (Aug 24, 26, 28). Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate, re-arm trigger 5+ -> 3+ sessions) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-011 ("check EOD balance_asof before logging a snapshot") hit its Aug 28 review-by date having been complied with every EOD session since 2026-08-14 (2 straight weeks) with zero fresh mislabeling/mismatch incidents. Promoted to a permanent process rule in TRADING-STRATEGY.md (new Operational Rules section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- New lessons opened: L-014 (re-evaluate CRM/CRWD for a pullback entry), L-015 (track whether chase-risk has replaced catalyst-freshness as the binding deployment constraint), L-016 (watch for a 2nd consecutive empty Materials leg in the L-013 screen) — see LESSONS.md. No risk-rule changes — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
+
+### Overall Grade: B- (buy-side gate discipline fully vindicated this week — 0 missed / 4 avoided-loss on the skip-scoreboard, and CRM/CRWD correctly not chased after already-realized 20%+ moves — but the 3rd consecutive zero-trade week and 9th straight under-deployed week, in a week the S&P edged higher, show the Aug 21 gate-widening hasn't yet moved deployment, with the evidence now pointing at chase-risk/entry-timing rather than catalyst-freshness as the real constraint)
