@@ -859,3 +859,19 @@ No positions yet. Bot launches tomorrow.
 | LNG | 74 | $263.63 | $280.80 | -1.16% | +$1,270.58 (+6.51%) | $256.068 (10% trail, GTC 974c3bfc, HWM $284.52) |
 
 **Notes:** 15th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27) since the Aug 6 LNG buy; Week 8 (Aug 24-28) at 0/3 weekly trades used, 1 session left (Fri Aug 28). Portfolio equity $100,905.19, down -$603.49 (-0.59%) day-over-day on a broad, non-name-specific pullback (Jackson Hole options expiry, dense earnings slate per today's pre-market/midday reads) — all three holdings pulled back intraday (CVX -0.30%, ECL -1.61%, LNG -1.16%), none thesis-breaking. Cumulative phase P&L +$905.19 (+0.91%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.22% deployed / 40.78% cash — 9th straight week below the 75-85% target deployment band (L-009). No stops changed today (all three closed below their respective HWMs, no new ratchets). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +6.51%). No trades placed today — Market-Open and Midday scans both found no watchlist name (ET/FCX/MRVL) clearing the buy-side gate; MRVL reports after today's close, to be bars-confirmed tomorrow.
+
+### Aug 28 — Midday Scan (Day 41, Friday) — no action
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +3.89% (+$716.69), current $201.405 vs entry $193.860947 (intraday +0.82% vs Aug 27's $199.61 close); ECL 70 sh, unrealized +1.62% (+$319.20), current $286.49 vs entry $281.93 (intraday +0.20% vs Aug 27's $285.91 close); LNG 74 sh, unrealized +6.92% (+$1,349.76), current $281.87 vs entry $263.63 (intraday +0.38% vs Aug 27's $280.80 close). 4 open orders confirmed resting: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $188.082, HWM $208.98 (unchanged, price below HWM); ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33 (unchanged, price below HWM); LNG trailing stop GTC 974c3bfc (74 sh), stop $256.068, HWM $284.52 (unchanged, price below HWM).
+
+**STEP 3 (cut losers):** N/A — CVX +3.89%, ECL +1.62%, LNG +6.92%, all positive, none near the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max unrealized gain LNG +6.92%, still below the +15% tighten trigger flagged in this morning's pre-market read). No tightening triggered; no stops changed.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +0.82% intraday modest continuation, Q2 beat/Hess-Guyana/Angola-Namibia thesis intact, no fresh Aug 28-dated catalyst per pre-market. ECL — no thesis-breaking news; +0.20% intraday flat/in-line, Q2 beat/raised-guidance thesis intact. LNG — no thesis-breaking news; +0.38% intraday flat/in-line, Q2 beat/raised-EBITDA-guidance thesis intact. Today's dominant scheduled catalysts (Fed Chair Warsh's Jackson Hole keynote ~10am ET, Core PCE, UMich sentiment final) have all released by scan time (16:05 UTC / ~12:05pm ET per pre-market flag) with no visible sharp reaction in any held name — all three intraday moves are well within the modest/in-line range of prior non-trigger sessions. No action on any position.
+
+**STEP 6 (optional research):** Skipped — no position moved sharply enough intraday with an unexplained cause (CVX +0.82%, ECL +0.20%, LNG +0.38%) to warrant a Perplexity check; today's macro risk factors (Jackson Hole, Core PCE) already flagged in pre-market and produced no outsized move in any held name by scan time.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no changes made, state matches pre-scan (3 positions, 4 orders, all stop levels and HWMs unchanged from this morning's pre-market read).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
