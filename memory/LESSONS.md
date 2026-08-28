@@ -15,6 +15,61 @@ Template:
 - Directive: <one concrete, checkable instruction>
 - Status: active | Review-by: YYYY-MM-DD
 
+### L-016 — Materials leg of the L-013 3-sector screen came up empty
+- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (Aug 28 stall-breaker
+  refresh: Energy and Technology each produced a usable name (WMB, CRM,
+  CRWD) but Materials came up with nothing usable — recycled MP Materials
+  coverage, an illiquid micro-cap in FEAM, and a stale Aug 10
+  Barrick/Newmont settlement)
+- Lesson: The top-3 YTD sector screen (Energy/Materials/Technology) can
+  run dry on an individual sector leg even while the other two still
+  produce fresh names — a single empty leg isn't yet evidence the
+  screen itself needs to widen further.
+- Directive: At each stall-breaker refresh, note whether the Materials
+  leg (or any leg) comes up empty. If the same leg comes up empty on 2
+  consecutive refresh cycles, propose adding a 4th sector or loosening
+  the liquidity/market-cap floor for that leg specifically.
+- Status: active | Review-by: 2026-09-11
+
+### L-015 — Track whether chase-risk (not catalyst-freshness) is now the binding constraint on deployment
+- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (3rd consecutive
+  zero-trade week despite the Aug 21 L-012 catalyst-freshness widening;
+  this week's skip-scoreboard came back 0 missed / 4 skip-right / 4
+  avoided-loss — the most gate-favorable read since the widening — while
+  the week's two genuinely gate-clearing catalysts, CRM and CRWD, were
+  skipped purely on already-realized-move/chase-risk grounds, not
+  catalyst-freshness)
+- Lesson: This week's evidence points away from catalyst-freshness as the
+  binding constraint (skip-scoreboard fully vindicated the gate, 0 missed)
+  and toward a gap in how to size/time an entry into a name whose >20%
+  earnings-day move already happened before the gate could act on it.
+  This is a distinct problem from anything L-012 addressed.
+- Directive: At the Sept 4 and Sept 11 reviews (alongside L-009's
+  standing deployment checkpoints), report whether zero-trade weeks are
+  still driven by "no catalyst" (supports further gate widening) or by
+  "catalyst confirmed but already realized" (supports building a
+  pullback/consolidation entry rule instead — process only, no risk-rule
+  change).
+- Status: active | Review-by: 2026-09-11
+
+### L-014 — Re-evaluate CRM/CRWD for a pullback entry
+- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 / RESEARCH-LOG
+  2026-08-28 (CRM +22.6% and CRWD +20.3% on Aug 27, both catalysts
+  confirmed and within the L-012 widened window, but not entered Aug 28
+  on chase-risk/extension grounds; flagged for a Tuesday Sept 1 — Labor
+  Day falls Mon Aug 31 — re-check)
+- Lesson: A confirmed, gate-clearing catalyst on a name that has already
+  gapped >20% shouldn't be abandoned outright — it should convert to a
+  bounded pullback/range-tightening watch rather than a same-day chase.
+- Directive: At the next session (Tue Sep 1) and through the following
+  2-3 sessions, re-check CRM (would-be entry ~$250-253, stop ~$232-235)
+  and CRWD (would-be entry ~$225-230, stop ~$207-209) for a clean,
+  lower-risk pullback/consolidation entry; if the range tightens and
+  the buy-side gate still clears (catalyst still within its dating
+  window), take the trade. If neither sets up within 5 sessions, drop
+  both and let the standard stall-breaker cycle take over.
+- Status: active | Review-by: 2026-09-08
+
 ### L-012 — Monitor widened catalyst-freshness window for false positives
 - Date: 2026-08-21 | Source: WEEKLY-REVIEW 2026-08-21 (2nd consecutive
   zero-trade week; skip-scoreboard scored COP +8.18% and NEM +15.23% as
@@ -64,33 +119,6 @@ Template:
   or position-sizing pacing instead.
 - Status: active | Review-by: 2026-09-04
 
-### L-010 — Stall-breaker refresh timing too late in the week
-- Date: 2026-08-14 | Source: WEEKLY-REVIEW 2026-08-14 (zero trades this
-  week; the Aug 14 stall-breaker fired on the week's last session, leaving
-  zero remaining sessions to act on the refreshed MPC/COP/NEM/NUE
-  watchlist)
-- Lesson: The stall-breaker's fixed 5-consecutive-no-trade-day trigger
-  routinely lands a watchlist refresh on a Thursday/Friday, giving fresh
-  names no runway within the same week to clear the buy-side gate.
-- Directive: Lower the stall-breaker trigger from 5 to 3 consecutive
-  no-trade sessions, so a broadened watchlist screen has more of the week
-  left to convert into an entry.
-- Status: active | Review-by: 2026-08-28
-
-### L-011 — EOD snapshot balance_asof/settlement mismatches
-- Date: 2026-08-14 | Source: WEEKLY-REVIEW 2026-08-14 (recurring pattern:
-  Aug 7 missing EOD entry, Aug 13 EOD entry mislabeled with Aug 12 data,
-  Aug 10/13/14 logged-vs-Alpaca last_equity discrepancies)
-- Lesson: The EOD-snapshot routine has produced three distinct
-  data-integrity incidents in two weeks, all traceable to the same root
-  cause — the routine reading account state before Alpaca's
-  `balance_asof`/`last_equity` has settled to the current session's close.
-- Directive: Before logging any EOD snapshot, check the account's
-  `balance_asof` field; if it doesn't match today's date, label the entry
-  explicitly as provisional/live-pulled rather than committing it as
-  today's official settled EOD close.
-- Status: active | Review-by: 2026-08-28
-
 ## Retired Lessons
 
 - L-001, "XLE/MU Perplexity output unreliable", retired 2026-07-31,
@@ -134,6 +162,17 @@ Template:
   further to report, no false-positive evidence either way. The
   underlying TRADING-STRATEGY.md rule (added 2026-08-07) stands
   unchanged; only the monitoring lesson is retired.
+- L-010, "Stall-breaker refresh timing too late in the week", retired
+  2026-08-28, promoted to a permanent process rule (TRADING-STRATEGY.md
+  Buy-Side Gate, re-arm trigger 5+ -> 3+ sessions) after 2 straight weeks
+  of compliance (2026-08-14 to 2026-08-28) with zero fresh incidents —
+  correctly re-armed and refreshed the watchlist 3 times this cycle
+  (Aug 24, 26, 28).
+- L-011, "EOD snapshot balance_asof/settlement mismatches", retired
+  2026-08-28, promoted to a permanent process rule (TRADING-STRATEGY.md,
+  new Operational Rules section) after 2 straight weeks of compliance
+  (2026-08-14 to 2026-08-28) with zero fresh mislabeling/mismatch
+  incidents.
 
 ## Decision Scoreboard
 
@@ -148,20 +187,18 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-08-04 | FANG | gate-fail: Q2 EPS beat ($6.48 vs $5.96 est) but bars-confirmed NEGATIVE reaction at open (-3.87%, $198.53 -> $190.85) | 198.53 | +1.02% | skip-right |
-| 2026-08-05 | VMC | gate-fail: Q2 EPS beat ($2.59 vs $2.50 est) but bars-confirmed reaction faded from +1.47% intraday high ($289.285, 10:15am ET) to +0.49% ($286.47, 2:15pm ET) and still declining — not a clean sustained positive reaction to trade against | 285.08 | -1.83% | skip-right |
 | 2026-08-14 | MPC | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Aug 4 Q2 beat/Mizuho pick | 356.67 | +1.10% | skip-right |
 | 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | +8.18% | missed |
 | 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | +15.23% | missed |
 | 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | -10.60% | avoided-loss |
-| 2026-08-19 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, recycled Q2 beat/Mozambique LNG investment | 165.61 | | |
-| 2026-08-19 | PSX | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, diesel-margin narrative recycled, same-day insider sale flagged negative | 243.475 | | |
-| 2026-08-19 | STLD | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Q2 beat/2026 outlook | 249.85 | | |
-| 2026-08-19 | MLM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Lhoist NA combination/dividend raise | 522.88 | | |
-| 2026-08-24 | VST | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 7 Q2 EBITDA beat/AI-power thesis | 136.21 | | |
-| 2026-08-24 | CEG | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat-and-raise/nuclear PPA wins | 272.83 | | |
-| 2026-08-24 | MP | HOLD — stall-breaker refresh add (Materials), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat/gadolinium deal | 60.02 | | |
-| 2026-08-24 | AMAT | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector broadening), no fresh Aug 24-dated catalyst, recycled Aug 13 Q3 beat | 492.12 | | |
+| 2026-08-19 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, recycled Q2 beat/Mozambique LNG investment | 165.61 | -5.38% | avoided-loss |
+| 2026-08-19 | PSX | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, diesel-margin narrative recycled, same-day insider sale flagged negative | 243.475 | +0.25% | skip-right |
+| 2026-08-19 | STLD | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Q2 beat/2026 outlook | 249.85 | -6.05% | avoided-loss |
+| 2026-08-19 | MLM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Lhoist NA combination/dividend raise | 522.88 | +1.54% | skip-right |
+| 2026-08-24 | VST | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 7 Q2 EBITDA beat/AI-power thesis | 136.21 | +0.65% | skip-right |
+| 2026-08-24 | CEG | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat-and-raise/nuclear PPA wins | 272.83 | +1.47% | skip-right |
+| 2026-08-24 | MP | HOLD — stall-breaker refresh add (Materials), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat/gadolinium deal | 60.02 | -6.50% | avoided-loss |
+| 2026-08-24 | AMAT | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector broadening), no fresh Aug 24-dated catalyst, recycled Aug 13 Q3 beat | 492.12 | -6.22% | avoided-loss |
 | 2026-08-26 | ET | HOLD — stall-breaker refresh add (Energy), no fresh Aug 26-dated catalyst, recycled Aug 6-7 Q2 beat/guidance raise, Mizuho top-midstream-pick call | 21.03 | | |
 | 2026-08-26 | FCX | HOLD — stall-breaker refresh add (Materials), no fresh Aug 26-dated catalyst, recycled copper-rally/Q2-beat momentum | 79.895 | | |
 | 2026-08-26 | MRVL | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector), no catalyst yet, reports Thu Aug 27 AMC | 240.38 | | |

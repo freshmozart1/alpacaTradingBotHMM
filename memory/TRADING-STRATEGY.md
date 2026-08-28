@@ -41,7 +41,7 @@ If any fail, the trade is skipped and the reason is logged.
   second independent source (WebSearch, or a distinct outlet from the
   original).
 - The instrument is a stock (not an option, not anything else).
-- If the no-trade streak has reached 5+ consecutive sessions (stall-breaker
+- If the no-trade streak has reached 3+ consecutive sessions (stall-breaker
   armed), the day's pre-market research MUST include a watchlist refresh
   (drop stale/unverifiable names, add fresh candidates from a broadened
   sector screen) before the gate is evaluated — a refresh is not optional
@@ -88,6 +88,13 @@ Evaluated at the midday scan and opportunistically:
 - What is the stop level (7-10% below entry)?
 - What is the target (minimum 2:1 risk/reward)?
 
+## Operational Rules
+
+- Before logging any EOD snapshot, check the account's `balance_asof`
+  field; if it doesn't match today's date, label the entry explicitly as
+  provisional/live-pulled rather than committing it as today's official
+  settled EOD close.
+
 ## Rule Changelog
 
 Every change to this file must be recorded here by the weekly review,
@@ -106,3 +113,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-08-07 | Buy-Side Gate | (none) -> flag same-week ex-div/analyst-action risk at every new entry | Promoted from LESSONS.md L-006 (2026-07-24), complied with every session for 2+ straight weeks (Jul 24-Aug 7), checked at every new entry (ECL, CVX, LNG) with zero misses. Process addition only, not a risk-rule change. |
 | 2026-08-07 | Buy-Side Gate | bars-confirmation window ~15-20 min post-open -> up to 60 min for sub-~50k-avg-volume names | Escalation per LESSONS.md L-007 (2nd consecutive missed-skewed skip-scoreboard week, missed 1 / avoided-loss 0 on 2026-08-07 vs missed 3 / avoided-loss 1 on 2026-07-31). Evidence: GRC (2026-07-30 gate-fail, Ref $78.46) returned zero bars prints ~17 min post-open on ~5-10k avg daily volume despite a genuine, today-dated Q2 beat, and was confirmed "missed" at +7.84% by Aug 6. Targets the actual confirmation-mechanism failure rather than loosening the catalyst-freshness window broadly. Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options all untouched. Review-by 2026-08-21 (LESSONS.md L-008) to check for false-positive entries introduced by the wider window. |
 | 2026-08-21 | Buy-Side Gate | catalyst must be dated today -> dated today OR within the prior 2 trading sessions if confirmed by a second independent source | Escalation per LESSONS.md L-009 (6th consecutive week under the 75-85% deployment target, 2026-08-21) and this review's skip-scoreboard evidence: COP (+8.18%) and NEM (+15.23%) both scored "missed", passed over solely for lacking a same-day-dated catalyst despite genuine, still-live multi-session catalysts (Q2 beat/CEO transition; Nevada Gold Mines settlement + gold rally) — missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses 10.60%, the most missed-skewed read of the challenge so far. Also satisfies STEP 5's 2nd-consecutive-zero-trade-week requirement (Week 6 Aug 10-14, Week 7 Aug 17-21). Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options all untouched. Review-by 2026-09-04 (LESSONS.md L-012) to check for false-positive entries introduced by the wider window. |
+| 2026-08-28 | Buy-Side Gate | stall-breaker re-arm trigger 5+ consecutive no-trade sessions -> 3+ | Promoted from LESSONS.md L-010 (2026-08-14), complied with every session for 2 straight weeks (Aug 14-28) with zero fresh incidents — correctly re-armed and refreshed the watchlist 3 times this cycle (Aug 24, 26, 28), giving each refresh more of the week's runway to convert into an entry. Process addition only, not a risk-rule change. |
+| 2026-08-28 | Operational Rules (new section) | (none) -> check `balance_asof` before logging any EOD snapshot; label provisional if it lags today's date | Promoted from LESSONS.md L-011 (2026-08-14), complied with every EOD session for 2 straight weeks (Aug 14-28) with zero fresh mislabeling/mismatch incidents (the three-incident pattern that spawned this lesson did not recur). Process addition only, not a risk-rule change. |
