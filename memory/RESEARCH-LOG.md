@@ -2142,3 +2142,61 @@ Stall-breaker: **FIRED** (dropped ET, FCX, MRVL; added WMB, CRM, CRWD — third 
 
 ### Decision
 **HOLD** — CRM and CRWD both carry genuine, well-confirmed catalysts that technically satisfy the widened L-012 gate window, but both moves (+22.6% and +20.3% respectively) are already fully realized from Aug 27 and chasing them today into a Friday close ahead of a weekend gap carries real stop-out/give-back risk with no clean lower-risk entry visible in today's pre-market data — not entering, watching for a Monday pullback/range-tightening setup instead. WMB has no fresh dated catalyst (forward Sept 1 event only). Stall-breaker fired per L-010 (Aug 26 refresh watchlist stale after 3 sessions, MRVL's earnings reaction landed negative) and refreshed per L-013's 3-sector screen (dropped ET/FCX/MRVL — added WMB (Energy), CRM (Technology), CRWD (Technology); Materials leg empty this cycle). New Decision Scoreboard rows appended for WMB/CRM/CRWD; ET/FCX/MRVL rows remain open/untouched pending weekly-review scoring. 0/3 weekly trades used, 3 slots available but no qualifying low-risk setup on the last session of Week 8 — patience > activity. CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged (ECL's likely to ratchet up intraday), none near any risk threshold; LNG approaching the +15% tighten trigger, worth watching. Carry forward refreshed watchlist: WMB, CRM, CRWD (no fresh dated catalyst for WMB; CRM/CRWD's catalysts are confirmed but already fully priced — watch for Monday continuation/pullback).
+
+## 2026-08-31 — Pre-market Research
+
+### Account
+- Equity: $102,115.96 | Cash: $41,149.34 (40.30%) | Buying power: $335,303.90 (margin, effective)
+- Position market value: $60,966.62 (CVX + ECL + LNG, 59.70% deployed). 3 open positions (CVX 95 sh, ECL 70 sh, LNG 74 sh), 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL trailing stop GTC, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Daytrade count: 0. Day 42, new Week 9 (Aug 31-Sep 4), Monday, 1st session. 16 consecutive no-trade-days entering today (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28; last trade was Aug 6's LNG buy). 0/3 trades used this week (fresh week, 3 slots available). balance_asof 2026-08-28 (one-session lag, expected; pre-market entry, L-011 N/A).
+
+### Market Context
+- WTI/Brent: same-day (2026-08-31) live reads cluster **WTI ~$85.5-86.1**, **Brent ~$90.0-90.7** (Investing.com WTI $85.48/+2.5%, Brent $90.04/+4.55%; TradingEconomics WTI $85.48/Brent $90.56; Cboe-adjacent Oilprice.com $85.51/$90.41) — up sharply (+2.5% to +4.6%) on reports of collapsed US-Iran diplomatic efforts over Strait of Hormuz shipping. Same-day-cluster dispersion ~1-2%, well under the L-005 ~10% threshold; no cross-check needed. This is a fresh, today-dated macro catalyst worth flagging for CVX (held) and WMB (watchlist), both energy-exposed.
+- S&P 500 futures: **~7,691-7,722**, roughly **-0.26% to -0.40%** premarket — modest pullback after Friday's close.
+- VIX: **~15.18-15.27** (Cboe spot 15.27, MarketWatch 15.18) — up from Friday's close of 14.43 (+5.2-5.8%), not a stale exact-repeat (L-002 checked, not triggered); consistent with a modestly more cautious tone into the new week.
+- Today's catalysts: **G20 Finance Ministers and Central Bank Governors meeting (Aug 31-Sep 1)**, **Dallas Fed Manufacturing Index (~2:30pm ET)**, and **3-/6-month Treasury bill auctions (~3:30pm ET)** are the confirmed scheduled items; broader Monday macro calendar is light. No CPI/PPI/FOMC/jobs data today (next CPI Sep 11; latest July payrolls -23,000, unemployment 4.1%). Earnings before today's open: only **SAIC** and **NSSC** confirmed BMO — neither held nor watchlist.
+- Sector momentum: Energy #1 YTD (+43.1%), Technology #2 (+25.4%), Materials #3 (+19.1%) — unchanged from Aug 26-28's read; cumulative YTD figure, not a suspect single-session repeat (L-002 targets VIX/futures/oil-style prints).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.33%** (498 obs, 58 days in regime) — continuing the Bull read. Advisory only, not an entry/exit trigger.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $206.44, unrealized +6.49% (+$1,195.01). No fresh Aug 31-dated catalyst; coverage recycles the Angola Block 0 discovery, Venezuela heavy-oil deal hopes, Morgan Stanley $218 PT/Overweight, and Q2 upstream/refining strength. Today's Iran/Hormuz-driven oil spike is a tailwind but not itself a new company-specific catalyst. Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $188.082, HWM $208.98. No action.
+  - **ECL** (70 sh, entry $281.93): current $286.77, unrealized +1.72% (+$338.80). No fresh Aug 31-dated catalyst; coverage recycles the raised 2026 EPS guidance ($8.05-8.25), Global High-Tech/AI-cooling growth (CoolIT), and the upcoming SC26 Investor Day. Thesis intact. Trailing stop GTC 64b1066c confirmed resting, stop $265.797, HWM $295.33. No action.
+  - **LNG** (74 sh, entry $263.63): current $287.58, unrealized +9.09% (+$1,772.30). No fresh Aug 31-dated catalyst; coverage recycles the Aug 6 Q2 beat/raised EBITDA-DCF guidance ($7.9-8.4B) and the Corpus Christi maintenance note. Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $256.068, HWM $284.52. No action — approaching but still below the +15% tighten threshold (unrealized +9.09%), watch into next session.
+- None of the three held positions are near the -7% cut. None have crossed the +15%/+20% tighten thresholds yet.
+
+### Lessons Check
+- L-009 (track persistent under-deployment) — checked: 59.70% deployed today, still below the 75-85% band, first session of new Week 9. Next formal weekly tally at the Sept 4 review.
+- L-012 (monitor widened catalyst-freshness window for false positives) — not due until 2026-09-04. Notable: CRM/CRWD's Aug 26-dated earnings catalyst has now aged past the widened 2-prior-session window as of today (3 trading sessions have elapsed: Aug 27, 28, 31) — no longer gate-clearing on catalyst-freshness grounds alone even if a clean entry emerged.
+- L-013 (broaden stall-breaker sector screen) — N/A today, stall-breaker not armed (no refresh this session, see Stall-Breaker below).
+- L-014 (re-evaluate CRM/CRWD for a pullback entry) — not yet due; directive targets the next session (Tue Sep 1) and the following 2-3 sessions. Noted for context: CRM's Aug 28 close ($256.01) is now above the flagged would-be entry zone ($250-253); CRWD's Aug 28 close ($218.46) is below its flagged entry zone ($225-230), i.e. already pulled back further than expected. Formal re-check deferred to tomorrow per the directive.
+- L-015 (track chase-risk vs. catalyst-freshness as binding constraint) — not due until Sept 4/11. Today: zero fresh catalysts on any held/watchlist name, no chase-risk situation active (CRM/CRWD's catalyst is now stale rather than freshly chaseable) — a genuine "no catalyst" day, not a chase-risk day.
+- L-016 (Materials leg empty on stall-breaker refresh) — N/A today, no refresh this session (stall-breaker not armed).
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing wide-spread/zero-ask pre-open anomaly across WMB/CRM/CRWD, cross-checked via bars instead)
+WMB -0.64% (73.715 vs 74.19 Ref, 2026-08-28 row, added same day). CRM +1.51% (256.01 vs 252.19 Ref). CRWD -4.18% (218.46 vs 227.99 Ref) — the only one of the three now outside the +3%/-3% band, but only 1 session old since the row was added; far too early for formal missed/skip-right/avoided-loss scoring. Directionally nothing here argues the Aug 28 no-trade decision was wrong yet.
+
+### Stall-Breaker
+**Not armed** — per L-010's 3-consecutive-no-trade-session re-arm trigger, today is only the 2nd trading session since the Aug 28 refresh (Aug 28 = session 1, Aug 31 = session 2 today); the 3rd session (Sept 1) is required before re-arming. Overall no-trade streak is 16 entering today. Watchlist carried forward unchanged: WMB, CRM, CRWD.
+Stall-breaker: **not armed** (sessions-since-refresh 2 < 3).
+
+### Watchlist Catalyst Scan (carried-forward watchlist, no refresh today)
+- **WMB** — no fresh Aug 31-dated catalyst; coverage recycles the Aug 3 Momentum Midstream acquisition ($5.5B) and raised 2026 EBITDA guidance ($8.3-8.5B)/dividend hike, plus the still-forward Hugh Brinson Sept 1 in-service date. Does not clear the gate today.
+- **CRM** — no fresh Aug 31-dated catalyst; the Aug 26 Q2 beat/Anthropic-partnership catalyst is now outside the widened 2-session window (3 sessions elapsed). Price ($256.01 Aug 28 close) is above the flagged pullback entry zone ($250-253) — no clean lower-risk setup visible yet. Does not clear the gate today.
+- **CRWD** — no fresh Aug 31-dated catalyst; same aging-out as CRM. Price ($218.46 Aug 28 close) is below the flagged pullback entry zone ($225-230) — a deeper pullback than anticipated, worth a closer look at tomorrow's L-014 checkpoint, but catalyst-freshness alone no longer supports the gate today regardless of price. Does not clear the gate today.
+
+### Trade Ideas
+1. **CRM (Salesforce)** — Catalyst now stale (Aug 26, aged past the widened window). No entry today; formal pullback re-check per L-014 due tomorrow (Sept 1).
+2. **CRWD (CrowdStrike)** — Same treatment as CRM — catalyst stale, no entry today. Price has already pulled back below the flagged entry zone; re-check tomorrow per L-014.
+3. **No trade today.** WMB has no fresh dated catalyst. CVX/ECL/LNG (held) all have intact theses and resting stops; no action required. LNG approaching the +15% tighten trigger (+9.09%), worth monitoring.
+
+### Risk Factors
+- **Iran/Hormuz-driven oil spike** (WTI +2.5% to Brent +4.6% today) — genuine, today-dated macro catalyst; tailwind for CVX (held) and WMB (watchlist, no other fresh catalyst), but two-sided risk if diplomatic tensions de-escalate or if the move proves overextended.
+- **G20 Finance Ministers/Central Bank Governors meeting (Aug 31-Sep 1)** and **Dallas Fed Manufacturing Index (~2:30pm ET)** — moderate event risk, not specific to held/watchlist names.
+- **CRM/CRWD catalyst-aging**: both names' Aug 26 earnings catalyst has now aged out of the widened L-012 gate window; even if a clean pullback setup emerges tomorrow, a fresh confirming angle would strengthen the case. No position taken.
+- CVX (held): unrealized +6.49% (+$1,195.01), nowhere near -7% cut or +15%/+20% tighten thresholds; trailing stops GTC 7f5acb83/e328a200 confirmed resting ($188.082, HWM $208.98). No action.
+- ECL (held): unrealized +1.72% (+$338.80), nowhere near the -7% cut; trailing stop GTC 64b1066c confirmed resting ($265.797, HWM $295.33). No action.
+- LNG (held): unrealized +9.09% (+$1,772.30), nowhere near the -7% cut; approaching but still below the +15% tighten threshold; trailing stop GTC 974c3bfc confirmed resting ($256.068, HWM $284.52). No action, monitor for the +15% tighten trigger.
+- Deployment (L-009): 59.70% today, still below the 75-85% band — first session of Week 9, formal weekly tally at the Sept 4 review.
+- Stall-breaker not armed today (2 sessions since Aug 28 refresh, needs 3) — no watchlist refresh, no gate change.
+
+### Decision
+**HOLD** — No fresh, today-dated catalyst on any held position (CVX, ECL, LNG) or watchlist name (WMB, CRM, CRWD). CRM/CRWD's Aug 26 catalyst has now aged past the widened L-012 window regardless of price action; WMB's Hugh Brinson event remains forward-only. Stall-breaker not armed (sessions-since-refresh 2 < 3; re-arms tomorrow if still no trade). No new Decision Scoreboard rows needed (WMB/CRM/CRWD rows already open from Aug 28). 0/3 weekly trades used on the first session of a fresh week (Week 9) — no qualifying setup today, patience > activity. CVX, ECL, and LNG (held) require no action — all three theses intact, all stops resting unchanged; LNG approaching the +15% tighten trigger, worth watching closely. Carry forward watchlist unchanged: WMB, CRM, CRWD — formal L-014 pullback re-check for CRM/CRWD due tomorrow (Sept 1).
