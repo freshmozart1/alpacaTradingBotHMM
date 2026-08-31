@@ -903,3 +903,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made; state matches pre-scan except LNG's stop mechanically ratcheting per the 10% trail (expected, no manual action).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Aug 31 — EOD Snapshot (Day 42, Monday)
+
+**Portfolio:** $102,086.60 | **Cash:** $41,149.34 (40.31%) | **Day P&L:** +$795.64 (+0.79%) | **Phase P&L:** +$2,086.60 (+2.09%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $205.56 | +1.83% | +$1,111.41 (+6.04%) | $188.082 (10% trail, GTC 7f5acb83/e328a200, HWM $208.98) |
+| ECL | 70 | $281.93 | $283.20 | -1.24% | +$88.90 (+0.45%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LNG | 74 | $263.63 | $291.69 | +3.32% | +$2,076.44 (+10.64%) | $263.871 (10% trail, GTC 974c3bfc, HWM $293.19) |
+
+**Notes:** 17th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 31) since the Aug 6 LNG buy; Week 9 (Aug 31-Sep 4) opens at 0/3 weekly trades used, 5 sessions available. **Operational Rule flag (TRADING-STRATEGY.md, ex-L-011):** `balance_asof` returned by this live pull is `2026-08-28`, not today's date — this snapshot is provisional/live-pulled rather than a confirmed settled close; Day P&L above is computed against the prior logged EOD (Aug 28, $101,290.96) per continuity convention and should be reconciled against Alpaca's settled figure at the next session. Portfolio equity $102,086.60, up +$795.64 (+0.79%) day-over-day, driven by a broad Iran/Hormuz oil-spike tailwind (CVX +1.83%, LNG +3.32% intraday) partially offset by ECL's -1.24% pullback. Cumulative phase P&L +$2,086.60 (+2.09%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.69% deployed / 40.31% cash — 10th straight week below the 75-85% target deployment band (L-009). LNG's trailing stop mechanically ratcheted up intraday to $263.871 (new HWM $293.19, per the 10% trail mechanism, stop only moved up); CVX and ECL stops unchanged. No positions near the -7% cut. LNG is now at +10.64% unrealized, approaching the +15% tighten-to-7%-trail trigger — watch closely into next session. No trades placed today — Midday scan found no watchlist name clearing the buy-side gate.
