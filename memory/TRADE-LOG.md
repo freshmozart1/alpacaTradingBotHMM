@@ -915,3 +915,29 @@ No positions yet. Bot launches tomorrow.
 | LNG | 74 | $263.63 | $291.69 | +3.32% | +$2,076.44 (+10.64%) | $263.871 (10% trail, GTC 974c3bfc, HWM $293.19) |
 
 **Notes:** 17th consecutive no-trade day (Aug 7, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 31) since the Aug 6 LNG buy; Week 9 (Aug 31-Sep 4) opens at 0/3 weekly trades used, 5 sessions available. **Operational Rule flag (TRADING-STRATEGY.md, ex-L-011):** `balance_asof` returned by this live pull is `2026-08-28`, not today's date — this snapshot is provisional/live-pulled rather than a confirmed settled close; Day P&L above is computed against the prior logged EOD (Aug 28, $101,290.96) per continuity convention and should be reconciled against Alpaca's settled figure at the next session. Portfolio equity $102,086.60, up +$795.64 (+0.79%) day-over-day, driven by a broad Iran/Hormuz oil-spike tailwind (CVX +1.83%, LNG +3.32% intraday) partially offset by ECL's -1.24% pullback. Cumulative phase P&L +$2,086.60 (+2.09%) vs $100,000 starting capital. 3 open positions (CVX, ECL, LNG), 59.69% deployed / 40.31% cash — 10th straight week below the 75-85% target deployment band (L-009). LNG's trailing stop mechanically ratcheted up intraday to $263.871 (new HWM $293.19, per the 10% trail mechanism, stop only moved up); CVX and ECL stops unchanged. No positions near the -7% cut. LNG is now at +10.64% unrealized, approaching the +15% tighten-to-7%-trail trigger — watch closely into next session. No trades placed today — Midday scan found no watchlist name clearing the buy-side gate.
+
+### Sep 1 — BUY ET (Day 43, Tuesday) — streak broken (17 no-trade days), 1/3 weekly trades used
+
+**Account pre-trade:** Equity $102,854.79 | Cash $41,149.34 (40.01%) | 3 open positions (CVX 95 sh, unrealized +7.97%; ECL 70 sh, unrealized +0.73%; LNG 74 sh, unrealized +12.47%).
+
+**Held position check:** CVX unrealized +7.97% (+$1,467.66), ECL unrealized +0.73% (+$144.90), LNG unrealized +12.47% (+$2,432.38) pre-trade — none near -7% cut or thesis break; LNG approaching but not yet at the +15% tighten trigger. Trailing stops confirmed resting unchanged (CVX $188.082/HWM $208.98; ECL $265.797/HWM $295.33; LNG $263.871/HWM $293.19, no new ratchet since pre-market). No action on held positions.
+
+**Gate check — ET:** Hugh Brinson Pipeline Phase 1 reaching full 1.5 Bcf/d capacity, target-dated today (Sept 1, 2026) per Energy Transfer's own Q2 2026 earnings-call guidance, independently confirmed by 3+ outlets (Investing.com, Seeking Alpha, Yahoo Finance) — flagged pre-market, re-validated at market-open. Pre-open `quote` showed an anomalous wide bid/ask spread (bp $18.62/ap $24.73, ~24% spread — standing pre-open quote anomaly per L-001/L-004 methodology); waited for market open, then cross-checked via 1Min bars: opened $21.67, traded $21.63-$21.77 in the first two minutes, tight $21.69/$21.72 quote by 13:32 UTC — genuine, bars-confirmed reaction (+1.1% vs Aug 31's $21.51 close), not the stale pre-open print.
+- Positions after fill: 4 <= 6 — pass.
+- Trades this week incl. this one: 1/3 (Week 9) — pass.
+- Position cost <= 20% equity ($20,570.96 cap) — pass (see sizing below).
+- Position cost <= cash ($41,149.34) — pass.
+- Catalyst documented in today's RESEARCH-LOG + bars-confirmed live — pass.
+- Daytrade count: 0, room available — pass.
+- Instrument is a stock (ET, NYSE) — pass.
+- Same-week ex-div/analyst-action check (Perplexity, market-open): last ET ex-div was Aug 7, 2026 (paid Aug 19); next ex-div not until ~Nov 6-9, 2026 — no same-week ex-div. No verified analyst rating/PT changes found in the past week. Non-blocking, informational only.
+
+**Entry Checklist:** Catalyst = Hugh Brinson Pipeline Phase 1 full-capacity milestone, target-dated today, bars-confirmed positive open reaction. Sector = Energy, confirmed YTD #1 momentum leader. Stop = 10% trailing GTC. Target = min 2:1 R/R off the 10% stop.
+
+**Order sizing:** Sized to 900 sh (~$19,512 est. at ~$21.68, ~18.97% of equity, under the 20% cap and the $20,570.96 hard cap). Market buy order (day TIF) filled in a single fill: 900 sh @ $21.68 (cost basis $19,512, 18.97% of equity).
+
+**Stops placed:** One 10% trailing stop GTC order covering the full 900 sh — order f900c3f3, stop $19.503, HWM $21.67. Confirmed via `alpaca.sh orders`/`positions`: qty_available = 0, full position covered.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-09-01 | ET | BUY | 900 | $21.68 (fill) | $19.503 (10% trailing GTC, order f900c3f3) | Hugh Brinson Pipeline Phase 1 full 1.5 Bcf/d capacity milestone, target-dated today per Energy Transfer's own Q2 2026 earnings-call guidance, independently confirmed by 3+ outlets; correctly re-attributed from a 3-session WMB misattribution (see Sept 1 RESEARCH-LOG); bars-confirmed positive open reaction; Energy sector confirmed YTD #1 momentum leader; no same-week ex-div, no adverse analyst action | ~$26.03 (+~20%, 2:1 R/R off the 10% stop) | ~2:1 |
