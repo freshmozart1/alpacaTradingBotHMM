@@ -957,3 +957,16 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; state matches pre-scan except ET's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action; both moves are stop-up-only).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 1 — EOD Snapshot (Day 43, Tuesday)
+
+**Portfolio:** $102,431.51 | **Cash:** $21,637.34 (21.13%) | **Day P&L:** +$344.91 (+0.34%) | **Phase P&L:** +$2,431.51 (+2.43%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $210.79 | +2.26% | +$1,608.26 (+8.73%) | $189.972 (10% trail, GTC 7f5acb83/e328a200, HWM $211.08) |
+| ECL | 70 | $281.93 | $280.25 | -1.04% | -$117.60 (-0.60%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.54 | +0.14% | -$126.00 (-0.65%) | $19.539 (10% trail, GTC f900c3f3, HWM $21.71) |
+| LNG | 74 | $263.63 | $294.13 | +0.84% | +$2,257.00 (+11.57%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** Streak reset — trade(s) placed today (Sep 1 BUY ET, 900 sh @ $21.68, Hugh Brinson Pipeline Phase 1 full-capacity milestone catalyst); ends the 17-day no-trade streak that ran Aug 7-31. Week 9 (Aug 31-Sep 4) at 1/3 weekly trades used, 3 sessions remaining. **Operational Rule flag:** `balance_asof` returned by this live pull is `2026-08-31`, not today's date — per the Operational Rules section this snapshot is provisional/live-pulled rather than a confirmed settled close; Day P&L above is computed against the prior logged EOD (Aug 31, $102,086.60) per continuity convention and should be reconciled against Alpaca's settled figure at the next session. Portfolio equity $102,431.51, up +$344.91 (+0.34%) day-over-day — CVX led gainers (+2.26% intraday, unrealized +8.73%) on continued Iran/Hormuz oil-spike tailwind, LNG also up (+0.84% intraday, unrealized +11.57%, now the position closest to the +15% tighten trigger), ET modest give-back on its first full session (+0.14% intraday, unrealized -0.65%, ordinary post-entry consolidation), ECL pulled back (-1.04% intraday, unrealized -0.60%). Cumulative phase P&L +$2,431.51 (+2.43%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.87% deployed / 21.13% cash — first session in at least 10 weeks inside the 75-85% target deployment band (driven by today's ET buy plus existing-position appreciation), to be confirmed at next Friday's weekly review. CVX's trailing stops ratcheted up today (both legs to $189.972, new HWM $211.08); ECL, ET, LNG stops unchanged since this morning's midday scan (ET/LNG had already ratcheted intraday, captured in the midday entry above). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +11.57%, watch closely into next session). 1 trade placed today (BUY ET); no additional trades pending.
