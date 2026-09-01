@@ -941,3 +941,19 @@ No positions yet. Bot launches tomorrow.
 | Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
 |------|--------|------|--------|-------|------|--------|--------|-----|
 | 2026-09-01 | ET | BUY | 900 | $21.68 (fill) | $19.503 (10% trailing GTC, order f900c3f3) | Hugh Brinson Pipeline Phase 1 full 1.5 Bcf/d capacity milestone, target-dated today per Energy Transfer's own Q2 2026 earnings-call guidance, independently confirmed by 3+ outlets; correctly re-attributed from a 3-session WMB misattribution (see Sept 1 RESEARCH-LOG); bars-confirmed positive open reaction; Energy sector confirmed YTD #1 momentum leader; no same-week ex-div, no adverse analyst action | ~$26.03 (+~20%, 2:1 R/R off the 10% stop) | ~2:1 |
+
+### Sep 1 — Midday Scan (Day 43, Tuesday) — no action
+
+**Account:** 4 open positions — CVX 95 sh, unrealized +7.51% (+$1,382.16), current $208.41 vs entry $193.860947 (intraday +1.10% vs lastday $206.14); ECL 70 sh, unrealized -0.31% (-$60.20), current $281.07 vs entry $281.93 (intraday -0.75% vs lastday $283.20); ET 900 sh (opened today, see above), unrealized -0.48% (-$94.50), current $21.575 vs entry $21.68 (intraday +0.30% vs lastday $21.51); LNG 74 sh, unrealized +9.09% (+$1,772.30), current $287.58 vs entry $263.63 (intraday -1.41% vs lastday $291.69). 5 open orders confirmed resting: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), both stop $188.829, HWM $209.81 (unchanged, price below HWM); ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33 (unchanged, price below HWM); ET trailing stop GTC f900c3f3 (900 sh), stop $19.539, HWM $21.71 (ratcheted from this morning's post-fill $19.503/$21.67 as price briefly ran above entry, now resting below HWM); LNG trailing stop GTC 974c3bfc (74 sh), stop $269.253, HWM $299.17 (ratcheted up from this morning's pre-market read, price now pulled back below HWM).
+
+**STEP 3 (cut losers):** N/A — CVX +7.51%, ECL -0.31%, ET -0.48%, LNG +9.09%, none near the -7% cut threshold. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max unrealized gain LNG +9.09%, pulled back from this morning's pre-market read of +12.29% and further from the +15% tighten trigger). No tightening triggered; no stops changed.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +1.10% intraday continuation of the Iran/Hormuz oil-spike tailwind flagged pre-market, Venezuela/Angola-Namibia thesis intact. ECL — no thesis-breaking news; -0.75% intraday modest pullback, within normal range, raised-guidance thesis intact. ET — no thesis-breaking news; -0.48% intraday, modest give-back after this morning's bars-confirmed positive open reaction to the Hugh Brinson Phase 1 full-capacity milestone (still today-dated, still multi-source confirmed), ordinary post-entry consolidation, not a reversal of the catalyst. LNG — no thesis-breaking news; -1.41% intraday pullback, Aug 6 Q2 beat/raised-EBITDA-guidance and Corpus Christi Stage 3 thesis intact. No action on any position.
+
+**STEP 6 (optional research):** Skipped — no position moved sharply enough intraday with an unexplained cause (CVX +1.10%, ECL -0.75%, ET -0.48%, LNG -1.41%) to warrant a Perplexity check; today's macro backdrop (ISM Manufacturing PMI, JOLTS, continuing Iran/Hormuz oil tailwind) already flagged in pre-market and produced no outsized/unexplained move in any held name by scan time.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; state matches pre-scan except ET's and LNG's stops mechanically ratcheting per the 10% trail (expected, no manual action; both moves are stop-up-only).
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
