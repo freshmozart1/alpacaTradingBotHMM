@@ -994,3 +994,16 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; state matches pre-scan except CVX's stops mechanically ratcheting per the 10% trail (expected, no manual action, stop-up-only).
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 3 — EOD Snapshot (Day 45, Thursday)
+
+**Portfolio:** $102,069.63 | **Cash:** $21,637.33 (21.20%) | **Day P&L:** -$361.88 (-0.35%) | **Phase P&L:** +$2,069.63 (+2.07%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $211.32 | -0.22% | +$1,658.61 (+9.01%) | $191.87964 (10% trail, GTC 7f5acb83/e328a200, HWM $213.1996) |
+| ECL | 70 | $281.93 | $278.97 | -0.33% | -$207.20 (-1.05%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.48 | -0.28% | -$180.00 (-0.92%) | $19.539 (10% trail, GTC f900c3f3, HWM $21.71) |
+| LNG | 74 | $263.63 | $290.50 | -1.81% | +$1,988.38 (+10.19%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 2nd consecutive no-trade day (Sep 2, Sep 3) since the Sep 1 ET buy; Week 9 (Aug 31-Sep 4) at 1/3 weekly trades used, 1 session remaining (Fri). **Operational Rule flag:** no EOD snapshot was logged for Sep 2 (Day 44) — this file has no entry between the Sep 1 EOD and today's Sep 3 Market-Open Check, so Day P&L above is computed against the last logged EOD (Sep 1, $102,431.51) per continuity convention and spans 2 calendar days rather than 1; flagging for reconciliation at the next weekly review. `balance_asof` on this live pull is `2026-09-02`, one day behind, consistent with the standing provisional/live-pulled caveat. Portfolio equity $102,069.63, down -$361.88 (-0.35%) vs the Sep 1 EOD read — broad pullback across 3 of 4 holdings (LNG -1.81% intraday, ECL -0.33%, ET -0.28%) partially offset by CVX's modest -0.22% (still up +9.01% unrealized, the day's most resilient name). Cumulative phase P&L +$2,069.63 (+2.07%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.80% deployed / 21.20% cash — 5th straight session inside the 75-85% target deployment band. No stops ratcheted today (all 4 legs unchanged from this morning/midday; every position closed below its HWM). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +10.19%, pulled back from midday's +11.25% and this morning's +12.45%). No trades placed today — no watchlist name cleared the buy-side gate at market-open; midday scan took no action.
