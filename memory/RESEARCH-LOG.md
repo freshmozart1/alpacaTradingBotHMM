@@ -2394,3 +2394,68 @@ TRGP -0.25% (293.49 vs 294.22 Ref, 2026-09-01 row). AAPL +2.49% (325.03 vs 317.1
 
 ### Decision
 **HOLD.** No trade today. CRWD remains the one gate-qualifying setup (thesis-intact, macro-driven pullback now priced even deeper than Sept 2) but a standard-sized entry would breach the hard 75-85% deployment cap given the book is already 78.94% deployed across 4 positions — capital/sizing constraint, not catalyst or thesis failure, flagged for tomorrow's Sept 4 weekly review for the 2nd straight session. CRM/TRGP/AAPL/CRH all lack a fresh dated catalyst today. CVX, ECL, ET, and LNG (held) all require no action — theses intact, all stops resting (CVX ratcheted up); LNG remains the one to watch for the +15% tighten trigger. No stall-breaker refresh (1 consecutive no-trade session, below the 3-session re-arm trigger). Watchlist unchanged: TRGP, AAPL, CRH, CRM, CRWD. Operational gap (missing Sept 2 TRADE-LOG entries) flagged for tomorrow's review.
+
+## 2026-09-04 — Pre-market Research
+
+### Account
+- Equity: $101,812.13 | Cash: $21,637.33 (21.25%) | Buying power: $311,038.76 (margin, effective) | `balance_asof` 2026-09-03 (not today) — per Operational Rules, this pull is provisional/live-pulled, not a confirmed settled close.
+- Position market value: $80,174.80 (CVX 95 sh, ECL 70 sh, ET 900 sh, LNG 74 sh — 78.75% deployed). 4 open positions, 5 open orders (2x CVX trailing stop GTC covering full position, 1x ECL, 1x ET, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Day P&L: -$247.40 (-0.24%) vs last_equity $102,059.53.
+- Daytrade count: 0. Day 46, Week 9 (Aug 31-Sep 4), Friday, 5th/final session of the week. 2 consecutive no-trade days entering today (Sept 2, Sept 3). 1/3 trades used this week (ET buy Sept 1), 2 slots technically available but this is the week's last session.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97.01%** (501 obs, 62 days in regime). Advisory only, not an entry/exit trigger.
+- Today is also the scheduled Friday Weekly Review — deployment tally (L-009), L-012/L-013 review-by dispositions, and the CRWD deployment-cap conflict (L-015) are formally decided there, not in this pre-market entry.
+
+### Market Context
+- WTI/Brent: **WTI ~$91.4-91.9**, **Brent ~$95.5-95.9** across multiple feeds this morning — continuing the elevated, multi-session Iran/Hormuz tailwind, a genuine incremental move up from Sept 3's read (WTI ~$90-91, Brent ~$94.5-95.5), not a repeated single print (L-002 checked, not triggered). Continuing tailwind for CVX/ET (held), not a fresh standalone catalyst.
+- S&P 500 futures: mixed/inconsistent across feeds — most snippets show **~7,739-7,764**, up modestly pre-open, but one Sept 4-dated Reuters/Investing.com snippet says futures "turned negative... after data showed the U.S. economy..." tied to the August jobs report. Checked directly: the **BLS August nonfarm payrolls print had NOT yet been released** as of the query (July's actual was -23,000; August consensus ~+53K-65K) — the "futures fell" snippet is stale/inconsistent with the not-yet-released data and is discounted per L-002-style caution. Re-validate futures direction live at market open once the 8:30am ET NFP print is confirmed.
+- VIX: **~14.2-14.9** across feeds, down from Sept 3's ~15.20 close — a genuine move, not a repeat (L-002 checked, not triggered).
+- Today's catalysts: **August jobs report (nonfarm payrolls, unemployment rate, wages)** at 8:30am ET is the single biggest scheduled catalyst today, with direct read-through to Fed rate-path expectations ahead of the Sept 15-16 FOMC. **ECL Investor Day is today (Sept 4)** — RBC expects it to cover revenue mix, High-Tech Water, Digital, and Pest Intelligence, and possibly reaffirm long-term targets; relevant to held ECL, watch for headlines. No held or watchlist name confirmed reporting earnings today (BMO earnings calendars were inconsistent/empty for today, consistent with prior sessions' pattern).
+- Econ calendar: No CPI today (next CPI release Sept 11); no PPI print flagged for today. August jobs report (NFP) is today's key release. PPI Sept 10, CPI Sept 11, FOMC Sept 15-16.
+- Sector momentum YTD: Energy #1 (~+42-47%), Technology #2 (~+29-32%), Materials #3 (~+15-18%) — unchanged ranking.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $209.70, unrealized +8.17% (+$1,504.71). No fresh Sept 4-dated catalyst; coverage recycles the Venezuela $7B expansion deal, the Iran/Hormuz oil tailwind, and recent analyst target raises (BMO $235, Piper Sandler $243). Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $191.87964, HWM $213.1996 (unchanged since Sept 3). No action.
+  - **ECL** (70 sh, entry $281.93): current $278.97, unrealized -1.05% (-$207.20). No fresh Sept 4-dated trade catalyst beyond today's Investor Day (informational, not a new-entry-style catalyst since already held); raised 2026 EPS guidance ($8.05-$8.25) and CoolIT/Ovivo integration recycled. Thesis intact — small pullback, not thesis-breaking. Trailing stop GTC 64b1066c confirmed resting, stop $265.797, HWM $295.33 (unchanged). No action; watch for Investor Day headlines today.
+  - **ET** (900 sh, entry $21.68): current $21.406, unrealized -1.26% (-$246.60). No fresh Sept 4-dated catalyst; Hugh Brinson Phase 1 milestone and raised FY26 EBITDA guidance ($18.8B-$19.1B) both recycled. Thesis intact, ordinary post-entry consolidation. Trailing stop GTC f900c3f3 confirmed resting, stop $19.539, HWM $21.71 (unchanged). No action.
+  - **LNG** (74 sh, entry $263.63): current $290.00, unrealized +10.00% (+$1,951.38). No fresh Sept 4-dated catalyst; Q2 beat/raised EBITDA guidance and Corpus Christi Stage 3 completion recycled. Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $269.253, HWM $299.17 (unchanged). Pulled back further from Sept 3's +12.45% read — no longer immediately approaching the +15% tighten trigger, but still the position to watch. No action.
+- None of the four held positions are near the -7% cut. None have crossed the +15%/+20% tighten thresholds (LNG closest at +10.00%, pulled back from Sept 3's +12.45%).
+
+### Lessons Check
+- L-009 (track persistent under-deployment) — checked: 78.75% deployed today, **inside the 75-85% target band for the 4th straight session** (Sept 1-4). Review-by today (2026-09-04) — formal weekly tally deferred to today's scheduled Weekly Review.
+- L-012 (monitor widened catalyst-freshness window for false positives) — review-by today (2026-09-04). No new entries made under the widened window since Sept 1's ET buy (which was same-day-dated and didn't need the widening); nothing new to report on false positives. Formal disposition deferred to today's Weekly Review.
+- L-013 (broaden stall-breaker sector screen) — not applicable today; stall-breaker not armed (2 consecutive no-trade sessions). Review-by today also reached; formal disposition deferred to today's Weekly Review.
+- L-014 (re-evaluate CRM/CRWD for a pullback entry) — **checked today (4th of the 5-session Sept 1-4/8 re-check window)**: CRM's Sept 3 close ($264.42) moved further above the flagged entry zone ($250-253), no pullback — resumed upward momentum instead. CRWD's Sept 3 close ($214.985) bounced +5.7% off Sept 2's low ($203.405) but remains below the flagged pullback zone ($225-230) and the one-day move is not a tightened/consolidating range. Neither qualifies today; one session (next Tue, Sept 8) remains before the drop-both deadline.
+- L-015 (track chase-risk vs. catalyst-freshness as binding constraint) — not formally due until today's Weekly Review/Sept 11, but today reaffirms the 75-85% deployment-cap conflict against CRWD for a **3rd consecutive session** (Sept 2, 3, 4) — relevant input for today's review.
+- L-016 (Materials leg empty on stall-breaker refresh) — not applicable today; stall-breaker not armed.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing the standing wide-spread/pre-open anomaly across TRGP/AAPL/CRH/CRM/CRWD, cross-checked via bars instead)
+TRGP -0.27% (293.44 vs 294.22 Ref, 2026-09-01 row). AAPL +3.49% (328.22 vs 317.14 Ref). CRH -2.44% (92.03 vs 94.33 Ref). CRM +4.85% (264.42 vs 252.19 Ref, 2026-08-28 row). CRWD -5.70% (214.985 vs 227.99 Ref, 2026-08-28 row). Skips look mixed: AAPL and CRM are trending toward missed territory, CRH and CRWD toward skip-right/avoided-loss, TRGP roughly flat. Full formal tally at today's Weekly Review.
+
+### Stall-Breaker
+**Not armed** — 2 consecutive no-trade sessions entering today (Sept 2, Sept 3; per the 3-session re-arm trigger, this is below threshold). No refresh executed; watchlist carried forward unchanged: TRGP, AAPL, CRH, CRM, CRWD.
+
+### Watchlist Catalyst Scan (carried-forward watchlist, no refresh today)
+- **CRWD** — thesis intact (Sept 2 drop confirmed macro/sector-rotation-driven, not company-specific); Fal.Con 2026 concluded Sept 3, no fresh Sept 4-dated catalyst beyond recycled conference/earnings coverage. Does **not** clear today's gate for execution due to the same deployment-cap conflict as Sept 2/3 (sizing/capital constraint, not catalyst or thesis failure). Flagged for today's Weekly Review.
+- **CRM** — no fresh Sept 4-dated catalyst; Aug 26 Q2 beat/Anthropic-Claudeforce partnership recycled. Price ($264.42 Sept 3 close) now further above the flagged pullback zone ($250-253). Does not clear the gate.
+- **TRGP** — no fresh Sept 4-dated catalyst; Q2 beat, guidance upgrade, dividend-hike narrative, and analyst target raises (RBC, Goldman, UBS, Jefferies) all recycled from the Aug earnings print. Does not clear the gate.
+- **AAPL** — no fresh Sept 4-dated catalyst; coverage centers on the Sept 9 iPhone/foldable launch event (forward-dated) and the already-logged CEO transition. Does not clear the gate.
+- **CRH** — no fresh Sept 4-dated catalyst; Q2 beat and the $8.5B Arcosa acquisition both recycled from prior sessions; one new item (Pisgah Stone Products bolt-on, early August) is also stale, not today-dated. Does not clear the gate.
+
+### Trade Ideas
+1. **CRWD** — Thesis and pullback setup both remain valid (see L-014 above). On paper: positions 4->5 of max 6 (pass); trades 1->2 of max 3/week (pass); cash ($21,637.33) and 20% equity cap both comfortably cover a standard ~19-20% entry ($20,362 est. at 20% cap; would-be entry ~$214-220 per current price, stop ~$207-209 per L-014). **However**: deployment is already 78.75% across 4 positions; a standard full-size entry would push deployment toward ~97-98%, breaching the hard 75-85% deployed rule for the 3rd straight session this setup has been evaluated. **Not executed today for this reason alone.** Flagged again for today's Weekly Review (ties to L-009/L-014/L-015): decide whether the cap should flex for thesis-intact, non-near-stop books, or whether this is the cap working as intended.
+2. **CRM** — No entry; L-014 window has one session left (Sept 8) with no qualifying pullback (price extending away from the zone) and no fresh catalyst today.
+3. **TRGP / AAPL / CRH** — No entry; none clear today's gate (no fresh dated catalyst).
+
+### Risk Factors
+- **August jobs report (NFP) at 8:30am ET** — today's single biggest scheduled catalyst; not yet released as of this research pull. Direct read-through to Fed rate-path expectations ahead of the Sept 15-16 FOMC. Re-validate S&P futures/VIX direction at market open once the print lands — pre-open futures commentary was inconsistent (see Market Context).
+- **Deployment-cap conflict (3rd consecutive session)**: CRWD remains a gate-qualifying setup passed over purely on the 75-85% hard deployment cap. To be formally decided at today's Weekly Review (L-009/L-015).
+- **ECL Investor Day today** — held position; watch for guidance/target headlines that could move the stock intraday.
+- **Continuing Iran/Hormuz oil elevation** (WTI ~$91.4-91.9, Brent ~$95.5-95.9) — tailwind for CVX/ET (held), two-sided risk if tensions de-escalate.
+- CVX (held): unrealized +8.17%, nowhere near -7% cut or +15%/+20% tighten; stops resting ($191.87964, HWM $213.1996). No action.
+- ECL (held): unrealized -1.05%, nowhere near the -7% cut; stop resting ($265.797, HWM $295.33). No action.
+- ET (held): unrealized -1.26%, ordinary post-entry consolidation, nowhere near the -7% cut; stop resting ($19.539, HWM $21.71). No action.
+- LNG (held): unrealized +10.00%, pulled back from Sept 3's +12.45%, no longer immediately approaching the +15% tighten threshold; stop resting ($269.253, HWM $299.17). No action.
+- Deployment (L-009): 78.75% today, inside the 75-85% band for the 4th straight session — also the binding constraint against CRWD for the 3rd straight session.
+
+### Decision
+**HOLD.** No trade today. CRWD remains the one gate-qualifying setup (thesis-intact; Fal.Con concluded with no fresh standalone catalyst) but a standard-sized entry would breach the hard 75-85% deployment cap given the book is already 78.75% deployed across 4 positions — capital/sizing constraint, not catalyst or thesis failure, flagged for today's Weekly Review for the 3rd straight session. CRM/TRGP/AAPL/CRH all lack a fresh dated catalyst today; CRM has moved further from its L-014 pullback zone. CVX, ECL, ET, and LNG (held) all require no action — theses intact, all stops resting; LNG pulled back from the +15% tighten watch zone. No stall-breaker refresh (2 consecutive no-trade sessions, below the 3-session re-arm trigger). Watchlist unchanged: TRGP, AAPL, CRH, CRM, CRWD. Today's August jobs report (8:30am ET) is the key event to re-validate at market open. L-009/L-012/L-013/L-015 review-by dates land today — formal dispositions deferred to today's scheduled Weekly Review.
+
