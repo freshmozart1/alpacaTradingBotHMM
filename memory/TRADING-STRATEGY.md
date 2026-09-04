@@ -66,6 +66,11 @@ If any fail, the trade is skipped and the reason is logged.
   post-open (from the standard ~15-20 minutes) before ruling a catalyst
   reaction unconfirmed — thin liquidity can produce zero bars prints well
   into the session.
+- When a refreshed watchlist completes a full re-arm cycle (per the
+  3-session stall-breaker trigger) without producing a gate-clearing
+  catalyst, the next refresh's sector screen includes a 3rd sector
+  (next-highest YTD momentum) alongside the top-2, to avoid recycling the
+  same names/coverage across cycles.
 
 ## Sell-Side Rules
 
@@ -115,3 +120,4 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-08-21 | Buy-Side Gate | catalyst must be dated today -> dated today OR within the prior 2 trading sessions if confirmed by a second independent source | Escalation per LESSONS.md L-009 (6th consecutive week under the 75-85% deployment target, 2026-08-21) and this review's skip-scoreboard evidence: COP (+8.18%) and NEM (+15.23%) both scored "missed", passed over solely for lacking a same-day-dated catalyst despite genuine, still-live multi-session catalysts (Q2 beat/CEO transition; Nevada Gold Mines settlement + gold rally) — missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses 10.60%, the most missed-skewed read of the challenge so far. Also satisfies STEP 5's 2nd-consecutive-zero-trade-week requirement (Week 6 Aug 10-14, Week 7 Aug 17-21). Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options all untouched. Review-by 2026-09-04 (LESSONS.md L-012) to check for false-positive entries introduced by the wider window. |
 | 2026-08-28 | Buy-Side Gate | stall-breaker re-arm trigger 5+ consecutive no-trade sessions -> 3+ | Promoted from LESSONS.md L-010 (2026-08-14), complied with every session for 2 straight weeks (Aug 14-28) with zero fresh incidents — correctly re-armed and refreshed the watchlist 3 times this cycle (Aug 24, 26, 28), giving each refresh more of the week's runway to convert into an entry. Process addition only, not a risk-rule change. |
 | 2026-08-28 | Operational Rules (new section) | (none) -> check `balance_asof` before logging any EOD snapshot; label provisional if it lags today's date | Promoted from LESSONS.md L-011 (2026-08-14), complied with every EOD session for 2 straight weeks (Aug 14-28) with zero fresh mislabeling/mismatch incidents (the three-incident pattern that spawned this lesson did not recur). Process addition only, not a risk-rule change. |
+| 2026-09-04 | Buy-Side Gate | (none) -> stall-breaker refresh screens a 3rd sector (next-highest YTD momentum) after a full re-arm cycle produces no gate-clearing catalyst | Promoted from LESSONS.md L-013 (2026-08-21), complied with every refresh cycle for 2+ straight weeks (Aug 21-Sept 4: Aug 24, 26, 28, Sept 1 refreshes all screened a 3rd sector alongside Energy/Materials, surfacing AMAT, MRVL, and CRH) with zero fresh incidents. Process addition only, not a risk-rule change. |

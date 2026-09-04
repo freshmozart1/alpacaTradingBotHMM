@@ -618,3 +618,84 @@ Verdict counts (new rows this week): missed 0, skip-right 4, avoided-loss 4. Tot
 - New lessons opened: L-014 (re-evaluate CRM/CRWD for a pullback entry), L-015 (track whether chase-risk has replaced catalyst-freshness as the binding deployment constraint), L-016 (watch for a 2nd consecutive empty Materials leg in the L-013 screen) — see LESSONS.md. No risk-rule changes — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
 
 ### Overall Grade: B- (buy-side gate discipline fully vindicated this week — 0 missed / 4 avoided-loss on the skip-scoreboard, and CRM/CRWD correctly not chased after already-realized 20%+ moves — but the 3rd consecutive zero-trade week and 9th straight under-deployed week, in a week the S&P edged higher, show the Aug 21 gate-widening hasn't yet moved deployment, with the evidence now pointing at chase-risk/entry-timing rather than catalyst-freshness as the real constraint)
+
+## Week ending 2026-09-04
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $101,290.96 (Aug 28 close) |
+| Ending portfolio | $102,030.13 (live pull; `balance_asof` 2026-09-03, one session lagged — provisional per Operational Rules) |
+| Week return | +$739.17 (+0.73%) |
+| S&P 500 week | +0.12% (SPY 769.28 -> 770.18, Aug 28 close -> Sep 4 close via `alpaca.sh bars`; Perplexity again returned partial/dispersed reads — FRED's weekly series had no Sep 4 print yet, ChartRow showed a Sep 3-dated "+0.5%" row — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | +0.61% |
+| Trades | 1 (W:0 / L:0 / open:1 — ET) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week; LNG unrealized +11.07% strongest mover) |
+| Worst trade | N/A (no closed trades this week; ECL unrealized -0.94% weakest mover) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $208.60 | +$1,400.21 (+7.60%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $191.87964, HWM $213.1996 |
+| ECL | $281.93 (70 sh) | $279.28 | -$185.50 (-0.94%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+| ET | $21.68 (900 sh) | $21.51 | -$153.00 (-0.78%) | 10% trailing GTC, order f900c3f3, stop $19.539, HWM $21.71 |
+| LNG | $263.63 (74 sh) | $292.80 | +$2,158.58 (+11.07%) | 10% trailing GTC, order 974c3bfc, stop $269.253, HWM $299.17 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| ET | 21.03 (Aug 26) | 21.525 (Sep 2) | +2.35% | skip-right (moot — bot independently bought ET Sep 1 once the correctly-attributed Hugh Brinson catalyst confirmed) |
+| FCX | 79.895 (Aug 26) | 73.945 (Sep 2) | -7.45% | avoided-loss |
+| MRVL | 240.38 (Aug 26) | 206.57 (Sep 2) | -14.06% | avoided-loss |
+| WMB | 74.19 (Aug 28) | 74.17 (Sep 4) | -0.03% | skip-right |
+| CRM | 252.19 (Aug 28) | 259.30 (Sep 4) | +2.82% | skip-right |
+| CRWD | 227.99 (Aug 28) | 213.045 (Sep 4) | -6.55% | avoided-loss |
+
+Verdict counts (new rows this week): missed 0, skip-right 3, avoided-loss 3. Total missed gains: 0.00%. Total avoided losses: -28.06% (sum of FCX/MRVL/CRWD). Missed:avoided ratio: 0:3 — the 2nd straight gate-favorable read (0:4 last week, 0:3 this week), zero evidence the gate is too tight. **Notably, CRWD's Aug 28 skip scored avoided-loss (-6.55%)** — this is the same name whose Sept 2-4 pullback setup was independently blocked from a *new* entry purely by the 75-85% deployment cap (see What Worked); the cap's caution on CRWD this week is now doubly vindicated by both the original Aug 28 skip and the Sept 2-4 re-entry hold. MPC/COP/NEM/NUE (Aug 14 rows) are exactly 10 sessions past their Aug 21 scoring reference point — retained one more review per the "older than 10" threshold (MU precedent). XOM/PSX/STLD/MLM and VST/CEG/MP/AMAT (both scored at the Aug 28 review) are 5 sessions past their scoring reference point, not yet past 10 — retained. TRGP/AAPL/CRH (Sept 1 rows) are only 3 sessions old — carried forward.
+
+### What Worked
+
+- The 17-day no-trade streak (Aug 7-31) ended cleanly Sept 1 with ET: a hard-dated, multi-source-confirmed operational milestone (Hugh Brinson Pipeline Phase 1 full capacity), after the desk caught and corrected its own 3-session catalyst misattribution (the milestone had been wrongly credited to WMB, Aug 28-Sept 1) *before* placing the order — self-caught data-quality discipline working as intended, with zero capital ever at risk on the wrong premise.
+- Deployment reached the 75-85% target band for the first time in the challenge and held there for all 5 sessions this week (78.75%-78.94%, Sept 1-4) — directly resolves L-009's multi-week tracking question, achieved via one clean trade (ET) plus existing-position appreciation, not by forcing extra entries.
+- The skip-scoreboard came back gate-favorable for the 2nd straight review (0 missed / 3 skip-right / 3 avoided-loss this week, following 0/4/4 last week) — continued strong evidence against further gate-loosening.
+- CRWD's deployment-cap-blocked non-entry (3 consecutive sessions, Sept 2-4 — thesis-intact, catalyst-cleared, but a standard-sized 5th position would have pushed deployment to ~97-99%) scored avoided-loss on its original Aug 28 skip (-6.55% by Sept 4) — the first direct evidence this challenge that the 75-85% cap itself, not just the catalyst gate, is correctly filtering risk rather than only costing missed gains.
+- Risk mechanics held clean all week: no position came within range of the -7% cut or the +15%/+20% tighten thresholds (LNG's +12.45% Sept 3 high was the closest, pulling back to +11.07% by week end); CVX and LNG stops ratcheted mechanically, stop-only-up, with zero manual intervention.
+
+### What Didn't Work
+
+- Only 1 of 3 weekly trade slots used despite reaching the deployment band — the CRWD setup (thesis-intact, catalyst-cleared pullback) sat unexecuted for 3 straight sessions purely on the 75-85% deployment cap, an unresolved policy question (L-015) that now has real evidence on both sides of the ledger (this week's Sept 2-4 hold scored favorably; earlier "missed" reads like COP/NEM in August argued the opposite direction on the catalyst-freshness side specifically, a related but distinct constraint).
+- An operational gap recurred: no TRADE-LOG.md entries exist for Sept 2 (Market-Open/Midday/EOD all missing) — a repeat of the Aug 18/Aug 25 gap pattern; held-position quantities confirmed unchanged the next session, so no trade was missed, but this is now the 5th distinct data-integrity incident of the challenge and the 2nd full-day logging gap specifically (after Aug 18).
+- ECL and ET both closed the week modestly negative (-0.94%/-0.78% unrealized) — no thesis break in either, but neither position added value this week; ET's first week held was flat-to-down consolidation after its Sept 1 entry.
+- The Sept 1 WMB->ET catalyst misattribution (a 3-session error, Aug 28-Sept 1) is a new failure mode distinct from L-001/L-002's numeric-print issues — a company/project-ownership attribution error on a real, dated project, not previously covered by any lesson or gate check.
+
+### Key Lessons
+
+- The 75-85% deployment cap, carried since inception purely as a hard risk constraint, showed its first real cost-benefit trade-off this week: it blocked a genuinely gate-clearing CRWD entry for 3 straight sessions, and that blocked entry would have gone on to lose money (Aug 28 Ref -6.55% by Sept 4) — direct evidence the cap is not simply leaving free money on the table right now, whatever the deployment-percentage optics suggested at the Aug 21/Aug 28 reviews when the book was under-deployed.
+- Reaching and holding the 75-85% band for 5 straight sessions (Sept 1-4) resolves L-009's core tracking question: deployment did move into the target band within days of the Aug 21 gate-widening, though the mechanism was one clean same-day-catalyst trade (ET, which didn't actually need the widened window) plus mark-to-market appreciation on existing winners, not a wave of newly-admitted catalysts.
+- A catalyst-attribution error (crediting a real, dated project milestone to the wrong ticker in a shared-pipeline/JV-style situation) is a distinct data-quality failure mode from anything L-001/L-002 cover — it was self-caught before any capital was risked this time, but the underlying research process should explicitly verify company/project ownership, not just catalyst date and independent confirmation, before adding a name to the watchlist under this kind of coverage.
+
+### Adjustments for Next Week
+
+- Track the L-015 deployment-cap question with this week's new evidence in hand (CRWD's cap-block scored avoided-loss): continue holding the cap as-is (no loosening) unless a future cap-blocked, thesis-intact setup scores "missed" by a wide margin — reconvene at the Sept 11 review per L-015's existing schedule (L-015 stays active).
+- New process check: before adding a name to the watchlist under a shared pipeline/JV/multi-company-coverage catalyst, explicitly verify which company owns the project (not just that a catalyst is dated and independently confirmed), given the WMB->ET 3-session misattribution (L-017).
+- Watch for a repeat of the Sept 2-style full-day TRADE-LOG gap — this is the 2nd full-day gap of the challenge (after Aug 18); if it recurs a 3rd time, treat it as a process problem needing a structural fix (e.g., an explicit end-of-day gap-check step) rather than another one-off flag (L-018).
+
+### Rule Change This Week
+
+- L-013 ("broaden stall-breaker sector screen beyond Energy/Materials") hit its Sept 4 review-by date having been complied with every refresh cycle since 2026-08-21 (2+ straight weeks: Aug 24, 26, 28, Sept 1 refreshes all screened a 3rd sector alongside Energy/Materials, surfacing AMAT, MRVL, and CRH) with zero fresh incidents. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-009 ("track persistent under-deployment") and L-012 ("monitor widened catalyst-freshness window for false positives") both hit their Sept 4 review-by dates and are retired (not promoted) — see LESSONS.md for reasoning. No TRADING-STRATEGY.md changes from either; the underlying Aug 21 catalyst-freshness rule and the 75-85% deployment band both stand unchanged. No risk-rule changes this week — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
+
+### Overall Grade: B+ (the 17-day no-trade streak ended on a clean, self-corrected catalyst; deployment reached the 75-85% target band for the first time this challenge and held all week; the skip-scoreboard came back gate-favorable for a 2nd straight review, with the CRWD case now directly vindicating the deployment cap itself — held back only by a recurring TRADE-LOG logging gap and a self-caught but real catalyst-attribution near-miss)
