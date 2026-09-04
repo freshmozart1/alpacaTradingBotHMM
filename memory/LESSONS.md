@@ -15,7 +15,44 @@ Template:
 - Directive: <one concrete, checkable instruction>
 - Status: active | Review-by: YYYY-MM-DD
 
-### L-016 — Materials leg of the L-013 3-sector screen came up empty
+### L-018 — Recurring full-day TRADE-LOG gap
+- Date: 2026-09-04 | Source: WEEKLY-REVIEW 2026-09-04 (Sept 2 has zero
+  TRADE-LOG.md entries — Market-Open/Midday/EOD all missing — the 2nd
+  full-day logging gap of the challenge after Aug 18; held-position
+  quantities confirmed unchanged the next session, so no trade was
+  missed, but the logging gap itself recurred)
+- Lesson: A full-day gap with no TRADE-LOG entries at all is a distinct
+  failure mode from the balance_asof-lag issue L-011 already covers —
+  this is the 2nd occurrence (Aug 18, Sept 2), both so far confirmed
+  benign against live account state.
+- Directive: If a 3rd full-day TRADE-LOG gap occurs, treat it as a
+  process problem needing a structural fix (e.g., an explicit
+  end-of-day gap-check step comparing today's date against the last
+  logged entry) rather than another one-off flag-and-continue.
+- Status: active | Review-by: 2026-09-18
+
+### L-017 — Verify company/project ownership before adding a shared-coverage catalyst name
+- Date: 2026-09-04 | Source: WEEKLY-REVIEW 2026-09-04 / RESEARCH-LOG
+  2026-09-01 (the Aug 28 stall-breaker refresh attributed the Hugh
+  Brinson Pipeline Phase 1 full-capacity-by-Sept-1 catalyst to WMB
+  (Williams Companies); Sept 1 research corrected this to Energy
+  Transfer (ET) — WMB has no connection to the project. The error
+  persisted 3 sessions (Aug 28, 31, Sept 1) on an open Decision
+  Scoreboard row before being self-caught pre-execution; no trade was
+  placed on the false premise)
+- Lesson: A catalyst can be genuinely dated and independently confirmed
+  by multiple outlets while still being attributed to the wrong ticker,
+  when coverage involves a shared pipeline/JV/multi-company project —
+  this is a distinct data-quality failure mode from L-001/L-002's
+  numeric-print issues.
+- Directive: When a watchlist catalyst involves a pipeline, joint
+  venture, or multi-company project, explicitly verify which company
+  owns/operates the specific asset (via the company's own investor
+  materials, not just news aggregator coverage) before adding the name
+  to the watchlist or counting the catalyst toward the buy-side gate.
+- Status: active | Review-by: 2026-09-18
+
+### L-015 — Track whether chase-risk (not catalyst-freshness) is now the binding constraint on deployment
 - Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (Aug 28 stall-breaker
   refresh: Energy and Technology each produced a usable name (WMB, CRM,
   CRWD) but Materials came up with nothing usable — recycled MP Materials
@@ -44,12 +81,20 @@ Template:
   and toward a gap in how to size/time an entry into a name whose >20%
   earnings-day move already happened before the gate could act on it.
   This is a distinct problem from anything L-012 addressed.
-- Directive: At the Sept 4 and Sept 11 reviews (alongside L-009's
-  standing deployment checkpoints), report whether zero-trade weeks are
-  still driven by "no catalyst" (supports further gate widening) or by
-  "catalyst confirmed but already realized" (supports building a
-  pullback/consolidation entry rule instead — process only, no risk-rule
-  change).
+- **Sept 4 interim finding**: a 3rd, distinct binding constraint showed up
+  this week — CRWD was blocked from a fresh entry for 3 straight sessions
+  (Sept 2-4) purely by the 75-85% deployment cap (thesis-intact, catalyst
+  cleared, no chase-risk issue). This is neither "no catalyst" nor
+  "catalyst confirmed but already realized" — it's a capital-sizing
+  constraint. The block scored favorably (CRWD's original Aug 28 skip
+  came back avoided-loss, -6.55%, at this same review), so the current
+  read is: hold the cap as-is, do not loosen it on this evidence.
+- Directive: At the Sept 11 review, report whether zero-trade/low-trade
+  weeks are still driven by "no catalyst," "catalyst confirmed but
+  already realized" (chase-risk), or "catalyst confirmed but capped by
+  deployment" — and whether any deployment-cap-blocked setup has since
+  scored "missed" by a wide margin (which would argue for revisiting the
+  cap; no such evidence yet).
 - Status: active | Review-by: 2026-09-11
 
 ### L-014 — Re-evaluate CRM/CRWD for a pullback entry
@@ -69,55 +114,6 @@ Template:
   window), take the trade. If neither sets up within 5 sessions, drop
   both and let the standard stall-breaker cycle take over.
 - Status: active | Review-by: 2026-09-08
-
-### L-012 — Monitor widened catalyst-freshness window for false positives
-- Date: 2026-08-21 | Source: WEEKLY-REVIEW 2026-08-21 (2nd consecutive
-  zero-trade week; skip-scoreboard scored COP +8.18% and NEM +15.23% as
-  "missed" this review, both passed over solely for lacking a same-day-
-  dated catalyst despite genuine, still-live multi-session catalysts;
-  missed:avoided ratio 2:1, total missed gains 23.41% vs avoided losses
-  10.60%)
-- Lesson: The Buy-Side Gate's catalyst-freshness requirement ("dated
-  today") was too tight — it left COP and NEM off the book despite real,
-  still-live theses, at a combined missed-gains cost of 23.41% this
-  review alone. Widened to admit catalysts dated within the prior 2
-  trading sessions if two-source confirmed (TRADING-STRATEGY.md, this
-  week).
-- Directive: At each of the next 2 weekly reviews, note whether any entry
-  made under the widened 2-session/two-source catalyst window held up or
-  reversed shortly after fill, and whether deployment moves toward the
-  75-85% band.
-- Status: active | Review-by: 2026-09-04
-
-### L-013 — Broaden stall-breaker sector screen beyond Energy/Materials
-- Date: 2026-08-21 | Source: WEEKLY-REVIEW 2026-08-21 (Energy/Materials
-  have supplied all 8 watchlist names across the last two stall-breaker
-  refresh cycles — Aug 14: MPC/COP/NEM/NUE, Aug 19: XOM/PSX/STLD/MLM —
-  with the sector pool showing signs of running out of fresh, undated
-  names)
-- Lesson: Repeatedly screening only the top-2 YTD sectors risks recycling
-  the same names/coverage across refresh cycles rather than surfacing
-  genuinely new catalysts.
-- Directive: When a refreshed watchlist completes a full re-arm cycle
-  (per L-010's 3-session trigger) without producing a gate-clearing
-  catalyst, include a 3rd sector (next-highest YTD momentum) in the next
-  refresh's screen alongside the top-2.
-- Status: active | Review-by: 2026-09-04
-
-### L-009 — Track persistent under-deployment against 75-85% target
-- Date: 2026-08-07 | Source: WEEKLY-REVIEW 2026-08-07 Adjustments (portfolio ~58% deployed in a week the S&P gained +3.53%, 4th straight week below the 75-85% band)
-- Lesson: The bot has now been below the 75-85% deployment target for 6
-  consecutive weeks (Jul 14 - Aug 21). This week's 6-consecutive-week
-  checkpoint triggered the L-012 catalyst-freshness gate widening
-  (WEEKLY-REVIEW 2026-08-21) — extending this lesson rather than closing
-  it out, to track whether deployment actually moves toward the band now
-  that the gate calibration has changed.
-- Directive: At each weekly review, report consecutive weeks under the
-  75-85% deployment band. If deployment has not improved within 3 weeks
-  of the L-012 gate change (by 2026-09-11), treat that as evidence the
-  gate was not the binding constraint and reconsider watchlist breadth
-  or position-sizing pacing instead.
-- Status: active | Review-by: 2026-09-04
 
 ## Retired Lessons
 
@@ -173,6 +169,25 @@ Template:
   new Operational Rules section) after 2 straight weeks of compliance
   (2026-08-14 to 2026-08-28) with zero fresh mislabeling/mismatch
   incidents.
+- L-013, "Broaden stall-breaker sector screen beyond Energy/Materials",
+  retired 2026-09-04, promoted to a permanent process rule
+  (TRADING-STRATEGY.md Buy-Side Gate) after 2+ straight weeks of
+  compliance (2026-08-21 to 2026-09-04) — every refresh cycle (Aug 24,
+  26, 28, Sept 1) screened a 3rd sector alongside Energy/Materials,
+  surfacing AMAT, MRVL, and CRH, with zero fresh incidents.
+- L-009, "Track persistent under-deployment against 75-85% target",
+  retired 2026-09-04 (hit review-by, not promoted). Deployment reached
+  and held the 75-85% band for 5 straight sessions (Sept 1-4,
+  78.75%-78.94%), resolving the tracking question well inside the
+  2026-09-11 deadline. No TRADING-STRATEGY.md change — the 75-85% band
+  is already a standing rule; only the monitoring lesson retires.
+- L-012, "Monitor widened catalyst-freshness window for false
+  positives", retired 2026-09-04 (hit review-by, not promoted). Zero new
+  entries were made under the widened 2-session/two-source window across
+  the full 2-review monitoring cycle (Sept 1's ET was same-day-dated and
+  didn't need the widening) — nothing to report, no false-positive
+  evidence either way. The underlying TRADING-STRATEGY.md rule (added
+  2026-08-21) stands unchanged; only the monitoring lesson retires.
 
 ## Decision Scoreboard
 
@@ -199,12 +214,12 @@ than 10 sessions are pruned.
 | 2026-08-24 | CEG | HOLD — stall-breaker refresh add (Energy), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat-and-raise/nuclear PPA wins | 272.83 | +1.47% | skip-right |
 | 2026-08-24 | MP | HOLD — stall-breaker refresh add (Materials), no fresh Aug 24-dated catalyst, recycled Aug 6 Q2 beat/gadolinium deal | 60.02 | -6.50% | avoided-loss |
 | 2026-08-24 | AMAT | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector broadening), no fresh Aug 24-dated catalyst, recycled Aug 13 Q3 beat | 492.12 | -6.22% | avoided-loss |
-| 2026-08-26 | ET | HOLD — stall-breaker refresh add (Energy), no fresh Aug 26-dated catalyst, recycled Aug 6-7 Q2 beat/guidance raise, Mizuho top-midstream-pick call | 21.03 | | |
-| 2026-08-26 | FCX | HOLD — stall-breaker refresh add (Materials), no fresh Aug 26-dated catalyst, recycled copper-rally/Q2-beat momentum | 79.895 | | |
-| 2026-08-26 | MRVL | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector), no catalyst yet, reports Thu Aug 27 AMC | 240.38 | | |
-| 2026-08-28 | WMB | HOLD — stall-breaker refresh add (Energy), no fresh Aug 28-dated catalyst, Hugh Brinson Phase 1 in-service Sept 1 is a forward event only | 74.19 | | |
-| 2026-08-28 | CRM | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat/Anthropic-partnership catalyst confirmed but +22.6% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 252.19 | | |
-| 2026-08-28 | CRWD | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat catalyst (+fresh Aug 28 Telkom MoU) confirmed but +20.3% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 227.99 | | |
+| 2026-08-26 | ET | HOLD — stall-breaker refresh add (Energy), no fresh Aug 26-dated catalyst, recycled Aug 6-7 Q2 beat/guidance raise, Mizuho top-midstream-pick call | 21.03 | +2.35% | skip-right (moot — bot independently bought ET Sept 1) |
+| 2026-08-26 | FCX | HOLD — stall-breaker refresh add (Materials), no fresh Aug 26-dated catalyst, recycled copper-rally/Q2-beat momentum | 79.895 | -7.45% | avoided-loss |
+| 2026-08-26 | MRVL | HOLD — stall-breaker refresh add (Technology, L-013 3rd-sector), no catalyst yet, reports Thu Aug 27 AMC | 240.38 | -14.06% | avoided-loss |
+| 2026-08-28 | WMB | HOLD — stall-breaker refresh add (Energy), no fresh Aug 28-dated catalyst, Hugh Brinson Phase 1 in-service Sept 1 is a forward event only | 74.19 | -0.03% | skip-right |
+| 2026-08-28 | CRM | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat/Anthropic-partnership catalyst confirmed but +22.6% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 252.19 | +2.82% | skip-right |
+| 2026-08-28 | CRWD | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat catalyst (+fresh Aug 28 Telkom MoU) confirmed but +20.3% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 227.99 | -6.55% | avoided-loss |
 | 2026-09-01 | ET | TRADE FLAGGED — stall-breaker refresh re-add (Energy), Hugh Brinson Pipeline Phase 1 full-capacity milestone target-dated today (Sept 1), correctly re-attributed from WMB; entry ~$21.55/stop ~$19.61/target ~$25.43; flagged for market-open re-validation, not yet executed | 21.51 | | |
 | 2026-09-01 | TRGP | HOLD — stall-breaker refresh add (Energy), Permian NGL-export/volume-growth coverage, no fresh Sept 1-dated catalyst | 294.22 | | |
 | 2026-09-01 | AAPL | HOLD — stall-breaker refresh add (Technology), CEO transition to John Ternus effective today but well-telegraphed/orderly, not clearly directional; Sept 9 iPhone event is the more meaningful forward catalyst | 317.14 | | |
