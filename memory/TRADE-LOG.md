@@ -1044,3 +1044,19 @@ No positions yet. Bot launches tomorrow.
 | LNG | 74 | $263.63 | $293.5618 | +0.93% | +$2,214.95 (+11.35%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
 
 **Notes:** 3rd consecutive no-trade day (Sep 2, 3, 4) since the Sep 1 ET buy; Week 9 (Aug 31-Sep 4) closes at 1/3 weekly trades used (ET buy only), 2 slots unused. **Operational Rule flag:** `balance_asof` on this live pull is `2026-09-03`, one day behind — snapshot is provisional/live-pulled per Operational Rules; Day P&L computed against the last logged EOD (Sep 3, $102,069.63) per continuity convention, essentially flat (-$0.50). Portfolio equity $102,069.13 — CVX gave back -1.29% intraday (still +7.60% unrealized, largest pullback of the day) while ECL (+0.11%), ET (+0.24%) and LNG (+0.93%) were roughly flat-to-up. Cumulative phase P&L +$2,069.13 (+2.07%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.80% deployed / 21.20% cash — 6th straight session inside the 75-85% target deployment band. No stops ratcheted today (all 4 legs unchanged from this morning/midday, confirmed via `alpaca.sh orders`). No positions near the -7% cut; none crossed the +15%/+20% tighten thresholds (max unrealized gain LNG +11.35%). No trades placed today — CRWD remains the one gate-qualifying setup but blocked by the hard deployment cap for a 3rd consecutive session, flagged for today's scheduled Weekly Review to formally decide the conflict.
+
+### Sep 7 — Midday Scan (Day 47, Monday) — market closed, no action
+
+**Market status:** US markets closed today for Labor Day. `alpaca.sh account` confirms `balance_asof: 2026-09-04` (last settled session, Friday) with `equity` == `last_equity` ($101,961.93, unchanged); all 4 positions' `current_price` == `lastday_price` with `change_today: 0` (CVX $208.60, ECL $279.28, ET $21.50, LNG $292.00) — no live intraday price action to evaluate. No pre-market or market-open routine ran today (no commits since the Sept 4 weekly review) — consistent with a non-trading day, not an operational gap per L-018.
+
+**STEP 3 (cut losers):** N/A — no live price data; per Friday's settled close none near -7% (CVX +7.60%, ECL -0.94%, ET -0.87%, LNG +11.35%). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no live price data; none crossed +15%/+20% as of Friday's close. No stops changed.
+
+**STEP 5 (thesis check):** Skipped — no intraday news/price action to evaluate on a market holiday.
+
+**STEP 6 (optional research):** Skipped — market closed, nothing moving.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — 4 positions, 5 open GTC trailing-stop orders, all unchanged from Friday's close.
+
+**STEP 8 (notify):** Skipped — no action taken.
