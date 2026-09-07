@@ -1059,4 +1059,17 @@ No positions yet. Bot launches tomorrow.
 
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — 4 positions, 5 open GTC trailing-stop orders, all unchanged from Friday's close.
 
+### Sep 7 — EOD Snapshot (Day 47, Monday)
+
+**Portfolio:** $101,961.93 | **Cash:** $21,637.33 (21.22%) | **Day P&L:** -$107.20 (-0.10%) | **Phase P&L:** +$1,961.93 (+1.96%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $208.60 | 0.00% | +$1,400.21 (+7.60%) | $191.87964 (10% trail, GTC 7f5acb83/e328a200, HWM $213.1996) |
+| ECL | 70 | $281.93 | $279.28 | 0.00% | -$185.50 (-0.94%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.50 | 0.00% | -$162.00 (-0.83%) | $19.539 (10% trail, GTC f900c3f3, HWM $21.71) |
+| LNG | 74 | $263.63 | $292.00 | 0.00% | +$2,099.38 (+10.76%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 4th consecutive no-trade day (Sep 2, 3, 4, 7) since the Sep 1 ET buy — today is a market holiday (Labor Day), confirmed closed at this morning's midday scan (`balance_asof: 2026-09-04`, `change_today: 0` on all 4 holdings, no live intraday price action). Week 10 (Sep 7-11) opens at 0/3 trades used. All 4 positions unchanged (CVX, ECL, ET, LNG), 4 open orders each on CVX (2 legs) plus 1 each ECL/ET/LNG, all confirmed resting via `alpaca.sh orders`, no ratchets since Friday. Day P&L (-$107.20) is a settlement reconciliation against Friday's live-pulled EOD figure ($102,069.13, captured pre-settlement per the standing `balance_asof`-lag caveat), not real trading-day movement — no market activity occurred today. Phase P&L +$1,961.93 (+1.96%) vs $100,000 starting capital, computed off today's now-settled Sep 4 close. Deployment 78.78% (position value $80,324.60) / 21.22% cash — 7th straight session inside the 75-85% target band (holiday, no live deployment change). No positions near -7% cut; none crossed +15%/+20% tighten thresholds (max unrealized gain LNG +10.76%). CRWD deployment-cap conflict (L-015) remains parked per the Sep 4 weekly review decision — hold the cap as-is, reconvene Sept 11. Markets reopen tomorrow (Tue Sep 8).
+
 **STEP 8 (notify):** Skipped — no action taken.
