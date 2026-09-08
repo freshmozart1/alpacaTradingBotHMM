@@ -52,7 +52,7 @@ Template:
   to the watchlist or counting the catalyst toward the buy-side gate.
 - Status: active | Review-by: 2026-09-18
 
-### L-015 — Track whether chase-risk (not catalyst-freshness) is now the binding constraint on deployment
+### L-016 — Materials leg empty on stall-breaker refresh (mislabeled L-015 in earlier entries — corrected 2026-09-08; RESEARCH-LOG/WEEKLY-REVIEW references already use L-016)
 - Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (Aug 28 stall-breaker
   refresh: Energy and Technology each produced a usable name (WMB, CRM,
   CRWD) but Materials came up with nothing usable — recycled MP Materials
@@ -95,27 +95,29 @@ Template:
   deployment" — and whether any deployment-cap-blocked setup has since
   scored "missed" by a wide margin (which would argue for revisiting the
   cap; no such evidence yet).
+- **Sept 8 interim finding**: a 2nd, distinct name hit the same wall —
+  IONQ surfaced today's stall-breaker refresh with a genuine, hard-dated
+  Investor Day catalyst and otherwise clears the full buy-side gate, but
+  a standard-sized entry would push deployment from 78.68% to
+  ~97-99%, breaching the cap. Same fact pattern as CRWD (Sept 2-4):
+  capital/sizing is the binding constraint, not catalyst or thesis
+  failure. No verdict yet on whether the cap cost real upside here —
+  IONQ's Ref close ($39.52, Sept 4) is now on the Decision Scoreboard
+  for scoring at a later review.
 - Status: active | Review-by: 2026-09-11
 
-### L-014 — Re-evaluate CRM/CRWD for a pullback entry
-- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 / RESEARCH-LOG
-  2026-08-28 (CRM +22.6% and CRWD +20.3% on Aug 27, both catalysts
-  confirmed and within the L-012 widened window, but not entered Aug 28
-  on chase-risk/extension grounds; flagged for a Tuesday Sept 1 — Labor
-  Day falls Mon Aug 31 — re-check)
-- Lesson: A confirmed, gate-clearing catalyst on a name that has already
-  gapped >20% shouldn't be abandoned outright — it should convert to a
-  bounded pullback/range-tightening watch rather than a same-day chase.
-- Directive: At the next session (Tue Sep 1) and through the following
-  2-3 sessions, re-check CRM (would-be entry ~$250-253, stop ~$232-235)
-  and CRWD (would-be entry ~$225-230, stop ~$207-209) for a clean,
-  lower-risk pullback/consolidation entry; if the range tightens and
-  the buy-side gate still clears (catalyst still within its dating
-  window), take the trade. If neither sets up within 5 sessions, drop
-  both and let the standard stall-breaker cycle take over.
-- Status: active | Review-by: 2026-09-08
-
 ## Retired Lessons
+
+- L-014, "Re-evaluate CRM/CRWD for a pullback entry", retired 2026-09-08
+  (hit review-by, directive fully executed, not promoted). Neither name
+  set up the called-for clean pullback/consolidation entry across the
+  full 5-session window (Sep 1, 2, 3, 4, 8): CRM extended further above
+  its $250-253 zone with no pullback, and CRWD fell below its $225-230
+  zone on continued chop (Sept 2-4 range $203.405-$218.295) rather than
+  tightening into it. Per the lesson's own directive, both were dropped
+  from the watchlist at the Sept 8 stall-breaker refresh. No
+  TRADING-STRATEGY.md change — this was a one-off name-specific watch,
+  not a process rule candidate.
 
 - L-001, "XLE/MU Perplexity output unreliable", retired 2026-07-31,
   promoted to a permanent process rule (TRADING-STRATEGY.md Buy-Side Gate)
@@ -224,3 +226,6 @@ than 10 sessions are pruned.
 | 2026-09-01 | TRGP | HOLD — stall-breaker refresh add (Energy), Permian NGL-export/volume-growth coverage, no fresh Sept 1-dated catalyst | 294.22 | | |
 | 2026-09-01 | AAPL | HOLD — stall-breaker refresh add (Technology), CEO transition to John Ternus effective today but well-telegraphed/orderly, not clearly directional; Sept 9 iPhone event is the more meaningful forward catalyst | 317.14 | | |
 | 2026-09-01 | CRH | HOLD — stall-breaker refresh add (Materials, L-013 3-sector screen), Wells Fargo Buy reiterated $135 PT but recycled from a June-dated note, no fresh Sept 1-dated catalyst | 94.33 | | |
+| 2026-09-08 | IONQ | HOLD — stall-breaker refresh add (Technology), Investor Day today (Sept 8) is a genuine, hard-dated, gate-clearing catalyst, but blocked purely by the 75-85% deployment cap at 78.68% deployed (L-015) | 39.52 | | |
+| 2026-09-08 | NEE | HOLD — stall-breaker refresh add (Energy), Dominion merger shareholder approval/DOE Duane Arnold loan both recycled, no fresh Sept 8-dated catalyst | 83.42 | | |
+| 2026-09-08 | UEC | HOLD — stall-breaker refresh add (Energy), Burke Hollow/Sweetwater/Christensen Ranch coverage all recycled from late Aug, no fresh Sept 8-dated catalyst | 11.515 | | |
