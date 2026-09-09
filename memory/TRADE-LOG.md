@@ -1134,3 +1134,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 5 stop orders unchanged from this morning's read, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 9 — EOD Snapshot (Day 49, Wednesday)
+**Portfolio:** $100,952.85 | **Cash:** $21,637.33 (21.43%) | **Day P&L:** +$104.29 (+0.10%) | **Phase P&L:** +$952.85 (+0.95%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $214.00 | +2.00% | +$1,913.21 (+10.39%) | $193.752 (10% trail, GTC 7f5acb83/e328a200, HWM $215.28) |
+| ECL | 70 | $281.93 | $272.21 | -2.12% | -$680.40 (-3.45%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.68 | +0.79% | $0.00 (0.00%) | $19.548 (10% trail, GTC f900c3f3, HWM $21.72) |
+| LNG | 74 | $263.63 | $275.93 | -0.03% | +$910.20 (+4.67%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 6th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9) since the Sep 1 ET buy. Week 10 (Sep 7-11) still 0/3 weekly trades used, 2 sessions remaining (Thu, Fri). Portfolio equity $100,952.85, up +$104.29 (+0.10%) vs the Sep 8 EOD — CVX led gains (+2.00% intraday, +10.39% unrealized, crossing above +10% but still below the +15% tighten trigger) while ECL pulled back further (-2.12% intraday, -3.45% unrealized, nowhere near -7% cut). ET flat on the day (+0.79% intraday, $0 unrealized), LNG essentially flat (-0.03%). Cumulative phase P&L +$952.85 (+0.95%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.57% deployed / 21.43% cash — 9th straight session inside the 75-85% target band. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (CVX legs mechanically ratcheted to $193.752/HWM $215.28 intraday, all others unchanged). No trades placed today — IONQ (flagged Sep 8) and prior watchlist names remain capped by the 75-85% deployment ceiling; nothing new cleared the buy-side gate at market-open or midday.
