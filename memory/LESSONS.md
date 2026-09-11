@@ -9,6 +9,35 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 Template:
 
+### L-020 — Partial TRADE-LOG gap (EOD-only day)
+- Date: 2026-09-11 | Source: WEEKLY-REVIEW 2026-09-11 (Sep 10 has only an
+  EOD Snapshot entry — no Market-Open Check or Midday Scan logged — a
+  distinct failure from L-018's full-day/zero-entries criterion, first
+  flagged for awareness at Sept 11 pre-market)
+- Lesson: A partial gap (EOD-only) is a separate failure mode from a full
+  day gap and won't be caught by L-018's "3rd full-day gap" threshold.
+- Directive: Before logging the day's first TRADE-LOG entry, verify the
+  previous trading session's log has all three expected entries
+  (Market-Open, Midday, EOD); if any are missing, log a one-line
+  retroactive gap note rather than letting it pass silently.
+- Status: active | Review-by: 2026-09-25
+
+### L-019 — Empty stall-breaker sector leg (any leg, not just Materials)
+- Date: 2026-09-11 | Source: WEEKLY-REVIEW 2026-09-11 (generalizes retired
+  L-016: Materials came up empty Aug 28, Technology came up empty Sep 11 —
+  two different legs, several successful cycles apart, so L-016's literal
+  "same leg twice" trigger was never met, but the underlying "a leg runs
+  dry of fresh catalysts" pattern has now recurred on a 2nd sector)
+- Lesson: An empty sector leg on a stall-breaker refresh isn't specific to
+  Materials — it can happen to any leg in the current top-N screen when
+  that sector's recent movers have already fully realized their catalysts
+  or are trending negative.
+- Directive: At each stall-breaker refresh, note whether any leg comes up
+  empty. If the *same* leg comes up empty on 2 consecutive refresh cycles,
+  propose adding a 4th sector or loosening the liquidity/market-cap floor
+  for that leg specifically.
+- Status: active | Review-by: 2026-09-25
+
 ### L-NNN — <short title>
 - Date: YYYY-MM-DD | Source: <WEEKLY-REVIEW date / RESEARCH-LOG date / manual>
 - Lesson: <what was observed>
@@ -52,62 +81,25 @@ Template:
   to the watchlist or counting the catalyst toward the buy-side gate.
 - Status: active | Review-by: 2026-09-18
 
-### L-016 — Materials leg empty on stall-breaker refresh (mislabeled L-015 in earlier entries — corrected 2026-09-08; RESEARCH-LOG/WEEKLY-REVIEW references already use L-016)
-- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (Aug 28 stall-breaker
-  refresh: Energy and Technology each produced a usable name (WMB, CRM,
-  CRWD) but Materials came up with nothing usable — recycled MP Materials
-  coverage, an illiquid micro-cap in FEAM, and a stale Aug 10
-  Barrick/Newmont settlement)
-- Lesson: The top-3 YTD sector screen (Energy/Materials/Technology) can
-  run dry on an individual sector leg even while the other two still
-  produce fresh names — a single empty leg isn't yet evidence the
-  screen itself needs to widen further.
-- Directive: At each stall-breaker refresh, note whether the Materials
-  leg (or any leg) comes up empty. If the same leg comes up empty on 2
-  consecutive refresh cycles, propose adding a 4th sector or loosening
-  the liquidity/market-cap floor for that leg specifically.
-- Status: active | Review-by: 2026-09-11
-
-### L-015 — Track whether chase-risk (not catalyst-freshness) is now the binding constraint on deployment
-- Date: 2026-08-28 | Source: WEEKLY-REVIEW 2026-08-28 (3rd consecutive
-  zero-trade week despite the Aug 21 L-012 catalyst-freshness widening;
-  this week's skip-scoreboard came back 0 missed / 4 skip-right / 4
-  avoided-loss — the most gate-favorable read since the widening — while
-  the week's two genuinely gate-clearing catalysts, CRM and CRWD, were
-  skipped purely on already-realized-move/chase-risk grounds, not
-  catalyst-freshness)
-- Lesson: This week's evidence points away from catalyst-freshness as the
-  binding constraint (skip-scoreboard fully vindicated the gate, 0 missed)
-  and toward a gap in how to size/time an entry into a name whose >20%
-  earnings-day move already happened before the gate could act on it.
-  This is a distinct problem from anything L-012 addressed.
-- **Sept 4 interim finding**: a 3rd, distinct binding constraint showed up
-  this week — CRWD was blocked from a fresh entry for 3 straight sessions
-  (Sept 2-4) purely by the 75-85% deployment cap (thesis-intact, catalyst
-  cleared, no chase-risk issue). This is neither "no catalyst" nor
-  "catalyst confirmed but already realized" — it's a capital-sizing
-  constraint. The block scored favorably (CRWD's original Aug 28 skip
-  came back avoided-loss, -6.55%, at this same review), so the current
-  read is: hold the cap as-is, do not loosen it on this evidence.
-- Directive: At the Sept 11 review, report whether zero-trade/low-trade
-  weeks are still driven by "no catalyst," "catalyst confirmed but
-  already realized" (chase-risk), or "catalyst confirmed but capped by
-  deployment" — and whether any deployment-cap-blocked setup has since
-  scored "missed" by a wide margin (which would argue for revisiting the
-  cap; no such evidence yet).
-- **Sept 8 interim finding**: a 2nd, distinct name hit the same wall —
-  IONQ surfaced today's stall-breaker refresh with a genuine, hard-dated
-  Investor Day catalyst and otherwise clears the full buy-side gate, but
-  a standard-sized entry would push deployment from 78.68% to
-  ~97-99%, breaching the cap. Same fact pattern as CRWD (Sept 2-4):
-  capital/sizing is the binding constraint, not catalyst or thesis
-  failure. No verdict yet on whether the cap cost real upside here —
-  IONQ's Ref close ($39.52, Sept 4) is now on the Decision Scoreboard
-  for scoring at a later review.
-- Status: active | Review-by: 2026-09-11
-
 ## Retired Lessons
 
+- L-015, "Track whether chase-risk/deployment cap is the binding
+  constraint on deployment", retired 2026-09-11 (hit review-by, not
+  promoted). Resolved by evidence, not a rule change: CRWD's Aug 28 skip
+  scored avoided-loss (-6.55%, confirmed Sep 4) and IONQ's Sep 8 skip has
+  fallen -6.71% (Sep 10 close vs Ref) — two-for-two, both cap-blocked
+  names would have lost money if forced through. The 75-85% deployment
+  cap is validated as a genuine risk control; hold it as-is with no
+  further monitoring needed unless a future cap-blocked, thesis-intact
+  setup scores a wide "missed" verdict. No TRADING-STRATEGY.md change —
+  the standing deployment band already covers this.
+- L-016, "Materials leg empty on stall-breaker refresh", retired
+  2026-09-11 (hit review-by, not promoted). Its literal trigger (the
+  *same* leg empty on 2 consecutive refresh cycles) was never met —
+  Materials recovered by Sep 1 (CRH added), and Sep 11's empty leg was
+  Technology instead, a different sector several cycles later. Superseded
+  by new lesson L-019, which generalizes the same tracking logic to any
+  leg. No TRADING-STRATEGY.md change.
 - L-014, "Re-evaluate CRM/CRWD for a pullback entry", retired 2026-09-08
   (hit review-by, directive fully executed, not promoted). Neither name
   set up the called-for clean pullback/consolidation entry across the
@@ -204,10 +196,6 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-08-14 | MPC | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Aug 4 Q2 beat/Mizuho pick | 356.67 | +1.10% | skip-right |
-| 2026-08-14 | COP | HOLD — stall-breaker refresh add (Energy), no fresh Aug 14-dated catalyst, recycled Q2 beat/CEO transition | 124.72 | +8.18% | missed |
-| 2026-08-14 | NEM | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, Aug 10 Nevada settlement 4 sessions stale | 114.18 | +15.23% | missed |
-| 2026-08-14 | NUE | HOLD — stall-breaker refresh add (Materials), no fresh Aug 14-dated catalyst, recycled Q2 beat/KeyBanc upgrade | 272.49 | -10.60% | avoided-loss |
 | 2026-08-19 | XOM | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, recycled Q2 beat/Mozambique LNG investment | 165.61 | -5.38% | avoided-loss |
 | 2026-08-19 | PSX | HOLD — stall-breaker refresh add (Energy), no fresh Aug 19-dated catalyst, diesel-margin narrative recycled, same-day insider sale flagged negative | 243.475 | +0.25% | skip-right |
 | 2026-08-19 | STLD | HOLD — stall-breaker refresh add (Materials), no fresh Aug 19-dated catalyst, recycled Q2 beat/2026 outlook | 249.85 | -6.05% | avoided-loss |
@@ -223,9 +211,9 @@ than 10 sessions are pruned.
 | 2026-08-28 | CRM | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat/Anthropic-partnership catalyst confirmed but +22.6% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 252.19 | +2.82% | skip-right |
 | 2026-08-28 | CRWD | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat catalyst (+fresh Aug 28 Telkom MoU) confirmed but +20.3% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 227.99 | -6.55% | avoided-loss |
 | 2026-09-01 | ET | TRADE FLAGGED — stall-breaker refresh re-add (Energy), Hugh Brinson Pipeline Phase 1 full-capacity milestone target-dated today (Sept 1), correctly re-attributed from WMB; entry ~$21.55/stop ~$19.61/target ~$25.43; flagged for market-open re-validation, not yet executed | 21.51 | | |
-| 2026-09-01 | TRGP | HOLD — stall-breaker refresh add (Energy), Permian NGL-export/volume-growth coverage, no fresh Sept 1-dated catalyst | 294.22 | | |
-| 2026-09-01 | AAPL | HOLD — stall-breaker refresh add (Technology), CEO transition to John Ternus effective today but well-telegraphed/orderly, not clearly directional; Sept 9 iPhone event is the more meaningful forward catalyst | 317.14 | | |
-| 2026-09-01 | CRH | HOLD — stall-breaker refresh add (Materials, L-013 3-sector screen), Wells Fargo Buy reiterated $135 PT but recycled from a June-dated note, no fresh Sept 1-dated catalyst | 94.33 | | |
+| 2026-09-01 | TRGP | HOLD — stall-breaker refresh add (Energy), Permian NGL-export/volume-growth coverage, no fresh Sept 1-dated catalyst | 294.22 | -0.92% | skip-right |
+| 2026-09-01 | AAPL | HOLD — stall-breaker refresh add (Technology), CEO transition to John Ternus effective today but well-telegraphed/orderly, not clearly directional; Sept 9 iPhone event is the more meaningful forward catalyst | 317.14 | -0.54% | skip-right (mechanical +5-session window closed same-day as the Sept 9 event, before its reaction showed up Sept 10-11 — see WEEKLY-REVIEW 2026-09-11 note) |
+| 2026-09-01 | CRH | HOLD — stall-breaker refresh add (Materials, L-013 3-sector screen), Wells Fargo Buy reiterated $135 PT but recycled from a June-dated note, no fresh Sept 1-dated catalyst | 94.33 | -5.29% | avoided-loss |
 | 2026-09-08 | IONQ | HOLD — stall-breaker refresh add (Technology), Investor Day today (Sept 8) is a genuine, hard-dated, gate-clearing catalyst, but blocked purely by the 75-85% deployment cap at 78.68% deployed (L-015) | 39.52 | | |
 | 2026-09-08 | NEE | HOLD — stall-breaker refresh add (Energy), Dominion merger shareholder approval/DOE Duane Arnold loan both recycled, no fresh Sept 8-dated catalyst | 83.42 | | |
 | 2026-09-08 | UEC | HOLD — stall-breaker refresh add (Energy), Burke Hollow/Sweetwater/Christensen Ranch coverage all recycled from late Aug, no fresh Sept 8-dated catalyst | 11.515 | | |
