@@ -699,3 +699,81 @@ Verdict counts (new rows this week): missed 0, skip-right 3, avoided-loss 3. Tot
 - L-009 ("track persistent under-deployment") and L-012 ("monitor widened catalyst-freshness window for false positives") both hit their Sept 4 review-by dates and are retired (not promoted) — see LESSONS.md for reasoning. No TRADING-STRATEGY.md changes from either; the underlying Aug 21 catalyst-freshness rule and the 75-85% deployment band both stand unchanged. No risk-rule changes this week — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
 
 ### Overall Grade: B+ (the 17-day no-trade streak ended on a clean, self-corrected catalyst; deployment reached the 75-85% target band for the first time this challenge and held all week; the skip-scoreboard came back gate-favorable for a 2nd straight review, with the CRWD case now directly vindicating the deployment cap itself — held back only by a recurring TRADE-LOG logging gap and a self-caught but real catalyst-attribution near-miss)
+
+## Week ending 2026-09-11
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $102,030.13 (Sep 4 close) |
+| Ending portfolio | $101,232.42 (live pull; `balance_asof` 2026-09-10, one session lagged per Operational Rules — provisional) |
+| Week return | -$797.71 (-0.78%) |
+| S&P 500 week | -0.78% (SPY 770.18 -> 764.14, Sep 4 close -> Sep 11 close via `alpaca.sh bars`; Perplexity again returned internally dispersed reads — a "-1.6%" weekly-total-return table row, a "-2.01%" 5-day change, and a same-day "+0.87%" intraday quote all in one response — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | +0.00% (essentially tied — both the bot and the index were flat-to-slightly-down this week) |
+| Trades | 0 (W:0 / L:0 / open:0) |
+| Win rate | N/A (no closed trades this week) |
+| Best trade | N/A (no closed trades this week; CVX unrealized +10.29% strongest mover) |
+| Worst trade | N/A (no closed trades this week; ECL unrealized -2.04% weakest mover) |
+| Profit factor | N/A (no closed trades this week) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $213.8162 | +$1,895.75 (+10.29%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $195.66, HWM $217.40 |
+| ECL | $281.93 (70 sh) | $276.18 | -$402.50 (-2.04%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+| ET | $21.68 (900 sh) | $21.5031 | -$159.21 (-0.82%) | 10% trailing GTC, order f900c3f3, stop $19.64601, HWM $21.8289 |
+| LNG | $263.63 (74 sh) | $278.34 | +$1,088.54 (+5.58%) | 10% trailing GTC, order 974c3bfc, stop $269.253, HWM $299.17 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| TRGP | 294.22 (Sep 1) | 291.50 (Sep 9) | -0.92% | skip-right |
+| AAPL | 317.14 (Sep 1) | 315.42 (Sep 9) | -0.54% | skip-right |
+| CRH | 94.33 (Sep 1) | 89.34 (Sep 9) | -5.29% | avoided-loss |
+
+Verdict counts (new rows this week): missed 0, skip-right 2, avoided-loss 1. Total missed gains: 0.00%. Total avoided losses: -5.29%. Missed:avoided ratio: 0:1 — the 3rd straight gate-favorable read (0:4 Aug 28, 0:3 Sep 4, 0:1 this week), zero evidence the catalyst-freshness gate is too tight. **Note on AAPL's mechanical scoring**: the Sep 1 Ref row's +5-session window closes exactly on Sep 9 — the same day as AAPL's product-launch event, but *before* the market's actual reaction, which didn't show up until Sep 10 (+3.53%) and Sep 11 (further strength). This is a scoring-window artifact, not evidence the Sep 1 skip was wrong: AAPL was added Sep 1 on an unrelated, correctly-judged-non-directional CEO-transition catalyst, not the Sep 9 event, so the mechanical -0.54% verdict is legitimate for what was actually being scored. IONQ/NEE/UEC (Sep 8 refresh rows) are 3 sessions old — not yet 5, carried forward (IONQ's interim read, -6.71% as of Sep 10 close vs its Sep 8 Ref, is tracked under L-015 below, not yet formally scored). COP/VLO/PARR (Sep 11 refresh rows) are new today. **Pruned this review**: MPC/COP/NEM/NUE (Aug 14 rows, scored at the Aug 21 review) — retained one extra review per the "older than 10" threshold at the Sep 4 review, now 14 sessions past their Aug 21 scoring reference point, past due for pruning.
+
+### What Worked
+
+- The buy-side gate stayed vindicated for a 3rd straight review: 0 missed / 2 skip-right / 1 avoided-loss on the newly-scored rows (TRGP, AAPL, CRH), continuing the gate-favorable streak that began Aug 28 — no evidence the catalyst-freshness bar needs further widening.
+- L-015's deployment-cap question is now conclusively resolved with real evidence on both cap-blocked names: CRWD's Aug 28 skip scored avoided-loss (-6.55%, confirmed at the Sep 4 review) and IONQ's Sep 8 skip has fallen to -6.71% (Sep 10 close vs Sep 8 Ref) — two-for-two, both cap-blocked, gate-clearing setups would have lost money if a standard-sized entry had been forced through. The 75-85% hard deployment cap is validated as a genuine risk control, not merely a source of missed gains — see Rule Change/Lessons disposition below.
+- Risk mechanics held clean all week: no position came within range of the -7% cut or the +15%/+20% tighten thresholds (CVX's +10.29% is the closest, well below +15%); all 5 resting GTC stops (2x CVX, 1x ECL, 1x ET, 1x LNG) ratcheted mechanically stop-only-up with zero manual intervention, confirmed via `alpaca.sh orders` at every scan.
+- The self-caught Sep 1 ET catalyst-attribution correction (L-017, opened last review) had nothing further to report this week — no new shared-pipeline/JV catalyst surfaced to test the directive, and it remains active with no incidents.
+
+### What Didn't Work
+
+- Zero trades placed this week — the 1st zero-trade week since the Sep 1 ET buy ended the prior 17-day drought, though not yet a 2nd consecutive one (last week logged 1 trade). Deployment held at 78.47-78.62% all week, inside the target band but with the gate never producing a name both catalyst-clean and unblocked by the cap.
+- The stall-breaker's broadened sector screen came up empty on the Technology leg this cycle (Sep 11) — ORCL, ADBE, and AVGO all showed negative/declining price action rather than a fresh bullish catalyst, so no Technology name was added. This is the same failure pattern L-016 first documented on the Materials leg (Aug 28), now recurring on a different sector three refresh cycles later.
+- A partial TRADE-LOG gap recurred: Sep 10 has only an EOD Snapshot entry, with no Market-Open Check or Midday Scan logged — distinct from L-018's "full-day, zero-entries" criterion (which has fired twice, Aug 18 and Sep 2) but the same underlying failure family. Held-position quantities were confirmed unchanged the next session, so no trade was missed, but the logging gap itself is a 3rd distinct incident in this family.
+- ECL remains the week's laggard (-2.04% unrealized), with no thesis break but no recovery either; ET slipped to -0.82% unrealized after a flat first two weeks held.
+
+### Key Lessons
+
+- Two consecutive reviews of real evidence (CRWD -6.55%, IONQ -6.71%) settle the L-015 question definitively: the 75-85% deployment cap is currently a net-protective constraint, not a source of forfeited gains — hold it as-is, with no further monitoring needed unless a future cap-blocked, thesis-intact setup scores a wide "missed" verdict.
+- An empty stall-breaker sector leg is not a single-sector problem — it has now happened once each on Materials (Aug 28) and Technology (Sep 11), several successful cycles apart. L-016's literal "same leg twice" trigger was never met, so no rule change is warranted yet, but the underlying pattern (a sector running dry of fresh, un-realized catalysts) is worth tracking across all legs, not just Materials.
+- A partial TRADE-LOG gap (EOD-only, no Market-Open/Midday) is a distinct enough pattern from L-018's full-day-gap criterion that it needs its own lightweight check, rather than waiting for a 3rd full-day gap to trigger a fix that wouldn't have caught this one anyway.
+
+### Adjustments for Next Week
+
+- Broaden the empty-sector-leg check beyond Materials-only to any leg in the stall-breaker's sector screen: track whether the *same* leg comes up empty on 2 consecutive refresh cycles (regardless of which sector), and if so, propose a 4th sector or a loosened liquidity/market-cap floor for that leg specifically (L-019, generalizes and replaces L-016).
+- Before logging the day's first TRADE-LOG entry, verify the previous trading session's log has all three expected entries (Market-Open, Midday, EOD); if any are missing, log a one-line retroactive gap note rather than letting it pass silently (L-020).
+- No further action needed on the deployment cap (L-015 resolved) — continue applying it as a hard constraint with no monitoring lesson required going forward.
+
+### Rule Changes This Week
+
+- L-015 ("track chase-risk vs. deployment cap as binding constraint") hit its Sep 11 review-by date. Retired, not promoted: its question is answered by evidence, not by a rule change — the existing 75-85% cap is validated as-is (CRWD -6.55%, IONQ -6.71%, both cap-blocked names would have lost money). No TRADING-STRATEGY.md change; the standing deployment band already covers this.
+- L-016 ("Materials leg empty on stall-breaker refresh") hit its Sep 11 review-by date. Retired, not promoted: its specific trigger (the *same* leg empty on 2 consecutive cycles) was never met — Materials was fine again by Sep 1 (CRH added), and this week's empty leg was Technology instead, a different sector. Superseded by new lesson L-019, which generalizes the same tracking logic to any leg. No TRADING-STRATEGY.md change.
+- No risk-rule changes — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
+
+### Overall Grade: B+ (zero trades in a week the S&P itself was flat-to-down, so no relative cost to patience this time; the buy-side gate stayed vindicated for a 3rd straight review and the deployment-cap question was conclusively settled with real avoided-loss evidence on two separate names — held back only by a recurring, still-unresolved logging-gap pattern and an empty Technology screening leg)
