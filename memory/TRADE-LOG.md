@@ -1182,3 +1182,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 5 stop orders unchanged from this morning's read, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 11 — EOD Snapshot (Day 51, Friday)
+**Portfolio:** $101,248.94 | **Cash:** $21,637.33 (21.37%) | **Day P&L:** +$246.83 (+0.24%) | **Phase P&L:** +$1,248.94 (+1.25%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $213.83 | +0.50% | +$1,897.06 (+10.30%) | $195.66 (10% trail, GTC 7f5acb83/e328a200, HWM $217.40) |
+| ECL | 70 | $281.93 | $276.18 | +1.69% | -$402.50 (-2.04%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.52 | -0.97% | -$144.00 (-0.74%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+| LNG | 74 | $263.63 | $278.34 | +0.18% | +$1,088.54 (+5.58%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 8th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11) since the Sep 1 ET buy. Week 10 (Sep 7-11) closes 0/3 weekly trades used. Portfolio equity $101,248.94, up +$246.83 (+0.24%) vs the Sep 10 EOD — ECL bounced (+1.69% intraday, still -2.04% unrealized) and CVX added modestly (+0.50% intraday, +10.30% unrealized, crossed above +10% but still below the +15% tighten trigger), while ET slipped (-0.97% intraday, -0.74% unrealized) and LNG ticked up (+0.18%, +5.58% unrealized). Cumulative phase P&L +$1,248.94 (+1.25%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.62% deployed / 21.37% cash — 11th straight session inside the 75-85% target band. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (all mechanical, unchanged from midday reads). No trades placed today — COP/VLO/PARR (flagged pre-market) had no clean entry catalyst; deployment cap and lack of fresh gate-qualifying catalysts kept the bot on the sidelines through Week 10's final session.
