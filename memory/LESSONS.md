@@ -229,3 +229,6 @@ than 10 sessions are pruned.
 | 2026-09-08 | IONQ | HOLD — stall-breaker refresh add (Technology), Investor Day today (Sept 8) is a genuine, hard-dated, gate-clearing catalyst, but blocked purely by the 75-85% deployment cap at 78.68% deployed (L-015) | 39.52 | | |
 | 2026-09-08 | NEE | HOLD — stall-breaker refresh add (Energy), Dominion merger shareholder approval/DOE Duane Arnold loan both recycled, no fresh Sept 8-dated catalyst | 83.42 | | |
 | 2026-09-08 | UEC | HOLD — stall-breaker refresh add (Energy), Burke Hollow/Sweetwater/Christensen Ranch coverage all recycled from late Aug, no fresh Sept 8-dated catalyst | 11.515 | | |
+| 2026-09-11 | COP | HOLD — stall-breaker refresh add (Energy), 52-week high/+45% YTD momentum, Goldman dividend-energy mention, no fresh Sept 11-dated catalyst | 137.07 | | |
+| 2026-09-11 | VLO | HOLD — stall-breaker refresh add (Energy), Zacks top-oil-stock screen, refining-margin momentum, no fresh Sept 11-dated catalyst | 385.37 | | |
+| 2026-09-11 | PARR | HOLD — stall-breaker refresh add (Energy), high-beta systematic-ranking pick, thin liquidity (~25-45k avg daily volume), no fresh Sept 11-dated catalyst | 83.63 | | |
