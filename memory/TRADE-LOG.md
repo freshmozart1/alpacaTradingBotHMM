@@ -1218,3 +1218,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 5 stop orders unchanged in stop level from this morning (only mechanical HWM ratchets on CVX legs), no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 14 — EOD Snapshot (Day 52, Monday)
+**Portfolio:** $100,734.00 | **Cash:** $21,637.33 (21.48%) | **Day P&L:** -$514.94 (-0.51%) | **Phase P&L:** +$734.00 (+0.73%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $212.35 | -0.80% | +$1,756.46 (+9.54%) | $195.87159 (10% trail, GTC 7f5acb83/e328a200, HWM $217.6351) |
+| ECL | 70 | $281.93 | $275.51 | -0.24% | -$449.40 (-2.28%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.49 | -0.28% | -$171.00 (-0.88%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+| LNG | 74 | $263.63 | $274.28 | -1.46% | +$788.10 (+4.04%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 9th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14) since the Sep 1 ET buy. Week 11 (Sep 14-18) still 0/3 weekly trades used, 4 sessions remaining. Portfolio equity $100,734.00, down -$514.94 (-0.51%) vs the Sep 11 EOD — broad pullback across all four holdings: CVX -0.80% intraday (still +9.54% unrealized, below the +15% tighten trigger), ECL -0.24% (-2.28% unrealized, nowhere near -7% cut), ET -0.28% (-0.88% unrealized), LNG -1.46% (still +4.04% unrealized). Cumulative phase P&L +$734.00 (+0.73%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.52% deployed / 21.48% cash — 13th straight session inside the 75-85% target band. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (all mechanical, HWMs unchanged/ratcheted from earlier reads). No trades placed today — no new catalyst cleared the gate at market-open or midday; FOMC decision Wed Sep 16 remains the week's dominant catalyst.
