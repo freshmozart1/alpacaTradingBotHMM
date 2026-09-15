@@ -1254,3 +1254,15 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 5 stop orders unchanged in stop level from this morning, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 15 — EOD Snapshot (Day 53, Tuesday)
+**Portfolio:** $100,785.60 | **Cash:** $21,637.33 (21.47%) | **Day P&L:** +$51.60 (+0.05%) | **Phase P&L:** +$785.60 (+0.79%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $217.65 | +2.58% | +$2,259.96 (+12.27%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $274.60 | -0.33% | -$513.10 (-2.60%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.33 | -0.75% | -$315.00 (-1.61%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+| LNG | 74 | $263.63 | $270.98 | -1.20% | +$543.90 (+2.79%) | $269.253 (10% trail, GTC 974c3bfc, HWM $299.17) |
+
+**Notes:** 10th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15) since the Sep 1 ET buy. Week 11 (Sep 14-18) still 0/3 weekly trades used, 3 sessions remaining. Portfolio equity $100,785.60, up +$51.60 (+0.05%) vs the Sep 14 EOD — CVX led (+2.58% intraday, +12.27% unrealized, still below the +15% tighten trigger, HWM ratcheted to $217.78/stop $196.002), while ECL slipped (-0.33% intraday, -2.60% unrealized, nowhere near -7% cut), ET eased (-0.75% intraday, -1.61% unrealized), and LNG pulled back (-1.20% intraday, still +2.79% unrealized). Cumulative phase P&L +$785.60 (+0.79%) vs $100,000 starting capital. 4 open positions (CVX, ECL, ET, LNG), 78.53% deployed / 21.47% cash — 15th straight session inside the 75-85% target band. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (all mechanical, HWMs unchanged/ratcheted from earlier reads). No trades placed today — no new catalyst cleared the gate at market-open or midday; FOMC decision Wed Sep 16 remains the week's dominant catalyst.
