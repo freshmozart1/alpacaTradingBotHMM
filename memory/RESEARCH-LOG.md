@@ -2723,3 +2723,65 @@ AAPL +4.76% (332.245 vs 317.14 Ref, 2026-09-01 row) — Sept 9 event reaction co
 
 ### Decision
 **HOLD.** No trade today. Stall-breaker not armed (sessions-since-refresh 1 < 3) — watchlist unchanged: AAPL, IONQ, NEE, UEC, COP, VLO, PARR. No name clears the buy-side gate: AAPL's catalyst is 5 sessions stale and fully priced in; IONQ/COP/VLO/PARR have no fresh dated catalyst; NEE's only today-dated item is a bearish guidance miss; UEC's apparent fresh catalyst turned out to be a recycled 2025 story and was excluded. CVX, ECL, ET, and LNG (held) all require no action — theses intact, all stops resting, none near the -7% cut, and only CVX is meaningfully elevated (+12.29%, still below the +15% tighten trigger). Deployment (78.81%) is inside the 75-85% band. FOMC (Wed Sep 16) is the week's central catalyst; today's Hormuz talks are the swing factor for oil in the meantime. Re-evaluate all four positions and the watchlist at tomorrow's market-open/midday, and again ahead of Wednesday's FOMC decision.
+
+## 2026-09-15 — Pre-market Research
+
+### Account
+- Equity: $100,723.28 | Cash: $21,637.33 (21.48%) | Buying power: $307,989.98 (margin, effective) | `balance_asof` 2026-09-14 (one session behind) — provisional/live-pulled per Operational Rules, not a confirmed settled close.
+- Position market value: $79,085.95 (CVX 95 sh, ECL 70 sh, ET 900 sh, LNG 74 sh — 78.52% deployed). 4 open positions, 5 open orders (2x CVX trailing stop GTC covering full position, 1x ECL, 1x ET, 1x LNG trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Day P&L: +$6.38 (+0.01%) vs last_equity $100,716.90 (Sept 14 EOD read) — negligible, reflects pre-market only.
+- Daytrade count: not returned on this pull; no day trades placed this challenge (all swing entries). Day 53, Week 11 (Sep 14-18), Tuesday, 2nd session. 0/3 weekly trades used.
+- Consecutive no-trade trading sessions since the Sep 1 ET buy: Sep 2, 3, 4, 8, 9, 10, 11, 14 = **8 consecutive no-trade sessions** (Sep 7 excluded, market holiday; today would be the 9th if no trade). Sessions-since-last-refresh (Sep 11) = Sep 14, Sep 15 = **2 sessions** — below the 3-session re-arm trigger. **Stall-breaker not armed today.**
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97.61%** (499 obs, 68 days in regime). Advisory only, not an entry/exit trigger.
+
+### Market Context
+- WTI/Brent: **WTI ~$102-103, Brent ~$105-108** across multiple feeds this morning — small cross-source dispersion (~1%, well under the 10% L-005 trigger), a genuine continuation/slight extension of Friday-Monday's move above $100/bbl (Sept 14 pre-market: WTI ~$100-104, Brent ~$104-109), not a repeated single print (L-002 checked, not triggered). Continuing tailwind for CVX/ET (held), not a fresh standalone catalyst for either. CVX CEO Wirth and other oil executives are quoted today warning a "global fuel crisis has arrived" — sector-wide framing, not a CVX-specific bullish item.
+- S&P 500 futures: **down modestly** (~-0.3% to -0.6%), pressured by the Fed meeting starting today (decision tomorrow), the oil spike, and 10-year Treasury yields hitting their **highest level since 2007** — a cross-asset headwind, mostly for growth/tech names (bears on AAPL/IONQ, not on the held Energy/Materials-adjacent names).
+- VIX: **~17.40 spot** (Cboe), prior close ~17.10 — a small incremental move, not a repeat of any previously logged value (L-002 checked, not triggered).
+- Today's catalysts: **FOMC meeting Day 1** (decision tomorrow, Sep 16, 2:00pm ET) is the dominant backdrop; **Empire State Manufacturing Survey**, 8:30am ET. Oil-price spike and 10yr yields at 2007-era highs are the other cross-asset drivers. Earnings today are thin and none held/watchlist (FPS, VRA, AXR, EPM, HERE, NAMM, WSHP, MWC before the open; Trip.com AMC).
+- Econ calendar: No CPI/PPI/jobs today — both already released (PPI Sept 10, CPI Sept 11, jobs Sept 4). **FOMC decision Wed Sep 16, 2:00pm ET** is the week's dominant event, one session out.
+- Sector momentum YTD: Energy #1 (~+46-47%), Technology #2 (~+28%), Materials #3 (~+11-16%) — unchanged ranking. Utilities remains near the bottom (~-0.8% to -1.4%).
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $212.10, unrealized +9.41% (+$1,732.71). No fresh Sept 15-dated bullish catalyst; recycled Venezuela $7B/Orinoco Belt expansion, Argentina/Mediterranean LNG-portfolio expansion (Reuters, Sept 11-14 dated), and Piper Sandler's street-high $243 PT. Today's "global fuel crisis" commentary from CEO Wirth is sector-macro framing, not stock-specific. Thesis intact. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $195.87159, HWM $217.6351. No action.
+  - **ECL** (70 sh, entry $281.93): current $276.45, unrealized -1.94% (-$383.60). No fresh Sept 15-dated catalyst; raised FY26 EPS guidance ($8.05-$8.25) and UBS Buy/$325 PT recycled. **Ex-dividend TODAY, Sept 15** ($0.73/share, payable Oct 15) — informational, not thesis-relevant, already flagged since Sept 9. Thesis intact. Trailing stop GTC 64b1066c confirmed resting, stop $265.797, HWM $295.33. No action.
+  - **ET** (900 sh, entry $21.68): current $21.5029, unrealized -0.82% (-$159.39). No fresh Sept 15-dated catalyst; NYSE-to-Texas-Stock-Exchange listing move (trading begins ~Oct 5), Q2 beat/guidance raise, Stifel Buy/$25 PT, and August insider buying all recycled. Thesis intact. Trailing stop GTC f900c3f3 confirmed resting, stop $19.64601, HWM $21.8289. No action.
+  - **LNG** (74 sh, entry $263.63): current $273.41, unrealized +3.71% (+$723.72). No fresh Sept 15-dated catalyst; Corpus Christi Stage 3 completion, raised 2026 core-profit guidance ($7.9B-$8.4B), UBS Buy/$340 PT, and QatarEnergy long-term-contract talks (undated/general, recycled) all carried forward. Thesis intact. Trailing stop GTC 974c3bfc confirmed resting, stop $269.253, HWM $299.17. No action.
+- None of the four held positions are near the -7% cut. None have crossed the +15%/+20% tighten thresholds (CVX closest at +9.41%).
+
+### Lessons Check
+- L-017 (verify ownership on shared-coverage catalysts, review-by 2026-09-18) — not applicable today; no pipeline/JV/multi-company catalyst surfaced (NEE/Dominion coverage today attributes the Virginia benefits package to both companies consistently across sources, no ownership ambiguity).
+- L-018 (full-day TRADE-LOG gap, review-by 2026-09-18) — checked: no gap; Sept 14 was fully logged (Market-Open, Midday, EOD). Compliant.
+- L-019 (empty stall-breaker sector leg, review-by 2026-09-25) — not applicable today; no refresh cycle ran this session (stall-breaker not armed, sessions-since-refresh = 2).
+- L-020 (partial TRADE-LOG gap / EOD-only day, review-by 2026-09-25) — checked: no partial gap; Sept 14's TRADE-LOG has all three expected entries (Market-Open, Midday, EOD). Compliant.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — `quote` endpoint again showing stale/wide-spread pre-open prints across the board, all timestamped Sept 14 20:00 UTC — cross-checked via bars instead, comparing Sept 14's close to each row's Ref close)
+IONQ -5.06% (37.52 vs 39.52 Ref, 2026-09-08 row). NEE -2.13% (81.64 vs 83.42 Ref, 2026-09-08 row). UEC -10.90% (10.26 vs 11.515 Ref, 2026-09-08 row) — a sharp move, tracking toward avoided-loss. COP -0.30% (136.66 vs 137.07 Ref, 2026-09-11 row). VLO -0.67% (382.79 vs 385.37 Ref, 2026-09-11 row). PARR -2.27% (81.73 vs 83.63 Ref, 2026-09-11 row). AAPL's only row (Sept 1) is already scored (skip-right), excluded per rule. Skips continue to look right-to-avoided-loss so far; UEC is the standout, now down double digits from its Ref close.
+
+### Stall-Breaker
+**Not armed** — sessions-since-last-refresh = 2 (refreshed Sept 11) < 3-session re-arm trigger. Watchlist unchanged: AAPL, IONQ, NEE, UEC, COP, VLO, PARR.
+
+### Watchlist Catalyst Scan (AAPL, IONQ, NEE, UEC, COP, VLO, PARR)
+- **AAPL** — Sept 9 product-event catalyst is now **6 sessions old, fully realized**, and priced in near the average analyst target (~$335); today's only new item is a **negative** one (an Indian regulatory probe into iOS 18 warranty claims). Does not clear today's gate.
+- **IONQ** — no fresh Sept 15-dated catalyst; Investor Day/SkyWater guidance-raise narrative fully recycled from Sept 8. Does not clear today's gate.
+- **NEE** — one genuinely fresh item, dated **yesterday (Sept 14)** and multi-source confirmed (Yahoo, MarketWatch/WSJ, StockTitan, Reuters, ad-hoc-news, Morningstar): NextEra and Dominion announced an **expanded Virginia customer-benefits package** to support regulatory approval of their merger, alongside NextEra **reaffirming FY26 EPS guidance at the high end** of $3.92-$4.02. Within the widened 1-session/multi-source window, this technically clears the catalyst-freshness gate — see Trade Ideas for why it's not being entered.
+- **UEC** — no fresh Sept 15-dated catalyst; Jefferies Hold/$11.50 PT and H.C. Wainwright Buy/$26.75 PT both recycled, no new operational item. Does not clear today's gate.
+- **COP / VLO / PARR** — no fresh Sept 15-dated catalyst for any; COP's leadership-succession/Q2-beat coverage, VLO's crack-spread rally/analyst-target raises (dates on the newest PT raises unclear/unconfirmed in today's results, treated as suspect per the stale-data rule and not counted), and PARR's Laramie asset sale/insider-selling headlines are all recycled from Aug 25-Sept 14. None clear today's gate.
+
+### Trade Ideas
+1. **NEE** — Catalyst: Sept 14-dated, multi-source-confirmed Virginia benefits package (Dominion merger) + reaffirmed FY26 guidance at the high end. Hypothetical entry ~$81.64 (Sept 14 close) / stop ~$74.29 (9% below entry) / target ~$96.34 (min 2:1 R/R). **Not entering**: (a) deployment room to the 85% ceiling is only ~6.5% of equity (~$6,560) — far below a standard ~20% position and reminiscent of the IONQ/AAPL deployment-cap conflicts from earlier in September; (b) Utilities remains near the bottom of the YTD sector-momentum ranking, conflicting with the "follow sector momentum" rule; (c) price has drifted down, not up, since the catalyst's own merger-progress thread began (Ref $83.42 Sept 8 -> $81.64 Sept 14, -2.13%) — no confirmed bullish reaction yet to validate the catalyst against bars. Continue monitoring; re-evaluate if Sept 15's session shows a genuine positive price reaction.
+2. **AAPL** — No entry; catalyst 6 sessions stale and fully priced in, today's only fresh item is negative (India regulatory probe).
+3. **IONQ / UEC / COP / VLO / PARR** — No entry; no fresh dated catalyst today for any.
+
+### Risk Factors
+- **FOMC Day 1 today, decision tomorrow (Sep 16, 2:00pm ET)** — the week's dominant catalyst; positioning day today ahead of it, bearing on all four held positions and every watchlist name.
+- **10-year Treasury yields at their highest level since 2007** — a cross-asset headwind, primarily for growth/tech valuations (AAPL, IONQ on watchlist); not a direct risk to the held Energy/Materials-adjacent book.
+- **Oil elevated** (WTI ~$102-103, Brent ~$105-108), continuing tailwind for CVX/ET (held) but a two-sided inflation risk feeding into tomorrow's FOMC.
+- **Deployment-cap headroom**: 78.52% deployed today, ~$6,560 (~6.5% of equity) of room remains before the hard 85% ceiling — still the binding constraint on any full-sized new entry (see NEE, Trade Ideas).
+- **ECL ex-dividend today** ($0.73/share) — informational, already flagged since Sept 9, not thesis-relevant.
+- CVX (held): unrealized +9.41%, nowhere near -7% cut or +15%/+20% tighten; stop resting ($195.87159, HWM $217.6351). No action.
+- ECL (held): unrealized -1.94%, nowhere near the -7% cut; stop resting ($265.797, HWM $295.33). No action.
+- ET (held): unrealized -0.82%, ordinary consolidation; stop resting ($19.64601, HWM $21.8289). No action.
+- LNG (held): unrealized +3.71%, well below the +15% tighten threshold; stop resting ($269.253, HWM $299.17). No action.
+
+### Decision
+**HOLD.** No trade today. Stall-breaker not armed (sessions-since-refresh 2 < 3) — watchlist unchanged: AAPL, IONQ, NEE, UEC, COP, VLO, PARR. NEE carries a genuinely fresh, multi-source-confirmed catalyst (Sept 14 Virginia benefits package + reaffirmed high-end guidance) that technically clears the freshness gate, but is not being entered: minimal deployment-cap headroom (~6.5%), Utilities out of sector momentum, and no confirmed bullish price reaction yet. AAPL/IONQ/UEC/COP/VLO/PARR have no fresh dated catalyst today (AAPL's only new item is negative). CVX, ECL, ET, and LNG (held) all require no action — theses intact, all stops resting, none near the -7% cut or the +15%/+20% tighten thresholds. Deployment (78.52%) leaves ~6.5% of room before the hard 85% ceiling. FOMC Day 1 today, decision tomorrow (Sep 16, 2:00pm ET), is the dominant catalyst to watch; re-evaluate NEE and the rest of the watchlist at market-open/midday and again ahead of the decision.
