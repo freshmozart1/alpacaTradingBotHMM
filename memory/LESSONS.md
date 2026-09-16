@@ -220,3 +220,6 @@ than 10 sessions are pruned.
 | 2026-09-11 | COP | HOLD — stall-breaker refresh add (Energy), 52-week high/+45% YTD momentum, Goldman dividend-energy mention, no fresh Sept 11-dated catalyst | 137.07 | | |
 | 2026-09-11 | VLO | HOLD — stall-breaker refresh add (Energy), Zacks top-oil-stock screen, refining-margin momentum, no fresh Sept 11-dated catalyst | 385.37 | | |
 | 2026-09-11 | PARR | HOLD — stall-breaker refresh add (Energy), high-beta systematic-ranking pick, thin liquidity (~25-45k avg daily volume), no fresh Sept 11-dated catalyst | 83.63 | | |
+| 2026-09-16 | GEV | HOLD — stall-breaker refresh add (Energy), AI/data-center power demand, Q2 orders +88% YoY, $176B backlog, Jefferies flags potential Q3 beat-and-raise, no fresh Sept 16-dated catalyst | 882.43 | | |
+| 2026-09-16 | BE | HOLD — stall-breaker refresh add (Energy), S&P 500 addition effective Sept 21 but announced Sept 4 (12 sessions stale), price down -6.0% since, no bullish reaction | 259.21 | | |
+| 2026-09-16 | MU | HOLD — stall-breaker refresh add (Technology), Sept 30 earnings/Citi Upside Catalyst Watch on H2 DRAM pricing, no fresh Sept 16-dated catalyst | 927.30 | | |
