@@ -1327,3 +1327,14 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 4 stop orders unchanged in stop level and HWM from this morning's market-open read, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 17 — EOD Snapshot (Day 55, Thursday)
+**Portfolio:** $99,579.64 | **Cash:** $41,490.89 (41.66%) | **Day P&L:** -$192.15 (-0.19%) | **Phase P&L:** -$420.36 (-0.42%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $211.57 | +0.01% | +$1,682.36 (+9.14%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $271.68 | -0.88% | -$717.50 (-3.64%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.08 | -0.14% | -$540.00 (-2.77%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+
+**Notes:** 12th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17) since the Sep 1 ET buy — LNG's Sep 16 stop-out was a mechanical exit, not a new entry, so the streak continues. Week 11 (Sep 14-18) still 0/3 weekly trades used, 1 session remaining (Friday). Portfolio equity $99,579.64, down -$192.15 (-0.19%) vs the Sep 16 EOD — modest broad pullback: CVX +0.01% intraday (still +9.14% unrealized, well below the +15% tighten trigger), ECL -0.88% (-3.64% unrealized, nowhere near the -7% cut), ET -0.14% (-2.77% unrealized). Cumulative phase P&L -$420.36 (-0.42%) vs $100,000 starting capital, 2nd straight negative phase P&L reading. 3 open positions (CVX, ECL, ET), 58.34% deployed / 41.66% cash — 2nd consecutive session below the 75-85% target band, still a direct result of LNG's Sept 16 exit with no same-day replacement entry. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (all mechanical, unchanged from this morning's reads). No trades placed today — no new catalyst cleared the buy-side gate at market-open or midday.
