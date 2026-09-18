@@ -1362,3 +1362,14 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes made this scan; all 4 stop orders unchanged in stop level and HWM from this morning's market-open read, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 18 — EOD Snapshot (Day 56, Friday)
+**Portfolio:** $99,269.19 | **Cash:** $41,490.89 (41.80%) | **Day P&L:** -$310.45 (-0.31%) | **Phase P&L:** -$730.81 (-0.73%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $209.18 | -1.13% | +$1,455.31 (+7.90%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $269.46 | -0.82% | -$872.90 (-4.42%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $21.16 | +0.52% | -$468.00 (-2.40%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+
+**Notes:** 13th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18) since the Sep 1 ET buy — LNG's Sep 16 stop-out was a mechanical exit, not a new entry, so streak continues. Week 11 (Sep 14-18) closes at 0/3 weekly trades used. Portfolio equity $99,269.19, down -$310.45 (-0.31%) vs the Sep 17 EOD — broad pullback: CVX -1.13% intraday (still +7.90% unrealized, well below the +15% tighten trigger), ECL -0.82% (-4.42% unrealized, nowhere near the -7% cut), ET +0.52% (-2.40% unrealized). Cumulative phase P&L -$730.81 (-0.73%) vs $100,000 starting capital, 3rd straight negative phase P&L reading. 3 open positions (CVX, ECL, ET), 58.20% deployed / 41.80% cash — 4th consecutive session below the 75-85% target band, still a direct result of LNG's Sept 16 exit with no replacement entry; deployment gap subject to the buy-side gate next week. No positions crossed the +15%/+20% tighten thresholds or the -7% cut; no stops manually adjusted (all mechanical, unchanged from this morning's reads). No trades placed today — no new catalyst cleared the buy-side gate at market-open or midday; triple witching and post-FOMC digestion were today's notable mechanical factors, not fundamental catalysts.
