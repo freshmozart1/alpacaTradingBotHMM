@@ -777,3 +777,88 @@ Verdict counts (new rows this week): missed 0, skip-right 2, avoided-loss 1. Tot
 - No risk-rule changes — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options remain untouched.
 
 ### Overall Grade: B+ (zero trades in a week the S&P itself was flat-to-down, so no relative cost to patience this time; the buy-side gate stayed vindicated for a 3rd straight review and the deployment-cap question was conclusively settled with real avoided-loss evidence on two separate names — held back only by a recurring, still-unresolved logging-gap pattern and an empty Technology screening leg)
+
+## Week ending 2026-09-18
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $101,232.42 (Sep 11 close) |
+| Ending portfolio | $99,237.39 (live pull; `balance_asof` 2026-09-17, one session lagged per Operational Rules — provisional) |
+| Week return | -$1,995.03 (-1.97%) |
+| S&P 500 week | -0.08% (SPY 762.25 -> 761.62, Sep 11 close -> Sep 18 close via `alpaca.sh bars`, adjustment=all; Perplexity again returned confused/stale reads — its lead "-0.80%" figure, sourced to Morningstar, was actually for the week ending Sep 11, not Sep 18, and other snippets showed SPX raw closes ranging inconsistently from 7,551 to 7,660 across sources — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | -1.89% |
+| Trades | 1 closed (W:1 / L:0 / open:0 — LNG mechanical stop-out); 0 new entries placed (0/3 weekly cap used) |
+| Win rate | 100% (1 of 1 closed trades this week) |
+| Best trade | LNG +1.77% (only closed trade) |
+| Worst trade | LNG +1.77% (only closed trade) |
+| Profit factor | N/A (only a winner this week, no losers to divide by) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| LNG | $263.63 (74 sh, Aug 6 fill) | $268.291351 (Sep 16, avg fill) | +$344.94 (+1.77%) | 10% GTC trailing stop (order 974c3bfc) triggered automatically ~2 minutes post-open (13:32:53 UTC); HWM $299.17, stop $269.253. Corpus Christi Stage 3 thesis not invalidated — ordinary pullback off the high-water mark, not a thesis-break cut. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $208.94 | +$1,432.51 (+7.78%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78 |
+| ECL | $281.93 (70 sh) | $269.46 | -$872.90 (-4.42%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+| ET | $21.68 (900 sh) | $21.15 | -$477.00 (-2.45%) | 10% trailing GTC, order f900c3f3, stop $19.64601, HWM $21.8289 |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| IONQ | 39.52 (Sep 8) | 37.05 (Sep 15) | -6.25% | avoided-loss |
+| NEE | 83.42 (Sep 8) | 81.09 (Sep 15) | -2.79% | skip-right |
+| UEC | 11.515 (Sep 8) | 10.19 (Sep 15) | -11.51% | avoided-loss |
+| COP | 137.07 (Sep 11) | 131.84 (Sep 18) | -3.81% | avoided-loss |
+| VLO | 385.37 (Sep 11) | 413.02 (Sep 18) | +7.18% | missed |
+| PARR | 83.63 (Sep 11) | 84.375 (Sep 18) | +0.89% | skip-right |
+
+Verdict counts (new rows this week): missed 1, skip-right 2, avoided-loss 3. Total missed gains: +7.18%. Total avoided losses: -21.57% (sum of IONQ/UEC/COP). Missed:avoided ratio: 1:3 — the 4th straight gate-favorable-leaning read (0:4 Aug 28, 0:3 Sep 4, 0:1 Sep 11, 1:3 this week), but the first of the four to include a genuine "missed" verdict since Aug 21. **Gate calibration verdict: still sound overall, not an escalation trigger** (missed 1 < avoided-loss 3) — but VLO's clean +7.18% miss and PARR's borderline drift toward missed are consistent with this week's other finding (see What Didn't Work/Key Lessons) that chase-risk judgment, not catalyst freshness, is now the layer most often costing real opportunities. GEV/BE/MU (Sept 16 refresh rows) are only 2 sessions old — not yet 5, carried forward. **Pruned this review** (overdue by roughly one review cycle, the same lagging-prune pattern self-corrected at the Sep 11 review): XOM/PSX/STLD/MLM (Aug 19 rows, scored at the Aug 28 review, 13 sessions past their scoring reference point) and VST/CEG/MP/AMAT (Aug 24 rows, also scored at the Aug 28 review, 13 sessions past) and ET/FCX/MRVL (Aug 26 rows, scored at the Sep 4 review using the Sep 2 close, 11 sessions past). WMB/CRM/CRWD (Aug 28 rows, scored at the Sep 4 review using the Sep 4 close, 9 sessions past) and TRGP/AAPL/CRH (Sep 1 rows, scored at the Sep 11 review using the Sep 9 close, 7 sessions past) are retained one more review, not yet past 10.
+
+### What Worked
+
+- LNG's 10% mechanical trailing stop functioned exactly as designed — triggered automatically ~2 minutes post-open on Sep 16, locking in a +1.77% gain on a position that had run as high as +12.45% unrealized (Sep 3), with zero manual intervention and the Corpus Christi Stage 3 thesis never broken.
+- A genuine data-quality near-miss was caught before it could cost anything: VLO's apparent "Sept 16 $2.5B buyback" headline traced back to the recycled Feb/July 2026 authorizations and was correctly excluded, extending L-002's clean track record.
+- L-017 (shared-coverage catalyst ownership) ran a full 2-week compliance cycle with zero fresh incidents since the Sept 1 WMB->ET correction and was promoted to a permanent Buy-Side Gate rule; L-018 (full-day TRADE-LOG gap) also hit its review-by date clean, with zero 3rd-gap occurrence across the monitoring window.
+- The desk self-identified and corrected a real calibration gap this week rather than repeating it indefinitely: GEV's Sept 16 catalyst was excluded citing "the same chase-risk pattern that sidelined CRM/CRWD" despite only a +4.90% realized reaction — a fraction of CRM/CRWD's actual +20-22% blowout pops — leading to a bounded, evidence-based gate fix (see Rule Changes).
+- Risk mechanics held clean across all three remaining positions all week — none came within range of the -7% cut or the +15%/+20% tighten thresholds, and every stop ratcheted mechanically stop-only-up.
+
+### What Didn't Work
+
+- Zero new trades for the 2nd consecutive week (Sep 8-11, Sep 14-18) — triggering STEP 5's mandatory gate-calibration review this session.
+- LNG's Sep 16 stop-out cut deployment from ~78.5% to ~58% with no same-week replacement entry, leaving the book under the 75-85% target band for 3 straight sessions (Sep 16-18) with ample headroom sitting idle.
+- The bot lost -1.97% in a week the S&P was essentially flat (-0.08%), a -1.89% relative gap — driven mainly by ECL (-4.42% unrealized) and ET (-2.45% unrealized) drifting further into the red during FOMC-week volatility, not by any rule breach.
+- NEE's Sept 14-dated, multi-source-confirmed catalyst technically cleared the freshness gate on Sept 15 but was skipped for having only ~6.5% of deployment headroom remaining at the time (pre-LNG-exit) — a real, if modest, missed opportunity the skip-scoreboard doesn't fully capture since NEE ultimately drifted down, not up.
+- VLO (+7.18%) scored a genuine "missed" verdict this week and PARR is trending the same way — the clearest evidence yet that an over-tight chase-risk judgment, not catalyst freshness, is now the layer costing real opportunities.
+
+### Key Lessons
+
+- A "chase risk" judgment without a numeric bar can quietly become over-tight: GEV's +4.9% realized reaction was treated the same as CRM/CRWD's +20-22% blowout pops, when the two situations are not comparable — formalizing a threshold (this week's fix) keeps the gate consistent instead of relying on session-to-session pattern-matching.
+- An empty stall-breaker leg recurring on the same sector (Materials, Sept 11 and Sept 16) two cycles running is a screen-design problem, not noise — L-019's own directive correctly called for a fix as soon as its trigger condition was met, ahead of its formal review-by date.
+- A mechanically clean stop-out (LNG) can still leave a real cost on the table if the deployment gap it opens goes unaddressed for days — the buy-side gate's job isn't done once a position exits; refilling the resulting headroom needs the same urgency as finding the original entry.
+
+### Adjustments for Next Week
+
+- Before counting or excluding an analyst price-target/rating action as a catalyst, explicitly find its own dated source; label it "dateless, excluded" if no explicit date turns up within 2 search attempts (L-021).
+- Monitor the new 15%-realized-reaction chase-risk threshold for false positives — a catalyst admitted under it that promptly reverses (L-022).
+- Monitor the loosened Materials-leg (or any leg's) liquidity/market-cap floor for false positives or execution issues on any newly-admitted thin-liquidity name (L-023).
+- Track deployment now that headroom is wide open (58% vs. the 75-85% band) following LNG's exit — flag if it stays under-deployed for 2 more sessions/reviews without a clear catalyst-driven explanation (L-024).
+
+### Rule Changes This Week
+
+- L-017 ("verify company/project ownership before adding a shared-coverage catalyst name") hit its Sep 18 review-by date having been complied with every session since 2026-09-04 (2+ straight weeks) with zero fresh misattribution incidents. Promoted to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — see Rule Changelog. Retired from Active Lessons as promoted.
+- L-018 ("recurring full-day TRADE-LOG gap") hit its Sep 18 review-by date. Retired, not promoted: zero 3rd full-day gap occurred across the full monitoring window (Sept 4-18); its conditional directive never fired, and ongoing gap-checking is already covered by L-020's partial-gap directive. No TRADING-STRATEGY.md change.
+- L-019 ("empty stall-breaker sector leg, any leg") triggered ahead of its Sep 25 review-by date: Materials came up empty on both the Sept 11 and Sept 16 refresh cycles (2 consecutive), meeting its own escalation trigger. Promoted/generalized to a permanent process rule in TRADING-STRATEGY.md (Buy-Side Gate section) — a leg empty 2 consecutive cycles now gets its liquidity/market-cap floor loosened on the next refresh. Retired from Active Lessons as promoted; new lesson L-023 opened to monitor the new rule for false positives.
+- New Buy-Side Gate calibration rule per STEP 5 (2nd consecutive zero-new-trade week: Sept 8-11, Sept 14-18): chase-risk exclusion is now defined numerically — a catalyst's already-realized price reaction of >=15% is chase risk and excluded; a reaction below 15% does not by itself disqualify an otherwise-clearing catalyst. Evidence: GEV's Sept 16-dated Vineyard Wind/Nantucket settlement was excluded citing the same chase-risk pattern as CRM/CRWD despite only a +4.90% reaction (Sept 17 close) vs. CRM/CRWD's +20.3%/+22.6% reactions that legitimately justified the Aug 28 exclusion. Process/gate calibration only — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options all remain untouched. Review-by 2026-10-02 (LESSONS.md L-022) to check for false-positive entries admitted under the new bar.
+- STEP 5's zero-trade-week process-only requirement satisfied via new lesson L-021 (verify analyst PT/rating actions have a findable dated source before counting/excluding them) — LESSONS.md only, no TRADING-STRATEGY.md change.
+
+### Overall Grade: C+ (risk management stayed clean — LNG's mechanical stop worked exactly as designed and no position came near a rule breach — but a 2nd consecutive zero-new-trade week, a -1.89% relative gap to a flat S&P, and a genuine "missed" verdict on VLO pinpointed a real, fixable over-tightness in the gate's chase-risk judgment, which this review corrected with a bounded, evidenced numeric threshold)

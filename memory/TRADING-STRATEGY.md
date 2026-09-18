@@ -71,6 +71,19 @@ If any fail, the trade is skipped and the reason is logged.
   catalyst, the next refresh's sector screen includes a 3rd sector
   (next-highest YTD momentum) alongside the top-2, to avoid recycling the
   same names/coverage across cycles.
+- When a watchlist catalyst involves a pipeline, joint venture, or
+  multi-company project, explicitly verify which company owns/operates
+  the specific asset (via the company's own investor materials, not just
+  news aggregator coverage) before adding the name to the watchlist or
+  counting the catalyst toward the buy-side gate.
+- If the same stall-breaker sector leg comes up empty on 2 consecutive
+  refresh cycles, the next refresh for that leg loosens its
+  liquidity/market-cap floor (screening smaller-cap/thinner-liquidity
+  names, still subject to the existing thin-liquidity 60-minute
+  bars-confirmation window) rather than leaving the leg empty again.
+- A catalyst's already-realized price reaction of 15% or more since its
+  own date is chase risk and excluded from the gate; a reaction below 15%
+  does not by itself disqualify an otherwise-clearing catalyst.
 
 ## Sell-Side Rules
 
@@ -121,3 +134,6 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-08-28 | Buy-Side Gate | stall-breaker re-arm trigger 5+ consecutive no-trade sessions -> 3+ | Promoted from LESSONS.md L-010 (2026-08-14), complied with every session for 2 straight weeks (Aug 14-28) with zero fresh incidents — correctly re-armed and refreshed the watchlist 3 times this cycle (Aug 24, 26, 28), giving each refresh more of the week's runway to convert into an entry. Process addition only, not a risk-rule change. |
 | 2026-08-28 | Operational Rules (new section) | (none) -> check `balance_asof` before logging any EOD snapshot; label provisional if it lags today's date | Promoted from LESSONS.md L-011 (2026-08-14), complied with every EOD session for 2 straight weeks (Aug 14-28) with zero fresh mislabeling/mismatch incidents (the three-incident pattern that spawned this lesson did not recur). Process addition only, not a risk-rule change. |
 | 2026-09-04 | Buy-Side Gate | (none) -> stall-breaker refresh screens a 3rd sector (next-highest YTD momentum) after a full re-arm cycle produces no gate-clearing catalyst | Promoted from LESSONS.md L-013 (2026-08-21), complied with every refresh cycle for 2+ straight weeks (Aug 21-Sept 4: Aug 24, 26, 28, Sept 1 refreshes all screened a 3rd sector alongside Energy/Materials, surfacing AMAT, MRVL, and CRH) with zero fresh incidents. Process addition only, not a risk-rule change. |
+| 2026-09-18 | Buy-Side Gate | (none) -> verify company/project ownership before counting a shared pipeline/JV/multi-company catalyst | Promoted from LESSONS.md L-017 (2026-09-04), complied with every session for 2+ straight weeks (Sept 4-18) with zero fresh misattribution incidents since the original Sept 1 WMB->ET correction. Process addition only, not a risk-rule change. |
+| 2026-09-18 | Buy-Side Gate | (none) -> a stall-breaker sector leg empty 2 consecutive refresh cycles gets its liquidity/market-cap floor loosened on the next refresh | Promoted/generalized from LESSONS.md L-019 (2026-09-11), triggered ahead of its 2026-09-25 review-by: Materials came up empty on both the Sept 11 and Sept 16 refresh cycles (2 consecutive), meeting L-019's own escalation trigger. Process addition only, not a risk-rule change. |
+| 2026-09-18 | Buy-Side Gate | "chase risk" excluded by subjective judgment, no numeric bar -> a catalyst reaction of >=15% already realized is chase risk and excluded; a reaction below 15% does not by itself disqualify an otherwise-clearing catalyst | Escalation per STEP 5 (2nd consecutive zero-new-trade week: Sept 8-11, Sept 14-18). Evidence: GEV's Sept 16-dated Vineyard Wind/Nantucket settlement cleared every other gate check but was excluded citing "the same chase-risk pattern that sidelined CRM/CRWD" despite only a +4.90% realized reaction (Sept 17 close) vs. CRM/CRWD's +20.3%/+22.6% reactions that legitimately justified the Aug 28 chase-risk exclusion — conflating a modest, still-live reaction with an already-blown-out one likely cost a trade this week (GEV extended to +4.82% Sept 17, +8.19%-range peers BE/MU also extending). Process/gate calibration only — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options all remain untouched. Review-by 2026-10-02 (LESSONS.md L-022) to check for false-positive entries admitted under the new 15% bar. |
