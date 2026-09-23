@@ -1386,13 +1386,13 @@ No positions yet. Bot launches tomorrow.
 
 ### Sep 23 — Midday Scan (Day 57, Wednesday) — no action
 
-**Account:** 3 open positions — CVX 95 sh, unrealized +6.49% (+$1,194.30), current $206.4325 vs entry $193.860947 (intraday +1.99% vs lastday $202.41); ECL 70 sh, unrealized -2.03% (-$399.70), current $276.22 vs entry $281.93 (position feed shows 0.00% intraday — no IEX print yet; live quote bid $273.58/ask $276.32, mid ~$274.95 ≈ -2.5% unrealized); ET 900 sh, unrealized -4.73% (-$922.50), current $20.655 vs entry $21.68 (intraday +1.25% vs lastday $20.40). 4 open orders confirmed resting, all unchanged from this morning: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; ET trailing stop GTC f900c3f3 (900 sh), stop $19.64601, HWM $21.8289.
+**Account:** 3 open positions — CVX 95 sh, unrealized +6.49% (+$1,194.30), current $206.4325 vs entry $193.860947 (intraday +1.99% vs lastday $202.41); ECL 70 sh, unrealized -2.03% (-$399.70), current $276.22 vs entry $281.93 (position feed shows 0.00% intraday; today's bar last $276.07, range $273.73-$276.40 — flat, ≈ -2.1% unrealized); ET 900 sh, unrealized -4.73% (-$922.50), current $20.655 vs entry $21.68 (intraday +1.25% vs lastday $20.40). 4 open orders confirmed resting, all unchanged from this morning: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; ET trailing stop GTC f900c3f3 (900 sh), stop $19.64601, HWM $21.8289.
 
-**STEP 3 (cut losers):** N/A — CVX +6.49%, ECL -2.03% (~-2.5% on quote mid), ET -4.73%, none at the -7% cut. ET improved from -5.30% at market-open. No positions closed.
+**STEP 3 (cut losers):** N/A — CVX +6.49%, ECL -2.03%, ET -4.73%, none at the -7% cut. ET improved from -5.30% at market-open. No positions closed.
 
 **STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.49%). No stops changed.
 
-**STEP 5 (thesis check):** CVX — no thesis-breaking news; +1.99% intraday, Venezuela/Vietnam/Goldman-PT tailwinds intact. ECL — no thesis-breaking news; no intraday print yet, Oct 27 Q3 earnings date only news. ET — no thesis-breaking news; +1.25% intraday bounce, TXSE listing/initiation thesis intact. No action on any position.
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +1.99% intraday, Venezuela/Vietnam/Goldman-PT tailwinds intact. ECL — no thesis-breaking news; flat intraday (bar $276.07), Oct 27 Q3 earnings date only news. ET — no thesis-breaking news; +1.25% intraday bounce, TXSE listing/initiation thesis intact. No action on any position.
 
 **STEP 6 (optional research):** Skipped — no sharp unexplained move (largest CVX +1.99%, consistent with oil rebound).
 
