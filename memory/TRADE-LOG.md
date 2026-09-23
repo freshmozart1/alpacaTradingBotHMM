@@ -1399,3 +1399,14 @@ No positions yet. Bot launches tomorrow.
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stop orders unchanged in stop level and HWM, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 23 — EOD Snapshot (Day 57, Wednesday)
+**Portfolio:** $98,831.05 | **Cash:** $41,490.89 (41.98%) | **Day P&L:** +$415.81 (+0.42%) | **Phase P&L:** -$1,168.95 (-1.17%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $205.51 | +1.53% | +$1,106.66 (+6.01%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $276.72 | +0.18% | -$364.70 (-1.85%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $20.4959 | +0.47% | -$1,065.69 (-5.46%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+
+**Notes:** 16th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23) since the Sep 1 ET buy — Sep 21/22 unlogged (automation gap) but live Alpaca state confirms no trades those days. Week 12 (Sep 21-25) 0/3 weekly trades used. Day P&L measured vs Alpaca last_equity $98,415.24 (Sep 22 close) since no Sep 22 EOD snapshot exists; vs the last logged EOD (Sep 18, $99,269.19) equity is -$438.14 (-0.44%) across three sessions. Today broad green: CVX +1.53% (oil rebound, +6.01% unrealized, below +15% tighten), ECL +0.18% (-1.85% unrealized), ET +0.47% (-5.46% unrealized — closest to the -7% manual cut, ~$20.16 trigger; watch). Phase P&L -$1,168.95 (-1.17%) vs $100,000 start, 4th straight negative reading. 3 open positions, 58.02% deployed / 41.98% cash — 6th consecutive session below the 75-85% band (L-024 escalation pending weekly review). No tighten/cut thresholds crossed; all 4 GTC stops unchanged, no fills. No trades placed today — stall-breaker fired pre-market but no idea cleared the buy-side gate.
