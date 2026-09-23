@@ -2985,3 +2985,76 @@ NEE -2.58% (81.265 vs 83.42 Ref, 2026-09-08 row) — tracking toward avoided-los
 
 ### Decision
 **HOLD.** No trade today. Stall-breaker not armed (sessions-since-refresh 2 < 3) — watchlist unchanged: NEE, UEC, COP, VLO, PARR, GEV, BE, MU. GEV's Vineyard Wind settlement has now aged out of the 2-session freshness window with no new development; BE's S&P 500 inclusion catalyst is 14 sessions stale; MU's DRAM/HBM tightness remains general-sector commentary, not a today-dated MU-specific event; NEE/UEC/COP have no fresh company-specific catalyst (COP's move is oil-price/sector-beta); VLO and PARR are tracking toward "missed" on the skip scoreboard but neither has a fresh dated catalyst to justify a chase entry today. CVX, ECL, and ET (held) all require no action — theses intact, all stops resting, none near the -7% cut or the +15%/+20% tighten thresholds. Deployment (58.33%) remains below the 75-85% band for the 3rd straight session following LNG's stop-out, a headroom condition to watch at market-open/midday/EOD, though catalyst freshness remains today's binding constraint. Triple witching and a BoJ rate decision are the day's notable mechanical/cross-asset factors; this is also the final session of Week 11 with 0/3 weekly trades used. Re-evaluate all positions and the watchlist at market-open and midday; L-017 and L-018 are both due for weekly-review disposition today.
+
+## 2026-09-23 — Pre-market Research (run inline from market-open; no Sept 21/22 entries found)
+
+### Automation Gap Note
+- **RESEARCH-LOG and TRADE-LOG both jump straight from Sept 18 (Fri) to today (Wed) — Sept 21 and Sept 22 (both trading days) have zero logged entries (no Market-Open Check, Midday Scan, or EOD Snapshot).** This is a full 2-session gap, distinct from L-020's partial-gap case — the scheduled routines apparently did not fire or did not persist for those two sessions. Live Alpaca state (below) is the only source of truth for what happened; no trades were confirmed to have executed (positions unchanged: CVX/ECL/ET, same share counts as Sept 18). Flagging for weekly review as a new gap category alongside L-020.
+
+### Account
+- Equity: $98,716.14 | Cash: $41,490.89 (42.03%) | Buying power: $326,194.26 (margin, effective) | `balance_asof` 2026-09-22 (one session behind) — provisional/live-pulled per Operational Rules, not a confirmed settled close.
+- Position market value: $57,225.25 (CVX 95 sh, ECL 70 sh, ET 900 sh — 57.97% deployed). 3 open positions, 4 open orders (2x CVX trailing stop GTC covering full position, 1x ECL, 1x ET trailing stop GTC), all confirmed resting via `alpaca.sh orders`/`positions`.
+- Day P&L: +$300.90 (+0.31%) vs last_equity $98,415.24 — pre-market only, thin volume.
+- Daytrade count: not returned on this pull; no day trades placed this challenge (all swing entries). Consecutive no-trade sessions since the Sep 1 ET buy: Sep 2,3,4,8,9,10,11,14,15,16,17,18,21,22 = **14 consecutive no-trade sessions** (Sep 7 excluded, market holiday; LNG's Sept 16 stop-out was a mechanical exit, not an entry). Sessions-since-last-refresh (Sep 16) = Sep 17,18,21,22 = **4 sessions** — **stall-breaker ARMED today** (>=3 trigger).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 96.16%** (500 obs, 74 days in regime). Advisory only, not an entry/exit trigger.
+- Deployment at 57.97% is now the **6th consecutive session below the 75-85% target band** (Sept 16-23), still a direct carry-over from LNG's Sept 16 stop-out with no replacement entry. Per L-024: gate has genuinely found no fresh catalyst each session (documented below), not an inattention gap — but this now exceeds L-024's 2-session grace period since its Sept 18 logging. Flagging explicitly for weekly-review escalation consideration.
+
+### Market Context
+- WTI/Brent: **WTI ~$90.85-90.90, Brent ~$98.15-100.17** — a real pullback from the Sept 18 range (~$100.9-101.9 WTI), tied to Trump saying US-Iran talks were "productive" and floating a deal vs. military action, easing Middle East risk premium. Not a suspect repeat (L-002 checked — genuinely different level, downward, with a stated cause).
+- S&P 500 futures: **~7,820-7,836, roughly flat (+0.02% to +0.06%)** — muted premarket drift.
+- VIX: **~14.17 spot (10:59am read)**, down from Sept 18's ~15.05-15.95 — continued post-FOMC calm, not a stale repeat (L-002 checked).
+- Today's catalysts: **Meta Connect 2026 (Sept 23-24)** is the dominant single-stock event; **Trump-Xi summit prep / US-China negotiations** and **easing Iran-oil risk** are the macro drivers; **Flash Manufacturing PMI** (consensus ~53.5) releases today. Financials weak (~-2%) on Meta-Muse insurance/banking-disruption chatter; semis outperforming.
+- Econ calendar: No CPI/PPI/FOMC today (FOMC already delivered its 25bp hike Sept 17). Next CPI Oct 14, PPI Oct 15, jobs report (NFP) Oct 2, next FOMC Oct 28.
+- Earnings today (BMO): General Mills (GIS), Cracker Barrel (CBRL), Paychex (PAYX), Cintas (CTAS), Manchester United (MANU) — none held or watchlist names.
+- Sector momentum YTD: Energy #1 (~+38-42%), Technology #2 (~+30-36%), Materials #3 (~+11-12%) — unchanged ranking. Consumer Discretionary (~-5.9%) and Utilities (~-5.1%) weakest.
+- Held tickers:
+  - **CVX** (95 sh, entry $193.860947): current $204.3458, unrealized +5.41% (recovered from Sept 18's read as oil eased then rebounded intraday-to-intraday). No fresh Sept 23-dated catalyst; Venezuela $7B expansion, Goldman $240 PT (Sept 17), Vietnam partnership prep, Microsoft power deal all recycled. Thesis intact, well below +15% tighten. Trailing stops GTC 7f5acb83/e328a200 confirmed resting, stop $196.002, HWM $217.78. No action.
+  - **ECL** (70 sh, entry $281.93): current $276.22, unrealized -2.03%. No fresh Sept 23-dated catalyst for a buy thesis; today's news is entirely the Oct 27 Q3 earnings date announcement (forward event) plus recycled Q2 beat/insider-buy/investor-day items. Thesis intact, nowhere near -7% cut. Trailing stop GTC 64b1066c confirmed resting, stop $265.797, HWM $295.33. No action.
+  - **ET** (900 sh, entry $21.68): current $20.53, unrealized -5.30% — closer to the -7% cut than any prior session logged but not yet triggered. No fresh Sept 23-dated catalyst; TXSE listing move (Oct 5, forward), Capital One/Melius initiations, recycled Q2 DCF growth/distribution-increase coverage. Thesis intact, ordinary consolidation/oil-linked pressure. Trailing stop GTC f900c3f3 confirmed resting, stop $19.64601, HWM $21.8289. **Watch closely at midday — within ~2pts of the -7% manual cut.**
+- None of the three held positions have crossed the +15%/+20% tighten thresholds. ET is the one to watch for the -7% cut.
+
+### Lessons Check
+- L-021 (verify analyst PT/rating actions have a dated source) — complied: Goldman's $240 CVX PT traced to a Sept 17-dated report; Rosenblatt's SNDK $2,400 PT and SNDK's S&P 100 inclusion both carried dated citations in today's pull.
+- L-022 (monitor 15% chase-risk threshold for false positives) — not applicable; no new entry has been admitted under the threshold since it was added Sept 18, nothing to report.
+- L-023 (monitor loosened stall-breaker liquidity floor) — not applicable; today's refresh (below) used the standard floor, no loosened-floor name was needed.
+- L-024 (track deployment below 75-85% band) — see Account section above; 6th consecutive session below band, exceeds the 2-session grace period, flagged for weekly-review escalation consideration. Gate genuinely found nothing each session (documented), not inattention.
+- L-020 (partial TRADE-LOG gap) — superseded in spirit by today's full 2-session gap (Sept 21-22), logged separately above as a new gap category, not a partial one.
+
+### Yesterday's Skip Check (vs Decision Scoreboard open rows, via `bars` — comparing Sept 22 close to each row's Ref close; covers the Sept 16 row's first full read since the Sept 18 log given the 2-session gap)
+GEV +7.78% (951.085 vs 882.43 Ref) — crossed the +3% missed threshold, 5th session in. BE +6.65% (276.45 vs 259.21 Ref) — crossed the +3% missed threshold, 5th session in. MU +18.14% (1095.47 vs 927.30 Ref) — sharply past the +3% missed threshold, 5th session in, now also past META's realized-reaction discussion point below. All three were passed over for lacking a same-day-dated catalyst on their Sept 16 refresh date; all three now tracking strongly toward "missed" for the upcoming weekly review.
+
+### Stall-Breaker
+**FIRED** — sessions-since-last-refresh = 4 (Sep 17, 18, 21, 22) >= 3-session re-arm trigger.
+- **DROPPED** (no today-dated catalyst, 5+ sessions stale, no hard-dated event within 5 sessions): **NEE** (analyst downgrade only, Dominion-merger items all recycled), **COP** (oil-beta only, no company-specific item since CEO transition), **VLO** (Jefferies downgrade to Hold, no buy catalyst, next earnings Oct 22 — outside 5-session window), **PARR** (Laramie sale/buyback/Q2 beat all recycled from Aug-Sept).
+- **KEPT** (hard-dated event within 5 sessions): **UEC** (FY2026 results + call Sept 29 — 4 sessions out), **MU** (fiscal Q4 earnings Sept 30 — 5 sessions out).
+- **KEPT** (has a today-dated item, though thin): **GEV** (GE Vernova announced Egyptian gas-turbine servicing today — real and dated, but a routine services contract, not treated as gate-clearing on materiality grounds; also already +7.78% since Ref).
+- **DROPPED** (S&P 500 inclusion effective Sept 21, now fully realized/priced in, no fresh angle): **BE**.
+- **ADDED** (broadened Energy + Technology screen, per L-013's 3rd-sector allowance not needed — top-2 sufficed): **META** (Technology — Meta Connect 2026 keynote today/tomorrow, a genuine hard-dated event catalyst; Citi Buy/$800 PT and Wells Fargo $796 PT reiterated ahead of it), **SNDK** (Technology — Rosenblatt Buy initiation/$2,400 PT citing AI-driven NAND demand, plus S&P 100 inclusion), **CEG** (Energy — nuclear/AI-power-demand sector coverage, no fresh dated item yet, added for coverage per the broadened screen).
+- Cross-checked all three adds via `alpaca.sh quote`/`bars`: META ap $777.53 (Ref close $736.595), SNDK ap $1972.95 (Ref close $1886.32), CEG ap $276.65 (Ref close $263.445). Pre-market spreads on all three are wide (bp well below ap) — normal for ~9:20am ET illiquidity, to be re-checked at actual open.
+- Refreshed watchlist: **UEC, MU, GEV, META, SNDK, CEG.**
+
+### Watchlist Catalyst Scan (post-refresh: UEC, MU, GEV, META, SNDK, CEG)
+- **UEC** — no fresh Sept 23-dated item; FY2026 results/call Sept 29 is the clear near-term catalyst but is a forward event, not today's. Does not clear today's gate.
+- **MU** — no fresh Sept 23-dated item; fiscal Q4 earnings Sept 30 is forward. AI/HBM-tightness commentary remains general-sector, not MU-specific dated news. Does not clear today's gate.
+- **GEV** — today's Egyptian gas-turbine servicing announcement is dated today but is a routine, immaterial services contract, not the kind of specific catalyst the gate is meant for. Does not clear today's gate.
+- **META** — Meta Connect 2026 keynote is today, a genuine hard-dated event catalyst with analyst PT support (Citi $800, Wells Fargo $796). However: (1) the stock has already rallied ~+10.8% from Sept 18's $664.87 close to Sept 22's $736.595 close pre-event — most of the pre-event optimism looks priced in; (2) event-day binary risk (a "sell the news" reaction is common after a hyped keynote); (3) pre-market spread is wide. Chase/event risk, not a clean entry — does not clear today's gate for a same-day market order.
+- **SNDK** — Rosenblatt initiation and S&P 100 inclusion are real but not clearly dated to today specifically in today's pull (recycled from the initial inclusion/initiation news); RSI flagged as overbought (~81) in cited commentary. Does not clear today's gate.
+- **CEG** — no fresh Sept 23-dated item; general nuclear/AI-power-demand sector coverage only. Does not clear today's gate.
+
+### Trade Ideas
+1. **META** — HOLD; genuine today-dated event catalyst (Connect keynote) but already ran +10.8% into it pre-event and carries binary post-event risk. Hypothetical setup for tracking: entry ~$740, stop ~$680 (recent swing low, -8.1%), target ~$860 (2:1). Re-evaluate post-event reaction (midday/tomorrow) rather than buying into the keynote itself.
+2. **UEC / MU** — No entry; both have genuine, hard-dated near-term catalysts (Sept 29/Sept 30 earnings) but neither is today's event — logged as watch items into their respective dates.
+3. **GEV / SNDK / CEG** — No entry; no catalyst clears the gate for any (GEV's is real but immaterial; SNDK's and CEG's are undated/recycled).
+
+### Risk Factors
+- **Meta Connect 2026 (today/tomorrow)** — the dominant single-stock catalyst of the day; META not held, watching for a post-event tell on AI-hardware sentiment that could spill into broader Technology-sector momentum names (MU, SNDK).
+- **Oil down sharply from Sept 18** (WTI ~$90.9 vs ~$101, Brent ~$99 vs ~$103) on eased Iran risk — a genuine tailwind reversal for CVX/ET (held); watch ET closely given it's already at -5.30%, closest of the three to the -7% manual cut.
+- **6th consecutive session below the 75-85% deployment band** — flagged above for weekly-review escalation per L-024; today's gate again found nothing gate-clearing (META's event risk, GEV's immateriality, UEC/MU's forward-dated earnings).
+- **2-session automation gap (Sept 21-22)** — no research/trade logs exist for those sessions; live Alpaca state confirms no trades executed and no position changes, but the gap itself is a process failure to raise at the next weekly review.
+- **Skip-scoreboard now 3-for-3 "missed"-tracking** on the Sept 16 row (GEV +7.78%, BE +6.65%, MU +18.14%), all three passed over for lacking a same-day catalyst — a continuing pattern for the weekly review to weigh.
+- CVX (held): unrealized +5.41%, nowhere near -7% cut or +15%/+20% tighten; stop resting ($196.002, HWM $217.78). No action.
+- ECL (held): unrealized -2.03%, nowhere near the -7% cut; stop resting ($265.797, HWM $295.33). No action.
+- ET (held): unrealized -5.30%, ordinary consolidation but closest of the three to the -7% cut; stop resting ($19.64601, HWM $21.8289). No action yet — re-check at midday.
+
+### Decision
+**HOLD.** No trade today. Stall-breaker FIRED (dropped NEE, COP, VLO, PARR, BE; added META, SNDK, CEG; kept UEC, MU, GEV) — refreshed watchlist: UEC, MU, GEV, META, SNDK, CEG. META's Connect-keynote catalyst is genuine and hard-dated but already largely priced in (+10.8% pre-event) with binary post-event risk — not a clean same-day entry; UEC and MU both have real forward-dated earnings catalysts (Sept 29/30) but nothing today; GEV's today-dated news is real but immaterial; SNDK and CEG have no fresh dated item. CVX, ECL, and ET (held) all require no action today — theses intact, all stops resting; ET (-5.30%) is the one to watch closely at midday, closest of the three to the -7% manual cut as oil has pulled back sharply since Sept 18. Deployment (57.97%) remains below the 75-85% band for a 6th straight session, flagged for weekly-review escalation per L-024. A 2-session automation gap (Sept 21-22, no logs) is flagged for weekly-review follow-up; live Alpaca state confirms no trades were missed/executed during the gap. Re-evaluate all positions and the refreshed watchlist at midday and EOD.

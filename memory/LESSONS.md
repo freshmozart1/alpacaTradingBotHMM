@@ -234,3 +234,6 @@ than 10 sessions are pruned.
 | 2026-09-16 | GEV | HOLD — stall-breaker refresh add (Energy), AI/data-center power demand, Q2 orders +88% YoY, $176B backlog, Jefferies flags potential Q3 beat-and-raise, no fresh Sept 16-dated catalyst | 882.43 | | |
 | 2026-09-16 | BE | HOLD — stall-breaker refresh add (Energy), S&P 500 addition effective Sept 21 but announced Sept 4 (12 sessions stale), price down -6.0% since, no bullish reaction | 259.21 | | |
 | 2026-09-16 | MU | HOLD — stall-breaker refresh add (Technology), Sept 30 earnings/Citi Upside Catalyst Watch on H2 DRAM pricing, no fresh Sept 16-dated catalyst | 927.30 | | |
+| 2026-09-23 | META | HOLD — stall-breaker refresh add (Technology), Meta Connect 2026 keynote today/tomorrow is a genuine hard-dated event catalyst but already +10.8% pre-event (Sept 18->22 close) with binary post-event risk, no clean same-day entry | 736.595 | | |
+| 2026-09-23 | SNDK | HOLD — stall-breaker refresh add (Technology), Rosenblatt Buy initiation/$2,400 PT + S&P 100 inclusion, no fresh Sept 23-dated item, overbought (RSI ~81) per cited commentary | 1886.32 | | |
+| 2026-09-23 | CEG | HOLD — stall-breaker refresh add (Energy), nuclear/AI-power-demand sector coverage, no fresh Sept 23-dated catalyst | 263.445 | | |
