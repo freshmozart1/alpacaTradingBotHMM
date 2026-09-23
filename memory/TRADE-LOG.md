@@ -1383,3 +1383,19 @@ No positions yet. Bot launches tomorrow.
 **Held position check:** CVX unrealized +5.41%, current $204.3458 vs entry $193.860947 — no thesis break, Venezuela/Vietnam/Goldman-PT tailwinds intact per pre-market research, well below the +15% tighten trigger. ECL unrealized -2.03%, current $276.22 vs entry $281.93 — thesis intact, today's only news is the Oct 27 Q3 earnings date (forward), nowhere near the -7% cut. ET unrealized -5.30%, current $20.53 vs entry $21.68 — thesis intact (TXSE listing move Oct 5, Capital One/Melius initiations), ordinary consolidation as oil pulled back sharply since Sept 18, but closest of the three to the -7% manual cut — watch closely at midday. Trailing stops confirmed resting unchanged: CVX $196.002/HWM $217.78 (both legs), ECL $265.797/HWM $295.33, ET $19.64601/HWM $21.8289. No action on any held position.
 
 **Gate check on new entries:** Per today's pre-market research (#179; stall-breaker FIRED), watchlist is UEC/MU/META/TXN/XOM/LNG. Decision was HOLD — no trade idea cleared the gate to reach hard-check: META's Connect-keynote catalyst is real and hard-dated but already +10.8% pre-event with binary post-event risk (no clean same-day entry); UEC/MU have genuine forward-dated earnings (Sept 29/30) but nothing today; TXN/XOM/LNG lack a fresh Sept 23-dated item. No planned trade exists to hard-check; nothing to run through STEP 4-8 execution, no gate-rejection rows needed. Trades this week remain at 0/3 used (Week 12, Sep 21-25 — Mon/Tue untracked due to the automation gap, no trades occurred those days per live state). No ClickUp notification sent (no trade placed/confirmed).
+
+### Sep 23 — Midday Scan (Day 57, Wednesday) — no action
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +6.49% (+$1,194.30), current $206.4325 vs entry $193.860947 (intraday +1.99% vs lastday $202.41); ECL 70 sh, unrealized -2.03% (-$399.70), current $276.22 vs entry $281.93 (position feed shows 0.00% intraday; today's bar last $276.07, range $273.73-$276.40 — flat, ≈ -2.1% unrealized); ET 900 sh, unrealized -4.73% (-$922.50), current $20.655 vs entry $21.68 (intraday +1.25% vs lastday $20.40). 4 open orders confirmed resting, all unchanged from this morning: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; ET trailing stop GTC f900c3f3 (900 sh), stop $19.64601, HWM $21.8289.
+
+**STEP 3 (cut losers):** N/A — CVX +6.49%, ECL -2.03%, ET -4.73%, none at the -7% cut. ET improved from -5.30% at market-open. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.49%). No stops changed.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +1.99% intraday, Venezuela/Vietnam/Goldman-PT tailwinds intact. ECL — no thesis-breaking news; flat intraday (bar $276.07), Oct 27 Q3 earnings date only news. ET — no thesis-breaking news; +1.25% intraday bounce, TXSE listing/initiation thesis intact. No action on any position.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest CVX +1.99%, consistent with oil rebound).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stop orders unchanged in stop level and HWM, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
