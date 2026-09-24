@@ -1434,3 +1434,19 @@ No positions yet. Bot launches tomorrow.
 - XOM — Angola Block 15 discovery / Joliet refinery pump issue, both undated; mixed. Excluded.
 - LNG — CCL Stage 3 / 5,000th cargo recycled; QatarEnergy contract talk is chatter. Excluded.
 No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected). Week 12 (Sep 21-25) 0/3 trades used; 17th consecutive no-trade session. No ClickUp trade notification (no trade placed/confirmed).
+
+### Sep 24 — Midday Scan (Day 58, Thursday) — no action
+
+**Account:** 3 open positions — CVX 95 sh, unrealized +7.32% (+$1,348.91), current $208.06 vs entry $193.860947 (intraday +1.24% vs lastday $205.51); ECL 70 sh, unrealized -2.75% (-$543.20), current $274.17 vs entry $281.93 (intraday -0.92% vs lastday $276.72); ET 900 sh, unrealized -4.98% (-$972.00), current $20.60 vs entry $21.68 (intraday +0.54% vs lastday $20.49). 4 open orders confirmed resting, all unchanged from this morning: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; ET trailing stop GTC f900c3f3 (900 sh), stop $19.64601, HWM $21.8289.
+
+**STEP 3 (cut losers):** N/A — CVX +7.32%, ECL -2.75%, ET -4.98%, none at the -7% cut (ET trigger ~$20.16). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +7.32%). No stops changed.
+
+**STEP 5 (thesis check):** CVX — no thesis-breaking news; +1.24% intraday on oil rebound (WTI ~$94.5 per pre-market WebSearch). ECL — no thesis-breaking news; -0.92% intraday drift, Oct 27 Q3 earnings / Oct 15 dividend only items. ET — no thesis-breaking news; +0.54% intraday, TXSE listing (Oct 5) / Oct 1 terminal-expansion thesis intact. No action on any position.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest CVX +1.24%, consistent with oil rebound).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stop orders unchanged in stop level and HWM, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
