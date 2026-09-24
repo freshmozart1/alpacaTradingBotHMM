@@ -1410,3 +1410,27 @@ No positions yet. Bot launches tomorrow.
 | ET | 900 | $21.68 | $20.4959 | +0.47% | -$1,065.69 (-5.46%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
 
 **Notes:** 16th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23) since the Sep 1 ET buy — Sep 21/22 unlogged (automation gap) but live Alpaca state confirms no trades those days. Week 12 (Sep 21-25) 0/3 weekly trades used. Day P&L measured vs Alpaca last_equity $98,415.24 (Sep 22 close) since no Sep 22 EOD snapshot exists; vs the last logged EOD (Sep 18, $99,269.19) equity is -$438.14 (-0.44%) across three sessions. Today broad green: CVX +1.53% (oil rebound, +6.01% unrealized, below +15% tighten), ECL +0.18% (-1.85% unrealized), ET +0.47% (-5.46% unrealized — closest to the -7% manual cut, ~$20.16 trigger; watch). Phase P&L -$1,168.95 (-1.17%) vs $100,000 start, 4th straight negative reading. 3 open positions, 58.02% deployed / 41.98% cash — 6th consecutive session below the 75-85% band (L-024 escalation pending weekly review). No tighten/cut thresholds crossed; all 4 GTC stops unchanged, no fills. No trades placed today — stall-breaker fired pre-market but no idea cleared the buy-side gate.
+
+### Sep 24 — Market-Open Check (Day 58, Thursday) — no new trade
+
+**Pre-market gap:** No Sep 24 pre-market RESEARCH-LOG entry exists (pre-market routine did not run/persist — last commit is the Sep 23 EOD, `eac5171`). Per market-open STEP 1, pre-market STEPS 1-3 were run inline here. L-020 check: Sep 23 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no retroactive gap note needed for the prior session.
+
+**Account:** Equity $99,088.49 | Cash $41,490.89 (41.87%) | 3 open positions (CVX 95 sh, ECL 70 sh, ET 900 sh), 4 open orders (2x CVX trailing stop GTC 7f5acb83/e328a200, 1x ECL 64b1066c, 1x ET f900c3f3), all confirmed resting via `alpaca.sh orders`/`positions`. Deployment 58.13% (position market value $57,597.60) — 7th consecutive session below the 75-85% band (L-024 escalation already raised, pending Sept 25 weekly review). `balance_asof` `2026-09-23` (one session behind, pre-open pull) — provisional/live-pulled per Operational Rules. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** CVX +7.02% ($207.46 pre-open vs $193.860947) — thesis intact (oil rebound, RBC PT $230 dateless per L-021), below +15% tighten. ECL -1.87% ($276.67) — thesis intact, Oct 27 Q3 earnings/$0.73 dividend (payable Oct 15) only items. ET -5.07% ($20.58) — thesis intact (TXSE move Oct 5, Oct 1 terminal-expansion completion forward-dated), not at -7% cut (~$20.16). Stops unchanged: CVX $196.002/HWM $217.78, ECL $265.797/HWM $295.33, ET $19.64601/HWM $21.8289. No action.
+
+**Inline research (Perplexity; first parallel batch hit 429 rate-limits, re-run sequentially):**
+- Oil: Perplexity WTI $90.87 / Brent $100.17 — **exact repeat of Sep 23 logged values → flagged suspect** (macro-print rule); cross-checked via bars: USO $144.06 → $148.84 (Sep 23, +3.3%), pre-open ~$150.8; XLE $61.77 → $62.38, pre-open ~$63.0 — oil rebounding, Perplexity print stale, discounted.
+- VIX: Perplexity returned intraday timestamps (11:01 AM / 12:17 PM ET) that postdate the query time (~9:20 AM ET) — fabricated/stale, discounted. Last confirmed close 14.21 (Sep 22).
+- SPY: $767.93 Sep 23 close (-0.71%), pre-open ~$763.2 (-0.6%). ES ~7,826 (Perplexity, unverified).
+- Calendar: initial claims 8:30, new home sales 10:00, KC Fed 11:00, Fed speakers, Trump-Xi headlines. No CPI/PPI/FOMC. BMO earnings: SNX, JBL, DRI, BXMT, BB (none held/watchlist); COST AMC.
+- Regime (HMM): not re-run (pre-market STEP 3.5 is outside STEPS 1-3); last read Bull 96.16% (Sep 23).
+
+**Gate check on new entries (watchlist UEC/MU/META/TXN/XOM/LNG):** No planned trade — nothing reached hard-check:
+- META — Connect keynote (Sep 23) reaction only +1.00% ($736.595 → $744.04 close); +11.9% since Sep 18 pre-event. Muse PT raises (Wells $796, KeyCorp $900, Cantor $860, JPM $820) dateless per L-021, excluded. Pre-open quote spread too wide ($708.75/$784.74) to validate. No clean entry.
+- MU — Sept 30 earnings (forward); Citi $1,300 / Wells $1,400 PT actions dateless per L-021; Burry short disclosure a headwind.
+- UEC — Sept 29 FY results (forward), nothing today.
+- TXN — dividend hike dated Sep 17 (5 sessions stale); Zacks downgrade to Hold. Excluded.
+- XOM — Angola Block 15 discovery / Joliet refinery pump issue, both undated; mixed. Excluded.
+- LNG — CCL Stage 3 / 5,000th cargo recycled; QatarEnergy contract talk is chatter. Excluded.
+No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected). Week 12 (Sep 21-25) 0/3 trades used; 17th consecutive no-trade session. No ClickUp trade notification (no trade placed/confirmed).
