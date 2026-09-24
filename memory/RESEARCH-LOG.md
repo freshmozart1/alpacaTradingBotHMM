@@ -3050,3 +3050,57 @@ GEV +7.78% (951.085 vs 882.43 Ref, 2026-09-16 row) — extending further past th
 
 ### Decision
 **HOLD.** No trade today — stall-breaker fired and the watchlist was substantially refreshed (dropped NEE/COP/VLO/PARR/BE/GEV; kept UEC/MU for hard-dated earnings; added META/TXN/XOM/LNG), but none of the four new adds has a confirmed today-dated bullish catalyst yet (META's Connect keynote is today but the stock has already run +10.8% pre-event; XOM/LNG lack a single fresh dated item). CVX/ECL/ET (held) all require no action — theses intact, no thesis breaks, all stops resting; ET (-5.30%) is the closest to the -7% cut and warrants close attention at market-open/midday but is not there yet. Two items escalate per STEP 5: (1) the full Sept 21-22 operational gap — flagging for weekly-review root-cause and a possible new binding lesson, and (2) L-024's deployment-below-band trigger, now 6 consecutive sessions with the gate genuinely finding nothing (not inattention). Week 12 (Sept 21-25) remains 0/3 weekly trades used with 3 sessions remaining (today, Thu, Fri). Re-evaluate all positions, the refreshed watchlist, and META's post-keynote reaction at market-open and midday.
+
+## 2026-09-24 — Pre-market Research
+
+### Account
+- Equity: $99,088.49 | Cash: $41,490.89 (41.87%) | Buying power: $327,236.84 (margin, effective) | `balance_asof` 2026-09-23 (current, settled).
+- Position market value: $57,597.60 (CVX 95 sh, ECL 70 sh, ET 900 sh) — **58.13% deployed**. 4 open orders (2x CVX, 1x ECL, 1x ET trailing stop GTC), all confirmed resting, stops/HWMs unchanged (CVX $196.002/HWM $217.78, ECL $265.797/HWM $295.33, ET $19.64601/HWM $21.8289).
+- Day P&L (premarket mark): +$262.75 (+0.27%) vs last_equity $98,825.74.
+- Daytrade count: not returned on pull; no day trades this challenge. Day 58, Thursday, Week 12 (Sep 21-25), 0/3 weekly trades used.
+- No-trade streak: 16 consecutive sessions (through Sep 23 EOD). Sessions since last refresh (Sep 23): 1.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 96.25%** (500 obs, 75 days in regime). Advisory only.
+- Held: CVX $207.46 (+7.02%), ECL $276.67 (-1.87%), ET $20.58 (-5.07%). None at +15%/+20% tighten or -7% cut (ET cut trigger ~$20.16).
+
+### Market Context
+- WTI/Brent: Perplexity returned **WTI $90.87 / Brent $100.17 — exact repeat of Sep 23's logged values → flagged SUSPECT (stale print)**. Cross-checked: WebSearch (CNBC/The National, Sep 24) shows **WTI ~$94.5 (+2.6%), Brent ~$105-106 (+2-3%)** — rebound as US-Iran talks in NY stalled, Pezeshkian UNGA speech (Hormuz restrictions while sanctions stay). Bars confirm: USO $144.06 → $148.84 (+3.3%) and XLE $61.77 → $62.38 (+1.0%) on Sep 23. Operative read = WebSearch/bars, not Perplexity. Brent dispersion ~6% (<10%, L-005 rule not triggered beyond the stale-print check).
+- S&P 500 futures: ~7,837 (+0.05%), flat. SPY closed $767.93 Sep 23 (-0.71%).
+- VIX: ~15.0-15.2 (Cboe 15.18) — up from ~14.2 Sep 23; not a repeat print.
+- Today's catalysts: initial jobless claims 8:30 ET, new home sales 10:00 ET, Fed speakers, 1:00 ET Treasury auction, Trump-Xi summit headline risk, oil rebound / Iran, Meta Connect day 2.
+- Econ calendar: no CPI/PPI/FOMC today. Durable goods Sep 25, NFP Oct 2, CPI Oct 14, FOMC Oct 28.
+- Earnings BMO: SNX, JBL, DRI, BXMT, BB. COST after close. None held/watchlist.
+- Sector momentum YTD (today's read): Energy #1 (~+39.5%), Technology #2 (~+35.7%), Materials #3 (~+10.9%); weakest Cons Disc (-7.3%), Utilities (-6.9%), **Comm Services (-4.4%)**. Figures lower than Sep 23's read (different source) but ranking unchanged.
+- Held tickers:
+  - **CVX**: oil rebound tailwind; RBC PT to $230 (dateless — L-021, not needed, held name), CFO says elevated oil may persist, ~50% exploration-spend increase next year. Thesis intact. No action.
+  - **ECL**: no fresh catalyst; $0.73 div payable Oct 15, Oct 27 Q3 earnings (forward); Erste cut FY27 EPS est. (mild negative, dateless). Thesis intact. No action.
+  - **ET**: $1.75B junior sub notes due 2057 priced (financing, not thesis-breaking); TXSE listing Oct 5; Capital One OW $26 / Melius Hold $25 (recycled). Oil rebound supportive. -5.07%, watch the ~$20.16 cut level at market-open/midday. No action.
+
+### Lessons Check
+- L-020 (partial TRADE-LOG gap) — Sep 23 has Market-Open, Midday, EOD all logged. Complied, no gap.
+- L-021 (dated source for PT actions) — META PT raises checked: KeyBanc $780→$900 and Cantor $680→$860 **dated Sep 23** (24/7 Wall St 2026/09/23 + Stocktwits/Benzinga — 2 independent outlets). Wells Fargo $796 / JPM $820 undated → "dateless, excluded". CVX RBC $230 / ECL Erste cut: dateless, excluded. Complied.
+- L-022 (15% chase-risk bar) — no entry admitted yet. META realized move since Sep 18 close = +11.9% ($664.87 → $744.04), Sep 23-dated reaction +1.0% — both below 15%. Would be the first entry in the 5-15% band if executed; monitor post-entry. Complied.
+- L-023 (loosened liquidity floor) — no refresh today, no loosened-floor names. N/A, complied.
+- L-024 (deployment tracking) — 58.13%, 7th consecutive session below 75%. Already escalated Sep 23. Today's META idea (~$18.6k) would lift deployment to ~77% — the gate has a candidate, so no fresh escalation. Complied.
+
+### Yesterday's Skip Check
+Via `bars` (Sep 23 close vs Ref; `quote` again showing wide premarket spreads, e.g. MU bid/ask 1023.57/1134.19): META +1.01%, TXN +0.44%, XOM +1.64%, LNG +0.27%, MU +15.62% — plus older open rows GEV +7.84%, BE +6.14%. Sep 23 adds flat-to-modestly-up — skips look right so far; MU/GEV/BE continue tracking "missed".
+
+### Stall-Breaker
+Not armed (sessions since last refresh = 1 < 3; refreshed Sep 23). Watchlist carried: UEC, MU, META, TXN, XOM, LNG.
+
+### Trade Ideas
+1. **META — FLAG for market-open re-validation.** Catalyst: Connect 2026 (Sep 23-24) + Muse AI agent launch (#1 US free app) + KeyBanc $900 / Cantor $860 PT raises dated Sep 23, confirmed by 2 outlets (within prior-2-session window). Realized reaction +1.0% on the dated day, +11.9% since Sep 18 (<15% chase bar). Entry ~$745 / stop ~$670 (10% trail) / target ~$895 (2:1). Size ~25 sh (~$18.6k, ~18.8% equity, < cash). Caveats for market-open: sector classification — META is GICS Comm Services (-4.4% YTD, weak), not Technology; treat as AI/Tech-momentum play only if market-open confirms follow-through; reject if it gaps >+5% or fades below $735. Ex-div/analyst check at entry per gate.
+2. **XOM** — No entry. Oil rebound (+2.6% WTI) and Angola Block 15 discovery (undated) constructive, Joliet refinery flood issue a negative; no fresh Sep 24-dated company catalyst.
+3. **UEC / MU** — No entry; Sep 29 / Sep 30 earnings still forward. MU +15.6% vs Ref pre-earnings — chase-risk watch.
+- TXN (dividend hike dated Sep 17, 5 sessions stale), LNG (Qatar contract talk = chatter, CCL Stage 3 recycled): no fresh catalyst.
+
+### Risk Factors
+- Oil whipsaw: -10% over Sep 18-22, now rebounding on stalled US-Iran talks — Energy book (CVX, ET) exposed both ways; Hormuz headline risk.
+- ET -5.07%, ~1.9% above the -7% manual cut.
+- Trump-Xi summit headlines; VIX up to ~15.2.
+- Perplexity stale oil print recurred (exact repeat) — continue treating macro prints as suspect until cross-checked.
+- META: single-name event risk on Connect day 2; sector-momentum mismatch (Comm Services weak YTD).
+- Perplexity rate-limited (429) on parallel burst; sequential retry succeeded, no WebSearch fallback needed except oil/META cross-checks.
+
+### Decision
+**HOLD pre-market; META flagged for market-open hard-check** (only idea with a dated, two-source catalyst under the 15% chase bar). All held positions: no action, stops resting. Week 12: 0/3 trades used, 2 sessions left.
