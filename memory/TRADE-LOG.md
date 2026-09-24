@@ -1450,3 +1450,14 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stop orders unchanged in stop level and HWM, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 24 — EOD Snapshot (Day 58, Thursday)
+**Portfolio:** $98,627.54 | **Cash:** $41,490.89 (42.07%) | **Day P&L:** -$203.51 (-0.21%) | **Phase P&L:** -$1,372.46 (-1.37%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $205.65 | +0.07% | +$1,119.96 (+6.08%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $275.37 | -0.49% | -$459.20 (-2.33%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| ET | 900 | $21.68 | $20.36 | -0.63% | -$1,188.00 (-6.09%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
+
+**Notes:** 17th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23, 24) since the Sep 1 ET buy. Week 12 (Sep 21-25) 0/3 weekly trades used. Day P&L measured vs the Sep 23 logged EOD ($98,831.05); Alpaca last_equity $98,825.74 (-$198.20 on that basis). Mild red day: CVX gave back its +1.24% midday gain to close flat (+0.07%, +6.08% unrealized, below +15% tighten); ECL -0.49% (-2.33% unrealized); ET -0.63% to $20.36 (-6.09% unrealized) — **within ~$0.20 of the -7% manual cut (~$20.16); market-open must check pre-open quote and cut if at/below trigger**. Phase P&L -$1,372.46 (-1.37%) vs $100,000 start, 5th straight negative reading. 3 open positions, 57.93% deployed / 42.07% cash — 7th consecutive session below the 75-85% band (L-024 escalation pending Sep 25 weekly review). No tighten/cut thresholds crossed; all 4 GTC stops unchanged, no fills. No trades placed today — no watchlist idea cleared the buy-side gate.
