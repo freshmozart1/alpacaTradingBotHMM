@@ -37,9 +37,11 @@ If any fail, the trade is skipped and the reason is logged.
 - Pattern day trader day-trade count leaves room (under 3 on a sub-$25k
   account).
 - A specific catalyst is documented in today's research log entry, dated
-  today OR dated within the prior 2 trading sessions if confirmed by a
+  today OR dated within the prior 5 trading sessions if (a) confirmed by a
   second independent source (WebSearch, or a distinct outlet from the
-  original).
+  original), (b) ./scripts/alpaca.sh bars show the prior session's close
+  above the close immediately before the catalyst date, and (c) the
+  realized reaction is below the 15% chase-risk bar.
 - The instrument is a stock (not an option, not anything else).
 - If the no-trade streak has reached 3+ consecutive sessions (stall-breaker
   armed), the day's pre-market research MUST include a watchlist refresh
@@ -84,6 +86,8 @@ If any fail, the trade is skipped and the reason is logged.
 - A catalyst's already-realized price reaction of 15% or more since its
   own date is chase risk and excluded from the gate; a reaction below 15%
   does not by itself disqualify an otherwise-clearing catalyst.
+  The reaction is measured from the close immediately before the
+  catalyst's own date (not from an earlier pre-event reference).
 
 ## Sell-Side Rules
 
@@ -112,6 +116,10 @@ Evaluated at the midday scan and opportunistically:
   field; if it doesn't match today's date, label the entry explicitly as
   provisional/live-pulled rather than committing it as today's official
   settled EOD close.
+- Before logging the day's first TRADE-LOG entry, verify the previous
+  trading session has all three expected entries (Market-Open, Midday,
+  EOD); if any are missing (partial or full-day gap), log a one-line
+  retroactive gap note rather than letting it pass silently.
 
 ## Rule Changelog
 
@@ -137,3 +145,6 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-09-18 | Buy-Side Gate | (none) -> verify company/project ownership before counting a shared pipeline/JV/multi-company catalyst | Promoted from LESSONS.md L-017 (2026-09-04), complied with every session for 2+ straight weeks (Sept 4-18) with zero fresh misattribution incidents since the original Sept 1 WMB->ET correction. Process addition only, not a risk-rule change. |
 | 2026-09-18 | Buy-Side Gate | (none) -> a stall-breaker sector leg empty 2 consecutive refresh cycles gets its liquidity/market-cap floor loosened on the next refresh | Promoted/generalized from LESSONS.md L-019 (2026-09-11), triggered ahead of its 2026-09-25 review-by: Materials came up empty on both the Sept 11 and Sept 16 refresh cycles (2 consecutive), meeting L-019's own escalation trigger. Process addition only, not a risk-rule change. |
 | 2026-09-18 | Buy-Side Gate | "chase risk" excluded by subjective judgment, no numeric bar -> a catalyst reaction of >=15% already realized is chase risk and excluded; a reaction below 15% does not by itself disqualify an otherwise-clearing catalyst | Escalation per STEP 5 (2nd consecutive zero-new-trade week: Sept 8-11, Sept 14-18). Evidence: GEV's Sept 16-dated Vineyard Wind/Nantucket settlement cleared every other gate check but was excluded citing "the same chase-risk pattern that sidelined CRM/CRWD" despite only a +4.90% realized reaction (Sept 17 close) vs. CRM/CRWD's +20.3%/+22.6% reactions that legitimately justified the Aug 28 chase-risk exclusion — conflating a modest, still-live reaction with an already-blown-out one likely cost a trade this week (GEV extended to +4.82% Sept 17, +8.19%-range peers BE/MU also extending). Process/gate calibration only — trailing stops, the -7% cut, position sizing caps, the 3-trades/week cap, and no-options all remain untouched. Review-by 2026-10-02 (LESSONS.md L-022) to check for false-positive entries admitted under the new 15% bar. |
+| 2026-09-25 | Operational Rules | (none) -> verify the prior session has Market-Open/Midday/EOD TRADE-LOG entries before the day's first entry; log a retroactive gap note if any are missing | Promoted from LESSONS.md L-020 (2026-09-11), complied with every session for 2 straight weeks (Sept 11-25); its check surfaced the full Sep 21-22 automation gap on Sep 23. Process addition only, not a risk-rule change. |
+| 2026-09-25 | Buy-Side Gate | catalyst dated today OR within prior 2 sessions if two-source confirmed -> dated today OR within prior 5 sessions if two-source confirmed AND bars show prior close above the pre-catalyst close AND realized reaction <15% | Escalation per STEP 5 (3rd consecutive zero-new-trade week: Sept 8-11, 14-18, 21-25) and L-024 (deployment 40.29%). Evidence: skip scoreboard 3:0 missed this week (GEV +7.84%, BE +6.14%, MU +15.62%; +29.60% missed vs 0% avoided); GEV's two-source-confirmed Sep 16 Vineyard Wind settlement (+4.9% initial reaction) was dropped Sep 23 as stale while trending to +8.47% by Sep 25. Follow-through and chase-bar conditions keep the widening bounded. Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options untouched. Review-by 2026-10-09 (LESSONS.md L-025). |
+| 2026-09-25 | Buy-Side Gate (clarification) | 15% chase bar "since its own date" (base unspecified) -> measured from the close immediately before the catalyst's own date | Removes ambiguity, not a loosening: META's Sep 25 exclusion used the Sep 18 pre-event close (+16.97%) instead of the Sep 22 pre-catalyst close (+5.58%) for its Sep 23-dated catalyst. Monitored under LESSONS.md L-022/L-026. |
