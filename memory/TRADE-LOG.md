@@ -1461,3 +1461,13 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | ET | 900 | $21.68 | $20.36 | -0.63% | -$1,188.00 (-6.09%) | $19.64601 (10% trail, GTC f900c3f3, HWM $21.8289) |
 
 **Notes:** 17th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23, 24) since the Sep 1 ET buy. Week 12 (Sep 21-25) 0/3 weekly trades used. Day P&L measured vs the Sep 23 logged EOD ($98,831.05); Alpaca last_equity $98,825.74 (-$198.20 on that basis). Mild red day: CVX gave back its +1.24% midday gain to close flat (+0.07%, +6.08% unrealized, below +15% tighten); ECL -0.49% (-2.33% unrealized); ET -0.63% to $20.36 (-6.09% unrealized) — **within ~$0.20 of the -7% manual cut (~$20.16); market-open must check pre-open quote and cut if at/below trigger**. Phase P&L -$1,372.46 (-1.37%) vs $100,000 start, 5th straight negative reading. 3 open positions, 57.93% deployed / 42.07% cash — 7th consecutive session below the 75-85% band (L-024 escalation pending Sep 25 weekly review). No tighten/cut thresholds crossed; all 4 GTC stops unchanged, no fills. No trades placed today — no watchlist idea cleared the buy-side gate.
+
+### Sep 25 — Market-Open Check (Day 59, Friday) — no new trade
+
+**L-020 check:** Sep 24 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no retroactive gap note needed.
+
+**Account:** Equity $98,320.84 | Cash $41,490.89 (42.20%) | 3 open positions (CVX 95 sh, ECL 70 sh, ET 900 sh), 4 open orders (2x CVX trailing stop GTC 7f5acb83/e328a200, 1x ECL 64b1066c, 1x ET f900c3f3), all confirmed resting via `alpaca.sh orders`/`positions`, stops/HWMs unchanged (CVX $196.002/HWM $217.78, ECL $265.797/HWM $295.33, ET $19.64601/HWM $21.8289). Deployment ~57.8% — 9th consecutive session below the 75-85% band (L-024, weekly review today). `balance_asof` `2026-09-24` (pre-open pull). daytrade_count not returned; no day trades this challenge.
+
+**Held position check (09:33 ET, post-open):** CVX $203.80 (+5.13%), ECL $277.46 (-1.59%), **ET $20.275 (-6.48%) — above the -7% cut trigger ($20.1624), no cut**; first bar $20.28. Midday must re-check ET against the trigger. No tighten thresholds crossed. No action.
+
+**Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD — META excluded by 15% chase bar at +16.97%; UEC/MU forward-dated; TXN/XOM/LNG stale). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 12 (Sep 21-25) closes 0/3 trades; 18th consecutive no-trade session. No ClickUp trade notification (no trade placed).
