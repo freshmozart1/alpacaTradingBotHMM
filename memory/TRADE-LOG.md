@@ -1491,3 +1491,13 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** `alpaca.sh positions` → CVX 95 sh, ECL 70 sh only. `alpaca.sh orders` → 3 resting: CVX 7f5acb83/e328a200 (stop $196.002/HWM $217.78), ECL 64b1066c (stop $265.797/HWM $295.33). Account: equity $96,683.47, cash $57,771.89 (~59.8%), deployment ~40.2% — well below 75-85% band (L-024; weekly review today).
 
 **STEP 8 (notify):** ClickUp sent — ET cut.
+
+### Sep 25 — EOD Snapshot (Day 59, Friday)
+**Portfolio:** $96,758.94 | **Cash:** $57,771.89 (59.71%) | **Day P&L:** -$1,868.60 (-1.89%) | **Phase P&L:** -$3,241.06 (-3.24%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $204.45 | -0.58% | +$1,005.96 (+5.46%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $279.49 | +1.50% | -$170.80 (-0.87%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+
+**Notes:** 18th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25) since the Sep 1 ET buy — today's ET cut (see Sep 25 SELL ET entry) was a mechanical -7% exit, not a new entry, so the streak continues. Week 12 (Sep 21-25) closes 0/3 weekly trades used. Day P&L measured vs the Sep 24 logged EOD ($98,627.54); Alpaca last_equity $98,600.54 (-$1,841.60 on that basis). Loss driven by ET: cut at midday, 900 sh @ $20.10, realized -$1,422.00 (-7.29%) — energy's 1st failed trade in sequence (LNG Sep 16 was a win), 2-failure sector exit not triggered. CVX -0.58% (+5.46% unrealized, below +15% tighten); ECL +1.50% (-0.87% unrealized). Phase P&L -$3,241.06 (-3.24%) vs $100,000 start, 6th straight negative reading. 2 open positions, 40.29% deployed / 59.71% cash — far below the 75-85% band (L-024; weekly review today must address redeployment). All 3 remaining GTC stops unchanged, no fills.
