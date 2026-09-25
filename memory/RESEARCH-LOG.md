@@ -3104,3 +3104,57 @@ Not armed (sessions since last refresh = 1 < 3; refreshed Sep 23). Watchlist car
 
 ### Decision
 **HOLD pre-market; META flagged for market-open hard-check** (only idea with a dated, two-source catalyst under the 15% chase bar). All held positions: no action, stops resting. Week 12: 0/3 trades used, 2 sessions left.
+
+## 2026-09-25 — Pre-market Research
+
+### Account
+- Equity: $98,339.34 | Cash: $41,490.89 (42.19%) | Buying power: $325,139.22 (margin, effective) | `balance_asof` 2026-09-24 (current, settled).
+- Position market value: $56,848.45 (CVX 95 sh, ECL 70 sh, ET 900 sh) — **57.81% deployed**. 4 open orders (2x CVX, 1x ECL, 1x ET trailing stop GTC), all confirmed resting, stops/HWMs unchanged (CVX $196.002/HWM $217.78, ECL $265.797/HWM $295.33, ET $19.64601/HWM $21.8289).
+- Day P&L (premarket mark): -$261.20 (-0.26%) vs last_equity $98,600.54.
+- Daytrade count: not returned on pull; no day trades this challenge. Day 59, Friday, Week 12 (Sep 21-25), 0/3 weekly trades used — last session of the week.
+- No-trade streak: 17 consecutive sessions (through Sep 24 EOD). Sessions since last refresh (Sep 23): 2.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97.91%** (500 obs, 76 days in regime). Advisory only.
+- Held (premarket marks): CVX $203.09 (+4.76%), ECL $275.37 (-2.33%), **ET $20.31 (-6.32%)**. None at +15%/+20% tighten. **ET ~$0.15 (0.7%) above the -7% cut trigger ($20.1624)** — market-open must cut if the open prints at/below.
+
+### Market Context
+- WTI/Brent: Perplexity **WTI ~$92.5-93.7, Brent ~$104.9-105.6** — not a repeat of prior logged values; consistent with Sep 24 WebSearch read (WTI ~$94.5, Brent ~$105-106). Bars confirm oil strength through Sep 24: USO $148.84 → $153.14 (+2.9%), XLE $62.38 → $62.61 (+0.4%). Premarket commentary: oil easing modestly this morning.
+- S&P 500 futures: conflicting reads (Investing ~7,794 +0.35%; Yahoo ~7,761 -0.08%; Bloomberg ~7,744) → treat as flat/mixed. SPY closed $767.29 Sep 24 (-0.08%).
+- VIX: Perplexity ~15.0-15.7 but timestamps (11:49 AM-2:29 PM) postdate query time (~9:04 AM ET) → **flagged suspect**; last confirmed range ~15.2 (Sep 24). Not relied on.
+- Today's catalysts: **durable goods 8:30 ET**, **UMich sentiment (final) 10:00 ET**, rising Treasury yields (growth headwind), oil/Iran headlines, Trump-Xi trade backdrop, META post-Connect follow-through, AKAM Anthropic-deal move. COST reports AMC (Sep 24/25 per feeds — not held).
+- Econ calendar: no CPI/PPI/FOMC/jobs today. NFP Oct 2, CPI Oct 13-14 (source conflict), PPI Oct 15, FOMC Oct 28.
+- Earnings BMO: TBN, IPX, USAU, TAYD — none held/watchlist.
+- Sector momentum YTD: **Energy #1 (~+39.6%)**, **Technology #2 (~+27.1%)**, Health Care #3 (~+9.8%), Comm Services ~+6.0% (sign conflicts with Sep 24's -4.4% read — source dispersion, not relied on). Ranking of top-2 unchanged.
+- Held tickers:
+  - **CVX**: >50% exploration-spend increase next year (~20 wells), HSBC PT $250 from $218 (dateless — L-021, held name, not needed for gate), Vietnam partnership (recycled). -1.2% premarket with oil easing. Thesis intact. No action.
+  - **ECL**: BofA Buy, PT $314 from $312 (dateless, excluded); Oct 27 Q3 earnings forward; yield pressure on rate-sensitive names. Thesis intact. No action.
+  - **ET**: raised 2026 EBITDA guidance $18.2-18.6B / distribution $0.3375 (recycled), TXSE listing Oct 5, $1.75B junior notes priced (recycled). No thesis break — weakness is sector/yield pressure. **-6.32% premarket, at the edge of the -7% cut.** Rule is mechanical: cut at/below $20.16 at market-open/midday.
+
+### Lessons Check
+- L-020 (partial TRADE-LOG gap; review-by today) — Sep 24 has Market-Open, Midday, EOD all logged. Complied, no gap. Due for weekly-review disposition today.
+- L-021 (dated source for PT actions) — CVX HSBC $250, ECL BofA $314, MU Citi $1,300/Rosenblatt $1,500/UBS $1,625, META Wells/JPM/Cantor/Loop raises: no explicit first-report date found in aggregated results → "dateless, excluded" (META's KeyBanc/Cantor Sep 23-dated raises already logged Sep 24, now aging). Complied.
+- L-022 (15% chase-risk bar) — **META now excluded**: +4.53% on Sep 24 ($744.04 → $777.73), cumulative **+16.97%** since Sep 18 pre-event close ($664.87) → exceeds 15% bar. MU +16.48% vs Ref pre-earnings (pre-event, noted). No entry admitted. Complied.
+- L-023 (loosened liquidity floor) — no refresh today, no loosened-floor names. N/A, complied.
+- L-024 (deployment tracking) — 57.81%, 8th consecutive session below 75%. Already escalated Sep 23; gate genuinely finding nothing (META chase-excluded, others stale/forward-dated). For weekly-review disposition today.
+
+### Yesterday's Skip Check
+Via `bars` (Sep 24 close vs Ref; `quote` showing wide/after-hours spreads, e.g. META 737.44/812.99): META +5.58%, TXN -0.29%, XOM +2.16%, LNG +1.16%, MU +16.48%, GEV +8.27%, BE +2.82% — META/MU/GEV tracking "missed", TXN/XOM/LNG/BE skip-right so far. Mixed: skips on stale-catalyst names look right; the event-momentum names (META, MU, GEV) keep running.
+
+### Stall-Breaker
+Not armed (sessions since last refresh = 2 < 3; refreshed Sep 23). Watchlist carried: UEC, MU, META, TXN, XOM, LNG.
+
+### Trade Ideas
+1. **META** — No entry. Sep 23-24 Connect/Muse catalyst real, but +16.97% realized since Sep 18 → exceeds the 15% chase-risk bar (L-022). Re-evaluate only on a pullback toward ~$740 with a fresh dated catalyst.
+2. **XOM** — No entry. Petrovietnam crude-supply framework / 2030-31 note tender results (undated in feeds), Angola discovery recycled, Joliet flood negative; no fresh Sep 25-dated catalyst. Earnings ~Oct 9-23 (source conflict).
+3. **UEC / MU** — No entry; Sep 29 / Sep 30 earnings forward. UEC weak (-8.3% Sep 22→24 on nuclear/uranium selloff). MU +16.5% pre-earnings, chase watch.
+- TXN (dividend hike Sep 17, 6 sessions stale), LNG (CCL Stage 3 recycled; Scotiabank $312 dateless; Qatar talks = chatter): no fresh catalyst.
+
+### Risk Factors
+- **ET at -6.32% premarket, ~0.7% above the -7% manual cut** — likely cut at market-open if it opens weak; would drop deployment to ~39.6% and leave 2 positions.
+- Rising Treasury yields pressuring growth/rate-sensitive names (ECL, ET).
+- Oil headline volatility (Iran/Hormuz) — Energy-heavy book (CVX, ET).
+- Durable goods / UMich prints; Trump-Xi headlines.
+- Perplexity VIX timestamps implausible → treat macro prints as suspect until cross-checked.
+- Deployment 57.81%, 8th session below band — weekly review today.
+
+### Decision
+**HOLD.** No trade idea clears the gate — META now over the 15% chase bar, all other watchlist names stale or forward-dated. CVX/ECL: no action. **ET: market-open to cut at/below $20.16 (-7%)** per rule. Week 12 ends 0/3 trades. Weekly review today to dispose L-020/L-024 and weigh META/MU/GEV "missed" pattern.
