@@ -7,6 +7,52 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
+### L-028 — Alert on missing routine commits
+- Date: 2026-09-25 | Source: WEEKLY-REVIEW 2026-09-25 (full Sep 21-22
+  automation gap — zero runs persisted for 2 trading days; Sep 24
+  pre-market landed after market-open started)
+- Lesson: Scheduler/session failures are silent; they only surface when a
+  later run happens to check the logs.
+- Directive: At every pre-market, run `git log` and confirm the prior
+  session's four routine commits (pre-market, market-open, midday, EOD);
+  if any is missing, send one ClickUp alert naming the missing run(s)
+  that same session and note it in the RESEARCH-LOG entry.
+- Status: active | Review-by: 2026-10-09
+
+### L-027 — Force a fully-specified candidate while under-deployed
+- Date: 2026-09-25 | Source: WEEKLY-REVIEW 2026-09-25 (STEP 5 zero-trade
+  process adjustment; deployment ~78% -> 40.29% after LNG/ET exits, 18
+  straight no-trade sessions, L-024 escalation)
+- Lesson: A watchlist without a concrete, sized trade idea produces no
+  entries; exits refilled nothing for 8 sessions.
+- Directive: While deployment is below 75%, every pre-market must flag at
+  least one fully-specified idea (entry/stop/target/size) for market-open
+  hard-check, OR log an explicit per-watchlist-name reason none qualify.
+  Gate still decides; this changes process, not the gate.
+- Status: active | Review-by: 2026-10-09
+
+### L-026 — Measure the 15% chase bar from the pre-catalyst close
+- Date: 2026-09-25 | Source: WEEKLY-REVIEW 2026-09-25 (META Sep 25
+  exclusion measured +16.97% from the Sep 18 pre-event close instead of
+  +5.58% from the Sep 22 close before its Sep 23-dated catalyst)
+- Lesson: Using an arbitrary earlier base double-counts pre-event drift
+  as "reaction" and wrongly trips the chase bar.
+- Directive: In every chase-risk evaluation, log the catalyst date, the
+  base date/close (the close immediately before the catalyst date), and
+  the realized % from that base.
+- Status: active | Review-by: 2026-10-09
+
+### L-025 — Monitor the widened 5-session freshness window for false positives
+- Date: 2026-09-25 | Source: WEEKLY-REVIEW 2026-09-25 (STEP 5 escalation:
+  freshness window 2 -> 5 sessions with two-source + bars follow-through
+  + <15% reaction; evidence 3:0 missed scoreboard, GEV +7.84%)
+- Lesson: A longer window could admit catalysts whose move is already
+  spent.
+- Directive: Tag every entry admitted under the 3-5-session extension in
+  TRADE-LOG; at review, report each one's P&L and whether it hit the -7%
+  cut within 5 sessions. If a false positive occurs, tighten back.
+- Status: active | Review-by: 2026-10-09
+
 ### L-024 — Track deployment following LNG's Sept 16 exit
 - Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (LNG's mechanical
   stop-out cut deployment from ~78.5% to ~58% with no same-week
@@ -19,7 +65,9 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
   for 2 more sessions/reviews without a clear catalyst-driven
   explanation (i.e., the gate genuinely found nothing, not inattention),
   escalate per STEP 5.
-- Status: active | Review-by: 2026-10-02
+- Status: active (escalated 2026-09-23; addressed 2026-09-25 via the
+  freshness-window change + L-027; deployment 40.29% after ET cut) |
+  Review-by: 2026-10-02
 
 ### L-023 — Monitor loosened stall-breaker liquidity floor for false positives
 - Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (companion to the
@@ -62,19 +110,6 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 Template:
 
-### L-020 — Partial TRADE-LOG gap (EOD-only day)
-- Date: 2026-09-11 | Source: WEEKLY-REVIEW 2026-09-11 (Sep 10 has only an
-  EOD Snapshot entry — no Market-Open Check or Midday Scan logged — a
-  distinct failure from L-018's full-day/zero-entries criterion, first
-  flagged for awareness at Sept 11 pre-market)
-- Lesson: A partial gap (EOD-only) is a separate failure mode from a full
-  day gap and won't be caught by L-018's "3rd full-day gap" threshold.
-- Directive: Before logging the day's first TRADE-LOG entry, verify the
-  previous trading session's log has all three expected entries
-  (Market-Open, Midday, EOD); if any are missing, log a one-line
-  retroactive gap note rather than letting it pass silently.
-- Status: active | Review-by: 2026-09-25
-
 ### L-NNN — <short title>
 - Date: YYYY-MM-DD | Source: <WEEKLY-REVIEW date / RESEARCH-LOG date / manual>
 - Lesson: <what was observed>
@@ -83,6 +118,12 @@ Template:
 
 ## Retired Lessons
 
+- L-020, "Partial TRADE-LOG gap (EOD-only day)", retired 2026-09-25,
+  promoted to a permanent Operational Rule (TRADING-STRATEGY.md) after 2
+  straight weeks of compliance (Sept 11-25). Its prior-session check is
+  what surfaced the full Sep 21-22 automation gap on Sep 23; the rule now
+  covers partial and full-day gaps. Commit-level alerting continues under
+  L-028.
 - L-019, "Empty stall-breaker sector leg (any leg, not just Materials)",
   retired 2026-09-18, promoted/generalized to a permanent process rule
   (TRADING-STRATEGY.md Buy-Side Gate) ahead of its 2026-09-25 review-by —
@@ -218,22 +259,15 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-08-28 | WMB | HOLD — stall-breaker refresh add (Energy), no fresh Aug 28-dated catalyst, Hugh Brinson Phase 1 in-service Sept 1 is a forward event only | 74.19 | -0.03% | skip-right |
-| 2026-08-28 | CRM | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat/Anthropic-partnership catalyst confirmed but +22.6% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 252.19 | +2.82% | skip-right |
-| 2026-08-28 | CRWD | HOLD — stall-breaker refresh add (Technology), Aug 26-dated Q2 beat catalyst (+fresh Aug 28 Telkom MoU) confirmed but +20.3% Aug 27 reaction already fully realized, chase risk into weekend gap, no clean entry | 227.99 | -6.55% | avoided-loss |
-| 2026-09-01 | ET | TRADE FLAGGED — stall-breaker refresh re-add (Energy), Hugh Brinson Pipeline Phase 1 full-capacity milestone target-dated today (Sept 1), correctly re-attributed from WMB; entry ~$21.55/stop ~$19.61/target ~$25.43; flagged for market-open re-validation, not yet executed | 21.51 | | |
-| 2026-09-01 | TRGP | HOLD — stall-breaker refresh add (Energy), Permian NGL-export/volume-growth coverage, no fresh Sept 1-dated catalyst | 294.22 | -0.92% | skip-right |
-| 2026-09-01 | AAPL | HOLD — stall-breaker refresh add (Technology), CEO transition to John Ternus effective today but well-telegraphed/orderly, not clearly directional; Sept 9 iPhone event is the more meaningful forward catalyst | 317.14 | -0.54% | skip-right (mechanical +5-session window closed same-day as the Sept 9 event, before its reaction showed up Sept 10-11 — see WEEKLY-REVIEW 2026-09-11 note) |
-| 2026-09-01 | CRH | HOLD — stall-breaker refresh add (Materials, L-013 3-sector screen), Wells Fargo Buy reiterated $135 PT but recycled from a June-dated note, no fresh Sept 1-dated catalyst | 94.33 | -5.29% | avoided-loss |
 | 2026-09-08 | IONQ | HOLD — stall-breaker refresh add (Technology), Investor Day today (Sept 8) is a genuine, hard-dated, gate-clearing catalyst, but blocked purely by the 75-85% deployment cap at 78.68% deployed (L-015) | 39.52 | -6.25% | avoided-loss |
 | 2026-09-08 | NEE | HOLD — stall-breaker refresh add (Energy), Dominion merger shareholder approval/DOE Duane Arnold loan both recycled, no fresh Sept 8-dated catalyst | 83.42 | -2.79% | skip-right |
 | 2026-09-08 | UEC | HOLD — stall-breaker refresh add (Energy), Burke Hollow/Sweetwater/Christensen Ranch coverage all recycled from late Aug, no fresh Sept 8-dated catalyst | 11.515 | -11.51% | avoided-loss |
 | 2026-09-11 | COP | HOLD — stall-breaker refresh add (Energy), 52-week high/+45% YTD momentum, Goldman dividend-energy mention, no fresh Sept 11-dated catalyst | 137.07 | -3.81% | avoided-loss |
 | 2026-09-11 | VLO | HOLD — stall-breaker refresh add (Energy), Zacks top-oil-stock screen, refining-margin momentum, no fresh Sept 11-dated catalyst | 385.37 | +7.18% | missed |
 | 2026-09-11 | PARR | HOLD — stall-breaker refresh add (Energy), high-beta systematic-ranking pick, thin liquidity (~25-45k avg daily volume), no fresh Sept 11-dated catalyst | 83.63 | +0.89% | skip-right |
-| 2026-09-16 | GEV | HOLD — stall-breaker refresh add (Energy), AI/data-center power demand, Q2 orders +88% YoY, $176B backlog, Jefferies flags potential Q3 beat-and-raise, no fresh Sept 16-dated catalyst | 882.43 | | |
-| 2026-09-16 | BE | HOLD — stall-breaker refresh add (Energy), S&P 500 addition effective Sept 21 but announced Sept 4 (12 sessions stale), price down -6.0% since, no bullish reaction | 259.21 | | |
-| 2026-09-16 | MU | HOLD — stall-breaker refresh add (Technology), Sept 30 earnings/Citi Upside Catalyst Watch on H2 DRAM pricing, no fresh Sept 16-dated catalyst | 927.30 | | |
+| 2026-09-16 | GEV | HOLD — stall-breaker refresh add (Energy), AI/data-center power demand, Q2 orders +88% YoY, $176B backlog, Jefferies flags potential Q3 beat-and-raise, no fresh Sept 16-dated catalyst | 882.43 | +7.84% | missed |
+| 2026-09-16 | BE | HOLD — stall-breaker refresh add (Energy), S&P 500 addition effective Sept 21 but announced Sept 4 (12 sessions stale), price down -6.0% since, no bullish reaction | 259.21 | +6.14% | missed |
+| 2026-09-16 | MU | HOLD — stall-breaker refresh add (Technology), Sept 30 earnings/Citi Upside Catalyst Watch on H2 DRAM pricing, no fresh Sept 16-dated catalyst | 927.30 | +15.62% | missed |
 | 2026-09-23 | META | HOLD — stall-breaker refresh add (Technology), Connect 2026 keynote today (Sept 23) is a hard-dated event but stock already +10.8% since Sept 18 ahead of it, no post-event reaction yet to confirm | 736.595 | | |
 | 2026-09-23 | TXN | HOLD — stall-breaker refresh add (Technology), 7% dividend hike/Q2 beat/data-center revenue doubled YoY, dividend-hike date not confirmed as today-dated | 271.405 | | |
 | 2026-09-23 | XOM | HOLD — stall-breaker refresh add (Energy), record oil output/revenue + dismissed Michigan climate lawsuit, but pressured by the ~10% oil-price drop this week, no fresh Sept 23-dated catalyst | 158.68 | | |

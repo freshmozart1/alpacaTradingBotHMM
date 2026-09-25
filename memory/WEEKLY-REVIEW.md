@@ -862,3 +862,88 @@ Verdict counts (new rows this week): missed 1, skip-right 2, avoided-loss 3. Tot
 - STEP 5's zero-trade-week process-only requirement satisfied via new lesson L-021 (verify analyst PT/rating actions have a findable dated source before counting/excluding them) — LESSONS.md only, no TRADING-STRATEGY.md change.
 
 ### Overall Grade: C+ (risk management stayed clean — LNG's mechanical stop worked exactly as designed and no position came near a rule breach — but a 2nd consecutive zero-new-trade week, a -1.89% relative gap to a flat S&P, and a genuine "missed" verdict on VLO pinpointed a real, fixable over-tightness in the gate's chase-risk judgment, which this review corrected with a bounded, evidenced numeric threshold)
+
+## Week ending 2026-09-25
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $99,269.19 (Sep 18 EOD) |
+| Ending portfolio | $96,758.94 (live pull; `balance_asof` 2026-09-24, one session lagged per Operational Rules — provisional) |
+| Week return | -$2,510.25 (-2.53%) |
+| S&P 500 week | +1.28% (SPY 761.62 -> 771.35, Sep 18 close -> Sep 25 close via `alpaca.sh bars`, adjustment=all; Perplexity read "+0.7%" was measured through Thursday's close only — cross-checked against SPY ground-truth bars per established methodology) |
+| Bot vs S&P | -3.81% |
+| Trades | 1 closed (W:0 / L:1 / open:0 — ET -7% manual cut); 0 new entries placed (0/3 weekly cap used) |
+| Win rate | 0% (0 of 1 closed trades this week) |
+| Best trade | ET -7.29% (only closed trade) |
+| Worst trade | ET -7.29% (only closed trade) |
+| Profit factor | 0.00 (no winners; losers -$1,422.00) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| ET | $21.68 (900 sh, Sep 1 fill) | $20.10 (Sep 25, avg fill, market sell 84125a7b) | -$1,422.00 (-7.29%) | Cut at -7% per rule at the midday scan (unrealized_plpc -7.24% vs $20.1624 trigger); GTC trail f900c3f3 canceled first to free shares. Gradual multi-session grind (-2.40% Sep 18 -> -5.30% Sep 23 -> -6.09% Sep 24 -> cut), macro/oil/yield pressure, no company-specific thesis break. Energy's 1st failed trade in sequence (LNG Sep 16 was a win) — 2-failure sector exit NOT triggered. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $204.45 | +$1,005.96 (+5.46%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78 |
+| ECL | $281.93 (70 sh) | $279.49 | -$170.80 (-0.87%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+
+Deployment 40.29% / cash 59.71% — far below the 75-85% band (9th+ consecutive session below band since LNG's Sep 16 exit).
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| GEV | 882.43 (Sep 16) | 951.655 (Sep 23) | +7.84% | missed |
+| BE | 259.21 (Sep 16) | 275.115 (Sep 23) | +6.14% | missed |
+| MU | 927.30 (Sep 16) | 1072.18 (Sep 23) | +15.62% | missed |
+
+Verdict counts (new rows this week): missed 3, skip-right 0, avoided-loss 0. Total missed gains: +29.60%. Total avoided losses: 0.00%. Missed:avoided ratio: 3:0 — the most missed-skewed read of the challenge (prior peak 2:1 on Aug 21), following 1:3 last week. **Gate calibration verdict: too tight — escalation trigger** (see Rule Changes). GEV is the cleanest evidence: its Sep 16-dated Vineyard Wind settlement was two-source confirmed with a modest +4.9% reaction, yet aged out of the 2-session freshness window and was dropped Sep 23 as "stale" while the stock kept grinding higher (+8.47% by Sep 25). META/TXN/XOM/LNG (Sep 23 rows) are 2 sessions old — carried forward (Sep 25 marks: META +1.99%, TXN +2.42%, XOM +1.18%, LNG -1.65%). **Pruned this review** (verdicts >10 sessions old): WMB/CRM/CRWD (Aug 28 rows, scored at Sep 4 close, 15 sessions past), TRGP/AAPL/CRH (Sep 1 rows, scored at Sep 9 close, 12 sessions past), and the Sep 1 ET "TRADE FLAGGED" row (executed as a trade Sep 1, not a skip; now closed). IONQ/NEE/UEC (scored at Sep 15 close, 8 sessions) and COP/VLO/PARR (scored at Sep 18 close, 5 sessions) retained.
+
+### What Worked
+
+- The -7% manual cut executed exactly per rule on ET: trigger identified in advance (EOD Sep 24 flagged the $20.16 level), market-open correctly held at -6.48%, midday cut at -7.24% with stop-cancel -> close -> `orders closed`/`positions` verification all logged. Loss capped at -7.29%, no hesitation, no averaging down.
+- Sector-exit rule applied correctly: ET logged as energy's 1st failed trade in sequence (LNG was a win), so CVX was properly held rather than dumped on a misread of the 2-failure rule.
+- Data-quality discipline held: Perplexity's exact-repeat WTI/Brent print (Sep 24) and implausible VIX timestamps (Sep 24, 25) were flagged suspect and cross-checked via bars/WebSearch; Perplexity's Thursday-only S&P weekly figure was caught again today.
+- L-021 ran clean all week — dateless PT actions (VLO, CVX, ECL, MU, several META) consistently labeled "dateless, excluded"; only the two-outlet Sep 23-dated KeyBanc/Cantor META raises were counted.
+- The Sep 21-22 automation gap was detected and flagged on the first session back (Sep 23), with live Alpaca state confirming no missed fills or stop events during the gap.
+
+### What Didn't Work
+
+- 3rd consecutive zero-new-trade week (Sep 8-11, Sep 14-18, Sep 21-25; 18 straight no-trade sessions since the Sep 1 ET buy) — STEP 5 gate-calibration change mandatory again.
+- Bot -2.53% vs S&P +1.28% (-3.81% relative), the worst relative week of the challenge: ET's realized -$1,422 cut plus CVX giving back oil-driven gains, while the idle ~42-60% cash sat out a rising tape.
+- Deployment fell from ~58% to 40.29% after the ET cut — L-024's escalation trigger was met Sep 23 and nothing redeployed; half the book is cash in a Bull-regime (HMM 97.9%) market.
+- Skip scoreboard 3:0 missed (GEV +7.84%, BE +6.14%, MU +15.62%) — the freshness window aged out a still-working, two-source-confirmed catalyst (GEV) rather than admitting it.
+- The 15% chase-risk bar was misapplied to META on Sep 25: the rule measures the reaction "since its own date", but the desk measured from the Sep 18 pre-event close (+16.97%) rather than the Sep 22 close before the Sep 23-dated catalyst (+5.58%). The exclusion happened to avoid a -3.4% Sep 25 dip, but it was the wrong base.
+- Full 2-trading-day automation gap (Sep 21-22: zero pre-market/market-open/midday/EOD runs persisted) plus the Sep 24 pre-market entry not landing before market-open (market-open ran pre-market STEPS 1-3 inline) — two scheduling failures in one week.
+
+### Key Lessons
+
+- A 2-session freshness window is too short for multi-week catalysts (settlements, contract wins) that keep working after the reaction day: GEV was two-source confirmed with a modest reaction, then disqualified purely by the calendar while its trend continued.
+- A numeric rule is only as good as its measurement base — the 15% chase bar must be measured from the close before the catalyst's own date, or pre-event drift gets double-counted as reaction.
+- Mechanical exits without mechanical re-entry process compound: two stop/cut exits (LNG, ET) took deployment from ~78% to ~40% in 8 sessions while the gate produced zero entries — refilling headroom needs a forced, fully-specified candidate each session, not just a watchlist.
+- Scheduler failures are silent unless something checks for them: the only reason the Sep 21-22 gap surfaced was L-020's log check — it should be a permanent rule and extend to the commit history.
+
+### Adjustments for Next Week
+
+- Apply the widened catalyst-freshness window (up to 5 sessions if two-source confirmed AND bars show positive follow-through above the pre-catalyst close AND realized reaction <15%) and log every entry admitted under it for false-positive review (L-025).
+- Measure the 15% chase-risk bar from the close immediately before the catalyst's own date; log both the base date/close and the % in every chase-risk evaluation (L-026).
+- While deployment is below 75%, every pre-market must hand market-open at least one fully-specified trade idea (entry/stop/target/size) for hard-check, or log an explicit per-name reason why none of the watchlist qualifies (L-027).
+- At every pre-market, check `git log` for the prior session's four routine commits (pre-market, market-open, midday, EOD); if any is missing, send one ClickUp alert naming the missing run(s) that session (L-028).
+
+### Rule Changes This Week
+
+- L-020 ("partial TRADE-LOG gap") hit its Sep 25 review-by having been complied with every session since 2026-09-11 (2 straight weeks); it caught both a partial gap (Sep 10) and was the mechanism that surfaced the full Sep 21-22 gap on Sep 23. Promoted to a permanent Operational Rule in TRADING-STRATEGY.md (gap check before the day's first TRADE-LOG entry, covering partial and full-day gaps). Retired from Active Lessons as promoted.
+- New Buy-Side Gate calibration per STEP 5 (3rd consecutive zero-new-trade week): catalyst freshness window "dated today OR within the prior 2 trading sessions if two-source confirmed" -> "dated today OR within the prior 5 trading sessions if two-source confirmed AND bars show the stock closed above its pre-catalyst close on the prior session AND the realized reaction is <15%". Evidence: this week's 3:0 missed skip scoreboard (+29.60% missed vs 0% avoided), GEV (+7.84%) dropped Sep 23 as stale despite a two-source-confirmed Sep 16 catalyst with only +4.9% initial reaction; L-024 deployment escalation (40.29% deployed). Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options untouched. Review-by 2026-10-09 (LESSONS.md L-025).
+- Clarification (not a loosening, removes ambiguity): the 15% chase-risk bar is measured from the close immediately before the catalyst's own date. Evidence: META Sep 25 exclusion used the Sep 18 base (+16.97%) instead of the Sep 22 pre-catalyst close (+5.58%). Monitored under L-022/L-026.
+- L-021/L-022/L-023/L-024 not yet at review-by (2026-10-02) — carried. L-024's escalation is resolved by the freshness-window change above plus new process lesson L-027.
+- STEP 5 zero-trade-week process adjustment satisfied via L-027 (forced fully-specified candidate while under-deployed) and L-028 (routine-commit gap alerting).
+
+### Overall Grade: D+ (rules executed cleanly — the ET -7% cut, stop verification, and data-quality checks were textbook — but a 3rd straight zero-entry week, a -3.81% relative gap to a rising S&P, deployment collapsing to ~40%, a 3:0 missed skip scoreboard, a misapplied chase-bar base, and a 2-day automation gap made this the weakest week of the challenge)
