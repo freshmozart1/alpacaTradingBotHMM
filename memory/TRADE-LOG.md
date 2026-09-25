@@ -1471,3 +1471,23 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Held position check (09:33 ET, post-open):** CVX $203.80 (+5.13%), ECL $277.46 (-1.59%), **ET $20.275 (-6.48%) — above the -7% cut trigger ($20.1624), no cut**; first bar $20.28. Midday must re-check ET against the trigger. No tighten thresholds crossed. No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD — META excluded by 15% chase bar at +16.97%; UEC/MU forward-dated; TXN/XOM/LNG stale). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 12 (Sep 21-25) closes 0/3 trades; 18th consecutive no-trade session. No ClickUp trade notification (no trade placed).
+
+### Sep 25 — SELL ET (Day 59, Friday) — cut at -7% per rule, midday scan
+
+| Date | Ticker | Side | Shares | Exit | Realized P&L | Reason |
+|---|---|---|---|---|---|---|
+| 2026-09-25 | ET | SELL | 900 | $20.10 (avg fill) | -$1,422.00 (-7.29%) | Cut at -7% per rule — midday scan read unrealized_plpc -0.07242 ($20.11 vs $21.68 entry; trigger $20.1624). Market sell order 84125a7b filled 16:13:57 UTC (~12:14pm ET). |
+
+**Detail:** Entry Sep 1, 900 sh @ $21.68 (cost $19,512.00). Shares were held by the GTC trailing stop (qty_available 0), so stop f900c3f3 (stop $19.64601/HWM $21.8289) was canceled first — confirmed via `alpaca.sh orders` (ET order gone) and `position ET` (qty_available 900, plpc -0.07265 at $20.105 — still below trigger). Then `alpaca.sh close ET` → market sell 84125a7b; confirmed via `orders closed`: filled_qty 900, filled_avg_price 20.10, status filled; `positions` returns only CVX/ECL. (A mistaken `alpaca.sh order <id>` call POSTed an invalid body and was rejected with HTTP 400 — no order created, verified in `orders closed`.) Exit does not count against the 3-new-trades/week cap. Sector rule: ET is energy's 1st failed trade in sequence — prior energy exit LNG (Sep 16) was a +1.77% win, so the 2-consecutive-failures exit rule is NOT triggered; CVX held.
+
+**STEP 3 (cut losers):** ET cut (above). CVX +5.49%, ECL -1.28% — not at -7%.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (CVX max +5.49%). No stops changed.
+
+**STEP 5 (thesis check):** CVX $204.51 (-0.55% intraday) — no thesis break, ordinary oil-linked drift. ECL $278.32 (+1.07% intraday) — no thesis break; Oct 15 dividend / Oct 27 Q3 earnings only items. No further action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move; ET's slide to the trigger was a gradual multi-session grind (-6.09% Sep 24 close → -6.48% open → -7.24% midday), mechanical rule applied.
+
+**STEP 7 (verify):** `alpaca.sh positions` → CVX 95 sh, ECL 70 sh only. `alpaca.sh orders` → 3 resting: CVX 7f5acb83/e328a200 (stop $196.002/HWM $217.78), ECL 64b1066c (stop $265.797/HWM $295.33). Account: equity $96,683.47, cash $57,771.89 (~59.8%), deployment ~40.2% — well below 75-85% band (L-024; weekly review today).
+
+**STEP 8 (notify):** ClickUp sent — ET cut.
