@@ -3158,3 +3158,59 @@ Not armed (sessions since last refresh = 2 < 3; refreshed Sep 23). Watchlist car
 
 ### Decision
 **HOLD.** No trade idea clears the gate — META now over the 15% chase bar, all other watchlist names stale or forward-dated. CVX/ECL: no action. **ET: market-open to cut at/below $20.16 (-7%)** per rule. Week 12 ends 0/3 trades. Weekly review today to dispose L-020/L-024 and weigh META/MU/GEV "missed" pattern.
+
+## 2026-09-28 — Pre-market Research
+
+### Account
+- Equity: $96,932.39 | Cash: $57,771.89 (59.60%) | Buying power: $340,736.96 (margin, effective) | `balance_asof` 2026-09-25 (current, settled).
+- Position market value: $39,160.50 (CVX 95 sh, ECL 70 sh) — **40.40% deployed**. 3 open orders (2x CVX 7f5acb83/e328a200, 1x ECL 64b1066c trailing stop GTC), all resting, stops/HWMs unchanged (CVX $196.002/HWM $217.78, ECL $265.797/HWM $295.33).
+- Day P&L (premarket mark): +$173.45 (+0.18%) vs last_equity $96,758.94.
+- Daytrade count: not returned; no day trades this challenge. Day 60, Monday, Week 13 (Sep 28-Oct 2), 0/3 weekly trades used.
+- No-trade streak: 18 consecutive sessions (through Sep 25 EOD).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.24%** (498 obs, 77 days in regime). Advisory only.
+- Held (premarket marks): CVX $207.02 (+6.79%), ECL $278.48 (-1.22%). None at +15%/+20% tighten, none near -7%.
+
+### Market Context
+- WTI/Brent: **WTI ~$92.4-94.9, Brent ~$106.1-107.8** (Bloomberg/OilPrice/TE). Not a repeat of Sep 25 logged values; dispersion <10%. USO Sep 25 close $148.35 (-3.1% d/d), XLE $62.05 (-0.9%). Weekend: Trump rejected Iran proposal → oil/yields firmer this morning.
+- S&P 500 futures: ~7,762 (-0.54%) per Investing, but snippet dated Sep 24 → **unconfirmed**; treat as flat-to-soft. SPY closed $771.35 Sep 25 (+0.53%).
+- VIX: **14.87** (Sep 25 close, -5.11%, Yahoo/Cboe/CNBC). Not a repeat of prior logged ~15.2. TradingView 16.36 print is a non-US CFD — ignored.
+- Today's catalysts: Dallas Fed Mfg 10:30 ET; Iran/oil/10y yield tone; AI/tech leadership into **MU earnings Sep 30 AMC**.
+- Econ calendar: no CPI/PPI/FOMC this week. Tue: Conf. Board confidence, JOLTS. Wed: ADP, GDP (3rd), PCE. Thu: claims, ISM Mfg. **Fri Oct 2: NFP**.
+- Earnings BMO: CCL. AMC: JEF, MTN, IDT. None held/watchlist.
+- Sector momentum YTD: **Energy #1 (~+42%, Investing headline)**, **Technology #2 (~+27.1%)**, Health Care #3 (~+9.8%, Sep 25 read), Industrials ~+8.9%, Comm Services ~+6.0%. Top-2 unchanged.
+- Held tickers:
+  - **CVX**: sector-driven dip on lower oil Friday; HSBC PT $250 (dateless, L-021), Venezuela >$7B/5yr expansion, Aphrodite gas, >50% exploration-spend lift (all recycled). Next earnings ~Oct 23. Thesis intact. No action.
+  - **ECL**: BofA AI/data-center cooling note (CoolIT/Ovivo) — dateless, excluded; Q3 Oct 27 BMO. Thesis intact. No action.
+
+### Lessons Check
+- L-021 (dated PT source) — CVX HSBC $250, ECL BofA, META Wells $796/Canaccord $950, INTC PT hikes: no first-report date → "dateless, excluded". JPM META $920 post-Connect and RBC NTRA $460 (Sep 25) dated, used as support only. Complied.
+- L-022 (15% chase bar) — META +1.99%, NTRA +11.28% (between old subjective bar and 15% — **flag: admitted-under-new-bar if entered**), INTC +13.17%. None ≥15%. Complied.
+- L-023 (loosened liquidity floor) — no loosened-floor adds this refresh. N/A, complied.
+- L-024 (deployment) — 40.40%, 10th consecutive session below 75%. Addressed via L-027 ideas below.
+- L-025 (5-session window) — META (Sep 23, 3 sessions back) and NTRA (Sep 22, 4 sessions back) both rely on the 3-5-session extension → **tag in TRADE-LOG if entered**. Complied.
+- L-026 (chase-bar base) — META: catalyst Sep 23, base Sep 22 $736.595, realized +1.99% (Sep 25 $751.26). NTRA: catalyst Sep 22 (WebSearch/Yahoo PR; Perplexity said Sep 23 — earlier date used, conservative), base Sep 21 $370.545, realized +11.28% (Sep 25 $412.35). INTC: catalyst Sep 21 (AI/SK Hynix/AUO), base Sep 18 $108.67, +13.17%. BMY: catalyst Sep 25, base Sep 24 $61.505, +2.25%. Complied.
+- L-027 (fully-specified idea while <75%) — **META and NTRA fully specified below** for market-open hard-check. Complied.
+- L-028 (routine commits) — `git log`: Sep 25 pre-market (7bf4036), market-open (6d936d8), midday (f7b408d), EOD (2eb5eef) all present (+ weekly review 7392951). No alert needed. Complied.
+
+### Yesterday's Skip Check
+META +1.47% (premarket mid $747.44 vs Ref $736.595), TXN +2.42%, XOM +1.18%, LNG -1.65% (Sep 25 close via `bars`; TXN/XOM/LNG quotes stale/wide) — all in skip-right band so far; skips look right.
+
+### Stall-Breaker
+**FIRED** (streak 18 ≥ 5; full re-arm cycle since Sep 23 refresh produced no gate-clearing catalyst → 3rd sector Health Care screened). Dropped TXN, XOM, LNG (no fresh catalyst 5+ sessions, no hard event within 5). Kept UEC (earnings Sep 29), MU (earnings Sep 30 AMC), META (Sep 23 catalyst live). Added INTC, AVGO (Tech), MPC (Energy), NTRA, BMY (Health Care). Energy leg thin — MPC has no dated catalyst (Nov 3 earnings; -7.4% from Sep 18); screen recycled ET/LNG/VLO/CVX/XOM.
+
+### Trade Ideas
+1. **META — fully specified, market-open hard-check.** Catalyst: Sep 23 Connect 2026/Muse keynote (two-source: Perplexity + WebSearch/TheStreet JPM $920 post-Connect). Follow-through ✓ (Sep 25 $751.26 > Sep 22 $736.595); reaction +1.99% < 15%. Entry ~$748 (limit ≤$755), **25 sh ≈ $18.7k (19.3% equity)**. Stop: 10% trailing GTC (~$673); manual cut -7% ~$696. Target ~$853 (+14%, 2:1). Caveat: Comm Services weak YTD (+6%) — AI-platform trade rides Tech leadership; Sep 28 dividend payable (not ex-div).
+2. **NTRA — fully specified, market-open hard-check.** Catalyst: Sep 22 Japan PMDA approval of Signatera CDx in MIBC (two-source: Yahoo PR + Perplexity); RBC PT $460 (Sep 25) support. Follow-through ✓ (Sep 25 $412.35 > Sep 21 $370.545); reaction +11.28% < 15%. Entry ~$412 (limit ≤$420), **45 sh ≈ $18.6k (19.1%)**. Stop: 10% trailing GTC (~$371); cut -7% ~$383. Target ~$470 (+14%, 2:1). Caveat: Health Care #3 sector, not top-2; IEX volume thin (~100-130k) — use 60-min confirm window if needed.
+3. **INTC** — No entry. +13.17% from pre-catalyst base, +35%/30d; catalysts a blur of dated rallies + dateless PT hikes (L-021). Chase-adjacent; earnings Oct 26.
+- BMY (Sep 25 EXCALIBER-RRMM Ph3 presentation, +2.25%) — single-source, not yet two-source → watch. AVGO (AI capex narrative, no dated catalyst, -3.2% since Sep 22), MPC (no catalyst), UEC/MU (Sep 29/30 earnings, forward-dated; MU +16.7% vs Sep 16 Ref) — no entry.
+- If both enter: deployment ~78.9% (in band), 2/3 weekly trades.
+
+### Risk Factors
+- Iran headlines (Trump rejected proposal) → oil/yield spike risk; rate-sensitive growth pressure.
+- Heavy macro week: JOLTS, PCE, ISM, **NFP Fri**; MU earnings Wed AMC (AI/semis sentiment swing).
+- Futures read unconfirmed (stale snippet) — confirm open tone before entries.
+- META legal/privacy overhang (New Mexico ruling); NTRA mid-cap volatility after +11%.
+- Energy-heavy book is only CVX now; sector exposure shifts if META/NTRA fill.
+
+### Decision
+**HOLD pre-market; META and NTRA flagged for market-open hard-check** (both two-source, follow-through, <15% reaction, 3-5-session extension → L-025 tag). Market-open gate decides. CVX/ECL: no action, stops resting.
