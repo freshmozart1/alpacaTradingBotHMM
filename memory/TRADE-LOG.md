@@ -1501,3 +1501,38 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | ECL | 70 | $281.93 | $279.49 | +1.50% | -$170.80 (-0.87%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
 
 **Notes:** 18th consecutive no-trade day (Sep 2, 3, 4, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25) since the Sep 1 ET buy — today's ET cut (see Sep 25 SELL ET entry) was a mechanical -7% exit, not a new entry, so the streak continues. Week 12 (Sep 21-25) closes 0/3 weekly trades used. Day P&L measured vs the Sep 24 logged EOD ($98,627.54); Alpaca last_equity $98,600.54 (-$1,841.60 on that basis). Loss driven by ET: cut at midday, 900 sh @ $20.10, realized -$1,422.00 (-7.29%) — energy's 1st failed trade in sequence (LNG Sep 16 was a win), 2-failure sector exit not triggered. CVX -0.58% (+5.46% unrealized, below +15% tighten); ECL +1.50% (-0.87% unrealized). Phase P&L -$3,241.06 (-3.24%) vs $100,000 start, 6th straight negative reading. 2 open positions, 40.29% deployed / 59.71% cash — far below the 75-85% band (L-024; weekly review today must address redeployment). All 3 remaining GTC stops unchanged, no fills.
+
+### Sep 28 — BUY NTRA (Day 60, Monday) — streak broken (18 no-trade sessions), 1/3 weekly trades used
+
+**Operational Rule check:** Sep 25 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-trade:** Equity $96,975.14 | Cash $57,771.89 (59.57%) | 2 open positions (CVX 95 sh +7.02%, ECL 70 sh -1.22%), 3 GTC trailing stops resting unchanged (CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33). `balance_asof` 2026-09-25. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** CVX +7.02%, ECL -1.22% — none near -7% or +15%/+20%. No action.
+
+**Open tone (13:33 UTC):** SPY $767.80 (-0.46% vs $771.35), QQQ flat off open. Pre-open IEX quotes wide (META 708.70/749.88, NTRA 383.80/437.45) — ignored; used 1Min bars post-open.
+
+**Gate check — NTRA:**
+- Positions after fill: 3 <= 6 — pass.
+- Trades this week incl. this one: 1/3 (Week 13) — pass.
+- Cost <= 20% equity ($19,395 cap) — pass (~$18.5k).
+- Cost <= cash ($57,771.89) — pass.
+- Catalyst: Sep 22 Japan PMDA Signatera CDx approval (MIBC), two-source (Yahoo PR + Perplexity); **admitted under 3-5-session extension (L-025 tag)** — 4 sessions back. Follow-through: Sep 25 close $412.35 > Sep 21 pre-catalyst close $370.545 — pass. Chase bar (L-026): catalyst Sep 22, base Sep 21 $370.545, realized +11.15% at fill $411.85 (<15%; bar $426.13) — pass. **L-022 flag:** admitted between old subjective bar and 15%.
+- PDT room — pass (0 day trades; equity >$25k).
+- Stock (NTRA, NASDAQ) — pass.
+- Ex-div/analyst (strategy rule): NTRA pays no dividend — no ex-div risk. RBC PT $460 (Sep 25, dated) — supportive; no adverse action found. Non-blocking.
+- Open bars: $412.72 → $412.89 → $409.38 (13:30-13:32), IEX thin (157-615 sh/min) but orderly, no gap reversal.
+
+**Gate check — META (SKIPPED):** Paper criteria passed on Sep 25 close ($751.26 > Sep 22 base $736.595), but live re-validation failed catalyst follow-through: opened $749.52, slid to $730.60 by 13:32 and quoted $728.36/$729.27 at 13:33 — **below the $736.595 pre-catalyst base (reaction now ≈ -1.0%)**, -2.9% on the day vs SPY -0.46%. Perplexity: continued selling on the Sep 25-26 New Mexico jury verdict (privacy) + post-36%-September-rally profit-taking; no fresh positive catalyst. Connect catalyst reaction fully erased → skip. Scoreboard: META already has an open row (2026-09-23), no new row.
+
+**Entry Checklist (NTRA):** Catalyst = Sep 22 PMDA Signatera CDx approval (two-source, follow-through). Sector = Health Care (#3 YTD, stall-breaker 3rd-sector leg — not top-2, caveat). Stop = 10% trailing GTC; manual cut -7% ≈ $383.02. Target ~$470 (+14.1%).
+
+**Order:** Market buy 45 sh (day) d1dd6d66 submitted 13:34:20 UTC → filled 13:35:06 UTC, 45 @ $411.85 (cost $18,533.25, ~19.1% equity). Confirmed via `alpaca.sh orders all`/`positions`.
+
+**Stop placed:** 10% trailing stop GTC 45 sh — order 6416eac5, stop $369.396, HWM $410.44. Confirmed via `alpaca.sh orders` (status new) / `positions` (NTRA 45 sh). 
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-09-28 | NTRA | BUY | 45 | $411.85 (fill) | $369.396 (10% trailing GTC, order 6416eac5); manual cut -7% ~$383.02 | Sep 22 Japan PMDA approval of Signatera CDx in MIBC (two-source), follow-through confirmed (Sep 25 $412.35 > Sep 21 $370.545), +11.15% realized <15% chase bar; RBC PT $460 (Sep 25) support; no dividend; [L-025 3-5-session extension entry; L-022 sub-15% bar entry] | ~$470 (+14.1%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
+
+**Post-trade:** Equity $96,865.14 | Cash $39,238.64 (~40.5%) | 3 positions (CVX, ECL, NTRA) | ~59.5% deployed — still below 75-85% band (L-024); META skip leaves the gap. 4 GTC stops resting. Week 13: 1/3 trades used. No-trade streak ends at 18 sessions.
