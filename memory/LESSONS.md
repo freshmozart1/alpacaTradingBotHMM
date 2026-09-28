@@ -272,3 +272,8 @@ than 10 sessions are pruned.
 | 2026-09-23 | TXN | HOLD — stall-breaker refresh add (Technology), 7% dividend hike/Q2 beat/data-center revenue doubled YoY, dividend-hike date not confirmed as today-dated | 271.405 | | |
 | 2026-09-23 | XOM | HOLD — stall-breaker refresh add (Energy), record oil output/revenue + dismissed Michigan climate lawsuit, but pressured by the ~10% oil-price drop this week, no fresh Sept 23-dated catalyst | 158.68 | | |
 | 2026-09-23 | LNG | HOLD — stall-breaker refresh re-add (Energy, prior position exited via mechanical stop Sept 16), Corpus Christi Stage 3 completion + 5,000th cargo milestone, no fresh Sept 23-dated catalyst | 273.02 | | |
+| 2026-09-28 | INTC | HOLD — stall-breaker refresh add (Technology), AI turnaround/SK Hynix talks/CPU price hike rally (Sep 21-22), +13.17% from pre-catalyst base, PT hikes dateless (L-021), chase-adjacent | 122.98 | | |
+| 2026-09-28 | AVGO | HOLD — stall-breaker refresh add (Technology), AI capex/custom-silicon narrative, no dated catalyst | 352.72 | | |
+| 2026-09-28 | MPC | HOLD — stall-breaker refresh add (Energy), Zacks Sept best-energy list, no dated catalyst (Q3 call Nov 3) | 393.26 | | |
+| 2026-09-28 | NTRA | HOLD pre-market — stall-breaker refresh add (Health Care, 3rd sector), Sep 22 Japan PMDA Signatera CDx approval (two-source), +11.28% from Sep 21 base; flagged for market-open hard-check | 412.35 | | |
+| 2026-09-28 | BMY | HOLD — stall-breaker refresh add (Health Care, 3rd sector), Sep 25 EXCALIBER-RRMM Ph3 presentation, single-source only | 62.89 | | |
