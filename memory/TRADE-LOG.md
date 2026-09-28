@@ -1552,3 +1552,14 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stops resting, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 28 — EOD Snapshot (Day 60, Monday)
+**Portfolio:** $96,979.64 | **Cash:** $39,238.64 (40.46%) | **Day P&L:** +$220.70 (+0.23%) | **Phase P&L:** -$3,020.36 (-3.02%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $206.37 | +0.94% | +$1,188.36 (+6.45%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $280.23 | +0.26% | -$119.00 (-0.60%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| NTRA | 45 | $411.85 | $411.55 | -0.24% | -$13.50 (-0.07%) | $375.6375 (10% trail, GTC 6416eac5, HWM $417.375) |
+
+**Notes:** Streak reset — trade(s) placed today (NTRA BUY 45 sh @ $411.85, ends 18-session no-trade streak); 0 consecutive no-trade days. Week 13 (Sep 28-Oct 2): 1/3 weekly trades used. META skipped at open (catalyst reaction erased). Day P&L vs Sep 25 logged EOD $96,758.94 (matches Alpaca last_equity). Gain led by CVX +0.94% and ECL +0.26%; NTRA flat post-entry (-0.07% unrealized), its trail auto-ratcheted to $375.6375. Phase P&L -$3,020.36 (-3.02%) vs $100,000 start, 7th straight negative reading but improving. 3 open positions, 59.54% deployed / 40.46% cash — still below 75-85% band (L-024). No position near -7% cut or +15% tighten. All 4 GTC stops resting, no fills.
