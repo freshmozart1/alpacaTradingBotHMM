@@ -1536,3 +1536,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-09-28 | NTRA | BUY | 45 | $411.85 (fill) | $369.396 (10% trailing GTC, order 6416eac5); manual cut -7% ~$383.02 | Sep 22 Japan PMDA approval of Signatera CDx in MIBC (two-source), follow-through confirmed (Sep 25 $412.35 > Sep 21 $370.545), +11.15% realized <15% chase bar; RBC PT $460 (Sep 25) support; no dividend; [L-025 3-5-session extension entry; L-022 sub-15% bar entry] | ~$470 (+14.1%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $96,865.14 | Cash $39,238.64 (~40.5%) | 3 positions (CVX, ECL, NTRA) | ~59.5% deployed — still below 75-85% band (L-024); META skip leaves the gap. 4 GTC stops resting. Week 13: 1/3 trades used. No-trade streak ends at 18 sessions.
+
+### Sep 28 — Midday Scan (Day 60, Monday) — no action
+
+**Account:** Equity $96,981.02 | Cash $39,238.64. 3 open positions — CVX 95 sh, unrealized +6.85% (+$1,261.04), current $207.135 vs entry $193.860947 (intraday +1.31% vs lastday $204.45); ECL 70 sh, unrealized -0.79% (-$156.10), current $279.70 vs entry $281.93 (intraday +0.08% vs lastday $279.49); NTRA 45 sh, unrealized -0.26% (-$47.70), current $410.79 vs entry $411.85 (intraday -0.43% vs lastday $412.56). 4 open orders resting: CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; NTRA trailing stop GTC 6416eac5 (45 sh), stop now $375.6375, HWM $417.375 (auto-ratcheted up from $369.396/$410.44 at placement).
+
+**STEP 3 (cut losers):** N/A — CVX +6.85%, ECL -0.79%, NTRA -0.26%, none at -7% (NTRA trigger ~$383.02). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.85%). No stops changed.
+
+**STEP 5 (thesis check):** CVX +1.31% intraday — ordinary oil-linked move, no thesis break. ECL +0.08% — flat, Oct 15 dividend / Oct 27 Q3 earnings only items. NTRA -0.43% — orderly post-entry drift, off intraday high $417.375; PMDA Signatera thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest CVX +1.31%).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 4 stops resting, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
