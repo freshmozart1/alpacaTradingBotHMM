@@ -1596,3 +1596,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-09-29 | BMY | BUY | 295 | $63.7138 (fill) | $57.3345 (10% trailing GTC, order 72cc2eb8); manual cut -7% ~$59.25 | Sep 24 EXCALIBER-RRMM Ph3 IMS 2026 data — ZENBEXUS+Dd doubled MRD-neg CR vs DVd (two-source), follow-through confirmed (Sep 28 $63.88 > Sep 23 $61.18), +4.14% realized <15% chase bar; Piper PT $82 (Sep 16) support; possible early-Oct ex-div; [L-025 3-5-session extension entry] | ~$72.63 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $96,816.30 | Cash $20,443.07 (~21.1%) | 4 positions (CVX, ECL, NTRA, BMY) | ~78.9% deployed — **back in 75-85% band (L-024)**. 5 GTC stops resting. Week 13: 2/3 trades used.
+
+### Sep 29 — Midday Scan (Day 61, Tuesday) — no action
+
+**Account:** Equity $96,612.80 | Cash $20,443.07. 4 open positions — BMY 295 sh, unrealized -0.77% (-$144.20), current $63.225 vs entry $63.713797 (intraday -1.03% vs lastday $63.88); CVX 95 sh, unrealized +5.77% (+$1,062.96), current $205.05 vs entry $193.860947 (intraday -0.64% vs lastday $206.37); ECL 70 sh, unrealized -1.36% (-$268.80), current $278.09 vs entry $281.93 (intraday -0.76% vs lastday $280.23); NTRA 45 sh, unrealized +0.22% (+$40.95), current $412.76 vs entry $411.85 (intraday +0.24% vs lastday $411.77). 5 open orders resting: BMY trailing stop GTC 72cc2eb8 (295 sh), stop now $57.465, HWM $63.85 (auto-ratcheted from $57.3345/$63.705 at placement); CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; NTRA trailing stop GTC 6416eac5 (45 sh), stop now $379.476, HWM $421.64 (auto-ratcheted from $375.6375/$417.375).
+
+**STEP 3 (cut losers):** N/A — BMY -0.77%, CVX +5.77%, ECL -1.36%, NTRA +0.22%, none at -7% (BMY trigger ~$59.25, ECL ~$262.19, NTRA ~$383.02). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +5.77%). No stops changed.
+
+**STEP 5 (thesis check):** BMY -1.03% intraday — mild post-entry fade, still above Sep 23 pre-catalyst base $61.18; EXCALIBER thesis intact. CVX -0.64% — ordinary oil-linked move. ECL -0.76% — drift, no news; Oct 15 dividend / Oct 27 Q3 earnings only items. NTRA +0.24%, new HWM $421.64 intraday; PMDA Signatera thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest BMY -1.03%).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 5 stops resting, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
