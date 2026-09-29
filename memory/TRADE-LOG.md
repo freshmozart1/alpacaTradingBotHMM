@@ -1563,3 +1563,36 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $411.55 | -0.24% | -$13.50 (-0.07%) | $375.6375 (10% trail, GTC 6416eac5, HWM $417.375) |
 
 **Notes:** Streak reset — trade(s) placed today (NTRA BUY 45 sh @ $411.85, ends 18-session no-trade streak); 0 consecutive no-trade days. Week 13 (Sep 28-Oct 2): 1/3 weekly trades used. META skipped at open (catalyst reaction erased). Day P&L vs Sep 25 logged EOD $96,758.94 (matches Alpaca last_equity). Gain led by CVX +0.94% and ECL +0.26%; NTRA flat post-entry (-0.07% unrealized), its trail auto-ratcheted to $375.6375. Phase P&L -$3,020.36 (-3.02%) vs $100,000 start, 7th straight negative reading but improving. 3 open positions, 59.54% deployed / 40.46% cash — still below 75-85% band (L-024). No position near -7% cut or +15% tighten. All 4 GTC stops resting, no fills.
+
+### Sep 29 — Market-Open (Day 61, Tuesday)
+
+**Operational Rule check:** Sep 28 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-trade:** Equity $96,726.13 | Cash $39,238.64 (40.57%) | 3 open positions (CVX 95 sh +5.03%, ECL 70 sh -0.60%, NTRA 45 sh -0.02%), 4 GTC trailing stops resting unchanged (CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, NTRA 6416eac5 $375.6375/HWM $417.375). `balance_asof` 2026-09-28. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** None near -7% or +15%/+20%. No action.
+
+**Open tone (13:31 UTC):** SPY $766.06 (+0.07% vs $765.49), flat. BMY pre-open IEX quote wide (59.20/66.15) — ignored; used 1Min bars post-open.
+
+**Gate check — BMY:**
+- Positions after fill: 4 <= 6 — pass.
+- Trades this week incl. this one: 2/3 (Week 13) — pass.
+- Cost <= 20% equity ($19,345 cap) — pass (~$18.8k).
+- Cost <= cash ($39,238.64) — pass.
+- Catalyst: Sep 24 EXCALIBER-RRMM Ph3 IMS 2026 presentation (ZENBEXUS+Dd MRD-neg CR 41.1% vs 20.7%), two-source (BusinessWire + OncLive); **admitted under 3-5-session extension (L-025 tag)** — 3 sessions back. Follow-through: Sep 28 close $63.88 > Sep 23 pre-catalyst close $61.18 — pass. Chase bar (L-026): catalyst Sep 24, base Sep 23 $61.18, realized +4.14% at fill $63.71 (<15%; bar $70.36) — pass.
+- PDT room — pass (0 day trades; equity >$25k).
+- Stock (BMY, NYSE) — pass.
+- Ex-div/analyst (strategy rule): Q4 ex-div date not found (Perplexity); BMY historically goes ex early Oct — possible same-week ex-date (~$0.63, minor). Piper Sandler PT $82 from $75, Overweight (Sep 16, dated — stale, support); RBC Sector Perform $64 (dateless, L-021 excluded). Non-blocking.
+- Open bars: 13:30 $63.54 → $63.84, quote $63.75/$63.86 — orderly, no gap reversal.
+
+**Entry Checklist (BMY):** Catalyst = Sep 24 EXCALIBER-RRMM Ph3 data (two-source, follow-through). Sector = Health Care (#3 YTD, not top-2; 2nd Health Care name with NTRA — concentration caveat). Stop = 10% trailing GTC; manual cut -7% ≈ $59.25. Target ~$72.63 (+14%).
+
+**Order:** Market buy 295 sh (day) 6e7f8be4 submitted 13:31:54 UTC → filled 13:33:45 UTC (3 partials), 295 @ $63.713797 (cost $18,795.57, ~19.4% equity). Confirmed via `alpaca.sh orders all`/`positions`.
+
+**Stop placed:** 10% trailing stop GTC 295 sh — order 72cc2eb8, stop $57.3345, HWM $63.705. Confirmed via `alpaca.sh orders` (status new) / `positions` (BMY 295 sh).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-09-29 | BMY | BUY | 295 | $63.7138 (fill) | $57.3345 (10% trailing GTC, order 72cc2eb8); manual cut -7% ~$59.25 | Sep 24 EXCALIBER-RRMM Ph3 IMS 2026 data — ZENBEXUS+Dd doubled MRD-neg CR vs DVd (two-source), follow-through confirmed (Sep 28 $63.88 > Sep 23 $61.18), +4.14% realized <15% chase bar; Piper PT $82 (Sep 16) support; possible early-Oct ex-div; [L-025 3-5-session extension entry] | ~$72.63 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
+
+**Post-trade:** Equity $96,816.30 | Cash $20,443.07 (~21.1%) | 4 positions (CVX, ECL, NTRA, BMY) | ~78.9% deployed — **back in 75-85% band (L-024)**. 5 GTC stops resting. Week 13: 2/3 trades used.
