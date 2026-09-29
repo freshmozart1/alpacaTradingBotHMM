@@ -1612,3 +1612,15 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 5 stops resting, no fills, no cancellations.
 
 **STEP 8 (notify):** Skipped — no action taken this scan.
+
+### Sep 29 — EOD Snapshot (Day 61, Tuesday)
+**Portfolio:** $96,507.17 | **Cash:** $20,443.07 (21.18%) | **Day P&L:** -$472.47 (-0.49%) | **Phase P&L:** -$3,492.83 (-3.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| BMY | 295 | $63.713797 | $62.86 | -1.60% | -$251.87 (-1.34%) | $57.474 (10% trail, GTC 72cc2eb8, HWM $63.86) |
+| CVX | 95 | $193.860947 | $204.38 | -0.96% | +$999.31 (+5.43%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $277.87 | -0.84% | -$284.20 (-1.44%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| NTRA | 45 | $411.85 | $414.52 | +0.67% | +$120.15 (+0.65%) | $379.476 (10% trail, GTC 6416eac5, HWM $421.64) |
+
+**Notes:** Streak reset — trade(s) placed today (BMY BUY 295 sh @ $63.7138); 0 consecutive no-trade days. Week 13 (Sep 28-Oct 2): 2/3 weekly trades used (NTRA, BMY). Day P&L vs Sep 28 logged EOD $96,979.64 (Alpaca last_equity $96,989.54, $9.90 diff — logged value used). Loss led by BMY -1.60% post-entry fade (still above $61.18 pre-catalyst base), CVX -0.96%, ECL -0.84%; NTRA +0.67%, trail ratcheted to $379.476. Phase P&L -$3,492.83 (-3.49%) vs $100,000 start, 8th straight negative reading. 4 open positions, 78.82% deployed / 21.18% cash — inside 75-85% band (L-024). No position near -7% cut (nearest ECL -1.44%) or +15% tighten. All 5 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
