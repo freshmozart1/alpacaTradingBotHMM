@@ -1624,3 +1624,13 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $414.52 | +0.67% | +$120.15 (+0.65%) | $379.476 (10% trail, GTC 6416eac5, HWM $421.64) |
 
 **Notes:** Streak reset — trade(s) placed today (BMY BUY 295 sh @ $63.7138); 0 consecutive no-trade days. Week 13 (Sep 28-Oct 2): 2/3 weekly trades used (NTRA, BMY). Day P&L vs Sep 28 logged EOD $96,979.64 (Alpaca last_equity $96,989.54, $9.90 diff — logged value used). Loss led by BMY -1.60% post-entry fade (still above $61.18 pre-catalyst base), CVX -0.96%, ECL -0.84%; NTRA +0.67%, trail ratcheted to $379.476. Phase P&L -$3,492.83 (-3.49%) vs $100,000 start, 8th straight negative reading. 4 open positions, 78.82% deployed / 21.18% cash — inside 75-85% band (L-024). No position near -7% cut (nearest ECL -1.44%) or +15% tighten. All 5 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Sep 30 — Market-Open Check (Day 62, Wednesday) — no new trade
+
+**Operational Rule check:** Sep 29 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (pre-open pull 13:18 UTC):** Equity $96,826.06 | Cash $20,443.06 (21.11%) | 4 open positions (BMY 295 sh -0.76%, CVX 95 sh +5.76%, ECL 70 sh -1.44%, NTRA 45 sh +1.45%), 5 GTC trailing stops confirmed resting via `alpaca.sh orders`/`positions`, unchanged (BMY 72cc2eb8 $57.474/HWM $63.86, CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, NTRA 6416eac5 $379.476/HWM $421.64). Deployment ~78.9% — in 75-85% band (L-024). `balance_asof` 2026-09-29. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** None near -7% cut or +15%/+20% tighten. No action.
+
+**Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). UEC conditional replacement only — condition unmet (no stop/-7% cut freed capital; a ~19% add would push deployment ~98%, over the 85% band) and catalyst still single-source; UEC pre-open quote wide/stale (8.04/10.53), no Sep 30 bars. MU forward-dated (AMC today, Oct 1 eval). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 13 (Sep 28-Oct 2): 2/3 trades used. No ClickUp trade notification (no trade placed).
