@@ -1634,3 +1634,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Held position check:** None near -7% cut or +15%/+20% tighten. No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). UEC conditional replacement only — condition unmet (no stop/-7% cut freed capital; a ~19% add would push deployment ~98%, over the 85% band) and catalyst still single-source; UEC pre-open quote wide/stale (8.04/10.53), no Sep 30 bars. MU forward-dated (AMC today, Oct 1 eval). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 13 (Sep 28-Oct 2): 2/3 trades used. No ClickUp trade notification (no trade placed).
+
+### Sep 30 — Midday Scan (Day 62, Wednesday) — no action
+
+**Account:** Equity $97,147.39 | Cash $20,443.06. 4 open positions — BMY 295 sh, unrealized -0.73% (-$136.82), current $63.25 vs entry $63.713797 (intraday +0.62% vs lastday $62.86); CVX 95 sh, unrealized +6.35% (+$1,168.89), current $206.165 vs entry $193.860947 (intraday +0.87% vs lastday $204.38); ECL 70 sh, unrealized -1.95% (-$385.00), current $276.43 vs entry $281.93 (intraday -0.52% vs lastday $277.87); NTRA 45 sh, unrealized +3.09% (+$571.73), current $424.555 vs entry $411.85 (intraday +2.42% vs lastday $414.52). 5 open orders resting: BMY trailing stop GTC 72cc2eb8 (295 sh), stop now $57.717, HWM $64.13 (auto-ratcheted from $57.474/$63.86); CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; NTRA trailing stop GTC 6416eac5 (45 sh), stop now $384.72075, HWM $427.4675 (auto-ratcheted from $379.476/$421.64).
+
+**STEP 3 (cut losers):** N/A — BMY -0.73%, CVX +6.35%, ECL -1.95%, NTRA +3.09%, none at -7% (BMY trigger ~$59.25, ECL ~$262.19, NTRA ~$383.02). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.35%). No stops changed.
+
+**STEP 5 (thesis check):** BMY +0.62% intraday — rebound from Sep 29 fade, new HWM $64.13, above $61.18 pre-catalyst base; EXCALIBER thesis intact. CVX +0.87% — ordinary oil-linked move. ECL -0.52% — drift, no news; nearest to cut but -1.95% is far from -7%; Oct 15 dividend / Oct 27 Q3 earnings only items. NTRA +2.42%, new HWM $427.47; PMDA Signatera thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest NTRA +2.42%, in-trend).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 5 stops resting, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
