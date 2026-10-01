@@ -1672,3 +1672,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Held position check:** None near -7% cut (nearest ECL -3.12%, cut ~$262.19) or +15%/+20% tighten. No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). MU and UEC are conditional replacements only — condition unmet (no stop/-7% cut freed capital; a ~19% add would push deployment ~97-98%, over the 85% band). Pre-open quotes stale/wide (MU bid $1,022.58/no ask, UEC 8.23/10.85). Nothing reached hard-check; no gate-rejection scoreboard rows (UEC row already open). Week 13 (Sep 28-Oct 2): 2/3 trades used. No ClickUp trade notification (no trade placed).
+
+### Oct 1 — Midday Scan (Day 63, Thursday) — no action
+
+**Account:** Equity $95,999.26 | Cash $20,443.06. 4 open positions — BMY 295 sh, unrealized -3.49% (-$656.02), current $61.49 vs entry $63.713797 (intraday -1.46% vs lastday $62.40); CVX 95 sh, unrealized +6.42% (+$1,181.71), current $206.30 vs entry $193.860947 (intraday +1.02% vs lastday $204.21); ECL 70 sh, unrealized -4.18% (-$824.60), current $270.15 vs entry $281.93 (intraday -1.61% vs lastday $274.58); NTRA 45 sh, unrealized +2.02% (+$374.40), current $420.17 vs entry $411.85 (intraday +1.66% vs lastday $413.31). 5 open orders resting, unchanged: BMY trailing stop GTC 72cc2eb8 (295 sh), stop $57.717, HWM $64.13; CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; NTRA trailing stop GTC 6416eac5 (45 sh), stop $384.72075, HWM $427.4675.
+
+**STEP 3 (cut losers):** N/A — BMY -3.49%, CVX +6.42%, ECL -4.18%, NTRA +2.02%, none at -7% (BMY trigger ~$59.25, ECL ~$262.19, NTRA ~$383.02). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.42%). No stops changed.
+
+**STEP 5 (thesis check):** BMY -1.46% intraday — pre-ex-div drift (ex-div Oct 2, $0.63); $61.49 now ~0.5% above $61.18 pre-catalyst base, ~3.8% above -7% cut — EXCALIBER thesis intact, watch. CVX +1.02% — oil steady, in-trend. ECL -1.61% — weakest holding, no news; $270.15 ~3.0% above cut ~$262.19, stop $265.797 ~1.6% below — thesis (Q2 beat/guide raise, Oct 27 Q3) not broken, stop/cut will handle. NTRA +1.66% — PMDA Signatera thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (largest ECL -1.61%, drift).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 5 stops resting, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
