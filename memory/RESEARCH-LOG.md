@@ -3330,3 +3330,63 @@ Not armed (streak 0 < 3; BMY entry Sep 29). Watchlist carried: UEC, MU, META, IN
 
 ### Decision
 **HOLD.** Deployment 78.90% in band, 4 positions, 2/3 weekly trades. No gate-clearing idea; UEC single-source and capacity-blocked; MU forward-dated to Oct 1. All held theses intact, 5 stops resting.
+
+## 2026-10-01 — Pre-market Research
+
+### Account
+- Equity: $95,876.56 | Cash: $20,443.06 (21.32%) | Buying power: $292,986.04 (margin, effective) | `balance_asof` 2026-09-30 (current, settled).
+- Position market value: $75,433.50 (BMY 295, CVX 95, ECL 70, NTRA 45) — **78.68% deployed** (in band, 3rd session). 5 open orders, all trailing stop GTC resting: BMY 72cc2eb8 $57.717/HWM $64.13, CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, NTRA 6416eac5 $384.72075/HWM $427.4675.
+- Day P&L (premarket mark): -$194.00 (-0.20%) vs last_equity $96,070.56 (logged Sep 30 EOD $96,138.51; $67.95 diff).
+- Daytrade count: not returned; no day trades this challenge. Day 63, Thursday, Week 13 (Sep 28-Oct 2), 2/3 weekly trades used (NTRA, BMY).
+- No-trade streak: 1 (Sep 30).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.26%** (500 obs, 80 days in regime). Advisory only.
+- Held (marks): BMY $62.40 (-2.06%), CVX $203.62 (+5.03%), ECL $273.13 (-3.12%), NTRA $412.50 (+0.16%). None at +15%/+20% tighten, none near -7% (nearest ECL, cut ~$262.19).
+
+### Market Context
+- Perplexity: all 17 queries ran sequentially, exit 0. WebSearch used only as second source (MU, UEC).
+- WTI/Brent: **WTI ~$92.2, Brent ~$100.5** (OilPrice). Not a repeat of Sep 30 (WTI ~$89.7-90.6, Brent ~$103.2-103.4); dispersion <10%. USO Sep 30 $145.67 (+1.6% d/d), XLE $61.48 (-0.1%) — oil steadied.
+- S&P 500 futures: ~7,742-7,755 (**+0.3% to +0.44%**). Not a repeat. Cross-check: SPY premarket $765.72/$765.84 vs Sep 30 close $762.34 → **~+0.45%**. Operative: modestly up.
+- VIX: **16.34** — not a repeat of Sep 30 logged ~16.09. VIXY Sep 30 $16.91 (+1.0% d/d) consistent. Operative: ~16.3.
+- Today's catalysts: **MU FQ4 beat-and-raise (reported Sep 30 AMC)** → semis/AI-led tape (SMH/XLK/QQQ bid); UTHR up, JBL down premarket. Note: Perplexity catalyst query wrongly said MU reports "around close Oct 1" — contradicted by its own MU query + CNBC/GlobeNewswire (Sep 30). Discounted.
+- Econ calendar: initial/continuing claims 8:30, **ISM Mfg (Sep)** + S&P Global final Mfg PMI 10:00, construction spending. No CPI/PPI/FOMC (FOMC Oct 27-28). **NFP Fri Oct 2.**
+- Earnings BMO: ACN, MKC (none held/watchlist).
+- Sector momentum YTD: **Energy #1 (~+42.3%)**, **Technology #2 (~+27.1%)**, Materials ~+15.9%, Industrials ~+8.9-12.6%, Health Care ~+10.1%. Top-2 unchanged.
+- Held tickers:
+  - **BMY**: **ex-div tomorrow Oct 2, $0.63** (two sources now: Yahoo/MarketBeat via Perplexity — same as Sep 30 log) — mechanical ~1% dip expected. CAMZYOS expanded indication, arlo-cel Ph2 (dates unverified, support only). Q3 Oct 29. Thesis intact.
+  - **CVX**: Vietnam supply MoU (preliminary), Venezuela $7B plan (recycled), TD Cowen $215 / HSBC $250 PTs (dateless, L-021). Earnings date conflicting (Oct 22 vs Oct 29). Thesis intact.
+  - **ECL**: no fresh news; Q2 beat/guide raise recycled; dividend payable Oct 15, Q3 Oct 27. -3.12%, weakest holding, still >4% above cut.
+  - **NTRA**: IASLC MRD data + PMDA CDx + RBC $460 (recycled). Near HWM. Thesis intact.
+
+### Lessons Check
+- L-021 (dated PT source) — CVX TD Cowen $215/HSBC $250, META Wells $796, AVGO Bernstein reiteration: no first-report date found → "dateless, excluded". None counted. Complied.
+- L-022 (15% chase bar) — NTRA (entered +11.15%) now +0.16%, BMY (entered +4.14%) -2.06%; no prompt reversal to -7%, no false positive yet. Complied.
+- L-023 (loosened liquidity floor) — no refresh, no loosened-floor names. N/A, complied.
+- L-024 (deployment) — 78.68%, in band (3rd session). Complied.
+- L-025 (5-session window) — NTRA (+0.16%), BMY (-2.06%) tagged in TRADE-LOG; neither hit -7% cut. UEC (catalyst Sep 29) would be a 3-5-session-extension entry → tag if entered. Complied.
+- L-026 (chase-bar base) — MU: catalyst Sep 30 (AMC), base Sep 29 $1,064.975, realized **+1.02%** (AH 1Hr bar close $1,075.80; Sep 30 reg close $1,066.85). UEC: catalyst Sep 29, base Sep 28 $9.18, realized **+2.72%** (Sep 30 $9.43). Complied.
+- L-027 (fully-specified idea while <75%) — not binding (78.68%); MU and UEC specified below anyway. Complied.
+- L-028 (routine commits) — `git log`: Sep 30 pre-market (4a31b1c), market-open (84a3c96), midday (7a6471b), EOD (16e9191) all present. No alert needed. Complied.
+
+### Yesterday's Skip Check
+META -1.54%, INTC -2.30%, AVGO -0.43%, MPC +0.62% (Sep 30 close via `bars` vs Ref; premarket quotes stale/wide, e.g. META 693.51/767.25) — all skip-right range; skips look right.
+
+### Stall-Breaker
+Not armed (streak 1 < 3). Watchlist carried: UEC, MU, META, INTC, AVGO, MPC.
+
+### Trade Ideas
+- **Capacity note:** cash 21.3%; any new ~19% position → ~97-98% deployed, **over the 85% band**. New entries only as replacement if a stop/-7% cut frees capital. 1/3 weekly trades left.
+1. **MU — conditional replacement, gate-clearing catalyst.** FQ4 (Sep 30 AMC): rev $54.2B (above guide high end), adj EPS $33.42 vs ~$31.2-31.7 est; Q1 FY27 guide ~$61.5B / EPS ~$38.15 vs ~$35.4 est; DC SSD >10x y/y. **Two-source** (Perplexity + CNBC/GlobeNewswire via WebSearch) — satisfies MU rule; earnings-print rule satisfied by Sep 30-dated release. Tech #2 sector. Reaction +1.02% (<15%). Entry ~$1,076 (limit ≤$1,100), **17 sh ≈ $18.3k (19.1%)**. Stop 10% trail GTC (~$968); cut -7% ~$1,001; target ~$1,226 (+14%, 2:1). Market-open: confirm opening reaction via bars (sell-the-news risk, "modest" AH move).
+2. **UEC — conditional replacement, now gate-clearing catalyst.** Sep 29 FY26 print (Q4 prod +157% q/q to 82,744 lb, total cost/lb $36.54 -33%, $753M liquid/no debt; EPS -$0.12 miss). **Now two-source** (Perplexity + PRNewswire/Investing.com via WebSearch). Follow-through ✓ (Sep 30 $9.43 > Sep 28 $9.18), +2.72% < 15%. Energy #1. Entry ~$9.45 (limit ≤$9.60), **2,000 sh ≈ $18.9k (19.7%)**. Stop 10% trail GTC (~$8.50); cut -7% ~$8.79; target ~$10.77 (+14%, 2:1). Wide premarket quotes (8.23/10.85) — limit only.
+3. **META / INTC / AVGO / MPC** — No entry. META: no dated catalyst (Muse/Connect recycled, PTs dateless). INTC: CPU price hike "early October" undated, earnings Oct 26. AVGO: no dated catalyst (earnings Dec 9). MPC: diesel-export-ban talk undated, Q3 Nov 3.
+- If MU and UEC both qualify as replacements, priority MU (top-2 sector with today's tape leadership, larger beat-and-raise).
+
+### Risk Factors
+- MU sell-the-news risk despite beat (AH only ~+1%); semis-led open could reverse.
+- ISM Mfg 10:00 + claims today, **NFP Fri** — rates-sensitive swings.
+- BMY ex-div Oct 2 ($0.63) — mechanical dip; stop $57.717 ~7.5% below mark.
+- ECL weakest holding (-3.12%), cut ~$262.19 (~4% below mark).
+- CVX oil-linked; stop $196.002 ~3.7% below mark.
+- Book concentration: 2 Health Care (NTRA, BMY). Stop renewals: ECL expires Oct 26, CVX Oct 29.
+
+### Decision
+**HOLD.** Deployment 78.68% in band, 4 positions, 2/3 weekly trades. MU and UEC now have two-source, sub-15% catalysts but are capacity-blocked (would push ~97% deployed) — replacement-only if a stop/-7% cut frees capital. All held theses intact, 5 stops resting.

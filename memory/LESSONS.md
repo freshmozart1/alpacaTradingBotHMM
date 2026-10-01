@@ -277,3 +277,4 @@ than 10 sessions are pruned.
 | 2026-09-28 | MPC | HOLD — stall-breaker refresh add (Energy), Zacks Sept best-energy list, no dated catalyst (Q3 call Nov 3) | 393.26 | | |
 | 2026-09-28 | NTRA | HOLD pre-market — stall-breaker refresh add (Health Care, 3rd sector), Sep 22 Japan PMDA Signatera CDx approval (two-source), +11.28% from Sep 21 base; flagged for market-open hard-check | 412.35 | | |
 | 2026-09-28 | BMY | HOLD — stall-breaker refresh add (Health Care, 3rd sector), Sep 25 EXCALIBER-RRMM Ph3 presentation, single-source only | 62.89 | | |
+| 2026-10-01 | UEC | HOLD — conditional replacement idea (Energy), Sep 29 FY26 print now two-source (+2.72% vs Sep 28 base), gate-clearing but capacity-blocked (78.68% deployed, new ~19% -> ~98%) | 9.43 | | |
