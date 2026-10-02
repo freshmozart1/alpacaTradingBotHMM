@@ -1700,3 +1700,13 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $408.47 | -1.17% | -$152.10 (-0.82%) | $384.72075 (10% trail, GTC 6416eac5, HWM $427.4675) |
 
 **Notes:** 2nd consecutive no-trade day. Week 13 (Sep 28-Oct 2): 2/3 weekly trades used (NTRA, BMY). Day P&L vs Sep 30 logged EOD $96,138.51 (Alpaca last_equity $96,070.56, $67.95 diff = NTRA lastday $413.31 vs logged $414.82 — logged value used). Losses led by BMY -1.51% (pre-ex-div drift, ex-div Oct 2 $0.63; $61.46 just ~0.5% above $61.18 pre-catalyst base, cut ~$59.25), ECL -1.21% (weakest, -3.79%; $271.26 ~2.0% above stop $265.797, ~3.5% above cut ~$262.19), NTRA -1.17% (flipped to -0.82%); CVX +1.42% offset (+6.83%, best holding). Phase P&L -$4,382.39 (-4.38%) vs $100,000 start, 10th straight negative reading, new phase low. 4 open positions, 78.62% deployed / 21.38% cash — inside 75-85% band (L-024). No position at -7% cut or +15% tighten. All 5 GTC stops resting, no fills. Heads-up: BMY ex-div tomorrow will mechanically drop price ~$0.63; ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 2 — Market-Open Check (Day 64, Friday) — no new trade
+
+**Operational Rule check:** Oct 1 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (pre-open pull 13:17 UTC):** Equity $95,707.45 | Cash $20,443.06 (21.36%) | 4 open positions (BMY 295 sh -4.15% ex-div $0.63 today, CVX 95 sh +5.55%, ECL 70 sh -3.39%, NTRA 45 sh +1.14%), 5 GTC trailing stops confirmed resting via `alpaca.sh orders`/`positions`, unchanged (BMY 72cc2eb8 $57.717/HWM $64.13, CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, NTRA 6416eac5 $384.72075/HWM $427.4675). Deployment ~78.6% — in 75-85% band (L-024). `balance_asof` 2026-10-01. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** None at -7% cut (nearest BMY -4.15%, cut ~$59.25, ~3.0% below $61.07 mark) or +15%/+20% tighten. No action.
+
+**Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). MU/UEC conditional replacements only — condition unmet (no stop/-7% cut freed capital; ~19% add -> ~97-98% deployed, over 85% band). Pre-open quotes stale/wide (MU 1,022.28/1,150.68, UEC 8.08/10.70). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 13 (Sep 28-Oct 2): 2/3 trades used, final day — unused slot expires. No ClickUp trade notification (no trade placed).
