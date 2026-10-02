@@ -7,6 +7,38 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
+### L-031 — Renew expiring GTC trailing stops mechanically
+- Date: 2026-10-02 | Source: WEEKLY-REVIEW 2026-10-02 (ECL stop expires
+  Oct 26, CVX stops Oct 29 — tracked only as EOD heads-up lines)
+- Lesson: GTC orders expire; an expired trail leaves a position
+  unprotected silently.
+- Directive: At every EOD, list GTC stop expiries within 5 trading
+  sessions; renew at the next market-open (cancel + re-place at the
+  same or higher stop, never lower) and verify via `alpaca.sh orders`.
+- Status: active | Review-by: 2026-10-16
+
+### L-030 — Cap single-sector concentration at 2 positions
+- Date: 2026-10-02 | Source: WEEKLY-REVIEW 2026-10-02 (both week-13
+  entries, NTRA and BMY, came from the 3rd-sector Health Care leg — 2 of
+  4 positions in one non-top-2 sector)
+- Lesson: The stall-breaker's 3rd-sector leg can supply the whole refill,
+  concentrating the book outside the momentum sectors.
+- Directive: At every new-entry gate check, log the post-fill sector
+  count; if the entry would put a 3rd position in one sector, skip and
+  log it as a concentration skip.
+- Status: active | Review-by: 2026-10-16
+
+### L-029 — Dividend-adjust the pre-catalyst base around ex-div dates
+- Date: 2026-10-02 | Source: WEEKLY-REVIEW 2026-10-02 (BMY ex-div $0.63
+  Oct 2 pushed it nominally below its $61.18 pre-catalyst base; div-
+  adjusted it was ~at base)
+- Lesson: A mechanical ex-div drop can make the follow-through/thesis
+  base test misfire.
+- Directive: When a held or candidate name has an ex-div date inside its
+  follow-through/thesis window, compare price to the dividend-adjusted
+  pre-catalyst base and log both the nominal and adjusted figures.
+- Status: active | Review-by: 2026-10-16
+
 ### L-028 — Alert on missing routine commits
 - Date: 2026-09-25 | Source: WEEKLY-REVIEW 2026-09-25 (full Sep 21-22
   automation gap — zero runs persisted for 2 trading days; Sep 24
@@ -53,61 +85,6 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
   cut within 5 sessions. If a false positive occurs, tighten back.
 - Status: active | Review-by: 2026-10-09
 
-### L-024 — Track deployment following LNG's Sept 16 exit
-- Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (LNG's mechanical
-  stop-out cut deployment from ~78.5% to ~58% with no same-week
-  replacement entry, leaving the book under the 75-85% band for 3
-  straight sessions, Sept 16-18)
-- Lesson: A clean, correctly-functioning stop-out can still leave real
-  opportunity cost on the table if the deployment gap it opens isn't
-  addressed with the same urgency as the original entry search.
-- Directive: Track deployment at each session; if it remains below 75%
-  for 2 more sessions/reviews without a clear catalyst-driven
-  explanation (i.e., the gate genuinely found nothing, not inattention),
-  escalate per STEP 5.
-- Status: active (escalated 2026-09-23; addressed 2026-09-25 via the
-  freshness-window change + L-027; deployment 40.29% after ET cut) |
-  Review-by: 2026-10-02
-
-### L-023 — Monitor loosened stall-breaker liquidity floor for false positives
-- Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (companion to the
-  new TRADING-STRATEGY.md rule: an empty sector leg on 2 consecutive
-  refresh cycles now loosens that leg's liquidity/market-cap floor on
-  the next refresh)
-- Lesson: Loosening a leg's liquidity floor could admit a name whose
-  thin liquidity produces unreliable bars-confirmation or poor fills.
-- Directive: At each refresh where a loosened-floor name is added, note
-  whether it produces a usable, bars-confirmable catalyst or a
-  false-positive/execution problem (no bars prints, wide spreads beyond
-  the standard thin-liquidity window).
-- Status: active | Review-by: 2026-10-02
-
-### L-022 — Monitor the new 15% chase-risk threshold for false positives
-- Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (STEP 5 escalation:
-  chase-risk exclusion now requires a >=15% already-realized reaction,
-  rather than a subjective judgment call, after GEV's +4.90% reaction was
-  incorrectly conflated with CRM/CRWD's +20-22% blowout pops)
-- Lesson: A numeric bar removes ambiguity but could admit a genuine
-  chase if 15% is set too loosely.
-- Directive: At each session, note whether any entry admitted under the
-  new threshold (reaction between the old subjective bar and 15%)
-  promptly reverses; if a false-positive entry occurs, tighten the bar.
-- Status: active | Review-by: 2026-10-02
-
-### L-021 — Verify analyst PT/rating actions have a findable dated source
-- Date: 2026-09-18 | Source: WEEKLY-REVIEW 2026-09-18 (STEP 5's mandatory
-  zero-trade-week process adjustment; VLO's analyst PT raises were
-  repeatedly logged as "undateable as fresh" Sept 15-18, making
-  freshness impossible to assess cleanly)
-- Lesson: An analyst price-target or rating action cited as a potential
-  catalyst is often reported without its own dated source in aggregated
-  results, making freshness unverifiable.
-- Directive: Before counting or excluding a PT/rating action as a
-  catalyst, explicitly search for its own dated press release or first
-  report; label it "dateless, excluded" if no explicit date is found
-  within 2 search attempts.
-- Status: active | Review-by: 2026-10-02
-
 Template:
 
 ### L-NNN — <short title>
@@ -117,6 +94,22 @@ Template:
 - Status: active | Review-by: YYYY-MM-DD
 
 ## Retired Lessons
+
+- L-021, "Verify analyst PT/rating actions have a findable dated
+  source", retired 2026-10-02, promoted to a permanent Buy-Side Gate
+  rule (TRADING-STRATEGY.md) after 2+ straight weeks of compliance
+  (Sept 18-Oct 2) — dateless PTs (CVX, ECL, META, INTC, MPC, AVGO)
+  consistently excluded; only dated actions used as support.
+- L-022, "Monitor the new 15% chase-risk threshold", retired 2026-10-02
+  (hit review-by, not promoted). One entry admitted under the sub-15% bar
+  (NTRA +11.15%) — no prompt reversal (-0.36% after 4 sessions). Rule
+  stands; entry tracking continues under L-025/L-026.
+- L-023, "Monitor loosened stall-breaker liquidity floor", retired
+  2026-10-02 (hit review-by, not promoted). No loosened-floor name added
+  across the window — no evidence either way. Rule stands.
+- L-024, "Track deployment following LNG's Sept 16 exit", retired
+  2026-10-02 (resolved). NTRA/BMY entries restored deployment 40.29% ->
+  78.65%, in band 4 straight sessions (Sep 29-Oct 2).
 
 - L-020, "Partial TRADE-LOG gap (EOD-only day)", retired 2026-09-25,
   promoted to a permanent Operational Rule (TRADING-STRATEGY.md) after 2
@@ -259,19 +252,16 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-09-08 | IONQ | HOLD — stall-breaker refresh add (Technology), Investor Day today (Sept 8) is a genuine, hard-dated, gate-clearing catalyst, but blocked purely by the 75-85% deployment cap at 78.68% deployed (L-015) | 39.52 | -6.25% | avoided-loss |
-| 2026-09-08 | NEE | HOLD — stall-breaker refresh add (Energy), Dominion merger shareholder approval/DOE Duane Arnold loan both recycled, no fresh Sept 8-dated catalyst | 83.42 | -2.79% | skip-right |
-| 2026-09-08 | UEC | HOLD — stall-breaker refresh add (Energy), Burke Hollow/Sweetwater/Christensen Ranch coverage all recycled from late Aug, no fresh Sept 8-dated catalyst | 11.515 | -11.51% | avoided-loss |
 | 2026-09-11 | COP | HOLD — stall-breaker refresh add (Energy), 52-week high/+45% YTD momentum, Goldman dividend-energy mention, no fresh Sept 11-dated catalyst | 137.07 | -3.81% | avoided-loss |
 | 2026-09-11 | VLO | HOLD — stall-breaker refresh add (Energy), Zacks top-oil-stock screen, refining-margin momentum, no fresh Sept 11-dated catalyst | 385.37 | +7.18% | missed |
 | 2026-09-11 | PARR | HOLD — stall-breaker refresh add (Energy), high-beta systematic-ranking pick, thin liquidity (~25-45k avg daily volume), no fresh Sept 11-dated catalyst | 83.63 | +0.89% | skip-right |
 | 2026-09-16 | GEV | HOLD — stall-breaker refresh add (Energy), AI/data-center power demand, Q2 orders +88% YoY, $176B backlog, Jefferies flags potential Q3 beat-and-raise, no fresh Sept 16-dated catalyst | 882.43 | +7.84% | missed |
 | 2026-09-16 | BE | HOLD — stall-breaker refresh add (Energy), S&P 500 addition effective Sept 21 but announced Sept 4 (12 sessions stale), price down -6.0% since, no bullish reaction | 259.21 | +6.14% | missed |
 | 2026-09-16 | MU | HOLD — stall-breaker refresh add (Technology), Sept 30 earnings/Citi Upside Catalyst Watch on H2 DRAM pricing, no fresh Sept 16-dated catalyst | 927.30 | +15.62% | missed |
-| 2026-09-23 | META | HOLD — stall-breaker refresh add (Technology), Connect 2026 keynote today (Sept 23) is a hard-dated event but stock already +10.8% since Sept 18 ahead of it, no post-event reaction yet to confirm | 736.595 | | |
-| 2026-09-23 | TXN | HOLD — stall-breaker refresh add (Technology), 7% dividend hike/Q2 beat/data-center revenue doubled YoY, dividend-hike date not confirmed as today-dated | 271.405 | | |
-| 2026-09-23 | XOM | HOLD — stall-breaker refresh add (Energy), record oil output/revenue + dismissed Michigan climate lawsuit, but pressured by the ~10% oil-price drop this week, no fresh Sept 23-dated catalyst | 158.68 | | |
-| 2026-09-23 | LNG | HOLD — stall-breaker refresh re-add (Energy, prior position exited via mechanical stop Sept 16), Corpus Christi Stage 3 completion + 5,000th cargo milestone, no fresh Sept 23-dated catalyst | 273.02 | | |
+| 2026-09-23 | META | HOLD — stall-breaker refresh add (Technology), Connect 2026 keynote today (Sept 23) is a hard-dated event but stock already +10.8% since Sept 18 ahead of it, no post-event reaction yet to confirm | 736.595 | -1.54% | skip-right |
+| 2026-09-23 | TXN | HOLD — stall-breaker refresh add (Technology), 7% dividend hike/Q2 beat/data-center revenue doubled YoY, dividend-hike date not confirmed as today-dated | 271.405 | +3.19% | missed |
+| 2026-09-23 | XOM | HOLD — stall-breaker refresh add (Energy), record oil output/revenue + dismissed Michigan climate lawsuit, but pressured by the ~10% oil-price drop this week, no fresh Sept 23-dated catalyst | 158.68 | +2.67% | skip-right |
+| 2026-09-23 | LNG | HOLD — stall-breaker refresh re-add (Energy, prior position exited via mechanical stop Sept 16), Corpus Christi Stage 3 completion + 5,000th cargo milestone, no fresh Sept 23-dated catalyst | 273.02 | -1.47% | skip-right |
 | 2026-09-28 | INTC | HOLD — stall-breaker refresh add (Technology), AI turnaround/SK Hynix talks/CPU price hike rally (Sep 21-22), +13.17% from pre-catalyst base, PT hikes dateless (L-021), chase-adjacent | 122.98 | | |
 | 2026-09-28 | AVGO | HOLD — stall-breaker refresh add (Technology), AI capex/custom-silicon narrative, no dated catalyst | 352.72 | | |
 | 2026-09-28 | MPC | HOLD — stall-breaker refresh add (Energy), Zacks Sept best-energy list, no dated catalyst (Q3 call Nov 3) | 393.26 | | |

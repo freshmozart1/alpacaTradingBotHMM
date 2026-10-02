@@ -947,3 +947,90 @@ Verdict counts (new rows this week): missed 3, skip-right 0, avoided-loss 0. Tot
 - STEP 5 zero-trade-week process adjustment satisfied via L-027 (forced fully-specified candidate while under-deployed) and L-028 (routine-commit gap alerting).
 
 ### Overall Grade: D+ (rules executed cleanly — the ET -7% cut, stop verification, and data-quality checks were textbook — but a 3rd straight zero-entry week, a -3.81% relative gap to a rising S&P, deployment collapsing to ~40%, a 3:0 missed skip scoreboard, a misapplied chase-bar base, and a 2-day automation gap made this the weakest week of the challenge)
+
+## Week ending 2026-10-02
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $96,758.94 (Sep 25 EOD; matched Alpaca last_equity on Sep 28) |
+| Ending portfolio | $95,742.61 (live pull; `balance_asof` 2026-10-01, one session lagged per Operational Rules — provisional; matches Oct 2 logged EOD) |
+| Week return | -$1,016.33 (-1.05%) |
+| S&P 500 week | -0.22% (SPY 771.35 -> 769.65, Sep 25 close -> Oct 2 close via `alpaca.sh bars`, adjustment=all; Perplexity read "+0.19%" with no reconstructable Mon-Fri base — discarded per established SPY ground-truth methodology) |
+| Bot vs S&P | -0.83% |
+| Trades | 2 new entries (NTRA Sep 28, BMY Sep 29 — both open); 0 closed (W:0 / L:0 / open:2); 2/3 weekly cap used |
+| Win rate | n/a (0 closed trades this week) |
+| Best trade | CVX +6.62% unrealized (open; no closed trades) |
+| Worst trade | BMY -4.02% unrealized (open; ex-div $0.63 Oct 2 — div-adjusted ~-3.0%) |
+| Profit factor | n/a (no closed trades) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No closed trades this week. All 5 GTC trailing stops rested untriggered; no -7% cuts. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| BMY | $63.713797 (295 sh, Sep 29) | $61.15 | -$756.32 (-4.02%) | 10% trailing GTC, order 72cc2eb8, stop $57.717, HWM $64.13; manual cut ~$59.25 |
+| CVX | $193.860947 (95 sh) | $206.69 | +$1,218.76 (+6.62%) | Two 10% trailing GTC orders, 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78 |
+| ECL | $281.93 (70 sh) | $273.70 | -$576.10 (-2.92%) | 10% trailing GTC, order 64b1066c, stop $265.797, HWM $295.33 |
+| NTRA | $411.85 (45 sh, Sep 28) | $410.35 | -$67.50 (-0.36%) | 10% trailing GTC, order 6416eac5, stop $384.72075, HWM $427.4675 |
+
+Deployment 78.65% / cash 21.35% — back inside the 75-85% band since Sep 29 (4 straight sessions), up from 40.29% at last review. Sector mix: Health Care 2 (NTRA, BMY), Energy 1 (CVX), Materials 1 (ECL). Stop expiries: ECL Oct 26, CVX Oct 29.
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| META | 736.595 (Sep 23) | 725.235 (Sep 30) | -1.54% | skip-right |
+| TXN | 271.405 (Sep 23) | 280.07 (Sep 30) | +3.19% | missed |
+| XOM | 158.68 (Sep 23) | 162.92 (Sep 30) | +2.67% | skip-right |
+| LNG | 273.02 (Sep 23) | 269.005 (Sep 30) | -1.47% | skip-right |
+
+Verdict counts (new rows this week): missed 1, skip-right 3, avoided-loss 0. Total missed gains: +3.19%. Total avoided losses: 0.00%. Missed:avoided ratio: 1:0 (vs 3:0 last week). **Gate calibration verdict: roughly calibrated** — the widened 5-session window admitted 2 entries (NTRA, BMY) and the only miss (TXN) barely cleared the +3% line with no dated catalyst (dividend-hike date unconfirmed). META's Sep 28 live-revalidation skip was correct (Sep 23 reaction fully erased; -1.54% at +5d). No escalation. Sep 28 rows (INTC/AVGO/MPC/NTRA/BMY) and Oct 1 UEC row carried (<5 sessions). **Pruned this review** (verdicts >10 sessions old): IONQ/NEE/UEC (Sep 8 rows, scored at Sep 15 close, 13 sessions past). COP/VLO/PARR (scored Sep 18, 10 sessions) and GEV/BE/MU (scored Sep 23, 7 sessions) retained.
+
+### What Worked
+
+- Streak broken at 18 sessions: the L-025 freshness widening + L-027 forced fully-specified candidate produced two gate-clearing entries in two sessions (NTRA Sep 28, BMY Sep 29), each with documented two-source catalyst, follow-through vs pre-catalyst base, and chase-bar % (L-026).
+- Deployment restored 40.29% -> 78.65% in 2 sessions and held in band 4 straight sessions — L-024 resolved.
+- Live re-validation caught META at open Sep 28 (catalyst reaction erased below the $736.595 base) — scored skip-right (-1.54%).
+- Capacity discipline: MU/UEC conditional replacements correctly held (would have pushed deployment ~97-98%); unused 3rd slot allowed to expire rather than force.
+- Process compliance clean every session: L-021 dateless-PT labeling, L-028 commit checks (all four routine commits present Sep 25-Oct 1), Operational Rule TRADE-LOG gap check — zero gaps, zero automation failures.
+
+### What Didn't Work
+
+- Bot -1.05% vs S&P -0.22% (-0.83% relative); phase P&L -4.26%, 11th straight negative reading.
+- Both new entries underwater at week end: BMY -4.02% (entered 3 sessions before a known Oct 2 ex-div; ex-div pushed it nominally below its $61.18 pre-catalyst base), NTRA -0.36% after a +3.79% peak (HWM $427.47).
+- Both entries came from the 3rd-sector (Health Care) leg — 2 of 4 positions now in one non-top-2 sector, a concentration the gate doesn't track.
+- ECL -2.92% and drifting (weakest pre-existing holding, ~3% above its stop); CVX gave back to +6.62% on softer oil, no tighten trigger reached.
+- Perplexity's S&P weekly figure again unusable (+0.19% vs SPY bars -0.22%).
+
+### Key Lessons
+
+- The process fixes from last review worked mechanically: a forced, fully-specified candidate plus a wider (bounded) freshness window converts a stalled watchlist into entries within one session.
+- Known ex-div dates inside the follow-through window distort the pre-catalyst-base test; the base comparison must be dividend-adjusted or the thesis check misfires.
+- The stall-breaker's 3rd-sector leg can end up supplying the whole refill — sector concentration needs an explicit check at entry, since "follow sector momentum" favors the top-2 legs.
+- GTC trailing stops expire (ECL Oct 26, CVX Oct 29); expiry needs a mechanical renewal check, not an EOD heads-up line.
+
+### Adjustments for Next Week
+
+- When a held or candidate name has an ex-div date inside its L-025 follow-through/thesis window, compare price to the dividend-adjusted pre-catalyst base and log both figures (L-029).
+- At every new-entry gate check, log the post-fill sector count; if the entry would put a 3rd position in one sector, skip and log it as a concentration skip (L-030).
+- At every EOD, list GTC stop expiries within 5 trading sessions; renew (cancel + re-place at the same/higher stop, never lower) at the next market-open and verify via `alpaca.sh orders` (L-031).
+
+### Rule Changes This Week
+
+- L-021 ("Verify analyst PT/rating actions have a findable dated source") hit its Oct 2 review-by with compliance every session Sep 18-Oct 2 (2+ weeks), correctly excluding dateless PTs (CVX, ECL, META, INTC, MPC, AVGO) while admitting only dated ones (RBC NTRA $460 Sep 25, Piper BMY $82 Sep 16) as support. Promoted to a permanent Buy-Side Gate rule in TRADING-STRATEGY.md. Retired as promoted.
+- L-022 (15% chase-bar monitoring) retired at review-by, not promoted: one entry admitted under the sub-15% bar (NTRA, +11.15%) — no prompt reversal (-0.36% after 4 sessions, peak +3.79%). Rule stands; ongoing entry tracking continues under L-025/L-026.
+- L-023 (loosened liquidity floor monitoring) retired at review-by, not promoted: no loosened-floor name was added across the full window — no evidence either way. Rule stands.
+- L-024 (deployment tracking) retired at review-by, resolved: deployment back in band (78.65%) since Sep 29.
+- L-025 report (entries admitted under the 3-5-session extension): NTRA (4 sessions back) -0.36%, BMY (3 sessions back) -4.02% (div-adjusted ~-3.0%). Neither hit the -7% cut; both still inside their 5-session check window. No false positive yet — carried to Oct 9.
+- No zero-trade week — STEP 5 escalation not triggered. No risk rules touched.
+
+### Overall Grade: C+ (process repaired and executed cleanly — streak broken, two fully-documented gate-clearing entries, deployment 40% -> 79%, correct META and capacity skips, zero automation gaps — but a -0.83% relative week, both new entries underwater, Health Care concentration, and phase P&L at -4.26% keep it average)
