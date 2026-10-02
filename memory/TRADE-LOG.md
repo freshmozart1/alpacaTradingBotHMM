@@ -1710,3 +1710,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Held position check:** None at -7% cut (nearest BMY -4.15%, cut ~$59.25, ~3.0% below $61.07 mark) or +15%/+20% tighten. No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). MU/UEC conditional replacements only — condition unmet (no stop/-7% cut freed capital; ~19% add -> ~97-98% deployed, over 85% band). Pre-open quotes stale/wide (MU 1,022.28/1,150.68, UEC 8.08/10.70). Nothing reached hard-check; no gate-rejection scoreboard rows. Week 13 (Sep 28-Oct 2): 2/3 trades used, final day — unused slot expires. No ClickUp trade notification (no trade placed).
+
+### Oct 2 — Midday Scan (Day 64, Friday) — no action
+
+**Account:** Equity ~$95,361 (cash $20,443.06 + MV $74,917.95). 4 open positions — BMY 295 sh, unrealized -5.07% (-$952.50), current $60.485 vs entry $63.713797 (intraday -1.59% vs lastday $61.46; ex-div $0.63 today → ex-div-adjusted ~-0.56%); CVX 95 sh, unrealized +6.51% (+$1,199.76), current $206.49 vs entry $193.860947 (intraday -0.29% vs lastday $207.10); ECL 70 sh, unrealized -2.77% (-$546.00), current $274.13 vs entry $281.93 (intraday +1.06% vs lastday $271.26); NTRA 45 sh, unrealized -1.43% (-$264.02), current $405.98 vs entry $411.85 (intraday -0.61% vs lastday $408.47). 5 open orders resting, unchanged: BMY trailing stop GTC 72cc2eb8 (295 sh), stop $57.717, HWM $64.13; CVX trailing stops GTC 7f5acb83 (54 sh) + e328a200 (41 sh), stop $196.002, HWM $217.78; ECL trailing stop GTC 64b1066c (70 sh), stop $265.797, HWM $295.33; NTRA trailing stop GTC 6416eac5 (45 sh), stop $384.72075, HWM $427.4675.
+
+**STEP 3 (cut losers):** N/A — BMY -5.07%, CVX +6.51%, ECL -2.77%, NTRA -1.43%, none at -7% (BMY trigger ~$59.25, ~2.0% below mark; ECL ~$262.19; NTRA ~$383.02). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — no position up +15%/+20% (max CVX +6.51%). No stops changed.
+
+**STEP 5 (thesis check):** BMY -1.59% intraday — mostly mechanical ex-div drop ($0.63); $60.485 nominally below $61.18 pre-catalyst base but ~at the div-adjusted base (~$60.55). EXCALIBER-RRMM data not invalidated, no negative news — thesis intact, closest to cut; L-025 window runs through Oct 5, watch. CVX -0.29% — oil softer (WTI -3.6% AM), in-trend. ECL +1.06% — rebound off 200-DMA reclaim, stop gap widened (~3.1% above $265.797). NTRA -0.61% — drift, PMDA Signatera thesis intact. No action.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move (BMY drop explained by ex-div).
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions`/`orders` — no manual changes this scan; all 5 stops resting, no fills, no cancellations.
+
+**STEP 8 (notify):** Skipped — no action taken this scan.
