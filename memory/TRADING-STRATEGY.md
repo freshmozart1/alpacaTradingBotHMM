@@ -88,6 +88,10 @@ If any fail, the trade is skipped and the reason is logged.
   does not by itself disqualify an otherwise-clearing catalyst.
   The reaction is measured from the close immediately before the
   catalyst's own date (not from an earlier pre-event reference).
+- Before counting or excluding an analyst price-target or rating action
+  as a catalyst, search for its own dated press release or first report;
+  label it "dateless, excluded" if no explicit date is found within 2
+  search attempts.
 
 ## Sell-Side Rules
 
@@ -148,3 +152,4 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-09-25 | Operational Rules | (none) -> verify the prior session has Market-Open/Midday/EOD TRADE-LOG entries before the day's first entry; log a retroactive gap note if any are missing | Promoted from LESSONS.md L-020 (2026-09-11), complied with every session for 2 straight weeks (Sept 11-25); its check surfaced the full Sep 21-22 automation gap on Sep 23. Process addition only, not a risk-rule change. |
 | 2026-09-25 | Buy-Side Gate | catalyst dated today OR within prior 2 sessions if two-source confirmed -> dated today OR within prior 5 sessions if two-source confirmed AND bars show prior close above the pre-catalyst close AND realized reaction <15% | Escalation per STEP 5 (3rd consecutive zero-new-trade week: Sept 8-11, 14-18, 21-25) and L-024 (deployment 40.29%). Evidence: skip scoreboard 3:0 missed this week (GEV +7.84%, BE +6.14%, MU +15.62%; +29.60% missed vs 0% avoided); GEV's two-source-confirmed Sep 16 Vineyard Wind settlement (+4.9% initial reaction) was dropped Sep 23 as stale while trending to +8.47% by Sep 25. Follow-through and chase-bar conditions keep the widening bounded. Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options untouched. Review-by 2026-10-09 (LESSONS.md L-025). |
 | 2026-09-25 | Buy-Side Gate (clarification) | 15% chase bar "since its own date" (base unspecified) -> measured from the close immediately before the catalyst's own date | Removes ambiguity, not a loosening: META's Sep 25 exclusion used the Sep 18 pre-event close (+16.97%) instead of the Sep 22 pre-catalyst close (+5.58%) for its Sep 23-dated catalyst. Monitored under LESSONS.md L-022/L-026. |
+| 2026-10-02 | Buy-Side Gate | (none) -> analyst PT/rating actions count only with a findable dated source; "dateless, excluded" after 2 failed search attempts | Promoted from LESSONS.md L-021 (2026-09-18), complied with every session for 2+ straight weeks (Sept 18-Oct 2): dateless PTs (CVX, ECL, META, INTC, MPC, AVGO) consistently excluded; only dated actions (RBC NTRA $460 Sep 25, Piper BMY $82 Sep 16) used, as support only. Process addition only, not a risk-rule change. |
