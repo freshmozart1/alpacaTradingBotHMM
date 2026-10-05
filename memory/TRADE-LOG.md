@@ -1738,3 +1738,37 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $410.35 | +0.46% | -$67.50 (-0.36%) | $384.72075 (10% trail, GTC 6416eac5, HWM $427.4675) |
 
 **Notes:** 3rd consecutive no-trade day. Week 13 (Sep 28-Oct 2) closed: 2/3 weekly trades used (NTRA, BMY), unused slot expired. Day P&L vs Oct 1 logged EOD $95,617.61 (Alpaca last_equity $95,617.61, match). Small green day: ECL +0.90% (rebound, -2.92%; ~3.0% above stop $265.797) and NTRA +0.46% led; BMY -0.50% nominal but ex-div $0.63 today → div-adjusted ~+0.5%, recovered from midday $60.485 to $61.15 (~3.1% above -7% cut ~$59.25); CVX -0.20% on softer oil. Phase P&L -$4,257.39 (-4.26%) vs $100,000 start, 11th straight negative reading, off yesterday's phase low. 4 open positions, 78.65% deployed / 21.35% cash — inside 75-85% band (L-024). No position at -7% cut or +15% tighten. All 5 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry. Weekly review due (Friday).
+
+### Oct 5 — Market-Open (Day 65, Monday)
+
+**Operational Rule check:** Oct 2 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-trade (13:20 UTC):** Equity $94,889.40 | Cash $20,443.06 (21.54%) | 4 open positions (BMY 295 sh -6.16%, CVX 95 sh +6.03%, ECL 70 sh -2.92%, NTRA 45 sh -2.22%), 5 GTC trailing stops resting unchanged (BMY 72cc2eb8 $57.717/HWM $64.13, CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, NTRA 6416eac5 $384.72075/HWM $427.4675). `balance_asof` 2026-10-02. daytrade_count not returned; no day trades this challenge. Week 14 (Oct 5-9): 0/3 used.
+
+**Held position check:** BMY first priority — open quote 13:33 UTC $58.76/$60.07 (wide), 13:35 mark $59.87 (-6.03%), ~1.0% above -7% cut ~$59.25; not hit. L-029: div-adj base $60.55 → -1.12% adj. L-025 window closes today — midday decides. None at +15%/+20% tighten. No action.
+
+**Open tone (13:35 UTC):** SPY $770.87 (+0.16% vs $769.65), flat-up.
+
+**Gate check — AVGO:**
+- Positions after fill: 5 <= 6 — pass.
+- Trades this week incl. this one: 1/3 (Week 14) — pass.
+- Cost <= 20% equity ($18,978 cap) — pass (~$5.7k, ~6.0%).
+- Cost <= cash ($20,443.06) — pass.
+- Catalyst: Oct 1 Reuters Anthropic TPU financing report, two-source (on file Oct 2), 2 sessions back (standard window — not an L-025 3-5-session extension entry). Follow-through: Oct 2 close $355.125 > Sep 30 pre-catalyst close $351.22 — pass. Chase bar (L-026): catalyst Oct 1, base Sep 30 $351.22, realized +1.75% at fill $357.36 (<15%; bar $403.90) — pass. Open price $357.6 holds above base — pass.
+- PDT room — pass (0 day trades; equity >$25k).
+- Stock (AVGO, Nasdaq) — pass.
+- Sector (L-030): Technology 1 post-fill (HC 2, Energy 1, Materials 1, Tech 1) — pass.
+- Deployment post-fill ~84.5% — inside 75-85% band (L-024).
+- Ex-div/analyst (strategy rule): last ex-div Sep 21 (WebSearch/stockanalysis) — no same-week ex-date. No new dated analyst action found; circular-financing/customer-concentration headline risk noted. Non-blocking.
+
+**Entry Checklist (AVGO):** Catalyst = Oct 1 Anthropic TPU financing report (two-source, follow-through). Sector = Technology (#2 YTD). Stop = 10% trailing GTC; manual cut -7% ≈ $332.34. Target ~$407.39 (+14%).
+
+**Order:** Market buy 16 sh (day) 23dc72e2 submitted 13:33:17 UTC → filled ~13:35 UTC (partials), 16 @ $357.35875 (cost $5,717.74, ~6.0% equity). Confirmed via `alpaca.sh orders`/`positions`.
+
+**Stop placed:** 10% trailing stop GTC 16 sh — order e5e85854, stop $321.831, HWM $357.59, exp Dec 31. Confirmed via `alpaca.sh orders` (status new) / `positions` (AVGO 16 sh).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-05 | AVGO | BUY | 16 | $357.35875 (fill) | $321.831 (10% trailing GTC, order e5e85854); manual cut -7% ~$332.34 | Oct 1 Reuters Anthropic TPU financing report (two-source), follow-through confirmed (Oct 2 $355.125 > Sep 30 $351.22), +1.75% realized <15% chase bar; Tech #2 sector momentum; starter size within 85% band | ~$407.39 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
+
+**Post-trade:** Equity $95,114.41 | Cash $14,725.32 (15.48%) | 5 positions (AVGO, BMY, CVX, ECL, NTRA) | ~84.5% deployed — inside 75-85% band (L-024). 6 GTC stops resting. Week 14: 1/3 trades used. MU replacement-only (no capital freed). No gate-rejection scoreboard rows.
