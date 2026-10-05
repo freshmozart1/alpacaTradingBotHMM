@@ -1772,3 +1772,25 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-10-05 | AVGO | BUY | 16 | $357.35875 (fill) | $321.831 (10% trailing GTC, order e5e85854); manual cut -7% ~$332.34 | Oct 1 Reuters Anthropic TPU financing report (two-source), follow-through confirmed (Oct 2 $355.125 > Sep 30 $351.22), +1.75% realized <15% chase bar; Tech #2 sector momentum; starter size within 85% band | ~$407.39 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $95,114.41 | Cash $14,725.32 (15.48%) | 5 positions (AVGO, BMY, CVX, ECL, NTRA) | ~84.5% deployed — inside 75-85% band (L-024). 6 GTC stops resting. Week 14: 1/3 trades used. MU replacement-only (no capital freed). No gate-rejection scoreboard rows.
+
+### Oct 5 — Midday Scan (Day 65, Monday)
+
+**Account (16:14 UTC, pre-action):** 5 open positions — AVGO 16 sh +1.01% ($360.965, intraday +1.64%); BMY 295 sh **-7.51%** ($58.93 vs entry $63.713797, intraday -3.63%); CVX 95 sh +6.63% ($206.71, flat); ECL 70 sh -1.99% ($276.31, intraday +0.95%); NTRA 45 sh +2.41% ($421.78, intraday +2.79%). 6 GTC stops resting (AVGO e5e85854 now $326.457/HWM $362.73).
+
+**STEP 3 (cut losers):** **BMY cut at -7% per rule.** unrealized_plpc -0.07508 ≤ -0.07; quote $58.93/$58.94 (tight). Trailing stop 72cc2eb8 held all 295 sh (qty_available 0) → canceled first (16:14:04 UTC), then market close 7ba4eb0c filled 295 @ $58.93 (16:14:07 UTC). Realized P&L **-$1,411.22 (-7.51%)**. L-029: div-adj base $60.55 → -2.68% adj below base; thesis (EXCALIBER-RRMM) not formally broken, but -7% rule is mechanical. L-025: BMY was a 3-5-session extension entry — window closed today with a -7% cut → false-positive datapoint for weekly review.
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-10-05 | BMY | SELL | 295 | $63.713797 | $58.93 | -$1,411.22 (-7.51%) | cut at -7% per rule; stop 72cc2eb8 canceled |
+
+**STEP 4 (tighten trails):** N/A — max CVX +6.63%; none at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** AVGO +1.64% intraday — above $351.22 base, thesis intact. CVX flat, in-trend. ECL +0.95% — rebound continues, ~3.9% above stop. NTRA +2.79% — positive drift, PMDA Signatera thesis intact. No further cuts.
+
+**STEP 6 (optional research):** Skipped — BMY drift continuation, no sharp unexplained move elsewhere.
+
+**STEP 7 (verify):** Confirmed via `alpaca.sh positions` (BMY gone; AVGO 16, CVX 95, ECL 70, NTRA 45) and `orders` (5 GTC stops resting: AVGO e5e85854, NTRA 6416eac5, CVX e328a200/7f5acb83, ECL 64b1066c; BMY 72cc2eb8 canceled; 7ba4eb0c filled).
+
+**Post-action:** Equity $95,848.60 | Cash $32,109.67 (33.50%) | 4 positions | ~66.5% deployed — **below 75-85% band**. Sector book: Health Care 1 (NTRA), Energy 1, Materials 1, Tech 1. Health Care: BMY = 1 failed trade (sector exit rule at 2 consecutive). Replacement slot open: pre-market priority MU > AVGO full-size > UEC — re-validate at next market-open (Week 14: 1/3 used).
+
+**STEP 8 (notify):** ClickUp sent — BMY cut.
