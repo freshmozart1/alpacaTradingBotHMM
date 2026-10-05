@@ -3450,3 +3450,61 @@ Not armed (streak 2 < 3). Watchlist carried: UEC, MU, META, INTC, AVGO, MPC.
 
 ### Decision
 **HOLD.** Deployment 78.63% in band, 4 positions, 2/3 weekly trades. MU/UEC gate-clearing but capacity-blocked (replacement-only); AVGO fails follow-through; MPC sector move, no dated company catalyst. All held theses intact, 5 stops resting.
+
+## 2026-10-05 — Pre-market Research
+
+### Account
+- Equity: $94,914.59 | Cash: $20,443.06 (21.54%) | Buying power: $290,292.53 (margin, effective) | `balance_asof` 2026-10-02 (current, settled).
+- Position market value: $74,471.53 (BMY 295, CVX 95, ECL 70, NTRA 45) — **78.46% deployed** (in band, 5th session). 5 open orders, all trailing stop GTC resting, unchanged: BMY 72cc2eb8 $57.717/HWM $64.13 (exp Dec 28), CVX 7f5acb83/e328a200 $196.002/HWM $217.78 (exp Oct 29), ECL 64b1066c $265.797/HWM $295.33 (exp Oct 26), NTRA 6416eac5 $384.72075/HWM $427.4675 (exp Dec 24).
+- Day P&L (overnight marks): -$828.02 (-0.86%) vs last_equity $95,742.61 (= logged Oct 2 EOD, $0.00 diff). Marks are overnight/thin prints — IEX shows zero premarket bars for all 4 holdings; treat as unconfirmed.
+- Daytrade count: not returned; no day trades this challenge. Day 65, Monday, Week 14 (Oct 5-9), 0/3 weekly trades used.
+- No-trade streak: 3 (Sep 30, Oct 1, Oct 2).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.01%** (498 obs, 82 days in regime). Advisory only.
+- Held (marks): BMY $59.63 (-6.41%, **~0.6% above -7% cut ~$59.25** — unconfirmed overnight print; WebSearch quote ~$61.02), CVX $205.02 (+5.76%), ECL $273.70 (-2.92%, = Oct 2 close), NTRA $405.44 (-1.56%). None at +15%/+20% tighten.
+
+### Market Context
+- Perplexity: all 22 queries ran sequentially, exit 0. WebSearch used as second source (MRVL Investor Day, BMY price).
+- WTI/Brent: **WTI ~$90.03, Brent ~$102.50** (two live sources agree within $0.15). Not a repeat of Oct 2 (WTI ~$89.54/Brent ~$99.81); cross-source dispersion <1%. USO premarket $145.35 vs Oct 2 close $147.40 (**-1.4%**) — conflicts with the Brent-up read; operative: oil ~flat-to-soft, watch at open.
+- S&P 500 futures: ~7,774 (**-0.04%**). Not a repeat. Cross-check: SPY premarket $768.60 (12:52 UTC) vs Oct 2 close $769.65 → **-0.14%**. Operative: flat.
+- VIX: **~16.2-16.3** (Cboe 16.30). Not an exact repeat of Oct 2 (~15.98-16.39). Operative: ~16.
+- Today's releases: ISM Services / S&P Global Services PMI (final). Perplexity also listed "Initial Jobless Claims today" — Thursday series on a Monday → **suspect, discarded**. Market still digesting Oct 2 weak NFP. CPI Oct 14, PPI Oct 15, FOMC Oct 27-28 (sources split Oct 28 decision).
+- Earnings BMO: none notable (Nasdaq: no reports). None held/watchlist. Perplexity "AVGO earnings Oct 7" claim discarded (FQ3 already reported; L-021-style unreliable).
+- Sector momentum YTD: **Energy #1 (~+40-42%)**, **Technology #2 (~+28.8-38.8%)**, Industrials ~+8.7-12.6%. Top-2 unchanged.
+- Held tickers:
+  - **BMY**: no company-specific negative news (Q3 Oct 29; Opdivo biosimilar suit vs Amgen — not new; CAMZYOS expanded approval; Zacks Strong Buy Sep 25). Overnight $59.63 print unexplained — market-open must re-check vs -7% cut ~$59.25. L-025 window ends today.
+  - **CVX**: El Segundo refinery unplanned flare Oct 5 (operational, minor); TD Cowen $215 (dateless, excluded); Q3 Oct 30. Thesis intact.
+  - **ECL**: Q3 Oct 27 BMO confirmed. No fresh news. Thesis intact.
+  - **NTRA**: PMDA CDx (recycled, Japan launch 1H27); CEO sold 1,273 sh Oct 1 @ $413.31 (routine size). Thesis intact.
+
+### Lessons Check
+- L-025 (5-session window) — NTRA (Oct 2 close -0.36%, mark -1.56%), BMY (Oct 2 close -4.02%, mark -6.41%) tagged; neither hit -7% cut on a close. BMY window ends today — market-open/midday decide. Complied.
+- L-026 (chase-bar base) — MU: catalyst Sep 30 AMC, base Sep 29 $1,064.975, realized **+0.91%** (Oct 2 $1,074.71). AVGO: catalyst Oct 1, base Sep 30 $351.22, realized **+1.11%** ($355.125). UEC: catalyst Sep 29, base Sep 28 $9.18, realized **+1.25%** ($9.295). Complied.
+- L-027 (fully-specified idea while <75%) — not binding (78.46%); AVGO/MU specified anyway. Complied.
+- L-028 (routine commits) — `git log`: Oct 2 pre-market (b599aca), market-open (22598b3), midday (61240c7), EOD (dbf1d42) + weekly review (abbfe24) all present. No alert needed. Complied.
+- L-029 (div-adjusted base) — BMY ex-div Oct 2 $0.63: pre-catalyst base nominal $61.18 / div-adj $60.55. Oct 2 close $61.16 → nominal -0.03% / adj **+1.01%**. Overnight $59.63 → nominal -2.53% / adj -1.52%. Complied.
+- L-030 (sector cap 2) — book: Health Care 2 (BMY, NTRA), Energy 1 (CVX), Materials 1 (ECL). Any Health Care add = concentration skip. AVGO/MU/MRVL → Tech 1 post-fill; VLO → Energy 2 post-fill. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26, CVX Oct 29). Nothing to renew. Complied.
+
+### Yesterday's Skip Check
+INTC -2.98%, AVGO +0.68%, MPC **+7.40%**, UEC -1.43% (Oct 2 close via `bars` vs Ref; premarket quotes stale/wide, e.g. MPC 398.81/442.39) — MPC tracking missed (sector refiner rally), rest skip-right; skips mostly right.
+
+### Stall-Breaker
+**FIRED** (streak 3 >= 3 per Buy-Side Gate rule; command-file text says >=5, strategy rule governs). Dropped META, INTC, MPC (no company-specific dated catalyst 5+ sessions since Sep 28 add; no hard dated event within 5 sessions — META Q3 ~late Oct, INTC Oct 21, MPC Nov 3). Added **MRVL** (Tech: Investor Day **Tue Oct 6** 9 AM ET, two-source — Perplexity/BofA + Marvell IR press release; RBC expects guide raise), **VLO** (Energy: refining-margin upgrade coverage, Oct 1 +5.26% sector move), **LMT** (Industrials, 3rd sector: $94.2M Navy AEGIS award, undated; Q3 Oct 22). Prices cross-checked via `bars` (Oct 2 closes MRVL $272.33, VLO $405.66, LMT $506.25). Watchlist: MU, AVGO, UEC, MRVL, VLO, LMT.
+
+### Trade Ideas
+- **Capacity note:** cash 21.5%; deployment 78.46% → headroom to 85% band ≈ **$6.1k (~6.4%)**. Full ~19% add → ~97% (over band) = replacement-only. Starter size within headroom allowed. 0/3 weekly trades used.
+1. **AVGO — gate-clearing now, starter size (flag for market-open hard-check).** Oct 1-dated Reuters Anthropic TPU financing report (two-source on file Oct 2); follow-through now ✓ (Oct 2 $355.125 > Sep 30 $351.22, +1.11% < 15%); 2 sessions old (within window). Tech #2; sector count post-fill Tech 1. Entry ~$355 (limit ≤$360), **16 sh ≈ $5.7k (~6.0%)** → ~84.5% deployed. Stop 10% trail GTC (~$320); cut -7% ~$330; target ~$405 (+14%, 2:1). Re-validate at open: price must hold above $351.22 base; PT/financing headlines dated only.
+2. **MU — conditional replacement (carried).** Sep 30 FQ4 beat-and-raise (two-source); CLSA upgrade Oct 3 (support only, verify date); follow-through ✓ (+0.91% vs Sep 29 base). Session 4 of 5 in window. Entry ~$1,075 (limit ≤$1,100), 17 sh ≈ $18.3k (19.2%) — only if a stop/-7% cut frees capital (e.g. BMY). Stop 10% trail; cut -7% ~$1,000; target ~$1,225.
+3. **MRVL — event watch, not gate-clearing today.** Investor Day Oct 6 is a hard-dated event; no reaction yet. Re-check Oct 6-7 for guide raise + follow-through vs Oct 5 close.
+- UEC: catalyst in window but fading (+1.25% from base, -1.43% vs Ref); RBC initiation Sector Perform $10 dateless, excluded. VLO/LMT: no company-specific dated catalyst. No entry.
+- If a replacement slot opens (BMY cut): priority MU > AVGO full-size > UEC.
+
+### Risk Factors
+- **BMY overnight print $59.63 (-6.41%)** ~0.6% above -7% cut ~$59.25 — unconfirmed (no IEX bars, web quote ~$61). Market-open must check live price vs cut first; L-025 window closes today.
+- Oil signals mixed (Brent ~$102.5 vs USO premarket -1.4%); CVX stop $196.002 ~4.4% below mark.
+- ECL ~2.9% above stop $265.797, ~4.2% above cut ~$262.19.
+- Book concentration: 2 Health Care (NTRA, BMY) — no further HC adds (L-030).
+- ISM Services today; post-weak-NFP rates swing. AVGO circular-financing/customer-concentration headline risk.
+
+### Decision
+**HOLD (default)** — AVGO flagged for market-open hard-check as a ~6% starter within the 85% band (gate-clearing: two-source Oct 1 catalyst, follow-through ✓, +1.11% < 15%). MU replacement-only. BMY cut check takes priority at open. All held theses intact, 5 stops resting.
