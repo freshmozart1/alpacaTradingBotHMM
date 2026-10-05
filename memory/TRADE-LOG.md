@@ -1794,3 +1794,15 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Post-action:** Equity $95,848.60 | Cash $32,109.67 (33.50%) | 4 positions | ~66.5% deployed — **below 75-85% band**. Sector book: Health Care 1 (NTRA), Energy 1, Materials 1, Tech 1. Health Care: BMY = 1 failed trade (sector exit rule at 2 consecutive). Replacement slot open: pre-market priority MU > AVGO full-size > UEC — re-validate at next market-open (Week 14: 1/3 used).
 
 **STEP 8 (notify):** ClickUp sent — BMY cut.
+
+### Oct 5 — EOD Snapshot (Day 65, Monday)
+**Portfolio:** $96,291.99 | **Cash:** $32,109.67 (33.35%) | **Day P&L:** +$549.38 (+0.57%) | **Phase P&L:** -$3,708.01 (-3.71%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 16 | $357.35875 | $362.32 | +2.02% | +$79.38 (+1.39%) | $327.4785 (10% trail, GTC e5e85854, HWM $363.865) |
+| CVX | 95 | $193.860947 | $206.47 | -0.11% | +$1,197.86 (+6.50%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $277.07 | +1.23% | -$340.20 (-1.72%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| NTRA | 45 | $411.85 | $430.57 | +4.93% | +$842.40 (+4.55%) | $384.72075 (10% trail, GTC 6416eac5, HWM $427.4675) |
+
+**Notes:** Streak reset — trade(s) placed today: AVGO BUY 16 @ $357.35875 (market-open, stop e5e85854) and BMY SELL 295 @ $58.93 (midday -7% cut, realized -$1,411.22 / -7.51%). Week 14: 1/3 new trades used. Day P&L vs Oct 2 logged EOD $95,742.61 (Alpaca last_equity $95,742.61, match). Green day despite BMY loss (already in Oct 2 equity at -4.02% unrealized): NTRA +4.93% to new high above order HWM (Alpaca HWM field not yet refreshed; stop will ratchet to ~$387.51), AVGO +2.02% above $351.22 catalyst base, ECL +1.23% rebound (~4.2% above stop). Phase P&L -$3,708.01 (-3.71%) vs $100,000 start, 12th straight negative reading but best since BMY entry. 4 open positions, 66.65% deployed / 33.35% cash — **below 75-85% band (L-024)**; replacement slot open (MU > AVGO add > UEC) for next market-open. Health Care: BMY = 1 failed trade. No position at -7% cut or +15% tighten. 5 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
