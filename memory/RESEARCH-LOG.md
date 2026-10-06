@@ -3508,3 +3508,63 @@ INTC -2.98%, AVGO +0.68%, MPC **+7.40%**, UEC -1.43% (Oct 2 close via `bars` vs 
 
 ### Decision
 **HOLD (default)** — AVGO flagged for market-open hard-check as a ~6% starter within the 85% band (gate-clearing: two-source Oct 1 catalyst, follow-through ✓, +1.11% < 15%). MU replacement-only. BMY cut check takes priority at open. All held theses intact, 5 stops resting.
+
+## 2026-10-06 — Pre-market Research
+
+### Account
+- Equity: $96,144.42 | Cash: $32,109.30 (33.40%) | Buying power: $307,735.54 (margin, effective) | `balance_asof` 2026-10-05 (current, settled).
+- Position market value: $64,035.12 (AVGO 16, CVX 95, ECL 70, NTRA 45) — **66.60% deployed, below 75-85% band** (post-BMY cut). Headroom: +$8.1k to 75%, +$17.7k to 85%. 5 GTC trailing stops resting, unchanged: AVGO e5e85854 $327.4785/HWM $363.865 (exp Dec 31), NTRA 6416eac5 $384.72075/HWM $427.4675 (exp Dec 24; HWM not yet ratcheted to Oct 5 high), CVX e328a200/7f5acb83 $196.002/HWM $217.78 (exp Oct 29), ECL 64b1066c $265.797/HWM $295.33 (exp Oct 26).
+- Day P&L (overnight marks): +$71.61 (+0.07%) vs last_equity $96,072.81. Note: logged Oct 5 EOD $96,291.99 ≠ Alpaca last_equity $96,072.81 (-$219.18) — EOD used late marks; Alpaca figure operative.
+- Daytrade count: not returned; no day trades this challenge. Day 66, Tuesday, Week 14 (Oct 5-9), **1/3 weekly trades used** (AVGO).
+- No-trade streak: 0 (trades Oct 5).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97.92%** (499 obs, 83 days in regime). Advisory only.
+- Held (marks): AVGO $365.17 (+2.19%), CVX $204.71 (+5.60%), ECL $277.09 (-1.72%), NTRA $429.97 (+4.40%). None at +15%/+20% tighten, none near -7% cut.
+
+### Market Context
+- Perplexity: all 16 queries ran sequentially, exit 0. WebSearch used as second source (VLO UBS PT date, MRVL Investor Day).
+- WTI/Brent: **WTI ~$87.50, Brent ~$98.11** (OilPrice; Bloomberg $89.74/$100.70 — dispersion ~2.5%, <10%). Not a repeat of Oct 5 (~$90.03/$102.50). USO premarket ~$140.92 vs Oct 5 close $143.98 (**-2.1%**), Oct 5 already -2.3% d/d. Operative: oil soft (G7 emergency fuel release cited).
+- S&P 500 futures: sources split +0.09% to +0.71% (~7,833-7,864). Not a repeat. Cross-check: SPY premarket $777.52 (12:38 UTC) vs Oct 5 close $774.97 → **+0.33%**. Operative: modestly up.
+- VIX: **~15.3-15.5** (Cboe 15.48). Not a repeat of Oct 5 (~16.2-16.3). Operative: ~15.5, easing.
+- Today's releases: Trade balance (8:30 ET). Perplexity calendar query returned generic CPI/PPI/claims boilerplate — discarded. Weak Sep NFP (+29k, UE 4.2%) now cited by Perplexity as BLS-published → rate-path repricing dominant macro driver. CPI Oct 14, PPI Oct 15, FOMC Oct 27-28.
+- Earnings BMO: APOG, LW, RPM (none held/watchlist). STZ after close.
+- Sector momentum YTD: **Energy #1 (~+40-42%)**, **Technology #2 (~+28.8%)**. Top-2 unchanged.
+- Held tickers:
+  - **AVGO**: Anthropic $42B financing narrative (Oct 1, on file); MS power-constraint note (dateless). Next earnings ~Dec 10. Thesis intact; above $351.22 base.
+  - **CVX**: Q3 Oct 30; leadership changes eff. Jan 1, 2027 (succession, not new); Barclays Hold reaffirm (dateless, excluded). Oil -2% premarket = headwind. Thesis intact.
+  - **ECL**: Q3 Oct 27 BMO; dividend payable today (ex-div Sep 15, no price effect). No fresh news. Thesis intact.
+  - **NTRA**: AFT-70 NAVIGATE Phase III MRD-guided breast cancer trial w/ Alliance/Genentech (reported today, single-source); Guggenheim PT $475 (dateless, excluded). Thesis strengthened.
+
+### Lessons Check
+- L-025 (5-session window) — BMY (extension entry, Sep 29) hit -7% cut Oct 5, session 5 → **1 false positive** logged for Oct 9 review. NTRA (extension entry) +4.40%, window closed without cut. Complied.
+- L-026 (chase-bar base) — AVGO: catalyst Oct 1, base Sep 30 $351.22, realized **+3.22%** (Oct 5 $362.52). MU: catalyst Sep 30 AMC, base Sep 29 $1,064.975, realized **-0.12%** ($1,063.67). UEC: catalyst Sep 29, base Sep 28 $9.18, realized **+1.96%** ($9.36). MRVL: catalyst today (Investor Day), base Oct 5 $271.22, realized n/a. Complied.
+- L-027 (fully-specified idea while <75%) — **binding (66.60%)**: AVGO add fully specified below. Complied.
+- L-028 (routine commits) — `git log`: Oct 5 pre-market (699a697), market-open (9491c16), midday (697a968), EOD (9a2e6e5) all present. No alert needed. Complied.
+- L-029 (div-adj base) — no ex-div inside any held/candidate window (ECL ex-div Sep 15, pay today; AVGO last ex-div Sep 21). N/A, complied.
+- L-030 (sector cap 2) — book: Tech 1 (AVGO), Energy 1 (CVX), Materials 1 (ECL), Health Care 1 (NTRA). AVGO add → Tech 1; MRVL → Tech 2; UEC/VLO → Energy 2; LMT → Industrials 1. All pass. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26, CVX Oct 29). Nothing to renew. Complied.
+
+### Yesterday's Skip Check
+AVGO +2.78% (since entered), UEC -0.74%, MRVL -0.41%, VLO **+3.38%**, LMT +0.06% (Oct 5 close via `bars` vs Ref; overnight quotes stale/one-sided, e.g. VLO 398.86/436.73) — VLO tracking missed (refiner rally, PT dateless), rest skip-right; skips mostly right.
+
+### Stall-Breaker
+Not armed (streak 0 < 3; trades Oct 5). Watchlist carried: MU, UEC, MRVL, VLO, LMT (AVGO now held).
+
+### Trade Ideas
+- **Capacity note:** 66.60% deployed — need +$8.1k to reach band, up to +$17.7k. 2 weekly trades left.
+1. **AVGO add — gate-clearing, fully specified (L-027; flag for market-open hard-check).** Oct 1 Reuters Anthropic TPU financing (two-source on file Oct 2); follow-through ✓ (Oct 5 $362.52 > Sep 30 $351.22), +3.22% < 15%; 3 sessions back (Oct 2/5/6 — L-025 extension tag). Tech #2; sector count unchanged (Tech 1). Entry ~$365 (limit ≤$372), **+32 sh ≈ $11.7k** → 48 sh ≈ $17.5k (18.2% equity, <20%) → ~78.8% deployed. Stop: 10% trailing GTC on the 32 new sh (~$329); blended cut -7% ≈ $337 (blended avg ~$362.5); target ~$414 (+14%, 2:1). Re-validate at open: hold above $351.22, no negative dated headline.
+2. **MRVL — today-dated hard event (Investor Day, AM ET, two-source: Marvell IR + Perplexity).** Not gate-clearing pre-market (no reaction). Market-open/midday: counts only if a dated guide raise/LT framework (e.g. FY28 ~$18B / custom >$10B) is two-source confirmed AND price holds above Oct 5 close $271.22 with <15% move. If so: entry ~$275-285, ~$9-10k (≤10%, combined with AVGO add ≤85% band), stop 10% trail, cut -7%, target +14%. Tech 2 post-fill.
+3. **UEC — gate-clearing but weak, secondary.** Sep 29 FY26 print (two-source), follow-through ✓ (+1.96%), **last session in 5-session window (today)**. Energy 2 post-fill. Only if AVGO add fails at open: entry ~$9.36 (limit ≤$9.50), ~1,800 sh ≈ $16.8k (17.5%), stop 10% trail, cut ~$8.70, target ~$10.67. Momentum fading (-0.74% vs Ref).
+- **MU — no entry:** follow-through now fails (Oct 5 $1,063.67 < Sep 29 base $1,064.975); buyback (Dec 9) is future, not a catalyst.
+- **VLO — no entry:** UBS Buy $355→$450 "on Tuesday" — no explicit date after 2 attempts (Perplexity + WebSearch) → dateless, excluded (L-021 rule). Q3 Oct 22.
+- **LMT — no entry:** Boeing $14.7B PAC-3 seeker contract (Boeing's award from LMT, ownership verified as Boeing's contract), $209M Navy mod (undated); price flat. Q3 Oct 22.
+
+### Risk Factors
+- Oil soft (USO -2.1% premarket, 2nd down day) — CVX stop $196.002 ~4.3% below mark.
+- ECL ~4.1% above stop $265.797, ~5.4% above cut ~$262.19.
+- AVGO add concentrates ~18% in one AI-financing narrative (circular-financing/customer-concentration headline risk).
+- MRVL Investor Day intraday — sell-the-news risk for semis/AI complex (AVGO correlation).
+- Trade balance today; rate-path repricing after weak NFP; CPI Oct 14.
+- Health Care: BMY = 1 failed trade (sector exit at 2 consecutive).
+
+### Decision
+**HOLD (default) — AVGO +32 sh add flagged for market-open hard-check** (gate-clearing: two-source Oct 1 catalyst, follow-through ✓, +3.22% < 15%; lifts deployment 66.6% → ~78.8% into band). MRVL event-watch (today-dated). UEC fallback (last window day). All held theses intact, 5 stops resting.
