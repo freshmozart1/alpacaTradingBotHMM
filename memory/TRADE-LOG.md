@@ -1844,3 +1844,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-10-06 | AVGO | BUY (add) | 32 | $366.18 (fill) | $329.535 (10% trailing GTC, order fe866c18); blended manual cut -7% ~$337.81 | Oct 1 Reuters Anthropic TPU financing report (two-source), follow-through confirmed (Oct 5 $362.52 > Sep 30 $351.22), +4.26% realized <15% chase bar; Tech #2 momentum; L-025 extension entry (3 sessions); restores deployment into band | ~$414 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $96,607.65 | Cash $20,391.54 (21.11%) | 4 positions (AVGO 48, CVX 95, ECL 70, NTRA 45) | ~78.9% deployed — inside 75-85% band. 6 GTC stops resting. Week 14: 2/3 trades used. No new gate-rejection scoreboard rows.
+
+### Oct 6 — Midday Scan (Day 66, Tuesday)
+
+**Account (16:13 UTC):** Equity $96,135.76 | Cash $20,391.54 (21.21%) | ~78.8% deployed (in band). 4 open positions — AVGO 48 sh +4.24% ($378.655, intraday +4.45%); CVX 95 sh +7.43% ($208.265, intraday +0.87%); ECL 70 sh -0.17% ($281.44, intraday +1.58%); NTRA 45 sh -2.27% ($402.52, intraday **-5.43%**). 6 GTC stops resting: AVGO fe866c18 (32 sh) + e5e85854 (16 sh) both $341.24301/HWM $379.1589 (auto-ratcheted); NTRA 6416eac5 $393.66747/HWM $437.4083 (ratcheted to today's intraday high); CVX e328a200/7f5acb83 $196.002/HWM $217.78; ECL 64b1066c $265.797/HWM $295.33.
+
+**STEP 3 (cut losers):** N/A — none at -7% (NTRA -2.27%, trigger ~$383.02; ECL -0.17%). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max CVX +7.43%; none at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** AVGO +4.45% intraday — new HWM $379.16, well above $351.22 base; thesis intact. CVX +0.87%, in-trend. ECL +1.58% — rebound continues, back near entry, ~5.9% above stop. **NTRA -5.43%** — reversal from fresh 52-wk high $437.41 at open to ~$402. Perplexity: no Oct 6-dated adverse headline (no downgrade/reimbursement/litigation/competitor); dated coverage (QuiverQuant, 24/7 Wall St., MarketBeat Oct 6) = profit-taking after strong run + CEO 10b5-1 sale (1,273 sh, routine). Guggenheim PT $475 Buy supportive. PMDA Signatera thesis not broken → HOLD. Note: trail stop now $393.67, only ~2.2% below mark — may fill mechanically on further weakness (auto-ratchet, not a manual move; never move down).
+
+**STEP 6 (optional research):** NTRA sharp move — one Perplexity query, addendum in RESEARCH-LOG.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, NTRA 45) and `orders` (6 GTC stops resting, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
