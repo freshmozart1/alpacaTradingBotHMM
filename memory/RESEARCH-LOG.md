@@ -3568,3 +3568,7 @@ Not armed (streak 0 < 3; trades Oct 5). Watchlist carried: MU, UEC, MRVL, VLO, L
 
 ### Decision
 **HOLD (default) — AVGO +32 sh add flagged for market-open hard-check** (gate-clearing: two-source Oct 1 catalyst, follow-through ✓, +3.22% < 15%; lifts deployment 66.6% → ~78.8% into band). MRVL event-watch (today-dated). UEC fallback (last window day). All held theses intact, 5 stops resting.
+
+## 2026-10-06 — Midday Addendum
+
+NTRA -5.43% intraday ($402.52 vs Oct 5 $425.64; opened ~$429, hit fresh 52-wk high $437.41, low ~$394.77). Perplexity (dated Oct 6 sources: QuiverQuant, 24/7 Wall St., MarketBeat, StockAnalysis): no adverse fundamental headline — move attributed to profit-taking after strong run plus CEO Chapman 10b5-1 sale (1,273 sh). Guggenheim Buy, PT $360→$475 (support; date not independently confirmed). AFT-70 NAVIGATE trial (pre-market) not reversed. Thesis intact → hold; trail stop $393.67 ~2.2% below mark, cut ~$383.02. AVGO +4.45% (new HWM $379.16) with MRVL Investor Day tape — no sell-the-news spillover. No action on any position; no new entry (Week 14: 2/3 used, ~78.8% deployed, in band).
