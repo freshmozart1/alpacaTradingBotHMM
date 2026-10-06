@@ -1806,3 +1806,41 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $430.57 | +4.93% | +$842.40 (+4.55%) | $384.72075 (10% trail, GTC 6416eac5, HWM $427.4675) |
 
 **Notes:** Streak reset — trade(s) placed today: AVGO BUY 16 @ $357.35875 (market-open, stop e5e85854) and BMY SELL 295 @ $58.93 (midday -7% cut, realized -$1,411.22 / -7.51%). Week 14: 1/3 new trades used. Day P&L vs Oct 2 logged EOD $95,742.61 (Alpaca last_equity $95,742.61, match). Green day despite BMY loss (already in Oct 2 equity at -4.02% unrealized): NTRA +4.93% to new high above order HWM (Alpaca HWM field not yet refreshed; stop will ratchet to ~$387.51), AVGO +2.02% above $351.22 catalyst base, ECL +1.23% rebound (~4.2% above stop). Phase P&L -$3,708.01 (-3.71%) vs $100,000 start, 12th straight negative reading but best since BMY entry. 4 open positions, 66.65% deployed / 33.35% cash — **below 75-85% band (L-024)**; replacement slot open (MU > AVGO add > UEC) for next market-open. Health Care: BMY = 1 failed trade. No position at -7% cut or +15% tighten. 5 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 6 — Market-Open (Day 66, Tuesday)
+
+**Operational Rule check:** Oct 5 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-trade (13:17 UTC):** Equity $96,131.10 | Cash $32,109.30 (33.40%) | 4 open positions (AVGO 16 sh +2.17%, CVX 95 sh +5.73%, ECL 70 sh -1.72%, NTRA 45 sh +4.20%), 5 GTC trailing stops resting unchanged. `balance_asof` 2026-10-05. daytrade_count not returned; no day trades this challenge. Week 14 (Oct 5-9): 1/3 used (AVGO).
+
+**Held position check:** none at -7% cut or +15%/+20% tighten. No action. L-031: no GTC expiry within 5 sessions (ECL Oct 26, CVX Oct 29).
+
+**Open tone (13:36 UTC):** SPY $778.13 (+0.41% vs $774.97), up.
+
+**Gate check — AVGO add (+32 sh):**
+- Positions after fill: 4 (add to existing) <= 6 — pass.
+- Trades this week incl. this one: 2/3 (Week 14) — pass.
+- Cost <= 20% equity ($19,226 cap): total 48 sh ~$17.6k (18.2%) — pass.
+- Cost <= cash ($32,109.30): ~$11.7k — pass.
+- Catalyst: Oct 1 Reuters Anthropic TPU financing report, two-source (on file Oct 2), 3 sessions back → **L-025 3-5-session extension entry (tagged)**. Follow-through: Oct 5 close $362.52 > Sep 30 pre-catalyst close $351.22 — pass. Chase bar (L-026): catalyst Oct 1, base Sep 30 $351.22, realized +4.26% at fill $366.18 (<15%; bar $403.90) — pass. Open $366.75 holds above base — pass.
+- PDT room — pass (0 day trades; equity >$25k).
+- Stock (AVGO, Nasdaq) — pass.
+- Sector (L-030): Technology 1 post-fill (unchanged; Tech 1, Energy 1, Materials 1, HC 1) — pass.
+- Deployment post-fill ~78.9% — inside 75-85% band.
+- Ex-div/analyst (strategy rule): no same-week ex-date (last Sep 21). Mizuho reiterated Outperform $410 Oct 6 (dated, Finviz; support only). Concentration/circular-financing headline risk noted. Non-blocking.
+
+**Gate check — MRVL:** Investor Day today (hard-dated), open $270.67 → $287.37 (+6.0% vs Oct 5 $271.22). **Gate-fail: catalyst** — no Oct 6-dated guide raise/LT target found (Perplexity: only pre-event analyst previews, event listing). Also would breach 85% band post-AVGO. Not entered. Scoreboard row already open (Oct 5) — no new row.
+
+**UEC:** fallback only if AVGO add failed — not evaluated. Window expires today.
+
+**Entry Checklist (AVGO add):** Catalyst = Oct 1 Anthropic TPU financing report (two-source, follow-through). Sector = Technology (#2 YTD). Stop = 10% trailing GTC on new 32 sh; blended manual cut -7% ≈ $337.81 (blended avg $363.24). Target ~$414 (+14%).
+
+**Order:** Market buy 32 sh (day) fe14103d submitted 13:36:51 UTC → filled 32 @ $366.18 (cost $11,717.76). Confirmed via `alpaca.sh orders`/`positions` (AVGO 48 sh, avg $363.239583).
+
+**Stop placed:** 10% trailing stop GTC 32 sh — order fe866c18, stop $329.535, HWM $366.15, exp Jan 4 2027. Existing 16-sh stop e5e85854 now $330.75/HWM $367.5. Confirmed via `alpaca.sh orders` (status new).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-06 | AVGO | BUY (add) | 32 | $366.18 (fill) | $329.535 (10% trailing GTC, order fe866c18); blended manual cut -7% ~$337.81 | Oct 1 Reuters Anthropic TPU financing report (two-source), follow-through confirmed (Oct 5 $362.52 > Sep 30 $351.22), +4.26% realized <15% chase bar; Tech #2 momentum; L-025 extension entry (3 sessions); restores deployment into band | ~$414 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
+
+**Post-trade:** Equity $96,607.65 | Cash $20,391.54 (21.11%) | 4 positions (AVGO 48, CVX 95, ECL 70, NTRA 45) | ~78.9% deployed — inside 75-85% band. 6 GTC stops resting. Week 14: 2/3 trades used. No new gate-rejection scoreboard rows.
