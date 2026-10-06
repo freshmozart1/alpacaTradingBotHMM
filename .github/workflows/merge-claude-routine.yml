@@ -16,12 +16,12 @@ concurrency:
 jobs:
   create-and-merge:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
         with:
-          # `gh pr merge --delete-branch` needs the base branch available
-          # locally before it can remove the just-merged head branch.
+          # Run the merge helper from the trusted base branch.
           ref: main
           fetch-depth: 0
 
@@ -30,8 +30,29 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           BRANCH: ${{ github.ref_name }}
+          EXPECTED_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
+
+          # A newer push can arrive while this event waits in concurrency.
+          if ref="$(git ls-remote --exit-code origin "refs/heads/$BRANCH")"; then
+            read -r current_sha current_ref <<< "$ref"
+            if [[ ! "$current_sha" =~ ^[0-9a-f]{40}$ || "$current_ref" != "refs/heads/$BRANCH" ]]; then
+              echo "Invalid remote branch response for $BRANCH." >&2
+              exit 1
+            fi
+            if [[ "$current_sha" != "$EXPECTED_SHA" ]]; then
+              echo "Skipping superseded push $EXPECTED_SHA ($BRANCH is now $current_sha)."
+              exit 0
+            fi
+          else
+            status=$?
+            if [[ "$status" -eq 2 ]]; then
+              echo "Skipping $BRANCH: the branch was already deleted."
+              exit 0
+            fi
+            exit "$status"
+          fi
 
           number="$(gh pr list --head "$BRANCH" --base main --state open \
             --json number --jq '.[0].number')"
@@ -48,6 +69,10 @@ jobs:
           echo "number=$number" >> "$GITHUB_OUTPUT"
 
       - name: Squash merge and delete the routine branch
+        if: steps.pull-request.outputs.number != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh pr merge "${{ steps.pull-request.outputs.number }}" --squash --delete-branch
+          PR_NUMBER: ${{ steps.pull-request.outputs.number }}
+          EXPECTED_SHA: ${{ github.sha }}
+          BRANCH: ${{ github.ref_name }}
+        run: bash scripts/merge-claude-routine.sh "$PR_NUMBER" "$EXPECTED_SHA" "$BRANCH"
