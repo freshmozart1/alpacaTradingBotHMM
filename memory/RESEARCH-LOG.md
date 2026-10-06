@@ -3556,7 +3556,7 @@ Not armed (streak 0 < 3; trades Oct 5). Watchlist carried: MU, UEC, MRVL, VLO, L
 3. **UEC — gate-clearing but weak, secondary.** Sep 29 FY26 print (two-source), follow-through ✓ (+1.96%), **last session in 5-session window (today)**. Energy 2 post-fill. Only if AVGO add fails at open: entry ~$9.36 (limit ≤$9.50), ~1,800 sh ≈ $16.8k (17.5%), stop 10% trail, cut ~$8.70, target ~$10.67. Momentum fading (-0.74% vs Ref).
 - **MU — no entry:** follow-through now fails (Oct 5 $1,063.67 < Sep 29 base $1,064.975); buyback (Dec 9) is future, not a catalyst.
 - **VLO — no entry:** UBS Buy $355→$450 "on Tuesday" — no explicit date after 2 attempts (Perplexity + WebSearch) → dateless, excluded (L-021 rule). Q3 Oct 22.
-- **LMT — no entry:** Boeing $14.7B PAC-3 seeker contract (Boeing's award from LMT, ownership verified as Boeing's contract), $209M Navy mod (undated); price flat. Q3 Oct 22.
+- **LMT — no entry:** Boeing $14.7B PAC-3 seeker contract action (per Perplexity, Boeing is the awardee as LMT supplier — not LMT revenue; not verified via IR, not counted), $209M Navy mod (undated); price flat. Q3 Oct 22.
 
 ### Risk Factors
 - Oil soft (USO -2.1% premarket, 2nd down day) — CVX stop $196.002 ~4.3% below mark.
