@@ -1860,3 +1860,15 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, NTRA 45) and `orders` (6 GTC stops resting, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 6 — EOD Snapshot (Day 66, Tuesday)
+**Portfolio:** $95,860.69 | **Cash:** $20,391.54 (21.27%) | **Day P&L:** -$431.30 (-0.45%) | **Phase P&L:** -$4,139.31 (-4.14%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 48 | $363.239583 | $376.30 | +3.80% | +$626.90 (+3.60%) | $342.756 (10% trail, GTC e5e85854 16 sh / fe866c18 32 sh, HWM $380.84) |
+| CVX | 95 | $193.860947 | $207.58 | +0.54% | +$1,303.31 (+7.08%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $280.82 | +1.35% | -$77.70 (-0.39%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| NTRA | 45 | $411.85 | $400.65 | -5.87% | -$504.00 (-2.72%) | $393.66747 (10% trail, GTC 6416eac5, HWM $437.4083) |
+
+**Notes:** Streak reset — trade(s) placed today: AVGO BUY (add) 32 @ $366.18 (market-open, stop fe866c18); 0 consecutive no-trade days. Week 14 (Oct 5-9): 2/3 new trades used (AVGO, AVGO add). Day P&L vs Oct 5 logged EOD $96,291.99 (Alpaca last_equity $96,072.81, $219.18 diff = NTRA lastday $425.64 vs logged $430.57 — logged value used). Red day driven by NTRA -5.87%: reversal from fresh high $437.41 at open on profit-taking + routine CEO 10b5-1 sale, no adverse dated headline (midday check); thesis intact but $400.65 only ~1.8% above auto-ratcheted trail $393.67 — likely mechanical exit on further weakness (would land ~-4.4%, above -7% cut ~$383.02). AVGO +3.80% offset (new HWM $380.84, stops ratcheted to $342.756; add +2.76% vs fill), ECL +1.35% (back near entry, ~5.7% above stop), CVX +0.54%. Phase P&L -$4,139.31 (-4.14%) vs $100,000 start, 13th straight negative reading. 4 open positions, 78.73% deployed / 21.27% cash — inside 75-85% band (L-024). No position at -7% cut or +15% tighten. 6 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
