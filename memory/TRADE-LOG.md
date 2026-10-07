@@ -1910,3 +1910,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-10-07 | MRVL | BUY | 60 | $280.482 (fill) | $252.333 (10% trailing GTC, order 330c8e57); manual cut -7% ~$260.85 | Oct 6 Investor Day FY28 revenue target ~$20B (from $18B) / FY31 $70-90B (two-source), follow-through confirmed (Oct 6 $287.205 > Oct 5 $271.22), +3.42% realized <15% chase bar; Tech #2 momentum; refills NTRA slot | ~$320 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $95,517.58 | Cash $21,239.51 (22.24%) | 4 positions (AVGO 48, CVX 95, ECL 70, MRVL 60) | ~77.8% deployed — inside 75-85% band. 6 GTC stops resting (AVGO ×2, CVX ×2, ECL, MRVL). Week 14: 3/3 trades used — no further entries this week. No gate-rejection scoreboard rows.
+
+### Oct 7 — Midday Scan (Day 67, Wednesday)
+
+**Account (16:13 UTC):** Equity $95,244.99 | Cash $21,239.51 (22.30%) | ~77.7% deployed (in band). 4 open positions — AVGO 48 sh +3.12% ($374.57, intraday -0.33%); CVX 95 sh +5.92% ($205.33, intraday -1.08%); ECL 70 sh -0.97% ($279.21, intraday -0.57%); MRVL 60 sh +0.86% ($282.895, intraday -1.43% vs Oct 6 close, +0.86% vs fill). 6 GTC stops resting: AVGO fe866c18 (32 sh) + e5e85854 (16 sh) $342.756/HWM $380.84; CVX e328a200/7f5acb83 $196.002/HWM $217.78; ECL 64b1066c $265.797/HWM $295.33; MRVL 330c8e57 $256.455/HWM $284.95 (auto-ratcheted).
+
+**STEP 3 (cut losers):** N/A — none at -7% (ECL -0.97%, trigger ~$262.19; MRVL cut ~$260.85). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max AVGO +3.12% / CVX +5.92%; none at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** All moves mild, no sharp outliers. AVGO -0.33% — holds well above $351.22 base, ~8.5% above stop; intact. CVX -1.08% — in-trend pullback, ~4.5% above stop; intact. ECL -0.57% — near entry, ~4.8% above stop; intact. MRVL -1.43% vs Oct 6 close but above fill and Oct 5 base $271.22 — Investor Day thesis intact, ~9.3% above stop. No cuts.
+
+**STEP 6 (optional research):** Skipped — nothing moving sharply. No RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, MRVL 60) and `orders` (6 GTC stops resting, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
