@@ -3572,3 +3572,64 @@ Not armed (streak 0 < 3; trades Oct 5). Watchlist carried: MU, UEC, MRVL, VLO, L
 ## 2026-10-06 — Midday Addendum
 
 NTRA -5.43% intraday ($402.52 vs Oct 5 $425.64; opened ~$429, hit fresh 52-wk high $437.41, low ~$394.77). Perplexity (dated Oct 6 sources: QuiverQuant, 24/7 Wall St., MarketBeat, StockAnalysis): no adverse fundamental headline — move attributed to profit-taking after strong run plus CEO Chapman 10b5-1 sale (1,273 sh). Guggenheim Buy, PT $360→$475 (support; date not independently confirmed). AFT-70 NAVIGATE trial (pre-market) not reversed. Thesis intact → hold; trail stop $393.67 ~2.2% below mark, cut ~$383.02. AVGO +4.45% (new HWM $379.16) with MRVL Investor Day tape — no sell-the-news spillover. No action on any position; no new entry (Week 14: 2/3 used, ~78.8% deployed, in band).
+
+## 2026-10-07 — Pre-market Research
+
+### Account
+- Equity: $95,555.68 | Cash: $20,391.53 (21.34%) | Buying power: $292,025.74 (margin, effective) | `balance_asof` 2026-10-06 (current, settled).
+- Position market value: $75,164.15 (AVGO 48, CVX 95, ECL 70, NTRA 45) — **78.66% deployed, inside 75-85% band**. Headroom to 85%: ~$6.06k. 6 GTC trailing stops resting, unchanged: AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, NTRA 6416eac5 $393.66747/HWM $437.4083, CVX e328a200/7f5acb83 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33.
+- Day P&L (overnight marks): -$281.48 (-0.29%) vs last_equity $95,837.16.
+- Daytrade count: not returned; no day trades this challenge. Day 67, Wednesday, Week 14 (Oct 5-9), **2/3 weekly trades used** (AVGO, AVGO add).
+- No-trade streak: 0 (trade Oct 6).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98.15%** (500 obs, 84 days in regime). Advisory only.
+- Held (marks): AVGO $371.25 (+2.21%), CVX $208.65 (+7.63%), ECL $280.82 (-0.39%), NTRA **$397.00 (-3.61%) — only ~0.85% above trail $393.67**. None at +15%/+20% tighten, none at -7% cut (NTRA cut ~$383.02).
+
+### Market Context
+- Perplexity: all 16 queries ran sequentially, exit 0. WebSearch used as second source (MRVL Investor Day, UEC Oct 6 move).
+- WTI/Brent: **WTI ~$90.06 (+0.69%), Brent ~$101.44 (+0.76%)** (Investing.com). Not a repeat of Oct 6 (~$87.50/$98.11). USO premarket $145.61 vs Oct 6 close $144.90 (**+0.49%**) — consistent. Operative: oil firm, ~$90 WTI.
+- S&P 500 futures: **-0.16%** (~7,861.50, CNBC/Investing). Not a repeat. Cross-check: SPY premarket $776.17 vs Oct 6 close $779.10 → **-0.38%**. Operative: modestly down after 4th record close.
+- VIX: **~15.1-15.3** (Cboe 15.27). Not an exact repeat of Oct 6 (~15.3-15.5). Operative: ~15.2, low.
+- Today's releases: **FOMC minutes (Sep 15-16) 2:00 PM ET**, **$39B 10-yr auction 1:00 PM ET**, consumer credit 3:00 PM. Perplexity also lists ISM Services 9:45 — unverified (ISM Services normally 3rd business day), not used. CPI Oct 14, PPI Oct 15, FOMC Oct 27-28.
+- Earnings BMO: none. AMC: LEVI, APLD (none held/watchlist). Q3 season kicks off next week (banks).
+- Sector momentum YTD (Fidelity): **Energy #1 (+40.07%)**, **Technology #2 (+28.83%)**, Industrials #3 (+8.71%). Top-2 unchanged.
+- Held tickers:
+  - **AVGO**: Anthropic financing narrative (Oct 1, on file; $42B, some coverage up to $60B, unconfirmed); heavy call buying (undated). Next earnings ~Dec 10. Thesis intact; Oct 6 close $375.91 > $351.22 base.
+  - **CVX**: Q3 Oct 30; Hess Midstream $200M divestiture, Bakken midstream cost cut ~50%, Namibia exploration (all undated/not new). Oil firm = tailwind. Thesis intact.
+  - **ECL**: Q3 Oct 27; MarketBeat Oct 7 consensus "Moderate Buy" PT $327.67 (aggregate, not an action). No fresh news. Thesis intact.
+  - **NTRA**: no new dated headline; Oct 6 slide = profit-taking + 10b5-1 insider sales (on file). Barclays PT $475 (dateless, excluded). Thesis intact but **trail stop likely to fill on any further weakness** — mechanical, accept (never move down).
+
+### Lessons Check
+- L-025 (5-session window) — AVGO add (extension entry Oct 6, tagged): Oct 6 close $375.91 vs fill $366.18 = **+2.66%**, no cut. BMY false positive on file for Oct 9 review. Complied.
+- L-026 (chase-bar base) — MRVL: catalyst Oct 6, base Oct 5 $271.22, realized **+5.89%** (Oct 6 $287.205). AVGO: catalyst Oct 1, base Sep 30 $351.22, realized **+7.03%** ($375.91). UEC: catalyst Sep 29, base Sep 28 $9.18, realized +9.97% ($10.095) — window expired (Oct 6 = 5th session). MU: catalyst Sep 30, base Sep 29 $1,064.975, realized **-1.84%** ($1,045.41). Complied.
+- L-027 (fully-specified idea while <75%) — not binding (78.66%); MRVL idea fully specified anyway. Complied.
+- L-028 (routine commits) — `git log`: Oct 6 pre-market (0e0a347, "Claude Routine update #217", contains pre-market research 2026-10-06), market-open (c1decfe), midday (628f197), EOD (e8d7df9) all present. No alert needed. Complied.
+- L-029 (div-adj base) — MRVL ex-div Oct 9 ($0.06) inside window: base nominal $271.22 / adjusted $271.16 (immaterial). MU ex-div Oct 14 (outside window). No held name ex-div in window. Complied.
+- L-030 (sector cap 2) — book: Tech 1 (AVGO), Energy 1 (CVX), Materials 1 (ECL), Health Care 1 (NTRA). MRVL → Tech 2 (pass); UEC/VLO → Energy 2 (pass); LMT → Industrials 1. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26, CVX Oct 29). Nothing to renew. Complied.
+
+### Yesterday's Skip Check
+UEC **+7.05%**, MRVL **+5.46%**, VLO **+3.35%**, LMT +0.73% (Oct 6 close via `bars` vs Ref; overnight quotes stale/one-sided, e.g. UEC 8.68/11.48) — UEC/MRVL/VLO tracking missed, LMT skip-right; skips look wrong so far (MRVL now has a gate-clearing catalyst; UEC jump has no Oct 6-dated catalyst).
+
+### Stall-Breaker
+Not armed (streak 0 < 3; trade Oct 6). Watchlist carried: MRVL, UEC, VLO, LMT, MU.
+
+### Trade Ideas
+- **Capacity note:** 78.66% deployed; band headroom only ~$6.06k. **1 weekly trade left** (Week 14: 2/3).
+1. **MRVL — gate-clearing, fully specified (flag for market-open hard-check).** Catalyst: **Oct 6 Investor Day — FY28 revenue target raised to ~$20B from $18B (vs ~$18.2B consensus), FY31 $70-90B, $400B TAM by 2030**. Two-source: Perplexity + WebSearch (Investing.com, GuruFocus, Invezz — all Oct 6). Follow-through ✓ (Oct 6 close $287.205 > Oct 5 pre-catalyst $271.22); realized +5.89% < 15% (bar $311.90). 1 session back. Tech #2; sector count → Tech 2 (L-030 pass). Ex-div Oct 9 $0.06 (flag, non-blocking).
+   - **Base case (NTRA still held):** entry ~$287 (limit ≤$295), **20 sh ≈ $5.74k (6.0%)** → ~84.7% deployed. Stop 10% trailing GTC (~$258); cut -7% (~$267); target ~$327 (+14%, 2:1).
+   - **If NTRA trail fills pre-entry:** upsize to **~60 sh ≈ $17.2k (18.0%, <20%)** → ~84% deployed. Same stop/cut/target %.
+   - Re-validate at open: hold above $271.22, realized <15% vs base, no negative dated headline (sell-the-news fade risk after +5.9%).
+2. **UEC — no entry:** Sep 29 catalyst window closed (Oct 6 = 5th session). Oct 6 +7.85% jump: WebSearch returned only stale (FY-Q1/earlier) "UEC jumps" articles, Perplexity only re-cites FY26 print → no Oct 6-dated catalyst. Not counted.
+- **MU — no entry:** follow-through fails (Oct 6 $1,045.41 < Sep 29 base $1,064.975); Netlist $600M settlement and buyback speculation undated.
+- **VLO — no entry:** Barclays PT $323→$441 Overweight (undated in Perplexity; not counted — not searched a 2nd time since VLO is otherwise capacity/catalyst-blocked); dyed-diesel/fuel-tax refiner rally = sector policy, not company-specific dated. Q3 Oct 22.
+- **LMT — no entry:** Rothschild Redburn Buy $650 initiation and $245M IRST/$209M SLQ-32 mods undated; PAC-3 seeker award is Boeing's (not LMT revenue, per Oct 6). Q3 Oct 22.
+
+### Risk Factors
+- **NTRA $397 vs trail $393.67 (~0.85%)** — likely mechanical exit at open (~-4.4%). Would be **2nd consecutive failed Health Care trade** (BMY, NTRA) → sector exit rule; no further HC entries.
+- FOMC minutes 2 PM + 10-yr auction 1 PM — rate-path volatility; futures -0.16%/SPY -0.38% premarket.
+- MRVL sell-the-news risk after +5.9%; AVGO/MRVL would be ~24% combined in AI semis (correlated).
+- ECL ~5.6% above stop $265.797; CVX ~6.1% above stop $196.002, oil firm (supportive).
+- CPI Oct 14; Q3 earnings season starts next week.
+
+### Decision
+**HOLD (default) — MRVL flagged for market-open hard-check** (gate-clearing: Oct 6-dated, two-source Investor Day target raise, follow-through ✓, +5.89% < 15%; 20 sh base / ~60 sh if NTRA stops out; uses last Week-14 trade). Watch NTRA trail. All held theses intact, 6 stops resting.
