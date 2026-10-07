@@ -1872,3 +1872,41 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | NTRA | 45 | $411.85 | $400.65 | -5.87% | -$504.00 (-2.72%) | $393.66747 (10% trail, GTC 6416eac5, HWM $437.4083) |
 
 **Notes:** Streak reset — trade(s) placed today: AVGO BUY (add) 32 @ $366.18 (market-open, stop fe866c18); 0 consecutive no-trade days. Week 14 (Oct 5-9): 2/3 new trades used (AVGO, AVGO add). Day P&L vs Oct 5 logged EOD $96,291.99 (Alpaca last_equity $96,072.81, $219.18 diff = NTRA lastday $425.64 vs logged $430.57 — logged value used). Red day driven by NTRA -5.87%: reversal from fresh high $437.41 at open on profit-taking + routine CEO 10b5-1 sale, no adverse dated headline (midday check); thesis intact but $400.65 only ~1.8% above auto-ratcheted trail $393.67 — likely mechanical exit on further weakness (would land ~-4.4%, above -7% cut ~$383.02). AVGO +3.80% offset (new HWM $380.84, stops ratcheted to $342.756; add +2.76% vs fill), ECL +1.35% (back near entry, ~5.7% above stop), CVX +0.54%. Phase P&L -$4,139.31 (-4.14%) vs $100,000 start, 13th straight negative reading. 4 open positions, 78.73% deployed / 21.27% cash — inside 75-85% band (L-024). No position at -7% cut or +15% tighten. 6 GTC stops resting, no fills. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 7 — Market-Open (Day 67, Wednesday)
+
+**Operational Rule check:** Oct 6 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-open (13:17 UTC):** Equity $95,552.51 | Cash $20,391.53 (21.34%) | 4 open positions (AVGO 48, CVX 95, ECL 70, NTRA 45), 6 GTC stops resting. `balance_asof` 2026-10-06. daytrade_count not returned; no day trades this challenge. Week 14 (Oct 5-9): 2/3 used (AVGO, AVGO add).
+
+**NTRA trail filled at open (mechanical):** stop 6416eac5 ($393.66747/HWM $437.4083) filled 45 @ $392.82 at 13:33:24 UTC. Realized **-$856.35 (-4.62%)** vs entry $411.85. Confirmed via `orders closed` (filled) and `positions` (NTRA gone). **2nd consecutive failed Health Care trade (BMY, NTRA) → sector exit rule: no further HC entries;** no HC positions remain. L-025: NTRA (sub-15% bar entry) closed -4.62% within ~7 sessions, no -7% cut.
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-10-07 | NTRA | SELL | 45 | $411.85 | $392.82 | -$856.35 (-4.62%) | 10% trailing stop 6416eac5 filled at open; HC 2nd consecutive failure |
+
+**Held position check:** AVGO +2.58%, CVX +7.99%, ECL -0.79% — none at -7% cut or +15%/+20% tighten. L-031: no GTC expiry within 5 sessions (ECL Oct 26, CVX Oct 29).
+
+**Gate check — MRVL (upsize case, NTRA stopped out pre-entry):** 60 sh.
+- Positions post-fill 4 (≤6) — pass.
+- Weekly trades 3/3 incl. this — pass (Week 14 cap now reached).
+- Cost ~$16.83k = 17.6% of equity (≤20%) — pass.
+- Cost ≤ cash ($38,068.43 post-NTRA) — pass.
+- Catalyst: Oct 6 Investor Day FY28 revenue target raised to ~$20B (from $18B), FY31 $70-90B — documented in today's RESEARCH-LOG, two-source (Perplexity + WebSearch, Oct 6-dated), 1 session back. Follow-through: Oct 6 close $287.205 > Oct 5 base $271.22 — pass. Chase bar (L-026): catalyst Oct 6, base Oct 5 $271.22, realized **+3.42%** at fill $280.482 (<15%; bar $311.90) — pass. Open $280.965, gave back part of Oct 6 gain but holds above base. Today's re-check: no negative dated headline (Perplexity Oct 7).
+- PDT room — pass (0 day trades).
+- Stock (MRVL, Nasdaq) — pass.
+- Sector (L-030): Technology 2 post-fill (AVGO, MRVL); Energy 1, Materials 1 — pass.
+- Deployment post-fill ~77.8% — inside 75-85% band.
+- Ex-div/analyst (strategy rule): **ex-div Oct 9 $0.06 (same week, flagged, non-blocking; L-029 adj base $271.16)**. Evercore ISI PT raised to $433 Buy Oct 6 (MarketBeat, dated; support only). Correlation: AVGO+MRVL ~36% of equity in AI semis.
+
+**Entry Checklist (MRVL):** Catalyst = Oct 6 Investor Day target raise (two-source, follow-through). Sector = Technology (#2 YTD). Stop = 10% trailing GTC; manual cut -7% ≈ $260.85. Target ~$320 (+14%).
+
+**Order:** Market buy 60 sh (day) bbd51f60 submitted 13:34:35 UTC → filled 60 @ $280.482 (cost $16,828.92). Confirmed via `alpaca.sh orders all` (filled) and `positions` (MRVL 60 sh, avg $280.482).
+
+**Stop placed:** 10% trailing stop GTC 60 sh — order 330c8e57, stop $252.333, HWM $280.37, exp Jan 5 2027. Confirmed via `alpaca.sh orders` (status new).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-07 | MRVL | BUY | 60 | $280.482 (fill) | $252.333 (10% trailing GTC, order 330c8e57); manual cut -7% ~$260.85 | Oct 6 Investor Day FY28 revenue target ~$20B (from $18B) / FY31 $70-90B (two-source), follow-through confirmed (Oct 6 $287.205 > Oct 5 $271.22), +3.42% realized <15% chase bar; Tech #2 momentum; refills NTRA slot | ~$320 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
+
+**Post-trade:** Equity $95,517.58 | Cash $21,239.51 (22.24%) | 4 positions (AVGO 48, CVX 95, ECL 70, MRVL 60) | ~77.8% deployed — inside 75-85% band. 6 GTC stops resting (AVGO ×2, CVX ×2, ECL, MRVL). Week 14: 3/3 trades used — no further entries this week. No gate-rejection scoreboard rows.
