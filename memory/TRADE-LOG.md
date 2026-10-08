@@ -1938,3 +1938,13 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | MRVL | 60 | $280.482 | $284.66 | -0.82% (+1.49% vs fill) | +$250.68 (+1.49%) | $258.327 (10% trail, GTC 330c8e57, HWM $287.03) |
 
 **Notes:** Streak reset — trade(s) placed today: NTRA SELL 45 @ $392.82 (trail filled at open, realized -$856.35 / -4.62%; 2nd consecutive HC failure → HC sector exit) and MRVL BUY 60 @ $280.482 (stop 330c8e57); 0 consecutive no-trade days. Week 14 (Oct 5-9): 3/3 new trades used (AVGO, AVGO add, MRVL) — cap reached, no further entries this week. Day P&L vs Oct 6 logged EOD $95,860.69 (Alpaca last_equity $95,837.16; $23.53 diff = AVGO lastday $375.81 vs logged $376.30 — logged value used). Red day driven by NTRA gap-down stop-out (open below Oct 6 close) plus CVX -1.17% / ECL -0.97%; AVGO flat +0.14%, MRVL +1.49% vs fill (stop auto-ratcheted to $258.327). Phase P&L -$4,659.84 (-4.66%) vs $100,000 start, 14th straight negative reading. 4 open positions, 77.72% deployed / 22.28% cash — inside 75-85% band (L-024). No position at -7% cut or +15% tighten; ECL ~4.6% / CVX ~4.5% above stops. 6 GTC stops resting, no fills after open. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 8 — Market-Open Check (Day 68, Thursday) — no new trade
+
+**Operational Rule check:** Oct 7 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (pre-open pull 13:17 UTC):** Equity $95,093.93 | Cash $21,239.13 (22.34%) | 4 open positions (AVGO 48 sh +2.36%, CVX 95 sh +7.61%, ECL 70 sh -1.36%, MRVL 60 sh -0.63%), 6 GTC trailing stops confirmed resting via `alpaca.sh orders`/`positions`, unchanged (AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, CVX 7f5acb83/e328a200 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, MRVL 330c8e57 $258.327/HWM $287.03). Deployment ~77.7% — in 75-85% band. `balance_asof` 2026-10-07. daytrade_count not returned; no day trades this challenge.
+
+**Held position check:** None at -7% cut (nearest ECL -1.36%, cut ~$262.19; MRVL -0.63%, cut ~$260.85) or +15%/+20% tighten (max CVX +7.61%). No GTC expiries within 5 sessions (L-031). No action.
+
+**Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). Week 14 (Oct 5-9): 3/3 trades used (AVGO, AVGO add, MRVL) — weekly cap blocks any entry. VLO carried as Week 15 candidate (pre-open quote stale/one-sided, bid $421.51 / ask 0). Nothing reached hard-check; no gate-rejection scoreboard rows. No ClickUp trade notification (no trade placed).
