@@ -3691,3 +3691,63 @@ Not armed (streak 0 < 3; trades Oct 7). Watchlist carried: VLO, UEC, LMT, MU (MR
 
 ### Decision
 **HOLD — no new entries (Week 14 cap 3/3 reached).** All held theses intact, 6 stops resting, no cuts/tightens due. VLO carried as Week 15 candidate pending a dated catalyst.
+
+## 2026-10-09 — Pre-market Research
+
+### Account
+- Equity: $95,273.41 | Cash: $21,239.13 (22.29%) | Buying power: $292,252.50 (margin, effective) | `balance_asof` 2026-10-08 (current, settled).
+- Position market value: $74,034.28 (AVGO 48, CVX 95, ECL 70, MRVL 60) — **77.71% deployed, inside 75-85% band**. Headroom to 85%: ~$6.95k. 6 GTC trailing stops resting, unchanged: AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, CVX e328a200/7f5acb83 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, MRVL 330c8e57 $258.327/HWM $287.03.
+- Day P&L (overnight marks): +$452.41 (+0.48%) vs last_equity $94,821.00.
+- Daytrade count: not returned; no day trades this challenge. Day 69, Friday, Week 14 (Oct 5-9), **3/3 weekly trades used** — **no entries today; next window Week 15 (Oct 12)**.
+- No-trade streak: 1 (Oct 8).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (500 obs, 80 days in regime). Advisory only.
+- Held (premarket marks): AVGO $366.26 (+0.83% vs entry; +1.70% vs Oct 8 $360.14), CVX $211.16 (+8.92%), ECL $279.24 (-0.95%), MRVL $280.78 (+0.11%; +2.23% vs Oct 8; ex-div today $0.06). None at +15%/+20% tighten, none at -7% cut (ECL cut ~$262.19, MRVL cut ~$260.85).
+
+### Market Context
+- Perplexity: all 15 queries ran, exit 0. No WebSearch fallback needed.
+- WTI/Brent: **WTI ~$90.57, Brent ~$102.80-103.12** (Middle East supply risk). Not a repeat of Oct 8 (~$90/$102.3). Dispersion <10%. USO Oct 8 close $147.65 vs Oct 7 $143.925 (+2.59%) — consistent. Operative: oil bid, ~$90.5 WTI.
+- S&P 500 futures: **+0.2% to +0.5%** (~7,846, +0.38% CNN/Markets Insider). Not a repeat (Oct 8 -0.03%). SPY Oct 8 close $773.88 (-0.42%). Operative: modest bounce.
+- VIX: **15.23** (Cboe). Not an exact repeat of Oct 8 (~15.5). Operative: ~15.2, low.
+- Today's releases: **UMich prelim sentiment 10:00 AM ET**. Perplexity lists **PPI 8:30 AM** today — conflicts with prior logs (PPI Oct 15); unverified, treat as possible. CPI Oct 14, FOMC Oct 27-28, NFP Nov 6.
+- Earnings BMO: **DAL** (not held/watchlist). Bank Q3 season next week.
+- Sector momentum YTD: Perplexity returned Energy +40.07% / Tech +28.83% / Industrials +8.71% — **exact repeat of Oct 7 values → flagged stale/suspect** (Oct 8 read +41.61%/+30.19%). Top-2 ranking (Energy #1, Tech #2) unchanged under either read; not used beyond ranking.
+- AI tape: report OpenAI annualized revenue ~$20B below expectations sparked AI/semis selloff (Oct 8: AVGO -4.09%, MRVL -3.50%); premarket rebounding.
+- Held tickers:
+  - **AVGO**: OpenAI >$50B / Anthropic up to $42B financing narratives (concentration/credit risk); AI-capex doubt from OpenAI revenue report. Earnings Dec 9-10. Thesis intact; Oct 8 close $360.14 > $351.22 base, ~6.4% above stop premarket.
+  - **CVX**: oil bid; Hess Midstream/DJ Basin restructuring (on file); UBS PT $235 / Zacks Strong Buy (dateless, excluded). Q3 Oct 30. Thesis intact; ~7.2% above stop.
+  - **ECL**: Q3 Oct 27; CoolIT/AI cooling theme; UBS $344 (dateless, excluded). Thesis intact; ~4.8% above stop.
+  - **MRVL**: Investor Day follow-through; multiple PT raises (JPM, BofA, RBC, Citi etc., undated aggregate); **OCP Global Summit Oct 12-15** showcase (hard-dated, next week). Ex-div today $0.06. Thesis intact; ~8.0% above stop.
+
+### Lessons Check
+- L-025 (5-session window) — AVGO add (extension entry Oct 6, fill $366.18): Oct 8 close $360.14 = **-1.65%**, premarket $366.26 (~flat); no -7% cut within 3 sessions so far. Complied.
+- L-026 (chase-bar base) — MRVL: catalyst Oct 6, base Oct 5 $271.22, realized **+1.27%** (Oct 8 $274.66). VLO: no company-specific dated catalyst → no chase eval; Oct 8 close $444.12 is +9.48% vs Ref. Complied.
+- L-027 (fully-specified idea while <75%) — not binding (77.71%); VLO spec refreshed for Week 15. Complied.
+- L-028 (routine commits) — `git log`: Oct 8 pre-market (4ef5554), market-open (a6d412b), EOD (b8e732f) present; **midday MISSING** (no commit, no TRADE-LOG entry). **ClickUp alert sent.** Complied.
+- L-029 (div-adj base) — **MRVL ex-div today** ($0.06): base nominal $271.22 / adjusted $271.16; premarket $280.78 above both. MU ex-div Oct 14 (watchlist, not held). Complied.
+- L-030 (sector cap 2) — book: Tech 2 (AVGO, MRVL) **at cap**, Energy 1 (CVX), Materials 1 (ECL). MU = concentration skip; VLO/UEC → Energy 2 (pass); LMT → Industrials 1. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26, CVX Oct 29 — both ≥11 sessions out). Nothing to renew. Complied.
+
+### Yesterday's Skip Check
+VLO **+9.48%**, UEC **-2.97%**, LMT **+0.33%** (Oct 8 close via `bars` vs Ref; overnight quotes stale/one-sided, e.g. VLO ask 0) — VLO tracking missed (+4.72% on Oct 8 alone, still no company-specific dated catalyst), UEC/LMT skip-right; skips look mixed so far.
+
+### Stall-Breaker
+Not armed (streak 1 < 3). Watchlist carried: VLO, UEC, LMT, MU.
+
+### Trade Ideas
+- **Capacity note:** Week 14 cap reached (3/3) — **no entries today**. 77.71% deployed; band headroom ~$6.95k. Ideas below for Week 15 (Oct 12) re-check.
+1. **VLO — Week 15 candidate, not gate-clearing.** Energy #1; Oct 8 close $444.12 (+4.72% d/d, +9.48% vs Ref). Drivers: refining margins/crack spreads, low distillate inventories, oil bid — sector-level. Mizuho/UBS PT raises undated (not counted, need dated source per gate). Q3 Oct 22.
+   - Spec: entry ~$444 (limit ≤$450), **15 sh ≈ $6.7k (7.0%)** → ~84.7% deployed. Stop 10% trailing GTC (~$400); cut -7% (~$413); target ~$506 (+14%, 2:1). Needs a dated company-specific two-source catalyst.
+2. **MRVL (held) — no add:** OCP Summit Oct 12-15 is a hard-dated event, but Tech at L-030 cap is per-sector count (add doesn't change count) — still, weekly cap blocks; revisit Week 15 only if a fresh dated catalyst and deployment room.
+- **UEC — no entry:** Perplexity "today" move re-cites Sep 29 FY26 print (stale; window closed). Oct 8 close $9.15, fading. Zacks Strong Sell (undated).
+- **MU — no entry:** L-030 Tech cap; D.A. Davidson $3,000 PT implausible/dateless, excluded; Oct 8 -4.77% ($1,035.815). Ex-div Oct 14.
+- **LMT — no entry:** UBS $674 / Redburn $650 undated; PAC-3 seeker contract attribution unresolved (Oct 6 log: Boeing's) — excluded per ownership rule. Q3 Oct 22.
+
+### Risk Factors
+- AI-semis concentration: AVGO+MRVL ~36% of equity; OpenAI revenue-miss report driving AI-capex doubt.
+- Possible PPI 8:30 (unverified) + UMich sentiment/inflation expectations 10:00; rising yields.
+- Middle East supply risk — oil ~$90.5 WTI (CVX tailwind, inflation pressure).
+- ECL ~4.8% above stop (tightest cushion). MRVL ex-div today (mechanical -$0.06).
+- CPI Oct 14; bank Q3 season starts next week. Friday thin tape.
+
+### Decision
+**HOLD — no new entries (Week 14 cap 3/3).** All held theses intact, 6 stops resting, no cuts/tightens/renewals due. VLO carried as Week 15 candidate pending a dated catalyst. Oct 8 midday routine missing — alerted.
