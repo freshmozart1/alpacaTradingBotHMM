@@ -1970,3 +1970,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **Held position check:** None at -7% cut (nearest ECL -0.95%, cut ~$262.19) or +15%/+20% tighten (max CVX +8.92%). No GTC expiries within 5 sessions (L-031; ECL Oct 26, CVX Oct 29). MRVL ex-div today $0.06 (L-029 noted pre-market). No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD). Week 14 (Oct 5-9): 3/3 trades used (AVGO, AVGO add, MRVL) — weekly cap blocks any entry. VLO carried as Week 15 candidate. Nothing reached hard-check; no gate-rejection scoreboard rows. No ClickUp trade notification (no trade placed).
+
+### Oct 9 — Midday Scan (Day 69, Friday)
+
+**Account (16:14 UTC):** Equity $94,929.01 | Cash $21,239.13 (22.37%) | ~77.6% deployed (in band). 4 open positions — AVGO 48 sh -0.21% ($362.485, intraday +0.65%); CVX 95 sh +9.99% ($213.22, intraday +0.79%); ECL 70 sh -0.01% ($281.91, intraday +0.08%); MRVL 60 sh -3.20% ($271.51, intraday -1.15%, incl. $0.06 ex-div). 6 GTC stops resting, unchanged: AVGO fe866c18 (32 sh) + e5e85854 (16 sh) $342.756/HWM $380.84; CVX e328a200/7f5acb83 $196.002/HWM $217.78; ECL 64b1066c $265.797/HWM $295.33; MRVL 330c8e57 $258.327/HWM $287.03.
+
+**STEP 3 (cut losers):** N/A — none at -7% (nearest MRVL -3.20%, cut ~$260.85). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max CVX +9.99%; none at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** No sharp outliers. AVGO +0.65% — rebounding after Oct 8 -4.09%, ~5.4% above stop; intact. CVX +0.79% — trend intact, ~8.1% above stop. ECL flat at entry, ~5.7% above stop; intact. MRVL -1.15% (2nd red day, below Oct 5 base $271.22 marginally) — AI-semis drift, not a thesis break; ~4.9% above stop, ~3.9% above -7% cut. Watch into EOD. No cuts.
+
+**STEP 6 (optional research):** Skipped — nothing moving sharply. No RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, MRVL 60) and `orders` (6 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
