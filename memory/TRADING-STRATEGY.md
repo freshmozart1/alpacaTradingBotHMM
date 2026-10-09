@@ -37,7 +37,7 @@ If any fail, the trade is skipped and the reason is logged.
 - Pattern day trader day-trade count leaves room (under 3 on a sub-$25k
   account).
 - A specific catalyst is documented in today's research log entry, dated
-  today OR dated within the prior 5 trading sessions if (a) confirmed by a
+  today OR dated within the prior 2 trading sessions if (a) confirmed by a
   second independent source (WebSearch, or a distinct outlet from the
   original), (b) ./scripts/alpaca.sh bars show the prior session's close
   above the close immediately before the catalyst date, and (c) the
@@ -88,6 +88,12 @@ If any fail, the trade is skipped and the reason is logged.
   does not by itself disqualify an otherwise-clearing catalyst.
   The reaction is measured from the close immediately before the
   catalyst's own date (not from an earlier pre-event reference).
+  Every chase-risk evaluation logs the catalyst date, the base date/close,
+  and the realized % from that base.
+- While deployment is below 75%, every pre-market must flag at least one
+  fully-specified idea (entry/stop/target/size) for the market-open
+  hard-check, OR log an explicit per-watchlist-name reason none qualify.
+  Process only — the gate still decides.
 - Before counting or excluding an analyst price-target or rating action
   as a catalyst, search for its own dated press release or first report;
   label it "dateless, excluded" if no explicit date is found within 2
@@ -124,6 +130,10 @@ Evaluated at the midday scan and opportunistically:
   trading session has all three expected entries (Market-Open, Midday,
   EOD); if any are missing (partial or full-day gap), log a one-line
   retroactive gap note rather than letting it pass silently.
+- At every pre-market, run `git log` and confirm the prior session's four
+  routine commits (pre-market, market-open, midday, EOD); if any is
+  missing, send one ClickUp alert naming the missing run(s) that same
+  session and note it in the RESEARCH-LOG entry.
 
 ## Rule Changelog
 
@@ -153,3 +163,7 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-09-25 | Buy-Side Gate | catalyst dated today OR within prior 2 sessions if two-source confirmed -> dated today OR within prior 5 sessions if two-source confirmed AND bars show prior close above the pre-catalyst close AND realized reaction <15% | Escalation per STEP 5 (3rd consecutive zero-new-trade week: Sept 8-11, 14-18, 21-25) and L-024 (deployment 40.29%). Evidence: skip scoreboard 3:0 missed this week (GEV +7.84%, BE +6.14%, MU +15.62%; +29.60% missed vs 0% avoided); GEV's two-source-confirmed Sep 16 Vineyard Wind settlement (+4.9% initial reaction) was dropped Sep 23 as stale while trending to +8.47% by Sep 25. Follow-through and chase-bar conditions keep the widening bounded. Process/gate calibration only — trailing stops, -7% cut, position sizing caps, 3-trades/week cap, and no-options untouched. Review-by 2026-10-09 (LESSONS.md L-025). |
 | 2026-09-25 | Buy-Side Gate (clarification) | 15% chase bar "since its own date" (base unspecified) -> measured from the close immediately before the catalyst's own date | Removes ambiguity, not a loosening: META's Sep 25 exclusion used the Sep 18 pre-event close (+16.97%) instead of the Sep 22 pre-catalyst close (+5.58%) for its Sep 23-dated catalyst. Monitored under LESSONS.md L-022/L-026. |
 | 2026-10-02 | Buy-Side Gate | (none) -> analyst PT/rating actions count only with a findable dated source; "dateless, excluded" after 2 failed search attempts | Promoted from LESSONS.md L-021 (2026-09-18), complied with every session for 2+ straight weeks (Sept 18-Oct 2): dateless PTs (CVX, ECL, META, INTC, MPC, AVGO) consistently excluded; only dated actions (RBC NTRA $460 Sep 25, Piper BMY $82 Sep 16) used, as support only. Process addition only, not a risk-rule change. |
+| 2026-10-09 | Buy-Side Gate | catalyst freshness: dated today OR within prior 5 sessions (two-source + bars follow-through + <15% reaction) -> dated today OR within prior 2 sessions (same three conditions kept) | Tightened back per LESSONS.md L-025's own directive ("if a false positive occurs, tighten back"). Evidence: 3 extension entries (catalyst 3-4 sessions old) all lost — BMY (3 sessions) cut at -7.51% on Oct 5, inside its 5-session window = false positive; NTRA (4 sessions) trail-stopped -4.62% Oct 7; AVGO add (3 sessions, Oct 6) -1.18% vs fill at Oct 9. Combined realized -$2,267.57. Same-week skip scoreboard balanced (missed 1 / avoided-loss 1) — no evidence the wider window is needed while deployment is in band (77.64%). Tightening only; trailing stops, -7% cut, sizing caps, 3-trades/week cap, no-options untouched. Review-by 2026-10-23 (LESSONS.md L-033). |
+| 2026-10-09 | Buy-Side Gate | (none) -> every chase-risk evaluation logs catalyst date, base date/close, and realized % | Promoted from LESSONS.md L-026 (2026-09-25), complied at every entry/evaluation for 2 straight weeks (Sep 25-Oct 9): NTRA, BMY, AVGO, AVGO add, MRVL all logged base + realized %. Process addition only, not a risk-rule change. |
+| 2026-10-09 | Buy-Side Gate | (none) -> while deployment <75%, pre-market must flag a fully-specified idea or log per-name reasons none qualify | Promoted from LESSONS.md L-027 (2026-09-25), complied for 2 straight weeks (Sep 25-Oct 9); produced NTRA (Sep 28) and the AVGO add (Oct 6) that restored deployment 66.65% -> 78.9% in one session. Process addition only, not a risk-rule change. |
+| 2026-10-09 | Operational Rules | (none) -> pre-market `git log` check for the prior session's four routine commits; ClickUp alert on any missing | Promoted from LESSONS.md L-028 (2026-09-25), complied every pre-market for 2 straight weeks (Sep 25-Oct 9); caught the missing Oct 8 midday run and alerted the same session (Oct 9). Process addition only, not a risk-rule change. |
