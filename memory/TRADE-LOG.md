@@ -1986,3 +1986,15 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, MRVL 60) and `orders` (6 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 9 — EOD Snapshot (Day 69, Friday)
+**Portfolio:** $94,967.34 | **Cash:** $21,239.13 (22.36%) | **Day P&L:** +$96.19 (+0.10%) | **Phase P&L:** -$5,032.66 (-5.03%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 48 | $363.239583 | $361.871 | +0.48% | -$65.69 (-0.38%) | $342.756 (10% trail, GTC e5e85854 16 sh / fe866c18 32 sh, HWM $380.84) |
+| CVX | 95 | $193.860947 | $211.90 | +0.17% | +$1,713.71 (+9.31%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $281.83 | +0.05% | -$7.00 (-0.04%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| MRVL | 60 | $280.482 | $274.9967 | +0.12% (-1.96% vs fill) | -$329.12 (-1.96%) | $258.327 (10% trail, GTC 330c8e57, HWM $287.03) |
+
+**Notes:** 2nd consecutive no-trade day (no orders placed or filled today). Week 14 (Oct 5-9) closes 3/3 new trades used (AVGO, AVGO add, MRVL); cap resets Monday Oct 12 — VLO carried as Week 15 candidate. Day P&L vs Oct 8 logged EOD $94,871.15 (Alpaca last_equity $94,821.00; $50.15 diff from lastday price drift — logged value used). Quiet green day: all four positions up small (AVGO +0.48%, CVX +0.17%, ECL +0.05%, MRVL +0.12% after $0.06 ex-div); MRVL recovered from midday -1.15% to close flat. Phase P&L -$5,032.66 (-5.03%) vs $100,000 start, 16th straight negative reading. 4 open positions, 77.64% deployed / 22.36% cash — inside 75-85% band (L-024). No position at -7% cut (nearest MRVL -1.96%, cut ~$260.85) or +15% tighten (max CVX +9.31%). Stop cushions: AVGO ~5.6%, ECL ~6.0%, MRVL ~6.5%, CVX ~8.1%. 6 GTC stops resting, unchanged, no fills. AI-semis concentration (AVGO+MRVL ~35.7% of equity) still the main correlation risk. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
