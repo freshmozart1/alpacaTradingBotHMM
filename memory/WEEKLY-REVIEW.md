@@ -1034,3 +1034,93 @@ Verdict counts (new rows this week): missed 1, skip-right 3, avoided-loss 0. Tot
 - No zero-trade week — STEP 5 escalation not triggered. No risk rules touched.
 
 ### Overall Grade: C+ (process repaired and executed cleanly — streak broken, two fully-documented gate-clearing entries, deployment 40% -> 79%, correct META and capacity skips, zero automation gaps — but a -0.83% relative week, both new entries underwater, Health Care concentration, and phase P&L at -4.26% keep it average)
+
+## Week ending 2026-10-09
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $95,742.61 (Oct 2 EOD; matched Alpaca last_equity on Oct 5) |
+| Ending portfolio | $94,967.34 (Oct 9 logged EOD; live pull $94,972.53, `balance_asof` 2026-10-08 — one session lagged per Operational Rules, provisional) |
+| Week return | -$775.27 (-0.81%) |
+| S&P 500 week | +1.15% (SPY 769.65 -> 778.51, Oct 2 close -> Oct 9 close via `alpaca.sh bars`, adjustment=all; Perplexity +1.09% — consistent) |
+| Bot vs S&P | -1.96% |
+| Trades | 3 new entries (AVGO Oct 5, AVGO add Oct 6, MRVL Oct 7 — all open); 2 closed (BMY, NTRA — prior-week entries) (W:0 / L:2 / open:4 positions); 3/3 weekly cap used |
+| Win rate | 0% (0/2 closed) |
+| Best trade | NTRA -4.62% (best closed; trail stop); CVX +9.31% unrealized (open) |
+| Worst trade | BMY -7.51% (-$1,411.22, -7% cut) |
+| Profit factor | 0.00 ($0 winners / $2,267.57 losers) |
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| BMY | $63.713797 (295 sh, Sep 29) | $58.93 (Oct 5) | -$1,411.22 (-7.51%) | Manual -7% cut at midday; trail 72cc2eb8 canceled first. L-025 3-session extension entry — false positive. Div-adj ~-2.68% below base. |
+| NTRA | $411.85 (45 sh, Sep 28) | $392.82 (Oct 7) | -$856.35 (-4.62%) | 10% trail 6416eac5 filled at open after Oct 6 reversal from $437.41 HWM (profit-taking, no adverse dated news). 2nd consecutive Health Care failure -> HC sector exit. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| AVGO | $363.239583 (48 sh: 16 Oct 5 + 32 Oct 6) | $361.871 | -$65.69 (-0.38%) | 10% trailing GTC e5e85854 (16) / fe866c18 (32), stop $342.756, HWM $380.84 |
+| CVX | $193.860947 (95 sh) | $211.90 | +$1,713.71 (+9.31%) | Two 10% trailing GTC 7f5acb83 (54) + e328a200 (41), stop $196.002, HWM $217.78 |
+| ECL | $281.93 (70 sh) | $281.83 | -$7.00 (-0.04%) | 10% trailing GTC 64b1066c, stop $265.797, HWM $295.33 |
+| MRVL | $280.482 (60 sh, Oct 7) | $274.9967 | -$329.12 (-1.96%) | 10% trailing GTC 330c8e57, stop $258.327, HWM $287.03 |
+
+Deployment 77.64% / cash 22.36% — in band all week except Oct 5 midday-EOD (66.65% after BMY cut), refilled next session. Sector mix: Technology 2 (AVGO, MRVL ~35.7% of equity), Energy 1 (CVX), Materials 1 (ECL); Health Care exited. Stop expiries: ECL Oct 26, CVX Oct 29 (L-031).
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (row date -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| INTC | 122.98 (Sep 28 row) | 116.27 (Oct 5) | -5.46% | avoided-loss |
+| AVGO | 352.72 (Sep 28 row) | 362.52 (Oct 5) | +2.78% | skip-right (entered Oct 5 on new Oct 1 catalyst) |
+| MPC | 393.26 (Sep 28 row) | 433.525 (Oct 5) | +10.24% | missed |
+| NTRA | 412.35 (Sep 28 row) | 425.605 (Oct 5) | +3.21% | n/a — entered (closed -4.62%) |
+| BMY | 62.89 (Sep 28 row) | 58.80 (Oct 5) | -6.50% | n/a — entered (cut -7.51%) |
+| UEC | 9.43 (Oct 1 row) | 9.15 (Oct 8) | -2.97% | skip-right |
+
+Verdict counts (true skips): missed 1, skip-right 2, avoided-loss 1. Total missed gains: +10.24%. Total avoided losses: 5.46%. Missed:avoided ratio: 1:1 (vs 1:0 last week). **Gate calibration verdict: calibrated** — the lone miss (MPC) had no company-specific dated catalyst (sector-wide refining move; VLO doing the same, +9.48% vs Ref by Oct 8) — not a freshness-window problem; tracked under new L-034. Meanwhile the entries admitted by the widened window all lost. Oct 5 rows (MRVL/VLO/LMT) carried (4 sessions). **Pruned this review:** COP/VLO/PARR (Sep 11 rows) and GEV/BE/MU (Sep 16 rows) — verdicts >10 sessions old. META/TXN/XOM/LNG retained (7 sessions).
+
+### What Worked
+
+- Risk rules fired mechanically: BMY -7% cut same session it crossed (-7.51%, quote tight), NTRA trail took it out at -4.62% before the -7% line; HC sector exit applied on the 2nd failure.
+- Deployment refilled within one session after the BMY cut (66.65% -> 78.9% via AVGO add), in band at every EOD otherwise.
+- MRVL entry was a clean same-window gate case: Oct 6-dated Investor Day target raise, two-source, follow-through, +3.42% from base; L-029 ex-div and L-030 sector count logged.
+- Process: L-028 caught the missing Oct 8 midday run and alerted next pre-market; L-026/L-029/L-030/L-031 logged at every applicable check.
+- Skips held up: INTC (-5.46%) avoided, UEC/AVGO-Sep 28 correctly passed.
+
+### What Didn't Work
+
+- Bot -0.81% vs S&P +1.15% (-1.96% relative) — worst relative week since late Sep; phase P&L -5.03%, 16th straight negative reading.
+- 0/2 closed trades won; both were extension-window entries (BMY 3 sessions, NTRA 4) — L-025's false-positive trigger fired.
+- AI-semis concentration (AVGO+MRVL ~36% of equity) cost -$1,336.81 on Oct 8 alone (OpenAI revenue-miss selloff); L-030 count cap (2) didn't limit dollar exposure.
+- Energy refiners (MPC +10.24%, VLO +9.48%) ran without us — gate can't see sector-level drivers.
+- Oct 8 midday routine never ran (automation gap; no position at risk that day).
+
+### Key Lessons
+
+- The 5-session freshness widening converted a stall into entries but the admitted names had already spent their move — 3 extension entries, 0 winners, -$2.3k realized. Freshness matters more than deployment once in band.
+- Position-count caps don't bound thematic risk; two names in one hot theme can be a third of the book.
+- Misses now cluster in top-sector names with no company catalyst, not in stale-catalyst names.
+- Trail stops on fast runners (NTRA +6% peak -> stop ~2% below mark after auto-ratchet) exit on ordinary profit-taking; that's the rule working, not a reason to touch it.
+
+### Adjustments for Next Week
+
+- At every new-entry/add gate check, log post-fill sector exposure as % of equity; if >40%, size down to fit or skip as a concentration skip (L-032).
+- Freshness window reverted to 2 sessions; log 3-5-session-old two-source catalysts as "[3-5s]" HOLD scoreboard rows and report their verdicts at review (L-033).
+- Tag every new scoreboard row lacking a company-specific dated catalyst "[no-cat]"; report the subset's missed:avoided at each review (L-034).
+
+### Rule Changes This Week
+
+- **Buy-Side Gate — catalyst freshness tightened back: 5 -> 2 sessions** (two-source, bars follow-through, <15% reaction conditions all kept). Per L-025's own directive: BMY (3-session extension entry) cut at -7.51% inside its window = false positive; NTRA -4.62%, AVGO add -1.18%. Changelog row added. Review-by 2026-10-23 (L-033).
+- L-026 (chase-bar base logging) promoted to permanent Buy-Side Gate rule — 2 weeks' compliance.
+- L-027 (fully-specified idea while <75%) promoted to permanent Buy-Side Gate rule — produced NTRA and the AVGO add.
+- L-028 (missing-commit alert) promoted to permanent Operational Rule — caught Oct 8 midday gap.
+- L-025 retired (trigger fired, acted on). L-029/L-030/L-031 carried to Oct 16 review-by.
+- Not a zero-trade week — no STEP 5 escalation. No risk rules touched (stops, -7% cut, sizing caps, 3/week cap, no-options).
+
+### Overall Grade: D+ (rules executed cleanly — -7% cut, trail exit, HC sector exit, one-session refill, MRVL clean entry, gap alerted — but -1.96% relative, 0/2 closed winners, profit factor 0.00, extension-window entries all lost, AI-semis concentration unbounded, phase P&L to -5.03%)
