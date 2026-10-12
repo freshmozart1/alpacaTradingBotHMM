@@ -3751,3 +3751,63 @@ Not armed (streak 1 < 3). Watchlist carried: VLO, UEC, LMT, MU.
 
 ### Decision
 **HOLD — no new entries (Week 14 cap 3/3).** All held theses intact, 6 stops resting, no cuts/tightens/renewals due. VLO carried as Week 15 candidate pending a dated catalyst. Oct 8 midday routine missing — alerted.
+
+## 2026-10-12 — Pre-market Research
+
+### Account
+- Equity: $95,087.77 | Cash: $21,239.13 (22.34%) | Buying power: $291,732.72 (margin, effective) | `balance_asof` 2026-10-09 (current, settled).
+- Position market value: $73,848.64 (AVGO 48, CVX 95, ECL 70, MRVL 60) — **77.66% deployed, inside 75-85% band**. Headroom to 85%: ~$6.98k. 6 GTC trailing stops resting, unchanged: AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, CVX e328a200/7f5acb83 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, MRVL 330c8e57 $258.327/HWM $287.03.
+- Day P&L (overnight marks): +$111.72 (+0.12%) vs last_equity $94,976.05.
+- Daytrade count: not returned; no day trades this challenge. Day 70, Monday, **Week 15 (Oct 12-16), 0/3 weekly trades used** — cap reset.
+- No-trade streak: 2 (Oct 8, Oct 9).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (498 obs, 81 days in regime). Advisory only.
+- Held (premarket marks): AVGO $358.90 (-1.19%), CVX $214.50 (+10.64%), ECL $281.83 (-0.04%), MRVL $275.19 (-1.89%). None at +15%/+20% tighten (CVX +15% ≈ $222.94), none at -7% cut (AVGO ~$337.81, ECL ~$262.19, MRVL ~$260.85). Stop cushions: AVGO ~4.5%, ECL ~5.7%, MRVL ~6.1%, CVX ~8.6%.
+
+### Market Context
+- Perplexity: 1st parallel batch hit **429 rate limit** (14/15); all re-run sequentially, exit 0. No WebSearch fallback needed. +2 follow-up queries (LMT catalyst date, hurricane).
+- WTI/Brent: **WTI ~$90.3-92.0, Brent ~$103.2-104.9** (Middle East risk; Hurricane Isaias Gulf shut-ins). Not a repeat of Oct 9 (~$90.57/$102.80-103.12). Dispersion <10%. USO Oct 9 close $148.24 (+0.40% vs $147.65) — consistent. Operative: ~$91 WTI, firm.
+- S&P 500 futures: **+0.09%** (~7,867). Not a repeat (Oct 9 +0.2-0.5%). SPY Oct 9 close $778.51 (+0.60%). Operative: flat-to-slightly-up open.
+- VIX: **15.53** (+4.65%, prior close 14.84). Not an exact repeat of Oct 9 (15.23). Operative: ~15.5, low.
+- Today: **Columbus Day — equities open, Treasury/bond market closed** (thin liquidity). No CPI/PPI/jobs/FOMC today. Fed's Hammack ~12:50 ET. UMich 1y inflation expectations 4.7% / sentiment 46.3 (Oct 9 print) — stagflation overhang. **CPI Wed Oct 14, PPI Thu Oct 15** (resolves Oct 9 PPI conflict), FOMC Oct 27-28, NFP Nov 6.
+- Earnings BMO: microcaps only (NCPL, RMCF, MSS). Big banks + JNJ/UNH Tue Oct 13.
+- Sector momentum YTD (as of Oct 2 per source): Energy +40.4% / Tech +30.19% / Industrials +9.55% / Materials +8.13%; S&P +12.81%. **Tech +30.19% = exact repeat of Oct 8 read → flagged stale/suspect**; ranking (Energy #1, Tech #2, Industrials #3) unchanged under any read; used for ranking only.
+- **Hurricane Isaias:** ~1.3M bpd Gulf crude shut in Oct 8-9 (~63% offshore), ~1.17M still offline Oct 11 (EIA/CNN, two-source). CVX Pascagoula refinery in path; refinery restarts 1-2 weeks if no damage.
+- **OCP Global Summit Oct 12-15** (today) — AVGO + MRVL showcasing AI networking.
+- Held tickers:
+  - **AVGO**: OCP Summit showcase (Tomahawk 6/Jericho 4/Thor Ultra, today-dated product visibility, no reaction yet); OpenAI >$50B / Anthropic up to $42B financing narratives (leverage/concentration risk). Earnings Dec 9-10. Thesis intact; Oct 9 close $361.54 > $351.22 base.
+  - **CVX**: oil firm; Isaias shut-ins (5 Gulf facilities shut, 4 producing) = near-term production/Pascagoula risk; Hess Midstream restructuring $3-4B one-time charge (on file). UBS $235 (dateless, excluded). Q3 Oct 30. Thesis intact; premarket +1.19%.
+  - **ECL**: Q3 Oct 27 (guide $2.13-2.23); CoolIT/AI cooling; $0.73 div payable Oct 15 (ex-div already passed). UBS $344 (dateless, excluded). Thesis intact.
+  - **MRVL**: OCP Summit today; Oct 6 Investor Day (FY28 ~$20B rev target); PT raises BofA $400 / RBC $425 / Jefferies $450 / TD Cowen upgrade (post-Oct 6; on file). Earnings ~Dec 1. Thesis intact; Oct 9 close $275.28 > Oct 5 base $271.22 (div-adj $271.16).
+
+### Lessons Check
+- L-029 (div-adj base) — no held/candidate ex-div inside a thesis window (MRVL ex-div Oct 9 done: base nominal $271.22 / adj $271.16, Oct 9 close $275.28 above both; ECL Oct 15 is pay date, not ex-div; MU ex-div Oct 14 — not a candidate). LMT next ex-div not in window. Complied.
+- L-030 (sector cap 2) — book: Tech 2 (AVGO, MRVL) **at cap**, Energy 1 (CVX), Materials 1 (ECL). LMT → Industrials 1 (pass); VLO → Energy 2 (pass); MU → Tech 3 = concentration skip. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26 = 10 sessions, CVX Oct 29 = 13). Nothing to renew. Complied.
+- L-032 (sector exposure ≤40%) — Tech (AVGO+MRVL) $33,738.71 = **35.48%** of equity; headroom ~$4.30k. Any MRVL/AVGO add capped at ~$4.3k. LMT post-fill Industrials ~7.0%. Complied.
+- L-033 (2-session window; log 3-5s) — no new two-source catalyst 3-5 sessions old on a non-held name (MRVL Oct 6 Investor Day is held, not a new idea). No [3-5s] row. Complied.
+- L-034 ([no-cat] tag) — no new scoreboard rows today (VLO/UEC/LMT already on board this streak). VLO remains the [no-cat] case (sector-level crack-spread driver). Complied.
+- Operational: `git log` — Oct 9 pre-market (14602ec), market-open (fa148df), midday (61e4333), EOD (513716f) all present (+ weekly review 2cb85d2). No alert needed.
+
+### Yesterday's Skip Check
+VLO **+6.92%**, UEC **-2.44%**, LMT **+0.68%** (Oct 9 close via `bars` vs Ref; overnight quotes stale/one-sided, e.g. VLO ask 0) — VLO tracking missed ([no-cat], -2.34% Oct 9 off the high), UEC/LMT skip-right; skips look mixed so far.
+
+### Stall-Breaker
+Not armed (streak 2 < 3). Watchlist carried: VLO, UEC, LMT, MU.
+
+### Trade Ideas
+- Week 15 0/3 used; 77.66% deployed (in band, L-027-derived rule not binding); band headroom ~$6.98k.
+1. **LMT — flag for market-open hard-check.** Catalyst: **PAC-3 Edge interceptor debut, Oct 9** (Lockheed IR release investors.lockheedmartin.com = ownership verified; 2nd source Breaking Defense, Oct 9) + full-scale display at **AUSA today (Oct 12)**. Freshness: Oct 9 = prior session (≤2, two-source). Follow-through: Oct 9 close $509.68 > Oct 8 pre-catalyst close $507.935. Chase: catalyst Oct 9, base Oct 8 $507.935, realized **+0.34%** (<15%). Sector: Industrials #3 (+9.55% YTD, below S&P) — weak momentum, the main gate concern. Dividend hike $3.45→$3.60 and UBS/Redburn PTs undated (excluded). Q3 Oct 22 inside the window.
+   - Spec: entry ~$510 (limit ≤$515), **13 sh ≈ $6.63k (6.97%)** → ~84.6% deployed. Stop 10% trailing GTC (~$459); cut -7% (~$474); target ~$581 (+14%, 2:1). Post-fill: Industrials 1 position / ~7.0%.
+2. **VLO — watch, not gate-clearing ([no-cat]).** Oct 9 close $433.74 (+6.92% vs Ref). Drivers sector-level: tight diesel/jet, crack spreads, Benicia wind-down, Isaias refinery risk; G7 reserve release/Russian diesel = margin risk. Q3 Oct 22 (future event, not a catalyst). Spec if a dated company catalyst appears: ~$434, 15 sh ≈ $6.5k (6.8%), 10% trail (~$391), cut ~$403, target ~$495.
+3. **MRVL add — conditional only.** OCP Summit today-dated; counts only if it yields a dated customer/product announcement with a price reaction. L-032 caps add at ~$4.3k (~15 sh). Otherwise no add.
+- **UEC — no entry:** no fresh dated catalyst (Sep 29 FY26 print stale); RBC initiation Sector Perform $10 (dateless, excluded). Oct 9 close $9.20, fading.
+- **MU — no entry:** L-030 Tech cap; D.A. Davidson $3,000 PT dateless/excluded; Netlist $600M settlement undated; Taiwan strike risk. Oct 9 close $1,029.13.
+
+### Risk Factors
+- AI-semis concentration: AVGO+MRVL 35.48% of equity; AVGO tightest cushion (~4.5% above stop). OpenAI financing/revenue overhang.
+- Hurricane Isaias: Gulf output ~1.17M bpd still offline; CVX Pascagoula exposure; oil/refining volatility.
+- Columbus Day: bond market closed, thin tape. Hammack 12:50 ET. CPI Wed / PPI Thu; UMich inflation expectations 4.7%.
+- Bank Q3 season starts Tue. LMT/VLO Q3 Oct 22 — earnings gap risk for any new entry.
+
+### Decision
+**HOLD (default) — LMT flagged for market-open hard-check** (two-source Oct 9 catalyst, follow-through + chase pass; weak Industrials momentum is the swing factor). All held theses intact, 6 stops resting, no cuts/tightens/renewals due. VLO watch; MRVL add conditional on OCP news.
