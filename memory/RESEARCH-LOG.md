@@ -3811,3 +3811,7 @@ Not armed (streak 2 < 3). Watchlist carried: VLO, UEC, LMT, MU.
 
 ### Decision
 **HOLD (default) — LMT flagged for market-open hard-check** (two-source Oct 9 catalyst, follow-through + chase pass; weak Industrials momentum is the swing factor). All held theses intact, 6 stops resting, no cuts/tightens/renewals due. VLO watch; MRVL add conditional on OCP news.
+
+## 2026-10-12 — Midday Addendum
+
+MRVL -3.05% intraday ($266.87 vs Oct 9 $275.28; -4.85% vs entry). Perplexity (Oct 11-12 sources: StockAnalysis, Yahoo, Perplexity Finance): no adverse company headline — AI-semis valuation pullback (10Y ~5.2-5.3%, oil ~$104, AI capex worries) + post-Investor Day (Oct 6) profit-taking; MRVL richer multiple than AVGO. Latest analyst actions supportive (TD Cowen Buy/$350; Seaport Buy/$270, dates unverified). OCP Summit (Oct 12-15) promotional, no dated customer/product announcement → MRVL add condition NOT met. Thesis intact → hold; cut ~$260.85 (~2.3% below mark), trail $258.327 (~3.2% below). AVGO -1.18% — sector read-through only, no company news. No action on any position; no new entry (Week 15: 1/3 used, ~84.6% deployed, in band).

@@ -2030,3 +2030,19 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | 2026-10-12 | LMT | BUY | 13 | $511.48 (fill) | $460.323 (10% trailing GTC, order 949bf0ce); manual cut -7% ~$475.68 | Oct 9 PAC-3 Edge interceptor debut (Lockheed IR + Breaking Defense) + AUSA display Oct 12; follow-through confirmed (Oct 9 $509.68 > Oct 8 $507.935), +0.70% realized <15% chase bar; Industrials diversifier vs AI-semis concentration | ~$583 (+14%) | ~2:1 vs -7% cut (~1.4:1 vs 10% trail) |
 
 **Post-trade:** Equity $95,306.35 | Cash $14,589.89 (15.31%) | 5 positions (AVGO 48, CVX 95, ECL 70, MRVL 60, LMT 13) | 84.69% deployed — inside 75-85% band. 7 GTC stops resting (AVGO ×2, CVX ×2, ECL, MRVL, LMT). Week 15: 1/3 trades used. No gate-rejection scoreboard rows (VLO [no-cat] / MRVL add not planned — no qualifying catalyst).
+
+### Oct 12 — Midday Scan (Day 70, Monday)
+
+**Account (16:14 UTC):** Equity $94,800.58 | Cash $14,589.89 (15.39%) | ~84.6% deployed (in band). 5 open positions — AVGO 48 sh -1.65% ($357.26, intraday -1.18%); CVX 95 sh +10.87% ($214.93, intraday +1.39%); ECL 70 sh +1.08% ($284.96, intraday +1.11%); LMT 13 sh +0.47% ($513.90, intraday +0.85%); MRVL 60 sh -4.85% ($266.87, intraday -3.05%). 7 GTC stops resting: AVGO fe866c18 (32 sh) + e5e85854 (16 sh) $342.756/HWM $380.84; CVX e328a200/7f5acb83 $196.002/HWM $217.78; ECL 64b1066c $265.797/HWM $295.33; LMT 949bf0ce $464.193/HWM $515.77 (ratcheted up from $460.323); MRVL 330c8e57 $258.327/HWM $287.03.
+
+**STEP 3 (cut losers):** N/A — none at -7% (nearest MRVL -4.85%, cut ~$260.85, ~2.3% below mark). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max CVX +10.87%; none at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** MRVL -3.05% (3rd red session in 4) — Perplexity: AI-semis valuation pullback + post-Investor Day profit-taking, no adverse company news, analyst actions supportive; not a thesis break. ~3.2% above stop. Hold; watch into EOD. AVGO -1.18% — sector read-through, ~4.2% above stop; intact. CVX +1.39% — trend intact (oil ~$104), ~9.6% above stop. ECL +1.11%, ~7.2% above stop; intact. LMT +0.85% post-entry, HWM ratcheting; intact. No cuts.
+
+**STEP 6 (optional research):** MRVL sharp move → Perplexity run; RESEARCH-LOG midday addendum appended. MRVL add condition (dated OCP announcement) not met.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, LMT 13, MRVL 60) and `orders` (7 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
