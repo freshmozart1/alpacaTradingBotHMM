@@ -2046,3 +2046,16 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, LMT 13, MRVL 60) and `orders` (7 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 12 — EOD Snapshot (Day 70, Monday)
+**Portfolio:** $94,532.12 | **Cash:** $14,589.89 (15.43%) | **Day P&L:** -$435.22 (-0.46%) | **Phase P&L:** -$5,467.88 (-5.47%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 48 | $363.239583 | $354.7393 | -1.88% | -$408.01 (-2.34%) | $342.756 (10% trail, GTC e5e85854 16 sh / fe866c18 32 sh, HWM $380.84) |
+| CVX | 95 | $193.860947 | $215.14 | +1.49% | +$2,021.51 (+10.98%) | $196.002 (10% trail, GTC 7f5acb83/e328a200, HWM $217.78) |
+| ECL | 70 | $281.93 | $284.30 | +0.88% | +$165.90 (+0.84%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LMT | 13 | $511.48 | $511.88 | +0.45% (+0.08% vs fill) | +$5.20 (+0.08%) | $464.193 (10% trail, GTC 949bf0ce, HWM $515.77) |
+| MRVL | 60 | $280.482 | $265.35 | -3.61% | -$907.92 (-5.40%) | $258.327 (10% trail, GTC 330c8e57, HWM $287.03) |
+
+**Notes:** Streak reset — trade(s) placed today (LMT 13 sh @ $511.48, 10% trail GTC 949bf0ce). Week 15 (Oct 12-16): 1/3 trades used. Day P&L vs Oct 9 logged EOD $94,967.34 (Alpaca last_equity $94,976.05; $8.71 diff from lastday price drift — logged value used). Red day driven by AI-semis: MRVL -3.61% (3rd red session in 4, now -5.40% from entry) and AVGO -1.88%; CVX +1.49% and ECL +0.88% offset partly; LMT flat post-entry. Phase P&L -$5,467.88 (-5.47%) vs $100,000 start, 17th straight negative reading. 5 open positions, 84.57% deployed / 15.43% cash — inside 75-85% band near top (L-024). **MRVL watch:** $265.35 is ~1.7% above -7% manual cut (~$260.85) and ~2.6% above stop — pre-market/midday must act if cut hit. No position at +15% tighten (max CVX +10.98%). Stop cushions: MRVL ~2.6%, AVGO ~3.4%, ECL ~6.5%, CVX ~8.9%, LMT ~9.3%. 7 GTC stops resting, no fills. AI-semis (AVGO+MRVL) ~34.9% of equity — main correlation risk. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
