@@ -2117,3 +2117,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, LMT 26) and `orders` (7 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 13 — EOD Snapshot (Day 71, Tuesday)
+**Portfolio:** $94,027.25 | **Cash:** $23,091.30 (24.56%) | **Day P&L:** -$504.87 (-0.53%) | **Phase P&L:** -$5,972.75 (-5.97%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 48 | $363.239583 | $357.31 | +0.73% | -$284.62 (-1.63%) | $342.756 (10% trail, GTC e5e85854 16 sh / fe866c18 32 sh, HWM $380.84) |
+| CVX | 95 | $193.860947 | $217.73 | +1.27% | +$2,267.56 (+12.31%) | $196.911 (10% trail, GTC 7f5acb83/e328a200, HWM $218.79) |
+| ECL | 70 | $281.93 | $285.66 | +0.48% | +$261.10 (+1.32%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LMT | 26 | $510.37 | $504.02 | -1.54% | -$165.10 (-1.24%) | $464.193 (13 sh, GTC 949bf0ce, HWM $515.77) / $459.071 (13 sh, GTC 39388294, HWM $510.08) |
+
+**Notes:** Streak reset — trade(s) placed today (SELL MRVL 60 @ $252.03, cut at -7% gapped through, realized -$1,707.12 / -10.14%; BUY LMT add 13 @ $509.26, 10% trail GTC 39388294). Week 15 (Oct 12-16): 2/3 trades used. Day P&L vs Oct 12 logged EOD $94,532.12 (Alpaca last_equity $94,548.96; $16.84 lastday drift — logged value used). Red day = MRVL realized loss on AI-semis gap-down; open book recovered intraday (AVGO +0.73%, CVX +1.27% new HWM, ECL +0.48%), LMT -1.54% post-add giveback. Phase P&L -$5,972.75 (-5.97%) vs $100,000 start, 18th straight negative reading. 4 open positions, 75.44% deployed / 24.56% cash — inside 75-85% band at the bottom edge (L-024); 1 trade left this week. Tech: 1 failed trade (MRVL) — one more Tech failure triggers sector exit (AVGO only Tech holding). CVX ~22.0% of equity via appreciation (above 20% entry cap; no add allowed). No position at +15% tighten (CVX +12.31%; +15% ≈ $222.94, ~2.4% away). Stop cushions: AVGO ~4.1%, ECL ~7.0%, LMT ~7.9-8.9%, CVX ~9.6%. 7 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
