@@ -3815,3 +3815,63 @@ Not armed (streak 2 < 3). Watchlist carried: VLO, UEC, LMT, MU.
 ## 2026-10-12 — Midday Addendum
 
 MRVL -3.05% intraday ($266.87 vs Oct 9 $275.28; -4.85% vs entry). Perplexity (Oct 11-12 sources: StockAnalysis, Yahoo, Perplexity Finance): no adverse company headline — AI-semis valuation pullback (10Y ~5.2-5.3%, oil ~$104, AI capex worries) + post-Investor Day (Oct 6) profit-taking; MRVL richer multiple than AVGO. Latest analyst actions supportive (TD Cowen Buy/$350; Seaport Buy/$270, dates unverified). OCP Summit (Oct 12-15) promotional, no dated customer/product announcement → MRVL add condition NOT met. Thesis intact → hold; cut ~$260.85 (~2.3% below mark), trail $258.327 (~3.2% below). AVGO -1.18% — sector read-through only, no company news. No action on any position; no new entry (Week 15: 1/3 used, ~84.6% deployed, in band).
+
+## 2026-10-13 — Pre-market Research
+
+### Account
+- Equity: $94,055.88 | Cash: $14,589.88 (15.51%) | Buying power: $280,864.31 (margin, effective) | `balance_asof` 2026-10-12 (current, settled).
+- Position market value: $79,466.00 (AVGO 48, CVX 95, ECL 70, LMT 13, MRVL 60) — **84.49% deployed, inside 75-85% band**. 7 GTC trailing stops resting, unchanged: AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, CVX e328a200/7f5acb83 $196.002/HWM $217.78, ECL 64b1066c $265.797/HWM $295.33, LMT 949bf0ce $464.193/HWM $515.77, MRVL 330c8e57 $258.327/HWM $287.03.
+- Day P&L (premarket marks): -$493.08 (-0.52%) vs last_equity $94,548.96.
+- Daytrade count: not returned; no day trades this challenge. Day 71, Tuesday, Week 15 (Oct 12-16), **1/3 weekly trades used** (LMT Oct 12).
+- No-trade streak: 0 (LMT entry Oct 12).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (499 obs, 82 days in regime). Advisory only.
+- Held (premarket marks): AVGO $349.77 (-3.71%), CVX $216.72 (+11.79%), ECL $285.90 (+1.41%), LMT $515.20 (+0.73%), **MRVL $256.30 (-8.62%)**.
+- **MRVL BELOW -7% CUT premarket** ($256.30 vs cut ~$260.85; also below trail stop $258.327 — stop not live in extended hours). Perplexity premarket marks $257.65-261.43 (Yahoo/StockAnalysis/MarketWatch -1.7% to -3.1%) — all at/below cut. **Market-open: cancel 330c8e57, close 60 sh if ≤ ~$260.85** (stop fires anyway if it trades ≤ $258.327). ClickUp alert sent.
+- AVGO: cut ~$337.81 (-3.4% away); stop cushion ~2.0% — tightest after MRVL. No +15%/+20% tighten due (CVX +15% ≈ $222.94).
+
+### Market Context
+- Perplexity: 15 queries (14 batch + 1 MRVL premarket), all exit 0, sequential (no 429). No WebSearch fallback.
+- WTI/Brent: **WTI ~$92.70, Brent ~$105.47** (-1.1%; another source Brent >$106). Not a repeat of Oct 12 (~$91/$104). Dispersion <10%. USO Oct 12 close $151.07 (+1.91% vs $148.24) — consistent. Operative: ~$92.7 WTI, firm.
+- S&P 500 futures: **~flat** (~7,858). Not a repeat (Oct 12 +0.09%). SPY Oct 12 close $778.03 (-0.06%); SPY premarket $777.8-777.9 (Alpaca quote). Operative: flat open, chips weak.
+- VIX: **15.21** (Oct 12 close, +2.49%) — not today's print; not an exact repeat of logged Oct 12 premarket (15.53). Operative: ~15.2, low.
+- Today: **big-bank Q3 BMO (JPM, GS, WFC, C)** + JNJ, UNH (beat/raise per Perplexity, unverified), ACI, DPZ. Fed Waller speaks. No CPI/PPI/jobs today. **CPI Wed Oct 14 8:30, PPI Thu Oct 15 8:30**, FOMC Oct 27-28, NFP Nov 6.
+- Sector momentum YTD (as of Oct 2): Energy +40.4% / Tech +30.2%; S&P +12.8%. **Exact repeat of Oct 12 read → flagged stale/suspect**; ranking (Energy #1, Tech #2) unchanged; ranking only.
+- **Semis selloff:** Kospi -5.5%; China CXMT 4F² DRAM/server-memory advance; SOX ~-2.6% (Oct 12); AI-financing worries (Hock Tan: capital availability biggest AI-capex constraint). NVDA/AVGO/MRVL extending losses premarket.
+- Held tickers:
+  - **AVGO**: negative tape — Hock Tan capital-availability comment, OpenAI >$50B / Anthropic ~$60B financing exposure; OCP showcase (Tomahawk 6) no reaction. VMware HyperArmor launch (minor). Earnings Dec. Thesis strained but no company break; -3.71%, ~2.0% above stop. Watch.
+  - **CVX**: oil firm; TD Cowen PT $225 / UBS $235 (dateless, excluded); Hess Midstream/DJ Basin deal; Egypt/Aphrodite talks. Q3 Oct 30. Thesis intact; near 12-mo high $217.78.
+  - **ECL**: Citi names ECL top N.A. specialty-chem pick ahead of Q3 (source dated Oct 12, single-source; support only). Q3 Oct 27; Investor Day Nov 17. Thesis intact.
+  - **LMT**: Sikorsky Nomad 100 VTOL drone unveil, $209M Navy EW mod (undated aggregate), div hike $3.60 (on file). Premarket ~$515.25 (+0.66%). Q3 Oct 22. Thesis intact.
+  - **MRVL**: no adverse company news — sector selloff + post-Investor Day profit-taking; Structera X CXL 3.2 launch (OCP, Oct 12) ignored; small insider sale (CAO ~$301k). Thesis not broken but **-7% cut rule overrides** — mechanical exit.
+
+### Lessons Check
+- L-029 (div-adj base) — no held/candidate ex-div in window (MU ex-div Oct 14, not a candidate). Complied.
+- L-030 (sector cap 2) — book: Tech 2 (AVGO, MRVL) at cap → Tech 1 after MRVL exit; Energy 1, Materials 1, Industrials 1. VLO → Energy 2 (pass); MU → Tech cap/concentration skip. Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26 = 9 sessions, CVX Oct 29 = 12). Nothing to renew. Complied.
+- L-032 (sector ≤40%) — Tech (AVGO+MRVL) $32,166.96 = **34.20%**; Industrials 7.12%; Energy 21.89%. Any LMT add → Industrials ~14%. Complied.
+- L-033 ([3-5s]) — no new two-source catalyst 3-5 sessions old on a non-held name. No row. Complied.
+- L-034 ([no-cat]) — no new scoreboard rows (VLO already on board, [no-cat]). Complied.
+- Operational: `git log` — Oct 12 pre-market (51d9521), market-open (de4dec7), midday (3cb648c), EOD (3dc003a) all present. No alert needed.
+
+### Yesterday's Skip Check
+VLO **+7.53%** (Oct 12 close $436.205 via `bars` vs Ref $405.66; overnight quote one-sided/stale, mid ~$435.9) — tracking missed ([no-cat]); LMT row entered Oct 12 (n/a); MRVL row = held. Skips look wrong so far on VLO only.
+
+### Stall-Breaker
+Not armed (streak 0 < 3). Watchlist carried: VLO, MU. **UEC dropped** (no fresh catalyst since Sep 29 FY26 print, new 52-wk low $8.82 Oct 12 close, Zacks Strong Sell). LMT → held.
+
+### Trade Ideas
+- Week 15: 1/3 used. 84.49% deployed now; **MRVL exit (~$15.4k) would drop deployment to ~68% (<75%)** → refill idea flagged below for market-open (after MRVL exit is confirmed).
+1. **MRVL — EXIT at open (rule, not idea):** -8.62% premarket vs -7% cut. Cancel GTC 330c8e57 first, then close 60 sh; verify via `positions`/`orders`. Market-open: count consecutive failed Tech trades in TRADE-LOG after this exit (exit-sector-after-2-failures rule).
+2. **LMT add — conditional refill, market-open hard-check.** Catalyst: PAC-3 Edge debut Oct 9 (Lockheed IR + Breaking Defense, two-source) — **Oct 13 = 2nd session back, last eligible day**. Follow-through: Oct 12 close $512.12 > Oct 8 base $507.935. Chase: base Oct 8 $507.935, premarket ~$515.2 = **+1.43%** (<15%). Sector Industrials #3 (weak momentum — same concern as entry).
+   - Spec: entry ~$515 (limit ≤$520), **12 sh ≈ $6.2k (6.6%)** → LMT 25 sh ≈ 13.7% of equity (≤20%), Industrials 13.7% (≤40%). Stop: add own 10% trailing GTC (~$464); cut -7% on blended basis; target ~$587 (+14%). Only if MRVL exit takes deployment <75%.
+3. **VLO — watch ([no-cat]).** Oct 12 close $436.205. Drivers sector-level (crack spreads, distillate tightness, Benicia); G7 fuel-stock release = margin risk. Q3 Oct 22 (future event, not catalyst). Spec if dated company catalyst: ~$436 (limit ≤$442), 15 sh ≈ $6.5k (6.9%), 10% trail (~$393), cut ~$405, target ~$497. Energy post-fill 2 / ~28.8%.
+- **MU — no entry:** CXMT competition + Netlist ITC risk, shares -4-5% premarket; $35.16B buyback (date unverified); Tech cap. Ex-div Oct 14.
+
+### Risk Factors
+- **MRVL below -7% cut premarket** — exit at open; gap-down fill could be below $258 stop.
+- AI-semis selloff (CXMT, AI-financing, Kospi -5.5%): AVGO ~2.0% above stop.
+- CPI Wed / PPI Thu; hot core could revive rate-hike talk. Brent ~$105 (inflation). Big-bank Q3 today sets tape tone.
+- LMT/VLO Q3 Oct 22 — earnings gap risk for any add/new entry.
+
+### Decision
+**ACT at open on MRVL (mandatory -7% cut), otherwise HOLD.** No new entries pre-open; LMT add flagged as conditional refill only if MRVL exit drops deployment <75% and gate re-passes at market-open. AVGO on watch (~2% above stop). ClickUp alert sent (MRVL).
