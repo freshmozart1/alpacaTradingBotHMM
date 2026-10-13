@@ -2059,3 +2059,45 @@ No gate-rejection Decision Scoreboard rows needed (no planned trade was rejected
 | MRVL | 60 | $280.482 | $265.35 | -3.61% | -$907.92 (-5.40%) | $258.327 (10% trail, GTC 330c8e57, HWM $287.03) |
 
 **Notes:** Streak reset — trade(s) placed today (LMT 13 sh @ $511.48, 10% trail GTC 949bf0ce). Week 15 (Oct 12-16): 1/3 trades used. Day P&L vs Oct 9 logged EOD $94,967.34 (Alpaca last_equity $94,976.05; $8.71 diff from lastday price drift — logged value used). Red day driven by AI-semis: MRVL -3.61% (3rd red session in 4, now -5.40% from entry) and AVGO -1.88%; CVX +1.49% and ECL +0.88% offset partly; LMT flat post-entry. Phase P&L -$5,467.88 (-5.47%) vs $100,000 start, 17th straight negative reading. 5 open positions, 84.57% deployed / 15.43% cash — inside 75-85% band near top (L-024). **MRVL watch:** $265.35 is ~1.7% above -7% manual cut (~$260.85) and ~2.6% above stop — pre-market/midday must act if cut hit. No position at +15% tighten (max CVX +10.98%). Stop cushions: MRVL ~2.6%, AVGO ~3.4%, ECL ~6.5%, CVX ~8.9%, LMT ~9.3%. 7 GTC stops resting, no fills. AI-semis (AVGO+MRVL) ~34.9% of equity — main correlation risk. Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 13 — Market-Open (Day 71, Tuesday)
+
+**Operational Rule check:** Oct 12 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-open (13:23 UTC):** Equity $94,038.01 | Cash $14,589.88 (15.51%) | 5 open positions (AVGO 48, CVX 95, ECL 70, LMT 13, MRVL 60), 7 GTC stops resting. `balance_asof` 2026-10-12. daytrade_count not returned; no day trades this challenge. Week 15 (Oct 12-16): 1/3 used.
+
+**Held position check:** MRVL -8.60% premarket (≤ -7% cut) → mandatory exit. AVGO -3.88%, CVX +11.92%, ECL +1.41%, LMT +0.50% — none at cut or +15%/+20% tighten. L-031: no GTC expiry within 5 sessions (ECL Oct 26, CVX Oct 29).
+
+### Oct 13 — SELL MRVL (Day 71) — cut at -7% per rule, market-open
+
+At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and trail stop $258.327 (trail not yet triggered; qty_available 0). Canceled trailing stop 330c8e57 (13:31 UTC; first attempt 422 from truncated ID, re-sent with full ID → canceled), then market sell 60 sh order b0a3abdf → filled 60 @ $252.03 at 13:33:23 UTC. Confirmed via `orders all` (filled) and `positions` (MRVL gone). Realized **-$1,707.12 (-10.14%)** — gapped through cut on AI-semis selloff (CXMT DRAM, Kospi -5.5%, AI-financing worries); no company-specific thesis break. Tech: 1st failed trade in sequence (AVGO still open) — 2-failure sector exit not triggered.
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-10-13 | MRVL | SELL | 60 | $280.482 | $252.03 | -$1,707.12 (-10.14%) | cut at -7% per rule (gapped through); stop 330c8e57 canceled |
+
+**Post-exit:** Equity $93,735.80 | Cash $29,711.68 | 68.30% deployed — below 75% band → conditional LMT refill (RESEARCH-LOG idea #2) triggered.
+
+**Gate check — LMT add:** 13 sh (upsized from 12 to restore ≥75% deployment).
+- Positions post-fill 4 (≤6) — pass.
+- Weekly trades 2/3 incl. this — pass.
+- Cost $6,620.38 = 7.06% of equity; LMT total 26 sh ≈ 14.1% (≤20%) — pass.
+- Cost ≤ cash ($29,711.68) — pass.
+- Catalyst: PAC-3 Edge interceptor debut Oct 9 (Lockheed IR + Breaking Defense, two-source, ownership verified), 2 sessions back (last eligible day) — documented in today's RESEARCH-LOG. Follow-through (bars): Oct 12 close $512.12 > Oct 8 base $507.935 — pass. Chase bar: catalyst Oct 9, base Oct 8 $507.935, realized **+0.26%** at fill $509.26 (<15%; bar $584.13) — pass.
+- PDT room — pass (0 day trades; no LMT sell planned today).
+- Stock (LMT, NYSE) — pass.
+- Sector (L-030): Industrials 1 position post-fill (add); Technology 1, Energy 1, Materials 1 — pass. L-032: Industrials ~14.1% / Technology ~17.9% of equity (≤40%) — pass.
+- Deployment post-fill 75.37% — inside 75-85% band.
+- Ex-div/analyst (strategy rule): no same-week ex-div; div hike $3.60 and UBS/Redburn PTs dateless, excluded. Q3 earnings Oct 22 inside window (gap risk, non-blocking). Industrials #3 YTD — weak momentum, accepted on catalyst strength.
+
+**Entry Checklist (LMT add):** Catalyst = Oct 9 PAC-3 Edge debut (two-source, follow-through). Sector = Industrials (#3 YTD). Stop = own 10% trailing GTC; manual cut -7% on blended $510.37 ≈ $474.64. Target ~$587 (+15%).
+
+**Order:** IEX quote stale/wide (495/541.8), so limit buy 13 sh @ $515 (day) — order dec22778 → filled 13 @ $509.26 at 13:34:18 UTC (cost $6,620.38). Confirmed via `orders all` (filled) and `positions` (LMT 26 sh, avg $510.37).
+
+**Stop placed:** 10% trailing stop GTC 13 sh — order 39388294, stop $458.235, HWM $509.15, exp Jan 11 2027. Confirmed via `alpaca.sh orders` (status new). Existing 949bf0ce (13 sh, $464.193) unchanged.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-13 | LMT | BUY (add) | 13 | $509.26 (fill) | $458.235 (10% trailing GTC, order 39388294); manual cut -7% blended ~$474.64 | Oct 9 PAC-3 Edge interceptor debut (Lockheed IR + Breaking Defense), last eligible session; follow-through Oct 12 $512.12 > Oct 8 $507.935, +0.26% realized <15% chase bar; refill after MRVL cut, Industrials diversifier vs AI-semis | ~$587 (+15%) | ~2.1:1 vs -7% cut (~1.5:1 vs 10% trail) |
+
+**Post-trade:** Equity $93,741.06 | Cash $23,091.30 (24.63%) | 4 positions (AVGO 48, CVX 95, ECL 70, LMT 26) | 75.37% deployed — inside 75-85% band. 7 GTC stops resting (AVGO ×2, CVX ×2, ECL, LMT ×2). Week 15: 2/3 trades used. No gate-rejection scoreboard rows (VLO [no-cat] already on board; MU not planned).
