@@ -2139,3 +2139,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Held position check:** None at -7% cut (nearest AVGO -2.61%, cut ~$337.81). CVX $219.62 (+13.29%) below +15% tighten trigger ~$222.94 — no tighten yet (overnight quote 205.68/228.12 one-sided/wide, not actionable); midday to re-check. No GTC expiries within 5 sessions (L-031; ECL Oct 26, CVX Oct 29). No action.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD — VLO catalyst single-source, MU negative). Week 15 (Oct 12-16): 2/3 trades used. Nothing reached hard-check; no gate-rejection scoreboard rows. No ClickUp trade notification (no trade placed).
+
+### Oct 14 — Midday Scan (Day 72, Wednesday)
+
+**Account (16:14 UTC):** Equity $94,234.44 | Cash $23,090.97 (24.50%) | ~75.5% deployed (in band). 4 open positions — AVGO 48 sh -4.35% ($347.435, intraday -2.76%); CVX 95 sh +14.05% ($221.09, intraday +1.54%); ECL 70 sh +1.44% ($286.00, intraday +0.12%); LMT 26 sh +1.30% ($516.985, intraday +2.57%). 7 GTC stops resting: AVGO fe866c18 (32 sh) + e5e85854 (16 sh) $342.756/HWM $380.84; CVX e328a200 (41)/7f5acb83 (54) $199.116/HWM $221.24 (ratcheted up from $196.911); ECL 64b1066c $265.797/HWM $295.33; LMT 949bf0ce + 39388294 both $466.884/HWM $518.76 (ratcheted up from $464.193/$459.071).
+
+**STEP 3 (cut losers):** N/A — none at -7% (nearest AVGO -4.35%, cut ~$337.81, ~2.8% below mark). No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max CVX +14.05% ($221.09 < +15% trigger ~$222.94, ~0.8% away). None at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** AVGO -2.76% intraday — sector-wide: SOX multi-session decline (CXMT, AI-financing worries), hot Sept CPI 3.7% lifting yields, ASML beat failed to lift semis; no company-specific break. Only ~1.35% above stop $342.756 — 10% trail is the safety; stop-out would be Tech failure #2 → sector exit. Intact, hold. CVX +1.54%, new HWM, ~10% above stop; intact. ECL flat, ~7.6% above stop; intact. LMT +2.57%, new HWM, ~9.7% above stops; intact. No cuts.
+
+**STEP 6 (optional research):** One Perplexity query on AVGO/semis (exit 0) — see RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, LMT 26) and `orders` (7 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
