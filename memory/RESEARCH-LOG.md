@@ -3934,3 +3934,8 @@ Not armed (streak 0 < 3). Watchlist carried: VLO, MU. No drops/adds.
 
 ### Decision
 **HOLD.** No new entries pre-open (VLO catalyst single-source; MU negative). Watch CVX for +15% → 7% trail tighten. No ClickUp alert (nothing urgent).
+
+### 2026-10-14 — Midday Addendum
+- AVGO -2.76% intraday ($347.44; Perplexity: ~$349.83 -2.1% at 11:13 ET) — AI-infra financing concerns (Hock Tan capital-constraint comments, Anthropic/OpenAI financing exposure); SOX multi-session decline (CXMT, AI-spend worries); ASML strong results/raised outlook did not lift semis; Sept CPI 3.7% y/y hotter than expected → yields up. Sector-level, no company break. AVGO ~1.35% above stop $342.756.
+- CVX $221.09 (+14.05%), +15% tighten trigger ~$222.94 not hit. LMT +2.57% new HWM.
+- Decision: HOLD all. No trades, no stop changes.
