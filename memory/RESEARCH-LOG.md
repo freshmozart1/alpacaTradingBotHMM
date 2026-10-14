@@ -3875,3 +3875,62 @@ Not armed (streak 0 < 3). Watchlist carried: VLO, MU. **UEC dropped** (no fresh 
 
 ### Decision
 **ACT at open on MRVL (mandatory -7% cut), otherwise HOLD.** No new entries pre-open; LMT add flagged as conditional refill only if MRVL exit drops deployment <75% and gate re-passes at market-open. AVGO on watch (~2% above stop). ClickUp alert sent (MRVL).
+
+## 2026-10-14 — Pre-market Research
+
+### Account
+- Equity: $94,048.46 | Cash: $23,090.97 (24.55%) | Buying power: $291,044.84 (margin, effective) | `balance_asof` 2026-10-13 (current, settled).
+- Position market value: $70,957.49 (AVGO 48, CVX 95, ECL 70, LMT 26) — **75.45% deployed, inside 75-85% band (bottom edge)**. 7 GTC trailing stops resting, unchanged: AVGO fe866c18 (32) / e5e85854 (16) $342.756/HWM $380.84, CVX e328a200/7f5acb83 $196.911/HWM $218.79, ECL 64b1066c $265.797/HWM $295.33, LMT 949bf0ce $464.193/HWM $515.77 + 39388294 $459.071/HWM $510.08.
+- Day P&L (premarket marks): +$21.54 (+0.02%) vs last_equity $94,026.92.
+- Daytrade count: not returned; no day trades this challenge. Day 72, Wednesday, Week 15 (Oct 12-16), **2/3 weekly trades used** (LMT Oct 12, LMT add Oct 13; MRVL sell is an exit).
+- No-trade streak: 0 (trades Oct 13).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (500 obs, 83 days in regime). Advisory only.
+- Held (premarket marks): AVGO $353.39 (-2.71%), **CVX $219.87 (+13.42%)**, ECL $285.02 (+1.10%), LMT $506.00 (-0.86%). Overnight quotes one-sided/wide (CVX 205.68/228.12, AVGO 339.1/374.64) — marks indicative only.
+- No position at -7% cut (nearest AVGO -2.71%, cut ~$337.81). **CVX +15% tighten trigger ≈ $222.94 (~1.4% away)** — midday/market-open: tighten trail to 7% if hit.
+
+### Market Context
+- Perplexity: 14 queries, all exit 0, sequential (no 429). WebSearch used once (VLO Citi PT second-source check, L-021 rule) — no fallback needed.
+- WTI/Brent: **WTI ~$95.88, Brent ~$106.26**. Not a repeat of Oct 13 (~$92.7/$105.47). Dispersion <10%. USO Oct 13 close $153.08 (+1.33% vs $151.07) — consistent. Operative: oil firm/higher.
+- S&P 500 futures: **+0.2%** (~7,870-7,872). Not a repeat (Oct 13 ~flat). SPY premarket $775.26/775.38 (Alpaca quote). Note: `bars` show SPY Oct 12 and Oct 13 closes both $778.03 — exact match, flagged suspect (bars only, not used in gate).
+- VIX: **15.19** (prior close 15.27). Not an exact repeat of logged 15.21; source timestamp "9:46 a.m." implausible pre-open → treat as ~15.2, low.
+- Today: **Sept CPI 8:30 ET** (consensus headline 3.7% y/y, core 2.5%), Fed Beige Book. Earnings BMO: BAC, MS, BLK, STT, PGR, FAST, ASML (Q3 sales €11.7B, Q4 guide €14.2-15.2B — semis read-through). **PPI Thu Oct 15**, FOMC Oct 27-28, NFP Nov 6.
+- Sector momentum YTD (as of Oct 2): Energy +40.4% / Tech +30.2%; S&P +12.8%. **Exact repeat of Oct 12/13 read → flagged stale/suspect**; ranking only (Energy #1, Tech #2). Energy led S&P Oct 13 (+1.75%).
+- Held tickers:
+  - **AVGO**: AI networking platform (OCP), VMware HyperArmor; Anthropic ~$42B / OpenAI >$50B financing-backstop exposure; Hock Tan capital-constraint comments. FQ4 Dec 9. Mixed; no company break. ~3.0% above stop.
+  - **CVX**: TD Cowen PT $215→$225 (dateless, excluded); GoM recovery post-Hurricane Isaias (no major damage); Venezuela JV terms; Hess Midstream/DJ Basin divestiture. Q3 Oct 30. Thesis intact; new HWM area.
+  - **ECL**: Citi top N.A. specialty-chem pick (support only, already logged Oct 13); CoolIT data-center cooling; Q3 Oct 27, Investor Day Nov 17. Thesis intact.
+  - **LMT**: Avio solid-rocket-motor cooperation (ER GMLRS/PrSM) — undated, single-source; PrSM Inc 2 up to $1.2B and $117.1M Apache radar contracts (undated); PT-cut chatter (dateless). Q3 Oct 22. Thesis intact.
+- Watchlist:
+  - **VLO**: Citi (Bagri) PT $302→$485, Neutral — Perplexity dates it **Oct 13**; WebSearch found no matching report (latest Citi found: Jul 14 $302) → **single-source, not gate-eligible**. Oct 13 close $456.37 (+4.62%). Drivers otherwise sector-level (diesel/jet tightness). Q3 Oct 22. Remains [no-cat].
+  - **MU**: negative — CXMT 4F² server-DRAM competition, Korea memory rout, Taiwan union strike authorization; ex-div $0.15 today. Oct 13 close $953.06 (-12.4% vs Oct 7 $1,087.51). No entry.
+
+### Lessons Check
+- L-029 (div-adj base) — MU ex-div Oct 14 (not a candidate); no held/candidate ex-div in window. Complied.
+- L-030 (sector cap 2) — book: Energy 1 (CVX), Tech 1 (AVGO), Materials 1 (ECL), Industrials 1 (LMT). VLO → Energy 2 (pass). Complied.
+- L-031 (GTC expiries) — none within 5 sessions (ECL Oct 26 = 8 sessions, CVX Oct 29 = 11). Nothing to renew. Complied.
+- L-032 (sector ≤40%) — Energy 22.21%, Materials 21.21%, Tech 18.04%, Industrials 13.99%. VLO add → Energy ~29%. Complied.
+- L-033 ([3-5s]) — no two-source catalyst 3-5 sessions old on a non-held name. No row. Complied.
+- L-034 ([no-cat]) — no new scoreboard rows (VLO already on board, [no-cat]). Complied.
+- Operational: `git log` — Oct 13 pre-market (a59e67a), market-open (c6279cd), midday (364ef87), EOD (0d1eab7) all present. No alert needed.
+
+### Yesterday's Skip Check
+VLO **+12.50%** (Oct 13 close $456.37 via `bars` vs Ref $405.66; overnight quote one-sided/stale) — tracking missed ([no-cat]). MRVL/LMT rows n/a (held/exited). MU no row. Skips look wrong so far on VLO.
+
+### Stall-Breaker
+Not armed (streak 0 < 3). Watchlist carried: VLO, MU. No drops/adds.
+
+### Trade Ideas
+- Week 15: 2/3 used — 1 slot left. 75.45% deployed (in band) → no forced refill.
+1. **CVX — tighten, not buy.** +13.42% premarket; at ≥$222.94 (+15%) replace both trails (e328a200/7f5acb83) with 7% trail, never lower than current $196.911. CVX ~22.2% of equity — no add.
+2. **VLO — watch ([no-cat]), no entry.** Citi PT single-source (fails two-source); +12.50% vs Ref, +4.62% Oct 13. If a dated company catalyst is confirmed two-source: entry ~$456 (limit ≤$462), 14 sh ≈ $6.4k (6.8%), 10% trail (~$411), cut -7% ~$424, target ~$525 (+15%), 2.1:1. Energy post-fill 2 / ~29%. Q3 Oct 22 gap risk.
+3. **MU — no entry:** negative China-competition tape, strike risk, Tech has 1 failed trade (MRVL); no positive dated catalyst.
+
+### Risk Factors
+- **CPI 8:30 today**, PPI Thu: hot core → yields up, pressure on AVGO (~3.0% above stop) / growth.
+- AI-semis fragility (CXMT, AI-financing) — one more Tech failure (AVGO) = Tech sector exit.
+- Oil ~$96 WTI / ~$106 Brent: supports CVX, inflation risk; possible SPR/G7 releases hit energy.
+- LMT/VLO Q3 Oct 22, ECL Oct 27, CVX Oct 30 — earnings gap risk.
+- Book concentration: CVX 22.2%, ECL 21.2% above 20% entry cap via appreciation (no adds).
+
+### Decision
+**HOLD.** No new entries pre-open (VLO catalyst single-source; MU negative). Watch CVX for +15% → 7% trail tighten. No ClickUp alert (nothing urgent).
