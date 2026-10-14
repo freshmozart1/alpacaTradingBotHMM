@@ -2155,3 +2155,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (AVGO 48, CVX 95, ECL 70, LMT 26) and `orders` (7 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 14 — EOD Snapshot (Day 72, Wednesday)
+**Portfolio:** $94,487.77 | **Cash:** $23,090.97 (24.44%) | **Day P&L:** +$460.52 (+0.49%) | **Phase P&L:** -$5,512.23 (-5.51%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| AVGO | 48 | $363.239583 | $346.00 | -3.17% | -$827.50 (-4.75%) | $342.756 (10% trail, GTC e5e85854 16 sh / fe866c18 32 sh, HWM $380.84) |
+| CVX | 95 | $193.860947 | $221.80 | +1.87% | +$2,654.33 (+14.41%) | $200.295 (10% trail, GTC 7f5acb83/e328a200, HWM $222.55) |
+| ECL | 70 | $281.93 | $287.71 | +0.72% | +$404.60 (+2.05%) | $265.797 (10% trail, GTC 64b1066c, HWM $295.33) |
+| LMT | 26 | $510.37 | $522.23 | +3.61% | +$308.36 (+2.32%) | $470.772 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $523.08) |
+
+**Notes:** 1st consecutive no-trade day (streak reset Oct 13). Week 15 (Oct 12-16): 2/3 trades used. Day P&L vs Oct 13 logged EOD $94,027.25 (Alpaca last_equity $94,026.92; $0.33 drift — logged value used). Green day on CVX (+1.87%, new HWM $222.55, stops ratcheted to $200.295) and LMT (+3.61%, new HWM $523.08, both stops ratcheted to $470.772); ECL +0.72%. AVGO -3.17% on continued semis selloff (SOX weakness, hot Sept CPI/yields) — close $346.00 only ~0.94% above stop $342.756; a stop-out = Tech failure #2 → sector exit. Phase P&L -$5,512.23 (-5.51%) vs $100,000 start, 19th straight negative reading (improving). 4 open positions, 75.56% deployed / 24.44% cash — inside 75-85% band at bottom edge (L-024); 1 trade left this week. CVX ~22.3% of equity via appreciation (no add). CVX +14.41% — +15% tighten trigger ~$222.94 (~0.5% away); market-open to re-check. Stop cushions: AVGO ~0.9%, ECL ~7.6%, CVX ~9.7%, LMT ~9.9%. 7 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
