@@ -2167,3 +2167,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | LMT | 26 | $510.37 | $522.23 | +3.61% | +$308.36 (+2.32%) | $470.772 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $523.08) |
 
 **Notes:** 1st consecutive no-trade day (streak reset Oct 13). Week 15 (Oct 12-16): 2/3 trades used. Day P&L vs Oct 13 logged EOD $94,027.25 (Alpaca last_equity $94,026.92; $0.33 drift — logged value used). Green day on CVX (+1.87%, new HWM $222.55, stops ratcheted to $200.295) and LMT (+3.61%, new HWM $523.08, both stops ratcheted to $470.772); ECL +0.72%. AVGO -3.17% on continued semis selloff (SOX weakness, hot Sept CPI/yields) — close $346.00 only ~0.94% above stop $342.756; a stop-out = Tech failure #2 → sector exit. Phase P&L -$5,512.23 (-5.51%) vs $100,000 start, 19th straight negative reading (improving). 4 open positions, 75.56% deployed / 24.44% cash — inside 75-85% band at bottom edge (L-024); 1 trade left this week. CVX ~22.3% of equity via appreciation (no add). CVX +14.41% — +15% tighten trigger ~$222.94 (~0.5% away); market-open to re-check. Stop cushions: AVGO ~0.9%, ECL ~7.6%, CVX ~9.7%, LMT ~9.9%. 7 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 15 — Market-Open Check (Day 73, Thursday) — no new trade; AVGO stopped out
+
+**Operational Rule check:** Oct 14 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**AVGO stop-out (GTC trail fired at open, confirmed via `alpaca.sh orders closed` + `positions`):** SELL AVGO 48 — e5e85854 16 sh @ $337.10 (13:33:17 UTC) + fe866c18 32 sh @ $337.15 (13:33:58 UTC); avg ~$337.13 vs entry $363.239583 → realized ~-$1,253.10 (-7.19%). Gapped through stop $342.756 (premarket ~$339). **Tech failure #2 (MRVL Oct 13, AVGO Oct 15) → Tech sector exit per rule 10** — no Tech holdings remain; no new Tech entries.
+
+**Account (13:36 UTC):** Equity $94,698.69 | Cash $39,273.37 (41.47%) | ~58.5% deployed — **below 75-85% band**. 3 open positions: CVX 95 sh +14.28% ($221.54), ECL 70 sh +4.69% ($295.145), LMT 26 sh +3.35% ($527.44). 5 GTC trailing stops resting: CVX e328a200 (41)/7f5acb83 (54) $201.114/HWM $223.46; ECL 64b1066c $266.355/HWM $295.95; LMT 949bf0ce/39388294 $480.501/HWM $533.89. daytrade_count not returned; no day trades.
+
+**CVX tighten:** Premarket mark +15.03% but live +14.28% ($221.54 < +15% trigger ~$222.94) — not triggered; midday to re-check. No stops changed.
+
+**Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD; VLO [no-cat] undated, MU negative/Tech exit). Week 15 (Oct 12-16): 2/3 new trades used (stop-out not a new trade). Nothing reached hard-check; no gate-rejection scoreboard rows. No ClickUp trade notification (no order placed). Under-deployment flagged for next pre-market refill screen (Energy/Industrials/Materials; L-030/L-032 apply).
