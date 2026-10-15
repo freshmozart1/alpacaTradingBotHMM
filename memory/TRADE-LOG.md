@@ -2179,3 +2179,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **CVX tighten:** Premarket mark +15.03% but live +14.28% ($221.54 < +15% trigger ~$222.94) — not triggered; midday to re-check. No stops changed.
 
 **Gate check on new entries:** No planned trade in today's RESEARCH-LOG (Decision: HOLD; VLO [no-cat] undated, MU negative/Tech exit). Week 15 (Oct 12-16): 2/3 new trades used (stop-out not a new trade). Nothing reached hard-check; no gate-rejection scoreboard rows. No ClickUp trade notification (no order placed). Under-deployment flagged for next pre-market refill screen (Energy/Industrials/Materials; L-030/L-032 apply).
+
+### Oct 15 — Midday Scan (Day 73, Thursday)
+
+**Account (16:13 UTC):** Equity $94,418.54 | Cash $39,273.37 (41.60%) | ~58.4% deployed — **below 75-85% band** (post-AVGO stop-out). 3 open positions — CVX 95 sh +13.86% ($220.73, intraday -0.59%); ECL 70 sh +3.44% ($291.64, intraday +1.37%); LMT 26 sh +3.70% ($529.27, intraday +1.35%). 5 GTC stops resting: CVX e328a200 (41)/7f5acb83 (54) $201.114/HWM $223.46; ECL 64b1066c $266.355/HWM $295.95; LMT 949bf0ce/39388294 $480.501/HWM $533.89.
+
+**STEP 3 (cut losers):** N/A — no position negative. No positions closed.
+
+**STEP 4 (tighten trails):** N/A — max CVX +13.86% ($220.73 < +15% trigger ~$222.94, ~1.0% away). None at +15%/+20%. No stops changed.
+
+**STEP 5 (thesis check):** CVX -0.59% intraday — mild oil pullback (WTI ~-1%), ~9.8% above stop; intact. ECL +1.37%, ~9.5% above stop; intact. LMT +1.35%, near HWM, ~10.1% above stops; intact. No cuts.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, LMT 26) and `orders` (5 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
