@@ -98,6 +98,12 @@ If any fail, the trade is skipped and the reason is logged.
   as a catalyst, search for its own dated press release or first report;
   label it "dateless, excluded" if no explicit date is found within 2
   search attempts.
+- When a held or candidate name has an ex-dividend date inside its
+  follow-through/thesis window, compare price to the dividend-adjusted
+  pre-catalyst base and log both the nominal and adjusted figures.
+- At every new-entry/add gate check, log the post-fill sector count; an
+  entry that would put a 3rd position in one sector is skipped and logged
+  as a concentration skip.
 
 ## Sell-Side Rules
 
@@ -167,3 +173,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-10-09 | Buy-Side Gate | (none) -> every chase-risk evaluation logs catalyst date, base date/close, and realized % | Promoted from LESSONS.md L-026 (2026-09-25), complied at every entry/evaluation for 2 straight weeks (Sep 25-Oct 9): NTRA, BMY, AVGO, AVGO add, MRVL all logged base + realized %. Process addition only, not a risk-rule change. |
 | 2026-10-09 | Buy-Side Gate | (none) -> while deployment <75%, pre-market must flag a fully-specified idea or log per-name reasons none qualify | Promoted from LESSONS.md L-027 (2026-09-25), complied for 2 straight weeks (Sep 25-Oct 9); produced NTRA (Sep 28) and the AVGO add (Oct 6) that restored deployment 66.65% -> 78.9% in one session. Process addition only, not a risk-rule change. |
 | 2026-10-09 | Operational Rules | (none) -> pre-market `git log` check for the prior session's four routine commits; ClickUp alert on any missing | Promoted from LESSONS.md L-028 (2026-09-25), complied every pre-market for 2 straight weeks (Sep 25-Oct 9); caught the missing Oct 8 midday run and alerted the same session (Oct 9). Process addition only, not a risk-rule change. |
+| 2026-10-16 | Buy-Side Gate | (none) -> dividend-adjust the pre-catalyst base when an ex-div date falls inside the follow-through/thesis window; log nominal + adjusted | Promoted from LESSONS.md L-029 (2026-10-02), complied at every applicable entry/hold check for 2 straight weeks (Oct 2-16): BMY (Oct 5), MRVL (Oct 7/9, $0.06 ex-div), LMT (Oct 12-13 ex-div checks). Process addition only, not a risk-rule change. |
+| 2026-10-16 | Buy-Side Gate | (none) -> max 2 positions per sector; a 3rd-in-sector entry is a concentration skip | Promoted from LESSONS.md L-030 (2026-10-02), complied at every gate check for 2 straight weeks (AVGO, AVGO add, MRVL, LMT, LMT add all logged post-fill sector count). Evidence it binds a real risk: the 2 Tech names (AVGO+MRVL) both failed within 3 sessions (Oct 13/15, -$2,960.22 realized). Tightening only — no risk rule loosened. |

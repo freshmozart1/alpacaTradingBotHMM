@@ -1124,3 +1124,88 @@ Verdict counts (true skips): missed 1, skip-right 2, avoided-loss 1. Total misse
 - Not a zero-trade week — no STEP 5 escalation. No risk rules touched (stops, -7% cut, sizing caps, 3/week cap, no-options).
 
 ### Overall Grade: D+ (rules executed cleanly — -7% cut, trail exit, HC sector exit, one-session refill, MRVL clean entry, gap alerted — but -1.96% relative, 0/2 closed winners, profit factor 0.00, extension-window entries all lost, AI-semis concentration unbounded, phase P&L to -5.03%)
+
+## Week ending 2026-10-16
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $94,967.34 (Oct 9 EOD) |
+| Ending portfolio | $95,247.46 (Oct 16 logged EOD; live pull $95,245.35, `balance_asof` 2026-10-15 — one session lagged per Operational Rules, provisional) |
+| Week return | +$280.12 (+0.29%) |
+| S&P 500 week | -1.95% (SPY 778.51 -> 763.335, Oct 9 close -> Oct 16 close via `alpaca.sh bars`, adjustment=all; Perplexity -0.9% — inconsistent, discarded) |
+| Bot vs S&P | +2.24% |
+| Trades | 2 new entries (LMT Oct 12, LMT add Oct 13 — both open); 2 closed (MRVL cut, AVGO trail — prior-week entries) (W:0 / L:2 / open:3 positions); 2/3 weekly cap used |
+| Win rate | 0% (0/2 closed) |
+| Best trade | AVGO -7.19% (best closed; trail stop); CVX +16.06% unrealized (open) |
+| Worst trade | MRVL -10.14% (-$1,707.12, -7% cut gapped through) |
+| Profit factor | 0.00 ($0 winners / $2,960.22 losers) |
+
+### Skip Scoreboard
+
+Rows >= 5 sessions old scored this week (Ref -> +5 trading-session close, via `alpaca.sh bars`):
+
+| Ticker | Ref (date) | +5d close | +5d % | Verdict |
+|--------|------------|-----------|-------|---------|
+| MRVL | 272.33 (Oct 5 row) | 265.85 (Oct 12) | -2.38% | n/a — entered Oct 7 (cut -10.14%) |
+| VLO | 405.66 (Oct 5 row) | 436.205 (Oct 12) | +7.53% | missed [no-cat] |
+| LMT | 506.25 (Oct 5 row) | 512.12 (Oct 12) | +1.16% | n/a — entered Oct 12 (open +7.97%) |
+
+Verdict counts (true skips): missed 1, skip-right 0, avoided-loss 0. Total missed gains: +7.53%. Total avoided losses: 0.00%. Missed:avoided ratio: 1:0 (vs 1:1 last week). **L-034 [no-cat] subset:** this week 1:0 (VLO +7.53%, peaked +13.37% Oct 14); since tracking began 2:0 (MPC +10.24%, VLO +7.53% = +17.77% missed, 0 avoided). L-033 [3-5s]: no rows logged — no data. **Gate calibration verdict: calibrated for company-catalyst names, blind to #1-sector moves** — every miss in 2 weeks is a [no-cat] refiner; VLO's Citi/Wells $485 PT wave correctly failed second-source (latest found WF $389 Sep 1). No gate change now (L-034 review-by Oct 23); draft a bounded path under L-037. **Pruned this review:** META/TXN/XOM/LNG (Sep 23 rows, scored Sep 30, 12 sessions). Sep 28 rows (9 sessions) and UEC retained. No new scoreboard rows this week.
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| MRVL | $280.482 (60 sh, Oct 7) | $252.03 (Oct 13) | -$1,707.12 (-10.14%) | Manual -7% cut at open; gapped from -5.40% (Oct 12 close) through cut on AI-semis selloff (CXMT DRAM, Kospi -5.5%). Trail 330c8e57 canceled first. Tech failure #1. |
+| AVGO | $363.239583 (48 sh: Oct 5 + Oct 6 add) | ~$337.13 avg (Oct 15) | ~-$1,253.10 (-7.19%) | 10% trails e5e85854/fe866c18 filled at open, gapped through $342.756 stop. Tech failure #2 -> Tech sector exit. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $224.99 | +$2,957.26 (+16.06%) | Two 10% trailing GTC 7f5acb83 (54) + e328a200 (41), stop $202.779, HWM $225.31 — **+15% crossed; tighten to 7% Mon open (~$209.54)** |
+| ECL | $281.93 (70 sh) | $288.89 | +$487.20 (+2.47%) | 10% trailing GTC 64b1066c, stop $266.355, HWM $295.95 |
+| LMT | $510.37 (26 sh: 13 Oct 12 + 13 Oct 13) | $551.038 | +$1,057.37 (+7.97%) | 10% trailing GTC 949bf0ce (13) + 39388294 (13), stop $497.826, HWM $553.14 |
+
+Deployment 58.71% / cash 41.29% — **below 75-85% band** (2 sessions, since AVGO stop-out Oct 15). Sector mix: Energy 1 (CVX ~22.4% via appreciation), Industrials 1 (LMT ~15.0%), Materials 1 (ECL ~21.2%); Technology exited. Stall-breaker armed Mon Oct 19 (3 no-trade sessions). Stop expiries: ECL Oct 26, CVX Oct 29 (L-031). LMT Q3 earnings Oct 22 (gap risk).
+
+### What Worked
+
+- Beat the S&P by +2.24% in a -1.95% tape — first outperforming week since mid-Sep; phase P&L improved -5.03% -> -4.75%.
+- LMT (Industrials diversifier) entered same-window on a two-source Oct 9 catalyst, +0.70%/+0.26% chase realized; now +7.97% with stops ratcheted to $497.83 — clean gate case.
+- CVX ran to +16.06% (HWM $225.31); trail ratcheted 4 times this week, locking ~+4.6% minimum.
+- Risk rules fired mechanically: MRVL cut at the open the session it crossed, AVGO trail exited, Tech sector exit applied on failure #2.
+- Gate held on VLO: Citi/Wells $485 PT wave failed second-source search twice — no single-source entry forced. Zero automation gaps (all 15 routine entries present).
+
+### What Didn't Work
+
+- 0/2 closed again; both AI-semis exits gapped overnight past their lines (MRVL -10.14% vs -7%, AVGO -7.19% vs ~-5.6% stop) — -$2,960.22 realized.
+- AVGO+MRVL (~35% of equity, one theme) passed L-030 (count 2) and L-032 (<40%) yet failed together inside 3 sessions.
+- Deployment fell to 58.71% after the AVGO stop-out; refill screen found no gate-eligible name and the 3rd weekly slot lapsed unused.
+- VLO ([no-cat]) ran +13.37% at peak without us — second straight week a top-sector refiner was missed.
+- Profit factor 0.00 for the 2nd straight week; challenge still has zero closed winners since early Sep.
+
+### Key Lessons
+
+- Sector-count and sector-% caps don't capture sub-industry correlation; one macro theme took both Tech names through their stops.
+- Overnight gaps, not intraday drift, did the damage: the -7% rule is executed correctly but realized losses run 2-3 points worse in correlated selloffs.
+- The outperformance came from diversification (Energy, Industrials, Materials) while Tech bled — the L-030/L-032 direction is right but needs a theme-level check.
+- The gate's misses are now exclusively [no-cat] #1-sector names; company-catalyst skips have been calibrated for 2 weeks.
+
+### Adjustments for Next Week
+
+- At every new-entry/add gate check, log combined same-theme/sub-industry exposure post-fill; if >25% of equity, size down or skip as a concentration skip (L-035).
+- For every exit, log fill vs. cut/stop level as % slippage; report the total at review (L-036, measurement only).
+- Before the Oct 23 review, draft a bounded [no-cat] sector-momentum entry spec (top-2 sector, bars RS vs sector ETF, half-size, all risk rules unchanged) and score it against every [no-cat] scoreboard row (L-037, draft only).
+
+### Rule Changes This Week
+
+- L-029 (dividend-adjusted pre-catalyst base) promoted to a permanent Buy-Side Gate rule — 2 weeks' compliance (BMY, MRVL, LMT checks). Changelog row added.
+- L-030 (max 2 positions per sector) promoted to a permanent Buy-Side Gate rule — 2 weeks' compliance; tightening only. Changelog row added.
+- L-031 (GTC expiry renewal) extended to Oct 30 — directive not yet triggered (ECL Oct 26 / CVX Oct 29 enter the 5-session window next week).
+- L-032/L-033/L-034 carried to Oct 23 review-by. New L-035/L-036/L-037.
+- Not a zero-trade week — no STEP 5 escalation. No risk rules touched (stops, -7% cut, sizing caps, 3/week cap, no-options).
+
+### Overall Grade: C+ (+2.24% vs S&P in a down week, clean LMT entry now +7.97%, CVX +16%, risk rules and Tech sector exit executed mechanically, zero automation gaps — but 0/2 closed, -$2.96k realized from one correlated theme with gap-through slippage, profit factor 0.00, and deployment down to 58.7%)
