@@ -4001,3 +4001,69 @@ Not armed (streak 1 < 3). Watchlist carried: VLO, MU. No drops/adds.
 
 ### Decision
 **HOLD on new entries; ACT at open on stops:** AVGO trail/-7% cut (mechanical), CVX tighten to 7% trail. No buys pre-open (no gate-eligible catalyst). ClickUp alert sent (AVGO below stop premarket).
+
+## 2026-10-16 — Pre-market Research
+
+### Account
+- Equity: $94,641.97 | Cash: $39,324.12 (41.55%) | Buying power: $312,186.46 (margin, effective) | `balance_asof` 2026-10-15 (current, settled).
+- Position market value: $55,317.85 (CVX 95, ECL 70, LMT 26) — **58.45% deployed, BELOW 75-85% band** (post-AVGO stop-out Oct 15). 5 GTC trailing stops resting: CVX e328a200 (41)/7f5acb83 (54) $201.114/HWM $223.46 (exp Oct 29); ECL 64b1066c $266.355/HWM $295.95 (exp Oct 26); LMT 949bf0ce/39388294 $480.825/HWM $534.25 (exp Jan 2027).
+- Day P&L (premarket marks): +$277.11 (+0.29%) vs last_equity $94,364.86.
+- Daytrade count: not returned; no day trades this challenge. Day 74, Friday, Week 15 (Oct 12-16), **2/3 weekly trades used — 1 slot, expires today**.
+- No-trade streak: 2 (Oct 14, 15).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97%** (500 obs, 85 days in regime; up from 95%). Advisory only.
+- Held (premarket marks): CVX $220.77 (+13.88%), ECL $290.81 (+3.15%), LMT $538.00 (+5.41%, new HWM area). Overnight quotes indicative.
+- Tighten triggers: CVX +15% = ~$222.94 (~1.0% away) — not hit. None at +15%/+20%.
+
+### Market Context
+- Perplexity: 17 queries, all exit 0, sequential (no 429). WebSearch 2x (MT upgrade, JNJ CHMP second-source checks) — no fallback needed.
+- WTI/Brent: **WTI ~$97.27 (-0.71%), Brent ~$105.29 (-0.59%)**. Not a repeat (Oct 15 ~$94.11/$104.43). Single source; no dispersion flag. Operative: oil firm ~$97.
+- S&P 500 futures: **+0.07%** (~7,797, 7:47 ET). Not a repeat. SPY Oct 15 close $771.77 (+0.28%). Operative: flat open.
+- VIX: **16.19** (-1.64%) — source timestamp "10:07 a.m." implausible pre-open → treat as ~16.2-16.5. Not a repeat (Oct 15 17.51). Easing.
+- Today: no CPI/PPI/NFP/FOMC. Sept industrial production; Fed Chair Warsh speech (rate-hike signal risk). Earnings BMO: TFC, MTB, CFG, RF, TRV, FITB, EEFT (Financials — not momentum). CLF confirmed **Oct 19 BMO**, not today. Recent prints: CPI 3.7% y/y (Oct 14), PPI +1.3% m/m (Oct 15). FOMC Oct 28, NFP Nov 6, CPI Nov 10.
+- Sector momentum YTD (as of Oct 15): Tech +31.86% #1, Health Care +14.35% #2, Materials +11.60% #3; Energy absent from table, State Street composite still ranks **Energy** momentum leader. Rotation tape: Energy/Health Care/Staples relative strength, AI/semis weak on yields. Top-2 for screening: Energy (momentum) / Health Care (YTD); **Tech excluded — sector exit Oct 15 (rule 10)**.
+- Held tickers:
+  - **CVX**: Morgan Stanley PT $218→$226 OW, UBS $235, TD Cowen $225 (dates not confirmed — support only); Hess Midstream/DJ Basin divestiture (~$3.7B debt off, close YE26); Wirth: inventories/SPR depleted, diesel relief maybe 2027. Pullback from 52-wk high. Q3 Oct 30. Thesis intact.
+  - **ECL**: RBC Q3 preview (rev ~$4.71B, ~6.5% organic, 5-6% pricing); CoolIT/data-center cooling; "fully priced after ~59% run" caution. Q3 Oct 27 BMO. Thesis intact.
+  - **LMT**: Q3 Oct 22 (cons EPS ~$7.48-7.52, rev ~$20.4B); dividend +4.3% to $3.60 (announced Oct 9, record Dec 1); $300M Grand Prairie PAC-3 expansion (undated); Vertical Buy $600 vs RBC cut $550 (dateless). Thesis intact; new HWM area.
+- Watchlist:
+  - **VLO**: Same Wells Fargo/Citi $485 PT wave as Oct 14-15 — already failed second-source (latest WF found $389, Sep 1) → still **not gate-eligible**. Oct 15 close $444.425 (-3.37%). Q3 Oct 22. [no-cat].
+  - **MU**: **DROPPED** — Tech sector exit (rule 10); CXMT 4F² negative tape. No further tracking.
+
+### Refill Screen (deployment <75% — per-name reasons, no gate-clearing idea)
+- **MT** (Materials): Perplexity "JPM upgrade to OW Oct 15" — WebSearch found only Oct 2025 upgrade + Mar 9, 2026 downgrade to UW; no Oct 2026 note → **dateless, excluded**. Oct 15 close $63.62. Not added.
+- **JNJ** (Health Care): Perplexity "CHMP rec TALVEY earlier-line" — WebSearch found only Jul 2023 opinion + Jun 2026 MonumenTAL-3 data; no Oct 2026 CHMP item → **unverified, excluded**. Oct 15 close $253.31 (-4.1% vs Oct 12 $264.10). Not added.
+- **GILD** (Vir deal, undated), **IONS/GUTS/BBIO** (single-source / speculative clinical), **CEG/VST/NRG** (Utilities — weakest YTD, not momentum), **CCJ** (EPS-estimate tweak, not a catalyst), **MPC/DK** (sector-margin narrative, [no-cat]), **INSW** (acquisition undated): none has a two-source catalyst dated today/prior 2 sessions → not added.
+- **CVX/ECL adds**: both >20% of equity (22.2%/21.5%) → cap-blocked. **LMT add**: dividend hike Oct 9 = 5 sessions old (outside 2-session window), upgrade dateless → no.
+- **VLO**: single-source PT wave (above).
+- Result: no fully-specified idea qualifies; under-deployment carried to Mon Oct 19 (Week 16, 3 fresh slots). Streak hits 3 if no trade today → **stall-breaker armed Mon → mandatory refresh** (Energy/Health Care + Materials 3rd leg).
+
+### Lessons Check
+- L-029 (div-adj base) — LMT ex-div ~Dec 1 (outside window); no held/candidate ex-div in window. Complied.
+- L-030 (sector cap 2) — book: Energy 1 (CVX), Materials 1 (ECL), Industrials 1 (LMT); Tech 0 (exited). No entry evaluated past screen. Complied.
+- L-031 (GTC expiries) — ECL Oct 26 = 6 sessions after today, CVX Oct 29 = 9; none within 5. **Heads-up: ECL enters 5-session window at Mon Oct 19 EOD → renew Oct 20 open.** Complied.
+- L-032 (sector ≤40%) — Energy 22.16%, Materials 21.51%, Industrials 14.78%. Complied.
+- L-033 ([3-5s]) — LMT dividend hike (Oct 9, 5 sessions) is single-company but held name; no non-held two-source 3-5s catalyst. No row. Complied.
+- L-034 ([no-cat]) — no new scoreboard rows (no new watchlist names; VLO already [no-cat]). Complied.
+- Operational: `git log` — Oct 15 pre-market (5807803), market-open (a90c98b), midday (cc89108), EOD (54ab047) all present. No alert needed.
+
+### Yesterday's Skip Check
+VLO **+9.56%** (Oct 15 close $444.425 via `bars` vs Ref $405.66; overnight quote one-sided/stale) — tracking missed ([no-cat]), but -3.37% Oct 15 pullback. MU no row. Skips look wrong so far on VLO.
+
+### Stall-Breaker
+Not armed (streak 2 < 3). Watchlist: VLO carried; MU dropped (Tech exit). No adds (screen above found no verifiable names).
+
+### Trade Ideas
+- Week 15: 2/3 used — 1 slot (today only). 58.45% deployed.
+1. **CVX — tighten watch, not buy.** +13.88%; at ≥$222.94 (+15%) replace e328a200/7f5acb83 with 7% trail, never below $201.114. No add (22.2%).
+2. **VLO — watch ([no-cat]), no entry.** If a dated company catalyst is two-source confirmed: entry ~$445 (limit ≤$451), 14 sh ≈ $6.2k (6.6%), 10% trail (~$400), cut -7% ~$414, target ~$512 (+15%), 2.1:1. Energy post-fill 2 / ~28.8%. Chase: +9.56% vs Oct 5 Ref. Q3 Oct 22 gap risk.
+3. **No refill entry** — see Refill Screen per-name reasons.
+
+### Risk Factors
+- Warsh speech: hawkish tone after hot CPI/PPI → yields up, pressure on ECL (long-duration) / broad tape.
+- Under-deployment 58% — lagging SPY if tape rallies; forced-refill pressure Monday (gate still decides).
+- Oil ~$97 WTI: supports CVX; SPR/diplomatic headlines can hit energy fast.
+- LMT/VLO Q3 Oct 22, ECL Oct 27, CVX Oct 30 (one-time midstream loss) — earnings gap risk.
+- Concentration: CVX 22.2%, ECL 21.5% above 20% entry cap via appreciation (no adds).
+
+### Decision
+**HOLD.** No new entries (no gate-eligible catalyst; Week 15 slot lapses unused). Watch CVX +15% tighten. No ClickUp alert (nothing urgent).
