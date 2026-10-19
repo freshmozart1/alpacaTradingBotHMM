@@ -2257,3 +2257,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - No other planned entries (VLO [no-cat], STLD/TMO pending dated events, IRON chase-excluded, XOM theme-blocked).
 
 **Week 16 (Oct 19-23):** 0/3 new trades used. No-trade streak → 4 if none today (stall-breaker remains armed). No ClickUp trade notification (no buy placed). Stops resting: CVX 5469cb07 $208.3014 (7%); ECL 64b1066c $266.355 (exp Oct 26 — **renew Oct 20 open**, L-031); LMT 949bf0ce/39388294 $497.826.
+
+### Oct 19 — Midday Scan (Day 75, Monday)
+
+**Account (16:13 UTC):** Equity $94,802.87 | Cash $39,324.12 (41.48%) | ~58.5% deployed — **below 75-85% band**. 3 open positions — CVX 95 sh +15.38% ($223.68, intraday -0.58%); ECL 70 sh +1.02% ($284.80, intraday -1.42%); LMT 26 sh +7.71% ($549.70, intraday -0.24%). 4 GTC stops resting: CVX 5469cb07 (95, 7%) $209.8638/HWM $225.66 (ratcheted intraday); ECL 64b1066c $266.355/HWM $295.95; LMT 949bf0ce/39388294 $497.826/HWM $553.14.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min ECL +1.02%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX +15.38% already on 7% trail (placed at open) — <+20%, no change. ECL/LMT <+15%. No stops changed.
+
+**STEP 5 (thesis check):** CVX -0.58% intraday, oil ~$100, ~6.2% above stop; intact. ECL -1.42% (yields/inflation drag), ~6.5% above stop; intact. LMT -0.24%, ~9.4% above stops ahead of Oct 22 Q3; intact. No cuts.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained move.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, LMT 26) and `orders` (4 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
