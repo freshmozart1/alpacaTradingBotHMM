@@ -4067,3 +4067,77 @@ Not armed (streak 2 < 3). Watchlist: VLO carried; MU dropped (Tech exit). No add
 
 ### Decision
 **HOLD.** No new entries (no gate-eligible catalyst; Week 15 slot lapses unused). Watch CVX +15% tighten. No ClickUp alert (nothing urgent).
+
+## 2026-10-19 — Pre-market Research
+
+### Account
+- Equity: $94,773.18 | Cash: $39,324.12 (41.49%) | Buying power: $312,553.85 (margin, effective) | `balance_asof` 2026-10-16 (prior session, settled).
+- Position market value: $55,449.06 (CVX 95, ECL 70, LMT 26) — **58.51% deployed, BELOW 75-85% band** (3rd session). 5 GTC trailing stops resting: CVX e328a200 (41)/7f5acb83 (54) $202.779/HWM $225.31 (exp Oct 29); ECL 64b1066c $266.355/HWM $295.95 (exp Oct 26); LMT 949bf0ce/39388294 $497.826/HWM $553.14 (exp Jan 2027).
+- Day P&L (premarket marks): -$501.63 (-0.53%) vs last_equity $95,274.81.
+- Daytrade count: not returned; no day trades. Day 75, Monday, Week 16 (Oct 19-23), **0/3 weekly trades used**.
+- No-trade streak: 3 (Oct 14, 15, 16) → **stall-breaker armed** (TRADING-STRATEGY 3+ rule).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 94%** (498 obs, 92 days in regime; down from 97%). Advisory only.
+- Held (premarket marks): CVX $222.40 (+14.72%), ECL $288.89 (+2.47%, no print), LMT $542.26 (+6.25%). Overnight quotes indicative.
+- **CVX tighten due at open:** closed Fri +16.06% (crossed +15%); 7% trail of HWM $225.31 → ~$209.54 (5.8% below $222.40, >3% ✓; above $202.779 ✓ never down).
+
+### Market Context
+- Perplexity: 18 queries, all exit 0, sequential. WebSearch 1x (CLF Q3 second source — SEC 8-K). No fallback needed.
+- WTI/Brent: **WTI ~$100.65 (-0.75%), Brent ~$107.90 (-1.78%)** (Fri close WTI $101.84). Not a repeat (Oct 16 ~$97.27/$105.29). Dispersion <10%. Operative: oil ~$100+, Iran/Hormuz risk premium.
+- S&P 500 futures: Perplexity **+0.48%** (7,741) vs headlines "S&P futures drop on trade-inflation fears" — conflicting → cross-checked `alpaca.sh quote SPY` $766.80 mid vs Oct 16 bars close $763.335 = **+0.45%**. Operative: modestly higher open. SPY Oct 16 close -1.09%.
+- VIX: **~18.7-18.8** (-5.8% from ~19.99 Fri) — Perplexity "11:49 a.m." timestamp implausible pre-open; Yahoo snippet 18.67. Not a repeat (Oct 16 16.19). Elevated vs last week.
+- Today: no CPI/PPI/NFP/FOMC. Sep import prices +1.1% m/m (inflation/yields pressure). China Q3 GDP +4.5%. Earnings BMO: **CLF**, FITB, WAL, ZION, WRB, CCK; **STLD AMC** (call Oct 20 11:00). Week: TXN, LRCX, TSLA, NFLX, META (Wed), TMO/ABT Oct 21, LMT/VLO Oct 22. EIA inventories Wed (8.56M bbl draw last). FOMC Oct 28, NFP Nov 6, CPI Nov 10.
+- Sector momentum YTD (as of Oct 15): Health Care +14.35% #1, Materials +11.60% #2 (Tech excluded — sector exit Oct 15); State Street composite: **Energy** momentum leader. Top-2 for screening: Energy (momentum) / Health Care (YTD); 3rd leg Materials.
+- Held tickers:
+  - **CVX**: oil ~$100, Hormuz risk; MS PT $226 OW (dateless — support only); Hess Midstream/DJ divestiture ($3-4B one-time loss); Q3 Oct 30. Thesis intact.
+  - **ECL**: Q3 Oct 27; UBS PT $342→$344 Buy (dateless); data-center cooling; "fully priced after 59% run" caution. Thesis intact.
+  - **LMT**: Q3 Oct 22 BMO; UBS Buy $653 (reiterated, dateless), RBC $550, Wall Street Zen cut to Buy (Oct 19, quant — not a catalyst); $209M Navy EW mod. Premarket -1.8%. Thesis intact; earnings gap risk.
+- Watchlist:
+  - **VLO**: Q3 Oct 22 (cons EPS ~$21.23); WF $485 PT still dateless/unconfirmed (L-021 — excluded). Oct 16 close $444.70. [no-cat]. Kept (hard-dated event within 5 sessions).
+
+### Stall-Breaker
+**FIRED** (streak 3 ≥ 3). Dropped: none (VLO kept — Q3 Oct 22 hard-dated within 5 sessions). Added: **CLF, STLD** (Materials, 3rd leg), **IRON, TMO** (Health Care), **XOM** (Energy). Screens: "best energy/materials stocks with news catalysts this week", "XLV largest holdings with earnings or upgrades", premarket movers. Prices cross-checked via `alpaca.sh bars`/`quote`.
+- **CLF** (Materials): **Q3 2026 results today BMO** — revenue $5.6B, adj EPS $0.28 vs $0.24 est, adj EBITDA $612M vs ~$575M guide, Q4 EBITDA ~$715M, 2027 >$4B. Two-source: company PR + SEC 8-K (WebSearch) + IBD/CNBC movers. Snippet dated today → earnings-print rule ✓. Premarket $13.50/$14.08 (Alpaca live quote).
+  - Chase: catalyst Oct 19, base Oct 16 close $12.145, premarket mid $13.79 = **+13.5%** (ask $14.08 = +15.9%). Below 15% at mid — **re-check at open; exclude if fill > $13.96**.
+- **IRON** (Health Care): Phase 3 APOLLO bitopertin hit all endpoints (today, 3+ outlets). Premarket +26-28% (Perplexity; Alpaca quote stale/one-sided). Chase: base Oct 16 $56.94 → ≥15% → **excluded (chase risk)**. Thin IEX volume (~30-50k).
+- **STLD** (Materials): Q3 AMC today (call Oct 20) — hard-dated; evaluate Tue pre-market. Note: would be 3rd Materials if CLF + ECL held → concentration skip (L-030).
+- **TMO** (Health Care): Q3 Oct 21 BMO — hard-dated; no catalyst yet. Oct 16 close $690.125.
+- **XOM** (Energy): refining-margin Q3 uplift (~$4.5B) 8-K undated in result → [no-cat]. Theme cap: CVX 22.3% integrated oil → XOM room ≤2.7% (L-035) → effectively theme-blocked.
+- Not added: LEU (backlog, no dated catalyst), ET (Hugh Brinson pipeline start undated; ownership check pending), SCCO (copper fair-value tweak, not a catalyst), DVN (asset sale undated), AMGN/ABBV (analyst actions dateless).
+
+### L-037 Draft Spec — [no-cat] sector-momentum entry path (DRAFT ONLY, no gate change)
+- Eligible: top-2 sector (YTD or State Street momentum), no dated company catalyst.
+- Trigger: 5-session close-to-close return vs sector ETF (bars) ≥ +3.0pp at Ref date; prior close above 20-session high minus 5%.
+- Size: half normal (≤10% equity); 10% GTC trail, -7% cut, all caps (L-030/L-032/L-035), 3/week unchanged; counts toward weekly trades.
+- Scoreboard backtest (all [no-cat]-type rows, bars only):
+  - MPC (Ref Sep 25 $393.26): 5-sess MPC -7.4% vs XLE -2.9% = RS -4.5pp → **no trigger** (row +10.24% missed — still missed).
+  - VLO (Ref Oct 2 $405.66): 5-sess VLO +4.8% vs XLE +1.3% = RS +3.5pp → **trigger** (row +7.53% missed → captured at half size).
+  - Result: 1/2 misses captured, 0 false positives (n=2 — too small). Today VLO RS 5-sess +2.5% vs XLE +4.9% = -2.4pp → no trigger. Bring to Oct 23 review.
+
+### Lessons Check
+- L-031 (GTC expiries) — ECL 64b1066c exp Oct 26 enters 5-session window at today's EOD → **renew Oct 20 open** (same/higher stop). CVX Oct 29 next. Complied.
+- L-032 (sector ≤40%) — CLF idea: Materials post-fill ECL 21.3% + CLF ~16.0% = **37.3%** ✓. Energy 22.3%, Industrials 14.9%. Complied.
+- L-033 ([3-5s]) — no two-source catalyst 3-5 sessions old found. No row. Complied.
+- L-034 ([no-cat]) — XOM row tagged [no-cat]; VLO already [no-cat]. Complied.
+- L-035 (theme ≤25%) — CLF (steel) theme exposure post-fill ~16.0% (ECL specialty chemicals ≠ steel) ✓; XOM blocked by CVX integrated-oil 22.3%. Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-037 (draft spec) — written above + scored vs MPC/VLO. Complied.
+- Operational: `git log` — Oct 16 pre-market (7ffc773), market-open (1b4a36b), midday (fc95e8c), EOD (0043964) all present (+ weekly review 09eec60). No alert needed.
+
+### Yesterday's Skip Check
+VLO **+9.62%** (Oct 16 close $444.70 via `bars` vs Ref $405.66; overnight quote one-sided/stale) — [no-cat] miss persists, flat Fri. No other open rows. Skips look wrong so far on VLO.
+
+### Trade Ideas
+- Week 16: 0/3 used. 58.51% deployed — needs ~$15.5k+ to reach 75%.
+1. **CLF — BUY candidate for market-open hard-check.** Catalyst: Q3 beat + Q4/2027 EBITDA guide (today, two-source). Materials #2 YTD. Entry ~$13.80 (limit ≤$13.96 = chase cap), **1,100 sh ≈ $15.2k (16.0% equity)** → deployment ~74.5%. Stop: 10% GTC trail (~$12.42); manual cut -7% ~$12.83. Target $16.56 (+20%), 2:1. Post-fill: 4 positions, Materials 2 / 37.3%, steel theme 16.0%. No dividend; watch post-earnings analyst actions (log per rule). Skip if open > $13.96 or fades below Oct 16 base trend (bars must confirm prior close ≥ pre-catalyst — catalyst today so N/A).
+2. **CVX — tighten to 7% trail at open** (rule, not idea): cancel e328a200/7f5acb83, re-place 95 sh 7% trailing GTC; verify stop ≥ $209.54-ish (never < $202.779).
+3. **ECL — renew GTC trail Oct 20** (L-031). **VLO** watch only ([no-cat]; Q3 Oct 22).
+
+### Risk Factors
+- CLF gap-and-fade: +13.5% premarket near chase bar; volatile low-priced steel name.
+- Sticky inflation (import prices) → yields up; VIX ~18.8 elevated; AI/semis weakness (TXN/LRCX/META this week).
+- Oil ~$100: supports CVX; Hormuz/sanction headlines both ways.
+- LMT/VLO Q3 Oct 22, ECL Oct 27, CVX Oct 30 — earnings gap risk.
+- Concentration: CVX 22.3%, ECL 21.3% above 20% entry cap via appreciation (no adds).
+
+### Decision
+**HOLD pre-open; CLF flagged for market-open hard-check** (gate decides at open; skip if > $13.96). Mechanical: CVX 7% tighten at open; ECL GTC renew Oct 20. No ClickUp alert (nothing urgent).

@@ -284,3 +284,8 @@ than 10 sessions are pruned.
 | 2026-10-05 | MRVL | HOLD — stall-breaker refresh add (Technology), Investor Day Oct 6 hard-dated (two-source), no reaction yet | 272.33 | -2.38% | n/a — entered Oct 7 (cut -10.14%) |
 | 2026-10-05 | VLO | HOLD — stall-breaker refresh add (Energy), refining-margin upgrade coverage, no company-specific dated catalyst | 405.66 | +7.53% | missed [no-cat] |
 | 2026-10-05 | LMT | HOLD — stall-breaker refresh add (Industrials, 3rd sector), $94.2M Navy AEGIS award undated, Q3 Oct 22 | 506.25 | +1.16% | n/a — entered Oct 12 (open +7.97%) |
+| 2026-10-19 | CLF | HOLD pre-market — stall-breaker refresh add (Materials, 3rd leg), Q3 beat + Q4/2027 EBITDA guide today (two-source: PR + SEC 8-K), +13.5% premarket vs Oct 16 base; flagged for market-open hard-check | 12.145 | | |
+| 2026-10-19 | IRON | HOLD — stall-breaker refresh add (Health Care), Phase 3 APOLLO win today, +26-28% premarket vs Oct 16 base = chase risk (>=15%) | 56.94 | | |
+| 2026-10-19 | STLD | HOLD — stall-breaker refresh add (Materials), Q3 AMC Oct 19 hard-dated, no catalyst yet | 240.35 | | |
+| 2026-10-19 | TMO | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 21 hard-dated, no catalyst yet | 690.125 | | |
+| 2026-10-19 | XOM | HOLD — stall-breaker refresh add (Energy), refining-margin Q3 uplift 8-K undated, theme-blocked by CVX (L-035) [no-cat] | 179.01 | | |
