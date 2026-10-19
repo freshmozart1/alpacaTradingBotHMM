@@ -2273,3 +2273,14 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, LMT 26) and `orders` (4 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 19 — EOD Snapshot (Day 75, Monday)
+**Portfolio:** $94,914.64 | **Cash:** $39,324.12 (41.43%) | **Day P&L:** -$332.82 (-0.35%) | **Phase P&L:** -$5,085.36 (-5.09%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $224.4288 | -0.25% | +$2,903.95 (+15.77%) | $209.8638 (7% trail, GTC 5469cb07, HWM $225.66) |
+| ECL | 70 | $281.93 | $285.94 | -1.02% | +$280.70 (+1.42%) | $266.355 (10% trail, GTC 64b1066c, HWM $295.95) |
+| LMT | 26 | $510.37 | $548.23 | -0.70% | +$984.36 (+7.42%) | $499.248 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $554.72) |
+
+**Notes:** 4th consecutive no-trade day (streak reset Oct 13) — CVX 7% stop replacement at open is a stop adjustment, not a new entry; CLF skipped (gate-fail: chase +17.5% vs base, above $13.96 cap). Stall-breaker remains armed. Week 16 (Oct 19-23): 0/3 new trades used. Day P&L vs Oct 16 logged EOD $95,247.46 (Alpaca last_equity $95,274.81; $27.35 drift — logged value used). Mild red day across all three: ECL -1.02% (yields/inflation drag), LMT -0.70% (new HWM $554.72 intraday, stops ratcheted to $499.248), CVX -0.25% (new HWM $225.66, 7% stop ratcheted to $209.8638). Phase P&L -$5,085.36 (-5.09%) vs $100,000 start, 22nd straight negative reading. CVX +15.77% on 7% trail (tightened ✓); +20% → 5% trigger ~$232.63 (~3.7% away). 3 open positions, 58.57% deployed / 41.43% cash — **below 75-85% band** (3rd session; L-024) — refill screen next pre-market (Energy/Industrials/Materials; L-030/L-032; Tech exited). CVX ~22.5% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~6.5%, ECL ~6.8%, LMT ~8.9%. 4 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). **ECL stop 64b1066c expires Oct 26 — renew at Oct 20 open (L-031).**
