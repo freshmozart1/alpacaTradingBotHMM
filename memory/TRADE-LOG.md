@@ -2243,3 +2243,17 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | LMT | 26 | $510.37 | $551.038 | +3.45% | +$1,057.37 (+7.97%) | $497.826 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $553.14) |
 
 **Notes:** 3rd consecutive no-trade day (streak reset Oct 13) — stall-breaker armed Mon Oct 19 (mandatory refresh). Week 15 (Oct 12-16) closes at 2/3 new trades used. Day P&L vs Oct 15 logged EOD $94,314.11 (Alpaca last_equity $94,364.86; $50.75 drift — logged value used). Strong green day: CVX +2.59% (oil firm, new HWM $225.31, stops ratcheted to $202.779) and LMT +3.45% (new HWM $553.14 ahead of Oct 22 Q3, stops ratcheted to $497.826); ECL -0.66%. Phase P&L -$4,752.54 (-4.75%) vs $100,000 start, 21st straight negative reading (best since Oct 9). **CVX +16.06% — crossed +15% tighten trigger (~$222.94) after midday; trail still 10% → Mon market-open MUST tighten CVX to 7% (both legs 7f5acb83/e328a200; 7% of HWM $225.31 → ~$209.54, >3% below price).** 3 open positions, 58.71% deployed / 41.29% cash — **below 75-85% band** (2nd session; L-024) — refill screen Mon pre-market (Energy/Industrials/Materials; L-030/L-032; Tech exited). CVX ~22.4% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~9.9%, ECL ~7.8%, LMT ~9.7%. 5 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). Heads-up: ECL stop expires Oct 26, CVX stops Oct 29 — renew before expiry.
+
+### Oct 19 — Market-Open Check (Day 75, Monday) — no new trade
+
+**Operational Rule check:** Oct 16 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (13:33 UTC, post-open):** Equity $94,906.31 | Cash $39,324.12 (41.43%) | ~58.6% deployed — **below 75-85% band** (3rd session). 3 open positions: CVX 95 sh +15.51% ($223.93), ECL 70 sh +1.92% ($287.33), LMT 26 sh +6.98% ($545.99). daytrade_count not returned; no day trades.
+
+**CVX tighten (rule 6, +15% crossed Fri):** Cancelled 10% legs e328a200 (41)/7f5acb83 (54) ($202.779/HWM $225.31). Placed 95 sh 7% trailing stop GTC **5469cb07** — stop **$208.3014**/HWM $223.98 (new order resets HWM to current), exp Jan 15 2027. Stop moved up ($202.779 → $208.30, never down ✓), 7.0% below price (>3% ✓). Verified via `alpaca.sh orders` (status new) + `positions` (CVX 95).
+
+**Gate check on new entries:**
+- **CLF — SKIP (gate-fail: chase risk / price cap).** Opened $14.135 (1-min bars), traded $13.91-$14.58 first 3 min, last ~$14.27 = **+17.5% vs Oct 16 base $12.145** — above the $13.96 cap set in today's RESEARCH-LOG and the 15% chase bar. Other checks would have passed (4 positions ≤6; 1/3 weekly; 1,100 sh ≈ $15.7k = 16.5% equity ≤20%; ≤ cash; catalyst today two-source; stock). Scoreboard: CLF already has an open 2026-10-19 row (Ref $12.145) — no new row.
+- No other planned entries (VLO [no-cat], STLD/TMO pending dated events, IRON chase-excluded, XOM theme-blocked).
+
+**Week 16 (Oct 19-23):** 0/3 new trades used. No-trade streak → 4 if none today (stall-breaker remains armed). No ClickUp trade notification (no buy placed). Stops resting: CVX 5469cb07 $208.3014 (7%); ECL 64b1066c $266.355 (exp Oct 26 — **renew Oct 20 open**, L-031); LMT 949bf0ce/39388294 $497.826.
