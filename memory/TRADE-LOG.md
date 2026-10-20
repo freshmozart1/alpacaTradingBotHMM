@@ -2330,3 +2330,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-10-20 | HAL | BUY | 200 | $33.3878 (fill) | $29.988 (10% trailing GTC, order 25307bc7); manual cut -7% ~$31.05 | Q3 today: adj EPS $0.60 vs ~$0.58, rev $5.70B vs ~$5.58B, $250M buyback, 2027 ~15% op-margin guide (Perplexity + SEC 8-K); Energy momentum leader + oil bid on Iran tension; +1.18% realized <15% chase bar | $40.07 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
 
 **Post-trade:** Equity $95,338.20 | Cash $23,559.58 (24.71%) | 5 positions (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) | **75.29% deployed — back inside 75-85% band**. 6 GTC stops resting (CVX 5469cb07, ECL 922d840e, HAL 25307bc7, LMT 949bf0ce/39388294, RTX 313ded6c). Week 16: 2/3 trades used. No-trade streak reset (stall-breaker disarmed). No gate-rejection scoreboard rows (NOC theme-blocked and DGX/TMO/VLO not planned at open — already have pre-market rows).
+
+### Oct 20 — Midday Scan (Day 76, Tuesday)
+
+**Account (16:10 UTC):** Equity $94,606.37 | Cash $23,559.58 (24.90%) | ~75.1% deployed — inside 75-85% band. 5 open positions — CVX 95 sh +15.22% ($223.36, intraday -0.45%); ECL 70 sh +1.21% ($285.35, intraday -0.21%); HAL 200 sh +0.07% ($33.41, intraday +1.30%); LMT 26 sh +7.13% ($546.78, intraday -0.26%); RTX 47 sh -1.44% ($190.555, intraday -0.81%). 6 GTC stops resting: CVX 5469cb07 (7%) $211.3704/HWM $227.28; ECL 922d840e ($20.50 trail) $268.1099/HWM $288.6099; HAL 25307bc7 $30.42/HWM $33.80; LMT 949bf0ce/39388294 $503.532/HWM $559.48; RTX 313ded6c $177.30/HWM $197.00.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min RTX -1.44%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX +15.22% already on 7% trail — <+20%, no change. ECL/HAL/LMT/RTX <+15%. No stops changed.
+
+**STEP 5 (thesis check):** CVX -0.45%, ~5.4% above stop; intact. ECL -0.21%, ~6.0% above stop; intact. HAL +1.30% post-print, ~8.9% above stop; intact. LMT -0.26%, ~7.9% above stops ahead of Oct 22 Q3; intact. RTX faded from $197.00 HWM to $190.555 (-3.3% off high, -1.44% vs entry) — post-beat profit-taking, beat/raise thesis unchanged, ~6.9% above stop; intact. No cuts.
+
+**STEP 6 (optional research):** Skipped — RTX fade is a typical post-earnings giveback, no sharp unexplained move.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) and `orders` (6 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
