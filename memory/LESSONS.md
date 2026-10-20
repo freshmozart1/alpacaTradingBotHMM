@@ -289,3 +289,7 @@ than 10 sessions are pruned.
 | 2026-10-19 | STLD | HOLD — stall-breaker refresh add (Materials), Q3 AMC Oct 19 hard-dated, no catalyst yet | 240.35 | | |
 | 2026-10-19 | TMO | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 21 hard-dated, no catalyst yet | 690.125 | | |
 | 2026-10-19 | XOM | HOLD — stall-breaker refresh add (Energy), refining-margin Q3 uplift 8-K undated, theme-blocked by CVX (L-035) [no-cat] | 179.01 | | |
+| 2026-10-20 | RTX | HOLD pre-market — stall-breaker refresh add (Industrials, 3rd sector), Q3 beat + FY26 raise today (two-source: Perplexity + SEC 8-K), +2.2% premarket vs Oct 19 base; flagged for market-open hard-check (47 sh, L-035 theme cap) | 192.085 | | |
+| 2026-10-20 | HAL | HOLD pre-market — stall-breaker refresh add (Energy), Q3 EPS/revenue beat + buyback today (two-source: Perplexity + SEC 8-K), mixed (EBITDA miss); flagged for market-open hard-check | 33.00 | | |
+| 2026-10-20 | NOC | HOLD — stall-breaker refresh add (Industrials), Q3 EPS beat + FY26 EPS raise today, single-source; blocked as 3rd Industrials / A&D theme with LMT+RTX (L-030/L-035) | 510.53 | | |
+| 2026-10-20 | DGX | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 22 hard-dated, no catalyst yet | 234.82 | | |
