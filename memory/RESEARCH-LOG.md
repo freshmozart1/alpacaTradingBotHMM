@@ -4141,3 +4141,73 @@ VLO **+9.62%** (Oct 16 close $444.70 via `bars` vs Ref $405.66; overnight quote 
 
 ### Decision
 **HOLD pre-open; CLF flagged for market-open hard-check** (gate decides at open; skip if > $13.96). Mechanical: CVX 7% tighten at open; ECL GTC renew Oct 20. No ClickUp alert (nothing urgent).
+
+## 2026-10-20 — Pre-market Research
+
+### Account
+- Equity: $95,203.87 | Cash: $39,324.12 (41.31%) | Buying power: $313,759.78 (margin, effective) | `balance_asof` 2026-10-19 (prior session, settled).
+- Position market value: $55,879.75 (CVX 95, ECL 70, LMT 26) — **58.69% deployed, BELOW 75-85% band** (4th session). 4 GTC trailing stops resting: CVX 5469cb07 (95, 7%) $209.8638/HWM $225.66 (exp Jan 15 2027); ECL 64b1066c $266.355/HWM $295.95 (**exp Oct 26**); LMT 949bf0ce/39388294 $499.248/HWM $554.72 (exp Jan 2027).
+- Day P&L (premarket marks): +$294.82 (+0.31%) vs last_equity $94,909.05.
+- Daytrade count: not returned; no day trades. Day 76, Tuesday, Week 16 (Oct 19-23), **0/3 weekly trades used**.
+- No-trade streak: 4 (Oct 14, 15, 16, 19) → **stall-breaker armed**.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 97%** (499 obs, 93 days in regime; up from 94%). Advisory only.
+- Held (premarket marks): CVX $226.51 (+16.84%; +20% → 5% trail trigger ~$232.63, 2.7% away), ECL $285.94 (+1.42%, no print), LMT $551.75 (+8.11%).
+
+### Market Context
+- Perplexity: 23 queries. First parallel batch hit HTTP 429 (exit 22) → re-ran sequentially, all exit 0. WebSearch 2x (RTX/HAL second source — SEC 8-Ks). No exit-3 fallback.
+- WTI/Brent: **WTI ~$104.16, Brent ~$109.81** (Perplexity; "11:30 p.m. EDT Oct 20" timestamp implausible). Cross-check `alpaca.sh quote USO` $163.51 mid vs Oct 19 close $160.85 = **+1.65%** → oil up confirmed, magnitude likely < Perplexity's +3.5%. Not a repeat (Oct 19 ~$100.65/$107.90). Driver: renewed US-Israel/Iran tension.
+- S&P 500 futures: **-0.24% to -0.33%** (7,709-7,716, 7:47-8:27 ET). Modestly lower open.
+- VIX: **18.58** (+0.76% vs 18.44 close). Not a repeat (Oct 19 logged ~18.7). Elevated.
+- Today: no CPI/PPI/NFP/FOMC. Sep housing starts/permits 8:30, GDPNow 10:00; Sep IP +0.7% m/m. Earnings BMO: **RTX, NOC, HAL**, GE, MMM, GM ($20B buyback), KO, PM, VZ, NDAQ, MSCI, VMI; AMC: NFLX, ISRG, UAL, COF, CB. STLD call 11:00. Week: TMO Oct 21 BMO, LMT/VLO/DGX Oct 22, claims Thu. FOMC Oct 27-28, NFP Nov 6, CPI Nov 10.
+- Sector momentum YTD (as of Oct 15): Health Care +14.35% #1, Materials +11.60% #2, Industrials +8.20% #3 (3-mo -6.94%, deteriorating); Energy leader through Sep 29 (+37.5%), new highs in Oct (Energy/Tech/HC). Tech excluded (sector exit Oct 15).
+- Held tickers:
+  - **CVX**: oil/Brent >$110 on Iran tension; 52w high $225.67; MS PT +$8 Oct 15 (support only, 4 sessions old); Q3 Oct 30. Thesis intact.
+  - **ECL**: Perplexity claims Q3 "Oct 20" — conflicts with company's Oct 27 call date → treat Oct 27 as operative (calendar discrepancy). TEE-probe cleaning agreement (minor). Thesis intact.
+  - **LMT**: Q3 Oct 22 BMO (cons ~$7.50 EPS / $20.4B); Javelin JV $215M, $117.1M Apache radar award, ER GMLRS tests passed. Read-through from RTX/NOC beats today (positive). Thesis intact; earnings gap risk.
+- Watchlist:
+  - **VLO**: -2.56% Oct 19 to $433.23 on **DBS downgrade to Hold, PT $436** (negative); diesel futures -6.5% off highs. Q3 Oct 22. [no-cat]. Kept (hard-dated event).
+  - **CLF**: Q3 beat/2027 >$4B EBITDA (Oct 19). Chase: catalyst Oct 19, base Oct 16 close $12.145, Oct 19 close $14.11 = **+16.18% → chase-excluded**.
+  - **IRON**: APOLLO win (Oct 19) + **$350M offering** (dilution); chase: base Oct 16 $56.94, Oct 19 close $79.04 = **+38.81% → excluded**.
+  - **STLD**: Q3 (Oct 19 AMC) **EPS $5.26 miss** vs ~$5.42-5.48 cons and $5.34-5.38 guide; revenue beat $6.51B. Negative print → no buy catalyst.
+  - **TMO**: Q3 Oct 21 BMO (cons ~$6.40/$11.9B); JPM/TD Cowen ~$760 PTs dateless. Oct 19 -1.56%. Kept (hard-dated tomorrow).
+  - **XOM**: refining Q3 uplift ($4.5B) undated; JPM $166→$186 dateless; Guyana >1M bpd. [no-cat]; theme-blocked by CVX (L-035).
+
+### Stall-Breaker
+**FIRED** (streak 4 ≥ 3; 2nd consecutive cycle — Oct 19 refresh produced no gate-clearing entry → 3rd sector included: Industrials). Dropped: **CLF** (chase +16.18%), **IRON** (chase +38.81% + offering), **STLD** (Q3 miss, event passed). Added: **RTX, NOC** (Industrials), **HAL** (Energy), **DGX** (Health Care). Screens: "best energy/health care/materials/industrials stocks with news catalysts this week". Prices cross-checked via `alpaca.sh bars` (Oct 19 closes); overnight quotes stale/one-sided.
+- **RTX** (Industrials, A&D): **Q3 today BMO** — sales $25.0B (+11%, +12% organic) vs ~$24.09B; adj EPS $2.26 (incl. $0.25 IEEPA recovery) vs ~$1.78; **FY26 raised**: sales $97.0-97.5B (from $95-96B), adj EPS $7.65-7.75 (from $7.10-7.25), FCF $9.0-9.2B. Backlog $340B. Two-source: Perplexity (aggregators) + SEC 8-K Exhibit 99 (WebSearch), dated today ✓. Premarket ~$196.26 (+2.2%).
+  - Chase: catalyst Oct 20, base Oct 19 close $192.085, premarket ~$196.26 = **+2.17%** (<15% ✓).
+- **HAL** (Energy, oilfield services): **Q3 today BMO** — adj EPS $0.60 vs ~$0.58, revenue $5.70B vs ~$5.58B; adj EBITDA $1.0B (slight miss vs ~$1.02B); Intl +3% q/q, NA -5%; $250M buyback; 2027 early guide mid-single-digit growth, ~15% op margin. Two-source: Perplexity + SEC 8-K (WebSearch), dated today ✓. Mixed print.
+  - Chase: catalyst Oct 20, base Oct 19 close $33.00, premarket $33.65-34.34 = **+2.0% to +4.1%** (<15% ✓).
+- **NOC** (Industrials, A&D): Q3 today BMO — adj EPS $7.89 vs $7.18; sales $11.12B (in line/slight miss); FY26 EPS raised to $29.35-29.75. Premarket +0.5% to +3.9% (inconsistent). Single-source so far. **Blocked**: would be 3rd Industrials if RTX + LMT; defense theme with LMT. Oct 19 close $510.53.
+- **DGX** (Health Care): Q3 **Oct 22 BMO** — hard-dated; no catalyst yet. Oct 19 close $234.82.
+- Not added: GE/MMM/UAL (Industrials; GE/MMM prints not checked — Industrials slots limited by L-030), GM (Cons. Disc., not top sector), AA/NUE (Materials; AA print dateless in result, NUE date unconfirmed), SU/ET/CRGY/CVE (M&A dateless in result; ET ownership check pending), ELV/EHC/DVA/GILD (analyst previews/dateless), ZNTL (speculative, undated).
+
+### Lessons Check
+- L-031 (GTC expiries) — ECL 64b1066c exp Oct 26 inside 5-session window → **renew at Oct 20 open** (cancel + re-place 70 sh 10% trail GTC, stop ≥$266.355, verify via `orders`). CVX now on 5469cb07 (exp Jan 15 2027) — old Oct 29 expiry moot. Complied.
+- L-032 (sector ≤40%) — RTX: Industrials post-fill LMT 15.1% + RTX 9.8% = **24.9%** ✓. HAL: Energy post-fill CVX 22.6% + HAL 7.1% = **29.7%** ✓. Complied.
+- L-033 ([3-5s]) — no two-source catalyst 3-5 sessions old found (CVX MS PT Oct 15 is single held-name support, not a candidate). No row. Complied.
+- L-034 ([no-cat]) — no new [no-cat] rows (all adds have dated events/prints); VLO/XOM already tagged. Complied.
+- L-035 (theme ≤25%) — RTX: A&D theme LMT 15.07% → RTX capped at **≤9.93%** (sized 47 sh ≈ 9.8%, theme post-fill ~24.9%) ✓. HAL: oilfield services 0% held → 7.1% ✓ (CVX integrated oil distinct). NOC theme-blocked. Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-037 (draft spec) — written Oct 19. Re-score today (5-sess Oct 12→19, bars): VLO -0.68% vs XLE +2.68% = -3.4pp → no trigger; XOM +3.51% vs XLE +2.68% = +0.8pp → no trigger. Still 1/2 historical misses captured, 0 FP. Bring to Oct 23 review. Complied.
+- Operational: `git log` — Oct 19 pre-market (7c709d5), market-open (979d682), midday (6ccb05e), EOD (2fdc064) all present. No alert needed.
+
+### Yesterday's Skip Check
+CLF **+16.18%**, IRON **+38.81%**, STLD **+1.85%**, TMO **-1.56%**, XOM **-0.44%** (Oct 19 closes via `bars` vs Oct 16 Refs; overnight quotes stale/one-sided). CLF/IRON moves were catalyst-day gaps (chase-excluded by rule) — skips look wrong on raw %, right on process; STLD/TMO/XOM skips look right so far.
+
+### Trade Ideas
+- Week 16: 0/3 used. 58.69% deployed — needs ~$15.2k to reach 75%.
+1. **RTX — BUY candidate for market-open hard-check.** Catalyst: Q3 beat + FY26 raise across sales/EPS/FCF (today, two-source). Industrials #3 YTD (momentum deteriorating — weaker sector leg). Entry ~$196.30 (limit ≤$200.00, +4.1% vs base), **47 sh ≈ $9.3k (9.8% equity; L-035 theme cap)**. Stop: 10% GTC trail (~$176.70); manual cut -7% ~$182.56. Target $235.56 (+20%), 2:1. Post-fill: 4 positions, Industrials 2 / 24.9%, A&D theme ~24.9%. Check at open: ex-div date (none expected this week — verify) + post-earnings analyst actions. Skip if open > $200.00.
+2. **HAL — BUY candidate (secondary) for market-open hard-check.** Catalyst: Q3 EPS/revenue beat + $250M buyback + 2027 margin guide (today, two-source); mixed (EBITDA miss, NA -5%). Energy = momentum leader. Entry ~$34.00 (limit ≤$35.00, +6.1% vs base), **200 sh ≈ $6.8k (7.1% equity)**. Stop: 10% GTC trail (~$30.60); cut -7% ~$31.62. Target $40.80 (+20%), 2:1. Post-fill (with RTX): 5 positions, Energy 2 / 29.7%, deployment ~75.6%. Weekly 2/3. Check ex-div (HAL typically early Dec — verify) + analyst actions. Skip if open > $35.00 or fades below $33.00 base.
+3. **Mechanical:** ECL GTC renew at open (L-031). CVX: watch $232.63 (+20%) → tighten to 5% trail. **VLO** watch only ([no-cat], DBS downgrade, Q3 Oct 22). **TMO** Q3 tomorrow, **DGX** Q3 Thu — evaluate on prints.
+
+### Risk Factors
+- Iran/US-Israel tension: oil spike supports CVX/HAL but risk-off for broad tape; headline reversals hit energy fast.
+- Futures -0.3%, VIX ~18.6 elevated; AI/semis valuation worries (NFLX/SpaceX/META this week).
+- RTX: IEEPA $0.25 one-off flatters EPS; Industrials 3-mo momentum negative; correlated with LMT (Oct 22 Q3) — defense theme at ~25% cap.
+- HAL: mixed print can fade intraday; NA activity soft.
+- LMT/VLO/DGX Q3 Oct 22, TMO Oct 21, ECL Oct 27, CVX Oct 30 — earnings gap risk. FOMC Oct 28.
+- Concentration: CVX 22.6% (above 20% entry cap via appreciation, no adds); ECL 21.0%.
+
+### Decision
+**HOLD pre-open; RTX (primary) + HAL (secondary) flagged for market-open hard-check** (gate decides at open; caps $200.00 / $35.00). Mechanical: ECL GTC renew at open; CVX +20% watch. No ClickUp alert (nothing urgent).
