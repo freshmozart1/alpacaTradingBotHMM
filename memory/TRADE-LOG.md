@@ -2284,3 +2284,49 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | LMT | 26 | $510.37 | $548.23 | -0.70% | +$984.36 (+7.42%) | $499.248 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $554.72) |
 
 **Notes:** 4th consecutive no-trade day (streak reset Oct 13) — CVX 7% stop replacement at open is a stop adjustment, not a new entry; CLF skipped (gate-fail: chase +17.5% vs base, above $13.96 cap). Stall-breaker remains armed. Week 16 (Oct 19-23): 0/3 new trades used. Day P&L vs Oct 16 logged EOD $95,247.46 (Alpaca last_equity $95,274.81; $27.35 drift — logged value used). Mild red day across all three: ECL -1.02% (yields/inflation drag), LMT -0.70% (new HWM $554.72 intraday, stops ratcheted to $499.248), CVX -0.25% (new HWM $225.66, 7% stop ratcheted to $209.8638). Phase P&L -$5,085.36 (-5.09%) vs $100,000 start, 22nd straight negative reading. CVX +15.77% on 7% trail (tightened ✓); +20% → 5% trigger ~$232.63 (~3.7% away). 3 open positions, 58.57% deployed / 41.43% cash — **below 75-85% band** (3rd session; L-024) — refill screen next pre-market (Energy/Industrials/Materials; L-030/L-032; Tech exited). CVX ~22.5% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~6.5%, ECL ~6.8%, LMT ~8.9%. 4 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). **ECL stop 64b1066c expires Oct 26 — renew at Oct 20 open (L-031).**
+
+### Oct 20 — Market-Open (Day 76, Tuesday)
+
+**Operational Rule check:** Oct 19 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-open (13:19 UTC):** Equity $95,227.81 | Cash $39,324.12 (41.29%) | 3 open positions (CVX 95, ECL 70, LMT 26), 4 GTC stops resting. `balance_asof` 2026-10-19. daytrade_count not returned; no day trades. Week 16 (Oct 19-23): 0/3 used. No-trade streak 4 (stall-breaker armed; refresh done in pre-market).
+
+**Held position check:** CVX +16.6% (7% trail, <+20%), ECL +1.9%, LMT +9.2% — none at -7% cut or new tighten trigger.
+
+**L-031 — ECL GTC renewal:** Cancelled 64b1066c (exp Oct 26, stop $266.355). A new 10% % trail would reset HWM to ~$287 → stop ~$258.5 = moving stop down (forbidden). Placed 70 sh trailing stop GTC with **$20.50 trail_price** — order **922d840e**, stop **$266.705**/HWM $287.205 (≥ $266.355 ✓, 7.1% below price >3% ✓), exp Jan 15 2027. Verified via `alpaca.sh orders` (status new). Trail now ~7.1% in $ terms; widen back to 10%-equivalent only once HWM ≥ ~$296.
+
+**Gate check — RTX:** 47 sh.
+- Positions post-fill 4 (≤6) — pass.
+- Weekly trades 1/3 incl. this — pass.
+- Cost $9,086.98 = 9.54% of equity (≤20%) — pass.
+- Cost ≤ cash ($39,324.12) — pass.
+- Catalyst: Q3 beat + FY26 sales/EPS/FCF raise, dated today (Perplexity + SEC 8-K) — documented in today's RESEARCH-LOG — pass. Chase bar: catalyst Oct 20, base Oct 19 close $192.085, fill $193.34 = **+0.65%** (<15%) — pass. Opened $192.63, inside $200.00 cap.
+- PDT room — pass (0 day trades).
+- Stock (RTX, NYSE) — pass.
+- Sector (L-030): Industrials 2 post-fill (LMT, RTX) — pass. L-032: Industrials 24.70% (≤40%) — pass. L-035: A&D theme LMT $14,484 + RTX $9,065 = **24.70%** (≤25%) — pass.
+- Ex-div/analyst (strategy rule): next ex-div Nov 20 (not this week). Pre-print actions: TD Cowen PT $240→$225 (Oct 9), Deutsche Bank Buy→Hold PT $208 (Oct 13), Bernstein $223→$214 + RBC $250→$235 (Oct 15). None dated today found. Non-blocking.
+
+**Gate check — HAL:** 200 sh.
+- Positions post-fill 5 (≤6) — pass.
+- Weekly trades 2/3 incl. this — pass.
+- Cost $6,677.56 = 7.01% of equity (≤20%) — pass.
+- Cost ≤ cash ($30,237 after RTX) — pass.
+- Catalyst: Q3 EPS/revenue beat + $250M buyback + 2027 margin guide, dated today (Perplexity + SEC 8-K) — documented in today's RESEARCH-LOG — pass. Chase bar: catalyst Oct 20, base Oct 19 close $33.00, fill $33.3878 = **+1.18%** (<15%) — pass. Opened $33.50, inside $35.00 cap and above $33.00 base (no fade).
+- PDT room — pass.
+- Stock (HAL, NYSE) — pass.
+- Sector (L-030): Energy 2 post-fill (CVX, HAL) — pass. L-032: Energy 29.50% (≤40%) — pass. L-035: oilfield-services theme 7.0% (CVX integrated distinct) — pass.
+- Ex-div/analyst: last ex-div Sep 2; next not announced (no same-week ex-div). Piper Sandler PT $43→$42 (Oct 19, Buy kept), BMO $42→$41 (Oct 19). Non-blocking.
+
+**Entry Checklist (RTX):** Catalyst = Q3 beat + FY26 raise today. Sector = Industrials (#3 YTD, 3-mo momentum weak). Stop = 10% trailing GTC; manual cut -7% ≈ $179.81. Target $232.01 (+20%).
+**Entry Checklist (HAL):** Catalyst = Q3 beat + buyback today (mixed: EBITDA miss, NA -5%). Sector = Energy (momentum leader). Stop = 10% trailing GTC; manual cut -7% ≈ $31.05. Target $40.07 (+20%).
+
+**Orders:** RTX market buy 47 — order 62e3ddeb filled 47 @ $193.34 at 13:36:24 UTC. HAL market buy 200 — order da33b940 filled 200 @ $33.3878 at 13:36:37 UTC. Both confirmed via `alpaca.sh orders all` (filled) and `positions` (RTX 47, HAL 200).
+
+**Stops placed:** RTX 10% trailing GTC 47 sh — order **313ded6c**, stop $173.8494/HWM $193.166, exp Jan 15 2027. HAL 10% trailing GTC 200 sh — order **25307bc7**, stop $29.988/HWM $33.32, exp Jan 15 2027. Confirmed via `alpaca.sh orders` (status new).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-20 | RTX | BUY | 47 | $193.34 (fill) | $173.8494 (10% trailing GTC, order 313ded6c); manual cut -7% ~$179.81 | Q3 today: sales $25.0B (+11%) vs ~$24.1B, adj EPS $2.26 vs ~$1.78; FY26 sales/EPS/FCF raised; backlog $340B (Perplexity + SEC 8-K); +0.65% realized <15% chase bar; sized to L-035 A&D 25% cap | $232.01 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
+| 2026-10-20 | HAL | BUY | 200 | $33.3878 (fill) | $29.988 (10% trailing GTC, order 25307bc7); manual cut -7% ~$31.05 | Q3 today: adj EPS $0.60 vs ~$0.58, rev $5.70B vs ~$5.58B, $250M buyback, 2027 ~15% op-margin guide (Perplexity + SEC 8-K); Energy momentum leader + oil bid on Iran tension; +1.18% realized <15% chase bar | $40.07 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
+
+**Post-trade:** Equity $95,338.20 | Cash $23,559.58 (24.71%) | 5 positions (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) | **75.29% deployed — back inside 75-85% band**. 6 GTC stops resting (CVX 5469cb07, ECL 922d840e, HAL 25307bc7, LMT 949bf0ce/39388294, RTX 313ded6c). Week 16: 2/3 trades used. No-trade streak reset (stall-breaker disarmed). No gate-rejection scoreboard rows (NOC theme-blocked and DGX/TMO/VLO not planned at open — already have pre-market rows).
