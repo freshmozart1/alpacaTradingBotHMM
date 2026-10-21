@@ -2359,3 +2359,17 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $193.34 | +0.64% | $0.00 (0.00%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
 
 **Notes:** Streak reset — trade(s) placed today (RTX 47 @ $193.34, HAL 200 @ $33.3878; both Q3 beat catalysts, stops confirmed). Week 16 (Oct 19-23): 2/3 new trades used. Day P&L vs Oct 19 logged EOD $94,914.64 (Alpaca last_equity $94,909.05; $5.59 drift — logged value used). Green day across all five: HAL +1.85% vs prior close, ECL +0.78%, RTX +0.64% (Alpaca position price equals fill $193.34 — likely stale mark; midday was $190.555), LMT +0.53%, CVX +0.50%. Phase P&L -$4,712.86 (-4.71%) vs $100,000 start, 23rd straight negative reading but best since streak began. 5 open positions, 75.28% deployed / 24.72% cash — **back inside 75-85% band** (L-024 ✓). Sector: Energy 29.53% (CVX, HAL), Industrials/A&D 24.57% (LMT, RTX; L-035 ≤25% ✓). CVX ~22.5% of equity via appreciation (no add); +16.32% on 7% trail, +20% → 5% trigger ~$232.63 (~3.2% away). No position at -7% cut. ECL stop renewed (L-031 ✓, exp Jan 15 2027). Stop cushions: CVX ~6.3%, ECL ~7.0%, HAL ~9.4%, LMT ~8.6%, RTX ~8.3%. 6 GTC stops resting, no fills. LMT Q3 earnings Oct 22 (gap risk). 1 trade slot left this week.
+
+### Oct 21 — Market-Open (Day 77, Wednesday)
+
+**Operational Rule check:** Oct 20 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (13:33 UTC):** Equity $95,393.97 | Cash $23,559.57 (24.70%) | 5 open positions (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47), 6 GTC stops resting (all exp Jan 2027). `balance_asof` 2026-10-20. daytrade_count not returned; no day trades. Week 16: 2/3 used. ~75.3% deployed — inside band.
+
+**Held position check:** CVX +16.65% (7% trail, <+20% → no tighten), ECL +1.88%, HAL +1.00%, LMT +8.15%, RTX +0.70% — none at -7% cut or new tighten trigger.
+
+**Gate check — TMO (12 sh planned):** Positions post-fill 6 (≤6) pass; weekly 3/3 pass; cost ~$8.2k ≈ 8.6% equity pass; ≤ cash pass; catalyst Q3 beat + FY26 guide raise (rev $47.7-48.2B, adj EPS $25.13-25.43) dated today (Perplexity + SEC 8-K) pass; PDT pass; stock pass; HC sector 1 / ~8.6%, theme ~8.6% pass. Ex-div: last Sep 15, next not announced (none this week). Analyst: TD Cowen $760, MS $730, BofA $745, Barclays $750 — all pre-print, none dated today. **Pre-market plan condition FAILED:** opened **$665.57** (13:30 1-min bar) < $687.70 base (-3.22%; "skip if open < base" fade rule). Chase: catalyst Oct 21, base Oct 20 close $687.70, open $665.57 = -3.22%. Bounced to ~$686.50 by 13:32 — still below base. **SKIPPED.** No new scoreboard row (TMO open row 2026-10-19, Ref $690.125).
+
+**Orders:** None. No trades executed. State confirmed via `alpaca.sh positions` (5) and `orders` (6 GTC stops, status new).
+
+**Post-open:** Week 16: 2/3 used, 1 slot left (LMT/DGX/VLO Oct 22 prints). No-trade streak 1.
