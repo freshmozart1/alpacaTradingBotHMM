@@ -4211,3 +4211,67 @@ CLF **+16.18%**, IRON **+38.81%**, STLD **+1.85%**, TMO **-1.56%**, XOM **-0.44%
 
 ### Decision
 **HOLD pre-open; RTX (primary) + HAL (secondary) flagged for market-open hard-check** (gate decides at open; caps $200.00 / $35.00). Mechanical: ECL GTC renew at open; CVX +20% watch. No ClickUp alert (nothing urgent).
+
+## 2026-10-21 — Pre-market Research
+
+### Account
+- Equity: $95,253.16 | Cash: $23,559.57 (24.73%) | Buying power: $294,980.33 (margin, effective) | `balance_asof` 2026-10-20 (prior session, settled).
+- Position market value: $71,693.59 (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) — **75.27% deployed, inside 75-85% band**. 6 GTC trailing stops resting: CVX 5469cb07 (7%) $211.3704/HWM $227.28; ECL 922d840e ($20.50) $268.1099/HWM $288.6099; HAL 25307bc7 $30.42/HWM $33.80; LMT 949bf0ce/39388294 $503.532/HWM $559.48; RTX 313ded6c $177.30/HWM $197.00. All exp Jan 2027 — no expiry inside 5 sessions.
+- Day P&L (premarket marks): +$8.50 (+0.01%) vs last_equity $95,244.66.
+- Daytrade count: not returned; no day trades. Day 77, Wednesday, Week 16 (Oct 19-23), **2/3 weekly trades used** (RTX, HAL).
+- No-trade streak: 0 (reset Oct 20).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (500 obs, 94 days in regime; up from 97%). Advisory only.
+- Held (premarket marks): CVX $225.53 (+16.34%; +20% → 5% trigger ~$232.63, 3.1% away), ECL $288.16 (+2.21%), HAL $33.77 (+1.15%), LMT $547.84 (+7.34%), RTX $193.60 (+0.13%).
+
+### Market Context
+- Perplexity: 17 queries, sequential, all exit 0. WebSearch 1x (TMO second source — SEC 8-K Ex 99.1). No exit-3 fallback.
+- WTI/Brent: **WTI ~$99.20, Brent ~$110.43** (Perplexity). WTI-Brent dispersion ~11% >10% → USO cross-check: `alpaca.sh quote USO` $160.27 mid (12:30 UTC) vs Oct 20 close $160.68 = **-0.26%** → oil ~flat; WTI's -4.8% vs yesterday's $104.16 not confirmed in magnitude. Brent >$110 on Saudi/Gulf shipping attacks + Iran tension.
+- S&P 500 futures: **+0.22%** (7,772). Higher open; AI trade bid on SpaceX/SMCI results.
+- VIX: **17.31** (Oct 20 close, -6.13%). Not a repeat (Oct 20 logged 18.58).
+- Today: no CPI/PPI/NFP/FOMC (PPI Oct 22 8:30). Earnings BMO: **TMO** (7:00), DHR, ABT, ELV, T, CB, CME, PM, NEE, MCO, WAB, WFRD; AMC: **META, TSLA, LRCX, IBM, TXN** (index-level risk). Week: LMT/VLO/DGX Oct 22 BMO. FOMC Oct 27-28, ECL Oct 27, CVX/XOM Oct 30, NFP Nov 6.
+- Sector momentum YTD: Health Care +14.35% #1 (3-mo +11.89%), Materials +11.60% #2, Industrials +8.20% #3 — **identical to Oct 20 print, source still dated Oct 15 → flagged stale/suspect**. Cross-check via `bars` (Oct 14→20): XLV +3.36%, XLB +3.12%, XLI -0.14%, XLE +0.50%, SPY -0.07% → HC/Materials leadership confirmed; Industrials flat. Perplexity also says HC/RE/Utilities/Financials outperforming, Tech/Energy lagging.
+- Held tickers:
+  - **CVX**: oil/Brent >$110 commodity tailwind; TD Cowen PT $215→$225 Hold (dateless in result, support only); Hess Midstream/DJ Basin $200M transfer (one-time charge); Q3 Oct 30. Thesis intact.
+  - **ECL**: Q3 Oct 27 BMO (guide $2.13-2.23); Investor Day Nov 17 (CoolIT/data-center). Earlier "Oct 20" claim resolved → Oct 27 operative. Thesis intact.
+  - **HAL**: Q3 beat (Oct 20) digesting; Intl +3% q/q, NA -5%, 2027 ~15% op-margin guide, $250M buyback, $0.17 div. Thesis intact.
+  - **LMT**: **Q3 tomorrow BMO** (cons ~$7.48-7.52 / $20.4B); THAAD $218M, Javelin JV $215M, Spike NLOS demo Oct 20; RTX/NOC read-through positive. Gap risk.
+  - **RTX**: Q3 beat + 3rd FY26 raise; premarket +2-3% faded Oct 20 (priced-in). Thesis intact.
+- Watchlist:
+  - **TMO**: **Q3 today BMO** — adj EPS $6.68 (+15%) vs ~$6.40, revenue $12.14B (+9%, 6% organic) vs ~$11.95B. Two-source: Perplexity + SEC 8-K Ex 99.1 (WebSearch), dated today ✓. Perplexity "higher premarket" **contradicted by bars**: lone 12:24 UTC 1-min print $668.01 = -2.86% vs Oct 20 close $687.70 (thin IEX print; quote stale/one-sided). FY guide update not found yet. Chase: catalyst Oct 21, base Oct 20 close $687.70, premarket $668.01 = **-2.86%** (<15% ✓).
+  - **NOC**: Q3 beat + FY26 EPS raise (Oct 20). Chase: base Oct 19 $510.53, Oct 20 close $534.11 = +4.62%. Still **blocked** — 3rd Industrials (L-030) / A&D theme 24.6% (L-035).
+  - **DGX**: Q3 **Oct 22 BMO** (cons ~$2.87/$3.05B); Waters HPV at-home collab (2027); UBS PT $250 dateless. No catalyst today. Kept (hard-dated tomorrow).
+  - **VLO**: Q3 **Oct 22 BMO** (Zacks ~$21.28 EPS; Jefferies sees ~$4B buyback); DBS Hold $436. [no-cat] today. Kept (hard-dated).
+  - **XOM**: Barclays PT $177→$200 + Zacks Strong Buy (dateless, excluded); refining $4.5B uplift undated; Q3 Oct 30. [no-cat]; theme-blocked by CVX (L-035).
+
+### Stall-Breaker
+Stall-breaker: not armed (streak 0 < 3; trades placed Oct 20). No watchlist refresh required; no adds/drops.
+
+### Lessons Check
+- L-031 (GTC expiries) — all 6 stops exp Jan 8-15 2027; none within 5 sessions. Complied.
+- L-032 (sector ≤40%) — TMO: Health Care 0% held → post-fill ~9.0% ✓. Energy 29.6%, Industrials 24.5% unchanged. Complied.
+- L-033 ([3-5s]) — no two-source catalyst 3-5 sessions old (NOC is 1 session, blocked on concentration). No row. Complied.
+- L-034 ([no-cat]) — no new rows; VLO/XOM already tagged. Complied.
+- L-035 (theme ≤25%) — TMO: life-science tools theme 0% held → ~9.0% ✓. A&D theme LMT+RTX 24.5% (NOC blocked). Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-037 (draft spec) — re-score (5-sess Oct 13→20, bars): VLO -4.94% vs XLE +1.15% = -6.1pp → no trigger; XOM +2.18% vs XLE +1.15% = +1.0pp → no trigger. Still 1/2 historical misses captured, 0 FP. Bring to Oct 23 review. Complied.
+- Operational: `git log` — Oct 20 pre-market (65ed22b), market-open (3d47dfe), midday (58e0a90), EOD (2ad4123) all present. No alert needed.
+
+### Yesterday's Skip Check
+NOC **+4.62%**, DGX **+0.88%**, TMO **-0.35%**, XOM **-0.63%** (Oct 20 closes via `bars` vs Refs; overnight quotes stale). RTX/HAL entered (n/a). NOC skip looks wrong on raw % (concentration-blocked by rule — process right); DGX/TMO/XOM skips look right so far.
+
+### Trade Ideas
+- Week 16: 2/3 used, **1 slot left**. 75.27% deployed — room to 85% cap ≈ $9.27k.
+1. **TMO — BUY candidate for market-open hard-check.** Catalyst: Q3 EPS/revenue beat today (two-source: Perplexity + SEC 8-K). Health Care = #1 YTD + 3-mo leader (bars-confirmed). Entry ~$690-715 (limit ≤$715.00, +4.0% vs base), **12 sh ≈ $8.4-8.6k (≤9.0% equity)**. Stop: 10% GTC trail; manual cut -7%. Target +20% (~$840 at $700 entry), 2:1. Post-fill: 6 positions (max), HC 1 / ~9.0%, theme ~9.0%, deployment ~84.3% (≤85%), weekly 3/3. **Condition: skip if open < $687.70 base (premarket print -2.86% = fade risk) or > $715.00.** Check ex-div (TMO typically mid-Dec — verify) + post-print analyst actions (Barclays $750 / MS $730 dateless).
+2. **No other qualifiers:** NOC — concentration-blocked (3rd Industrials / A&D 25%). DGX/VLO — no catalyst until Oct 22 prints. XOM — [no-cat], dateless PTs, CVX theme-block.
+3. **Mechanical:** CVX watch $232.63 (+20%) → tighten to 5% trail. LMT Q3 tomorrow BMO — evaluate print at Oct 22 open.
+
+### Risk Factors
+- META/TSLA/LRCX/IBM/TXN AMC — index-level gap risk for Oct 22.
+- Gulf shipping attacks / Iran: Brent >$110; reversal risk for CVX/HAL; inflation read for PPI tomorrow.
+- TMO: premarket bars print fading vs Perplexity "higher" claim — beat may be priced in; guide not yet seen.
+- LMT Q3 Oct 22 BMO with A&D theme at ~24.5% (LMT+RTX correlated).
+- Concentration: CVX 22.5%, ECL 21.2% of equity via appreciation (no adds).
+- Full book after TMO (6 positions, 3/3 weekly) — no capacity for LMT/DGX/VLO print reactions this week.
+
+### Decision
+**HOLD pre-open; TMO flagged for market-open hard-check** (gate decides at open; window $687.70-$715.00, 12 sh). Mechanical: CVX +20% watch. No ClickUp alert (nothing urgent).
