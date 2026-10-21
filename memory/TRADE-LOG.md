@@ -2389,3 +2389,16 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) and `orders` (6 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 21 — EOD Snapshot (Day 77, Wednesday)
+**Portfolio:** $95,411.87 | **Cash:** $23,559.57 (24.69%) | **Day P&L:** +$124.73 (+0.13%) | **Phase P&L:** -$4,588.13 (-4.59%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $226.7741 | +0.47% | +$3,126.75 (+16.98%) | $212.4864 (7% trail, GTC 5469cb07, HWM $228.48) |
+| ECL | 70 | $281.93 | $288.09 | -0.02% | +$431.20 (+2.19%) | $269.17 ($20.50 trail, GTC 922d840e, HWM $289.67) |
+| HAL | 200 | $33.3878 | $33.99 | +1.19% | +$120.44 (+1.80%) | $30.6225 (10% trail, GTC 25307bc7, HWM $34.025) |
+| LMT | 26 | $510.37 | $551.51 | +0.51% | +$1,069.64 (+8.06%) | $503.532 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $559.48) |
+| RTX | 47 | $193.34 | $191.60 | -0.90% | -$81.78 (-0.90%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
+
+**Notes:** 1st consecutive no-trade day (TMO skipped at open — opened $665.57 < $687.70 base, fade rule). Week 16 (Oct 19-23): 2/3 new trades used, 1 slot left. Day P&L vs Oct 20 logged EOD $95,287.14 (Alpaca last_equity $95,244.66; $42.48 drift — logged value used). Quiet green day: HAL +1.19% (HWM ratcheted to $34.025), LMT +0.51%, CVX +0.47% (HWM $228.48, stop ratcheted to $212.4864), ECL flat, RTX -0.90% (Alpaca lastday still $193.34 fill — stale prior mark; vs midday $190.91 it firmed). Phase P&L -$4,588.13 (-4.59%) vs $100,000 start, 24th straight negative reading but best since streak began. 5 open positions, 75.31% deployed / 24.69% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.70% (CVX, HAL), Industrials/A&D 24.47% (LMT, RTX; L-035 ≤25% ✓). CVX ~22.6% of equity via appreciation (no add); +16.98% on 7% trail, +20% → 5% trigger ~$232.63 (~2.6% away). No position at -7% cut. Stop cushions: CVX ~6.3%, ECL ~6.6%, HAL ~9.9%, LMT ~8.7%, RTX ~7.5%. 6 GTC stops resting, no fills. LMT Q3 tomorrow BMO (gap risk); DGX/VLO also print Oct 22 (candidates for last slot).
