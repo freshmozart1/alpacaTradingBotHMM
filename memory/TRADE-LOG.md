@@ -2373,3 +2373,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** None. No trades executed. State confirmed via `alpaca.sh positions` (5) and `orders` (6 GTC stops, status new).
 
 **Post-open:** Week 16: 2/3 used, 1 slot left (LMT/DGX/VLO Oct 22 prints). No-trade streak 1.
+
+### Oct 21 — Midday Scan (Day 77, Wednesday)
+
+**Account (16:13 UTC):** Equity $95,192.57 | Cash $23,559.57 (24.75%) | ~75.3% deployed — inside 75-85% band. 5 open positions — CVX 95 sh +16.77% ($226.38, intraday +0.30%); ECL 70 sh +2.26% ($288.305, intraday +0.05%); HAL 200 sh +0.11% ($33.425, intraday -0.49%); LMT 26 sh +7.67% ($549.53, intraday +0.15%); RTX 47 sh -1.26% ($190.91, intraday -1.26% vs $193.34 lastday — stale prior mark). 6 GTC stops resting: CVX 5469cb07 (7%) $211.3704/HWM $227.28; ECL 922d840e ($20.50 trail) $268.93/HWM $289.43; HAL 25307bc7 $30.5325/HWM $33.925; LMT 949bf0ce/39388294 $503.532/HWM $559.48; RTX 313ded6c $177.30/HWM $197.00.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min RTX -1.26%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX +16.77% already on 7% trail — <+20% (5% trigger ~$232.63, ~2.8% away), no change. ECL/HAL/LMT/RTX <+15%. No stops changed.
+
+**STEP 5 (thesis check):** CVX +0.30%, ~6.6% above stop; oil bid intact. ECL +0.05%, ~6.7% above stop (HWM ratcheted to $289.43); intact ahead of Oct 27 Q3. HAL -0.49%, ~8.7% above stop (HWM $33.925); post-beat digest, intact. LMT +0.15%, ~8.4% above stops; Q3 tomorrow BMO, intact. RTX $190.91 (~7.1% above stop), within Oct 20 midday range ($190.555) — post-beat drift, beat/raise thesis unchanged; intact. No cuts.
+
+**STEP 6 (optional research):** Skipped — no sharp unexplained moves (largest |intraday| RTX -1.26%, in prior-day range).
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) and `orders` (6 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
