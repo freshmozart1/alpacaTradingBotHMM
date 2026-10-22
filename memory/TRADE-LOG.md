@@ -2418,3 +2418,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** None. No trades executed. State confirmed via `alpaca.sh positions` (5) and `orders` (6 GTC stops, status new).
 
 **Post-open:** Week 16: 2/3 used, 1 slot left (Fri only). No-trade streak 2. Risk-off tape (SPY futures -0.9%).
+
+### Oct 22 — Midday Scan (Day 78, Thursday)
+
+**Account (16:09 UTC):** Equity $96,055.38 | Cash $23,559.57 (24.53%) | ~75.5% deployed — inside 75-85% band. 5 open positions — CVX 95 sh +15.82% ($224.53, intraday -0.99%); ECL 70 sh +3.44% ($291.63, intraday +1.23%); HAL 200 sh -1.88% ($32.76, intraday -3.62%); LMT 26 sh +14.30% ($583.35, intraday +5.77% post-Q3); RTX 47 sh -0.62% ($192.15, intraday +0.29%). 6 GTC stops resting: CVX 5469cb07 (7%) $213.0072/HWM $229.04; ECL 922d840e ($20.50 trail) $272.08/HWM $292.58; HAL 25307bc7 $30.969/HWM $34.41; LMT 949bf0ce/39388294 $547.19055/HWM $607.9895; RTX 313ded6c $177.30/HWM $197.00.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min HAL -1.88%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX +15.82% already on 7% trail — <+20% (5% trigger ~$232.63, ~3.6% away), no change. LMT +14.30% <+15% (7% trigger $586.93, ~0.6% away; intraday HWM $607.99 touched it but position currently below) — no change. ECL/HAL/RTX <+15%. No stops changed.
+
+**STEP 5 (thesis check):** CVX -0.99%, ~5.1% above stop; Brent ~$112 bid intact. ECL +1.23%, ~6.7% above stop (HWM $292.58); intact ahead of Oct 27 Q3. HAL -3.62% ($32.76, ~5.5% above stop) — Perplexity: oilfield-services group selling + risk-off tape, no company-specific news; Q3 beat intact (NA rev -5% q/q, soft frac already known) → intact, monitor. LMT +5.77% post-Q3 beat/raise (faded from $607.99 HWM), ~6.2% above stops (ratcheted to $547.19) — strengthened. RTX +0.29%, ~7.7% above stop — intact. No cuts.
+
+**STEP 6 (optional research):** HAL -3.6% checked (see RESEARCH-LOG addendum). Sector/macro, no break.
+
+**STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) and `orders` (6 GTC stops, status new, no fills).
+
+**STEP 8 (notify):** Skipped — no action taken.
