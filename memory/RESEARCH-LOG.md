@@ -4340,3 +4340,8 @@ TMO **+0.58%**, NOC **+5.71%**, DGX **+1.70%**, XOM **-0.52%** (Oct 21 closes vi
 
 ### Decision
 **HOLD pre-open; DGX (primary) / TMO (alternate) flagged for market-open hard-check** (gate decides at open; DGX window $238.81-$250.00, 36 sh). Mechanical: LMT +15% and CVX +20% trail-tighten watch. No ClickUp alert (nothing urgent).
+
+### 2026-10-22 — Midday Addendum
+- HAL -3.62% intraday ($32.76; Perplexity: ~$32.54 -4.3%) — oilfield-services group selling + broad risk-off; no fresh HAL news; lingering Q3 concerns (NA rev -5% q/q, weak FCF, soft frac). Brent ~$112 unchanged backdrop. Sector-level, no company break. HAL ~5.5% above stop $30.969.
+- LMT +5.77% post-Q3 ($583.35), intraday HWM $607.99 then faded; +15% trigger $586.93 not held. CVX $224.53 (+15.82%), +20% trigger $232.63 not hit. SPY ~$765 (-1.0% vs $773.13).
+- Decision: HOLD all. No trades, no stop changes.
