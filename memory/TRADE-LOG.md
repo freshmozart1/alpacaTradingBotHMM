@@ -2402,3 +2402,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $191.60 | -0.90% | -$81.78 (-0.90%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
 
 **Notes:** 1st consecutive no-trade day (TMO skipped at open — opened $665.57 < $687.70 base, fade rule). Week 16 (Oct 19-23): 2/3 new trades used, 1 slot left. Day P&L vs Oct 20 logged EOD $95,287.14 (Alpaca last_equity $95,244.66; $42.48 drift — logged value used). Quiet green day: HAL +1.19% (HWM ratcheted to $34.025), LMT +0.51%, CVX +0.47% (HWM $228.48, stop ratcheted to $212.4864), ECL flat, RTX -0.90% (Alpaca lastday still $193.34 fill — stale prior mark; vs midday $190.91 it firmed). Phase P&L -$4,588.13 (-4.59%) vs $100,000 start, 24th straight negative reading but best since streak began. 5 open positions, 75.31% deployed / 24.69% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.70% (CVX, HAL), Industrials/A&D 24.47% (LMT, RTX; L-035 ≤25% ✓). CVX ~22.6% of equity via appreciation (no add); +16.98% on 7% trail, +20% → 5% trigger ~$232.63 (~2.6% away). No position at -7% cut. Stop cushions: CVX ~6.3%, ECL ~6.6%, HAL ~9.9%, LMT ~8.7%, RTX ~7.5%. 6 GTC stops resting, no fills. LMT Q3 tomorrow BMO (gap risk); DGX/VLO also print Oct 22 (candidates for last slot).
+
+### Oct 22 — Market-Open (Day 78, Thursday)
+
+**Operational Rule check:** Oct 21 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account (13:22 UTC pre-open):** Equity $96,435.46 | Cash $23,559.57 (24.43%) | 5 open positions (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47), 6 GTC stops resting (all exp Jan 2027). `balance_asof` 2026-10-21. daytrade_count not returned; no day trades. Week 16: 2/3 used. ~75.6% deployed — inside band.
+
+**Held position check (13:32 UTC):** CVX $228.42 +17.83% (7% trail; +20% trigger $232.63 not hit), ECL +2.46%, HAL +2.33%, LMT $580.075 +13.66% (+15% trigger $586.93 not hit), RTX -0.69% — none at -7% cut or new tighten trigger. No stops changed.
+
+**Gate check — DGX (36 sh planned):** Positions post-fill 6 (≤6) pass; weekly 3/3 pass; cost ~$8.2k ≈ 8.5% equity pass; ≤ cash pass; catalyst Q3 beat + FY26 raise dated today (Perplexity + SEC 8-K) pass; PDT pass; stock pass; HC sector 1 / ~8.5%, lab-diagnostics theme ~8.5% pass. Ex-div: Oct 6 (paid Oct 21) — none this week. Analyst: latest dated actions Jul-Sep (Mizuho $260, JPM/Barclays/Truist $250, UBS $245) — none dated today. **Pre-market plan condition FAILED:** opened **$226.50** (13:30 1-min bar) < $238.81 base (fade rule). Chase: catalyst Oct 22, base Oct 21 close $238.81, open $226.50 = **-5.15%** (beat sold). **SKIPPED.** No new scoreboard row (DGX open row 2026-10-20, Ref $234.82).
+
+**Gate check — TMO (alternate, 12 sh):** Gate checks as Oct 21 (2-session window: two-source ✓, prior close $694.145 > $687.70 ✓, reaction <15% ✓). **Pre-market plan condition FAILED:** opened **$691.70** (13:30 1-min bar) < $694.15 Oct 21 close (-0.35%; "skip if open < $694.15"). Chase: catalyst Oct 21, base Oct 20 close $687.70, open $691.70 = +0.58%. **SKIPPED.** No new scoreboard row (TMO open row 2026-10-19, Ref $690.125).
+
+**Orders:** None. No trades executed. State confirmed via `alpaca.sh positions` (5) and `orders` (6 GTC stops, status new).
+
+**Post-open:** Week 16: 2/3 used, 1 slot left (Fri only). No-trade streak 2. Risk-off tape (SPY futures -0.9%).
