@@ -2434,3 +2434,16 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** No actions taken. State confirmed via `alpaca.sh positions` (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) and `orders` (6 GTC stops, status new, no fills).
 
 **STEP 8 (notify):** Skipped — no action taken.
+
+### Oct 22 — EOD Snapshot (Day 78, Thursday)
+**Portfolio:** $96,643.72 | **Cash:** $23,559.57 (24.38%) | **Day P&L:** +$1,231.85 (+1.29%) | **Phase P&L:** -$3,356.28 (-3.36%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $226.68 | -0.04% | +$3,117.81 (+16.93%) | $213.0072 (7% trail, GTC 5469cb07, HWM $229.04) |
+| ECL | 70 | $281.93 | $292.30 | +1.46% | +$725.90 (+3.68%) | $272.08 ($20.50 trail, GTC 922d840e, HWM $292.58) |
+| HAL | 200 | $33.3878 | $33.19 | -2.35% | -$39.56 (-0.59%) | $30.969 (10% trail, GTC 25307bc7, HWM $34.41) |
+| LMT | 26 | $510.37 | $588.43 | +6.69% | +$2,029.56 (+15.30%) | $547.19055 (13 sh, GTC 949bf0ce / 13 sh, GTC 39388294, HWM $607.9895) |
+| RTX | 47 | $193.34 | $194.71 | +1.62% | +$64.39 (+0.71%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
+
+**Notes:** 2nd consecutive no-trade day (DGX open $226.50 < $238.81 base, TMO open $691.70 < $694.15 — both fade-rule skips). Week 16 (Oct 19-23): 2/3 new trades used, 1 slot left (Fri). Day P&L vs Oct 21 logged EOD $95,411.87 (Alpaca last_equity $95,412.43; $0.56 drift — logged value used). Best day in weeks despite risk-off open: LMT +6.69% on Q3 beat/raise (HWM $607.99, stops ratcheted to $547.19), RTX +1.62%, ECL +1.46% (HWM $292.58), CVX flat, HAL -2.35% (oilfield-services selling, no company news). Phase P&L -$3,356.28 (-3.36%) vs $100,000 start, 25th straight negative reading but best since streak began. 5 open positions, 75.62% deployed / 24.38% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.15% (CVX, HAL), Industrials/A&D 25.30% (LMT, RTX) — now >25% via appreciation only; L-035 is an entry gate, no add in A&D. CVX ~22.3% of equity via appreciation (no add); +16.93% on 7% trail, +20% → 5% trigger ~$232.63 (~2.6% away). **LMT closed +15.30% ≥ +15% → tighten to 7% trail due at next market-open** (7% off HWM $607.99 ≈ $565.43; ~3.9% below close, satisfies 3% rule). No position at -7% cut. Stop cushions: CVX ~6.0%, ECL ~6.9%, HAL ~6.7%, LMT ~7.0%, RTX ~8.9%. 6 GTC stops resting, no fills.
