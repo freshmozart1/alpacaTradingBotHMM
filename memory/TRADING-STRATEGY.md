@@ -104,6 +104,9 @@ If any fail, the trade is skipped and the reason is logged.
 - At every new-entry/add gate check, log the post-fill sector count; an
   entry that would put a 3rd position in one sector is skipped and logged
   as a concentration skip.
+- At every new-entry/add gate check, log post-fill single-sector exposure
+  as % of equity; if it would exceed 40%, size the order down to fit or
+  skip and log a concentration skip.
 
 ## Sell-Side Rules
 
@@ -140,6 +143,9 @@ Evaluated at the midday scan and opportunistically:
   routine commits (pre-market, market-open, midday, EOD); if any is
   missing, send one ClickUp alert naming the missing run(s) that same
   session and note it in the RESEARCH-LOG entry.
+- Tag every new Decision Scoreboard row that lacks a company-specific
+  dated catalyst "[no-cat]"; each weekly review reports the [no-cat]
+  subset's missed:avoided ratio.
 
 ## Rule Changelog
 
@@ -175,3 +181,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-10-09 | Operational Rules | (none) -> pre-market `git log` check for the prior session's four routine commits; ClickUp alert on any missing | Promoted from LESSONS.md L-028 (2026-09-25), complied every pre-market for 2 straight weeks (Sep 25-Oct 9); caught the missing Oct 8 midday run and alerted the same session (Oct 9). Process addition only, not a risk-rule change. |
 | 2026-10-16 | Buy-Side Gate | (none) -> dividend-adjust the pre-catalyst base when an ex-div date falls inside the follow-through/thesis window; log nominal + adjusted | Promoted from LESSONS.md L-029 (2026-10-02), complied at every applicable entry/hold check for 2 straight weeks (Oct 2-16): BMY (Oct 5), MRVL (Oct 7/9, $0.06 ex-div), LMT (Oct 12-13 ex-div checks). Process addition only, not a risk-rule change. |
 | 2026-10-16 | Buy-Side Gate | (none) -> max 2 positions per sector; a 3rd-in-sector entry is a concentration skip | Promoted from LESSONS.md L-030 (2026-10-02), complied at every gate check for 2 straight weeks (AVGO, AVGO add, MRVL, LMT, LMT add all logged post-fill sector count). Evidence it binds a real risk: the 2 Tech names (AVGO+MRVL) both failed within 3 sessions (Oct 13/15, -$2,960.22 realized). Tightening only — no risk rule loosened. |
+| 2026-10-23 | Buy-Side Gate | (none) -> post-fill single-sector exposure capped at 40% of equity at entry/add (size down or concentration skip) | Promoted from LESSONS.md L-032 (2026-10-09), complied at every gate check for 2 straight weeks (Oct 9-23: CLF idea 37.3%, RTX Industrials 24.70%, HAL Energy 29.50%, DGX HC 8.80%). Tightening only, not a risk-rule loosening. |
+| 2026-10-23 | Operational Rules | (none) -> tag scoreboard rows lacking a dated company catalyst "[no-cat]"; review reports subset missed:avoided | Promoted from LESSONS.md L-034 (2026-10-09), complied for 2 straight weeks (VLO, XOM rows tagged; subset 2 missed : 0 avoided — MPC +10.24%, VLO +7.53%). Measurement only, not a risk-rule change. |
