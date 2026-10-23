@@ -2498,3 +2498,17 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — CVX 491ac150 (5%) $221.255; DGX 30c44a67 $219.51/HWM $243.90; ECL 922d840e $272.08; HAL 25307bc7 $31.6485/HWM $35.165; LMT bb2d2742 (7%) $554.8101; RTX 313ded6c $177.30. Old CVX/LMT stops gone.
 
 **STEP 8 (notify):** ClickUp sent — CVX/LMT stop tightens.
+
+### Oct 23 — EOD Snapshot (Day 79, Friday)
+**Portfolio:** $97,550.97 | **Cash:** $15,059.12 (15.44%) | **Day P&L:** +$907.25 (+0.94%) | **Phase P&L:** -$2,449.03 (-2.45%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $233.21 | +2.88% | +$3,738.16 (+20.30%) | $222.053 (5% trail, GTC 491ac150, HWM $233.74) |
+| DGX | 35 | $242.87 | $241.89 | -0.57% | -$34.30 (-0.40%) | $219.897 (10% trail, GTC 30c44a67, HWM $244.33) |
+| ECL | 70 | $281.93 | $288.58 | -1.27% | +$465.50 (+2.36%) | $272.08 ($20.50 trail, GTC 922d840e, HWM $292.58) |
+| HAL | 200 | $33.3878 | $34.92 | +5.21% | +$306.44 (+4.59%) | $31.743 (10% trail, GTC 25307bc7, HWM $35.27) |
+| LMT | 26 | $510.37 | $604.18 | +2.42% | +$2,439.06 (+18.38%) | $566.6676 (7% trail, GTC bb2d2742, HWM $609.32) |
+| RTX | 47 | $193.34 | $191.01 | -1.90% | -$109.51 (-1.21%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
+
+**Notes:** Streak reset — trade(s) placed today (DGX 35 @ $242.87 at open, Q3 beat/raise follow-through). Week 16 (Oct 19-23) closed at 3/3 new trades. Day P&L vs Oct 22 logged EOD $96,643.72 (Alpaca last_equity $96,682.20; $38.48 drift from LMT prior-close revision $588.43→$589.91 — logged value used). Second straight up day: HAL +5.21% (SLB read-through), CVX +2.88%, LMT +2.42% offset RTX -1.90%, ECL -1.27%, DGX -0.57% post-entry. Phase P&L -$2,449.03 (-2.45%) vs $100,000 start, 26th straight negative reading but best since streak began. 6 open positions (max), 84.56% deployed / 15.44% cash — inside 75-85% band (L-024 ✓) but near top. Midday tightens: CVX → 5% trail (now $222.05), LMT → 7% trail (now $566.67), both ratcheted up since. Sector: Energy 29.87% (CVX, HAL), Industrials/A&D 25.31% (LMT, RTX), Materials 20.71% (ECL), Health Care 8.68% (DGX) — Energy/A&D >25% via appreciation only, no adds. CVX ~22.7% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~4.8%, DGX ~9.1%, ECL ~5.7%, HAL ~9.1%, LMT ~6.2%, RTX ~7.2%. 6 GTC stops resting, no fills. ECL Q3 Oct 27.
