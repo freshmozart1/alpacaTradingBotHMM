@@ -4410,3 +4410,7 @@ DGX **+4.15%**, NOC **+8.19%**, TMO **-2.01%**, XOM **-0.46%** (Oct 22 closes vi
 
 ### Decision
 **HOLD pre-open; DGX flagged for market-open hard-check** (gate decides at open; window $238.81-$252.00, 35 sh). Mechanical: LMT 7% tighten at open; CVX +20% watch. No ClickUp alert (nothing urgent).
+
+### Afternoon Addendum (Oct 23 midday)
+- HAL +5.8% intraday ($35.105): Perplexity — SLB Q3 beat + Middle East/international recovery read-through; HAL Q3 beat (adj EPS $0.60 vs $0.58, rev $5.7B) re-rated; mgmt ~15% op margin / mid-single-digit 2027 growth. No new HAL-specific announcement. NA weakness + FCF questions remain. Thesis intact/strengthened.
+- CVX crossed +20% → 5% trail; LMT ≥+15% → 7% trail (see TRADE-LOG).
