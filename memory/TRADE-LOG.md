@@ -2447,3 +2447,35 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $194.71 | +1.62% | +$64.39 (+0.71%) | $177.30 (10% trail, GTC 313ded6c, HWM $197.00) |
 
 **Notes:** 2nd consecutive no-trade day (DGX open $226.50 < $238.81 base, TMO open $691.70 < $694.15 — both fade-rule skips). Week 16 (Oct 19-23): 2/3 new trades used, 1 slot left (Fri). Day P&L vs Oct 21 logged EOD $95,411.87 (Alpaca last_equity $95,412.43; $0.56 drift — logged value used). Best day in weeks despite risk-off open: LMT +6.69% on Q3 beat/raise (HWM $607.99, stops ratcheted to $547.19), RTX +1.62%, ECL +1.46% (HWM $292.58), CVX flat, HAL -2.35% (oilfield-services selling, no company news). Phase P&L -$3,356.28 (-3.36%) vs $100,000 start, 25th straight negative reading but best since streak began. 5 open positions, 75.62% deployed / 24.38% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.15% (CVX, HAL), Industrials/A&D 25.30% (LMT, RTX) — now >25% via appreciation only; L-035 is an entry gate, no add in A&D. CVX ~22.3% of equity via appreciation (no add); +16.93% on 7% trail, +20% → 5% trigger ~$232.63 (~2.6% away). **LMT closed +15.30% ≥ +15% → tighten to 7% trail due at next market-open** (7% off HWM $607.99 ≈ $565.43; ~3.9% below close, satisfies 3% rule). No position at -7% cut. Stop cushions: CVX ~6.0%, ECL ~6.9%, HAL ~6.7%, LMT ~7.0%, RTX ~8.9%. 6 GTC stops resting, no fills.
+
+### Oct 23 — Market-Open (Day 79, Friday)
+
+**Operational Rule check:** Oct 22 has all three expected TRADE-LOG entries (Market-Open, Midday, EOD) — no gap note needed.
+
+**Account pre-open (13:19 UTC):** Equity $96,874.55 | Cash $23,559.57 (24.32%) | 5 open positions (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47), 6 GTC stops resting (all exp Jan 2027). `balance_asof` 2026-10-22. daytrade_count not returned; no day trades. Week 16: 2/3 used, 1 slot left (today). No-trade streak 2.
+
+**Held position check (13:36 UTC):** CVX $228.95 +18.10% (7% trail, ratcheted $213.7791/HWM $229.87; +20% trigger $232.63 not hit), ECL +3.57%, HAL +0.73%, LMT $583.80 **+14.39%** (closed Oct 22 +15.30%, now back below +15% trigger $586.93), RTX -1.85% — none at -7% cut. **LMT 7% tighten deferred to midday:** position below +15% at open, and 7% off HWM $607.99 = $565.43 would sit only ~3.1% under $583.80 on a falling tape (3% floor margin too thin). Re-check at midday. No stops changed.
+
+**Gate check — DGX:** 35 sh.
+- Pre-market plan condition: first print $241.09 (13:32 1-min IEX bar) — inside $238.81-$252.00 window (no fade, no chase) — pass.
+- Positions post-fill 6 (≤6) — pass.
+- Weekly trades 3/3 incl. this — pass.
+- Cost $8,500.45 = 8.77% of equity (≤20%) — pass.
+- Cost ≤ cash ($23,559.57) — pass.
+- Catalyst: Q3 beat (adj EPS $3.00 vs $2.87, rev $3.10B +10%) + FY26 rev/EPS raise, dated Oct 22 (1 session; Perplexity + SEC 8-K/company release) — documented in today's RESEARCH-LOG. 2-session window: two-source ✓; Oct 22 close $244.565 > Oct 21 pre-catalyst close $238.81 ✓. Chase bar: catalyst Oct 22, base Oct 21 close $238.81, fill $242.87 = **+1.70%** (<15%) — pass. Ex-div: none in window (last Oct 6) — nominal = adjusted.
+- PDT room — pass (0 day trades).
+- Stock (DGX, NYSE) — pass.
+- Sector (L-030): Health Care 1 post-fill — pass. L-032: HC 8.80% (≤40%) — pass. L-035: lab-diagnostics theme 8.80% (≤25%) — pass.
+- Ex-div/analyst: no same-week ex-div. UBS PT $245→$250 Neutral (reported Oct 23, single source — support only); Barclays $260 OW (Oct 7, pre-print). Overhang: Quanum LSM cyber incident (scope TBD). Non-blocking.
+
+**Entry Checklist (DGX):** Catalyst = Q3 beat + FY26 raise (Oct 22, follow-through confirmed). Sector = Health Care (#1 by bars, XLV +4.24% Oct 14→22). Stop = 10% trailing GTC; manual cut -7% ≈ $225.87. Target $291.44 (+20%).
+
+**Orders:** DGX market buy 35 — order f3b26cf5 filled 35 @ $242.87 at 13:36:30 UTC. Confirmed via `alpaca.sh orders all` (filled) and `positions` (DGX 35).
+
+**Stops placed:** DGX 10% trailing GTC 35 sh — order **30c44a67**, stop $217.854/HWM $242.06, exp Jan 21 2027. Confirmed via `alpaca.sh orders` (status new). 7 GTC stops resting.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-10-23 | DGX | BUY | 35 | $242.87 (fill) | $217.854 (10% trailing GTC, order 30c44a67); manual cut -7% ~$225.87 | Q3 Oct 22: adj EPS $3.00 vs $2.87, rev $3.10B (+10% y/y); FY26 rev/EPS raised (Perplexity + SEC 8-K); Oct 22 open fade -5.15% reversed to close $244.565 (follow-through ✓); Health Care #1 sector; +1.70% realized <15% chase bar | $291.44 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
+
+**Post-open:** Equity $96,543.59 | Cash $15,059.12 (15.60%) | **84.40% deployed** (inside 75-85%). 6 positions (max). Week 16: 3/3 used — closed. No-trade streak reset to 0.
