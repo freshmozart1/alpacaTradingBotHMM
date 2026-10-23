@@ -1209,3 +1209,95 @@ Deployment 58.71% / cash 41.29% — **below 75-85% band** (2 sessions, since AVG
 - Not a zero-trade week — no STEP 5 escalation. No risk rules touched (stops, -7% cut, sizing caps, 3/week cap, no-options).
 
 ### Overall Grade: C+ (+2.24% vs S&P in a down week, clean LMT entry now +7.97%, CVX +16%, risk rules and Tech sector exit executed mechanically, zero automation gaps — but 0/2 closed, -$2.96k realized from one correlated theme with gap-through slippage, profit factor 0.00, and deployment down to 58.7%)
+
+## Week ending 2026-10-23
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $95,247.46 (Oct 16 EOD) |
+| Ending portfolio | $97,550.97 (Oct 23 logged EOD = live pull; `balance_asof` 2026-10-22 — one session lagged per Operational Rules, provisional) |
+| Week return | +$2,303.51 (+2.42%) |
+| S&P 500 week | -0.46% (SPY 763.335 -> 759.83, Oct 16 close -> Oct 23 close via `alpaca.sh bars`, adjustment=all; Perplexity -1.43% — inconsistent, discarded) |
+| Bot vs S&P | +2.88% |
+| Trades | 3 new entries (RTX Oct 20, HAL Oct 20, DGX Oct 23 — all open); 0 closed (W:0 / L:0 / open:6 positions); 3/3 weekly cap used |
+| Win rate | n/a (0 closed) |
+| Best trade | CVX +20.30% unrealized (open); best new entry HAL +4.59% |
+| Worst trade | RTX -1.21% unrealized (open) |
+| Profit factor | n/a ($0 winners / $0 losers — no exits) |
+
+### Skip Scoreboard
+
+No rows reached 5 sessions this week (oldest open rows: Oct 19, 4 sessions) — no new verdicts. Interim reads (Ref -> Oct 23 close, bars; provisional, scored next review):
+
+| Ticker | Ref (date) | Oct 23 close | Interim % | Note |
+|--------|------------|--------------|-----------|------|
+| CLF | 12.145 (Oct 19 row) | 13.89 | +14.37% | chase-skip at open ~$14.27 (+17.5%) -> -2.66% from skip price |
+| IRON | 56.94 (Oct 19 row) | 74.665 | +31.13% | chase-excluded premarket; -5.53% from Oct 19 close $79.04 |
+| STLD | 240.35 (Oct 19 row) | 241.67 | +0.55% | no catalyst cleared |
+| TMO | 690.125 (Oct 19 row) | 673.84 | -2.36% | fade-rule skips Oct 21/22 — right so far |
+| XOM | 179.01 (Oct 19 row) | 183.21 | +2.35% | [no-cat], theme-blocked (L-035) |
+| NOC | 510.53 (Oct 20 row) | 551.625 | +8.05% | [3-5s]-type by Oct 23; concentration-blocked (L-030/L-035) |
+| RTX / HAL / DGX | — | — | — | entered Oct 20 / Oct 20 / Oct 23 |
+
+Verdict counts (true skips): none this week. Missed:avoided ratio: n/a (cumulative since Oct 9: missed 2, skip-right 2, avoided 1). **L-034 [no-cat] subset:** no new verdicts; since tracking 2:0 (MPC +10.24%, VLO +7.53%); VLO since its scored window reversed (Oct 16 $444.70 -> Oct 23 $419.35, -5.70%). **L-033 [3-5s]:** NOC only (+8.05% interim, but blocked by concentration caps regardless) — window question moot. **Gate calibration verdict: calibrated** — 3 gate-clean entries, 2 fade-rule skips (TMO, DGX Oct 22) both right on the day, DGX then entered on next-session follow-through. Ref-based scoring overstates chase skips (CLF/IRON interim gains are mostly pre-skip moves) -> L-039. **Pruned this review:** INTC/AVGO/MPC/NTRA/BMY (Sep 28 rows) and UEC (Oct 1) — verdicts >10 sessions old. Oct 5 rows (MRVL/VLO/LMT, 9 sessions) retained.
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No exits this week. L-036 slippage: 0 exits, total slippage n/a. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CVX | $193.860947 (95 sh) | $233.21 | +$3,738.16 (+20.30%) | 5% trailing GTC 491ac150, stop $222.053, HWM $233.74 (tightened 10->7% Oct 19, 7->5% Oct 23) |
+| DGX | $242.87 (35 sh, Oct 23) | $241.89 | -$34.30 (-0.40%) | 10% trailing GTC 30c44a67, stop $219.897, HWM $244.33 |
+| ECL | $281.93 (70 sh) | $288.58 | +$465.50 (+2.36%) | $20.50 trailing GTC 922d840e (renewed Oct 20, L-031), stop $272.08, HWM $292.58 |
+| HAL | $33.3878 (200 sh, Oct 20) | $34.92 | +$306.44 (+4.59%) | 10% trailing GTC 25307bc7, stop $31.743, HWM $35.27 |
+| LMT | $510.37 (26 sh) | $604.18 | +$2,439.06 (+18.38%) | 7% trailing GTC bb2d2742 (tightened Oct 23), stop $566.6676, HWM $609.32 |
+| RTX | $193.34 (47 sh, Oct 20) | $191.01 | -$109.51 (-1.21%) | 10% trailing GTC 313ded6c, stop $177.30, HWM $197.00 |
+
+Deployment 84.56% / cash 15.44% — back in band from Oct 20 (58.57% -> 75.29%), near top. 6/6 positions (max). Sector mix: Energy 29.87% (CVX, HAL), Industrials/A&D 25.31% (LMT, RTX), Materials 20.71% (ECL), Health Care 8.68% (DGX) — Energy/A&D over L-035's 25% and CVX ~22.7% (>20%) via appreciation only; no adds. All stops exp Jan 2027. ECL Q3 Oct 27 (gap risk, cushion ~5.7%).
+
+### What Worked
+
+- +2.88% vs S&P in a down week (2nd straight outperforming week); phase P&L -4.75% -> -2.45%, best since the negative streak began.
+- Gate produced 3 clean same-window entries (RTX +0.65%, HAL +1.18%, DGX +1.70% vs base) — all two-source, all well under the chase bar; stall-breaker refresh (Oct 19) fed all three.
+- Fade rule worked: TMO skipped twice (now -2.36% vs Ref), DGX skipped Oct 22 on -5.15% open, then entered Oct 23 after follow-through.
+- Winners managed by the book: CVX tightened 10->7->5% (stop $222.05, locks ~+14.5%), LMT 10->7% after Q3 beat (stop $566.67, locks ~+11%); LMT open-time deferral (3% floor margin) was correct — tightened at a higher stop at midday.
+- L-031 fired for the first time: ECL renewal via $-trail kept the stop from moving down. L-035 sized RTX to 24.70% and blocked NOC/XOM. Zero automation gaps.
+
+### What Didn't Work
+
+- Still zero closed winners since early Sep; gains are all unrealized and rest on CVX/LMT trail stops.
+- Book is concentrated by appreciation: Energy 29.9%, A&D 25.3%, CVX 22.7% of equity — caps only bind at entry.
+- Deployment sat below band Oct 15-19 (4 sessions) before the refill.
+- CLF/IRON ran +14%/+31% vs Ref but the scoreboard can't tell pre-skip move from post-skip move.
+- L-037 [no-cat] draft: 1/2 historical misses captured, zero triggers in 5 daily re-scores — sample too thin to act on.
+
+### Key Lessons
+
+- Same-day/next-day earnings beat + raise with a fade guard is the gate's best setup so far — 3 entries, none faded through the base.
+- Letting winners ride under the tighten schedule beats trimming: CVX/LMT are the whole week's P&L.
+- Chase exclusions should be judged from the price available at the skip, not the pre-catalyst Ref.
+- The [no-cat] refiner trend reversed (VLO -5.7% this week) — a sector-momentum path would have bought near the top; evidence still insufficient.
+
+### Adjustments for Next Week
+
+- Shadow-score the L-037 [no-cat] spec at every pre-market (log trigger/no-trigger per [no-cat] row, +5d outcome from trigger close); no live entries (L-038).
+- For every chase/fade skip, log the skip-time price and score +5d from it alongside Ref (L-039).
+- With the book at 6/6, log any new gate-clearing candidate as a "slot-blocked" HOLD row; no rotation out of a held name unless it hits a sell-side rule (L-040).
+
+### Rule Changes This Week
+
+- L-032 (40% single-sector exposure cap at entry/add) promoted to a permanent Buy-Side Gate rule — 2 weeks' compliance (RTX/HAL/DGX/CLF checks); tightening only. Changelog row added.
+- L-034 ([no-cat] scoreboard tag) promoted to a permanent Operational Rule — 2 weeks' compliance. Changelog row added.
+- L-033 retired (not promoted) — 2-session window stays; only one [3-5s]-type case (NOC), blocked by concentration caps anyway.
+- L-037 retired — draft delivered and scored; no gate change (n=2, 0 triggers in 5 re-scores, refiners reversed). Shadow tracking under L-038.
+- L-031/L-035/L-036 carried to Oct 30 review-by. New L-038/L-039/L-040.
+- Not a zero-trade week — no STEP 5 escalation. No risk rules touched (stops, -7% cut, sizing caps, 3/week cap, no-options).
+
+### Overall Grade: B+ (+2.88% vs S&P in a down week, 3 clean gate entries, deployment back to 84.6%, CVX/LMT trails tightened on schedule, fade rule and L-031/L-035 worked, zero automation gaps — but still no closed winner, and appreciation has pushed Energy/A&D/CVX past entry caps)

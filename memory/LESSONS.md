@@ -7,17 +7,39 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
-### L-037 — Draft a bounded [no-cat] sector-momentum entry path
-- Date: 2026-10-16 | Source: WEEKLY-REVIEW 2026-10-16 ([no-cat] subset
-  2 missed : 0 avoided since L-034 — MPC +10.24%, VLO +7.53% at +5d,
-  VLO peaked +13.37%; both top-sector refiners, no company catalyst)
-- Lesson: The gate's only blind spot with consistent misses is sector-
-  driven moves in the #1 sector.
-- Directive: Before the Oct 23 review, write a draft spec (top-2 sector,
-  bars relative strength vs sector ETF, half-size, all stops/caps
-  unchanged) in RESEARCH-LOG and score it against every [no-cat]
-  scoreboard row. Draft only — no gate change until the Oct 23 review.
-- Status: active | Review-by: 2026-10-30
+### L-040 — Log slot-blocked candidates while the book is full
+- Date: 2026-10-23 | Source: WEEKLY-REVIEW 2026-10-23 (6/6 positions,
+  84.56% deployed after DGX Oct 23; no rotation rule exists)
+- Lesson: A full book can hide gate-clearing ideas and invite forced
+  rotation.
+- Directive: While at 6 positions, log any gate-clearing candidate as a
+  "slot-blocked" HOLD scoreboard row; never exit a held name to make
+  room unless it hits a sell-side rule (-7%, thesis break, sector exit,
+  stop).
+- Status: active | Review-by: 2026-11-06
+
+### L-039 — Score chase/fade skips from the skip-time price
+- Date: 2026-10-23 | Source: WEEKLY-REVIEW 2026-10-23 (CLF +14.37% and
+  IRON +31.13% vs Ref interim, but -2.66% / -5.53% from the price
+  available at the skip)
+- Lesson: Ref-based scoring counts the pre-skip move as a miss.
+- Directive: For every chase or fade skip, log the skip-time price in
+  the scoreboard Decision cell; at review report +5d % from both Ref and
+  skip price.
+- Status: active | Review-by: 2026-11-06
+
+### L-038 — Shadow-score the [no-cat] sector-momentum spec
+- Date: 2026-10-23 | Source: WEEKLY-REVIEW 2026-10-23 (L-037 draft:
+  1/2 historical misses captured, 0 triggers in 5 daily re-scores Oct
+  19-23; VLO reversed -5.70% this week)
+- Lesson: n=2 is too thin to add an entry path; refiners rolled over
+  right after the misses.
+- Directive: At every pre-market, run the L-037 spec (RESEARCH-LOG Oct
+  19) on each open [no-cat] row and the top-2 sector leaders; log
+  trigger/no-trigger and, for triggers, the +5d result from trigger
+  close. No live entries. Adopt only with >=4 triggers and hits >
+  losses at a review.
+- Status: active | Review-by: 2026-11-06
 
 ### L-036 — Log gap-through slippage on every exit
 - Date: 2026-10-16 | Source: WEEKLY-REVIEW 2026-10-16 (MRVL cut at
@@ -40,38 +62,6 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
   equity, size down to fit or skip as a concentration skip.
 - Status: active | Review-by: 2026-10-30
 
-### L-034 — Track sector-momentum skips that lack a company catalyst
-- Date: 2026-10-09 | Source: WEEKLY-REVIEW 2026-10-09 (MPC +10.24%
-  missed, VLO +9.48% vs Ref by Oct 8 — Energy #1 refiners running on
-  sector-level crack-spread drivers with no company-specific dated
-  catalyst)
-- Lesson: The gate is blind to sector-wide moves; misses cluster in
-  top-sector names with no dated company catalyst.
-- Directive: Tag every new scoreboard row lacking a company-specific dated
-  catalyst "[no-cat]"; at each weekly review report missed:avoided for the
-  [no-cat] subset. Process/measurement only — no gate change.
-- Status: active | Review-by: 2026-10-23
-
-### L-033 — Monitor the tightened 2-session freshness window
-- Date: 2026-10-09 | Source: WEEKLY-REVIEW 2026-10-09 (L-025 false
-  positive: BMY 3-session extension entry cut -7.51%; NTRA -4.62%, AVGO
-  add -1.18%; window reverted 5 -> 2 sessions)
-- Lesson: Catalysts 3-5 sessions old produced 0 winners in 3 entries.
-- Directive: When a two-source catalyst is 3-5 sessions old and would
-  have cleared the old window, log it as a HOLD scoreboard row tagged
-  "[3-5s]"; at review report its +5d verdicts. Gate stays at 2 sessions.
-- Status: active | Review-by: 2026-10-23
-
-### L-032 — Cap combined single-sector exposure at 40% of equity
-- Date: 2026-10-09 | Source: WEEKLY-REVIEW 2026-10-09 (AVGO+MRVL ~36%
-  of equity in AI semis; Oct 8 sector selloff cost -$1,336.81 in one
-  session — L-030's 2-position count didn't capture size)
-- Lesson: Position-count caps miss dollar concentration in one theme.
-- Directive: At every new-entry/add gate check, log post-fill sector
-  exposure as % of equity; if it would exceed 40%, size the order down to
-  fit or skip and log a concentration skip.
-- Status: active | Review-by: 2026-10-23
-
 ### L-031 — Renew expiring GTC trailing stops mechanically
 - Date: 2026-10-02 | Source: WEEKLY-REVIEW 2026-10-02 (ECL stop expires
   Oct 26, CVX stops Oct 29 — tracked only as EOD heads-up lines)
@@ -93,6 +83,19 @@ Template:
 - Status: active | Review-by: YYYY-MM-DD
 
 ## Retired Lessons
+
+- L-032, "Cap combined single-sector exposure at 40% of equity",
+  retired 2026-10-23, promoted to a permanent Buy-Side Gate rule after 2
+  straight weeks of compliance (Oct 9-23; CLF, RTX, HAL, DGX checks).
+- L-034, "Track sector-momentum skips that lack a company catalyst",
+  retired 2026-10-23, promoted to a permanent Operational Rule ([no-cat]
+  tag) after 2 weeks of compliance; subset 2 missed : 0 avoided.
+- L-033, "Monitor the tightened 2-session freshness window", retired
+  2026-10-23 (hit review-by, not promoted). One [3-5s]-type case (NOC,
+  +8.05% interim) — blocked by L-030/L-035 regardless. Window stays 2.
+- L-037, "Draft a bounded [no-cat] sector-momentum entry path", retired
+  2026-10-23 — draft written/scored (1/2 captured, 0 FP, n=2); no gate
+  change. Shadow-tracked under L-038.
 
 - L-029, "Dividend-adjust the pre-catalyst base around ex-div dates",
   retired 2026-10-16, promoted to a permanent Buy-Side Gate rule after 2
@@ -275,12 +278,6 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-09-28 | INTC | HOLD — stall-breaker refresh add (Technology), AI turnaround/SK Hynix talks/CPU price hike rally (Sep 21-22), +13.17% from pre-catalyst base, PT hikes dateless (L-021), chase-adjacent | 122.98 | -5.46% | avoided-loss |
-| 2026-09-28 | AVGO | HOLD — stall-breaker refresh add (Technology), AI capex/custom-silicon narrative, no dated catalyst | 352.72 | +2.78% | skip-right |
-| 2026-09-28 | MPC | HOLD — stall-breaker refresh add (Energy), Zacks Sept best-energy list, no dated catalyst (Q3 call Nov 3) | 393.26 | +10.24% | missed |
-| 2026-09-28 | NTRA | HOLD pre-market — stall-breaker refresh add (Health Care, 3rd sector), Sep 22 Japan PMDA Signatera CDx approval (two-source), +11.28% from Sep 21 base; flagged for market-open hard-check | 412.35 | +3.21% | n/a — entered Sep 28 (closed -4.62%) |
-| 2026-09-28 | BMY | HOLD — stall-breaker refresh add (Health Care, 3rd sector), Sep 25 EXCALIBER-RRMM Ph3 presentation, single-source only | 62.89 | -6.50% | n/a — entered Sep 29 (cut -7.51%) |
-| 2026-10-01 | UEC | HOLD — conditional replacement idea (Energy), Sep 29 FY26 print now two-source (+2.72% vs Sep 28 base), gate-clearing but capacity-blocked (78.68% deployed, new ~19% -> ~98%) | 9.43 | -2.97% | skip-right |
 | 2026-10-05 | MRVL | HOLD — stall-breaker refresh add (Technology), Investor Day Oct 6 hard-dated (two-source), no reaction yet | 272.33 | -2.38% | n/a — entered Oct 7 (cut -10.14%) |
 | 2026-10-05 | VLO | HOLD — stall-breaker refresh add (Energy), refining-margin upgrade coverage, no company-specific dated catalyst | 405.66 | +7.53% | missed [no-cat] |
 | 2026-10-05 | LMT | HOLD — stall-breaker refresh add (Industrials, 3rd sector), $94.2M Navy AEGIS award undated, Q3 Oct 22 | 506.25 | +1.16% | n/a — entered Oct 12 (open +7.97%) |
