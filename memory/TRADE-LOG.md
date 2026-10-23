@@ -2479,3 +2479,22 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-10-23 | DGX | BUY | 35 | $242.87 (fill) | $217.854 (10% trailing GTC, order 30c44a67); manual cut -7% ~$225.87 | Q3 Oct 22: adj EPS $3.00 vs $2.87, rev $3.10B (+10% y/y); FY26 rev/EPS raised (Perplexity + SEC 8-K); Oct 22 open fade -5.15% reversed to close $244.565 (follow-through ✓); Health Care #1 sector; +1.70% realized <15% chase bar | $291.44 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
 
 **Post-open:** Equity $96,543.59 | Cash $15,059.12 (15.60%) | **84.40% deployed** (inside 75-85%). 6 positions (max). Week 16: 3/3 used — closed. No-trade streak reset to 0.
+
+### Oct 23 — Midday Scan (Day 79, Friday)
+
+**Account (16:13 UTC):** Equity $97,451.14 | Cash $15,059.12 (15.45%) | ~84.5% deployed — inside 75-85% band. 6 open positions — CVX 95 sh +20.13% ($232.88, intraday +2.74%); DGX 35 sh -0.33% ($242.06, intraday -0.50%); ECL 70 sh +2.74% ($289.64, intraday -0.91%); HAL 200 sh +5.14% ($35.105, intraday +5.77%); LMT 26 sh +16.89% ($596.57, intraday +1.13%); RTX 47 sh -1.07% ($191.27, intraday -1.77%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min RTX -1.07%). No positions closed.
+
+**STEP 4 (tighten trails):**
+- **CVX +20.13% ≥ +20% → 5% trail.** Cancelled 7% stop 5469cb07 ($217.1829/HWM $233.53). Placed 95 sh 5% trailing stop GTC **491ac150** — stop **$221.255**/HWM $232.90, exp Jan 21 2027. Stop moved up ($217.18 → $221.26, never down ✓), ~5.0% below price (>3% ✓).
+- **LMT +16.89% ≥ +15% → 7% trail** (deferred from open). Cancelled 10% legs 949bf0ce (13)/39388294 (13) ($547.19055/HWM $607.9895). Placed 26 sh 7% trailing stop GTC **bb2d2742** — stop **$554.8101**/HWM $596.57 (new order resets HWM to current), exp Jan 21 2027. Stop moved up ($547.19 → $554.81, never down ✓), 7.0% below price (>3% ✓).
+- DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** CVX +2.7%, Brent >$114 bid intact. DGX flat post-entry, ~9.4% above stop; thesis intact. ECL -0.9%, ~6.1% above stop; intact ahead of Oct 27 Q3. HAL +5.8% — SLB Q3 beat read-through + intl/Middle East margin optimism (Perplexity), no HAL-specific news; stop ratcheted to $31.6485 — strengthened. LMT +1.1%, intact. RTX -1.8%, ~7.3% above stop; no news — intact. No cuts.
+
+**STEP 6 (optional research):** HAL +5.8% checked (see RESEARCH-LOG addendum).
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — CVX 491ac150 (5%) $221.255; DGX 30c44a67 $219.51/HWM $243.90; ECL 922d840e $272.08; HAL 25307bc7 $31.6485/HWM $35.165; LMT bb2d2742 (7%) $554.8101; RTX 313ded6c $177.30. Old CVX/LMT stops gone.
+
+**STEP 8 (notify):** ClickUp sent — CVX/LMT stop tightens.
