@@ -4345,3 +4345,68 @@ TMO **+0.58%**, NOC **+5.71%**, DGX **+1.70%**, XOM **-0.52%** (Oct 21 closes vi
 - HAL -3.62% intraday ($32.76; Perplexity: ~$32.54 -4.3%) — oilfield-services group selling + broad risk-off; no fresh HAL news; lingering Q3 concerns (NA rev -5% q/q, weak FCF, soft frac). Brent ~$112 unchanged backdrop. Sector-level, no company break. HAL ~5.5% above stop $30.969.
 - LMT +5.77% post-Q3 ($583.35), intraday HWM $607.99 then faded; +15% trigger $586.93 not held. CVX $224.53 (+15.82%), +20% trigger $232.63 not hit. SPY ~$765 (-1.0% vs $773.13).
 - Decision: HOLD all. No trades, no stop changes.
+
+## 2026-10-23 — Pre-market Research
+
+### Account
+- Equity: $96,872.35 | Cash: $23,559.57 (24.32%) | Buying power: $299,514.06 (margin, effective) | `balance_asof` 2026-10-22 (prior session, settled).
+- Position market value: $73,312.78 (CVX 95, ECL 70, HAL 200, LMT 26, RTX 47) — **75.68% deployed, inside 75-85% band**. 6 GTC trailing stops resting: CVX 5469cb07 (7%) $213.0072/HWM $229.04; ECL 922d840e ($20.50) $272.08/HWM $292.58; HAL 25307bc7 $30.969/HWM $34.41; LMT 949bf0ce/39388294 (10%) $547.19055/HWM $607.9895; RTX 313ded6c $177.30/HWM $197.00. All exp Jan 8-15 2027 — none inside 5 sessions.
+- Day P&L (premarket marks): +$190.15 (+0.20%) vs last_equity $96,682.20 (logged Oct 22 EOD $96,643.72; $38.48 drift).
+- Daytrade count: not returned; no day trades. Day 79, Friday, Week 16 (Oct 19-23), **2/3 weekly trades used** (RTX, HAL) — last slot expires today.
+- No-trade streak: 2 (Oct 21 TMO, Oct 22 DGX/TMO fade skips).
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 94%** (500 obs, 96 days in regime). Advisory only.
+- Held (premarket marks): CVX $228.40 (+17.82%; +20% → 5% trigger $232.63, 1.9% away), ECL $292.30 (+3.68%), HAL $33.60 (+0.64%), **LMT $589.90 (+15.58% — ≥+15%: 7% trail tighten due at open, per Oct 22 EOD)**, RTX $193.54 (+0.10%).
+
+### Market Context
+- Perplexity: 18 queries, all exit 0 (sequential, no 429). No exit-3 fallback.
+- WTI/Brent: **WTI $100.77, Brent $114.03** (Perplexity, dated Oct 23). Not a repeat (Oct 22 WTI $99.20 / Brent $111.79). Spread $13.26 = ~13.2% dispersion >10% → USO cross-check: `quote USO` $165.67 mid (12:30 UTC) vs Oct 22 close $162.49 = **+1.96%** → oil up confirmed.
+- S&P 500 futures: Perplexity -0.08% (7,657, 3:41 a.m. ET — early print). Cross-check `quote SPY` $761.04 mid (12:42 UTC) vs Oct 22 close $764.03 = **-0.39%** → operative read: mild risk-off. Meta-led AI-capex selloff lingering; 10y <5%; claims 194k (lowest since Jul).
+- VIX: **19.56** (+2.8%; "4:40 p.m." timestamp = likely Oct 22 close). Not a repeat (Oct 22 logged 18.10). Directional only.
+- Today: no CPI/PPI/NFP/FOMC. 9:45 S&P flash PMIs, 10:00 UMich sentiment/inflation expectations. Earnings BMO: AXP (FY EPS raised $18.30-18.60), SLB, INFY, FCNCA, ALV, BAH, CRI; WDC/DECK AMC weak. HCA date conflicting (one source today, another Oct 27 BMO — unconfirmed). FOMC Oct 27-28, ECL Oct 27, CVX/XOM Oct 30, GOOGL/AMZN/MSFT next week, NFP Nov 6, CPI Nov 10.
+- Sector momentum: Perplexity returned Sep 30 State Street scores (Energy 1.30, Tech 1.10, HC 0.91) — **stale**. Cross-check via `bars` (Oct 14→22): XLV +4.24%, XLB +4.13%, XLI -0.19%, XLE -0.06%, SPY -0.73% → HC/Materials leadership confirmed.
+- Held tickers:
+  - **CVX**: Brent >$114 tailwind; GoM asset sale (~$1B) review; West Qurna 2 talks (preliminary); BofA $252 / GS $241 (dateless, support only); 10b5-1 insider sales. Q3 Oct 30. Thesis intact.
+  - **ECL**: Q3 Oct 27 BMO (rev est ~$4.70B); ZwitterCo water-reuse investment (undated, minor). Thesis intact.
+  - **HAL**: Q3 beat digesting (NA -5% q/q, FCF questions); no fresh catalyst. Oil bid. Thesis intact.
+  - **LMT**: Q3 beat/raise follow-through (closed $589.91, +6.69%); F-35 850-aircraft framework; Lot 20 award = next upside (ex-guide). Thesis strengthened.
+  - **RTX**: Q3 beat/raise digesting; $350M USAF contract mod (undated in result). Thesis intact.
+- Watchlist:
+  - **DGX**: Q3 beat + FY26 raise (Oct 22, 1 session old). Two-source ✓ (Perplexity + SEC 8-K Ex 99.1, Oct 22). Reaction: opened $226.50 (-5.15%) then **reversed to close $244.565** (+8.0% off open). Chase: catalyst Oct 22, base Oct 21 close $238.81, prior close $244.565 = **+2.41%** (<15%) ✓; bars follow-through prior close > pre-catalyst close ✓ → **gate-eligible**. Offset: Quanum LSM cyber incident (scope TBD).
+  - **TMO**: Oct 21 Q3 beat/raise (2 sessions old) + PT hikes (GS $830, TD Cowen $810 — dateless in result, excluded). Follow-through **FAILS**: prior close Oct 22 $676.25 < pre-catalyst close Oct 20 $687.70 (-1.66%) → not eligible.
+  - **NOC**: Oct 20 Q3 beat/raise now 3 sessions old → outside 2-session window ([3-5s]-type; existing row 2026-10-20, no duplicate). Closed $552.32. Also blocked — 3rd Industrials / A&D theme 25.2%.
+  - **VLO**: Oct 22 Q3 beat (two-source now: Perplexity x2 outlets) but stock fell; prior close $426.31 < pre-catalyst $436.655 → follow-through fails. Also 3rd Energy → concentration skip.
+  - **XOM**: Infineum JV sale (~$8B, reported, XOM/Shell 50-50 — ownership noted, unconfirmed), Kashagan arbitration (undated), Joliet refinery disruption risk; Barclays/UBS PTs dateless, excluded. [no-cat]; Q3 Oct 30; theme-blocked by CVX (L-035).
+  - **HCA (new, Health Care)**: Q3 hard-dated — conflicting (Oct 23 vs Oct 27 BMO); unconfirmed. Watch only; Ref Oct 22 close $467.02.
+
+### Stall-Breaker
+Stall-breaker: not armed (streak 2 < 3). No refresh required; added HCA (HC #1, hard-dated print); dropped none.
+
+### Lessons Check
+- L-031 (GTC expiries) — all 6 stops exp Jan 8-15 2027; none within 5 sessions. Complied.
+- L-032 (sector ≤40%) — DGX: Health Care 0% held → post-fill ~8.9% ✓. Energy 29.34%, Industrials 25.22%, Materials 21.12%. Complied.
+- L-033 ([3-5s]) — NOC's Oct 20 catalyst now 3 sessions old (two-source) — existing row 2026-10-20 (no duplicate per one-row-per-streak); report at review. Complied.
+- L-034 ([no-cat]) — no new [no-cat] rows; XOM already tagged. Complied.
+- L-035 (theme ≤25%) — DGX lab diagnostics 0% held → ~8.9% ✓. A&D 25.22% via appreciation (no adds). Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-037 (draft spec) — re-score (5-sess Oct 15→22, bars): VLO -4.08% vs XLE +1.55% = -5.6pp → no trigger; XOM +1.98% vs XLE +1.55% = +0.4pp → no trigger. Still 1/2 historical misses captured, 0 FP. **Draft goes to today's Oct 23 review.** Complied.
+- Operational: `git log` — Oct 22 pre-market (b8ce640), market-open (89f4b5a), midday (7ba928a), EOD (cb6a1b1) all present. No alert needed.
+
+### Yesterday's Skip Check
+DGX **+4.15%**, NOC **+8.19%**, TMO **-2.01%**, XOM **-0.46%** (Oct 22 closes via `bars` vs Refs; overnight quotes stale/one-sided). DGX fade-rule skip looks wrong so far (open $226.50 reversed to $244.565); NOC wrong on raw % (concentration-blocked — process right); TMO/XOM skips look right.
+
+### Trade Ideas
+- Week 16: 2/3 used, **1 slot left (today only)**. 75.68% deployed — room to 85% cap ≈ $9.03k.
+1. **DGX — BUY candidate for market-open hard-check.** Catalyst: Oct 22 Q3 beat + FY26 rev/EPS raise (two-source, 1 session old, follow-through ✓, +2.41% <15%). Health Care #1 (bars-confirmed). Entry ~$240-252 (limit ≤$252.00, +3.0% vs Oct 22 close), **35 sh ≈ $8.4-8.8k (≤9.1% equity)**. Stop: 10% GTC trail; manual cut -7%. Target +20% (~$294 at $245), 2:1. Post-fill: 6 positions (max), HC 1 / ~8.9%, lab-diagnostics theme ~8.9%, deployment ≤84.8%, weekly 3/3. **Condition: skip if open < $238.81 (pre-catalyst base) or > $252.00.** Ex-div: Oct 6 (paid Oct 21) — none this week; check post-print analyst actions; note cyber-incident overhang.
+2. **No other qualifiers:** TMO — follow-through fail ($676.25 < $687.70). NOC — out of window + 3rd Industrials/A&D >25%. VLO — follow-through fail + 3rd Energy. XOM — [no-cat], CVX theme-block. HCA — print date unconfirmed.
+3. **Mechanical:** **LMT ≥+15% → tighten both LMT stops to 7% trail at open** (7% off HWM $607.99 ≈ $565.43; must stay ≥$547.19 and ≥3% below price). **CVX** +17.82% → if ≥$232.63 (+20%), tighten to 5% trail.
+
+### Risk Factors
+- Mild risk-off open: SPY -0.4% premarket, VIX ~19.6; AI-capex selloff (META) lingering; WDC/DECK AMC weak.
+- Mideast escalation: Brent >$114 — supports CVX/HAL, inflation risk ahead of UMich expectations 10:00 and FOMC Oct 28.
+- DGX: cyber incident; Oct 22 intraday reversal may not hold (opened -5%).
+- Concentration: Energy 29.3%, A&D 25.2% (appreciation), CVX 22.4%, ECL 21.1% of equity (no adds).
+- Weekend gap risk into FOMC/ECB/BoJ + mega-cap tech prints next week; ECL Q3 Oct 27.
+- Full book after any fill (6 positions) — Week 17 capacity only via exits.
+
+### Decision
+**HOLD pre-open; DGX flagged for market-open hard-check** (gate decides at open; window $238.81-$252.00, 35 sh). Mechanical: LMT 7% tighten at open; CVX +20% watch. No ClickUp alert (nothing urgent).

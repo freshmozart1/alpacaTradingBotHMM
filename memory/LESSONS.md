@@ -293,3 +293,4 @@ than 10 sessions are pruned.
 | 2026-10-20 | HAL | HOLD pre-market — stall-breaker refresh add (Energy), Q3 EPS/revenue beat + buyback today (two-source: Perplexity + SEC 8-K), mixed (EBITDA miss); flagged for market-open hard-check | 33.00 | | |
 | 2026-10-20 | NOC | HOLD — stall-breaker refresh add (Industrials), Q3 EPS beat + FY26 EPS raise today, single-source; blocked as 3rd Industrials / A&D theme with LMT+RTX (L-030/L-035) | 510.53 | | |
 | 2026-10-20 | DGX | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 22 hard-dated, no catalyst yet | 234.82 | | |
+| 2026-10-23 | HCA | HOLD — new watchlist add (Health Care), Q3 print date unconfirmed (Oct 23 vs Oct 27 BMO), no catalyst yet | 467.02 | | |
