@@ -2530,3 +2530,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $587.594; CVX 491ac150 (5%) $222.053; DGX 30c44a67 $219.897; ECL 922d840e $272.08; HAL 25307bc7 $31.743; RTX 313ded6c $177.30.
 
 **Post-open:** Equity $98,005.70 | Cash $15,059.11 (15.37%) | ~84.6% deployed (inside 75-85%). Week 17: 0/3 used. No-trade streak 1.
+
+### Oct 26 — Midday Scan (Day 80, Monday)
+
+**Account (16:15 UTC):** Equity $98,374.02 | Cash $15,059.11 (15.31%) | ~84.7% deployed — inside 75-85% band. 6 open positions — CVX 95 sh +19.89% ($232.42, intraday -0.34%); DGX 35 sh +0.23% ($243.43, intraday +0.64%); ECL 70 sh +2.72% ($289.595, intraday +0.37%); HAL 200 sh +5.28% ($35.15, intraday +0.66%); LMT 26 sh +22.25% ($623.925, intraday +3.27%); RTX 47 sh +1.16% ($195.58, intraday +2.39%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +0.23%). No positions closed.
+
+**STEP 4 (tighten trails):** No changes. CVX +19.89% (<+20%; already 5% trail 491ac150, stop $222.376/HWM $234.08). LMT +22.25% already 5% trail e4e5aedf (stop $595.04675/HWM $626.365, ratcheted up from $587.594). DGX/ECL/HAL/RTX <+15%.
+
+**STEP 5 (thesis check):** CVX -0.3% on oil softness (Iran diplomacy), ~4.3% above stop — intact, Q3 Oct 30. DGX +0.6%, ~9.7% above stop — intact (CMS fee overhang noted). ECL +0.4%, ~6.0% above stop — Q3 tomorrow BMO, intact. HAL +0.7%, ~9.7% above stop — intact. LMT +3.3% (MS upgrade OW/$835 tailwind), ~4.6% above stop — strengthened. RTX +2.4% with A&D bid, ~9.3% above stop — intact. No cuts.
+
+**STEP 6 (optional research):** Skipped — no unexplained sharp move (LMT/RTX A&D strength consistent with pre-market upgrade/award news).
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $595.04675; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e $272.08; HAL 25307bc7 $31.743; RTX 313ded6c $177.30. No orders placed/cancelled.
+
+**STEP 8 (notify):** No action taken — no ClickUp alert.
