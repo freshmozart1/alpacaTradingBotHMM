@@ -2578,3 +2578,17 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e $273.50/HWM $294; HAL 25307bc7 $32.12667; RTX 313ded6c $178.371.
 
 **STEP 8 (notify):** No action taken — no ClickUp.
+
+### Oct 27 — EOD Snapshot (Day 81, Tuesday)
+**Portfolio:** $98,114.95 | **Cash:** $15,059.11 (15.35%) | **Day P&L:** -$627.21 (-0.64%) | **Phase P&L:** -$1,885.05 (-1.89%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $228.5744 | -1.48% | +$3,297.78 (+17.91%) | $222.376 (5% trail, GTC 491ac150, HWM $234.08) |
+| DGX | 35 | $242.87 | $242.56 | -0.16% | -$10.85 (-0.13%) | $219.897 (10% trail, GTC 30c44a67, HWM $244.33) |
+| ECL | 70 | $281.93 | $291.27 | +0.82% | +$653.80 (+3.31%) | $274.235 ($20.50 trail, GTC 922d840e, HWM $294.735) |
+| HAL | 200 | $33.3878 | $35.62 | +0.51% | +$446.44 (+6.69%) | $32.12667 (10% trail, GTC 25307bc7, HWM $35.6963) |
+| LMT | 26 | $510.37 | $622.99 | -1.92% | +$2,928.12 (+22.07%) | $604.732 (5% trail, GTC e4e5aedf, HWM $636.56) |
+| RTX | 47 | $193.34 | $194.49 | -1.51% | +$54.05 (+0.59%) | $178.371 (10% trail, GTC 313ded6c, HWM $198.19) |
+
+**Notes:** 2nd consecutive no-trade day. Week 17: 0/3 new trades used. Day P&L vs Oct 26 logged EOD $98,742.16 (Alpaca last_equity $98,710.37; $31.79 drift from intraday EOD capture — logged value used). Down day snapping 3-day win streak: A&D and Energy gave back (LMT -1.92%, RTX -1.51%, CVX -1.48% on oil softening/US-Iran de-escalation hopes); ECL +0.82% post in-line Q3 (new HWM $294.735, stop ratcheted to $274.235), HAL +0.51% (new HWM). Phase P&L -$1,885.05 (-1.89%) vs $100,000 start — 28th straight negative reading. 6 open positions (max), 84.65% deployed / 15.35% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.39% (CVX, HAL), Industrials/A&D 25.83% (LMT, RTX), Materials 20.78% (ECL), Health Care 8.65% (DGX) — over-25% via appreciation only, no adds. CVX ~22.1% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~2.7%, DGX ~9.3%, ECL ~5.8%, HAL ~9.8%, LMT ~2.9%, RTX ~8.3% — CVX/LMT 5% trails now <3% from price (trail working as designed; stop fill risk on further weakness, CVX Q3 Fri). 6 GTC stops resting, no fills. FOMC decision Wed.
