@@ -2544,3 +2544,21 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $197.48 | +3.39% | +$194.58 (+2.14%) | $178.119 (10% trail, GTC 313ded6c, HWM $197.91) |
 
 **Notes:** 1st consecutive no-trade day (LMT stop tighten only). Week 17: 0/3 new trades used. Day P&L vs Oct 23 logged EOD $97,550.97 (Alpaca last_equity $97,547.46; $3.51 drift — logged value used). Third straight up day, led by A&D: LMT +5.31% (new HWM $636.56, 5% trail now $604.73, above entry-locked +18.5%), RTX +3.39% (back green), HAL +1.49%; CVX -0.51% only drag. Phase P&L -$1,257.84 (-1.26%) vs $100,000 start — 27th straight negative reading, best since streak began. 6 open positions (max), 84.75% deployed / 15.25% cash — inside 75-85% band (L-024 ✓) but near top. Sector: Energy 29.50% (CVX, HAL), Industrials/A&D 26.15% (LMT, RTX), Materials 20.48% (ECL), Health Care 8.61% (DGX) — Energy/A&D >25% via appreciation only, no adds. CVX ~22.3% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~4.2%, DGX ~9.5%, ECL ~5.8%, HAL ~9.7%, LMT ~5.0%, RTX ~9.8%. 6 GTC stops resting, no fills. No midday entry in TRADE-LOG for today (not on main at EOD). ECL Q3 tomorrow (Oct 27) BMO.
+
+### Oct 27 — Market-Open (Day 81, Tuesday)
+
+**Operational Rule check:** Oct 26 has Market-Open + EOD but **no Midday entry** — retroactive gap note: Oct 26 midday run missing (not on main). Oct 27 pre-market research entry also missing (no commit on main) — pre-market STEPS 1-3 run inline (abbreviated: book full).
+
+**Account (13:33 UTC):** Equity $98,396.20 | Cash $15,059.11 (15.30%) | 6 open positions (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — book full. `balance_asof` 2026-10-26. No day trades. Week 17: 0/3 used. No-trade streak 1.
+
+**Inline research:** SPX futs +0.2-0.3%; FOMC day 1 (decision Wed); BA/KO/UPS/RCL BMO. **ECL Q3 (today, BMO):** rev $4.695B +12.7% (beat $4.67B), adj EPS $2.18 in line, organic +7%, FY26 adj EPS guide $8.10-8.20; CoolIT amortization headwind to Q4 — mixed/in-line, thesis intact. **HCA Q3 (today):** adj EPS $7.22, rev $19.849B (single-source, consensus unverified); quote bid/ask $476.74/$509.25 vs Ref $467.02 — already has open scoreboard row (Oct 23), no new row.
+
+**Lessons compliance:** L-031 no GTC expiry within 5 sessions (earliest Jan 15 2027) ✓; L-035 no adds ✓; L-040 6/6 — HCA not gate-cleared (single source, consensus unverified), open row exists → no slot-blocked row; no rotation ✓; L-036 no exits ✓.
+
+**Held position check (13:33 UTC):** CVX $231.29 +19.31%, DGX $242.53 -0.14%, ECL $288.16 +2.21%, HAL $35.29 +5.69%, LMT $630.00 +23.44% (5% trail already), RTX $197.18 +1.99% — none at -7% cut; no tighten triggers (CVX/LMT already 5%).
+
+**Gate check:** No buys planned (6/6 positions). Gate N/A. No scoreboard rows.
+
+**Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e $272.08; HAL 25307bc7 $32.12667; RTX 313ded6c $178.119.
+
+**Post-open:** ~84.7% deployed (inside 75-85%). Week 17: 0/3 used. No-trade streak 2.
