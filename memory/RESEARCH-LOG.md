@@ -4478,3 +4478,65 @@ TMO **-2.36%**, NOC **+8.05%**, XOM **+2.35%**, HCA **+0.49%** (Oct 23 closes vi
 
 ### Decision
 **HOLD.** No new entries (6/6). Mechanical only: LMT 5% trail tighten at open if ≥+20% holds. ECL/HCA Q3 tomorrow. No ClickUp alert (nothing urgent).
+
+## 2026-10-27 — Pre-market Research
+
+**Late run:** routine fired 13:38 UTC (scheduled 13:05), after today's market-open entry (13:33 UTC, inline research). This entry is the record of record; no orders placed here.
+
+### Account
+- Equity: $98,575.62 | Cash: $15,059.11 (15.28%) | Buying power: $294,082.67 (margin, effective) | `balance_asof` 2026-10-26.
+- Position market value: $83,516.51 (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — **84.72% deployed, inside 75-85% (near top)**. 6 GTC trailing stops, status new: CVX 491ac150 (5%) $222.376/HWM $234.08; DGX 30c44a67 (10%) $219.897/HWM $244.33; ECL 922d840e ($20.50) $272.08/HWM $292.58; HAL 25307bc7 (10%) $32.12667/HWM $35.6963; LMT e4e5aedf (5%) $604.732/HWM $636.56; RTX 313ded6c (10%) $178.371/HWM $198.19. Exp Jan 15-22 2027.
+- Day P&L (13:39 UTC marks): -$134.75 (-0.14%) vs last_equity $98,710.37.
+- Daytrade count: not returned; no day trades. Day 81, Tuesday, Week 17: **0/3 used**. **6/6 positions — book full.** No-trade streak 2.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (500 obs, 93 days in regime). Advisory only.
+- Held (13:39 UTC): CVX $230.92 +19.12% (5% trail), DGX $242.43 -0.18%, ECL $289.41 +2.65% (Q3 out), HAL $35.42 +6.09%, LMT $632.81 +23.99% (5% trail), RTX $197.93 +2.37%. None at -7%.
+
+### Market Context
+- Perplexity: 15 queries, all exit 0 (sequential). No exit-3 fallback.
+- WTI/Brent: **WTI $100.87, Brent $114.52** (Perplexity, "Oct 27"). Not a repeat (Oct 26 WTI $100.90 / Brent $109.79 — WTI near-match, flagged). Spread $13.65 (~13.5% >10%) → USO cross-check: `bars` Oct 27 $165.17 vs Oct 26 $166.26 = **-0.66%** → operative read: oil flat/slightly soft; Brent $114.52 not trusted.
+- S&P 500 futures: **+0.29%** (7,736.50, 7:55 a.m. ET today). Cross-check SPY `bars` Oct 27 $768.12 vs Oct 26 $765.225 = **+0.38%** ✓ → mild risk-on.
+- VIX: **17.84** (-3.0%); "11:21 a.m. ET" timestamp is after now → suspect, directional only. Not a repeat (Oct 26 19.73).
+- Today: no CPI/PPI/NFP; **FOMC day 1, decision Wed Oct 28 2:00 p.m. ET**. 8:30 durable goods (Sep adv), 10:00 consumer confidence, new-home sales, Richmond Fed. NFP Nov 6, CPI Nov 10, PPI Nov 13. MSFT/GOOGL Wed, AMZN Thu, CVX/XOM Fri BMO.
+- Earnings BMO: **ECL (held)**, KO, BA, UPS, RCL, PCAR, FCX, SPGI, ITW, XYL, GLW, AMT, CLS (+12% pre, beat/raise). AMC: V, STX. Nvidia $3B into Meta equity offering; AI-trade bid.
+- Sector momentum: Perplexity returned Sep 30 State Street scores — **stale**. Cross-check via `bars` (5-sess Oct 19→26): XLE +2.71%, XLV +2.07%, XLB +0.92%, XLI +0.15%, SPY -0.18% → Energy/Health Care lead.
+- Held tickers:
+  - **CVX**: Q3 Fri Oct 30 BMO (cons ~$4.88 / $60.55B); near 52w high → sell-the-news risk; GoM ~$1B sale review, Vaca Muerta $13.8B expansion proposal; BofA $252 (dateless). Thesis intact.
+  - **DGX**: no same-day catalyst; Redburn PT $251→$279 (dateless); overhangs: 2027 CMS lab-fee cut (~$90-100M op inc), Quanum cyber incident. Thesis intact.
+  - **ECL**: **Q3 out (today BMO)** — rev $4.695B +12.7% (beat $4.67B in some surveys, ~$10M light in others), adj EPS $2.18 in line, organic +7% (vol +2%, price +5%), FY26 adj EPS $8.10-8.20 **maintained**, Q4 $2.13-2.23; CoolIT amortization ~10% EPS-growth drag. Mixed/in-line; stock $289.41 (+0.16% vs Oct 26 $288.94). Thesis intact.
+  - **HAL**: Perplexity returned **wrong ticker** (Hindustan Aeronautics, India) — excluded. No same-day Halliburton catalyst found; SLB read-through digesting. Thesis intact.
+  - **LMT**: MS upgrade OW, PT $690→$835 (repeat of Oct 26 item, not fresh); record $292B backlog; F-35 850-aircraft framework. Thesis strengthened.
+  - **RTX**: Q3 beat/raise digesting (adj EPS $2.26, FY26 $7.65-7.75); SM-6/AMRAAM/SM-3 awards (undated). Thesis intact.
+- Watchlist:
+  - **XOM**: [no-cat]; Q3 Oct 30 BMO (cons ~$3.98; ~$2.5B derivative-timing loss risk; Joliet outage). Theme-blocked by CVX (L-035). Carry to print.
+  - **HCA**: **Q3 out today BMO** — adj EPS $7.22 vs $6.66, rev $19.85B (+3.6%) vs $19.33B; FY26 "upper half" of $28.70-30.50 (not a raise); adj EBITDA +1.2%; ~$400M uninsured/ACA headwind. Single-source (Perplexity); print confirmed via `bars` post-release: Oct 27 $470.65 vs Oct 26 $464.695 = **+1.28%** (<15% chase). Gate-clearing on catalyst, **slot-blocked (6/6)**. Hospitals theme 0% held; HC post-fill would be ~18% (<40%).
+
+### Stall-Breaker
+Stall-breaker: not armed (streak 2 < 3). No refresh; dropped none, added none (book full).
+
+### Lessons Check
+- L-031 (GTC expiries) — all 6 stops exp Jan 15-22 2027; none within 5 sessions. Complied.
+- L-035 (theme ≤25%) — no new entry/add. A&D (LMT+RTX) 26.13%, Energy (CVX+HAL) 29.44% — appreciation only, no adds. HCA hospitals theme 0%. Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-038 (shadow spec) — 5-sess Oct 19→26 (bars): XOM [no-cat] +3.55% vs XLE +2.71% = +0.8pp → no trigger. Top-2 sectors (Energy, HC): HCA +2.17% vs XLV +2.07% = +0.1pp → no trigger. 0 triggers. No live entries. Complied.
+- L-039 (skip-time price) — no chase/fade skips since last log. N/A. Complied.
+- L-040 (slot-blocked) — HCA gate-clearing on catalyst but 6/6 → slot-blocked HOLD; existing open row 2026-10-23 (Ref $467.02) — no duplicate per one-row-per-streak (consistent with today's market-open). No rotation exit (no held name at a sell-side rule). Complied.
+- Operational: `git log` — Oct 26 pre-market (f5375a9), market-open (604a8e0), EOD (9f5eace) present; Oct 26 midday missing (already gap-noted in TRADE-LOG). Oct 27 pre-market ran late (this entry). No alert needed.
+
+### Yesterday's Skip Check
+XOM **+3.09%**, HCA **-0.50%** (Oct 26 closes via `bars` vs Refs $179.01 / $467.02; live quotes one-sided). XOM skip looks wrong on raw % (theme-blocked by CVX — process right); HCA skip looks right so far (today +1.28% post-print, slot-blocked).
+
+### Trade Ideas
+- Week 17: 0/3 used, but **6/6 positions — no new entries possible**. 84.72% deployed — top of band. New buys only via a sell-side exit.
+1. **HCA — slot-blocked.** Q3 beat (today). If a slot opens this week via a stop/cut: entry ≤ +5% vs Oct 26 close (≤$487.93), size ≤10% equity (~$9.8k, ~20 sh), 10% GTC trail, -7% cut, target +20% (2:1). Needs second-source confirm at that time.
+2. **ECL — post-print hold.** In-line Q3, guide maintained; stop $272.08 (~6.0% cushion), -7% line $262.20. Midday thesis check.
+3. **CVX/XOM Q3 Fri Oct 30** — CVX 5% trail (~3.7% cushion) protects gains; no pre-print action.
+
+### Risk Factors
+- FOMC decision Wed 2:00 p.m. ET + MSFT/GOOGL Wed, AMZN Thu → event-dense week.
+- Oil: US-Iran de-escalation hopes; Brent print unreliable (USO -0.66%). Energy 29.4% exposed; CVX Q3 Fri sell-the-news risk near 52w high.
+- Concentration: CVX 22.3%, ECL 20.6% of equity via appreciation; A&D 26.1% (no adds).
+- DGX: CMS lab-fee cut + cyber overhang.
+- Full book: Week 17 capacity only via exits.
+
+### Decision
+**HOLD.** No new entries (6/6). HCA slot-blocked (existing row). No mechanical changes (CVX/LMT already 5%). No ClickUp alert (nothing urgent).
