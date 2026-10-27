@@ -2562,3 +2562,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e $272.08; HAL 25307bc7 $32.12667; RTX 313ded6c $178.119.
 
 **Post-open:** ~84.7% deployed (inside 75-85%). Week 17: 0/3 used. No-trade streak 2.
+
+### Oct 27 — Midday Scan (Day 81, Tuesday)
+
+**Account (16:20 UTC):** Equity $98,196.03 | Cash $15,059.11 (15.34%) | ~84.7% deployed — inside 75-85% band. 6 open positions — CVX 95 sh +17.52% ($227.83, intraday -1.80%); DGX 35 sh -1.31% ($239.68, intraday -1.35%); ECL 70 sh +3.82% ($292.70, intraday +1.32%); HAL 200 sh +6.00% ($35.39, intraday -0.14%); LMT 26 sh +23.10% ($628.285, intraday -1.09%); RTX 47 sh +1.35% ($195.945, intraday -0.78%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX -1.31%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX (+17.52%, already 5% — never loosen) and LMT (+23.10%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** CVX -1.8% — oil softening on US-Iran de-escalation hopes + profit-taking into Fri Q3 (Perplexity); USO $163.77 vs Oct 26 $166.26 = -1.5% (WTI/Brent prints dispersed, USO operative); no adverse CVX news — intact; stop $222.376 ~2.4% below (5% trail working as designed). DGX -1.3%, ~8.3% above stop, no news — intact. ECL +1.3% post-Q3 (in-line, guide held), new HWM $294 → stop $273.50 — strengthened. HAL flat, intact. LMT -1.1%, ~3.7% above stop $604.732, intact. RTX -0.8%, intact. No cuts.
+
+**STEP 6 (optional research):** CVX/oil drop checked (see RESEARCH-LOG addendum).
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e $273.50/HWM $294; HAL 25307bc7 $32.12667; RTX 313ded6c $178.371.
+
+**STEP 8 (notify):** No action taken — no ClickUp.
