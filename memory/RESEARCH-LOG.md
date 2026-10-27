@@ -4540,3 +4540,8 @@ XOM **+3.09%**, HCA **-0.50%** (Oct 26 closes via `bars` vs Refs $179.01 / $467.
 
 ### Decision
 **HOLD.** No new entries (6/6). HCA slot-blocked (existing row). No mechanical changes (CVX/LMT already 5%). No ClickUp alert (nothing urgent).
+
+### 2026-10-27 — Midday Addendum (16:20 UTC)
+- **CVX -1.8% / Energy soft:** Perplexity — oil risk premium fading on US-Iran de-escalation, Saudi export recovery, possible Hormuz reopening; profit-taking ahead of CVX Q3 Fri Oct 30 BMO (cons ~$4.80-4.90). No adverse CVX-specific news. WTI ($91-95) / Brent ($100-115) prints dispersed >10% → USO quote $163.77 vs Oct 26 bars close $166.26 = **-1.5%**; XLE $68.31. Operative read: oil modestly lower, not a break. CVX thesis intact; 5% trail ($222.376) ~2.4% below price — protects gains if selloff extends.
+- **ECL** +1.3% post-Q3, new HWM $294 — print digested positively.
+- No action.
