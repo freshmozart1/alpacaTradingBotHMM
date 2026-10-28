@@ -2608,3 +2608,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e ($20.50) $274.235; HAL 25307bc7 $32.12667; RTX 313ded6c $178.371.
 
 **Post-open:** Week 17: 0/3 used. No-trade streak 3. FOMC 2:00 p.m. ET.
+
+### Oct 28 — Midday Scan (Day 82, Wednesday)
+
+**Account (16:10 UTC):** Equity $98,879.80 | Cash $15,059.11 (15.23%) | ~84.77% deployed — inside 75-85% band. 6 open positions — CVX 95 sh +19.32% ($231.32, intraday +1.35%); DGX 35 sh +1.64% ($246.84, intraday +1.77%); ECL 70 sh +3.48% ($291.74, intraday +0.16%); HAL 200 sh +7.55% ($35.91, intraday +0.81%); LMT 26 sh +23.24% ($628.96, intraday +0.96%); RTX 47 sh +1.77% ($196.755, intraday +1.11%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +1.64%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX (+19.32%, already 5% — never loosen) and LMT (+23.24%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** All 6 green intraday, no sharp moves (max DGX +1.77% — Labcorp read-through day, no adverse print evident). CVX +1.35% with oil bounce into Fri Q3; stop $222.376 ~3.9% below. LMT/RTX recovering from BA-miss spillover; LMT stop $604.732 ~3.9% below. Trails ratcheted: DGX new HWM $249.73 → stop $224.757; HAL new HWM $36.025 → stop $32.4225. No thesis breaks. No cuts. Pre-FOMC (2:00 p.m. ET).
+
+**STEP 6 (optional research):** Skipped — nothing moving sharply.
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $224.757/HWM $249.73; ECL 922d840e ($20.50) $274.235; HAL 25307bc7 $32.4225/HWM $36.025; RTX 313ded6c $178.371.
+
+**STEP 8 (notify):** No action taken — no ClickUp.
