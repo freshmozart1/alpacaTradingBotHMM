@@ -2592,3 +2592,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $194.49 | -1.51% | +$54.05 (+0.59%) | $178.371 (10% trail, GTC 313ded6c, HWM $198.19) |
 
 **Notes:** 2nd consecutive no-trade day. Week 17: 0/3 new trades used. Day P&L vs Oct 26 logged EOD $98,742.16 (Alpaca last_equity $98,710.37; $31.79 drift from intraday EOD capture — logged value used). Down day snapping 3-day win streak: A&D and Energy gave back (LMT -1.92%, RTX -1.51%, CVX -1.48% on oil softening/US-Iran de-escalation hopes); ECL +0.82% post in-line Q3 (new HWM $294.735, stop ratcheted to $274.235), HAL +0.51% (new HWM). Phase P&L -$1,885.05 (-1.89%) vs $100,000 start — 28th straight negative reading. 6 open positions (max), 84.65% deployed / 15.35% cash — inside 75-85% band (L-024 ✓). Sector: Energy 29.39% (CVX, HAL), Industrials/A&D 25.83% (LMT, RTX), Materials 20.78% (ECL), Health Care 8.65% (DGX) — over-25% via appreciation only, no adds. CVX ~22.1% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~2.7%, DGX ~9.3%, ECL ~5.8%, HAL ~9.8%, LMT ~2.9%, RTX ~8.3% — CVX/LMT 5% trails now <3% from price (trail working as designed; stop fill risk on further weakness, CVX Q3 Fri). 6 GTC stops resting, no fills. FOMC decision Wed.
+
+### Oct 28 — Market-Open (Day 82, Wednesday)
+
+**Operational Rule check:** Oct 27 has Market-Open + Midday + EOD entries ✓. Oct 28 pre-market research present (e7004ca).
+
+**Account (13:28 UTC, pre-open marks):** Equity $98,106.65 | Cash $15,059.11 (15.35%) | ~84.65% deployed (inside 75-85%). 6 open positions (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — book full. `balance_asof` 2026-10-27. Daytrade count not returned; no day trades. Week 17: 0/3 used.
+
+**Lessons compliance:** L-031 no GTC expiry within 5 sessions (Jan 2027) ✓; L-035 no adds ✓; L-036 no exits ✓; L-039 no chase/fade skips ✓; L-040 6/6 — no gate-clearing candidate (HCA dropped, failed follow-through) → no slot-blocked row; no rotation ✓.
+
+**Held position check (13:28 UTC):** CVX $228.90 +18.07% (5% trail), DGX $242.56 -0.13%, ECL $291.27 +3.31%, HAL $35.90 +7.52%, LMT $620.43 +21.57% (5% trail), RTX $193.88 +0.28% — none at -7% cut; no tighten triggers (CVX/LMT already 5%).
+
+**Gate check:** No buys planned (pre-market HOLD, 6/6 positions). Gate N/A. No scoreboard rows.
+
+**Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $604.732; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $219.897; ECL 922d840e ($20.50) $274.235; HAL 25307bc7 $32.12667; RTX 313ded6c $178.371.
+
+**Post-open:** Week 17: 0/3 used. No-trade streak 3. FOMC 2:00 p.m. ET.
