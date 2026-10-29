@@ -2654,3 +2654,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $613.3105; CVX 491ac150 (5%) $222.376; DGX 30c44a67 $224.757; ECL 922d840e ($20.50) $277.10; HAL 25307bc7 $32.571; RTX 313ded6c $180.15255.
 
 **Post-open:** Week 17: 0/3 used. No-trade streak 4. GDP/PCE printed 8:30 a.m. ET; CVX/XOM Q3 Fri BMO.
+
+### Oct 29 — Midday Scan (Day 83, Thursday)
+
+**Account (16:14 UTC):** Equity $99,883.37 | Cash $15,059.11 (15.08%) | ~84.92% deployed — inside 75-85% band. 6 open positions — CVX 95 sh +18.71% ($230.125, intraday +0.40%); DGX 35 sh +2.86% ($249.815, intraday +1.71%); ECL 70 sh +5.71% ($298.035, intraday +1.92%); HAL 200 sh +7.27% ($35.815, intraday +0.15%); LMT 26 sh +26.47% ($645.485, intraday +2.50%); RTX 47 sh +3.58% ($200.26, intraday +2.26%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +2.86%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX (+18.71%, already 5% — never loosen) and LMT (+26.47%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** All 6 green intraday despite GOOGL-led risk-off open; max move LMT +2.50% (new HWM $649 → stop $616.55, ~4.5% below). RTX +2.26% (HWM $201.17 → stop $181.053). ECL +1.92% on LIN read-through (HWM $298.53 → stop $278.03). DGX new HWM $251.33 → stop $226.197. HAL HWM $36.19 → stop $32.571. CVX flat into Fri Q3 BMO; stop $222.376 ~3.4% below. No thesis breaks. No cuts.
+
+**STEP 6 (optional research):** Skipped — nothing moving sharply without cause.
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $616.55/HWM $649; CVX 491ac150 (5%) $222.376/HWM $234.08; DGX 30c44a67 $226.197/HWM $251.33; ECL 922d840e ($20.50) $278.03/HWM $298.53; HAL 25307bc7 $32.571/HWM $36.19; RTX 313ded6c $181.053/HWM $201.17.
+
+**STEP 8 (notify):** No action taken — no ClickUp.
