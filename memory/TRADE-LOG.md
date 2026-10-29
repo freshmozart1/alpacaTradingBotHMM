@@ -2670,3 +2670,17 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $616.55/HWM $649; CVX 491ac150 (5%) $222.376/HWM $234.08; DGX 30c44a67 $226.197/HWM $251.33; ECL 922d840e ($20.50) $278.03/HWM $298.53; HAL 25307bc7 $32.571/HWM $36.19; RTX 313ded6c $181.053/HWM $201.17.
 
 **STEP 8 (notify):** No action taken — no ClickUp.
+
+### Oct 29 — EOD Snapshot (Day 83, Thursday)
+**Portfolio:** $100,498.03 | **Cash:** $15,059.11 (14.98%) | **Day P&L:** +$1,814.04 (+1.84%) | **Phase P&L:** +$498.03 (+0.50%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CVX | 95 | $193.860947 | $232.90 | +1.61% | +$3,708.71 (+20.14%) | $222.376 (5% trail, GTC 491ac150, HWM $234.08) |
+| DGX | 35 | $242.87 | $252.92 | +2.97% | +$351.75 (+4.14%) | $227.808 (10% trail, GTC 30c44a67, HWM $253.12) |
+| ECL | 70 | $281.93 | $300.86 | +2.89% | +$1,325.10 (+6.71%) | $282.09 ($20.50 trail, GTC 922d840e, HWM $302.59) |
+| HAL | 200 | $33.3878 | $35.90 | +0.39% | +$502.44 (+7.52%) | $32.571 (10% trail, GTC 25307bc7, HWM $36.19) |
+| LMT | 26 | $510.37 | $645.01 | +2.42% | +$3,500.64 (+26.38%) | $616.55 (5% trail, GTC e4e5aedf, HWM $649) |
+| RTX | 47 | $193.34 | $201.08 | +2.68% | +$363.78 (+4.00%) | $181.746 (10% trail, GTC 313ded6c, HWM $201.94) |
+
+**Notes:** 4th consecutive no-trade day. Week 17: 0/3 new trades used. Day P&L vs Oct 28 logged EOD $98,683.99 (Alpaca last_equity $98,628.49; $55.50 drift from intraday EOD capture — logged value used). Best day in recent run, all 6 green despite GOOGL-led risk-off open: DGX +2.97% (new HWM $253.12 → stop $227.808), ECL +2.89% (new HWM $302.59 → stop $282.09), RTX +2.68% (new HWM $201.94 → stop $181.746), LMT +2.42% (HWM $649 → stop $616.55), CVX +1.61% into Fri Q3 BMO, HAL +0.39%. Phase P&L +$498.03 (+0.50%) vs $100,000 start — first positive reading, ending 29-day negative streak. 6 open positions (max), 85.02% deployed / 14.98% cash — at upper edge of 75-85% band via appreciation only (L-024: no adds; drift, not a breach requiring action). Sector: Energy 29.16% (CVX, HAL), Industrials/A&D 26.09% (LMT, RTX), Materials 20.96% (ECL), Health Care 8.81% (DGX) — over-25% via appreciation only, no adds. CVX ~22.0% of equity via appreciation (no add); CVX crossed +20% — already on 5% trail, no change. No position at -7% cut. Stop cushions: CVX ~4.5%, DGX ~9.9%, ECL ~6.2%, HAL ~9.3%, LMT ~4.4%, RTX ~9.6%. 6 GTC stops resting, no fills. CVX/XOM Q3 Fri BMO.
