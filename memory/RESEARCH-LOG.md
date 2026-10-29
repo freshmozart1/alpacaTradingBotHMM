@@ -4606,3 +4606,67 @@ XOM **+0.49%**, HCA **-3.66%** (Oct 27 closes via `bars` vs Refs $179.01 / $467.
 
 ### Decision
 **HOLD.** No new entries (6/6). HCA dropped (failed follow-through). No mechanical changes (CVX/LMT already 5%). No ClickUp alert (nothing urgent).
+
+## 2026-10-29 — Pre-market Research
+
+### Account
+- Equity: $99,680.04 | Cash: $15,059.11 (15.11%) | Buying power: $297,175.04 (margin, effective) | `balance_asof` 2026-10-28.
+- Position market value: $84,620.93 (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — **84.89% deployed, inside 75-85% (top edge)**. 6 GTC trailing stops, status new: CVX 491ac150 (5%) $222.376/HWM $234.08; DGX 30c44a67 (10%) $224.757/HWM $249.73; ECL 922d840e ($20.50) $276.51/HWM $297.01; HAL 25307bc7 (10%) $32.4225/HWM $36.025; LMT e4e5aedf (5%) $613.3105/HWM $645.59; RTX 313ded6c (10%) $180.00/HWM $200.00. Exp Jan 15-22 2027.
+- Day P&L (pre-market marks): +$1,051.55 (+1.07%) vs last_equity $98,628.49.
+- Daytrade count: not returned; no day trades. Day 83, Thursday, Week 17: **0/3 used**. **6/6 positions — book full.** No-trade streak 3.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 98%** (501 obs, 95 days in regime). Advisory only.
+- Held (pre-market marks): CVX $231.76 +19.55% (5% trail), DGX $246.60 +1.54%, ECL $296.18 +5.05%, HAL $35.90 +7.52%, LMT $642.11 +25.81% (5% trail), RTX $199.61 +3.24%. None at -7%. No tighten triggers (CVX/LMT already 5%; others <+15%).
+
+### Market Context
+- Perplexity: 21 queries, sequential, all exit 0. No exit-3 → no fallback; WebSearch used only for second-source checks (LLY, MRK).
+- WTI/Brent: **WTI $101.71 (-1.04%), Brent $114.58 (-0.64%)** (Perplexity, Oct 29 ~02:05 BST). Not a repeat (Oct 28 $100.16 / $113.95). Spread ~12.6% >10% → USO cross-check: pre-mkt bar $163.96 vs Oct 28 `bars` close $166.69 = **-1.64%**. Operative read: oil giving back Wed's bounce; Brent level not trusted.
+- S&P 500 futures: **-0.39%** (7,752.75, 7:55 a.m. ET today). Cross-check SPY pre-mkt bar $768.08 vs Oct 28 `bars` close $772.28 = **-0.54%** ✓ → mild risk-off (GOOGL miss).
+- VIX: **17.24** (+1.95%, prev close 16.91; 8:14 a.m. ET today). Not a repeat (Oct 28 17.47). Calm.
+- Today 8:30 a.m. ET: **Q3 GDP (advance), Sep PCE/personal income** (headline PCE cons ~3.6% y/y, core +0.3% m/m), jobless claims (cons 198k). FOMC (Wed) held 3.75-4.00%, **2 dissents for a hike** → hawkish tilt. NFP Nov 6, CPI Nov 10, PPI Nov 13.
+- Earnings/movers (Perplexity): GOOGL ~-10% pre-mkt (EPS/ads miss), MSFT +2.6-2.8% (Azure +48%), FTNT -25%, NOW -18% (software-disruption fears), VRT +16.5%, CAT -9.7%. BMO: LIN (ECL read-through), CAT, FTI, CNX, DHI, **LLY, MRK**. AMC: **AMZN, GILD**. **CVX/XOM Fri Oct 30 BMO**.
+- Sector momentum: Perplexity YTD table (Oct 26) omits Energy and shows IT +23.09% vs +32.1% yesterday → **inconsistent, discounted**; its composite momentum still names Energy, IT, HC. Tech = sector-exited (Oct 15) → eligible top-2 remain **Energy, Health Care**. `bars` 5-sess Oct 21→28: XLE +0.45%, XLV +0.48%; XLV +2.5% pre-mkt ($184.22 vs $179.77) on LLY/MRK prints.
+- Held tickers:
+  - **CVX**: Q3 Fri Oct 30 BMO (cons ~$4.8-4.9); TTE farm-in to 26 CVX-operated GoM blocks (undated); Shell Q3 read-through positive; oil softer pre-mkt. Sell-the-news risk near highs. No fresh dated item. Thesis intact; 5% trail ~4.0% below mark.
+  - **DGX**: Perplexity "Q3 beat / guide raised" = Oct 22 print (stale). Director sale 1,203 sh Oct 26 (minor). Overhangs: CMS 2027 lab-fee cut (~16% avg), cyber incident. Thesis intact.
+  - **ECL**: BofA PT $355 (from $342), UBS $357 (from $344) — post-Q3, dateless → support only. Nov 17 event (CoolIT/high-tech). LIN prints today (read-through). Thesis intact.
+  - **HAL**: first-query returned Hindustan Aeronautics (wrong company) → re-queried "Halliburton NYSE HAL": Optime remote-control system first Brazil deployment w/ Petrobras (minor); Q3 data = Oct 20 (stale); pre-mkt ~$36.12 (+1.0%, Perplexity) vs Alpaca bar $35.92 (+0.4%). Thesis intact.
+  - **LMT**: Q3 / F-35 850-aircraft framework / ARRW $694M / MS OW $835 — all repeats (stale). Closed $629.75 Wed (+1.09%); pre-mkt $642.11. New HWM $645.59 → stop $613.31. Thesis intact.
+  - **RTX**: Q3 beat/raise digesting; Air Europa 787 nacelle MRO extension to 2037, $729M counter-drone + $215M Javelin awards (undated). Pre-mkt $199.61 (new HWM $200 → stop $180). CAT -9.7% is machinery, not A&D. Thesis intact.
+- Watchlist:
+  - **XOM**: [no-cat]; Q3 Fri Oct 30 BMO (cons ~$3.90; ~$2.5B negative timing effects), Rockhead-1 Guyana discovery / Venezuela cargo / Kashagan dismissal (undated). Theme-blocked by CVX (L-035). Kept (hard-dated print within 5 sessions).
+
+### Stall-Breaker
+**FIRED** (streak 3 ≥ 3; new cycle — trades placed Oct 20 reset the prior one). Dropped: none (XOM kept — Q3 Oct 30 hard-dated). Added: **LLY, MRK** (Health Care), **FTI** (Energy). Screens: "best energy stocks with news catalysts this week", "XLV largest holdings with earnings or upgrades this week". Prices cross-checked via `alpaca.sh bars`/`quote` (Oct 28 closes; pre-mkt quotes wide/one-sided → pre-mkt bars used).
+- **LLY** (HC, pharma/GLP-1): **Q3 today BMO** — rev $24.4B (+39%) vs ~$22.6B cons (~$0.9B one-time benefits incl. $410M Jardiance milestones), adj EPS $7.48 vs ~$6.26; FY26 rev guide raised to $91-92B (from $85-87B); adj EPS guide cut to $35-36 on acquired-R&D charge. Two-source: Perplexity + SEC 8-K Q3 release (WebSearch), dated today ✓.
+  - Chase: catalyst Oct 29, base Oct 28 close $1,290.67, pre-mkt bar $1,385.29 = **+7.33%** (<15% ✓). Follow-through (b): N/A (catalyst dated today).
+  - Gate: **gate-clearing on catalyst but 6/6 → slot-blocked HOLD (L-040)**. Post-fill HC count 2 (DGX, LLY) ✓; HC exposure ~8.7% + ~9.7% = ~18.4% (<40%) ✓; theme pharma ≠ clinical labs (≤25%) ✓.
+- **MRK** (HC, pharma): Q3 today BMO — rev $18.09B vs $17.3B, adj EPS $2.49 vs ~$2.09, FY26 EPS guide raised $2.77-2.82 (per Perplexity — figures look off vs ~$9 historical run-rate; unverified). WebSearch found no Q3 2026 coverage → **single-source, not gate-clearing**. Pre-mkt bar $147.83 vs Oct 28 $141.09 = +4.78%. Watch only.
+- **FTI** (Energy, subsea): Q3 today BMO — adj EPS $1.05 vs $0.88, rev $2.896B vs $2.79B, subsea guide raised $9.6-9.8B (Perplexity, single-source). Perplexity "+1.1% pre-mkt" conflicts with Alpaca pre-mkt bar $69.11 vs $71.46 = **-3.29%** → reaction unconfirmed. **Concentration-blocked anyway** (would be 3rd Energy position with CVX+HAL, L-030; Energy ~29.3%). Watch only.
+
+### Lessons Check
+- L-031 (GTC expiries) — all 6 stops exp Jan 15-22 2027; none within 5 sessions. Complied.
+- L-035 (theme ≤25%) — no new entry/add. A&D (LMT+RTX) 26.16%, Energy (CVX+HAL) 29.29% — appreciation only, no adds. LLY slot-blocked idea theme-checked (pharma ~9.7%) ✓. Complied.
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-038 (shadow spec) — 5-sess Oct 21→28 (bars): XOM [no-cat] +2.25% vs XLE +0.45% = +1.8pp → no trigger. Top-2 sectors: Energy (XOM above); HC leader LLY +1.56% vs XLV +0.48% = +1.1pp → no trigger. 0 triggers. No live entries. Complied.
+- L-039 (skip-time price) — no chase/fade skips today (LLY +7.33% < 15%). N/A. Complied.
+- L-040 (slot-blocked) — LLY gate-clearing on catalyst, 6/6 → **slot-blocked HOLD row added**. No rotation exit (no held name at a sell-side rule). Complied.
+- Operational: `git log` — Oct 28 pre-market (e7004ca), market-open (86d3cfc), midday (f5c9ad1), EOD (6e317f6) all present. No alert needed.
+
+### Yesterday's Skip Check
+XOM **+1.72%** (Oct 28 close $182.08 via `bars` vs Ref $179.01; pre-mkt bar $183.08 = +2.27%). XOM skip neutral so far (theme-blocked by CVX — process right). HCA dropped Oct 28 (not carried).
+
+### Trade Ideas
+- Week 17: 0/3 used, but **6/6 positions — no new entries possible**. 84.89% deployed (≥75% → no forced idea required). New buys only via a sell-side exit.
+1. **LLY — slot-blocked.** Q3 beat + FY26 rev guide raise (today, two-source). If a slot opens this week via stop/cut: entry ≤ $1,480 (<+15% vs Oct 28 base $1,290.67), size ≤10% equity (~$9.9k, 7 sh), 10% GTC trail, -7% cut, target +20% (2:1). Re-check chase bar at that time.
+2. **CVX — Q3 Fri Oct 30 BMO, hold.** 5% trail $222.376 (~4.0% cushion) locks ~+14.7%. Oil -1.6% pre-mkt (USO). No pre-print action.
+3. **LMT — hold.** +25.8%, 5% trail $613.31 (~4.5% cushion) locks ~+20.2%.
+
+### Risk Factors
+- 8:30 a.m. GDP + PCE after hawkish FOMC (2 hike dissents) → rate-risk; AMZN AMC tonight; GOOGL -10% dragging futures.
+- Oil softening (USO -1.6% pre-mkt) into CVX/XOM Q3 Fri; Energy 29.3% (CVX 22.1% of equity).
+- A&D 26.2% (LMT at +25.8% — profit-taking risk; gains locked by 5% trail).
+- DGX: CMS lab-fee cut + cyber overhang.
+- Full book: Week 17 capacity only via exits.
+
+### Decision
+**HOLD.** No new entries (6/6). LLY logged slot-blocked. Stall-breaker refresh done (LLY, MRK, FTI added). No mechanical changes. No ClickUp alert (nothing urgent).
