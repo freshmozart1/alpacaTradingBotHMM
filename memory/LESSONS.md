@@ -7,6 +7,29 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
+### L-042 — Alert every missing or late routine run the same session
+- Date: 2026-10-30 | Source: WEEKLY-REVIEW 2026-10-30 (Oct 26 midday
+  missing — Oct 27 pre-market logged "no alert needed"; Oct 27
+  pre-market late; Oct 30 pre-market committed after market-open)
+- Lesson: The Operational Rule alert was skipped once and late runs were
+  absorbed inline without escalation.
+- Directive: Whenever any routine finds a prior/same-day routine commit
+  missing or out of order, send one ClickUp alert naming it that session
+  and log "alerted" in the entry; review counts incidents vs alerts.
+- Status: active | Review-by: 2026-11-13
+
+### L-041 — Keep a fully-specified next-slot candidate while 6/6
+- Date: 2026-10-30 | Source: WEEKLY-REVIEW 2026-10-30 (zero-trade week,
+  book full all 5 sessions; LLY slot-blocked +9.79% Oct 28->30; LMT stop
+  cushion ~2.1%)
+- Lesson: A stop-out frees a slot with no pre-vetted refill; the
+  research burden lands on one rushed market-open.
+- Directive: At every pre-market while at 6 positions, name one
+  next-slot candidate with two-source dated catalyst, base/chase %,
+  sector + theme post-fill caps, entry, stop, size; if none qualifies,
+  log why. Process only — no rotation (L-040), gate still decides.
+- Status: active | Review-by: 2026-11-13
+
 ### L-040 — Log slot-blocked candidates while the book is full
 - Date: 2026-10-23 | Source: WEEKLY-REVIEW 2026-10-23 (6/6 positions,
   84.56% deployed after DGX Oct 23; no rotation rule exists)
@@ -49,30 +72,9 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 - Directive: For every exit, log fill vs. cut/stop level (% slippage)
   in TRADE-LOG; at each review report total slippage. Measurement only —
   no change to the -7% cut or trails.
-- Status: active | Review-by: 2026-10-30
-
-### L-035 — Cap same-theme (sub-industry) exposure at 25% of equity
-- Date: 2026-10-16 | Source: WEEKLY-REVIEW 2026-10-16 (AVGO+MRVL ~35%
-  of equity in AI semis passed L-032's 40% cap; both failed within 3
-  sessions, -$2,960.22 realized = Tech sector exit)
-- Lesson: Sector caps miss sub-industry correlation; one theme moved both
-  names through their stops together.
-- Directive: At every new-entry/add gate check, log combined exposure of
-  held names in the candidate's sub-industry/theme post-fill; if >25% of
-  equity, size down to fit or skip as a concentration skip.
-- Status: active | Review-by: 2026-10-30
-
-### L-031 — Renew expiring GTC trailing stops mechanically
-- Date: 2026-10-02 | Source: WEEKLY-REVIEW 2026-10-02 (ECL stop expires
-  Oct 26, CVX stops Oct 29 — tracked only as EOD heads-up lines)
-- Lesson: GTC orders expire; an expired trail leaves a position
-  unprotected silently.
-- Directive: At every EOD, list GTC stop expiries within 5 trading
-  sessions; renew at the next market-open (cancel + re-place at the
-  same or higher stop, never lower) and verify via `alpaca.sh orders`.
-- Status: active | Review-by: 2026-10-30 (extended 2026-10-16: directive
-  not yet triggered — first expiries ECL Oct 26 / CVX Oct 29 enter the
-  5-session window next week)
+- Status: active | Review-by: 2026-11-13 (extended 2026-10-30: zero
+  exits Oct 16-30, no slippage data; LMT 5% trail ~2.1% cushion — first
+  exit likely soon)
 
 Template:
 
@@ -83,6 +85,13 @@ Template:
 - Status: active | Review-by: YYYY-MM-DD
 
 ## Retired Lessons
+
+- L-035, "Cap same-theme (sub-industry) exposure at 25% of equity",
+  retired 2026-10-30, promoted to a permanent Buy-Side Gate rule after 2
+  straight weeks of compliance (Oct 16-30; RTX sized, NOC/XOM blocked).
+- L-031, "Renew expiring GTC trailing stops mechanically", retired
+  2026-10-30, promoted to a permanent Operational Rule (fired once: ECL
+  renewal Oct 20; all stops now exp Jan 2027).
 
 - L-032, "Cap combined single-sector exposure at 40% of equity",
   retired 2026-10-23, promoted to a permanent Buy-Side Gate rule after 2
@@ -278,19 +287,16 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-10-05 | MRVL | HOLD — stall-breaker refresh add (Technology), Investor Day Oct 6 hard-dated (two-source), no reaction yet | 272.33 | -2.38% | n/a — entered Oct 7 (cut -10.14%) |
-| 2026-10-05 | VLO | HOLD — stall-breaker refresh add (Energy), refining-margin upgrade coverage, no company-specific dated catalyst | 405.66 | +7.53% | missed [no-cat] |
-| 2026-10-05 | LMT | HOLD — stall-breaker refresh add (Industrials, 3rd sector), $94.2M Navy AEGIS award undated, Q3 Oct 22 | 506.25 | +1.16% | n/a — entered Oct 12 (open +7.97%) |
-| 2026-10-19 | CLF | HOLD pre-market — stall-breaker refresh add (Materials, 3rd leg), Q3 beat + Q4/2027 EBITDA guide today (two-source: PR + SEC 8-K), +13.5% premarket vs Oct 16 base; flagged for market-open hard-check | 12.145 | | |
-| 2026-10-19 | IRON | HOLD — stall-breaker refresh add (Health Care), Phase 3 APOLLO win today, +26-28% premarket vs Oct 16 base = chase risk (>=15%) | 56.94 | | |
-| 2026-10-19 | STLD | HOLD — stall-breaker refresh add (Materials), Q3 AMC Oct 19 hard-dated, no catalyst yet | 240.35 | | |
-| 2026-10-19 | TMO | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 21 hard-dated, no catalyst yet | 690.125 | | |
-| 2026-10-19 | XOM | HOLD — stall-breaker refresh add (Energy), refining-margin Q3 uplift 8-K undated, theme-blocked by CVX (L-035) [no-cat] | 179.01 | | |
-| 2026-10-20 | RTX | HOLD pre-market — stall-breaker refresh add (Industrials, 3rd sector), Q3 beat + FY26 raise today (two-source: Perplexity + SEC 8-K), +2.2% premarket vs Oct 19 base; flagged for market-open hard-check (47 sh, L-035 theme cap) | 192.085 | | |
-| 2026-10-20 | HAL | HOLD pre-market — stall-breaker refresh add (Energy), Q3 EPS/revenue beat + buyback today (two-source: Perplexity + SEC 8-K), mixed (EBITDA miss); flagged for market-open hard-check | 33.00 | | |
-| 2026-10-20 | NOC | HOLD — stall-breaker refresh add (Industrials), Q3 EPS beat + FY26 EPS raise today, single-source; blocked as 3rd Industrials / A&D theme with LMT+RTX (L-030/L-035) | 510.53 | | |
-| 2026-10-20 | DGX | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 22 hard-dated, no catalyst yet | 234.82 | | |
-| 2026-10-23 | HCA | HOLD — new watchlist add (Health Care), Q3 print date unconfirmed (Oct 23 vs Oct 27 BMO), no catalyst yet | 467.02 | | |
+| 2026-10-19 | CLF | HOLD pre-market — stall-breaker refresh add (Materials, 3rd leg), Q3 beat + Q4/2027 EBITDA guide today (two-source: PR + SEC 8-K), +13.5% premarket vs Oct 16 base; flagged for market-open hard-check | 12.145 | +10.09% (skip px ~$14.27: -6.31%) | missed by Ref / avoided-loss by skip px (L-039) |
+| 2026-10-19 | IRON | HOLD — stall-breaker refresh add (Health Care), Phase 3 APOLLO win today, +26-28% premarket vs Oct 16 base = chase risk (>=15%) | 56.94 | +36.61% (skip px $79.04: -1.59%) | missed by Ref / skip-right by skip px (L-039) |
+| 2026-10-19 | STLD | HOLD — stall-breaker refresh add (Materials), Q3 AMC Oct 19 hard-dated, no catalyst yet | 240.35 | -1.15% | skip-right |
+| 2026-10-19 | TMO | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 21 hard-dated, no catalyst yet | 690.125 | -0.77% | skip-right |
+| 2026-10-19 | XOM | HOLD — stall-breaker refresh add (Energy), refining-margin Q3 uplift 8-K undated, theme-blocked by CVX (L-035) [no-cat] | 179.01 | +3.09% | missed [no-cat] |
+| 2026-10-20 | RTX | HOLD pre-market — stall-breaker refresh add (Industrials, 3rd sector), Q3 beat + FY26 raise today (two-source: Perplexity + SEC 8-K), +2.2% premarket vs Oct 19 base; flagged for market-open hard-check (47 sh, L-035 theme cap) | 192.085 | +1.25% | n/a — entered Oct 20 |
+| 2026-10-20 | HAL | HOLD pre-market — stall-breaker refresh add (Energy), Q3 EPS/revenue beat + buyback today (two-source: Perplexity + SEC 8-K), mixed (EBITDA miss); flagged for market-open hard-check | 33.00 | +7.94% | n/a — entered Oct 20 |
+| 2026-10-20 | NOC | HOLD — stall-breaker refresh add (Industrials), Q3 EPS beat + FY26 EPS raise today, single-source; blocked as 3rd Industrials / A&D theme with LMT+RTX (L-030/L-035) | 510.53 | +7.95% | missed (concentration-blocked) |
+| 2026-10-20 | DGX | HOLD — stall-breaker refresh add (Health Care), Q3 Oct 22 hard-dated, no catalyst yet | 234.82 | +3.30% | n/a — entered Oct 23 |
+| 2026-10-23 | HCA | HOLD — new watchlist add (Health Care), Q3 print date unconfirmed (Oct 23 vs Oct 27 BMO), no catalyst yet | 467.02 | +1.33% | skip-right |
 | 2026-10-29 | LLY | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 rev guide raise today (two-source: Perplexity + SEC 8-K), +7.33% pre-mkt vs Oct 28 base | 1290.67 | | |
 | 2026-10-29 | MRK | HOLD — stall-breaker refresh add (Health Care), Q3 beat + EPS guide raise today, single-source (WebSearch unconfirmed), +4.78% pre-mkt | 141.09 | | |
 | 2026-10-29 | FTI | HOLD — stall-breaker refresh add (Energy), Q3 beat + subsea guide raise today, single-source; pre-mkt -3.29% (bars) conflicts; concentration-blocked as 3rd Energy (L-030) | 71.46 | | |

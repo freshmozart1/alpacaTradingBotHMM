@@ -107,6 +107,9 @@ If any fail, the trade is skipped and the reason is logged.
 - At every new-entry/add gate check, log post-fill single-sector exposure
   as % of equity; if it would exceed 40%, size the order down to fit or
   skip and log a concentration skip.
+- At every new-entry/add gate check, log combined post-fill exposure of
+  held names in the candidate's sub-industry/theme; if it would exceed
+  25% of equity, size down to fit or skip and log a concentration skip.
 
 ## Sell-Side Rules
 
@@ -146,6 +149,9 @@ Evaluated at the midday scan and opportunistically:
 - Tag every new Decision Scoreboard row that lacks a company-specific
   dated catalyst "[no-cat]"; each weekly review reports the [no-cat]
   subset's missed:avoided ratio.
+- At every EOD, list GTC stop expiries within 5 trading sessions; renew
+  at the next market-open (cancel + re-place at the same or higher stop,
+  never lower) and verify via `alpaca.sh orders`.
 
 ## Rule Changelog
 
@@ -183,3 +189,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-10-16 | Buy-Side Gate | (none) -> max 2 positions per sector; a 3rd-in-sector entry is a concentration skip | Promoted from LESSONS.md L-030 (2026-10-02), complied at every gate check for 2 straight weeks (AVGO, AVGO add, MRVL, LMT, LMT add all logged post-fill sector count). Evidence it binds a real risk: the 2 Tech names (AVGO+MRVL) both failed within 3 sessions (Oct 13/15, -$2,960.22 realized). Tightening only — no risk rule loosened. |
 | 2026-10-23 | Buy-Side Gate | (none) -> post-fill single-sector exposure capped at 40% of equity at entry/add (size down or concentration skip) | Promoted from LESSONS.md L-032 (2026-10-09), complied at every gate check for 2 straight weeks (Oct 9-23: CLF idea 37.3%, RTX Industrials 24.70%, HAL Energy 29.50%, DGX HC 8.80%). Tightening only, not a risk-rule loosening. |
 | 2026-10-23 | Operational Rules | (none) -> tag scoreboard rows lacking a dated company catalyst "[no-cat]"; review reports subset missed:avoided | Promoted from LESSONS.md L-034 (2026-10-09), complied for 2 straight weeks (VLO, XOM rows tagged; subset 2 missed : 0 avoided — MPC +10.24%, VLO +7.53%). Measurement only, not a risk-rule change. |
+| 2026-10-30 | Buy-Side Gate | (none) -> post-fill sub-industry/theme exposure capped at 25% of equity at entry/add (size down or concentration skip) | Promoted from LESSONS.md L-035 (2026-10-16), complied at every gate check for 2 straight weeks (Oct 16-30): RTX sized to 47 sh (A&D 24.70%), NOC and XOM blocked; origin AVGO+MRVL ~35% AI-semis both failed (-$2,960.22). Cost logged: NOC +7.95% / XOM +3.09% +5d misses (scoreboard Oct 19-20). Tightening only, not a risk-rule loosening. |
+| 2026-10-30 | Operational Rules | (none) -> EOD lists GTC stop expiries within 5 sessions; renew at next market-open at same/higher stop, verify via `orders` | Promoted from LESSONS.md L-031 (2026-10-02), complied every EOD for 2+ weeks; fired once (ECL renewed via $20.50 trail Oct 20, stop not lowered). All 6 stops now exp Jan 2027. Process addition only, not a risk-rule change. |
