@@ -2702,3 +2702,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $616.55/HWM $649; CVX 491ac150 (5%) $222.376/HWM $234.08; DGX 30c44a67 $227.808; ECL 922d840e ($20.50) $282.09; HAL 25307bc7 $32.571; RTX 313ded6c $181.746.
 
 **Post-open:** Week 17: 0/3 used. No-trade streak 5. Risk-off open (futures -1%); CVX beat should ratchet its trail on open.
+
+### Oct 30 — Midday Scan (Day 84, Friday)
+
+**Account (16:39 UTC):** Equity $100,832.78 | Cash $15,062.71 (14.94%) | ~85.06% deployed — top edge of band via appreciation only. 6 open positions — CVX 95 sh +21.11% ($234.79, intraday +1.44%); DGX 35 sh +3.55% ($251.50, intraday -0.56%); ECL 70 sh +7.61% ($303.38, intraday +0.84%); HAL 200 sh +8.62% ($36.265, intraday +1.02%); LMT 26 sh +25.74% ($641.75, intraday -0.29%); RTX 47 sh +4.36% ($201.76, intraday +1.18%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +3.55%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX (+21.11%, already 5% — never loosen) and LMT (+25.74%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** CVX Q3 beat holding (+1.44%, new HWM $236.48 → stop $224.656, ~4.3% below). LMT HWM $657 → stop $624.15 (~2.7% below — trail-managed by Alpaca, not a manual move). HAL new HWM $36.535 → stop $32.8815. RTX HWM $204.21 → stop $183.789. ECL HWM $305.71 → stop $285.21. DGX HWM $256.48 → stop $230.832. Max intraday move CVX +1.44% (earnings-explained). No thesis breaks. No cuts.
+
+**STEP 6 (optional research):** Skipped — nothing moving sharply without cause.
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; CVX 491ac150 (5%) $224.656/HWM $236.48; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $285.21/HWM $305.71; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $183.789/HWM $204.21.
+
+**STEP 8 (notify):** No action taken — no ClickUp.
