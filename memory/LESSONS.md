@@ -294,3 +294,6 @@ than 10 sessions are pruned.
 | 2026-10-29 | LLY | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 rev guide raise today (two-source: Perplexity + SEC 8-K), +7.33% pre-mkt vs Oct 28 base | 1290.67 | | |
 | 2026-10-29 | MRK | HOLD — stall-breaker refresh add (Health Care), Q3 beat + EPS guide raise today, single-source (WebSearch unconfirmed), +4.78% pre-mkt | 141.09 | | |
 | 2026-10-29 | FTI | HOLD — stall-breaker refresh add (Energy), Q3 beat + subsea guide raise today, single-source; pre-mkt -3.29% (bars) conflicts; concentration-blocked as 3rd Energy (L-030) | 71.46 | | |
+| 2026-10-30 | ABBV | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS guide raise + div hike today (Perplexity; bars confirm +2.28% vs Oct 29 base) | 290.75 | | |
+| 2026-10-30 | LNG | HOLD — stall-breaker refresh add (Energy), Q3 beat (print date unconfirmed, ~Oct 29), single-source, +9.89% vs Oct 28 base; concentration-blocked as 3rd Energy (L-030) | 318.90 | | |
+| 2026-10-30 | OKE | HOLD — stall-breaker refresh add (Energy), Q3 beat + EBITDA guide raise Oct 27 AMC; follow-through fails (Oct 29 $95.79 < Oct 27 $95.95); 3rd Energy (L-030) | 95.79 | | |
