@@ -2750,3 +2750,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; CVX 491ac150 (5%) $224.656/HWM $236.48; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $285.21/HWM $305.71; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $183.789/HWM $204.21.
 
 **Post-open:** Week 18: 0/3 used. No-trade streak 6. Watch ECL/LMT/CVX stop cushions; oil-down tape vs Energy 29%.
+
+### Nov 2 — Midday Scan (Day 85, Monday)
+
+**Account (17:00 UTC):** Equity $100,449.32 | Cash $15,062.71 (15.00%) | ~85.00% deployed — top edge of band via appreciation only. 6 open positions — CVX 95 sh +18.50% ($229.72, intraday -2.46%); DGX 35 sh +2.35% ($248.58, intraday -1.29%); ECL 70 sh +9.49% ($308.695, intraday +1.89%); HAL 200 sh +5.85% ($35.34, intraday -2.30%); LMT 26 sh +25.70% ($641.525, intraday +0.72%); RTX 47 sh +4.62% ($202.27, intraday +1.24%).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +2.35%). No positions closed.
+
+**STEP 4 (tighten trails):** CVX (+18.50%, already 5% — never loosen) and LMT (+25.70%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** ECL thin pre-mkt print ($288.89) did not hold — reversed to $308.695 (+1.89%), new HWM $310 → stop $289.50 (~6.2% cushion). CVX -2.46% / HAL -2.30% explained by oil -4% (US-Iran diplomacy, pre-market log) — sector headwind, not thesis break; CVX stop $224.656 ~2.2% below (Alpaca-trailed, gains locked ~+15.9%). LMT stop $624.15 (~2.7%). DGX $230.832, HAL $32.8815, RTX $183.789 unchanged. No thesis breaks. No cuts.
+
+**STEP 6 (optional research):** Skipped — no unexplained sharp moves (max |intraday| CVX -2.46%, oil-explained).
+
+**STEP 7 (verify):** `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; CVX 491ac150 (5%) $224.656/HWM $236.48; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $289.50/HWM $310; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $183.789/HWM $204.21.
+
+**STEP 8 (notify):** No action taken — no ClickUp.
