@@ -2732,3 +2732,21 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $200.00 | +0.30% | +$313.02 (+3.44%) | $183.789 (10% trail, GTC 313ded6c, HWM $204.21) |
 
 **Notes:** 5th consecutive no-trade day. Week 17 closes 0/3 new trades used. Day P&L vs Oct 29 logged EOD $100,498.03 (Alpaca last_equity $100,248.95; $249.08 drift from intraday EOD capture — logged value used; Day Chg uses Alpaca lastday_price). Choppy risk-off Friday (AMZN/INTC-led tech selloff) — book held up: CVX +1.70% on Q3 beat (new HWM $236.48 → stop $224.656), ECL +0.70%, HAL +0.70%, RTX +0.30%; LMT -1.03% and DGX -0.43%. Phase P&L +$637.23 (+0.64%) vs $100,000 start — 2nd straight positive reading. 6 open positions (max), 85.03% deployed / 14.97% cash — top edge of 75-85% band via appreciation only (L-024: no adds). Cash +$3.60 vs prior (non-trade credit). Sector: Energy 29.40% (CVX, HAL), Industrials/A&D 25.80% (LMT, RTX), Materials 21.07% (ECL), Health Care 8.76% (DGX) — over-25% via appreciation only. CVX 22.22% of equity via appreciation (no add). No position at -7% cut. Stop cushions: CVX ~4.8%, DGX ~9.1%, ECL ~6.2%, HAL ~9.9%, LMT ~2.1% (Alpaca-trailed 5% off HWM $657; not a manual placement — watch for stop-out Mon), RTX ~8.8%. 6 GTC stops resting, no fills. Friday → weekly review due.
+
+### Nov 2 — Market-Open (Day 85, Monday)
+
+**Operational Rule check:** Oct 30 has Market-Open + Midday + EOD entries ✓. **Nov 2 pre-market research MISSING** (no RESEARCH-LOG entry, no commit at 13:19 UTC) → ClickUp alert sent (L-042: **alerted**). Pre-market STEPS 1-3 run inline (abbreviated: book full, gate N/A).
+
+**Account (13:19 UTC, pre-open marks):** Equity $99,180.78 | Cash $15,062.71 (15.19%) | ~84.81% deployed (in band). 6 open positions (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — book full. `balance_asof` 2026-10-30. Daytrade count not returned; no day trades. Week 18: 0/3 used.
+
+**Inline research (Perplexity, 2 queries):** S&P futures ~+0.5% (7,652; Nasdaq +0.8-0.9%) — relief bounce after worst week in months. Oil -4%+ on US-Iran diplomacy reports (Energy headwind: CVX/HAL). ISM Mfg today; AAPL/PLTR AMC; midterms Tue; AMD Tue; NFP Fri. ECL: no fresh dated catalyst (13F trims, CoolIT/KKR deal report Oct 30 — Morningstar "dips on report"); pre-mkt mark $288.89 (-4.65% vs $302.98) not confirmed by Perplexity — thin pre-mkt print, monitor.
+
+**Lessons compliance:** L-036 no exits ✓; L-039 no chase/fade skips ✓; L-040 6/6 — ABBV/LLY rows already open, no rotation ✓; L-041 next-slot candidate carried from Oct 30: ABBV (Oct 30 catalyst, entry ≤$334, ~34 sh, 10% trail) — LLY Oct 29 catalyst ages out after today; L-042 alerted ✓. GTC expiries Jan 2027 — none within 5 sessions ✓.
+
+**Held position check (13:19 UTC marks):** CVX $232.80 +20.09% (5% trail, stop $224.656, ~3.5% cushion); DGX $247.47 +1.89%; ECL $288.89 +2.47% (stop $285.21, **~1.3% cushion** — stop-out risk at open); HAL $35.64 +6.75%; LMT $637.10 +24.83% (5% trail, stop $624.15, ~2.0%); RTX $200.55 +3.73%. None at -7% cut; no tighten triggers (CVX/LMT already 5%; others <+15%).
+
+**Gate check:** No buys planned (no pre-market plan, 6/6 positions). Gate N/A. No gate-rejection rows. If an ECL/LMT stop fires, ABBV is the pre-vetted refill (re-validate at midday).
+
+**Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; CVX 491ac150 (5%) $224.656/HWM $236.48; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $285.21/HWM $305.71; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $183.789/HWM $204.21.
+
+**Post-open:** Week 18: 0/3 used. No-trade streak 6. Watch ECL/LMT/CVX stop cushions; oil-down tape vs Energy 29%.
