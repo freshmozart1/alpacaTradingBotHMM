@@ -303,3 +303,6 @@ than 10 sessions are pruned.
 | 2026-10-30 | ABBV | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS guide raise + div hike today (Perplexity; bars confirm +2.28% vs Oct 29 base) | 290.75 | | |
 | 2026-10-30 | LNG | HOLD — stall-breaker refresh add (Energy), Q3 beat (print date unconfirmed, ~Oct 29), single-source, +9.89% vs Oct 28 base; concentration-blocked as 3rd Energy (L-030) | 318.90 | | |
 | 2026-10-30 | OKE | HOLD — stall-breaker refresh add (Energy), Q3 beat + EBITDA guide raise Oct 27 AMC; follow-through fails (Oct 29 $95.79 < Oct 27 $95.95); 3rd Energy (L-030) | 95.79 | | |
+| 2026-11-02 | IDXX | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS raise today (two-source: Perplexity + SEC 8-K), pre-mkt ~-1.3% (Perplexity, bars unconfirmed) | 551.48 | | |
+| 2026-11-02 | ET | HOLD — stall-breaker refresh add (Energy), Q3 Nov 3 hard-dated, no catalyst yet; 3rd Energy (L-030) | 20.92 | | |
+| 2026-11-02 | MLM | HOLD — stall-breaker refresh add (Materials, 3rd leg), Q3 Nov 4 BMO hard-dated, no catalyst yet | 540.425 | | |
