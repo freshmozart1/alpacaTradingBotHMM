@@ -2818,3 +2818,16 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `alpaca.sh positions` (DGX 35, ECL 70, HAL 200, LMT 26, RTX 47 — CVX gone) and `orders`: 5 GTC trailing stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $289.50/HWM $310; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $184.761/HWM $205.29. `orders closed`: CVX 491ac150 filled 95 @ $226.26.
 
 **STEP 8 (notify):** No manual action taken; CVX stop fill (book change) → ClickUp FYI sent.
+
+### Nov 3 — EOD Snapshot (Day 86, Tuesday)
+**Portfolio:** $99,551.76 | **Cash:** $36,557.41 (36.72%) | **Day P&L:** -$804.40 (-0.80%) | **Phase P&L:** -$448.24 (-0.45%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $245.56 | -2.09% | +$94.15 (+1.11%) | $230.832 (10% trail, GTC 30c44a67, HWM $256.48) |
+| ECL | 70 | $281.93 | $304.39 | -1.29% | +$1,572.20 (+7.97%) | $289.50 ($20.50 trail, GTC 922d840e, HWM $310) |
+| HAL | 200 | $33.3878 | $34.145 | -1.34% | +$151.44 (+2.27%) | $32.8815 (10% trail, GTC 25307bc7, HWM $36.535) |
+| LMT | 26 | $510.37 | $641.96 | -0.19% | +$3,421.34 (+25.78%) | $624.15 (5% trail, GTC e4e5aedf, HWM $657) |
+| RTX | 47 | $193.34 | $203.67 | +0.43% | +$485.51 (+5.34%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** 7th consecutive no-trade day (CVX trailing-stop fill was passive — no orders placed). Week 18: 0/3 new trades used. CVX 5% trail 491ac150 filled 95 @ $226.26 (14:33 UTC) — realized +$3,077.91 (+16.71%), winner, not a failed Energy trade. Day P&L vs Nov 2 logged EOD $100,356.16 (Alpaca last_equity $100,240.84; $115.32 drift — logged value used; Day Chg uses Alpaca lastday_price; marks 20:15 UTC, pre-close). Broad soft midterm-day tape: DGX -2.09%, HAL -1.34%, ECL -1.29%, LMT -0.19%; RTX +0.43% (new HWM $205.615 → stop $185.0535). Phase P&L -$448.24 (-0.45%) vs $100,000 start — back negative. 5 open positions, 63.28% deployed / 36.72% cash — **below 75-85% band** (CVX exit freed ~$21.5k); 1 open slot. Sector: Industrials/A&D 26.38% (LMT, RTX), Materials 21.40% (ECL), Health Care 8.63% (DGX), Energy 6.86% (HAL). No position at -7% cut. Stop cushions: LMT ~2.8%, HAL ~3.7%, ECL ~4.9%, DGX ~6.0%, RTX ~9.1%. 5 GTC stops resting. Refill: next market-open re-runs gate (PFE not gate-clearing at midday; MLM Nov 4 BMO, AMGN AMC tonight). Midterm results overnight, AMD AMC, NFP Fri.
