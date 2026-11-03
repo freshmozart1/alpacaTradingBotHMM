@@ -4876,3 +4876,9 @@ LLY **+9.38%**, MRK **+5.21%**, ABBV **-0.66%**, LNG **-2.30%**, IDXX **+21.86%*
 
 ### Decision
 **HOLD.** No new entries (6/6). Watchlist refreshed (5 dropped, 3 added). No gate-clearing or slot-blocked candidate. No ClickUp alert (nothing urgent).
+
+### 2026-11-03 — Midday Addendum (16:09 UTC)
+- **CVX stopped out** 14:33 UTC: 95 @ $226.26 (5% trail 491ac150), realized +$3,077.91 (+16.71%). Slot 6 open; cash 36.56% → ~63.4% deployed (below band).
+- **PFE** (conditional refill): `bars` Nov 3 $30.355 vs $30.71 ref = **-1.16%**; quote $30.36/$30.38. Beat+raise claim (Perplexity, single-source) not reflected in price → not gate-clearing. Keep on watch; re-check at next pre-market with second source.
+- Next-slot candidates for Nov 4 market-open: MLM (Q3 Nov 4 BMO, Materials 2 allowed), AMGN (Q3 AMC tonight), PFE (if second source + follow-through). Energy now 1 (HAL) → MPC/ET no longer concentration-blocked (re-evaluate).
+- No unexplained sharp moves in held names. No Perplexity queries run.

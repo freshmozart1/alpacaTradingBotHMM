@@ -2796,3 +2796,25 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **Orders:** No trades executed. State confirmed via `alpaca.sh positions` (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) and `orders`: 6 GTC trailing stops, status new — LMT $624.15; CVX $224.656; DGX $230.832; ECL $289.50; HAL $32.8815; RTX $183.789.
 
 **Post-open:** Week 18: 0/3 used. No-trade streak 7. Watch CVX (~1.6%) / LMT (~2.3%) cushions; midterms tonight gap risk. If a stop fires, re-validate PFE at midday.
+
+### Nov 3 — Midday Scan (Day 86, Tuesday)
+
+**Account (16:09 UTC):** Equity $99,987.24 | Cash $36,557.41 (36.56%) | ~63.44% deployed — **below 75-85% band** (CVX stop-out freed ~$21.5k). 5 open positions — DGX 35 sh +3.08% ($250.36, intraday -0.18%); ECL 70 sh +8.24% ($305.16, intraday -1.04%); HAL 200 sh +3.48% ($34.55, intraday -0.17%); LMT 26 sh +26.40% ($645.125, intraday +0.31%); RTX 47 sh +5.90% ($204.74, intraday +0.96%).
+
+**CVX stop-out (pre-scan):** 5% trailing stop 491ac150 filled 95 @ $226.26 at 14:33 UTC (stop $224.656 → fill +$1.60/sh favorable vs stop, L-036). Realized +$3,077.91 (+16.71%). Winner — not a failed Energy trade (sector-exit count unaffected).
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-11-03 | CVX | SELL | 95 | $193.860947 | $226.26 | +$3,077.91 (+16.71%) | 5% trailing stop 491ac150 filled 14:33 UTC; gains locked |
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min DGX +3.08%). No manual closes.
+
+**STEP 4 (tighten trails):** LMT (+26.40%, already 5%) — no change. DGX/ECL/HAL/RTX <+15% — no change.
+
+**STEP 5 (thesis check):** No sharp moves (max |intraday| ECL -1.04%). RTX new HWM $205.29 → stop $184.761. LMT cushion ~3.3%, ECL ~5.1%, HAL ~4.8%, DGX ~7.8%, RTX ~9.8%. No thesis breaks. No cuts.
+
+**STEP 6 (research):** PFE conditional refill re-check — `bars` Nov 3 $30.355 (-1.16% vs $30.71 ref), `quote` $30.36/$30.38; claimed Q3 beat+raise not confirmed by price reaction, still single-source → **not gate-clearing**. No midday entry (midday = risk mgmt only). Open slot + below-band cash → next market-open: re-run gate (PFE, MLM Nov 4 BMO, AMGN AMC tonight). Addendum in RESEARCH-LOG.
+
+**STEP 7 (verify):** `alpaca.sh positions` (DGX 35, ECL 70, HAL 200, LMT 26, RTX 47 — CVX gone) and `orders`: 5 GTC trailing stops, status new — LMT e4e5aedf (5%) $624.15/HWM $657; DGX 30c44a67 $230.832/HWM $256.48; ECL 922d840e ($20.50) $289.50/HWM $310; HAL 25307bc7 $32.8815/HWM $36.535; RTX 313ded6c $184.761/HWM $205.29. `orders closed`: CVX 491ac150 filled 95 @ $226.26.
+
+**STEP 8 (notify):** No manual action taken; CVX stop fill (book change) → ClickUp FYI sent.
