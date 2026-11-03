@@ -4805,3 +4805,74 @@ LLY **+9.79%**, MRK **+5.99%**, ABBV **+1.40%**, LNG **+3.59%**, FTI **-3.80%**,
 
 ### Decision
 **HOLD.** No new entries (6/6). IDXX logged slot-blocked; ABBV pre-vetted refill; ET/MLM hard-dated watch. FTI/OKE dropped. ClickUp alert sent (late run, L-042).
+
+## 2026-11-03 — Pre-market Research
+
+On-time run (13:07 UTC, before market-open). Data = 13:07-13:20 UTC pre-open.
+
+### Account
+- Equity: $100,273.00 | Cash: $15,062.71 (15.02%) | Buying power: $298,839.65 (margin, effective) | `balance_asof` 2026-11-02.
+- Position market value: $85,210.29 (CVX 95, DGX 35, ECL 70, HAL 200, LMT 26, RTX 47) — **84.98% deployed (in band)**. 6 GTC trailing stops, status new: CVX 491ac150 (5%) $224.656/HWM $236.48; DGX 30c44a67 (10%) $230.832/HWM $256.48; ECL 922d840e ($20.50) $289.50/HWM $310; HAL 25307bc7 (10%) $32.8815/HWM $36.535; LMT e4e5aedf (5%) $624.15/HWM $657; RTX 313ded6c (10%) $183.789/HWM $204.21. Exp Jan 15-22 2027.
+- Pre-open marks vs last_equity $100,240.84: +$32.16 (+0.03%).
+- Daytrade count: not returned; no day trades. Day 86, Tuesday, Week 18: **0/3 used**. **6/6 — book full.** No-trade streak 6.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 87%** (499 obs, 103 days in regime). Up from 72% Nov 2. Advisory only.
+- Held (pre-open marks): CVX $228.74 +17.99% (5% trail, **cushion 1.8%**); DGX $250.81 +3.27% (8.0%); ECL $308.38 +9.38% (6.1%); HAL $34.93 +4.62% (5.9%); LMT $639.99 +25.40% (5% trail, 2.5%); RTX $201.90 +4.43% (9.0%). None at -7%. No tighten triggers (CVX/LMT already 5%; others <+15%).
+- Exposure: Energy 28.64% (CVX 21.67%, HAL), A&D 26.06% (LMT, RTX), Materials 21.53% (ECL), HC 8.75% (DGX) — over-25% via appreciation only.
+
+### Market Context
+- Perplexity: all 26 queries exit 0 (sequential, 2s spacing — no 429). WebSearch used for second-source checks (PFE, ET).
+- WTI/Brent: **WTI $96.68, Brent $104.81** (Perplexity) — not a repeat (Nov 2 $101.17/$110.45). Spread 8.4% <10%. **Suspect:** snippet timestamp "10:49 pm EDT Nov 3" is in the future; USO pre-mkt $159.41 vs Nov 2 `bars` $156.77 = **+1.68%** (oil bouncing after Nov 2's -7.2% USO drop). Operative read = USO: modest oil rebound pre-mkt. Perplexity level not used.
+- S&P 500 futures: **-0.19%** (7,560). Cross-check SPY pre-mkt $751.14 vs Nov 2 $752.04 = **-0.12%** ✓ → flat-to-soft.
+- VIX: **21.44** (Perplexity) vs 18.98 Nov 2. **Suspect:** snippet says "+1.37% over 24h", inconsistent with a +13% jump from logged 18.98. Unverified — not used in gate.
+- Today: **US midterm elections**; JOLTS 10:00 ET. No CPI/PPI/NFP. NFP Fri Nov 6, CPI Nov 10, PPI Nov 13. FOMC: one snippet cites "Wednesday Fed decision" — conflicts with calendar (next FOMC Dec 8-9); Dec 8-9 treated as operative.
+- Earnings BMO: SHOP, **PFE**, ETN, UPST, **MPC**, SUN, BNTX, **ET**, FANG call. AMC: **AMGN**, AMD. AAPL -4.6% pre-mkt on AMC print (Tech drag; no Tech held).
+- Sector momentum (Perplexity YTD Oct 29): Energy +53.68%, IT +24.41%, HC +18.83%, Materials +14.50%, Industrials +9.61%. Tech sector-exited (Oct 15) → eligible top-2 **Energy, Health Care**; 3rd leg Materials. `bars` 5-sess Oct 26→Nov 2: XLE **-3.42%**, XLV **+2.98%** — Energy momentum rolling short-term (oil); HC leading.
+- Held tickers:
+  - **CVX**: Q3 beat (Oct 30, repeat); UBS $265 / Barclays $244 / DZ Bank downgrade to Hold $240 (dateless, excluded). Div $1.78 ex-div **Nov 18** (outside 5 sessions). 1.8% cushion — stop fill locks ~+15.9%. Thesis intact.
+  - **DGX**: FY26 raise (Oct 22, stale); cyber-incident overhang (undated, monitor). Thesis intact.
+  - **ECL**: no fresh company news; 52-wk high, Investor Day **Nov 17** (AI/liquid cooling). JPM $310 (dateless, excluded). Thesis intact.
+  - **HAL**: Q3 Oct 20 stale; Petrobras Brazil remote-completion deployment (undated, modest). Thesis intact.
+  - **LMT**: MS Overweight $835 (repeat, dateless), F-35 framework, $694M ARRW award, PAC-3 Ukraine sale approval (undated). Ex-div Dec 1 (outside window). Thesis intact.
+  - **RTX**: midterms → defense appropriations (CR expires Dec 11); Q3/raise repeat. Div record Nov 20. Thesis intact.
+- Watchlist:
+  - **LLY**: Oct 29 catalyst aged out after Nov 2 (>2 sessions). Retatrutide/Foundayo EMA items undated. Div record Nov 13. Drop.
+  - **MRK**: Oct 29 Q3 aged out; Ohtuvayre Phase 3 initiation (Perplexity "Nov 3", single-source, trial start = not a reaction-grade catalyst); DZ Bank downgrade. Drop.
+  - **ABBV**: Oct 30 catalyst (2 sessions, last valid day) but **follow-through fails**: Nov 2 close $288.82 < Oct 29 pre-catalyst close $290.75. BNP $247→$269 (dateless, excluded). Drop.
+  - **LNG**: Q3 date still unverifiable; EPS miss + $1.2B notes + federal probe; Nov 2 $311.58 (-2.30% vs Ref). 3rd Energy blocked. Drop.
+  - **IDXX**: Nov 2 Q3 beat confirmed by `bars`: close **$672.06** vs Oct 30 base $551.48 = **+21.86% ≥15% → chase risk, excluded**. (Nov 2 Perplexity "-1.3% pre-mkt" was wrong.) Drop.
+  - **ET**: Q3 BMO today; release not yet indexed (WebSearch: only timing PR + Q2 8-K). Distribution $0.3425 payable Nov 19. 3rd Energy → blocked regardless.
+  - **MLM**: Q3 **Nov 4 BMO** hard-dated; no catalyst today. Nov 2 $552.42 (+2.22% vs Ref, run-up into print). Post-fill Materials 2 (ECL, MLM) allowed.
+
+### Stall-Breaker
+**FIRED** (streak 6 ≥ 3). Dropped: **LLY, MRK, ABBV** (catalysts aged out / follow-through failed), **LNG** (unverifiable date, 3rd Energy), **IDXX** (chase +21.86%). Kept: ET, MLM (hard-dated). Added: **PFE** (HC), **AMGN** (HC), **MPC** (Energy). Screens: "best health care stocks with news catalysts this week", "XLV largest holdings with earnings or upgrades this week", "best energy stocks with news catalysts this week", "best materials stocks with news catalysts this week" (3rd leg: FCX/LIN/SW/NUE — no today-dated catalyst found; leg empty this cycle, 1st). Prices via `alpaca.sh bars`.
+- **PFE** (HC, pharma): Q3 BMO today — Perplexity: rev $16.58B vs ~$16.13B, adj EPS $0.87 vs $0.72, FY26 guide raised to $62-64B / $2.95-3.05. **Single-source** — WebSearch returned only Q2 2026 (Aug 4) release + conflicting undated Stocktwits; no `bars` pre-mkt print. Not gate-clearing. Ref Nov 2 $30.71. Post-fill HC 2 (DGX, PFE) ✓; theme pharma ≠ labs ✓.
+- **AMGN** (HC, biotech): Q3 **AMC today** hard-dated (MariTide focus); no catalyst yet. Ref $465.45.
+- **MPC** (Energy, refiner): Q3 BMO today — Perplexity: adj EPS $26.93 vs $24.72, R&M margin $45.70/bbl, $3.3B returned. Single-source; 3rd Energy → **concentration-blocked** (L-030) regardless. Ref $430.48.
+
+### Lessons Check
+- L-036 (slippage) — no exits since last log. N/A. Complied.
+- L-038 (shadow spec) — no open [no-cat] rows. 5-sess Oct 26→Nov 2 (bars): Energy leader XOM -2.58% vs XLE -3.42% = +0.8pp → no trigger. HC leader LLY +10.34% vs XLV +2.98% = +7.4pp, -2.4% from 20d high $1,447 → trigger continues (same Oct 29 trigger, close $1,373.46; score Nov 5 — Nov 2 interim +2.79%). 0 new triggers. No live entries. Complied.
+- L-039 (skip-time price) — IDXX dropped as chase skip → skip-time price $672.06 logged in its scoreboard Decision cell. Complied.
+- L-040 (slot-blocked) — no gate-clearing candidate today (PFE/MPC single-source; MPC also 3rd Energy) → no slot-blocked row. No rotation exit (no held name at a sell-side rule). Complied.
+- L-041 (next-slot candidate) — **none qualifies.** ABBV: follow-through fails ($288.82 < $290.75 base). IDXX: chase +21.86%. LLY/MRK: catalysts >2 sessions. PFE: single-source, print not `bars`-confirmed (re-check at market-open — if a second source + bars confirm and a stop fires, PFE is the candidate: entry ≤ $35.3 (<+15% vs $30.71), ~320 sh (~$9.8k, ~9.8% equity), 10% GTC trail, -7% cut, target +20%; post-fill HC 2, ~18.6% <40%, pharma theme ~9.8% <25%). MPC: 3rd Energy. Complied.
+- L-042 (alert missing/late runs) — `git log`: Nov 2 pre-market (adb4818, late/out of order — **already alerted Nov 2** by market-open + pre-market), market-open (54654b9), midday (14112a5), EOD (94ab5a0) ✓. Today's pre-market on time. No new incident → no alert. Complied.
+- Operational: GTC expiries Jan 2027 — none within 5 sessions ✓.
+
+### Yesterday's Skip Check
+LLY **+9.38%**, MRK **+5.21%**, ABBV **-0.66%**, LNG **-2.30%**, IDXX **+21.86%**, ET **-3.06%**, MLM **+2.22%** (Nov 2 `bars` close vs Refs; `quote` returned stale/wide Nov 2 books). LLY/MRK/IDXX skips look wrong so far (slot/source-blocked — process right, book full); ABBV/LNG/MLM flat; ET skip right.
+
+### Trade Ideas
+- Week 18: 0/3 used. **6/6 positions — no new entries unless a stop fires.** 84.98% deployed (≥75% → no forced idea).
+1. **PFE — conditional refill.** Only if (a) second source confirms today's Q3 beat + raise, (b) `bars` confirm reaction <15% vs $30.71, (c) a stop fires. Entry ≤ $35.3, ~320 sh, 10% GTC trail, -7% cut ~$28.6 off $30.7, target +20%.
+2. **CVX — stop-out watch.** 1.8% cushion; 5% trail fill locks ~+15.9%. Oil bouncing pre-mkt (USO +1.7%). No manual action.
+3. **MLM — Nov 4 BMO print.** Materials slot-eligible (ECL+MLM) if a slot opens; needs today-dated beat + <15% reaction.
+
+### Risk Factors
+- Midterm elections tonight — overnight gap risk; defense (LMT/RTX 26%) sensitive to appropriations read.
+- CVX 1.8% / LMT 2.5% cushions — stop-out risk (gains locked).
+- Energy 28.6% vs oil whipsaw (USO -7.2% Nov 2, +1.7% pre-mkt); XLE 5-sess -3.4%.
+- VIX/oil Perplexity prints suspect today — macro read rests on SPY/USO bars only.
+- AAPL -4.6% pre-mkt, AMD AMC, NFP Fri — event-vol week.
+
+### Decision
+**HOLD.** No new entries (6/6). Watchlist refreshed (5 dropped, 3 added). No gate-clearing or slot-blocked candidate. No ClickUp alert (nothing urgent).
