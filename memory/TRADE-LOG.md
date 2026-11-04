@@ -2893,3 +2893,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `alpaca.sh positions` (DGX 35, ECL 70, NVO 225, RTX 47 — HAL gone) and `orders`: 4 GTC trailing stops, status new — NVO 539e1bc0 (10%) $38.916/HWM $43.24; DGX 30c44a67 (10%) $230.832/HWM $256.48; ECL 922d840e ($20.50) $291.42/HWM $311.92; RTX 313ded6c (10%) $185.0535/HWM $205.615. `orders all`: HAL 25307bc7 filled 200 @ $32.85585.
 
 **STEP 8 (notify):** No manual action taken; HAL stop fill (book change) → ClickUp FYI sent.
+
+### Nov 4 — EOD Snapshot (Day 87, Wednesday)
+**Portfolio:** $99,106.85 | **Cash:** $49,411.49 (49.86%) | **Day P&L:** -$444.91 (-0.45%) | **Phase P&L:** -$893.15 (-0.89%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $253.825 | +2.74% | +$383.43 (+4.51%) | $230.832 (10% trail, GTC 30c44a67, HWM $256.48) |
+| ECL | 70 | $281.93 | $314.165 | +3.11% | +$2,256.45 (+11.43%) | $294.085 ($20.50 trail, GTC 922d840e, HWM $314.585) |
+| NVO | 225 | $42.9927 | $42.375 | +5.44% | -$138.98 (-1.44%) | $38.916 (10% trail, GTC 539e1bc0, HWM $43.24) |
+| RTX | 47 | $193.34 | $197.565 | -3.07% | +$198.58 (+2.18%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** Streak reset — trade(s) placed today (NVO buy 225 @ $42.99, order 4a64eac8); 0 consecutive no-trade days. Week 18: 1/3 new trades used. Passive stop fills: LMT 26 @ $613.72 (+$2,687.10, +20.25%, winner, -1.67% gap-through slippage) and HAL 200 @ $32.85585 (-$106.39, -1.59%, **failed Energy trade #1**). Realized today +$2,580.71. Day P&L vs Nov 3 logged EOD $99,551.76 (Alpaca last_equity $99,539.19; $12.57 drift — logged value used; Day Chg uses Alpaca lastday_price; marks 20:14 UTC, pre-close). Dem-sweep tape: defense sold off (RTX -3.07%), ECL +3.11% (new HWM → stop $294.085), DGX +2.74%, NVO +5.44% on day but -1.44% vs entry. Phase P&L -$893.15 (-0.89%) vs $100,000 start. 4 open positions, 50.14% deployed / 49.86% cash — **well below 75-85% band**; 2 open slots. Sector: Materials 22.19% (ECL), Health Care 18.58% (DGX, NVO), A&D 9.37% (RTX), Energy 0%. No position at -7% cut. Stop cushions: RTX ~6.3%, ECL ~6.4%, NVO ~8.2%, DGX ~9.1%. 4 GTC stops resting. Refill: next market-open re-runs gate (2 slots, 2/3 weekly trades left). AMD AMC tonight, NFP Fri.
