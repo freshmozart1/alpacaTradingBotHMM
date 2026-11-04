@@ -4952,3 +4952,9 @@ ET **-3.90%**, MLM **+0.59%**, PFE **-2.38%**, AMGN **-0.92%**, MPC **-0.63%** (
 
 ### Decision
 **HOLD pre-market; flag NVO (primary) + CVE/AMGN (conditional) for market-open gate.** LMT exit is mechanical. Watchlist refreshed (3 dropped, 4 added). ClickUp alert sent (LMT stop gap / defense selloff).
+
+### 2026-11-04 — Midday Addendum (16:13 UTC)
+- **HAL stopped out** 14:55 UTC: 200 @ $32.85585 (10% trail 25307bc7), realized -$106.39 (-1.59%). Failed Energy trade #1 (consecutive; exit at 2). Driver: OFS/N. America weakness + soft oil; no company-specific news (Perplexity: HAL -2.6% early to ~$33.17).
+- **RTX** -4.0% intraday: Dem midterm sweep → tighter defense spending fears (Morningstar/Dow Jones, Nov 4: LMT -4.3%, NOC -3.9%, RTX ~-3.4%). RTX-specific news neutral/positive. Thesis weakened, not broken; hold on GTC trail.
+- Book: 4 positions (DGX, ECL, NVO, RTX), ~50% deployed, cash ~$49.4k → **2 open slots**, below band. Week 18: 1/3 used.
+- Next market-open candidates: AMGN (HC 3rd blocked while DGX+NVO held), CVS (HC, same block), MLM/WLK (Materials 2 allowed), Energy reopen (0 held, 1 failure) — CVE skipped today (rev miss).
