@@ -2871,3 +2871,25 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-04 | NVO | BUY | 225 | $42.99 (fill) | $38.673 (10% trailing GTC, order 539e1bc0); manual cut -7% ~$39.98 | Q3 Nov 4: rev DKK 79.2B vs 73.6B, adj op profit DKK 31.7B vs 28.6B, Wegovy pill DKK 5.4B; FY26 outlook raised to -2%..+2% CER (Perplexity + SEC 6-K); Health Care momentum; +6.92% realized <15% chase bar | $51.59 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
 
 **Post-open (14:38 UTC):** Equity $99,018.46 | Cash $42,840.32 (43.27%) | **~56.7% deployed — below 75-85% band**. 5 positions (DGX, ECL, HAL, NVO, RTX), 1 open slot. Week 18: 1/3 used. No-trade streak reset to 0. Sector: Materials ECL 22.0%, HC 18.6% (DGX, NVO), A&D RTX 9.5%, Energy HAL 6.7%.
+
+### Nov 4 — Midday Scan (Day 87, Wednesday)
+
+**Account (16:13 UTC):** Equity $98,799.65 | Cash $49,411.49 (50.01%) | ~49.99% deployed — **below 75-85% band** (LMT + HAL stop-outs). 4 open positions — DGX 35 sh +4.13% ($252.905, intraday +2.37%); ECL 70 sh +10.05% ($310.25, intraday +1.83%); NVO 225 sh -0.51% ($42.775, intraday vs entry -0.51%); RTX 47 sh +1.18% ($195.63, intraday -4.02%).
+
+**HAL stop-out (pre-scan):** 10% trailing stop 25307bc7 filled 200 @ $32.85585 at 14:55:10 UTC (stop $32.8815 → fill -0.08% slippage vs stop, L-036). Realized -$106.39 (-1.59%). **Loser — failed Energy trade #1** (prior Energy trade CVX = winner → consecutive count 1; sector exit at 2). Energy now 0 held. Cause: OFS weakness/post-earnings positioning, oil soft (USO -2.4% pre-mkt); no HAL-specific negative news (Perplexity).
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-11-04 | HAL | SELL | 200 | $33.3878 | $32.85585 | -$106.39 (-1.59%) | 10% trailing stop 25307bc7 filled 14:55 UTC; failed Energy trade #1 |
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min NVO -0.51%). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max ECL +10.05%) — no change.
+
+**STEP 5 (thesis check):** RTX -4.02% intraday — sector-wide Dem-sweep defense selloff (LMT -4.3%, NOC -3.9%; Morningstar/Dow Jones Nov 4 via Perplexity). RTX-specific news positive/neutral (DARPA PICASSO award, $350M SDB II, $215M Javelin; EVP sale $1.83M). Thesis **weakened, not broken** — still +1.18%, cushion ~5.4% to $185.0535 stop; hold, GTC trail does the work. NVO new HWM $43.24 → stop $38.916; post-print chop, thesis intact. DGX +2.37%, ECL +1.83% — intact. Cushions: RTX ~5.4%, ECL ~6.1%, DGX ~8.7%, NVO ~9.0%. No cuts.
+
+**STEP 6 (research):** Perplexity x2 (RTX/defense, HAL). Addendum in RESEARCH-LOG. No midday entry (midday = risk mgmt only). 2 open slots, ~50% deployed → next market-open re-runs gate (Week 18: 1/3 used).
+
+**STEP 7 (verify):** `alpaca.sh positions` (DGX 35, ECL 70, NVO 225, RTX 47 — HAL gone) and `orders`: 4 GTC trailing stops, status new — NVO 539e1bc0 (10%) $38.916/HWM $43.24; DGX 30c44a67 (10%) $230.832/HWM $256.48; ECL 922d840e ($20.50) $291.42/HWM $311.92; RTX 313ded6c (10%) $185.0535/HWM $205.615. `orders all`: HAL 25307bc7 filled 200 @ $32.85585.
+
+**STEP 8 (notify):** No manual action taken; HAL stop fill (book change) → ClickUp FYI sent.
