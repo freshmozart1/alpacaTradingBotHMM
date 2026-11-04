@@ -309,3 +309,7 @@ than 10 sessions are pruned.
 | 2026-11-03 | PFE | HOLD — stall-breaker refresh add (Health Care), Q3 beat + FY26 guide raise today, single-source (WebSearch unconfirmed, no bars print); conditional next-slot candidate | 30.71 | | |
 | 2026-11-03 | AMGN | HOLD — stall-breaker refresh add (Health Care), Q3 AMC Nov 3 hard-dated, no catalyst yet | 465.45 | | |
 | 2026-11-03 | MPC | HOLD — stall-breaker refresh add (Energy), Q3 beat today, single-source; concentration-blocked as 3rd Energy (L-030) | 430.48 | | |
+| 2026-11-04 | NVO | HOLD pre-market — stall-breaker refresh add (Health Care), Q3 beat + FY26 outlook raise today (two-source: Perplexity + SEC 6-K), ~+6% early (Perplexity, bars unconfirmed); flagged for market-open hard-check (L-041 candidate) | 40.21 | | |
+| 2026-11-04 | CVS | HOLD — stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS raise + split plan today, single-source; pre-mkt weak (MA stars) | 91.45 | | |
+| 2026-11-04 | CVE | HOLD — stall-breaker refresh add (Energy), Q3 BMO today, result not yet indexed; hard-check at open | 30.72 | | |
+| 2026-11-04 | WLK | HOLD — stall-breaker refresh add (Materials, 3rd leg, loosened floor), Q3 adj EPS miss today, single-source; +3% pre-mkt (Perplexity) | 68.50 | | |
