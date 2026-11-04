@@ -2831,3 +2831,43 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $203.67 | +0.43% | +$485.51 (+5.34%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 7th consecutive no-trade day (CVX trailing-stop fill was passive — no orders placed). Week 18: 0/3 new trades used. CVX 5% trail 491ac150 filled 95 @ $226.26 (14:33 UTC) — realized +$3,077.91 (+16.71%), winner, not a failed Energy trade. Day P&L vs Nov 2 logged EOD $100,356.16 (Alpaca last_equity $100,240.84; $115.32 drift — logged value used; Day Chg uses Alpaca lastday_price; marks 20:15 UTC, pre-close). Broad soft midterm-day tape: DGX -2.09%, HAL -1.34%, ECL -1.29%, LMT -0.19%; RTX +0.43% (new HWM $205.615 → stop $185.0535). Phase P&L -$448.24 (-0.45%) vs $100,000 start — back negative. 5 open positions, 63.28% deployed / 36.72% cash — **below 75-85% band** (CVX exit freed ~$21.5k); 1 open slot. Sector: Industrials/A&D 26.38% (LMT, RTX), Materials 21.40% (ECL), Health Care 8.63% (DGX), Energy 6.86% (HAL). No position at -7% cut. Stop cushions: LMT ~2.8%, HAL ~3.7%, ECL ~4.9%, DGX ~6.0%, RTX ~9.1%. 5 GTC stops resting. Refill: next market-open re-runs gate (PFE not gate-clearing at midday; MLM Nov 4 BMO, AMGN AMC tonight). Midterm results overnight, AMD AMC, NFP Fri.
+
+### Nov 4 — Market-Open (Day 87, Wednesday)
+
+**Operational Rule check:** Nov 3 has Market-Open + Midday + EOD entries ✓. Nov 4 pre-market on time (ddfb22b) ✓. No missing/late runs → no alert (L-042). Note: DST ended Nov 1 → open now 14:30 UTC; routine fired 13:17 UTC, gate held until post-open `bars` (14:36 UTC).
+
+**Account (13:18 UTC, pre-open):** Equity $98,679.52 | Cash $36,556.95 (37.05%) | 5 positions (DGX 35, ECL 70, HAL 200, LMT 26, RTX 47), 5 GTC stops. `balance_asof` 2026-11-03. Daytrade count not returned; no day trades. Week 18: 0/3 used.
+
+**LMT stop-out (at open):** 5% trailing stop e4e5aedf filled 26 @ $613.72 at 14:31:13 UTC (stop $624.15 → fill **-1.67% slippage**, gap-through on Dem-sweep defense selloff, L-036). Realized +$2,687.10 (+20.25%). Winner — not a failed A&D trade.
+
+| Date | Ticker | Side | Shares | Entry | Exit | P&L | Note |
+|------|--------|------|--------|-------|------|-----|------|
+| 2026-11-04 | LMT | SELL | 26 | $510.37 | $613.72 | +$2,687.10 (+20.25%) | 5% trailing stop e4e5aedf filled 14:31 UTC; gap-through -1.67% vs $624.15 stop |
+
+**Lessons compliance:** L-036 LMT slippage logged ✓; L-039 no chase/fade skips ✓; L-040/L-041 book <6 → NVO (L-041 candidate) taken ✓; L-042 no incident ✓.
+
+**Gate check — NVO:** 225 sh.
+- Pre-market plan condition: entry ≤ $44.0; first 1-min IEX prints $42.43-$43.13 (14:30-14:35), quote $42.90/$42.94 — pass.
+- Positions post-fill 5 (≤6; LMT out) — pass.
+- Weekly trades 1/3 incl. this — pass.
+- Cost $9,673.35 = 9.80% of equity (≤20%) — pass.
+- Cost ≤ cash ($52,513.67 post-LMT) — pass.
+- Catalyst: Q3 beat (rev DKK 79.2B vs 73.6B, adj op profit DKK 31.7B vs 28.6B) + FY26 outlook raised to -2%..+2% CER, dated today (Perplexity + SEC 6-K Nov 4; Nasdaq pre-mkt print dated Nov 4) — documented in RESEARCH-LOG. Chase bar: catalyst Nov 4, base Nov 3 close $40.21 (bars), fill $42.99 = **+6.92%** (<15%) — pass.
+- PDT room — pass (0 day trades).
+- Stock (NVO, NYSE ADR, common) — pass.
+- Sector (L-030): Health Care 2 post-fill (DGX, NVO) — pass. HC exposure 18.6% (≤40%) — pass. Pharma theme 9.8% (≤25%) — pass.
+- Ex-div/analyst: no same-week ex-div (last Aug 17). No Nov 4 analyst action found; latest BMO Market Perform PT $47→$40 (Oct 12). Non-blocking.
+
+**Gate check — CVE (conditional):** Q3 today (Cenovus release + MT Newswires, Nov 4): EPS C$1.83 vs C$1.60 beat, revenue C$15.98B vs C$16.87B **miss**, no guide change → not a clean two-source beat per plan condition → **skip**. Scoreboard row exists (Nov 4) — no new row. AMGN alternate not used (NVO taken; 3rd HC blocked anyway).
+
+**Entry Checklist (NVO):** Catalyst = Q3 beat + FY26 raise (today). Sector = Health Care (XLV +2.70% 5-sess, #2 YTD eligible). Stop = 10% trailing GTC; manual cut -7% ≈ $39.98. Target $51.59 (+20%).
+
+**Orders:** NVO market buy 225 — order 4a64eac8 filled 225 @ $42.992667 at 14:36:42 UTC. Confirmed via `alpaca.sh orders all` (filled) and `positions` (NVO 225).
+
+**Stops placed:** NVO 10% trailing GTC 225 sh — order **539e1bc0**, stop $38.673/HWM $42.97, exp Feb 2 2027. Confirmed via `alpaca.sh orders` (status new). 5 GTC stops resting: NVO 539e1bc0 $38.673; DGX 30c44a67 $230.832; ECL 922d840e $291.42 (HWM $311.92); HAL 25307bc7 $32.8815; RTX 313ded6c $185.0535.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-04 | NVO | BUY | 225 | $42.99 (fill) | $38.673 (10% trailing GTC, order 539e1bc0); manual cut -7% ~$39.98 | Q3 Nov 4: rev DKK 79.2B vs 73.6B, adj op profit DKK 31.7B vs 28.6B, Wegovy pill DKK 5.4B; FY26 outlook raised to -2%..+2% CER (Perplexity + SEC 6-K); Health Care momentum; +6.92% realized <15% chase bar | $51.59 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
+
+**Post-open (14:38 UTC):** Equity $99,018.46 | Cash $42,840.32 (43.27%) | **~56.7% deployed — below 75-85% band**. 5 positions (DGX, ECL, HAL, NVO, RTX), 1 open slot. Week 18: 1/3 used. No-trade streak reset to 0. Sector: Materials ECL 22.0%, HC 18.6% (DGX, NVO), A&D RTX 9.5%, Energy HAL 6.7%.
