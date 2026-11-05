@@ -2905,3 +2905,29 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $197.565 | -3.07% | +$198.58 (+2.18%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** Streak reset — trade(s) placed today (NVO buy 225 @ $42.99, order 4a64eac8); 0 consecutive no-trade days. Week 18: 1/3 new trades used. Passive stop fills: LMT 26 @ $613.72 (+$2,687.10, +20.25%, winner, -1.67% gap-through slippage) and HAL 200 @ $32.85585 (-$106.39, -1.59%, **failed Energy trade #1**). Realized today +$2,580.71. Day P&L vs Nov 3 logged EOD $99,551.76 (Alpaca last_equity $99,539.19; $12.57 drift — logged value used; Day Chg uses Alpaca lastday_price; marks 20:14 UTC, pre-close). Dem-sweep tape: defense sold off (RTX -3.07%), ECL +3.11% (new HWM → stop $294.085), DGX +2.74%, NVO +5.44% on day but -1.44% vs entry. Phase P&L -$893.15 (-0.89%) vs $100,000 start. 4 open positions, 50.14% deployed / 49.86% cash — **well below 75-85% band**; 2 open slots. Sector: Materials 22.19% (ECL), Health Care 18.58% (DGX, NVO), A&D 9.37% (RTX), Energy 0%. No position at -7% cut. Stop cushions: RTX ~6.3%, ECL ~6.4%, NVO ~8.2%, DGX ~9.1%. 4 GTC stops resting. Refill: next market-open re-runs gate (2 slots, 2/3 weekly trades left). AMD AMC tonight, NFP Fri.
+
+### Nov 5 — Market-Open (Day 88, Thursday)
+
+**Operational Rule check:** Nov 4 has Market-Open + Midday + EOD entries ✓. Nov 5 pre-market on time (060987b) ✓. No missing/late runs → no alert (L-042). Routine fired 13:18 UTC (pre-open, DST); gate held until post-open `bars` (14:36 UTC).
+
+**Account (14:36 UTC):** Equity $99,204.64 | Cash $49,411.01 (49.81%) | 4 positions (DGX 35, ECL 70, NVO 225, RTX 47), 4 GTC stops. `balance_asof` 2026-11-04. Daytrade count not returned; no day trades. Week 18: 1/3 used. NVO -4.52% (above -7% cut).
+
+**Lessons compliance:** L-036 no exits ✓; L-039 no chase/fade skips ✓; L-040/L-041 book <6 → MLM (L-041 candidate) taken ✓; L-042 no incident ✓.
+
+**Gate check — MLM:** 17 sh.
+- Pre-market plan condition: open > $543.63 base and entry ≤ $575; first 1-min IEX prints $569.71-$566.55 (14:31-14:35) — pass.
+- Positions post-fill 5 (≤6) — pass.
+- Weekly trades 2/3 incl. this — pass.
+- Cost $9,591.57 = 9.67% of equity (≤20%) — pass.
+- Cost ≤ cash ($49,411.01) — pass.
+- Catalyst: Q3 Nov 4 BMO — rev $2.37B beat (+28% y/y), 2026 rev guide raised to $7.75-7.85B; adj EPS $5.47 miss (two-source: Perplexity + Yahoo/247WallSt) — documented in RESEARCH-LOG; prior-session catalyst: follow-through Nov 4 $556.46 > Nov 3 $543.63 ✓. Chase bar: catalyst Nov 4, base Nov 3 close $543.63 (bars), fill $564.21 = **+3.79%** (<15%) — pass.
+- PDT room — pass (0 day trades).
+- Stock (MLM, NYSE common) — pass.
+- Sector (L-030): Materials 2 post-fill (ECL, MLM) — pass. Materials exposure 32.1% (≤40%) — pass. Aggregates theme 9.6% (≤25%) — pass.
+- Ex-div/analyst: next ex-div Nov 30 (not this week). No Nov 4-5 analyst action found; latest Stifel Buy PT $634→$629 (Oct 28). Non-blocking.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-05 | MLM | BUY | 17 | $564.21 (fill) | $505.845 (10% trailing GTC, order 5670acf7, HWM $562.05); manual cut -7% ~$524.72 | Q3 Nov 4: rev $2.37B beat (+28% y/y), 2026 rev guide raised to $7.75-7.85B (from $7.20-7.40B); EPS miss on Lhoist-deal interest; Materials momentum (XLB +3.88% 5-sess); +3.79% realized <15% chase bar | $677.05 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
+
+**Post-open (14:38 UTC):** Equity $99,137.34 | Cash $39,819.44 (40.17%) | **~59.8% deployed — below 75-85% band**. 5 positions (DGX, ECL, MLM, NVO, RTX), 1 open slot. Week 18: 2/3 used. No-trade streak 0. Sector: Materials 32.1% (ECL 22.4%, MLM 9.6%), HC 18.3% (DGX, NVO), A&D RTX 9.4%. Verified via `orders` (5 GTC trailing stops, status new) + `positions`.
