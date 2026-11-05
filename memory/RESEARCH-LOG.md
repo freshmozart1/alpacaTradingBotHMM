@@ -4958,3 +4958,67 @@ ET **-3.90%**, MLM **+0.59%**, PFE **-2.38%**, AMGN **-0.92%**, MPC **-0.63%** (
 - **RTX** -4.0% intraday: Dem midterm sweep → tighter defense spending fears (Morningstar/Dow Jones, Nov 4: LMT -4.3%, NOC -3.9%, RTX ~-3.4%). RTX-specific news neutral/positive. Thesis weakened, not broken; hold on GTC trail.
 - Book: 4 positions (DGX, ECL, NVO, RTX), ~50% deployed, cash ~$49.4k → **2 open slots**, below band. Week 18: 1/3 used.
 - Next market-open candidates: AMGN (HC 3rd blocked while DGX+NVO held), CVS (HC, same block), MLM/WLK (Materials 2 allowed), Energy reopen (0 held, 1 failure) — CVE skipped today (rev miss).
+
+## 2026-11-05 — Pre-market Research
+
+On-time run (13:07 UTC, before market-open). Data = 13:07-13:30 UTC pre-open.
+
+### Account
+- Equity: $98,990.01 | Cash: $49,411.01 (49.92%) | Buying power: $336,465.24 (margin, effective) | `balance_asof` 2026-11-04.
+- Position market value: $49,579.00 (DGX 35, ECL 70, NVO 225, RTX 47) — **50.08% deployed (well below 75-85% band)**. 4 GTC trailing stops, status new: NVO 539e1bc0 (10%) $38.916/HWM $43.24; DGX 30c44a67 (10%) $230.832/HWM $256.48; ECL 922d840e ($20.50) $295.04/HWM $315.54; RTX 313ded6c (10%) $185.0535/HWM $205.615. Exp Jan 15-Feb 2 2027.
+- Pre-open marks vs last_equity $99,227.22: -$237.21 (-0.24%).
+- Daytrade count: not returned; no day trades. Day 88, Thursday, Week 18: **1/3 used** (NVO). 4/6 positions, **2 open slots**. No-trade streak 0.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 86%** (500 obs, 105 days in regime). Down from 95%. Advisory only.
+- Held (`positions` marks): DGX $255.68 +5.27% (cushion 9.7%); ECL $315.01 +11.73% (6.3%); **NVO $41.32 -3.89%** (pre-mkt -2.0% vs $42.18; cushion 5.8%; -7% cut ~$39.98 = 3.2% away); RTX $197.50 +2.15% (6.3%). None at -7%. No tighten triggers (max ECL +11.7%).
+- Exposure: Materials 22.28% (ECL); HC 18.43% (DGX 9.04%, NVO 9.39%); A&D 9.38% (RTX); Energy 0%.
+
+### Market Context
+- Perplexity: 18/18 queries exit 0 (first parallel batch hit 429 → re-run sequentially; no WebSearch fallback needed).
+- WTI/Brent: **WTI $86.76, Brent $93.65** (Perplexity, Nov 5; FT 09:14 GMT $88.09/$95.33) — not a repeat (Nov 4 $95.20/$102.89). Spread 7.9% <10%. USO Nov 4 `bars` $145.37 vs $158.18 = **-8.10%**; pre-mkt $147.7 = +1.6%. Driver: Dem sweep → Iran de-escalation hopes (Perplexity).
+- S&P 500 futures: **-0.08%** (7,682.6, CFD 3:09 ET). Cross-check SPY pre-mkt $767.15 vs Nov 4 $766.73 = **+0.05%** ✓ → flat open after Nov 4 SPY +1.64%.
+- VIX: 16.83 (prev 16.61) — timestamp "10:31 ET" is in the future → suspect; context only.
+- Today: jobless claims 8:30 ET (f 197k), ECB decision. NFP Fri Nov 6, CPI Nov 10, PPI Nov 13, FOMC Dec 8-9.
+- Earnings BMO: CI, CAH, BDX, ZTS, MRNA, VTRS (HC — 3rd HC blocked), COP, TRGP, VST (Energy/Util), PH, CMI, ROK (Industrials), **APD**, KMB, DUK, SO, DTE, GPN. AMC: ABNB.
+- Sector momentum (Perplexity YTD Oct 29-30, repeat source): Energy +53.68%, IT +24.41%, HC +18.83%, Materials +14.50%, Industrials +9.61%. Tech sector-exited → eligible top-2 **Energy, Health Care**; 3rd leg Materials. `bars` 5-sess Oct 28→Nov 4: XLE **-7.19%**, XLV **+5.51%**, XLB **+3.88%**, XLI +0.55% — HC/Materials leading, Energy breaking down (oil -8%).
+- Held tickers:
+  - **DGX**: Nov 4 close +3.45% (Perplexity; bars $255.60). No new catalyst (13F filings only). Thesis intact.
+  - **ECL**: BofA PT $355 / UBS $357 (dateless → excluded). New HWM → stop $295.04. Investor Day Nov 17. Thesis intact.
+  - **NVO**: no new catalyst; Q3 beat/raise digested, no 2027 guide, US Wegovy/Ozempic price cuts = overhang. Pre-mkt -2.0%. Thesis intact; watch -7% line ($39.98).
+  - **RTX**: Dem-sweep defense selloff Nov 4 (bars -2.65%); ex-div Nov 20 $0.73. Thesis weakened, not broken.
+- Watchlist (carried):
+  - **MLM**: Q3 Nov 4 BMO — rev $2.37B beat (+28% y/y), 2026 rev guide raised to $7.75-7.85B (from $7.20-7.40B), adj EBITDA $808M; adj EPS $5.47 **miss** (interest from Lhoist deal). **Two-source: Perplexity + Yahoo/247WallSt (Nov 4)** ✓. Follow-through ✓: Nov 4 $556.46 > Nov 3 $543.63 (+2.36% <15%). **Gate-eligible (prior-session catalyst), mixed quality.**
+  - **AMGN**: Q3 beat Nov 3 AMC (two-source, 8-K); follow-through ✓ Nov 4 $478.09 > $461.15 (+3.67%). **Blocked: 3rd HC (DGX, NVO).**
+  - **CVS**: Q3 beat + split plan; Nov 4 $79.96 (-12.6%). Drop.
+  - **CVE**: Q3 beat but -7.6% ($28.39); Energy breaking down, 1 failed Energy trade. Drop.
+  - **WLK**: EPS miss, Cologne closure; $67.97 flat. Drop.
+  - New: **APD** (Materials) — FY Q4 today BMO: adj EPS $3.61 vs $3.60 (in-line), rev $3.56B +12%, FY27 guide vague "growth" (Perplexity, press release Nov 5). Not a buy catalyst. Watch; 3rd Materials-type with ECL+MLM.
+
+### Stall-Breaker
+Not armed (streak 0 < 5; NVO bought Nov 4).
+
+### Lessons Check
+- L-042 (alert missing/late runs) — `git log`: Nov 4 pre-market (ddfb22b 13:13), market-open (4c4915c 14:37), midday (6d5f3e5 16:13), EOD (d4fa8b7 20:14) ✓ in order. Today on time. No incident → no alert. Complied.
+- L-041 (next-slot candidate) — book 4/6 (not full) → N/A; named anyway: **MLM** (two-source Nov 4 catalyst, base Nov 3 $543.63, +2.36% realized, chase bar $625.17; post-fill Materials ~32% <40%; aggregates theme ~10% <25%). Complied.
+- L-040 (slot-blocked) — book 4/6 → N/A. AMGN logged as sector-blocked (3rd HC), no rotation. Complied.
+- L-039 (skip-time price) — no chase/fade skips today. Complied.
+- L-038 (shadow spec) — no open [no-cat] rows. 5-sess Oct 28→Nov 4 (bars): Energy leader XOM -6.93% vs XLE -7.19% = +0.3pp → no trigger. HC leader LLY +9.87% vs XLV +5.51% = +4.4pp, $1,418.07 vs 20d high $1,447 (-2.0%) → same Oct 29 trigger continues (trigger close $1,373.46; Nov 4 interim **+3.25%**, 4/5 sessions; final +5d at Nov 5 close → score Nov 6). 0 new triggers. No live entries. Complied.
+- L-036 (slippage) — no exits since Nov 4 EOD. Complied.
+- Operational: GTC expiries Jan-Feb 2027 — none within 5 sessions ✓. Deployment <75% → fully-specified idea flagged (MLM) ✓.
+
+### Yesterday's Skip Check
+MLM **+2.97%**, AMGN **+2.72%**, CVS **-12.56%**, CVE **-7.58%**, WLK **-0.77%** (Nov 4 `bars` close vs Refs; `quote` returned stale Nov 4 books). Skips look right so far (CVS/CVE losses avoided; MLM/AMGN just under +3%).
+
+### Trade Ideas
+- Week 18: 1/3 used. 4/6 → 2 open slots. ~50% deployed → well below band.
+1. **MLM — primary (conditional).** Q3 Nov 4: rev beat + FY rev guide raise (two-source), EPS miss. Market-open hard-check: open holds > $543.63 (Nov 3 base) and reaction <15%. Entry ≤ $575 (≤+5.8% vs base), 17 sh (~$9.8k, ~10% equity), 10% GTC trail, -7% cut (~$535 off $575), target +20% (~$690) → R:R ~2.9:1. Post-fill Materials ECL+MLM ~32% <40%.
+2. **AMGN — blocked (3rd HC).** Only if DGX or NVO exits. Entry ≤ $490, 20 sh (~$9.8k), 10% trail, -7% cut, target +20%.
+3. No Energy idea — XLE -7.2% 5-sess, oil -8%, 1 failed Energy trade; stand aside.
+
+### Risk Factors
+- NVO 3.2% above -7% cut ($39.98); pre-mkt -2.0%.
+- RTX: defense under Dem-Congress spending scrutiny.
+- Under-invested (~50%) in Bull regime (86%, softening).
+- Jobless claims 8:30, ECB today; NFP Fri. Oil whipsaw (Iran headlines).
+
+### Decision
+**HOLD pre-market; flag MLM (conditional) for market-open gate.** Watchlist: dropped CVS, CVE, WLK; added APD (watch). No ClickUp alert (nothing urgent).
