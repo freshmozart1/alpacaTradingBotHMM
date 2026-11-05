@@ -2931,3 +2931,22 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-05 | MLM | BUY | 17 | $564.21 (fill) | $505.845 (10% trailing GTC, order 5670acf7, HWM $562.05); manual cut -7% ~$524.72 | Q3 Nov 4: rev $2.37B beat (+28% y/y), 2026 rev guide raised to $7.75-7.85B (from $7.20-7.40B); EPS miss on Lhoist-deal interest; Materials momentum (XLB +3.88% 5-sess); +3.79% realized <15% chase bar | $677.05 (+20%) | ~2.9:1 vs -7% cut (2:1 vs 10% trail) |
 
 **Post-open (14:38 UTC):** Equity $99,137.34 | Cash $39,819.44 (40.17%) | **~59.8% deployed — below 75-85% band**. 5 positions (DGX, ECL, MLM, NVO, RTX), 1 open slot. Week 18: 2/3 used. No-trade streak 0. Sector: Materials 32.1% (ECL 22.4%, MLM 9.6%), HC 18.3% (DGX, NVO), A&D RTX 9.4%. Verified via `orders` (5 GTC trailing stops, status new) + `positions`.
+
+### Nov 5 — Midday Scan (Day 88, Thursday)
+
+**Account (16:15 UTC):** Equity $98,001.54 | Cash $39,819.44 (40.63%) | ~59.4% deployed — **below 75-85% band**. Day vs last_equity $99,227.22: -$1,225.68 (-1.24%). 5 open positions — DGX 35 sh +5.44% ($256.08, intraday +0.16%); ECL 70 sh +10.03% ($310.20, intraday -1.53%); MLM 17 sh **-5.62%** ($532.515, intraday -4.32%); NVO 225 sh **-5.38%** ($40.68, intraday -3.56%); RTX 47 sh +2.16% ($197.51, intraday -0.46%). No stop fills since market-open.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min MLM -5.62%; cut line $524.72, 1.5% away; NVO cut line $39.98, 1.7% away). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max ECL +10.03%) — no change.
+
+**STEP 5 (thesis check):** Tape risk-off: SPY -3.01% (bars $766.73 → $743.64), AI/semis selloff (AMD -11%, QCOM -9%) + post-midterm profit-taking (Perplexity Nov 5). XLB -1.87%, VMC -3.34%.
+- **MLM** opened $569.71, faded to $531.4 — now below Nov 3 pre-catalyst base $543.63 (follow-through erased). Cause: post-earnings reset (EPS/margin, ASP -3.6%, organic softness) + sector/beta; no new negative news. Barclays Buy $640 maintained Nov 5. Catalyst (rev beat, FY guide raise) not invalidated → thesis **weakened, not broken**; hold, -7% manual cut + GTC trail ($509.2155) backstop.
+- **NVO** -3.56% intraday: post-print profit-taking, no 2027 guide, Jan 2027 US list-price cuts (already known). No new negative event → thesis intact; hold.
+- DGX, ECL, RTX intact (beta drift only). Cushions to stop: ECL ~3.8%, NVO ~4.3%, MLM ~4.4%, RTX ~6.3%, DGX ~9.0%. No cuts.
+
+**STEP 6 (research):** Perplexity x3 (MLM, market, NVO). Addendum in RESEARCH-LOG. No midday entry. 1 open slot; Week 18: 2/3 used.
+
+**STEP 7 (verify):** `alpaca.sh positions` (DGX 35, ECL 70, MLM 17, NVO 225, RTX 47) and `orders`: 5 GTC trailing stops, status new — MLM 5670acf7 (10%) $509.2155/HWM $565.795; NVO 539e1bc0 (10%) $38.916/HWM $43.24; DGX 30c44a67 (10%) $233.10/HWM $259; ECL 922d840e ($20.50) $298.43/HWM $318.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.

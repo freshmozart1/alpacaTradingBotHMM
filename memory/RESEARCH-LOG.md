@@ -5022,3 +5022,9 @@ MLM **+2.97%**, AMGN **+2.72%**, CVS **-12.56%**, CVE **-7.58%**, WLK **-0.77%**
 
 ### Decision
 **HOLD pre-market; flag MLM (conditional) for market-open gate.** Watchlist: dropped CVS, CVE, WLK; added APD (watch). No ClickUp alert (nothing urgent).
+
+### 2026-11-05 — Midday Addendum (16:15 UTC)
+- **Market:** SPY -3.01% intraday (bars $743.64 vs Nov 4 $766.73); Nasdaq ~-3.8%. Drivers: AI/semis selloff (Dem-Congress data-center regulation fears; AMD -11%, MU -6.5%, QCOM -9% on weak guide) + profit-taking after Nov 4 post-midterm rally; oil rebound on Iran headlines (Perplexity Nov 5).
+- **MLM** -4.32% intraday ($532.515), round-tripped below Nov 3 base $543.63 after $569.71 open. Post-earnings reset: EPS down y/y, ASP -3.6% (acquisition mix), organic shipments soft, higher energy/D&A/debt costs; peers weak (VMC -3.3%, CRH Q3 EPS miss). Barclays Buy $640 maintained (Nov 5). Thesis weakened, not broken. -5.62% vs entry; -7% cut $524.72.
+- **NVO** -3.56% ($40.68): post-Q3 profit-taking, no 2027 guidance, Jan 2027 US Wegovy/Ozempic list-price cuts; no new negative event. -5.38% vs entry; -7% cut $39.98.
+- Book: 5 positions, ~59% deployed, 1 open slot. Week 18: 2/3 used. Two names within ~1.5-1.7% of -7% cut — next check at EOD/pre-market.
