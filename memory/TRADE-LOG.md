@@ -2965,3 +2965,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-06 | NVO | SELL (-7% cut) | 225 | $39.89 (fill, order 60bedf7c) | cut line $39.98; slippage -0.23% (L-036) | Realized **-$698.10 (-7.22%)**; Q3 beat faded, Jan 2027 US price-cut overhang, broad tape. **Failed Health Care trade.** | — | — |
 
 **Post-actions (14:37 UTC):** Equity $96,013.24 | Cash $78,360.50 (81.6%) | **~18.4% deployed — far below 75-85% band**. 2 positions (DGX 35, RTX 47), 4 open slots. Realized today: +$1,069.60 - $830.45 - $698.10 = **-$458.95**. Verified via `orders` (2 GTC trailing stops, status new: DGX 30c44a67 $233.10/HWM $259.00; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (MLM, NVO, ECL gone). Sector: HC 9.2% (DGX), A&D 9.2% (RTX); Materials 0%. Week 18: 2/3 used (1 left). Regime Bear/High-Vol (HMM) — refill via next pre-market gate, no forced entries.
+
+### Nov 6 — Midday Scan (Day 89, Friday)
+
+**Account (16:10 UTC):** Equity $96,261.12 | Cash $78,360.50 (81.4%) | ~18.6% deployed — **far below 75-85% band**. 2 open positions — DGX 35 sh +4.76% ($254.43, intraday -0.12%); RTX 47 sh -1.01% ($191.395, intraday -0.25%). No fills since market-open (MLM/NVO cuts, ECL trail already logged).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min RTX -1.01%). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +4.76%) — no change.
+
+**STEP 5 (thesis check):** DGX flat intraday, no new catalyst — intact; cushion ~8.4% to $233.10. RTX flat intraday post-NFP; defense Dem-sweep overhang unchanged (no new negative), ex-div Nov 20 — weakened, not broken; cushion ~3.3% to $185.0535. No cuts.
+
+**STEP 6 (research):** Skipped — nothing moving sharply. No midday entry (risk mgmt only). 4 open slots; Week 18: 2/3 used → refill via next pre-market gate.
+
+**STEP 7 (verify):** `positions` (DGX 35, RTX 47) + `orders`: 2 GTC trailing stops, status new — DGX 30c44a67 (10%) $233.10/HWM $259.00; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
