@@ -2981,3 +2981,13 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions` (DGX 35, RTX 47) + `orders`: 2 GTC trailing stops, status new — DGX 30c44a67 (10%) $233.10/HWM $259.00; RTX 313ded6c (10%) $185.0535/HWM $205.615.
 
 **STEP 8 (notify):** No action taken → no ClickUp.
+
+### Nov 6 — EOD Snapshot (Day 89, Friday)
+**Portfolio:** $96,397.24 | **Cash:** $78,360.50 (81.29%) | **Day P&L:** -$581.16 (-0.60%) | **Phase P&L:** -$3,602.76 (-3.60%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $257.01 | +0.89% | +$494.90 (+5.82%) | $233.10 (10% trail, GTC 30c44a67, HWM $259.00) |
+| RTX | 47 | $193.34 | $192.37 | +0.26% | -$45.59 (-0.50%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** 1st consecutive no-trade day (no new entries; exits only — MLM/NVO -7% cut sells + ECL passive trail fill at open). Realized today -$458.95 (ECL +$1,069.60, MLM -$830.45 **failed Materials**, NVO -$698.10 **failed Health Care**). Week 18 closes at 2/3 new trades. Day P&L vs Nov 5 logged EOD $96,978.40 (Alpaca last_equity $97,202.40; $224.00 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,602.76 (-3.60%) vs $100,000 start. 2 positions, 18.71% deployed / 81.29% cash — **far below 75-85% band**; 4 open slots. Sector: HC 9.33% (DGX), A&D 9.38% (RTX); Materials 0%. No position at -7% cut. Stop cushions: RTX ~3.8%, DGX ~9.3%. 2 GTC stops resting. Refill via Monday pre-market gate (Week 19 resets 0/3); Regime Bear/High-Vol.
