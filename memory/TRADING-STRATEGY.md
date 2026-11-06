@@ -110,6 +110,9 @@ If any fail, the trade is skipped and the reason is logged.
 - At every new-entry/add gate check, log combined post-fill exposure of
   held names in the candidate's sub-industry/theme; if it would exceed
   25% of equity, size down to fit or skip and log a concentration skip.
+- While at 6 positions, log any gate-clearing candidate as a
+  "slot-blocked" HOLD scoreboard row; never exit a held name to make room
+  unless it hits a sell-side rule (-7%, thesis break, sector exit, stop).
 
 ## Sell-Side Rules
 
@@ -152,6 +155,9 @@ Evaluated at the midday scan and opportunistically:
 - At every EOD, list GTC stop expiries within 5 trading sessions; renew
   at the next market-open (cancel + re-place at the same or higher stop,
   never lower) and verify via `alpaca.sh orders`.
+- For every chase or fade skip, log the skip-time price in the
+  scoreboard Decision cell; each weekly review reports +5d % from both
+  Ref and skip-time price.
 
 ## Rule Changelog
 
@@ -191,3 +197,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-10-23 | Operational Rules | (none) -> tag scoreboard rows lacking a dated company catalyst "[no-cat]"; review reports subset missed:avoided | Promoted from LESSONS.md L-034 (2026-10-09), complied for 2 straight weeks (VLO, XOM rows tagged; subset 2 missed : 0 avoided — MPC +10.24%, VLO +7.53%). Measurement only, not a risk-rule change. |
 | 2026-10-30 | Buy-Side Gate | (none) -> post-fill sub-industry/theme exposure capped at 25% of equity at entry/add (size down or concentration skip) | Promoted from LESSONS.md L-035 (2026-10-16), complied at every gate check for 2 straight weeks (Oct 16-30): RTX sized to 47 sh (A&D 24.70%), NOC and XOM blocked; origin AVGO+MRVL ~35% AI-semis both failed (-$2,960.22). Cost logged: NOC +7.95% / XOM +3.09% +5d misses (scoreboard Oct 19-20). Tightening only, not a risk-rule loosening. |
 | 2026-10-30 | Operational Rules | (none) -> EOD lists GTC stop expiries within 5 sessions; renew at next market-open at same/higher stop, verify via `orders` | Promoted from LESSONS.md L-031 (2026-10-02), complied every EOD for 2+ weeks; fired once (ECL renewed via $20.50 trail Oct 20, stop not lowered). All 6 stops now exp Jan 2027. Process addition only, not a risk-rule change. |
+| 2026-11-06 | Buy-Side Gate | (none) -> while 6/6, log gate-clearing candidates as "slot-blocked" scoreboard rows; no rotation exits absent a sell-side rule | Promoted from LESSONS.md L-040 (2026-10-23), complied for 2 straight weeks (Oct 23-Nov 6): LLY, ABBV, IDXX logged slot-blocked, zero forced rotations; LLY scored +5.93% by Ref but -0.45% from its Oct 29 trigger close. Process addition only, not a risk-rule change. |
+| 2026-11-06 | Operational Rules | (none) -> chase/fade skips log skip-time price; review scores +5d from Ref and skip px | Promoted from LESSONS.md L-039 (2026-10-23), complied for 2 straight weeks (Oct 23-Nov 6): CLF -6.31% / IRON -1.59% from skip px vs +10.09% / +36.61% by Ref; IDXX skip px $672.06 logged. Measurement only, not a risk-rule change. |

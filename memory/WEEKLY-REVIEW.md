@@ -1388,3 +1388,92 @@ Deployment 85.03% / cash 14.97% — top edge of band via appreciation. 6/6 posit
 - Zero-trade week (1st consecutive — prior week 3 trades): STEP 5 process adjustment = L-041. No buy-side-gate calibration required (not 2nd consecutive). No risk rules touched.
 
 ### Overall Grade: B+ (+3.70% vs S&P, phase P&L back positive, every trail ratcheted up, skip scoring confirms gate calibration — but zero trades by slot constraint, no closed winner, a missed alert, and LMT's stop sits ~2% under price)
+
+## Week ending 2026-11-06
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $100,637.23 (Oct 30 EOD) |
+| Ending portfolio | $96,397.24 (Nov 6 logged EOD, 20:14 UTC marks; live pull $96,384.39, `balance_asof` 2026-11-05 — provisional) |
+| Week return | -$4,239.99 (-4.21%) |
+| S&P 500 week | -2.33% (SPY 755.72 -> 738.09, Oct 30 close -> Nov 6 20:16 UTC pre-close via `alpaca.sh bars`); Perplexity ~-3.0% (close ~7,403, Thu -4.4%) |
+| Bot vs S&P | -1.88% (bars) / ~-1.2% (Perplexity) |
+| Trades | 2 new entries (NVO, MLM); 6 closed (W:3 / L:3) — CVX, LMT, ECL trails; HAL trail; MLM, NVO -7% cuts; open: 2 (DGX, RTX); 2/3 weekly cap used |
+| Win rate | 50% (3/6 closed) |
+| Best trade | LMT +20.25% (+$2,687.10); largest $ CVX +16.71% (+$3,077.91) |
+| Worst trade | MLM -8.66% (-$830.45) |
+| Profit factor | 4.18 ($6,834.61 winners / $1,634.94 losers); realized net +$5,199.67 |
+
+### Skip Scoreboard
+
+| Ticker | Ref | +5d close | +5d % (Ref) | Verdict |
+|--------|-----|-----------|-------------|---------|
+| LLY | 1290.67 | 1367.27 (Nov 5) | +5.93% (vs L-038 trigger close $1,373.46: -0.45%) | missed (slot-blocked) |
+| MRK | 141.09 | 146.89 (Nov 5) | +4.11% | missed (single-source) |
+| FTI | 71.46 | 61.60 (Nov 5) | -13.80% | avoided-loss |
+| ABBV | 290.75 | 289.79 (Nov 6) | -0.33% | skip-right |
+| LNG | 318.90 | 279.135 (Nov 6) | -12.47% | avoided-loss |
+| OKE | 95.79 (adj 94.73) | 85.67 (Nov 6) | -9.56% adj (-10.56% nominal) | avoided-loss |
+
+Verdicts: missed 2 (+10.04%) / skip-right 1 / avoided-loss 3 (-35.83%) — missed:avoided 2:3 (0.28 by %). No new chase/fade skips scored (L-039 n/a; IDXX skip-px row scores next week). **[no-cat] subset:** no rows this week; cumulative 3:0 unchanged. **L-038 shadow final:** 1 trigger (LLY Oct 29) / 0 hits (-0.45%) — adoption bar (>=4 triggers, hits > losses) not met. **Gate calibration verdict: calibrated-to-tight is correct** — every Energy concentration/follow-through block avoided a -10%+ drop; the two misses were single-source or slot-blocked. Nov 2-4 rows score next week. **Pruned:** Oct 19-20 rows (verdicts reported 2026-10-30).
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| CVX | $193.860947 (95 sh) | $226.26 (Nov 3) | +$3,077.91 (+16.71%) | 5% trail filled; slippage +0.71% favorable vs $224.656 |
+| LMT | $510.37 (26 sh) | $613.72 (Nov 4) | +$2,687.10 (+20.25%) | 5% trail gap-through on Dem-sweep defense selloff; slippage -1.67% |
+| HAL | $33.3878 (200 sh) | $32.85585 (Nov 4) | -$106.39 (-1.59%) | 10% trail; slippage -0.08%; failed Energy #1 |
+| ECL | $281.93 (70 sh) | $297.21 (Nov 6) | +$1,069.60 (+5.42%) | $20.50 trail at open; slippage -0.41% |
+| MLM | $564.21 (17 sh) | $515.36 (Nov 6) | -$830.45 (-8.66%) | -7% cut, 1 day after entry; slippage -1.78% vs $524.72 line (crossed Nov 5; midday missing, EOD deferred); failed Materials #1 |
+| NVO | $42.9927 (225 sh) | $39.89 (Nov 6) | -$698.10 (-7.22%) | -7% cut, 2 days after entry; slippage -0.23%; failed Health Care #1 |
+
+L-036 slippage total: -$388.70 across 6 exits (CVX +$152.38; LMT -$271.18, MLM -$159.12, ECL -$85.40, NVO -$20.25, HAL -$5.13). Gap-throughs (LMT, MLM) = 83% of the cost. No sector at 2 consecutive failures (Energy 1, Materials 1, HC 1).
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| DGX | $242.87 (35 sh) | $257.01 | +$494.90 (+5.82%) | 10% trailing GTC 30c44a67, stop $233.10, HWM $259.00 |
+| RTX | $193.34 (47 sh) | $192.37 | -$45.59 (-0.50%) | 10% trailing GTC 313ded6c, stop $185.0535, HWM $205.615 |
+
+Deployment 18.71% / cash 81.29% — far below 75-85% band (3 trail fills + 2 cuts). 2/6 positions. Sector: HC 9.33%, A&D 9.38%. RTX cushion ~3.8%, ex-div Nov 20. HMM regime flipped Bear/High-Vol (100%) Nov 6; VIX ~26.
+
+### What Worked
+
+- Trailing stops did their job: CVX +16.71%, LMT +20.25%, ECL +5.42% locked before the Nov 5 -4.4% S&P day — realized +$6,834.61; PF 4.18.
+- -7% cut executed mechanically on MLM/NVO at the open — no hoping, no stop lowered.
+- Skip gate: 3 avoided losses (FTI -13.80%, LNG -12.47%, OKE -9.56%) vs 2 modest misses; Energy concentration cap (L-030) paid off directly.
+- L-041 worked as designed: NVO/MLM were pre-vetted, fully specified, and filled within minutes of slots opening.
+- Operational: both missing/late runs (Nov 2 pre-market, Nov 5 midday) were alerted.
+
+### What Didn't Work
+
+- Both new entries (NVO Nov 4, MLM Nov 5) cut at -7% within 1-2 sessions (-$1,528.55) — bought into a post-midterm event-vol week as the HMM read was decaying (93% -> 72% Bull Nov 2) right before a -4.4% day.
+- -4.21% week, -1.88% vs S&P; phase P&L -3.60%. Most of the drawdown was given-back unrealized gains on 5% trails + gaps.
+- MLM crossed -7% on Nov 5 with no midday run; EOD deferred the cut ("EOD = no trades") and it filled -8.66% next open.
+- Deployment collapsed 85% -> 18.7% in 4 sessions; one weekly trade slot left unused, 4 position slots open.
+- Nov 5 midday missing alert came next pre-market, not the same session (L-042 partial breach).
+
+### Key Lessons
+
+- Trails capture trend gains; fresh earnings entries in a decaying regime get stopped before the thesis can work.
+- A -7% breach found at any session while the market is open must be executed then — deferral cost ~$143 on MLM.
+- In a risk-off flip, refill slowly: deployment band is a target, not a reason to buy into a Bear/High-Vol tape.
+- Avoided-loss evidence (3 rows, -35.83%) confirms concentration/follow-through gates; don't loosen.
+
+### Adjustments for Next Week
+
+- While HMM regime is Bear/High-Vol or VIX >= 25: max 1 new entry per session, only after SPY's first 30 min trades above its prior close; log regime/VIX/SPY at every gate (L-043).
+- Any -7% breach found by any routine while the market is open (including EOD before the 21:00 UTC close) is cut that session; same-session ClickUp alert (L-044).
+
+### Rule Changes This Week
+
+- L-039 (skip-time-price scoring for chase/fade skips) promoted to a permanent Operational Rule — 2 weeks' compliance (CLF/IRON, IDXX). Measurement only. Changelog row added.
+- L-040 (slot-blocked logging; no rotation without a sell-side rule) promoted to a permanent Buy-Side Gate rule — 2 weeks' compliance (LLY, ABBV, IDXX logged; zero forced rotations). Changelog row added.
+- L-038 retired (not promoted): 1 trigger / 0 hits. No [no-cat] entry path.
+- New L-043/L-044. L-036/L-041/L-042 carry to Nov 13. Not a zero-trade week — no STEP 5 escalation. No risk rules touched.
+
+### Overall Grade: C (trails banked +$6.8k and the gate dodged three -10% names, but both new entries were stopped within 2 sessions, -1.88% vs S&P, phase P&L -3.60%, a -7% cut deferred overnight, and deployment at 18.7%)
