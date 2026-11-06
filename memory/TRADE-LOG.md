@@ -2944,3 +2944,24 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $192.07 | -3.21% | -$59.69 (-0.66%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** Streak reset — trade(s) placed today (MLM buy 17 @ $564.21, stop 5670acf7); 0 consecutive no-trade days. Week 18: 2/3 new trades used. Broad down day: all 5 red; Day P&L vs Nov 4 logged EOD $99,106.85 (Alpaca last_equity $99,227.22; $120.37 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,021.60 (-3.02%) vs $100,000 start. **MLM -7.17% vs entry — through -7% manual cut ($524.72) on day 1**; NVO -6.65% (cut ~$39.98, 0.4% away). Both flagged for next-session cut review (EOD = no trades). Stop cushions tight: ECL ~2.0%, MLM ~2.8%, NVO ~3.0%, RTX ~3.7%, DGX ~8.0%. 5 positions, 58.94% deployed / 41.06% cash — **below 75-85% band**; 1 open slot. Sector: Materials 31.17% (ECL, MLM), Health Care 18.46% (DGX, NVO), A&D 9.31% (RTX). **No Nov 5 midday entry/commit found — midday run missing (L-042).** 5 GTC stops resting. NFP Fri.
+
+### Nov 6 — Market-Open (Day 89, Friday)
+
+**Operational Rule check:** Nov 5 has Market-Open + EOD; **Midday missing** — retroactive gap note (already alerted at pre-market, L-042). Routine fired 13:17 UTC (pre-open); actions held until post-open (14:34 UTC).
+
+**Account (14:34 UTC, pre-action):** Equity $96,102.93 | Cash $60,624.13 | 4 positions (DGX 35, MLM 17, NVO 225, RTX 47). `balance_asof` 2026-11-05. Daytrade count not returned; exits are on Nov 4/5 buys → no day trades. Week 18: 2/3 used.
+
+**Lessons compliance:** L-036 slippage logged on all 3 exits ✓; L-039 no chase/fade skips ✓; L-040/L-041 no candidate (pre-market: none qualify) ✓; L-042 Nov 5 midday gap noted ✓.
+
+**Buy gate:** No planned entries (pre-market Decision: HOLD). No gate-fail rows.
+
+**ECL trail filled at open (mechanical):** stop 922d840e ($20.50 trail, $298.43/HWM $318.93) filled 70 @ $297.21 at 14:31:29 UTC. Realized **+$1,069.60 (+5.42%)** vs entry $281.93. Slippage vs stop: -0.41% (L-036). Winner.
+
+**-7% cuts (sell rule):** MLM -8.37% / NVO -7.22% at 14:34 UTC marks (IEX 1-min: MLM $516.89, NVO $39.90). Cancelled GTC trails (MLM 5670acf7, NVO 539e1bc0), market sells.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-06 | MLM | SELL (-7% cut) | 17 | $515.36 (fill, order a7f62cca) | cut line $524.72; slippage -1.78% (L-036) | Realized **-$830.45 (-8.66%)**; Q3 thesis unbroken, killed by Dem-sweep/Materials selloff (XLB -2.84% Nov 5) + gap down. **Failed Materials trade.** | — | — |
+| 2026-11-06 | NVO | SELL (-7% cut) | 225 | $39.89 (fill, order 60bedf7c) | cut line $39.98; slippage -0.23% (L-036) | Realized **-$698.10 (-7.22%)**; Q3 beat faded, Jan 2027 US price-cut overhang, broad tape. **Failed Health Care trade.** | — | — |
+
+**Post-actions (14:37 UTC):** Equity $96,013.24 | Cash $78,360.50 (81.6%) | **~18.4% deployed — far below 75-85% band**. 2 positions (DGX 35, RTX 47), 4 open slots. Realized today: +$1,069.60 - $830.45 - $698.10 = **-$458.95**. Verified via `orders` (2 GTC trailing stops, status new: DGX 30c44a67 $233.10/HWM $259.00; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (MLM, NVO, ECL gone). Sector: HC 9.2% (DGX), A&D 9.2% (RTX); Materials 0%. Week 18: 2/3 used (1 left). Regime Bear/High-Vol (HMM) — refill via next pre-market gate, no forced entries.
