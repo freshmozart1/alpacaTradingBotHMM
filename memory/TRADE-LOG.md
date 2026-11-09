@@ -3013,3 +3013,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-09 | CEG | BUY | 35 | $260.42 (fill $260.418858, order e792b950, 15:01:45 UTC) | $233.865 (10% trail GTC f45ae140, HWM $259.85, exp Feb 5 2027); -7% cut $242.19 | Q3 beat ($5.06 vs ~$3.89) + FY26 guide raise; AI-power/nuclear demand; post-print follow-through above $249.77 base with SPY bounce | $312.50 (+20%) | ~2.9:1 vs -7% cut (~2:1 vs trail) |
 
 **Post-actions (15:02 UTC):** Equity $96,397.33 | Cash $69,245.03 (71.8%) | **~28.2% deployed — below 75-85% band**. 3 positions (CEG 35, DGX 35, RTX 47), 3 open slots. Verified via `orders` (3 GTC trailing stops, status new: CEG f45ae140 $233.865/HWM $259.85; DGX 30c44a67 $233.10/HWM $259.00; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (CEG 35 @ $260.42). Sector: Utilities 9.4% (CEG), HC 9.3% (DGX), A&D 9.4% (RTX). Week 19: 1/3 used.
+
+### Nov 9 — Midday Scan (Day 90, Monday)
+
+**Account (16:11 UTC):** Equity $96,805.78 | Cash $69,245.03 (71.5%) | ~28.5% deployed — **below 75-85% band**. 3 open positions — CEG 35 sh +3.58% ($269.74, intraday +7.92%); DGX 35 sh +5.48% ($256.175, intraday +0.21%); RTX 47 sh +0.73% ($194.76, intraday +2.76%). No fills since market-open (CEG buy already logged).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min RTX +0.73%). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +5.48%) — no change.
+
+**STEP 5 (thesis check):** CEG post-Q3 follow-through, new HWM $270.89 (stop ratcheted to $243.801, above -7% cut $242.19) — intact; cushion ~9.6%. DGX flat intraday, no new catalyst — intact; cushion ~9.0% to $233.10. RTX +2.76% intraday, recovering toward entry; ex-div Nov 20 — intact; cushion ~5.0% to $185.0535. No cuts.
+
+**STEP 6 (research):** Skipped — moves have known causes (CEG Q3 beat/guide raise; RTX/broad tape bounce). No midday entry (risk mgmt only). 3 open slots; Week 19: 1/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, RTX 47) + `orders`: 3 GTC trailing stops, status new — CEG f45ae140 (10%) $243.801/HWM $270.89; DGX 30c44a67 (10%) $233.10/HWM $259.00; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
