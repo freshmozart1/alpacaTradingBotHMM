@@ -2991,3 +2991,25 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $192.37 | +0.26% | -$45.59 (-0.50%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 1st consecutive no-trade day (no new entries; exits only — MLM/NVO -7% cut sells + ECL passive trail fill at open). Realized today -$458.95 (ECL +$1,069.60, MLM -$830.45 **failed Materials**, NVO -$698.10 **failed Health Care**). Week 18 closes at 2/3 new trades. Day P&L vs Nov 5 logged EOD $96,978.40 (Alpaca last_equity $97,202.40; $224.00 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,602.76 (-3.60%) vs $100,000 start. 2 positions, 18.71% deployed / 81.29% cash — **far below 75-85% band**; 4 open slots. Sector: HC 9.33% (DGX), A&D 9.38% (RTX); Materials 0%. No position at -7% cut. Stop cushions: RTX ~3.8%, DGX ~9.3%. 2 GTC stops resting. Refill via Monday pre-market gate (Week 19 resets 0/3); Regime Bear/High-Vol.
+
+### Nov 9 — Market-Open (Day 90, Monday)
+
+**Operational Rule check:** Nov 6 has Market-Open + Midday + EOD ✓. Nov 9 pre-market on time (b0ad757) ✓. No missing/late runs → no alert (L-042). Routine fired 13:24 UTC (pre-open); gate held until SPY first 30 min complete (15:01 UTC).
+
+**Account (13:24 UTC, pre-open):** Equity $96,412.28 | Cash $78,359.69 (81.28%) | 2 positions (DGX 35, RTX 47), 2 GTC stops. `balance_asof` 2026-11-06. Daytrade count not returned; no day trades. Week 19: 0/3 used.
+
+**Lessons compliance:** L-044 no position near -7% (min RTX -0.17%) ✓; L-043 regime Mixed/Uncertain 60%, VIX 24.42 (<25) → not triggered; plan's own SPY check applied anyway: SPY first 30 min low $741.18 / last $747.53 > Nov 6 close $735.40 ✓, max 1 entry ✓; L-042 no gaps ✓; L-041 N/A (2/6); L-036 no exits ✓.
+
+**Buy gate — CEG (15:01 UTC):**
+- Catalyst: Q3 Nov 9 BMO — adj op EPS $5.06 vs ~$3.89 est; FY26 guide raised/narrowed $12.50-12.80 (from $11.50-12.50). Source dated today: company PR (constellationenergy.com, 2026-11-09) + Investing.com/Yahoo premarket +4% (2026-11-09) ✓. Bars-confirmed post-release ✓.
+- Chase check: catalyst date Nov 9; base Nov 6 close $249.77; 15:00 UTC $259.60 = **+3.93%** (<15%; bar $287.24) ✓. First 30 min: open $260.42, lo $247.18, hi $260.98. Entry ≤$270 ✓.
+- Sector: XLU $43.415 vs Nov 6 $43.14 = +0.64% (green at open) ✓.
+- Positions after fill 3 ≤6 ✓ | Week 19 1/3 ✓ | Cost $9,114.66 = 9.46% equity ≤20% ✓ | ≤ cash ✓ | PDT room ✓ | Stock ✓.
+- Post-fill sector count: Utilities 1 (<3) ✓; Utilities exposure 9.46% <40% ✓; IPP/AI-power theme 9.46% <25% ✓.
+- Ex-div/analyst (Operational): **ex-div Nov 16** (same/next week, inside thesis window — small; adjusted base to be logged at hold checks). Latest analyst action: Morgan Stanley OW, PT $378→$391 (Oct 30) — support only, not catalyst.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-09 | CEG | BUY | 35 | $260.42 (fill $260.418858, order e792b950, 15:01:45 UTC) | $233.865 (10% trail GTC f45ae140, HWM $259.85, exp Feb 5 2027); -7% cut $242.19 | Q3 beat ($5.06 vs ~$3.89) + FY26 guide raise; AI-power/nuclear demand; post-print follow-through above $249.77 base with SPY bounce | $312.50 (+20%) | ~2.9:1 vs -7% cut (~2:1 vs trail) |
+
+**Post-actions (15:02 UTC):** Equity $96,397.33 | Cash $69,245.03 (71.8%) | **~28.2% deployed — below 75-85% band**. 3 positions (CEG 35, DGX 35, RTX 47), 3 open slots. Verified via `orders` (3 GTC trailing stops, status new: CEG f45ae140 $233.865/HWM $259.85; DGX 30c44a67 $233.10/HWM $259.00; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (CEG 35 @ $260.42). Sector: Utilities 9.4% (CEG), HC 9.3% (DGX), A&D 9.4% (RTX). Week 19: 1/3 used.
