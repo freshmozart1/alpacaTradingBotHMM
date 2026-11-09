@@ -5087,3 +5087,63 @@ AMGN **-1.06%**, APD **-2.95%** (Nov 5 `bars` close vs Refs $465.45/$318.885; `q
 
 ### Decision
 **HOLD — no new entries.** Market-open: enforce -7% cut on MLM (<$524.72) / NVO (<$39.98). Watchlist: dropped AMGN, APD; empty (refresh next session if needed). ClickUp alert sent (missing Nov 5 midday + cut-line risk).
+
+## 2026-11-09 — Pre-market Research
+
+On-time run (13:11 UTC, before market-open). Data = 13:11-13:30 UTC pre-open.
+
+### Account
+- Equity: $96,412.28 | Cash: $78,359.69 (81.28%) | Buying power: $363,986.01 (margin, effective) | `balance_asof` 2026-11-06.
+- Position market value: $18,052.59 (DGX 35, RTX 47) — **18.72% deployed (far below 75-85% band)**. 2 GTC trailing stops, status new: DGX 30c44a67 (10%) $233.10/HWM $259.00 (exp Jan 21 2027); RTX 313ded6c (10%) $185.0535/HWM $205.615 (exp Jan 15 2027).
+- Daytrade count: not returned; no day trades. Day 90, Monday, Week 19: **0/3 used**. 2/6 positions, **4 open slots**. No-trade streak 1.
+- Market regime (HMM, SPY 2y daily): **Mixed/Uncertain, confidence 60%** (498 obs). Eased from Bear/High-Vol 100% (Nov 6). Advisory only.
+- Held (`positions` marks): DGX $258.00 **+6.23%** (cushion 9.7%); RTX $191.97 -0.71% (cushion 3.6%). None near -7%. No tighten triggers (<+15%).
+- Exposure: HC 9.37% (DGX); A&D 9.36% (RTX). Materials/Energy/Utilities 0%.
+
+### Market Context
+- Perplexity: first parallel batch hit 429 (curl exit 22) → re-run sequentially, 18/18 exit 0. No WebSearch fallback needed; WebSearch used for 2nd-source check (CEG).
+- WTI/Brent: **WTI $91.20, Brent $98.16** (Perplexity; timestamp "10:58 pm EDT Nov 9" in the future → suspect). Not a repeat (Nov 6 $91.92/$100.26). Spread 7.6% <10%. **Conflict:** USO pre-mkt $143.63 vs Nov 6 $148.43 = **-3.2%** (bars/quote) → oil lower; Perplexity "Brent falling" narrative agrees with USO, price level does not. USO operative.
+- S&P 500 futures: **+0.66%** (6:39 ET). Cross-check SPY pre-mkt $741.19 vs Nov 6 $735.40 = **+0.79%** ✓ → bounce. NVDA -4-5% pre-mkt (board probe re CEO).
+- VIX: **24.42** (prev 25.64) — not a repeat (Nov 6 log 26.08). Just under 25.
+- Today: wholesale inventories 10:00 ET; Fed speakers. **CPI Tue Nov 10 8:30**, claims Thu, **PPI Fri Nov 13**. No FOMC/NFP.
+- Earnings BMO: CEG, KKR, B, NRG, FERG (not yet out), ROIV, TGTX, AMG, KGS. AMC: HIMS. Later week: CSCO, AMAT, CRWV.
+- Sector momentum: Perplexity YTD (Nov 6) Energy +35.8%, HC +19.1%, Staples +17.0%, Materials +13.1%, IT +12.2%; last week Energy -12.0%, IT -6.8%. `bars` 5-sess Oct 30→Nov 6: XLP **+0.75%**, XLV -0.04%, XLU -0.71%, XLB -1.51%, XLI -2.83%, XLE **-11.94%**, SPY -2.69%. Relative leaders: Staples, HC.
+- Held tickers:
+  - **DGX**: no new today-dated catalyst (Q3 beat/raise is October; ~$13M DOJ kickback settlement = headline overhang, undated). Thesis intact.
+  - **RTX**: no new catalyst (Q3 beat/raise Oct; DARPA optical award undated). Ex-div Nov 20 $0.73. Thesis intact; cushion 3.6% thin.
+- Watchlist: empty carried forward (AMGN/APD dropped Nov 6). Fresh screen (BMO prints):
+  - **CEG (Utilities/IPP, AI power)**: Q3 Nov 9 BMO — adj op EPS $5.06 vs $3.04 y/y (est ~$3.89), FY26 guide raised/narrowed $12.50-12.80 (from $11.50-12.50) (Perplexity). WebSearch: Panabee headline "Constellation Energy Raises Earnings Guidance… q3-2026" (snippet not dated) — **2nd source not fully confirmed**; earnings-print rule → must be bars/quote-confirmed post-release. Base Nov 6 close $249.77 (pre-catalyst). No pre-mkt print yet (quote stale Nov 6). Sector: XLU -0.71% 5-sess, YTD +3% → **weak sector momentum**.
+  - **NRG (Utilities/IPP)**: Q3 Nov 9 BMO — adj EPS $4.68, FY26 **reaffirmed**, 2027 guide initiated (Perplexity, single-source). No raise. Nov 4-5 -16%, Nov 6 +9.7% rebound ($88.42). Watch only.
+  - **B (Materials, gold)**: Q3 Nov 9 BMO — adj EPS $0.82 vs $0.79 beat, rev $5.07B vs ~$5.13B miss, FY26 production **reaffirmed** (Perplexity). Mixed; Materials 1 failed trade (MLM). Watch only. Nov 6 $40.56.
+  - Screened, rejected: KKR (no detail), CVI (Energy, -11.9% sector), HELE (merger arb), small-cap biotech movers (binary/sub-$5).
+
+### Stall-Breaker
+Not armed (streak 1 < 3; last entry MLM Nov 5).
+
+### Lessons Check
+- L-044 (-7% execute same session) — no position near -7% (min RTX -0.71%). N/A pre-open; carry to market-open/midday. Complied.
+- L-043 (Bear/High-Vol throttle) — regime Mixed/Uncertain 60%, VIX 24.42 <25 → **not triggered**; borderline, so CEG idea still requires SPY first-30-min above Nov 6 close $735.40 and max 1 entry today. Complied.
+- L-042 (alert missing/late runs) — `git log`: Nov 6 pre-market (a100e62 13:10), market-open (acf80cd 14:37), midday (8052951 16:10), EOD (861b624 20:14), weekly review (e62e550 20:19) ✓ in order. Today on time. No incident → no alert. Complied.
+- L-041 (next-slot candidate while 6/6) — book 2/6 → N/A; CEG named as fully-specified idea anyway. Complied.
+- L-036 (slippage) — no exits since Nov 6 market-open (logged). Complied.
+- Operational: GTC expiries Jan 2027 — none within 5 sessions ✓. Deployment <75% → fully-specified idea flagged (CEG) ✓.
+
+### Yesterday's Skip Check
+N/A — Nov 6 watchlist empty (AMGN/APD dropped); no open scoreboard rows from yesterday's list. Skips n/a.
+
+### Trade Ideas
+- Week 19: 0/3 used. 2/6 → 4 open slots. ~19% deployed → far below band.
+1. **CEG — conditional (market-open hard-check).** Catalyst: Q3 beat + FY26 guide raise, dated today (Nov 9). Gates at open: (a) 2nd source or bars/quote post-release confirming the print; (b) open/first-30-min > base $249.77 and reaction <15% (chase bar $287.24); (c) SPY first 30 min > $735.40 (L-043 spirit). Entry ≤ $270 (≤+8.1% vs base), 35 sh (~$9.45k, ~9.8% equity), 10% GTC trail, -7% cut (~$251 off $270), target +20% (~$324) → R:R ~2.9:1. Post-fill: Utilities 1 position ~9.8% <40%; IPP/AI-power theme ~9.8% <25%. Caveat: Utilities sector momentum weak (XLU -0.7% 5-sess) → skip if sector red at open.
+2. **NRG — watch only.** Reaffirm, no raise → not gate-clearing. Would be 2nd Utilities/IPP (theme cap with CEG ~19% <25%).
+3. **B — watch only.** EPS beat / rev miss / reaffirm → no clean catalyst.
+- No HC/Staples idea: no dated large-cap catalyst found today (Staples screen = generic/old prints; HC movers = micro-cap biotech).
+
+### Risk Factors
+- CPI Tue — rate shock risk (~2/3 Dec hike priced per Nov 6 read).
+- NVDA board probe → AI/semis volatility; AI-power names (CEG) correlated.
+- RTX cushion 3.6%; defense Dem-Congress overhang.
+- Regime only Mixed (60%), VIX ~24 — tape fragile after Nov 5 -4.3%.
+- Oil data conflict (Perplexity level vs USO -3.2%).
+
+### Decision
+**HOLD pre-market; flag CEG (conditional) for market-open gate** — max 1 entry. Watchlist: added CEG, NRG, B. No ClickUp alert (nothing urgent).
