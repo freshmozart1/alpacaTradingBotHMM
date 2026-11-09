@@ -3029,3 +3029,14 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions` (CEG 35, DGX 35, RTX 47) + `orders`: 3 GTC trailing stops, status new — CEG f45ae140 (10%) $243.801/HWM $270.89; DGX 30c44a67 (10%) $233.10/HWM $259.00; RTX 313ded6c (10%) $185.0535/HWM $205.615.
 
 **STEP 8 (notify):** No action taken → no ClickUp.
+
+### Nov 9 — EOD Snapshot (Day 90, Monday)
+**Portfolio:** $97,213.37 | **Cash:** $69,245.03 (71.23%) | **Day P&L:** +$816.13 (+0.85%) | **Phase P&L:** -$2,786.63 (-2.79%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $275.33 | +10.15% | +$521.89 (+5.73%) | $249.894 (10% trail, GTC f45ae140, HWM $277.66) |
+| DGX | 35 | $242.87 | $259.585 | +1.55% | +$585.03 (+6.88%) | $233.856 (10% trail, GTC 30c44a67, HWM $259.84) |
+| RTX | 47 | $193.34 | $196.73 | +3.80% | +$159.33 (+1.75%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** Streak reset — trade(s) placed today (CEG BUY 35 @ $260.42, Q3 beat + FY26 guide raise; +5.73% day one, new HWM $277.66 lifted stop to $249.894, now above entry-7% cut). Broad bounce: RTX +3.80%, DGX +1.55% (new HWM $259.84). Week 19: 1/3 new trades. Day P&L vs Nov 6 logged EOD $96,397.24 (Alpaca last_equity $96,214.65; $182.59 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,786.63 (-2.79%) vs $100,000 start. 3 positions, 28.77% deployed / 71.23% cash — **below 75-85% band**; 3 open slots. Sector: Utilities 9.9% (CEG), HC 9.3% (DGX), A&D 9.5% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~5.9%, CEG ~9.2%, DGX ~9.9%. 3 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20. Regime Mixed/Uncertain.
