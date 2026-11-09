@@ -310,3 +310,6 @@ than 10 sessions are pruned.
 | 2026-11-04 | CVE | HOLD — stall-breaker refresh add (Energy), Q3 BMO today, result not yet indexed; hard-check at open | 30.72 | | |
 | 2026-11-04 | WLK | HOLD — stall-breaker refresh add (Materials, 3rd leg, loosened floor), Q3 adj EPS miss today, single-source; +3% pre-mkt (Perplexity) | 68.50 | | |
 | 2026-11-05 | APD | HOLD — new watchlist add (Materials), FY Q4 BMO today: adj EPS $3.61 vs $3.60 in-line, FY27 guide "growth" (vague), single-source; not gate-clearing | 318.885 | | |
+| 2026-11-09 | CEG | HOLD pre-market — new watchlist add (Utilities/IPP), Q3 beat + FY26 guide raise today (Perplexity; WebSearch 2nd source unconfirmed), weak sector momentum (XLU -0.7% 5-sess); flagged for market-open hard-check, entry ≤$270 / -7% cut / target ~$324 | 249.77 | | |
+| 2026-11-09 | NRG | HOLD — new watchlist add (Utilities/IPP), Q3 today, FY26 reaffirmed + 2027 guide initiated (no raise), single-source | 88.42 | | |
+| 2026-11-09 | B | HOLD — new watchlist add (Materials, gold), Q3 today: adj EPS beat / rev miss / FY26 reaffirmed, single-source | 40.56 | | |
