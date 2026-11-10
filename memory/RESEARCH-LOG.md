@@ -5147,3 +5147,64 @@ N/A — Nov 6 watchlist empty (AMGN/APD dropped); no open scoreboard rows from y
 
 ### Decision
 **HOLD pre-market; flag CEG (conditional) for market-open gate** — max 1 entry. Watchlist: added CEG, NRG, B. No ClickUp alert (nothing urgent).
+
+## 2026-11-10 — Pre-market Research
+
+On-time run (13:10 UTC, before market-open). Data = 13:10-13:25 UTC pre-open.
+
+### Account
+- Equity: $97,021.59 | Cash: $69,245.02 (71.37%) | Buying power: $354,754.48 (margin, effective) | `balance_asof` 2026-11-09.
+- Position market value: $27,776.57 (CEG 35, DGX 35, RTX 47) — **28.63% deployed (far below 75-85% band)**. 3 GTC trailing stops, status new: CEG f45ae140 (10%) $249.894/HWM $277.66 (exp Feb 5 2027); DGX 30c44a67 (10%) $233.856/HWM $259.84 (exp Jan 21 2027); RTX 313ded6c (10%) $185.0535/HWM $205.615 (exp Jan 15 2027).
+- Pre-open marks vs last_equity $97,223.19: -$201.60 (-0.21%; CEG pre-mkt $270 vs $276.09).
+- Daytrade count: not returned; no day trades. Day 91, Tuesday, Week 19: **1/3 used** (CEG). 3/6 positions, **3 open slots**. No-trade streak 0.
+- Market regime (HMM, SPY 2y daily): **Bear/High-Vol, confidence 97%** (499 obs, 4 days in regime). Back from Mixed/Uncertain 60% (Nov 9 read). Advisory only.
+- Held (`positions` marks): CEG $270.00 +3.68% (cushion 7.4%); DGX $260.00 **+7.05%** (cushion 10.1%); RTX $196.31 +1.54% (cushion 5.7%). None near -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 9.74% (CEG); HC 9.38% (DGX); A&D 9.51% (RTX).
+
+### Market Context
+- Perplexity: 13/13 exit 0 (sequential). No fallback; WebSearch used for 2nd-source checks (NRG, TDG).
+- WTI/Brent: **WTI $85.80 (-1.2%), Brent $91.63 (-1.0%)** (Perplexity). Not a repeat (Nov 9 $91.20/$98.16). Spread 6.8% <10%. USO pre-mkt $138.91 vs Nov 9 pre-mkt $143.63 = -3.3% ✓ agrees. Driver: Trump says renewed Iran strikes unlikely if talks progress.
+- S&P 500 futures: **+0.21%** (7,590.5). Cross-check SPY pre-mkt $752.85 vs Nov 9 close $752.72 = **+0.02%** → flat into CPI. Nov 9: SPY +2.36% (bars).
+- VIX: **19.92** Nov 9 close (-22%; Perplexity, single-source; consistent with SPY +2.4%). Not a repeat (Nov 9 log 24.42). <25.
+- Today: **CPI (Oct) 8:30 ET** — cons headline +0.3% m/m / 3.9% y/y, core +0.2%. Dec hike risk live (NFP Nov 6 +165k, UE 4.1%). Claims Thu, PPI Fri Nov 13. No FOMC.
+- Earnings BMO: **TDG** (FQ4), ONON, BTDR, AUTL, AMBQ, BRSL. Prior AMC: HIMS (down, outlook), TTWO/SANM up.
+- Other: TSMC Oct rev strong (AI demand); NVDA CEO probe overhang.
+- Sector momentum: Perplexity YTD (Nov 6 data, repeat of Nov 6 source) Energy +38.0%, Staples +18.5%, RE +10.6%, IT +9.5%, Utilities +1.4%; momentum composite Utilities weakest (-1.24) — low trust. `bars` 5-sess Nov 2→Nov 9: XLV **+2.03%**, XLU +0.30%, SPY +0.09%, XLP +0.04%, XLB -1.31%, XLK -1.96%, XLI -0.52%, XLE **-7.88%**. Relative leaders: HC, Utilities.
+- Held tickers:
+  - **CEG**: no new catalyst (Q3 beat/raise Nov 9 digesting; "priced in" commentary). Pre-mkt $270 (-2.2% vs $276.09). Ex-div Nov 16. Thesis intact.
+  - **DGX**: no new catalyst (CEO nominated to Stryker board; Evercore conf Dec 1). Thesis intact.
+  - **RTX**: DeepStrike JR3 3rd flight test (minor); ex-div Nov 20 $0.73. Thesis intact.
+- Watchlist (carried):
+  - **NRG (Utilities/IPP)**: Q3 Nov 9 — adj EPS $4.68 vs ~$3.34 est, **$4B sale of 6 gas plants (4.9 GW) to LS Power at 8.0x 2027 EBITDA**, $3B buybacks 2026-27 ($1B possibly by YE), $2B debt paydown; FY26 reaffirmed (EBITDA below midpoint, weak ERCOT). Two-source: Perplexity + SEC 8-K ex-99.1 (dated Nov 9) ✓. Bars: Nov 9 $97.50 > pre-catalyst Nov 6 $88.42 ✓; reaction **+10.27%** <15% (chase bar $101.68) ✓. Pre-mkt quote stale (wide). Catalyst dated prior session → eligible today under 2-session rule.
+  - **B (Materials, gold)**: Q3 Nov 9 — EPS beat / rev miss / FY26 reaffirmed; Nevada IPO S-1 "this month" (unconfirmed). Nov 9 $42.27 (+4.2%), pre-mkt ~$41.40 (-2.1%) → fading. Materials 1 failed trade (MLM). Watch only.
+  - New: **TDG (A&D)**: FQ4 BMO today — adj EPS $12.44 (+15%), sales $2.99B (+23%) (SEC 8-K); FY27 adj EPS guide $47.09-47.94 **below** $48.66 cons, rev guide above (Perplexity). Pre-mkt ~-1.4% (Perplexity; quote stale). EPS guide miss → not gate-clearing. Watch only.
+
+### Stall-Breaker
+Not armed (streak 0 < 3; CEG bought Nov 9).
+
+### Lessons Check
+- L-044 (-7% execute same session) — no position near -7% (min RTX +1.54%). N/A pre-open. Complied.
+- L-043 (Bear/High-Vol throttle) — regime **Bear/High-Vol 97% → TRIGGERED** (VIX 19.92 <25). Max 1 entry today, only after SPY first 30 min > Nov 9 close $752.72; log regime/VIX/SPY at gate. Complied (applied to NRG idea).
+- L-042 (alert missing/late runs) — `git log`: Nov 9 pre-market (b0ad757 13:14), market-open (cd54f94 15:02), midday (004335e 16:12), EOD (c28e5d8 20:15) ✓ in order. Today on time. No incident → no alert. Complied.
+- L-041 (next-slot candidate while 6/6) — book 3/6 → N/A; NRG named as fully-specified idea anyway. Complied.
+- L-036 (slippage) — no exits since Nov 6 (logged). Complied.
+- Operational: GTC expiries Jan-Feb 2027 — none within 5 sessions ✓. Deployment <75% → fully-specified idea flagged (NRG) ✓. CEG ex-div Nov 16 / RTX Nov 20 noted.
+
+### Yesterday's Skip Check
+NRG **+10.27%** (Nov 9 bars close $97.50 vs Ref $88.42; `quote` stale/wide), B **+2.07%** (pre-mkt quote mid $41.40 vs Ref $40.56). CEG entered (n/a). Skips look wrong so far (NRG — reaffirm-only print, but asset sale + buybacks drove +10%).
+
+### Trade Ideas
+- Week 19: 1/3 used. 3/6 → 3 open slots. ~29% deployed → far below band.
+1. **NRG — conditional (market-open hard-check).** Catalyst: Q3 beat + $4B LS Power asset sale + $3B buybacks, dated Nov 9 (prior session), two-source (Perplexity + SEC 8-K), bars-confirmed. Gates at open: (a) open/first-30-min > base $88.42 and < chase bar $101.68 (+15%); (b) SPY first 30 min > $752.72 (L-043); (c) XLU green at open; (d) skip if CPI hot sinks tape. Entry ≤ $100 (+13.1% vs base), ~88 sh (~$8.8k, ~9.1% equity), 10% GTC trail, -7% cut (~$93 off $100), target +20% (~$120) → R:R ~2.9:1. Post-fill: Utilities 2 positions (<3) ~18.8% <40%; IPP/AI-power theme (CEG+NRG) ~18.8% <25% ✓. Caveats: FY26 only reaffirmed; weak ERCOT; already +10%; CEG/NRG correlated.
+2. **B — watch only.** Reaffirm, fading pre-mkt; Materials 1 failed trade.
+3. **TDG — watch only.** FY27 EPS guide below consensus; pre-mkt red. Would be 2nd A&D (with RTX).
+- No HC idea: XLV leads 5-sess but no dated large-cap HC catalyst found today.
+
+### Risk Factors
+- **CPI 8:30 ET** — hot print → Dec hike repricing, rate-sensitive Utilities (CEG/NRG) hit.
+- Regime Bear/High-Vol 97% despite Nov 9 +2.4% bounce; VIX ~20.
+- AI-power correlation (CEG + NRG) + NVDA probe headline risk.
+- RTX cushion 5.7%; CEG -2.2% pre-mkt giving back day-one gain.
+
+### Decision
+**HOLD pre-market; flag NRG (conditional) for market-open gate** — max 1 entry (L-043). Watchlist: NRG, B carried; TDG added. No ClickUp alert (nothing urgent).
