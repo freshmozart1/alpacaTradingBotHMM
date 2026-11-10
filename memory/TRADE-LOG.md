@@ -3059,3 +3059,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - B, TDG: watch only (pre-market) — not evaluated.
 
 **Post-actions (15:02 UTC):** No orders. Verified via `orders` (3 GTC trailing stops, status new: CEG f45ae140 $249.894/HWM $277.66; DGX 30c44a67 $233.856/HWM $259.84; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (CEG 35, DGX 35, RTX 47). ~28.7% deployed — **below 75-85% band**; 3 open slots. Week 19: 1/3 used. No ClickUp (no trade).
+
+### Nov 10 — Midday Scan (Day 91, Tuesday)
+
+**Account (16:12 UTC):** Equity $96,849.40 | Cash $69,245.02 (71.5%) | ~28.5% deployed — **below 75-85% band**. 3 open positions — CEG 35 sh +2.10% ($265.88, intraday -3.70%); DGX 35 sh +5.74% ($256.81, intraday -1.10%); RTX 47 sh +2.46% ($198.09, intraday +0.91%). No fills since market-open (no orders placed).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min CEG +2.10%). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +5.74%) — no change.
+
+**STEP 5 (thesis check):** CEG -3.70% intraday = profit-taking after Nov 9 +10% post-Q3 pop + rate-hike/yield pressure on AI-power names (Perplexity); no new negative news — intact; cushion ~6.0% to $249.894 (stop above -7% cut $242.19). DGX mild giveback, no news — intact; cushion ~8.9% to $233.856. RTX green — intact; cushion ~6.6% to $185.0535; ex-div Nov 20. No cuts.
+
+**STEP 6 (research):** One Perplexity check (CEG drop cause + CPI). CPI Oct: headline +0.3% m/m, core +0.2% m/m — in line with consensus (y/y not published per source; single-source). See RESEARCH-LOG addendum. No midday entry (risk mgmt only). 3 open slots; Week 19: 1/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, RTX 47) + `orders`: 3 GTC trailing stops, status new — CEG f45ae140 (10%) $249.894/HWM $277.66; DGX 30c44a67 (10%) $233.856/HWM $259.84; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
