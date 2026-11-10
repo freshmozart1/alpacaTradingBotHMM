@@ -3059,3 +3059,14 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - B, TDG: watch only (pre-market) — not evaluated.
 
 **Post-actions (15:02 UTC):** No orders. Verified via `orders` (3 GTC trailing stops, status new: CEG f45ae140 $249.894/HWM $277.66; DGX 30c44a67 $233.856/HWM $259.84; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (CEG 35, DGX 35, RTX 47). ~28.7% deployed — **below 75-85% band**; 3 open slots. Week 19: 1/3 used. No ClickUp (no trade).
+
+### Nov 10 — EOD Snapshot (Day 91, Tuesday)
+**Portfolio:** $97,072.41 | **Cash:** $69,245.02 (71.33%) | **Day P&L:** -$140.96 (-0.15%) | **Phase P&L:** -$2,927.59 (-2.93%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $266.485 | -3.48% | +$212.32 (+2.33%) | $249.894 (10% trail, GTC f45ae140, HWM $277.66) |
+| DGX | 35 | $242.87 | $259.30 | -0.14% | +$575.05 (+6.77%) | $233.856 (10% trail, GTC 30c44a67, HWM $259.84) |
+| RTX | 47 | $193.34 | $200.53 | +2.15% | +$337.93 (+3.72%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** 1st consecutive no-trade day (NRG skipped at open — L-043 SPY first-30-min never above $752.72 + XLU red). CEG gave back -3.48% (Utilities red) after Monday's +10%; RTX +2.15%; DGX flat. Week 19: 1/3 new trades. Day P&L vs Nov 9 logged EOD $97,213.37 (Alpaca last_equity $97,223.19; $9.82 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,927.59 (-2.93%) vs $100,000 start. 3 positions, 28.67% deployed / 71.33% cash — **below 75-85% band**; 3 open slots. Sector: Utilities 9.6% (CEG), HC 9.3% (DGX), A&D 9.7% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: CEG ~6.2%, RTX ~7.7%, DGX ~9.8%. 3 GTC stops resting, unchanged. CEG ex-div Nov 16, RTX ex-div Nov 20. Nov 10 midday scan committed on branch claude/dreamy-curie-xcftar (16:12 UTC), not yet on main — not reflected in this log.
