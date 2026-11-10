@@ -5208,3 +5208,8 @@ NRG **+10.27%** (Nov 9 bars close $97.50 vs Ref $88.42; `quote` stale/wide), B *
 
 ### Decision
 **HOLD pre-market; flag NRG (conditional) for market-open gate** — max 1 entry (L-043). Watchlist: NRG, B carried; TDG added. No ClickUp alert (nothing urgent).
+
+### 2026-11-10 — Midday Addendum (16:12 UTC)
+- CEG -3.70% intraday ($265.88): profit-taking after Nov 9 +10% Q3 pop; rate-hike/yield pressure on AI-power names (Perplexity, single-source). No new company news → thesis intact.
+- CPI (Oct, released Nov 10): headline +0.3% m/m, core +0.2% m/m — in line with consensus (+0.3%/+0.2%). Y/y not published per source (single-source; unverified).
+- DGX -1.10%, RTX +0.91% intraday — no news. No action.
