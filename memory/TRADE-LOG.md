@@ -3040,3 +3040,22 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $196.73 | +3.80% | +$159.33 (+1.75%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** Streak reset — trade(s) placed today (CEG BUY 35 @ $260.42, Q3 beat + FY26 guide raise; +5.73% day one, new HWM $277.66 lifted stop to $249.894, now above entry-7% cut). Broad bounce: RTX +3.80%, DGX +1.55% (new HWM $259.84). Week 19: 1/3 new trades. Day P&L vs Nov 6 logged EOD $96,397.24 (Alpaca last_equity $96,214.65; $182.59 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,786.63 (-2.79%) vs $100,000 start. 3 positions, 28.77% deployed / 71.23% cash — **below 75-85% band**; 3 open slots. Sector: Utilities 9.9% (CEG), HC 9.3% (DGX), A&D 9.5% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~5.9%, CEG ~9.2%, DGX ~9.9%. 3 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20. Regime Mixed/Uncertain.
+
+### Nov 10 — Market-Open (Day 91, Tuesday)
+
+**Operational Rule check:** Nov 9 has Market-Open + Midday + EOD ✓. Nov 10 pre-market on time (811142d) ✓. No missing/late runs → no alert (L-042). Routine fired 13:22 UTC (pre-open); gate held until SPY first 30 min complete (15:01 UTC).
+
+**Account (15:01 UTC):** Equity $97,101.45 | Cash $69,245.02 (71.3%) | 3 positions (CEG 35 +4.32%, DGX 35 +5.46%, RTX 47 +3.26%), 3 GTC stops. `balance_asof` 2026-11-09. Daytrade count not returned; no day trades. Week 19: 1/3 used.
+
+**Lessons compliance:** L-044 no position near -7% (min RTX +3.26%) ✓; L-043 **triggered** (HMM Bear/High-Vol 97%; VIX 19.92) → SPY check applied: SPY first 30 min (14:30-15:00 UTC, IEX 1-min) open $748.31 / hi $751.74 / lo $747.06 / last $751.74 — **never above Nov 9 close $752.72 ✗**; L-042 no gaps ✓; L-041 N/A (3/6); L-036 no exits ✓.
+
+**Buy gate — NRG (15:01 UTC): SKIP.**
+- Catalyst: Q3 Nov 9 + $4B LS Power asset sale + $3B buybacks (two-source: Perplexity + SEC 8-K, prior session) ✓.
+- Chase check: catalyst date Nov 9; base Nov 6 close $88.42; 15:00 UTC $97.31 = **+10.05%** (<15%; bar $101.68) ✓. First 30 min: open $96.22, lo $96.22, hi $97.77. Entry ≤$100 ✓.
+- **L-043 SPY first-30-min > $752.72 ✗** (hi $751.74) → fail.
+- **Sector: XLU $43.405 vs Nov 9 close $43.81 = -0.92% (red) ✗** → plan condition (c) fail.
+- Positions 4 ≤6 ✓ | Week 19 2/3 ✓ | ~$8.6k ~8.9% equity ≤20% ✓ | ≤ cash ✓ | PDT ✓ | Stock ✓. Post-fill Utilities 2 (<3), ~18.9% <40%; IPP/AI-power theme ~18.9% <25% ✓.
+- Scoreboard: NRG already has open row (2026-11-09) → no new row. Skip-time price $97.31.
+- B, TDG: watch only (pre-market) — not evaluated.
+
+**Post-actions (15:02 UTC):** No orders. Verified via `orders` (3 GTC trailing stops, status new: CEG f45ae140 $249.894/HWM $277.66; DGX 30c44a67 $233.856/HWM $259.84; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (CEG 35, DGX 35, RTX 47). ~28.7% deployed — **below 75-85% band**; 3 open slots. Week 19: 1/3 used. No ClickUp (no trade).
