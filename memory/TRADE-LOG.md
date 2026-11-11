@@ -3093,3 +3093,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-11 | NRG | BUY | 88 | $99.72 (fill $99.719432, order 4a4bbfd5, 14:59:15 UTC) | $89.622 (10% trail GTC 83039f29, HWM $99.58, exp Feb 9 2027); -7% cut $92.74 | Q3 beat + $4B LS Power sale + $3B buybacks; AI-power/IPP demand; 3rd-session follow-through above $88.42 base with SPY > prior close | $119.66 (+20%) | ~2.9:1 vs -7% cut (~2:1 vs trail) |
 
 **Post-actions (15:00 UTC):** Equity $97,204.18 | Cash $60,469.71 (62.2%) | **~37.8% deployed — below 75-85% band**. 4 positions (CEG 35, DGX 35, NRG 88, RTX 47), 2 open slots. Verified via `orders` (4 GTC trailing stops, status new: NRG 83039f29 $89.622/HWM $99.58; CEG f45ae140 $249.894/HWM $277.66; DGX 30c44a67 $234.265/HWM $260.29; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (NRG 88 @ $99.72). Sector: Utilities ~18.9% (CEG, NRG), HC 9.3% (DGX), A&D 9.7% (RTX). Week 19: 2/3 used. No-trade streak reset.
+
+### Nov 11 — Midday Scan (Day 92, Wednesday)
+
+**Account (16:10 UTC):** Equity $97,162.00 | Cash $60,469.71 (62.2%) | ~37.8% deployed — **below 75-85% band**. 4 open positions — CEG 35 sh +5.33% ($274.29, intraday +2.44%); DGX 35 sh +6.64% ($258.985, intraday +0.21%); NRG 88 sh -1.01% ($98.71, day +1.65% vs prior close); RTX 47 sh +2.87% ($198.89, intraday -0.69%). No fills since market-open (NRG buy already logged).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min NRG -1.01%; cut $92.74). No manual closes.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +6.64%) — no change.
+
+**STEP 5 (thesis check):** CEG rebounding after Nov 10 -3.48%, below HWM $277.66 — intact; cushion ~8.9% to $249.894. DGX flat, no new catalyst — intact; cushion ~9.5% to $234.265. NRG day one, holding just below entry, above $88.42 pre-catalyst base; HWM $99.93 lifted stop to $89.937 — intact; cushion ~8.9%. RTX -0.69% intraday, no news; ex-div Nov 20 — intact; cushion ~7.0% to $185.0535. No cuts.
+
+**STEP 6 (research):** Skipped — no sharp unexplained moves. No midday entry (risk mgmt only). 2 open slots; Week 19: 2/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $249.894/HWM $277.66; DGX 30c44a67 (10%) $234.26505/HWM $260.2945; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
