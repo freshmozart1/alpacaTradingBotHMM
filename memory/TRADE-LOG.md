@@ -3109,3 +3109,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $249.894/HWM $277.66; DGX 30c44a67 (10%) $234.26505/HWM $260.2945; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
 
 **STEP 8 (notify):** No action taken → no ClickUp.
+
+### Nov 11 — EOD Snapshot (Day 92, Wednesday)
+**Portfolio:** $97,273.05 | **Cash:** $60,469.71 (62.16%) | **Day P&L:** +$200.64 (+0.21%) | **Phase P&L:** -$2,726.95 (-2.73%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $275.33 | +2.83% | +$521.89 (+5.73%) | $249.894 (10% trail, GTC f45ae140, HWM $277.66) |
+| DGX | 35 | $242.87 | $258.505 | +0.03% | +$547.23 (+6.44%) | $234.265 (10% trail, GTC 30c44a67, HWM $260.2945) |
+| NRG | 88 | $99.72 | $98.52 | +1.45% | -$105.55 (-1.20%) | $89.937 (10% trail, GTC 83039f29, HWM $99.93) |
+| RTX | 47 | $193.34 | $201.05 | +0.39% | +$362.37 (+3.99%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** Streak reset — trade(s) placed today (NRG BUY 88 @ $99.72 at open, Q3 + $4B LS Power sale + $3B buybacks; -1.20% day one, above $92.74 cut; HWM $99.93 lifted stop to $89.937). CEG +2.83% rebound after Nov 10 -3.48%; RTX +0.39%; DGX flat. Week 19: 2/3 new trades. Day P&L vs Nov 10 logged EOD $97,072.41 (Alpaca last_equity $97,074.71; $2.30 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,726.95 (-2.73%) vs $100,000 start. 4 positions, 37.84% deployed / 62.16% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 18.8% (CEG 9.9%, NRG 8.9%), HC 9.3% (DGX), A&D 9.7% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~8.0%, NRG ~8.7%, CEG ~9.2%, DGX ~9.4%. 4 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20.
