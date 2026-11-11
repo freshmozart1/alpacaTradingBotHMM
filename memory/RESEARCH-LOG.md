@@ -5208,3 +5208,64 @@ NRG **+10.27%** (Nov 9 bars close $97.50 vs Ref $88.42; `quote` stale/wide), B *
 
 ### Decision
 **HOLD pre-market; flag NRG (conditional) for market-open gate** — max 1 entry (L-043). Watchlist: NRG, B carried; TDG added. No ClickUp alert (nothing urgent).
+
+## 2026-11-11 — Pre-market Research
+
+On-time run (13:08 UTC, before market-open). Data = 13:09-13:20 UTC pre-open. Veterans Day — NYSE open, bond market closed.
+
+### Account
+- Equity: $97,252.42 | Cash: $69,245.02 (71.20%) | Buying power: $355,400.80 (margin, effective) | `balance_asof` 2026-11-10.
+- Position market value: $28,007.40 (CEG 35, DGX 35, RTX 47) — **28.80% deployed (far below 75-85% band)**. 3 GTC trailing stops, status new, unchanged: CEG f45ae140 (10%) $249.894/HWM $277.66 (exp Feb 5 2027); DGX 30c44a67 (10%) $233.856/HWM $259.84 (exp Jan 21 2027); RTX 313ded6c (10%) $185.0535/HWM $205.615 (exp Jan 15 2027).
+- Pre-open marks vs last_equity $97,074.71: +$177.71 (+0.18%; CEG pre-mkt $273.20 +2.0%).
+- Daytrade count: not returned; no day trades. Day 92, Wednesday, Week 19: **1/3 used** (CEG). 3/6 positions, **3 open slots**. No-trade streak 1.
+- Market regime (HMM, SPY 2y daily): **Mixed/Uncertain, confidence 64%** (500 obs). Off Bear/High-Vol 97% (Nov 10 read). Advisory only.
+- Held (`positions` marks): CEG $273.20 +4.91% (cushion 8.5%); DGX $258.44 +6.41% (last close; cushion 9.5%); RTX $200.00 +3.45% (cushion 7.5%). None near -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 9.83% (CEG); HC 9.30% (DGX); A&D 9.67% (RTX).
+
+### Market Context
+- Perplexity: 13/13 exit 0 (sequential). No fallback.
+- WTI/Brent: **WTI $86.59, Brent $92.40** (Perplexity). Not a repeat (Nov 10 $85.80/$91.63). Spread 6.7% <10%. USO pre-mkt $142.70 vs Nov 10 close $141.435 = +0.9% ✓ agrees. Easing US-Iran tension.
+- S&P 500 futures: **+0.78%** (7,602.75 at 5:44 ET; S&P Nov 10 close 7,520.93 -0.38%). Cross-check SPY pre-mkt $756.70 vs Nov 10 close $749.93 = **+0.90%** ✓. Driver: CoreWeave beat/raise, TSMC Oct rev, AI bid.
+- VIX: **18.60** (-4.4%, prior close 19.46; Perplexity). Not a repeat (Nov 10 log 19.92). <25.
+- Nov 10 CPI (Oct) **hot**: headline +0.4% m/m (vs +0.3%), core +0.3% (vs +0.2%) → Dec hike fully priced. SPY only -0.37% on the day.
+- Today: no US macro (Veterans Day). Claims Thu Nov 12, **PPI Fri Nov 13**. Bowman speaks. ECB/BoJ later this week.
+- Earnings BMO: small/micro only (RUM, FLNG, VLN, RDCM, CSTE, GOSS…) — nothing large-cap / in-sector.
+- Sector momentum: Perplexity YTD (Nov 6 data, repeat of prior source) Energy +38.0%, Staples +18.5%, RE +10.6%, IT +9.5%, Utilities +1.4% — low trust. `bars` 5-sess Nov 3→Nov 10: XLV **+2.65%**, XLP +2.34%, XLU +0.69%, XLB +0.49%, SPY -0.59%, XLI -1.51%, XLK -4.27%, XLE **-6.70%**. Relative leaders: HC, Staples; Utilities modest.
+- Held tickers:
+  - **CEG**: no new company catalyst; CIBC PT $343→$346 Outperform (date unverified — dateless, support only). Pre-mkt $273.20 (+2.0% vs $267.76). Ex-div Nov 16. Thesis intact.
+  - **DGX**: $0.86 quarterly div declared (record Jan 12 2027) — routine. CFO at Jefferies HC conf Nov 17. Thesis intact.
+  - **RTX**: no new catalyst (JR3 test repeat; Tomahawk/AMRAAM capacity report, no order). Ex-div Nov 20. Thesis intact.
+- Watchlist (carried):
+  - **NRG (Utilities/IPP)**: no new news; Nov 9 catalyst (Q3 beat + $4B LS Power sale + $3B buybacks, SEC 8-K two-source ✓) — **last eligible session today** (2 sessions prior). Bars: Nov 10 $97.09 > pre-catalyst Nov 6 $88.42 ✓; reaction **+9.81%** <15% (chase bar $101.68) ✓. Pre-mkt quote stale (bid only $89.92, prior-day). New: Raymond James PT cut (ERCOT; dateless, excluded).
+  - **B (Materials, gold)**: no fresh catalyst; Nov 10 $39.68 (-6.1% d/d), JPM PT $55→$53 (dateless). Fading. **Dropped.**
+  - **TDG (A&D)**: Nov 10 catalyst; Perplexity FY27 EPS guide now $42.06-42.91 vs $47.09-47.94 logged Nov 10 → **source conflict, unverified**. Nov 10 close $1,226.14 (+0.42% vs Ref). Watch only.
+
+### Stall-Breaker
+Not armed (streak 1 < 3; last entry CEG Nov 9).
+
+### Lessons Check
+- L-044 (-7% execute same session) — no position near -7% (min RTX +3.45%). N/A pre-open. Complied.
+- L-043 (Bear/High-Vol throttle) — regime **Mixed/Uncertain 64%**, VIX 18.60 <25 → **not triggered**. Borderline-recent flip, so NRG still gated on SPY first 30 min > Nov 10 close $749.93; log regime/VIX/SPY at gate. Complied.
+- L-042 (alert missing/late runs) — `git log` main: Nov 10 pre-market (811142d 13:13), market-open (72f3656 15:01), EOD (5fd4aa9 20:15) ✓; **Nov 10 midday (9ee8a40 16:12) on unmerged branch claude/dreamy-curie-xcftar, not on main** — ran on time but not persisted to main; Nov 10 EOD noted it without alert. **Alerted** (ClickUp 13:10 UTC). Today on time. Complied.
+- L-041 (next-slot candidate while 6/6) — book 3/6 → N/A; NRG named as fully-specified idea anyway. Complied.
+- L-036 (slippage) — no exits since Nov 6 (logged). Complied.
+- Operational: GTC expiries Jan-Feb 2027 — none within 5 sessions ✓. Deployment <75% → fully-specified idea flagged (NRG) ✓. CEG ex-div Nov 16 / RTX Nov 20 noted.
+
+### Yesterday's Skip Check
+NRG **+9.81%**, B **-2.17%**, TDG **+0.42%** (Nov 10 bars closes vs Ref $88.42 / $40.56 / $1,221.06; pre-mkt quotes stale). Skips look mixed so far (NRG wrong, B right, TDG flat).
+
+### Trade Ideas
+- Week 19: 1/3 used. 3/6 → 3 open slots. ~29% deployed → far below band.
+1. **NRG — conditional (market-open hard-check), last eligible day.** Catalyst: Q3 beat + $4B LS Power asset sale + $3B buybacks, dated Nov 9 (2 sessions prior), two-source (Perplexity + SEC 8-K), bars follow-through ✓. Chase: catalyst Nov 9, base Nov 6 $88.42, realized +9.81% (Nov 10 close) <15%. Gates at open: (a) first-30-min price > base $88.42 and < chase bar $101.68; (b) SPY first 30 min > $749.93 (L-043 spirit); (c) XLU green at open; (d) skip if rate selloff hits Utilities. Entry ≤ $100 (+13.1% vs base), ~88 sh (~$8.8k, ~9.0% equity), 10% GTC trail, -7% cut (~$93 off $100), target +20% (~$120) → R:R ~2.9:1. Post-fill: Utilities 2 positions (<3) ~18.9% <40%; IPP/AI-power theme (CEG+NRG) ~18.9% <25% ✓. Caveats: FY26 only reaffirmed; weak ERCOT; hot CPI → rate-sensitive sector; CEG/NRG correlated.
+2. **TDG — watch only.** FY27 EPS guide conflicting across sources; +0.4% reaction; would be 2nd A&D (with RTX).
+3. **B — dropped.** No catalyst, fading, Materials 1 failed trade.
+- No HC/Staples idea: XLV/XLP lead 5-sess but no dated large-cap catalyst found today (BMO list = micro-caps).
+
+### Risk Factors
+- Hot Oct CPI → Dec hike fully priced; PPI Fri could extend repricing — Utilities (CEG/NRG) rate-sensitive.
+- AI-power correlation (CEG + NRG); AI tape riding CoreWeave/TSMC/Anthropic-IPO hype — reversal risk.
+- Regime only Mixed 64% after Bear/High-Vol 97% Nov 10 — fragile.
+- RTX cushion 7.5%; CEG/RTX ex-div next two weeks.
+
+### Decision
+**HOLD pre-market; flag NRG (conditional, last eligible day) for market-open gate.** Watchlist: NRG, TDG carried; B dropped. ClickUp alert sent (L-042: Nov 10 midday off-main).
