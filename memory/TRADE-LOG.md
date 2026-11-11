@@ -3070,3 +3070,26 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $200.53 | +2.15% | +$337.93 (+3.72%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 1st consecutive no-trade day (NRG skipped at open — L-043 SPY first-30-min never above $752.72 + XLU red). CEG gave back -3.48% (Utilities red) after Monday's +10%; RTX +2.15%; DGX flat. Week 19: 1/3 new trades. Day P&L vs Nov 9 logged EOD $97,213.37 (Alpaca last_equity $97,223.19; $9.82 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,927.59 (-2.93%) vs $100,000 start. 3 positions, 28.67% deployed / 71.33% cash — **below 75-85% band**; 3 open slots. Sector: Utilities 9.6% (CEG), HC 9.3% (DGX), A&D 9.7% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: CEG ~6.2%, RTX ~7.7%, DGX ~9.8%. 3 GTC stops resting, unchanged. CEG ex-div Nov 16, RTX ex-div Nov 20. Nov 10 midday scan committed on branch claude/dreamy-curie-xcftar (16:12 UTC), not yet on main — not reflected in this log.
+
+### Nov 11 — Market-Open (Day 92, Wednesday)
+
+**Operational Rule check:** Nov 10 has Market-Open + EOD on main ✓; Nov 10 midday (9ee8a40) on unmerged branch claude/dreamy-curie-xcftar — already alerted at Nov 11 pre-market (L-042) → no duplicate alert. Nov 11 pre-market on time (32c4167) ✓. Routine fired 13:20 UTC (pre-open); gate held until SPY first 30 min complete (14:59 UTC).
+
+**Account (13:21 UTC, pre-open):** Equity $97,241.92 | Cash $69,245.02 (71.2%) | 3 positions (CEG 35 +4.79%, DGX 35 +6.41%, RTX 47 +3.45%), 3 GTC stops. `balance_asof` 2026-11-10. Daytrade count not returned; no day trades. Week 19: 1/3 used.
+
+**Lessons compliance:** L-044 no position near -7% (min RTX +3.45%) ✓; L-043 regime Mixed/Uncertain 64%, VIX 18.60 (<25) → not triggered; plan's SPY check applied anyway: SPY first 30 min (14:30-14:58 UTC, IEX 1-min) open $756.72 / lo $754.92 / hi $757.90 / last $756.65 > Nov 10 close $749.93 ✓, max 1 entry ✓; L-042 Nov 10 midday off-main already alerted ✓; L-041 N/A (3/6); L-036 no exits ✓.
+
+**Buy gate — NRG (14:59 UTC):**
+- Catalyst: Q3 Nov 9 + $4B LS Power asset sale + $3B buybacks (two-source: Perplexity + SEC 8-K), 2 sessions prior — last eligible day ✓. Follow-through: Nov 10 close $97.09 > pre-catalyst Nov 6 $88.42 ✓.
+- Chase check: catalyst date Nov 9; base Nov 6 close $88.42; 14:58 UTC $99.71 = **+12.77%** (<15%; bar $101.68) ✓. First 30 min: open $99.195, lo $98.145, hi $99.71. Entry ≤$100 ✓.
+- Sector: XLU $43.735 vs Nov 10 close $43.73 = +0.01% (flat/green) ✓ (marginal). No rate selloff in Utilities ✓.
+- Positions after fill 4 ≤6 ✓ | Week 19 2/3 ✓ | Cost $8,775.31 = 9.03% equity ≤20% ✓ | ≤ cash ✓ | PDT room ✓ | Stock ✓.
+- Post-fill sector count: Utilities 2 (<3) ✓; Utilities exposure ~18.9% <40% ✓; IPP/AI-power theme (CEG+NRG) ~18.9% <25% ✓.
+- Ex-div/analyst (Operational): ex-div Nov 2 (passed; $0.475 pay Nov 16) — not in window. No analyst action dated Nov 9-11; latest Barclays PT cut Oct 27, Scotiabank/CIBC PT cuts Oct 28 (pre-catalyst, not counted). Raymond James PT cut dateless, excluded.
+- B, TDG: not evaluated (B dropped, TDG watch only).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-11 | NRG | BUY | 88 | $99.72 (fill $99.719432, order 4a4bbfd5, 14:59:15 UTC) | $89.622 (10% trail GTC 83039f29, HWM $99.58, exp Feb 9 2027); -7% cut $92.74 | Q3 beat + $4B LS Power sale + $3B buybacks; AI-power/IPP demand; 3rd-session follow-through above $88.42 base with SPY > prior close | $119.66 (+20%) | ~2.9:1 vs -7% cut (~2:1 vs trail) |
+
+**Post-actions (15:00 UTC):** Equity $97,204.18 | Cash $60,469.71 (62.2%) | **~37.8% deployed — below 75-85% band**. 4 positions (CEG 35, DGX 35, NRG 88, RTX 47), 2 open slots. Verified via `orders` (4 GTC trailing stops, status new: NRG 83039f29 $89.622/HWM $99.58; CEG f45ae140 $249.894/HWM $277.66; DGX 30c44a67 $234.265/HWM $260.29; RTX 313ded6c $185.0535/HWM $205.615) + `positions` (NRG 88 @ $99.72). Sector: Utilities ~18.9% (CEG, NRG), HC 9.3% (DGX), A&D 9.7% (RTX). Week 19: 2/3 used. No-trade streak reset.
