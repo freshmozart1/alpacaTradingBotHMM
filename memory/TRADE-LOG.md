@@ -3121,3 +3121,21 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $201.05 | +0.39% | +$362.37 (+3.99%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** Streak reset — trade(s) placed today (NRG BUY 88 @ $99.72 at open, Q3 + $4B LS Power sale + $3B buybacks; -1.20% day one, above $92.74 cut; HWM $99.93 lifted stop to $89.937). CEG +2.83% rebound after Nov 10 -3.48%; RTX +0.39%; DGX flat. Week 19: 2/3 new trades. Day P&L vs Nov 10 logged EOD $97,072.41 (Alpaca last_equity $97,074.71; $2.30 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,726.95 (-2.73%) vs $100,000 start. 4 positions, 37.84% deployed / 62.16% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 18.8% (CEG 9.9%, NRG 8.9%), HC 9.3% (DGX), A&D 9.7% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~8.0%, NRG ~8.7%, CEG ~9.2%, DGX ~9.4%. 4 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20.
+
+### Nov 12 — Market-Open (Day 93, Thursday)
+
+**Operational Rule check:** Nov 11 has Market-Open + Midday + EOD ✓ (e61884f, 9e86a82, 2880ac3 on main). Nov 12 pre-market on time (d69fa9a) ✓. No missing/late runs → no alert (L-042). Routine fired 13:19 UTC (pre-open); TDG resolved on gate (a) pre-open → no SPY wait needed.
+
+**Account (13:20 UTC, pre-open):** Equity $96,930.79 | Cash $60,469.70 (62.4%) | 4 positions (CEG 35 +3.29%, DGX 35 +6.51%, NRG 88 -3.73%, RTX 47 +5.03%), 4 GTC stops status new (CEG f45ae140 $249.894; DGX 30c44a67 $234.26505; NRG 83039f29 $89.937; RTX 313ded6c $185.0535). `balance_asof` 2026-11-11. Daytrade count not returned; no day trades. Week 19: 2/3 used.
+
+**Lessons compliance:** L-044 no position at -7% (min NRG -3.73% pre-mkt mark; cut $92.74) ✓; L-043 regime Mixed/Uncertain 59%, VIX 18.26 <25 → not triggered (no entry evaluated past gate (a)); L-042 no gaps ✓; L-041 N/A (4/6); L-036 no exits ✓.
+
+**Buy gate — TDG (13:20 UTC): SKIP.**
+- Plan gate (a) FY27 EPS guide vs consensus — **resolved: below consensus ✗**. FY27 adj EPS guide $47.09-47.94 (mid $47.52) vs consensus $48.66 = -2.3% (Perplexity citing TipRanks/Markets Insider Nov 10 12:11 PM, Quantisnow Nov 10 "2027 profit guide trails consensus", Seeking Alpha "slips as profit outlook falls short"). Prior $42.06-42.91 print discarded. Plan: "skip if guide confirmed below consensus" → fail.
+- Chase check (info): catalyst Nov 10; base Nov 9 close $1,221.06; Nov 11 close $1,245.32 = +1.99% (<15%). Skip-time price $1,245.32 (last close; pre-mkt quote stale, bid $1,119.09 only).
+- Positions 5 ≤6 ✓ | Week 19 3/3 ✓ | 7 sh ~$8.7k ~9.0% ≤20% ✓ | ≤ cash ✓ | PDT ✓ | Stock ✓ — not reached decision.
+- Ex-div: none found in Nov window. Analyst: TD Cowen PT $1,300→$1,350 Buy (Nov 11, dated); RBC PT →$1,300 SP.
+- Scoreboard: TDG already has open row (2026-11-10) → no new row.
+- BN: watch only (single-source, Financials not leading) — not evaluated.
+
+**Post-actions:** No orders. 4 positions, ~37.6% deployed — **below 75-85% band**; 2 open slots. Week 19: 2/3 used (1 slot left; Fri Nov 13 last session). No ClickUp (no trade). Verified `orders` (4 GTC trails) + `positions` unchanged.
