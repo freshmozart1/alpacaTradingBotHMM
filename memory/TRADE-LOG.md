@@ -3139,3 +3139,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - BN: watch only (single-source, Financials not leading) — not evaluated.
 
 **Post-actions:** No orders. 4 positions, ~37.6% deployed — **below 75-85% band**; 2 open slots. Week 19: 2/3 used (1 slot left; Fri Nov 13 last session). No ClickUp (no trade). Verified `orders` (4 GTC trails) + `positions` unchanged.
+
+### Nov 12 — Midday Scan (Day 93, Thursday)
+
+**Account (16:11 UTC):** Equity ~$97,528.64 (positions $37,058.94 + cash $60,469.70) | Cash 62.0% | ~38.0% deployed — **below 75-85% band**. 4 open positions — CEG 35 sh +7.51% ($279.97, intraday +1.91%); DGX 35 sh +7.03% ($259.95, intraday +0.49%); NRG 88 sh -0.08% ($99.64, intraday +2.20%); RTX 47 sh +3.37% ($199.86, intraday -0.71%). No fills since market-open (TDG skipped).
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min NRG -0.08%; cut $92.74). No manual closes (L-044 ✓).
+
+**STEP 4 (tighten trails):** All <+15% (max CEG +7.51%) — no change.
+
+**STEP 5 (thesis check):** CEG new HWM $280.355 (stop auto-lifted to $252.3195) — Utilities/AI-power bid intact; ex-div Nov 16; cushion ~9.9%. DGX near 52-wk high (HWM $261.95, stop → $235.755) — intact; cushion ~9.3%. NRG recovered to ~entry after -3.7% pre-mkt mark, above $88.42 base — intact; cushion ~9.7%. RTX -0.71% intraday, no news; ex-div Nov 20 — intact; cushion ~7.4%. No cuts.
+
+**STEP 6 (research):** Skipped — no sharp unexplained moves (largest NRG +2.20%, in line with Utilities bid). No midday entry (risk mgmt only). 2 open slots; Week 19: 2/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $252.3195/HWM $280.355; DGX 30c44a67 (10%) $235.755/HWM $261.95; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
