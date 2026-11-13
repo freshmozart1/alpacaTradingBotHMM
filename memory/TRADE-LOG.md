@@ -3167,3 +3167,20 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $199.97 | -0.66% | +$311.61 (+3.43%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 1st consecutive no-trade day (TDG skipped at open — FY27 EPS guide below consensus). CEG +2.44% to new HWM $282.075 (stop auto-lifted to $253.8675); NRG +0.60%, still below entry, well above $92.74 cut; DGX flat; RTX -0.66%. Week 19: 2/3 new trades (1 slot left, Fri Nov 13 last session). Day P&L vs Nov 11 logged EOD $97,273.05 (Alpaca last_equity $97,180.03; $93.02 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,551.67 (-2.55%) vs $100,000 start. 4 positions, 37.95% deployed / 62.05% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 19.0% (CEG 10.1%, NRG 8.9%), HC 9.3% (DGX), A&D 9.6% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~7.5%, NRG ~8.3%, DGX ~9.3%, CEG ~9.8%. 4 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20.
+
+### Nov 13 — Market-Open (Day 94, Friday)
+
+**Operational Rule check:** Nov 12 has Pre-market + Market-Open + Midday + EOD ✓ (d69fa9a, 11e8f04, 4599687, b98c441 on main). **Nov 13 pre-market MISSING** (no RESEARCH-LOG entry / commit) → pre-market STEPS 1-3 run inline here; ClickUp alerted (L-042: 1 incident / 1 alert). Routine fired late 15:01 UTC (sched 13:15) — post-open; SPY first 30 min already complete.
+
+**Account (15:02 UTC):** Equity $97,121.80 | last_equity $97,392.77 | Cash $60,469.70 (62.3%) | 4 positions (CEG 35 +6.82% $278.19; DGX 35 +7.14% $260.22; NRG 88 -2.70% $97.03; RTX 47 +2.00% $197.215), 4 GTC trails status new (CEG f45ae140 $256.473/HWM $284.97; DGX 30c44a67 $235.755; NRG 83039f29 $89.937; RTX 313ded6c $185.0535). Daytrade count not returned; no day trades. Week 19: 2/3 used.
+
+**Inline research (Perplexity 13/13 exit 0):** WTI $88.34 / Brent $95.49 (+2-3%; not repeats); ES 7,629.75-7,657.75 (+0.2-0.6% pre-mkt; SPY actual open weak); VIX 18.33 (-2.0%, 10:53 ET; not a repeat); Oct PPI +0.3% m/m vs +0.4% est, +6.5% y/y (BLS). NVDA CEO resignation fallout, CBRS +16%, AMAT beat. No S&P BMO earnings. Sector YTD (Nov 12): Energy +46.7%, HC +22.8%, IT +21.1% (single-source). Held: CEG ex-div Nov 16, CIBC PT $346; DGX insider sale $3.0M, Zacks FY26 EPS up; NRG Raymond James PT -$2 (Nov 11); RTX Zacks → Strong Buy, ex-div Nov 20. No thesis breaks. Regime (HMM SPY 2y): **Bull 87%**, 4 days. Stall-breaker not armed (streak 1 < 3).
+
+**Lessons compliance:** L-044 no position at -7% (min NRG -2.70%; cut $92.74) ✓; L-043 regime Bull 87%, VIX 18.33 <25 → not triggered; SPY first 30 min low $752.72 / last $752.75 < Nov 12 close $757.16 (logged); L-042 missing pre-market alerted ✓; L-041 N/A (4/6); L-036 no exits ✓.
+
+**Buy gate (15:05 UTC): no candidate cleared → no orders.**
+- **BN — SKIP (catalyst gate).** Q3 beat Nov 12 BMO (DE $0.73 vs $0.70, rev $1.88B vs $1.81B; Perplexity + Morningstar/GlobeNewswire). Prior-session rule (b) fails: Nov 12 close $41.65 < Nov 11 close $42.05 (pre-catalyst). Chase: base Nov 11 $42.05, now $40.95 = -2.6%. Financials not a momentum leader. Simplification close Dec 1 (future). Scoreboard: open row 2026-11-12 → no new row.
+- **TDG — SKIP (catalyst stale).** Catalyst Nov 10 = 3 sessions prior (>2-session window). Price $1,213 < base Nov 9 $1,221.06 (-0.6%). FY27 EPS guide below consensus (Nov 12). Open row 2026-11-10 → no new row.
+- No other gate-clearing catalyst in inline research. Positions/week/size/cash/PDT/stock checks not reached.
+
+**Post-actions:** No orders. 4 positions, ~37.7% deployed — **below 75-85% band**; 2 open slots. Week 19 closes 2/3 used. No trade ClickUp (L-042 alert sent). Verified `orders` (4 GTC trails) + `positions` unchanged.
