@@ -3184,3 +3184,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - No other gate-clearing catalyst in inline research. Positions/week/size/cash/PDT/stock checks not reached.
 
 **Post-actions:** No orders. 4 positions, ~37.7% deployed — **below 75-85% band**; 2 open slots. Week 19 closes 2/3 used. No trade ClickUp (L-042 alert sent). Verified `orders` (4 GTC trails) + `positions` unchanged.
+
+### Nov 13 — Midday Scan (Day 94, Friday)
+
+**Account (16:28 UTC):** Equity $97,060.55 | last_equity $97,392.77 (-0.34% intraday) | Cash $60,469.70 (62.3%) | ~37.7% deployed — **below 75-85% band**. 4 open positions — CEG 35 sh +6.29% ($276.81, intraday -1.98%); DGX 35 sh +7.22% ($260.395, intraday +0.29%); NRG 88 sh -3.01% ($96.72, intraday -1.36%); RTX 47 sh +2.06% ($197.33, intraday -0.52%). No fills since market-open.
+
+**STEP 3 (cut losers):** N/A — no position at -7% (min NRG -3.01%; cut $92.74, ~4.1% away). No manual closes (L-044 ✓).
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +7.22%) — no change.
+
+**STEP 5 (thesis check):** CEG -1.98% intraday = AI-power sympathy with NVDA-CEO selloff (XLK weak, logged pre-market); Q3 beat/raise thesis intact; ex-div Nov 16; cushion ~7.3% to $256.473. DGX green, near HWM — intact; cushion ~9.5%. NRG -1.36% intraday, same AI-power drag, no company news; above $92.74 cut — intact; cushion ~7.0%. RTX -0.52%, no news; ex-div Nov 20 — intact; cushion ~6.2%. No cuts.
+
+**STEP 6 (research):** Skipped — no sharp unexplained moves (largest CEG -1.98%, explained by sector rotation). No midday entry (risk mgmt only). Week 19 closes 2/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $235.755/HWM $261.95; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.
