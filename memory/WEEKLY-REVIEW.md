@@ -1477,3 +1477,88 @@ Deployment 18.71% / cash 81.29% — far below 75-85% band (3 trail fills + 2 cut
 - New L-043/L-044. L-036/L-041/L-042 carry to Nov 13. Not a zero-trade week — no STEP 5 escalation. No risk rules touched.
 
 ### Overall Grade: C (trails banked +$6.8k and the gate dodged three -10% names, but both new entries were stopped within 2 sessions, -1.88% vs S&P, phase P&L -3.60%, a -7% cut deferred overnight, and deployment at 18.7%)
+
+## Week ending 2026-11-13
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $96,397.24 (Nov 6 logged EOD) |
+| Ending portfolio | $97,093.94 (Nov 13 logged EOD, 20:14 UTC marks; live pull $97,105.29, `balance_asof` 2026-11-12 — provisional) |
+| Week return | +$696.70 (+0.72%) |
+| S&P 500 week | +2.47% (SPY 735.40 -> 753.57, Nov 6 close -> Nov 13 20:16 UTC pre-close via `alpaca.sh bars`); Perplexity -0.39% (measured from Nov 9, not Nov 6 — wrong base, discarded) |
+| Bot vs S&P | -1.75% |
+| Trades | 2 new entries (CEG Nov 9, NRG Nov 11); 0 closed; open: 4 (CEG, DGX, NRG, RTX); 2/3 weekly cap used |
+| Win rate | n/a (0 closed) |
+| Best trade | CEG +6.91% open (+$630.04) |
+| Worst trade | NRG -3.22% open (-$282.43) |
+| Profit factor | n/a (no closed trades); realized $0 |
+
+### Skip Scoreboard
+
+| Ticker | Ref | +5d close | +5d % (Ref) | Verdict |
+|--------|-----|-----------|-------------|---------|
+| IDXX | 551.48 | 707.235 (Nov 9) | +28.24% (vs skip px $672.06: +5.23%) | missed (slot-blocked, then chase) |
+| ET | 20.92 | 19.13 (Nov 9) | -8.56% | avoided-loss |
+| PFE | 30.71 | 29.36 (Nov 10) | -4.40% | avoided-loss |
+| AMGN | 465.45 | 465.03 (Nov 10) | -0.09% | skip-right |
+| MPC | 430.48 | 389.67 (Nov 10) | -9.48% | avoided-loss |
+| CVS | 91.45 | 89.47 (Nov 11) | -2.17% | skip-right |
+| CVE | 30.72 | 28.41 (Nov 11) | -7.52% | avoided-loss |
+| WLK | 68.50 | 63.84 (Nov 11) | -6.80% | avoided-loss |
+| APD | 318.885 | 316.155 (Nov 12) | -0.86% | skip-right |
+| MLM / NVO | — | — | -1.78% / +2.21% | n/a — entered (both -7% cut) |
+
+Verdicts: missed 1 (+28.24% Ref / +5.23% skip px) / skip-right 3 / avoided-loss 5 (-36.76%) — missed:avoided 1:5. **[no-cat] subset:** no rows; cumulative 3:0 unchanged. **Gate calibration verdict: calibrated** — 2nd straight avoided-heavy week (8 avoided vs 3 missed over 2 weeks); Energy 3rd-in-sector blocks (ET, MPC, CVE) all fell 7-10%. Under-deployment is candidate supply, not gate tightness. Nov 9-12 rows (CEG/NRG entered, B, TDG, BN) score next week. **Pruned:** Oct 23-30 rows (HCA, LLY, MRK, FTI, ABBV, LNG, OKE) — verdicts reported 2026-10-30/11-06.
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No exits this week. L-036 slippage: 0 exits, n/a. |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| CEG | $260.42 (35 sh) | $278.42 | +$630.04 (+6.91%) | 10% trailing GTC f45ae140, stop $256.473, HWM $284.97 |
+| DGX | $242.87 (35 sh) | $258.87 | +$560.00 (+6.59%) | 10% trailing GTC 30c44a67, stop $235.755, HWM $261.95 |
+| NRG | $99.72 (88 sh) | $96.51 | -$282.43 (-3.22%) | 10% trailing GTC 83039f29, stop $89.937, HWM $99.93; -7% cut $92.74 |
+| RTX | $193.34 (47 sh) | $198.43 | +$239.23 (+2.63%) | 10% trailing GTC 313ded6c, stop $185.0535, HWM $205.615 |
+
+Deployment 37.72% / cash 62.28% — **below 75-85% band** all week. 4/6 positions. Sector: Utilities 18.8% (CEG+NRG, AI-power theme <25%), HC 9.3%, A&D 9.6%. CEG stop now above entry (locks ~-1.5% worst case). CEG ex-div Nov 16, RTX ex-div Nov 20. HMM Bull 87% (Nov 13), VIX ~18.
+
+### What Worked
+
+- CEG: clean two-source Q3 beat/raise entry, +6.91%, trail ratcheted above the -7% line within a day.
+- Skip gate: 5 avoided losses (-36.76%) vs 1 miss; Energy concentration blocks again dodged 7-10% drops.
+- L-043 applied mechanically (Nov 10 NRG skip on SPY < prior close + XLU red); L-044 never needed — no position near -7%.
+- No stop lowered, no rule breaches; all 4 stops verified every session.
+
+### What Didn't Work
+
+- -1.75% vs S&P; phase P&L still -2.91%. 62% cash in a +2.5% SPY week is the main drag.
+- Thin pipeline: only 5 names reached a gate all week (CEG, NRG, TDG, BN, B); 1 weekly slot and 2 position slots unused.
+- NRG bought on last eligible day at +12.77% vs base, $2.41 above the prior day's L-043 skip px — -3.22% now, correlated with CEG on the AI-power/NVDA selloff.
+- Routine reliability: Nov 10 midday never reached main (alerted next pre-market, not same session); Nov 13 pre-market missing at open, market-open fired ~2h late.
+
+### Key Lessons
+
+- With deployment <50%, the bottleneck is candidate supply — need a forward earnings-calendar pipeline, not a looser gate.
+- Avoided-loss evidence keeps stacking (2 weeks, 8:3) — don't loosen.
+- Same-theme pair (CEG+NRG) moves as one; cap held at 18.8%, keep it there.
+- Off-main / late runs are surfaced a session late when EOD doesn't alert.
+
+### Adjustments for Next Week
+
+- While deployment <50%, every pre-market lists >=3 forward candidates from >=2 sectors with hard-dated catalysts in the next 2 sessions; market-open logs pass/fail for each (L-045).
+- EOD verifies the day's 4 routine commits are on main and alerts any missing/off-main/late run same session (L-046, supersedes L-042).
+
+### Rule Changes This Week
+
+- L-036 (exit slippage logging) promoted to a permanent Operational Rule — complied on all 6 exits (Nov 3-6) and 2 weeks' reviews. Measurement only. Changelog row added.
+- L-041 retired (not promoted): never fired — book below 6/6 since Nov 3. L-042 retired, superseded by L-046 (2 weeks: 4 incidents / 4 alerts, 2 one session late).
+- New L-045/L-046. L-043/L-044 carry to Nov 20. Not a zero-trade week — no STEP 5 escalation. No risk rules touched.
+
+### Overall Grade: C+ (2 clean entries, CEG working, gate dodged five 4-10% losers, zero rule breaches — but -1.75% vs S&P with 62% cash, thin pipeline left a weekly slot unused, and two routine-reliability slips)
