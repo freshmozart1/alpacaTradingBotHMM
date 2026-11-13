@@ -158,6 +158,9 @@ Evaluated at the midday scan and opportunistically:
 - For every chase or fade skip, log the skip-time price in the
   scoreboard Decision cell; each weekly review reports +5d % from both
   Ref and skip-time price.
+- For every exit, log fill vs. the cut/stop level (% slippage) in
+  TRADE-LOG; each weekly review reports total exit slippage.
+  Measurement only.
 
 ## Rule Changelog
 
@@ -199,3 +202,4 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-10-30 | Operational Rules | (none) -> EOD lists GTC stop expiries within 5 sessions; renew at next market-open at same/higher stop, verify via `orders` | Promoted from LESSONS.md L-031 (2026-10-02), complied every EOD for 2+ weeks; fired once (ECL renewed via $20.50 trail Oct 20, stop not lowered). All 6 stops now exp Jan 2027. Process addition only, not a risk-rule change. |
 | 2026-11-06 | Buy-Side Gate | (none) -> while 6/6, log gate-clearing candidates as "slot-blocked" scoreboard rows; no rotation exits absent a sell-side rule | Promoted from LESSONS.md L-040 (2026-10-23), complied for 2 straight weeks (Oct 23-Nov 6): LLY, ABBV, IDXX logged slot-blocked, zero forced rotations; LLY scored +5.93% by Ref but -0.45% from its Oct 29 trigger close. Process addition only, not a risk-rule change. |
 | 2026-11-06 | Operational Rules | (none) -> chase/fade skips log skip-time price; review scores +5d from Ref and skip px | Promoted from LESSONS.md L-039 (2026-10-23), complied for 2 straight weeks (Oct 23-Nov 6): CLF -6.31% / IRON -1.59% from skip px vs +10.09% / +36.61% by Ref; IDXX skip px $672.06 logged. Measurement only, not a risk-rule change. |
+| 2026-11-13 | Operational Rules | (none) -> log fill vs cut/stop % slippage on every exit; review reports total | Promoted from LESSONS.md L-036 (2026-10-16), complied on all 6 exits Nov 3-6 (total -$388.70; LMT/MLM gap-throughs 83%) and reported in 2 reviews (Nov 6, Nov 13). Measurement only, not a risk-rule change. |
