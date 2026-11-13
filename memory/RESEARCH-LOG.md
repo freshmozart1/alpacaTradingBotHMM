@@ -5328,3 +5328,68 @@ TDG **+1.99%** (Nov 11 bars close $1,245.32 vs Ref $1,221.06; pre-mkt quote stal
 
 ### Decision
 **HOLD pre-market; flag TDG (conditional, last eligible day) for market-open gate.** Watchlist: TDG carried; BN added. No ClickUp alert (nothing urgent).
+
+## 2026-11-13 — Pre-market Research
+
+**LATE run** (fired 15:20 UTC vs sched 13:05; post-open, after market-open a855227). Data = 15:21-15:30 UTC intraday. Market-open already ran pre-market STEPS 1-3 inline and alerted the missing run (L-042) — this entry backfills the record; advisory only for midday/EOD.
+
+### Account
+- Equity: $96,906.39 | last_equity $97,392.77 | Cash: $60,469.70 (62.40%) | Buying power: $343,901.52 (margin, effective) | `balance_asof` 2026-11-12.
+- Position MV: $36,436.69 (CEG 35, DGX 35, NRG 88, RTX 47) — **37.60% deployed (below 75-85% band)**. 4 GTC trailing stops, status new: CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $235.755/HWM $261.95; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+- Intraday vs last_equity: -$486.38 (-0.50%).
+- Daytrade count: not returned; no day trades. Day 94, Friday, Week 19: **2/3 used** (last session). 4/6, 2 open slots. No-trade streak 1.
+- Market regime (HMM, SPY 2y daily, incl. partial Nov 13 bar): **Bull, confidence 70%**, 4 days (501 obs). Market-open logged Bull 87% at 15:01 — confidence fading with intraday SPY drop. Advisory only.
+- Held (`positions` 15:21): CEG $276.05 +6.00% (stop cushion 7.1%); DGX $259.54 +6.86% (9.2%); NRG $95.88 **-3.85%** (6.2% to stop; **3.3% to -7% cut $92.74**); RTX $196.885 +1.83% (6.0%). None at -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 18.68% (CEG 9.97%, NRG 8.71%); HC 9.37% (DGX); A&D 9.55% (RTX).
+
+### Market Context
+- Perplexity 13/13 exit 0 (sequential). No WebSearch fallback.
+- WTI/Brent: **WTI $88.41, Brent $95.91** (06:21 GMT). Not a repeat (market-open $88.34/$95.49 — close, different values). Spread 8.5% <10%.
+- S&P futures: 7,644.25 (+0.38%, 8:59 ET) — **stale vs live**: SPY $748.79 intraday vs Nov 12 close $757.16 = **-1.11%**. Bars govern.
+- VIX: **19.08** (+2.0%, 2:34 CST print; not a repeat of 18.33). <25. Likely higher intraday given SPY -1.1%.
+- Today: Oct PPI +0.3% m/m vs +0.4% est (soft headline; y/y ~4-yr high). Fed speakers Collins, Logan, Bowman, Daly, Jefferson. FOMC Dec 9; jobs Dec 4; CPI Dec 10.
+- Catalysts: NVDA CEO-resignation fallout (Senate testimony ask) — XLK **-3.13%** today; CBRS +11-16% (Q3 surprise profit); AMAT beat (adj EPS $4.16, rev $10.41B), "slightly higher"; CSCO -3%.
+- Earnings BMO: MFG, NDLS, OWLT, CNTY, small caps — nothing in held/lead sectors.
+- Sector momentum: Perplexity (Fidelity, thru Nov 11) Energy +41.5%, Industrials +10.1%, Financials +6.9%, Discretionary +3.1%, Utilities +2.5%. `bars` 5-sess Nov 6→Nov 13 intraday: **XLE +4.46%**, XLI +3.06%, XLK +2.12%, XLF +2.03%, SPY +1.82%, XLU +1.58%, XLV +1.54%, XLB +0.05%. Today: XLE +0.12%, XLU 0.00%, XLF +0.22%, XLV -0.09%, XLB -0.65%, XLI -1.04%, XLK -3.13%. Leaders: Energy, Industrials.
+- Held tickers:
+  - **CEG**: no new catalyst (Q3 beat/raise recap; CIBC PT $346, dateless). Ex-div Nov 16 ($0.426). Thesis intact.
+  - **DGX**: Zacks FY26 EPS $11.15→$11.28 (dateless); SVP sale ~$3.0M; +52.5% YTD. Thesis intact.
+  - **NRG**: no new catalyst (LS Power $4B sale / $3B buybacks recap; 2027 guide trails consensus). Thesis intact; **watch -7% cut $92.74**.
+  - **RTX**: DeepStrike JR3 3rd test, DARPA award (value undisclosed), Zacks Strong Buy. Ex-div Nov 20. Thesis intact.
+- Watchlist (carried):
+  - **TDG**: no new company catalyst ("guidance digestion"). Catalyst Nov 10 now 3 sessions old → outside 2-session window. Quote $1,217.8 mid < base Nov 9 $1,221.06 (-0.27%). FY27 guide below consensus (resolved Nov 12). **Drop.**
+  - **BN**: no new catalyst (Nov 12 Q3 recap). Follow-through failed (Nov 12 close $41.65 < Nov 11 $42.05). Quote $40.80 mid. **Drop.**
+
+### Stall-Breaker
+Not armed (streak 1 < 3).
+
+### Lessons Check
+- L-044 (-7% execute same session) — no position at -7% (min NRG -3.85%, cut $92.74, 3.3% cushion). Complied.
+- L-043 (Bear/High-Vol throttle) — regime Bull 70%, VIX 19.08 <25 → **not triggered**. SPY $748.79 < Nov 12 close $757.16 (logged). Complied.
+- L-042 (alert missing/late runs) — `git log`: Nov 12 pre-market d69fa9a, market-open 11e8f04, midday 4599687, EOD b98c441 ✓ all present, in order. **Nov 13 pre-market late/out of order (this run, after market-open a855227) — already alerted by market-open 15:01 (1 incident / 1 alert); no duplicate alert.** Complied.
+- L-041 (next-slot candidate while 6/6) — 4/6 → N/A. Complied.
+- L-036 (slippage) — no exits since Nov 6. Complied.
+- Operational: GTC expiries Jan-Feb 2027 — none within 5 sessions ✓. CEG ex-div Nov 16 / RTX Nov 20 noted. Deployment <75% → per-name reasons logged below ✓.
+
+### Yesterday's Skip Check
+TDG **-0.27%** (quote mid $1,217.8 vs Ref $1,221.06), BN **-2.98%** (mid $40.80 vs Ref $42.05) — skips look right so far.
+
+### Trade Ideas
+- Week 19: 2/3 used, last session, market-open already passed. 4/6, ~37.6% deployed (below band).
+- **No fully-specified idea qualifies — per-name reasons:**
+  1. **TDG** — catalyst 3 sessions old (>2-session window); price below pre-catalyst base; FY27 guide below consensus. Dropped.
+  2. **BN** — bars follow-through fails ($41.65 < $42.05); Financials not leading. Dropped.
+  3. **AMAT** (screened, not watchlisted) — today-reacting Q3 beat, but single-source, AI-semis theme in NVDA-CEO selloff (XLK -3.1%); AI-semis pair failed Oct 13/15. No.
+  4. **CBRS** (screened, not watchlisted) — surprise profit, +11-16% realized (near 15% chase bar), recent IPO volatility, IT selling off. No.
+  5. No Utilities add (2 held → 3rd = concentration skip).
+- Next week (Week 20): screen Energy/Industrials (5-sess leaders) for fresh dated catalysts; watchlist empty.
+
+### Risk Factors
+- SPY -1.1% / XLK -3.1% intraday — NVDA leadership shock spreading to AI-power names (CEG/NRG correlated).
+- NRG 3.3% above -7% cut; RTX/CEG stop cushions ~6-7%.
+- PPI y/y at ~4-yr high; Dec hike priced; 5 Fed speakers today.
+- Brent ~$96 → inflation impulse.
+- Regime confidence slipping (Bull 87% → 70% intraday).
+
+### Decision
+**HOLD.** No trade (market-open window passed, no gate-clearing candidate). Watchlist: TDG, BN dropped; empty into Week 20. No new scoreboard rows. No ClickUp (missing-run alert already sent at market-open; nothing else urgent).
