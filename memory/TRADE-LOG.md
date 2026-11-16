@@ -3244,3 +3244,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
 
 **STEP 8 (notify):** No action taken → no ClickUp.
+
+### Nov 16 — EOD Snapshot (Day 95, Monday)
+**Portfolio:** $96,607.97 | **Cash:** $60,469.70 (62.59%) | **Day P&L:** -$485.97 (-0.50%) | **Phase P&L:** -$3,392.03 (-3.39%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $274.87 | -1.90% | +$505.79 (+5.55%) | $256.473 (10% trail, GTC f45ae140, HWM $284.97) |
+| DGX | 35 | $242.87 | $261.55 | +0.75% | +$653.80 (+7.69%) | $236.844 (10% trail, GTC 30c44a67, HWM $263.16) |
+| NRG | 88 | $99.72 | $93.47 | -3.74% | -$549.95 (-6.27%) | $89.937 (10% trail, GTC 83039f29, HWM $99.93) |
+| RTX | 47 | $193.34 | $194.43 | -2.09% | +$51.23 (+0.56%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** 3rd consecutive no-trade day (ARMK skipped at open — catalyst gate; TSN fail) — stall-breaker arms next pre-market. **NRG -6.27% at $93.47, ~0.8% above $92.74 -7% cut** — not breached at 20:14 UTC marks (L-044 not triggered); market-open must cut at open if NRG ≤ $92.74. CEG -1.90% (ex-div $0.426 + IPP softness); RTX -2.09%, no news; DGX +0.75%, HWM $263.16 (stop auto-lifted to $236.844). Week 20: 0/3 new trades. Day P&L vs Nov 13 logged EOD $97,093.94 (Alpaca last_equity $97,240.76; $146.82 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,392.03 (-3.39%) vs $100,000 start. 4 positions, 37.41% deployed / 62.59% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 18.5% (CEG 10.0%, NRG 8.5%), HC 9.5% (DGX), A&D 9.5% (RTX). All <+15% → no trail tightening. Stop cushions: NRG ~3.8%, RTX ~4.8%, CEG ~6.7%, DGX ~9.4%. 4 GTC stops resting. L-046: pre-market 2444b55 (13:15), market-open 8b99011 (13:24), midday df46390 (16:11) all on origin/main, on time → no alert. RTX ex-div Nov 20.
