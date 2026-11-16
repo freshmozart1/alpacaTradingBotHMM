@@ -5393,3 +5393,60 @@ TDG **-0.27%** (quote mid $1,217.8 vs Ref $1,221.06), BN **-2.98%** (mid $40.80 
 
 ### Decision
 **HOLD.** No trade (market-open window passed, no gate-clearing candidate). Watchlist: TDG, BN dropped; empty into Week 20. No new scoreboard rows. No ClickUp (missing-run alert already sent at market-open; nothing else urgent).
+
+## 2026-11-16 — Pre-market Research
+
+On-time run (fired 13:10 UTC). Data 13:10-13:25 UTC.
+
+### Account
+- Equity: $96,999.22 | last_equity $97,240.76 | Cash: $60,469.70 (62.34%) | Buying power: $344,161.46 (margin, effective) | `balance_asof` 2026-11-13.
+- Position MV: $36,529.52 (CEG 35, DGX 35, NRG 88, RTX 47) — **37.66% deployed (below 75-85% band)**. 4 GTC trailing stops, status new: CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $235.755/HWM $261.95; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615. Expiries Jan 15-Feb 9 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 95, Monday, **Week 20: 0/3 used**. 4/6, 2 open slots. No-trade streak 2.
+- Market regime (HMM, SPY 2y daily): **Bull, confidence 88%**, 4 days (498 obs). Up from 70% (Nov 13 intraday). Advisory only.
+- Held (`positions` pre-mkt marks): CEG $275.03 +5.61% (**ex-div $0.426 today**; ~-1.7% vs Nov 13 close $279.68; cushion 6.7% to stop); DGX $259.60 +6.89% (9.2%); NRG $95.84 -3.89% (6.2% to stop; **3.2% to -7% cut $92.74**); RTX $199.65 +3.26% (7.3%). None at -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 18.62% (CEG 9.92%, NRG 8.69%); HC 9.37% (DGX); A&D/Industrials 9.67% (RTX).
+
+### Market Context
+- Perplexity: first parallel burst returned 429 (13/14); re-run sequentially, 20/20 exit 0. No WebSearch fallback.
+- WTI/Brent: **WTI $88.75, Brent $95.85** (Nov 16, ~11-min delayed). Not a repeat (Nov 13: $88.41/$95.91). Spread 8.0% <10%. IEA flags possible Q4 surplus.
+- S&P futures: Perplexity 7,553 (-0.40%, 00:27 ET — stale) vs another headline +0.38% — conflicting. **SPY pre-mkt quote $749.54 mid vs Nov 13 close $754.27 = -0.63%.** Bars govern.
+- VIX: **19.30** (Nov 13 close, +3.2%; not a repeat of 19.08). <25.
+- Today: Empire State Mfg 8:30 ET; Fed Chair Warsh + Barr/Williams speak. Week: retail sales + IP Nov 17; **FOMC minutes Nov 18 2pm**; WMT/BABA Nov 19; NVDA earnings "Tuesday" (single-source, unverified). FOMC Dec 9; jobs Dec 4; CPI Dec 10.
+- Earnings BMO today: PDD, BIDU, TSN, ARMK, BEKE, HTHT, XPEV, BRC, BLDP. AMC: ACM.
+- Sector momentum: Perplexity YTD (thru Nov 13, single-source, omits Energy): HC +21.8%, Staples +20.2%, Industrials +10.1%, Financials +6.9%, Disc +3.1%, Utilities +2.5%. `bars` 5-sess Nov 6→13: **XLE +5.34%, XLI +3.74%**, XLK +3.30%, XLF +2.64%, SPY +2.57%, XLP +2.49%, XLV +2.21%, XLU +2.09%, XLY +2.06%, XLB +0.49%. Leaders: Energy, Industrials.
+- Held tickers:
+  - **CEG**: ex-div $0.426 today (mechanical). Recaps only (Q3 beat/raise, DOE $5B offer, 8.5 GW contracts). Weekly +12.1%. Thesis intact.
+  - **DGX**: RESULTS Act (lab reimbursement) chatter, Jefferies fireside **Nov 17**; SVP sale ~$3.0M. Thesis intact.
+  - **NRG**: recaps only (LS Power $4B sale, $3B buybacks, 1.2 GW TX data-center deal by YE). Thesis intact; **watch -7% cut $92.74**.
+  - **RTX**: S&P upgrade to A- (dateless), 2027 margin/FCF outlook, options imply ±3.1% thru Nov 20; ex-div Nov 20 ($0.73). Weekly +4.8%. Thesis intact.
+- Watchlist carried: none (TDG, BN dropped Nov 13).
+
+### Stall-Breaker
+Not armed (streak 2 < 3). Arms if no entry today.
+
+### Lessons Check
+- L-046 (EOD verifies routine commits) — EOD directive; pre-market `git log`: Nov 13 pre-market 532faca (late, alerted Nov 13), market-open a855227, midday 02976b7, EOD 1e99a8f, weekly 9975d51 ✓. No new gap → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated catalyst ≤2 sessions while <50%) — 5 names / 4 sectors listed below (ACM, WWD Industrials; TGT, TSN Staples; ARMK Disc). Energy leg: calendar scan (Perplexity Nov 16-18 large-cap calendar) found no Energy reports; EOG/CVX/ET PT actions not hard-dated → excluded. MDT checked → reports Nov 24 (out of window). Complied.
+- L-044 (-7% execute same session) — no position at -7% (min NRG -3.89%). Complied.
+- L-043 (Bear/High-Vol throttle) — regime Bull 88%, VIX 19.30 <25 → **not triggered**. SPY pre-mkt -0.63% vs Nov 13 close $754.27 (logged). Complied.
+- Operational: GTC expiries none within 5 sessions ✓. Ex-div: CEG today, RTX Nov 20 ✓. Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+Watchlist empty Nov 13 → N/A. Open rows (info, Nov 13 bars close; quotes stale/wide): TDG -0.29% ($1,217.50 vs Ref $1,221.06), BN -2.57% ($40.97 vs $42.05) — skips look right so far.
+
+### Trade Ideas
+Week 20: 0/3 used. 4/6. ~37.7% deployed. Post-fill sector counts all ≤2. All conditional — need today's/≤2-session dated print + bars follow-through at gate.
+1. **ARMK** (Disc; FQ4 BMO today, call 8:30 ET; est EPS $0.75 / rev ~$5.3B; FY27 guide due) — **fully-specified market-open hard-check:** only if beat + FY27 guide ≥ consensus (two-source) and gap <15% vs Ref $53.89. Entry ≤$57.50 limit; size ~$9,700 (~10% eq, ~168 sh); cut -7% (~$53.48 at $57.50 fill); 10% GTC trail; target $66.10 (+15%, ≥2:1). Post-fill Disc 10%, count 1.
+2. **ACM** (Industrials, leader; FQ4 AMC today, call Nov 17 8:00 ET; est EPS $1.57-1.59, backlog ~$27.8B) — Nov 17 hard-check: beat + FY27 guide ≥ consensus. Entry ≤$75 (≤~6% gap vs Ref $70.53); size ~$9,700 (~130 sh); cut -7%; 10% trail; target +15% (~$86). Post-fill Industrials ~19.7% (RTX + ACM, count 2); E&C sub-industry 0 held.
+3. **TGT** (Staples; Q3 BMO Nov 18, est EPS ~$2.05, rev ~$26.4B; +70% YTD → chase-sensitive) — Nov 18 hard-check only. Ref $161.44.
+- Also watchlisted (no idea): **WWD** (Industrials/A&D, FQ4 AMC Nov 18; A&D theme w/ RTX ~19% post-fill <25%); **TSN** (Staples, FQ4 BMO today; consensus EPS -43% y/y, beef losses, 5-sess -1.39% → weak setup).
+
+### Risk Factors
+- SPY -0.6% pre-mkt; Warsh speaks today; FOMC minutes Wed; Dec hike risk after hot PPI y/y.
+- NVDA-led AI selloff (Nov 13 XLK -3.1%) — CEG/NRG AI-power correlation; NRG 3.2% above -7% cut.
+- CEG ex-div today (~$0.43 mechanical drop; trail unaffected).
+- Brent ~$96 inflation impulse vs IEA surplus signal (oil vol for Energy leaders).
+- Futures prints conflicting/stale — SPY quote used.
+
+### Decision
+**HOLD pre-market.** No carried watchlist; ARMK flagged for market-open hard-check (print not yet indexed). ACM/TGT gated to their own sessions. New scoreboard rows: ARMK, ACM, TGT, WWD, TSN. No ClickUp (nothing urgent).

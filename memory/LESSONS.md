@@ -303,3 +303,8 @@ than 10 sessions are pruned.
 | 2026-11-09 | B | HOLD — new watchlist add (Materials, gold), Q3 today: adj EPS beat / rev miss / FY26 reaffirmed, single-source | 40.56 | | |
 | 2026-11-10 | TDG | HOLD — new watchlist add (A&D), FQ4 BMO today: adj EPS $12.44 +15% / sales +23% (SEC 8-K), FY27 EPS guide below consensus (Perplexity), pre-mkt ~-1.4%; not gate-clearing | 1221.06 | | |
 | 2026-11-12 | BN | HOLD — new watchlist add (Financials), Q3 BMO today: DE $0.73/sh +16% y/y, $900M YTD buybacks, single-source; no pre-mkt print, Financials not leading | 42.05 | | |
+| 2026-11-16 | ARMK | HOLD pre-market — new watchlist add (Disc), FQ4 BMO today, print not yet indexed; flagged for market-open hard-check, entry ≤$57.50 / -7% cut / target $66.10 | 53.89 | | |
+| 2026-11-16 | ACM | HOLD — new watchlist add (Industrials, leader), FQ4 AMC today hard-dated, no catalyst yet; Nov 17 hard-check, entry ≤$75 / -7% cut / target ~$86 | 70.53 | | |
+| 2026-11-16 | TGT | HOLD — new watchlist add (Staples), Q3 BMO Nov 18 hard-dated, no catalyst yet; +70% YTD chase-sensitive | 161.44 | | |
+| 2026-11-16 | WWD | HOLD — new watchlist add (Industrials/A&D), FQ4 AMC Nov 18 hard-dated, no catalyst yet | 329.82 | | |
+| 2026-11-16 | TSN | HOLD — new watchlist add (Staples), FQ4 BMO today, print not yet indexed; consensus EPS -43% y/y, weak setup | 58.86 | | |
