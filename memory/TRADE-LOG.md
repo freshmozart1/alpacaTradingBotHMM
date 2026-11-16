@@ -3228,3 +3228,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - Positions/week/size/cash/PDT/stock checks not reached.
 
 **Post-actions:** No orders. 4 positions, ~37.7% deployed — **below 75-85% band**; 2 open slots. Week 20: 0/3 used. No-trade streak → 3 if none today (stall-breaker arms next pre-market). No trade ClickUp. Verified `orders` (4 GTC trails, status new) + `positions` unchanged.
+
+### Nov 16 — Midday Scan (Day 95, Monday)
+
+**Account (16:12 UTC):** Equity $96,865.57 | last_equity $97,240.76 (-0.39% intraday) | Cash $60,469.70 (62.4%) | ~37.6% deployed — **below 75-85% band**. 4 open positions — CEG 35 sh +6.00% ($276.04, intraday -1.49%; ex-div $0.426 today); DGX 35 sh +7.70% ($261.565, intraday +0.76%); NRG 88 sh -5.43% ($94.305, intraday -2.88%); RTX 47 sh +2.13% ($197.465, intraday -0.56%). No fills since market-open.
+
+**STEP 3 (cut losers):** N/A — no position at -7%. **NRG -5.43%, $94.305 vs -7% cut $92.74 (~1.7% away)** — watch at EOD/next open (L-044 ✓).
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +7.70%) — no change.
+
+**STEP 5 (thesis check):** CEG -1.49% intraday ≈ ex-div ($0.426) + IPP/AI-power softness; Q3 beat/raise thesis intact; cushion ~7.1% to $256.473. DGX green, new HWM $263.16 (stop auto-lifted to $236.844) — intact; cushion ~9.5%. NRG -2.88% intraday: Perplexity finds no Nov 16 company news — IPP profit-taking + LS Power sale overhang + Raymond James PT $152→$150 (weaker ERCOT); 1.2 GW TX data-center thesis intact → hold, not a thesis break; cushion ~4.6% to $89.937 trail, cut binds first. RTX -0.56%, no news; ex-div Nov 20 — intact; cushion ~6.3%. No cuts.
+
+**STEP 6 (research):** NRG checked (Perplexity, 1 query) — sector drag, no catalyst. Addendum in RESEARCH-LOG. No midday entry (risk mgmt only). Week 20: 0/3 used.
+
+**STEP 7 (verify):** `positions` (CEG 35, DGX 35, NRG 88, RTX 47) + `orders`: 4 GTC trailing stops, status new — CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615.
+
+**STEP 8 (notify):** No action taken → no ClickUp.

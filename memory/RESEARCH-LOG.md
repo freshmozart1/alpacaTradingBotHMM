@@ -5450,3 +5450,8 @@ Week 20: 0/3 used. 4/6. ~37.7% deployed. Post-fill sector counts all ≤2. All c
 
 ### Decision
 **HOLD pre-market.** No carried watchlist; ARMK flagged for market-open hard-check (print not yet indexed). ACM/TGT gated to their own sessions. New scoreboard rows: ARMK, ACM, TGT, WWD, TSN. No ClickUp (nothing urgent).
+
+### 2026-11-16 — Midday Addendum (16:12 UTC)
+- **NRG** -2.88% intraday to $94.305 (-5.43% vs entry; -7% cut $92.74 ~1.7% away). Perplexity: no Nov 16 company-specific catalyst; IPP profit-taking after AI-power rally, LS Power $4B sale overhang (2027 EBITDA ~flat), Raymond James PT $152→$150 (weaker ERCOT). Thesis (buybacks, 1.2 GW TX data-center deal) intact — hold; cut binds at $92.74.
+- **CEG** -1.49% ≈ ex-div $0.426 + sector softness; Q3 beat/raise (Nov 9), EIA record-demand outlook (Nov 10) intact.
+- Book: 4 positions, ~37.6% deployed, 2 open slots. Week 20: 0/3. Next: ACM hard-check Nov 17 open; TGT Nov 18; WWD Nov 18 AMC.
