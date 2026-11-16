@@ -3212,3 +3212,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $198.43 | +0.04% | +$239.23 (+2.63%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 2nd consecutive no-trade day (BN/TDG skipped at open — catalyst gate). CEG -1.41% and NRG -1.57% on AI-power sympathy with NVDA-CEO selloff; CEG HWM $284.97 set intraday (stop auto-lifted to $256.473). NRG -3.22%, ~3.9% above $92.74 cut. DGX/RTX flat. Week 19 closed 2/3 new trades. Day P&L vs Nov 12 logged EOD $97,448.33 (Alpaca last_equity $97,392.77; $55.56 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$2,906.06 (-2.91%) vs $100,000 start. 4 positions, 37.72% deployed / 62.28% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 18.8% (CEG 10.0%, NRG 8.7%), HC 9.3% (DGX), A&D 9.6% (RTX). No position near -7% cut; all <+15% → no trail tightening. Stop cushions: RTX ~6.7%, NRG ~6.8%, CEG ~7.9%, DGX ~8.9%. 4 GTC stops resting. CEG ex-div Nov 16, RTX ex-div Nov 20.
+
+### Nov 16 — Market-Open (Day 95, Monday)
+
+**Operational Rule check:** Nov 13 has Pre-market + Market-Open + Midday + EOD ✓ (532faca, a855227, 02976b7, 1e99a8f). Nov 16 pre-market 2444b55 ✓. Routine fired 13:22 UTC (sched 13:15) — pre-open (bell 14:30 UTC).
+
+**Account (13:23 UTC):** Equity $97,009.92 | last_equity $97,240.76 | Cash $60,469.70 (62.3%) | `balance_asof` 2026-11-13. 4 positions (CEG 35 +5.60% $275.00 [ex-div $0.426 today]; DGX 35 +6.89% $259.60; NRG 88 -3.89% $95.84; RTX 47 +3.39% $199.90). 4 GTC trails status new (CEG f45ae140 $256.473; DGX 30c44a67 $235.755; NRG 83039f29 $89.937; RTX 313ded6c $185.0535). Daytrade count not returned; no day trades. Week 20: 0/3 used. 4/6.
+
+**Lessons compliance:** L-044 no position at -7% (min NRG -3.89%; cut $92.74) ✓; L-043 regime Bull 88%, VIX 19.30 <25 → not triggered; SPY pre-mkt -0.63% vs Nov 13 close $754.27 (logged); L-045 per-name pass/fail below ✓; L-046 EOD directive (N/A here).
+
+**Buy gate (13:30 UTC): no candidate cleared → no orders.**
+- **ARMK — SKIP (catalyst gate: pre-set condition "beat + FY27 guide ≥ consensus" unmet).** FQ4 print Nov 16 BMO (8-K ex99.1, AP/WTOP, Chartmill, GuruFocus): rev ~$5.29B vs ~$5.27-5.3B est (in line / slight miss per Chartmill); adj EPS reported $0.71 (company summaries) vs $0.78 (AP/Chartmill, "in line" vs $0.769) — conflicting, no clear beat. FY27 guide: organic rev +9-10%, adj EPS +20-25% from $2.23 (~$2.68-2.79), ex-buybacks — Chartmill calls it conservative vs consensus; stock indicated lower pre-mkt. Positives (support only): $1B buyback, div +17% to $0.14. ARMK quote stale (Nov 13 close; bid/ask $49.73/$57.38), bars empty pre-open — chase N/A (reaction negative vs base Nov 13 $53.89). Open scoreboard row 2026-11-16 → no new row.
+- **TSN — FAIL (no idea; weak setup per pre-market: consensus EPS -43% y/y, 5-sess -1.39%).** Not evaluated further.
+- **ACM** (AMC today) → Nov 17 hard-check. **TGT** (BMO Nov 18), **WWD** (AMC Nov 18) → own sessions.
+- Positions/week/size/cash/PDT/stock checks not reached.
+
+**Post-actions:** No orders. 4 positions, ~37.7% deployed — **below 75-85% band**; 2 open slots. Week 20: 0/3 used. No-trade streak → 3 if none today (stall-breaker arms next pre-market). No trade ClickUp. Verified `orders` (4 GTC trails, status new) + `positions` unchanged.
