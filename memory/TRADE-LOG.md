@@ -3291,3 +3291,14 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47 (NRG gone ✓). `orders`: 3 GTC trails status new — CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. `orders closed`: NRG 8b7b20ef filled 88 @ $92.32; 83039f29 canceled. Account post: Equity $96,419.17 | Cash $68,593.86 (71.1%) | **~28.9% deployed — below 75-85% band**; 3/6, 3 open slots. Sector: Utilities ~9.8% (CEG), HC ~9.4% (DGX), A&D ~9.6% (RTX).
 
 **STEP 8 (notify):** ClickUp sent (NRG cut).
+
+### Nov 17 — EOD Snapshot (Day 96, Tuesday)
+**Portfolio:** $96,276.50 | **Cash:** $68,593.86 (71.25%) | **Day P&L:** -$331.47 (-0.34%) | **Phase P&L:** -$3,723.50 (-3.72%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $269.765 | -2.90% | +$327.12 (+3.59%) | $256.473 (10% trail, GTC f45ae140, HWM $284.97) |
+| DGX | 35 | $242.87 | $256.92 | -2.02% | +$491.75 (+5.79%) | $236.844 (10% trail, GTC 30c44a67, HWM $263.16) |
+| RTX | 47 | $193.34 | $196.78 | +0.97% | +$161.68 (+1.78%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+
+**Notes:** Streak reset — trade(s) placed today (NRG -7% cut at midday: sold 88 @ $92.32, order 8b7b20ef, realized -$651.15 / -7.42%; failed Utilities trade #1). No new entries (ACM skipped — L-043 SPY first-30-min ✗). Week 20: 0/3 new trades. Day P&L vs Nov 16 logged EOD $96,607.97 (Alpaca last_equity $96,801.70; $193.73 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,723.50 (-3.72%) vs $100,000 start. 3 positions, 28.75% deployed / 71.25% cash — **well below 75-85% band**; 3 open slots. Sector: Utilities 9.8% (CEG), HC 9.3% (DGX), A&D 9.6% (RTX). All <+15% → no trail tightening. Stop cushions: CEG ~4.9%, RTX ~6.0%, DGX ~7.8%. CEG -7% cut line $242.19 (cushion ~10%). 3 GTC stops resting. L-046: pre-market 1b8bd89 (13:12), market-open 0fb68e5 (15:02), midday 8848da9 (16:12) all on origin/main, on time → no alert. RTX ex-div Nov 20.
