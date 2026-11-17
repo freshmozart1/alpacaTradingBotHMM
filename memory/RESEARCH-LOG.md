@@ -5455,3 +5455,59 @@ Week 20: 0/3 used. 4/6. ~37.7% deployed. Post-fill sector counts all ≤2. All c
 - **NRG** -2.88% intraday to $94.305 (-5.43% vs entry; -7% cut $92.74 ~1.7% away). Perplexity: no Nov 16 company-specific catalyst; IPP profit-taking after AI-power rally, LS Power $4B sale overhang (2027 EBITDA ~flat), Raymond James PT $152→$150 (weaker ERCOT). Thesis (buybacks, 1.2 GW TX data-center deal) intact — hold; cut binds at $92.74.
 - **CEG** -1.49% ≈ ex-div $0.426 + sector softness; Q3 beat/raise (Nov 9), EIA record-demand outlook (Nov 10) intact.
 - Book: 4 positions, ~37.6% deployed, 2 open slots. Week 20: 0/3. Next: ACM hard-check Nov 17 open; TGT Nov 18; WWD Nov 18 AMC.
+
+## 2026-11-17 — Pre-market Research
+
+On-time run (fired 13:08 UTC). Data 13:08-13:30 UTC.
+
+### Account
+- Equity: $96,868.96 | last_equity $96,801.70 | Cash: $60,469.70 (62.42%) | Buying power: $343,796.73 (margin, effective) | `balance_asof` 2026-11-16.
+- Position MV: $36,399.26 (CEG 35, DGX 35, NRG 88, RTX 47) — **37.58% deployed (below 75-85% band)**. 4 GTC trailing stops, status new: CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; NRG 83039f29 (10%) $89.937/HWM $99.93; RTX 313ded6c (10%) $185.0535/HWM $205.615. Expiries Jan 15-Feb 9 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 96, Tuesday, **Week 20: 0/3 used**. 4/6, 2 open slots. **No-trade streak 3.**
+- Market regime (HMM, SPY 2y daily): **Bear/High-Vol, confidence 73%**, days_in_regime 12 (499 obs). Flip from Bull 88% (Nov 16); days_in_regime inconsistent with yesterday's label (state relabel) — logged as-is. Advisory only.
+- Held (`positions` pre-mkt marks): CEG $278.85 +7.08% (cushion 8.0% to stop); DGX $262.21 +7.96% (9.7%); NRG $94.82 -4.91% (5.1% to stop; **2.2% to -7% cut $92.74**); RTX $194.00 +0.34% (4.6%). None at -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 18.68% (CEG 10.08%, NRG 8.61%); HC 9.47% (DGX); A&D/Industrials 9.41% (RTX).
+
+### Market Context
+- Perplexity: 22/22 sequential, exit 0. No WebSearch fallback (1 WebSearch used as ACM 2nd-source check — no FQ4 hit).
+- WTI/Brent: **WTI $85.01, Brent $91.86** (06:48 GMT; alt feed $86.10/$92.73). Not a repeat (Nov 16: $88.75/$95.85). Spread ~1.3% <10%. Brent <$92 on supply expectations.
+- S&P futures: **-0.33%** (7,414.25, 5:31 ET; Reuters -0.34%) ahead of NVDA. SPY pre-mkt quote $740.22 mid vs Nov 16 close $740.04 = +0.02% (thin pre-mkt). Bars govern.
+- VIX: Perplexity "23.27, prior 22.91" (snippet date garbled — pre-open, single-source; treat as ~Nov 16 close). Not a repeat of 19.30. <25 but rising.
+- Today: retail sales 8:30 ET, IP 9:15, business inventories 10:00. **NVDA FQ3 AMC today** (key AI catalyst). FOMC minutes Nov 18 2pm; LOW/TJX/TGT BMO Nov 18; WMT BMO Nov 19. Jobs Dec 4; CPI Dec 10.
+- Earnings BMO today: HD, DIS, VIK, JD, ESLT, AS, SR, ENR, GFF. AMC: NVDA.
+- Sector momentum: Perplexity YTD (thru Nov 13): Energy +42.8%, HC +22.2%, Staples +20.0%, IT +14.5%, Industrials +10.1%, Financials +6.8%, Disc +3.1%, Utilities +2.6%, Comm -6.4%. `bars` 5-sess Nov 9→16: **XLE +2.82%, XLP +1.91%**, XLU +0.75%, XLF +0.34%, XLV -0.25%, SPY -1.68%, XLI -1.86%, XLY -2.35%, XLB -2.79%, XLK -3.61%. Leaders: Energy, Staples.
+- Held tickers:
+  - **CEG**: BMO PT $316→$335 Outperform (Nov 16, dated). Q3 beat/raise digest. Thesis intact.
+  - **DGX**: CFO at Jefferies HC conf **8:30 ET today**; Mizuho Buy $260 (Nov 16). Medicare 2027 lab-rate overhang. Thesis intact.
+  - **NRG**: BMO PT cut (Nov 16) on LS Power sale EBITDA loss; $3B buybacks, 1.2 GW TX DC by YE. Thesis intact; **watch -7% cut $92.74 (2.2% away)**.
+  - **RTX**: Collins India MRO groundbreaking (minor); crossed below 200-DMA; ex-div Nov 20 ($0.73). Thesis intact; cushion thinnest (4.6%).
+
+### Stall-Breaker
+**FIRED (streak 3 ≥ 3)** — dropped ARMK (FQ4 EPS miss $0.71 vs $0.75, FY27 organic guide below consensus; DB/Baird PT cuts), TSN (FQ4 beat but FY27 sales guide -3.5% to -5.5%, op-inc guide midpoint below FY26; +8.61% already); added ENR, WMT (Staples), CVI, GLNG (Energy) from top-2 leaders (XLE/XLP 5-sess). Kept ACM (fresh print), TGT, WWD (hard-dated Nov 18). Quotes cross-checked via `./scripts/alpaca.sh quote` (all stale Nov 16 21:00, wide); bars closes used for Refs.
+
+### Lessons Check
+- L-046 (EOD verifies routine commits) — EOD directive; pre-market `git log origin/main`: Nov 16 pre-market 2444b55 (13:15), market-open 8b99011 (13:24), midday df46390 (16:11), EOD 8b20052 (20:15) all on main, on time → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 6 names / 3 sectors: ACM (Ind, FQ4 Nov 16 AMC, reaction today), ENR (Staples, FQ4 BMO today), TGT (Staples/retail, BMO Nov 18), WWD (Ind/A&D, AMC Nov 18), WMT (Staples, BMO Nov 19), GLNG (Energy, Q3 Nov 18). Energy calendar scan: Perplexity Nov 17-19 energy earnings (GLNG, BORR, UGI only US-listed). Complied.
+- L-044 (-7% execute same session) — no position at -7% (min NRG -4.91%). Complied.
+- L-043 (Bear/High-Vol throttle) — **TRIGGERED: HMM Bear/High-Vol 73%** (VIX ~23 <25). Max 1 new entry today, only after SPY's first 30 min trades above Nov 16 close **$740.04**. SPY pre-mkt +0.02%, futures -0.33%. Complied (passed to market-open).
+- Operational: GTC expiries none within 5 sessions ✓. Ex-div: RTX Nov 20 ✓. Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+Quotes stale/wide (Nov 16 21:00; WWD/TSN ask 0) → Nov 16 bars close vs Ref: ARMK +2.86%, ACM +2.89%, TGT -0.74%, WWD -5.75%, TSN +8.61% — TSN skip looks wrong so far (post-print +8.6%); WWD/TGT right; ARMK/ACM neutral (ACM +8% pre-mkt on print, unconfirmed).
+
+### Trade Ideas
+Week 20: 0/3 used. 4/6. ~37.6% deployed. L-043: max 1 entry today. Post-fill sector counts all ≤2.
+1. **ACM** (Industrials; FQ4 Nov 16 AMC: adj EPS $1.63 vs $1.59 beat, rev $3.88B vs $4.10B miss; FY27 adj EPS guide $6.15-6.35, midpoint $6.25 vs consensus $6.24 (≥ consensus); FY27 adj EBITDA guide above consensus; ~+8.2% pre-mkt ~$78.41 — Perplexity, distinct outlets; WebSearch did not index FQ4 yet) — **fully-specified market-open hard-check:** pre-set condition "beat + FY27 guide ≥ consensus" met on Perplexity; needs 2nd source (WebSearch/8-K) or post-release quote/bars confirmation. Chase: catalyst Nov 16, base Nov 13 close $70.53 → ~+11.2% pre-mkt (<15%; 15% bar = $81.11). Bars: Nov 16 close $72.57 > base $70.53 ✓. Entry ≤$79.50 limit, only after SPY first 30 min > $740.04 (L-043); size ~$9,700 (~10% eq, ~122 sh); cut -7% (~$73.94 at $79.50 fill); 10% GTC trail; target +15% (~$91.40). Post-fill Industrials ~19.4% (RTX + ACM, count 2); E&C sub-industry 0 held. Risk: rev miss, FY27 FCF $300M incl. ~$500M CM cash use.
+2. **TGT** (Staples/retail; Q3 BMO Nov 18, est EPS ~$2.07, rev ~$26.5B; options imply ±8-9%; Jefferies PT $190 Nov 16, Stifel Hold $155) — Nov 18 hard-check: EPS + comps beat, guide ≥ consensus, reaction <15% vs Nov 17 close. Ref $161.44 (open row).
+3. **WMT** (Staples, leader; Q3 BMO Nov 19 7:00 ET) — Nov 19 hard-check: beat + FY guide raise. Ref $128.44.
+- Also watchlisted (no idea): **ENR** (Staples; FQ4 BMO today: adj EPS $1.37 vs $1.31 beat, rev $793M vs $811M miss, FY27 organic flat-to-down LSD, EBITDA $560-580M, FCF ~$300M — mixed; market-open check only if clean two-source + bars follow-through); **WWD** (FQ4 AMC Nov 18; COO exit, TD Cowen PT $420→$380, -6.64% 5-sess → weak); **CVI** (Energy; Mizuho Underperform→Neutral Nov 16, PT cut $52→$47 — weak support only, thin vol); **GLNG** (Energy; Q3 Nov 18 hard-dated, no catalyst yet).
+
+### Risk Factors
+- HMM flipped Bear/High-Vol (73%); VIX ~23 rising into NVDA AMC — AI-power correlation (CEG/NRG) both ways.
+- NRG 2.2% above -7% cut; RTX below 200-DMA, 4.6% stop cushion.
+- Retail sales 8:30 ET; FOMC minutes Wed (Dec hike risk).
+- ACM entry = post-gap; revenue miss could fade the +8% gap.
+- Oil down (Brent <$92) — Energy leg softening (XLE -1.9% Nov 16).
+
+### Decision
+**HOLD pre-market.** ACM flagged for market-open hard-check (1 entry max, L-043 SPY 30-min condition). TGT/WMT/WWD/GLNG to own sessions. New scoreboard rows: ENR, WMT, CVI, GLNG. No ClickUp (nothing urgent).

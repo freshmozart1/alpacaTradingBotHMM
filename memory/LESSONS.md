@@ -308,3 +308,7 @@ than 10 sessions are pruned.
 | 2026-11-16 | TGT | HOLD — new watchlist add (Staples), Q3 BMO Nov 18 hard-dated, no catalyst yet; +70% YTD chase-sensitive | 161.44 | | |
 | 2026-11-16 | WWD | HOLD — new watchlist add (Industrials/A&D), FQ4 AMC Nov 18 hard-dated, no catalyst yet | 329.82 | | |
 | 2026-11-16 | TSN | HOLD — new watchlist add (Staples), FQ4 BMO today, print not yet indexed; consensus EPS -43% y/y, weak setup | 58.86 | | |
+| 2026-11-17 | ENR | HOLD — stall-breaker refresh add (Staples), FQ4 BMO today: adj EPS $1.37 vs $1.31 beat / rev miss / FY27 organic flat-to-down, single-source; mixed | 24.365 | | |
+| 2026-11-17 | WMT | HOLD — stall-breaker refresh add (Staples, leader), Q3 BMO Nov 19 hard-dated, no catalyst yet; Nov 19 hard-check | 128.44 | | |
+| 2026-11-17 | CVI | HOLD — stall-breaker refresh add (Energy), Mizuho Underperform→Neutral Nov 16 w/ PT cut $52→$47 — weak, thin vol | 39.14 | | |
+| 2026-11-17 | GLNG | HOLD — stall-breaker refresh add (Energy), Q3 Nov 18 hard-dated, no catalyst yet | 41.39 | | |
