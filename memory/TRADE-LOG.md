@@ -3271,3 +3271,23 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - Positions/week/size/cash/PDT/stock checks not reached.
 
 **Post-actions:** No orders. 4 positions, ~37.5% deployed — **below 75-85% band**; 2 open slots. Week 20: 0/3 used. No-trade streak → 4 if none today. No trade ClickUp. Verified `orders` (4 GTC trails, status new) + `positions` unchanged.
+
+### Nov 17 — Midday Scan (Day 96, Tuesday)
+
+**Account (16:10 UTC, pre-action):** Equity ~$96,420 | last_equity $96,801.70 | Cash $60,469.70 (62.5%). 4 positions — CEG 35 +4.27% ($271.54, intraday -2.26%); DGX 35 +6.61% ($258.925, intraday -1.25%); **NRG 88 -7.21% ($92.5275, intraday -1.56%)**; RTX 47 +1.95% ($197.115, intraday +1.14%). No fills since market-open.
+
+**STEP 3 (cut losers):** **NRG -7.21% ≤ -7% → CUT (L-044 same-session ✓).** Cancelled GTC trail 83039f29 ($89.937/HWM $99.93) → status canceled; market sell 88 → order 8b7b20ef **filled 88 @ $92.32** at 16:11:09 UTC. Realized **-$651.15 (-7.42%)** vs entry $99.72. Cut line $92.74; slippage -0.45% vs cut line, -0.22% vs $92.5275 signal mark. "Cut at -7% per rule." Q3 + LS Power sale + buybacks thesis eroded by IPP de-risking + BMO PT $147→$124 (sale shrinks footprint). **Failed Utilities trade #1** (no prior consecutive Utilities failure → no sector exit).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-17 | NRG | SELL (-7% cut) | 88 | $92.32 (fill, order 8b7b20ef) | cut line $92.74; slippage -0.45% | Realized **-$651.15 (-7.42%)**; IPP/AI-power de-risking + BMO PT cut $147→$124. **Failed Utilities trade.** | — | — |
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +6.61%) — no change.
+
+**STEP 5 (thesis check):** CEG -2.3% intraday — sector-wide IPP/data-center de-risking; no CEG-specific negative (Perplexity: last analyst action MS PT $378→$391 OW); Q3 beat/raise intact → hold; cushion ~5.5% to $256.473; Utilities 1 failed (NRG), CEG still +4.2% → sector-exit rule not triggered. DGX -1.25%, no news — intact; cushion ~8.5%. RTX +1.14%, ex-div Nov 20 — intact; cushion ~6.1%. No further cuts.
+
+**STEP 6 (research):** Perplexity 1 query (CEG/NRG weakness) — addendum in RESEARCH-LOG. No midday entry (risk mgmt only). Week 20: 0/3 used.
+
+**STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47 (NRG gone ✓). `orders`: 3 GTC trails status new — CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. `orders closed`: NRG 8b7b20ef filled 88 @ $92.32; 83039f29 canceled. Account post: Equity $96,419.17 | Cash $68,593.86 (71.1%) | **~28.9% deployed — below 75-85% band**; 3/6, 3 open slots. Sector: Utilities ~9.8% (CEG), HC ~9.4% (DGX), A&D ~9.6% (RTX).
+
+**STEP 8 (notify):** ClickUp sent (NRG cut).

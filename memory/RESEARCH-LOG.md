@@ -5511,3 +5511,8 @@ Week 20: 0/3 used. 4/6. ~37.6% deployed. L-043: max 1 entry today. Post-fill sec
 
 ### Decision
 **HOLD pre-market.** ACM flagged for market-open hard-check (1 entry max, L-043 SPY 30-min condition). TGT/WMT/WWD/GLNG to own sessions. New scoreboard rows: ENR, WMT, CVI, GLNG. No ClickUp (nothing urgent).
+
+### 2026-11-17 — Midday Addendum (16:12 UTC)
+- **NRG** -7.21% ($92.53) → **cut 88 @ $92.32** (-$651.15, -7.42%). Perplexity: no fresh Nov 17 company news; IPP/data-center de-risking + BMO Market Perform, PT $147→$124 (LS Power 4.9 GW sale shrinks footprint).
+- **CEG** -2.3% intraday — sector sympathy only; Q3 beat/FY26 raise intact; MS PT $391 OW latest action. Hold; cushion ~5.5%.
+- Book: 3 positions, ~28.9% deployed, 3 open slots. Week 20: 0/3. Next: TGT/WWD/GLNG Nov 18; WMT Nov 19.
