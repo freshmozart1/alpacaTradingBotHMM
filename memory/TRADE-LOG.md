@@ -3256,3 +3256,18 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $194.43 | -2.09% | +$51.23 (+0.56%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** 3rd consecutive no-trade day (ARMK skipped at open — catalyst gate; TSN fail) — stall-breaker arms next pre-market. **NRG -6.27% at $93.47, ~0.8% above $92.74 -7% cut** — not breached at 20:14 UTC marks (L-044 not triggered); market-open must cut at open if NRG ≤ $92.74. CEG -1.90% (ex-div $0.426 + IPP softness); RTX -2.09%, no news; DGX +0.75%, HWM $263.16 (stop auto-lifted to $236.844). Week 20: 0/3 new trades. Day P&L vs Nov 13 logged EOD $97,093.94 (Alpaca last_equity $97,240.76; $146.82 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,392.03 (-3.39%) vs $100,000 start. 4 positions, 37.41% deployed / 62.59% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 18.5% (CEG 10.0%, NRG 8.5%), HC 9.5% (DGX), A&D 9.5% (RTX). All <+15% → no trail tightening. Stop cushions: NRG ~3.8%, RTX ~4.8%, CEG ~6.7%, DGX ~9.4%. 4 GTC stops resting. L-046: pre-market 2444b55 (13:15), market-open 8b99011 (13:24), midday df46390 (16:11) all on origin/main, on time → no alert. RTX ex-div Nov 20.
+
+### Nov 17 — Market-Open (Day 96, Tuesday)
+
+**Operational Rule check:** Nov 16 has Market-Open + Midday + EOD ✓ (8b99011, df46390, 8b20052). Nov 17 pre-market 1b8bd89 ✓. Routine fired 13:20 UTC (sched 13:15) — pre-open; waited to 15:01 UTC for L-043 SPY 30-min window.
+
+**Account (15:01 UTC):** Equity $96,786.96 | last_equity $96,801.70 | Cash $60,469.70 (62.5%) | `balance_asof` 2026-11-16. 4 positions (CEG 35 +5.52% $274.80; DGX 35 +7.72% $261.61; NRG 88 -5.61% $94.13; RTX 47 +1.90% $197.01). 4 GTC trails status new (CEG f45ae140 $256.473; DGX 30c44a67 $236.844; NRG 83039f29 $89.937; RTX 313ded6c $185.0535). Daytrade count not returned; no day trades. Week 20: 0/3 used. 4/6.
+
+**Lessons compliance:** L-044 NRG at open 14:32 UTC $94.24 (-5.50%), 15:01 $94.13 (-5.61%) > $92.74 cut → no cut ✓; L-043 **triggered** (HMM Bear/High-Vol 73%; VIX ~23) → SPY first 30 min (14:30-15:00 UTC, IEX 1-min) open $738.51 / hi $739.68 / lo $737.49 / last $738.62 — **never above Nov 16 close $740.04 ✗** → no entry today; L-045 per-name pass/fail below ✓; L-046 EOD directive (N/A here).
+
+**Buy gate (15:01 UTC): no candidate cleared → no orders.**
+- **ACM — SKIP (L-043 SPY first-30-min ✗).** Catalyst ✓: FQ4 Nov 16 AMC adj EPS $1.63 vs $1.58-1.59 beat; FY27 adj EPS guide $6.15-6.35 (mid $6.25 ≥ $6.17-6.24 cons.); record backlog $28.0B; div +10% — 2nd source AECOM IR release / SEC 8-K ex99-1 / Benzinga (WebSearch). Bars follow-through: Nov 16 close $72.57 > base Nov 13 $70.53 ✓. Chase: catalyst Nov 16, base Nov 13 close $70.53; open $82.00 (+16.26%, ≥15% ✗), 30-min hi $82.57 (+17.07%), lo $78.41 (+11.17%), last $80.785 (+14.54%) — opened above chase bar ($81.11) and above $79.50 limit. Skip px $80.785. Open scoreboard row 2026-11-16 → no new row. Ex-div/analyst: none found same-week.
+- **ENR** — not evaluated (watchlist-only, mixed single-source print; L-043 blocks any entry). **TGT** (BMO Nov 18), **WWD** (AMC Nov 18), **GLNG** (Nov 18), **WMT** (BMO Nov 19) → own sessions.
+- Positions/week/size/cash/PDT/stock checks not reached.
+
+**Post-actions:** No orders. 4 positions, ~37.5% deployed — **below 75-85% band**; 2 open slots. Week 20: 0/3 used. No-trade streak → 4 if none today. No trade ClickUp. Verified `orders` (4 GTC trails, status new) + `positions` unchanged.
