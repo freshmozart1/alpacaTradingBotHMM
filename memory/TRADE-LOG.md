@@ -3302,3 +3302,22 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | RTX | 47 | $193.34 | $196.78 | +0.97% | +$161.68 (+1.78%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
 
 **Notes:** Streak reset — trade(s) placed today (NRG -7% cut at midday: sold 88 @ $92.32, order 8b7b20ef, realized -$651.15 / -7.42%; failed Utilities trade #1). No new entries (ACM skipped — L-043 SPY first-30-min ✗). Week 20: 0/3 new trades. Day P&L vs Nov 16 logged EOD $96,607.97 (Alpaca last_equity $96,801.70; $193.73 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,723.50 (-3.72%) vs $100,000 start. 3 positions, 28.75% deployed / 71.25% cash — **well below 75-85% band**; 3 open slots. Sector: Utilities 9.8% (CEG), HC 9.3% (DGX), A&D 9.6% (RTX). All <+15% → no trail tightening. Stop cushions: CEG ~4.9%, RTX ~6.0%, DGX ~7.8%. CEG -7% cut line $242.19 (cushion ~10%). 3 GTC stops resting. L-046: pre-market 1b8bd89 (13:12), market-open 0fb68e5 (15:02), midday 8848da9 (16:12) all on origin/main, on time → no alert. RTX ex-div Nov 20.
+
+### Nov 18 — Market-Open (Day 97, Wednesday)
+
+**Operational Rule check:** Nov 17 has Market-Open + Midday + EOD ✓ (0fb68e5, 8848da9, fee5192). Nov 18 pre-market dc7a277 ✓. Routine fired 13:21 UTC (sched 13:15) — pre-open; waited to 15:01 UTC for L-043 SPY 30-min window.
+
+**Account (13:22 UTC):** Equity $96,107.26 | last_equity $96,254.38 | Cash $68,593.68 (71.4%) | `balance_asof` 2026-11-17. 3 positions (CEG 35 +3.30%; DGX 35 +3.44%; RTX 47 +2.41%). 3 GTC trails status new (CEG f45ae140 $256.473; DGX 30c44a67 $236.844; RTX 313ded6c $185.0535). Daytrade count not returned; no day trades. Week 20: 0/3 used. 3/6.
+
+**Lessons compliance:** L-044 no position at -7% (min CEG +1.85% at 15:02) ✓; L-043 **triggered** (HMM Bear/High-Vol 67%; VIX prior close 25.46) → max 1 entry; SPY first 30 min (14:30-15:00 UTC, IEX 1-min) open $733.415 / hi $735.01 / lo $728.72 / last $734.07 — **traded above Nov 17 close $732.41 ✓** (open + last above) → 1 entry allowed; L-045 per-name pass/fail below ✓; L-046 EOD directive (N/A here).
+
+**Buy gate (15:01 UTC):**
+- **TGT — PASS → BOUGHT.** Catalyst ✓: Q3 BMO today — comps +5.6% vs ~3.8% est, EPS $2.65 ($2.15 ex-$0.50 tariff refund vs $2.07 est), FY sales guide ~5%→~6%, FY EPS $9.90-10.90 → $10.65-11.40. Two-source: Perplexity + CNBC 2026-11-18 (WebSearch); bars post-release confirm positive reaction. Chase: catalyst Nov 18, base Nov 17 close $159.45; 30-min open $161.82 / hi $168.785 / last $168.785 (+5.85%, <15% ✓; < $172 cap ✓). Positions 4/6 ✓; Week 20 1/3 ✓; size $9,277 = 9.65% eq ≤20% ✓; ≤ cash ✓; PDT ok (equity >$25k, no day trades) ✓; stock ✓. Post-fill sector: Staples count 1, 9.65% eq (<40%); big-box retail theme 9.65% (<25%). Ex-div: none found this week (search, not IR-verified); analyst action: none dated found. Risks: +60% YTD, tariff-refund EPS optics, FOMC minutes 2pm ET.
+- **GLNG — FAIL (catalyst reaction negative).** 30-min bars open $40.11 / last $41.00 vs base Nov 17 close $41.97 (-2.31%) → no follow-through; 2nd source for Q3 print not indexed. Also L-043 1-entry cap used by TGT. Open scoreboard row 2026-11-17 → no new row.
+- **WMT** (BMO Nov 19), **WWD** (AMC today) → own sessions.
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-18 | TGT | BUY | 55 | $168.678 (fill, order 4b871935, 15:01:42 UTC) | $151.704 (10% trail, GTC 7d9b79c5, HWM $168.56); -7% cut $156.87 | Q3 beat (comps +5.6% vs ~3.8%) + FY sales/EPS guide raise, two-source (Perplexity + CNBC); Staples sector leader (XLP +0.48% 5-sess); L-043 SPY check passed | +15% ~$193.98 | ~2.1:1 (vs -7% cut) |
+
+**Post-actions:** Verified `orders` (4 GTC trails status new: TGT 7d9b79c5 $151.704; CEG f45ae140 $256.473; DGX 30c44a67 $236.844; RTX 313ded6c $185.0535) + `positions` (CEG 35, DGX 35, RTX 47, TGT 55). Account post: Equity $96,127.76 | Cash $59,316.39 (61.7%) | **~38.3% deployed — below 75-85% band**; 4/6, 2 open slots. Week 20: 1/3 used. No-trade streak 0. ClickUp sent (TGT buy).
