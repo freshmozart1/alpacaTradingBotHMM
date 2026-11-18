@@ -3321,3 +3321,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | 2026-11-18 | TGT | BUY | 55 | $168.678 (fill, order 4b871935, 15:01:42 UTC) | $151.704 (10% trail, GTC 7d9b79c5, HWM $168.56); -7% cut $156.87 | Q3 beat (comps +5.6% vs ~3.8%) + FY sales/EPS guide raise, two-source (Perplexity + CNBC); Staples sector leader (XLP +0.48% 5-sess); L-043 SPY check passed | +15% ~$193.98 | ~2.1:1 (vs -7% cut) |
 
 **Post-actions:** Verified `orders` (4 GTC trails status new: TGT 7d9b79c5 $151.704; CEG f45ae140 $256.473; DGX 30c44a67 $236.844; RTX 313ded6c $185.0535) + `positions` (CEG 35, DGX 35, RTX 47, TGT 55). Account post: Equity $96,127.76 | Cash $59,316.39 (61.7%) | **~38.3% deployed — below 75-85% band**; 4/6, 2 open slots. Week 20: 1/3 used. No-trade streak 0. ClickUp sent (TGT buy).
+
+### Nov 18 — Midday Scan (Day 97, Wednesday)
+
+**Account (16:11 UTC):** Equity $96,132.12 | last_equity $96,254.38 | Cash $59,316.39 (61.7%) | `balance_asof` 2026-11-17. 4 positions — CEG 35 +2.02% ($265.67, intraday -0.90%); DGX 35 +6.42% ($258.465, intraday +0.83%); RTX 47 +1.14% ($195.55, intraday -1.24%); TGT 55 +0.03% ($168.73, intraday +5.77% post-Q3). No fills since market-open.
+
+**STEP 3 (cut losers):** None ≤ -7% (min RTX +1.14%; L-044 ✓). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +6.42%) — no change.
+
+**STEP 5 (thesis check):** No sharp moves (all |intraday| <1.3% ex-TGT, whose +5.8% is the Q3 catalyst). CEG -0.9% — IPP softness continuing, Q3 beat/raise intact, cushion ~3.5% to $256.473 → hold. DGX intact, cushion ~8.4%. RTX -1.2%, ex-div Nov 20 — intact, cushion ~5.4%. TGT holding post-earnings gap at entry — thesis intact, cushion ~9.4% to $152.892 (HWM $169.88). No thesis breaks → no cuts.
+
+**STEP 6 (research):** Skipped — no unexplained sharp moves. No RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47, TGT 55. `orders`: 4 GTC trails status new — TGT 7d9b79c5 (10%) $152.892/HWM $169.88; CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~38.3% deployed — below 75-85% band; 4/6, 2 open slots. Week 20: 1/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
