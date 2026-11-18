@@ -3337,3 +3337,15 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 **STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47, TGT 55. `orders`: 4 GTC trails status new — TGT 7d9b79c5 (10%) $152.892/HWM $169.88; CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~38.3% deployed — below 75-85% band; 4/6, 2 open slots. Week 20: 1/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 18 — EOD Snapshot (Day 97, Wednesday)
+**Portfolio:** $96,148.07 | **Cash:** $59,316.39 (61.69%) | **Day P&L:** -$128.43 (-0.13%) | **Phase P&L:** -$3,851.93 (-3.85%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CEG | 35 | $260.42 | $264.575 | -1.30% | +$145.47 (+1.60%) | $256.473 (10% trail, GTC f45ae140, HWM $284.97) |
+| DGX | 35 | $242.87 | $258.44 | +0.82% | +$544.95 (+6.41%) | $236.844 (10% trail, GTC 30c44a67, HWM $263.16) |
+| RTX | 47 | $193.34 | $197.25 | -0.38% | +$183.77 (+2.02%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $168.28 | +5.49% | -$21.89 (-0.24%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
+
+**Notes:** Streak reset — trade(s) placed today (TGT BUY 55 @ $168.678 at market-open, order 4b871935; Q3 beat + guide raise; L-043 SPY check passed, 1-entry cap used). GLNG failed (negative reaction). Week 20: 1/3 new trades. Day P&L vs Nov 17 logged EOD $96,276.50 (Alpaca last_equity $96,254.38; $22.12 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,851.93 (-3.85%) vs $100,000 start. 4 positions, 38.31% deployed / 61.69% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 9.6% (CEG), HC 9.4% (DGX), A&D 9.6% (RTX), Staples 9.6% (TGT). All <+15% → no trail tightening. Stop cushions: CEG ~3.1% (tightest; -7% cut line $242.19), RTX ~6.2%, TGT ~8.1%, DGX ~8.4%. 4 GTC stops resting. L-046: pre-market dc7a277 (13:11), market-open f0c49f2 (15:02), midday ba42fbf (16:11) all on origin/main, on time → no alert. RTX ex-div Nov 20. WMT BMO Nov 19; WWD AMC tonight.
