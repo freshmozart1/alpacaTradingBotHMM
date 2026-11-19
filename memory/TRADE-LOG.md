@@ -3349,3 +3349,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 | TGT | 55 | $168.678 | $168.28 | +5.49% | -$21.89 (-0.24%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
 
 **Notes:** Streak reset — trade(s) placed today (TGT BUY 55 @ $168.678 at market-open, order 4b871935; Q3 beat + guide raise; L-043 SPY check passed, 1-entry cap used). GLNG failed (negative reaction). Week 20: 1/3 new trades. Day P&L vs Nov 17 logged EOD $96,276.50 (Alpaca last_equity $96,254.38; $22.12 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,851.93 (-3.85%) vs $100,000 start. 4 positions, 38.31% deployed / 61.69% cash — **below 75-85% band**; 2 open slots. Sector: Utilities 9.6% (CEG), HC 9.4% (DGX), A&D 9.6% (RTX), Staples 9.6% (TGT). All <+15% → no trail tightening. Stop cushions: CEG ~3.1% (tightest; -7% cut line $242.19), RTX ~6.2%, TGT ~8.1%, DGX ~8.4%. 4 GTC stops resting. L-046: pre-market dc7a277 (13:11), market-open f0c49f2 (15:02), midday ba42fbf (16:11) all on origin/main, on time → no alert. RTX ex-div Nov 20. WMT BMO Nov 19; WWD AMC tonight.
+
+### Nov 19 — Market-Open (Day 98, Thursday)
+
+**Operational Rule check:** Nov 18 has Market-Open + Midday + EOD ✓ (f0c49f2, ba42fbf, 9672b28). Nov 19 pre-market 9f24d8d ✓. Routine fired 13:19 UTC (sched 13:15) — pre-open; waited to 14:50 UTC for ~20-min bars confirmation.
+
+**Account (14:50 UTC):** Equity $96,160.33 | last_equity $96,007.73 | Cash $59,316.38 (61.7%) | `balance_asof` 2026-11-18. 4 positions (CEG 35 +1.80% $265.11; DGX 35 +7.27% $260.54; RTX 47 +2.05% $197.31; TGT 55 -1.13% $166.775). 4 GTC trails status new (CEG f45ae140 $256.473; DGX 30c44a67 $236.844; RTX 313ded6c $185.0535; TGT 7d9b79c5 $154.719). Daytrade count not returned; no day trades. Week 20: 1/3 used. 4/6. ~38.3% deployed.
+
+**Lessons compliance:** L-044 no position at -7% (min TGT -1.13%) ✓; L-043 **not triggered** (HMM Mixed/Uncertain 30%; VIX prior close 24.56 <25) — SPY first 20 min (IEX 1-min) open $737.54 / hi $739.77 / lo $735.47 / last $739.08 vs Nov 18 close $730.33 (+1.20%) logged; L-045 per-name pass/fail below ✓; L-046 EOD directive (N/A here).
+
+**Buy gate (14:50 UTC):**
+- **WMT — FAIL (catalyst reaction negative).** Q3 BMO today (Perplexity, today-dated ✓ earnings-print rule); WebSearch 2nd source still not indexed (only FY26 results returned). 20-min bars open $123.765 / hi $125.30 / lo $123.30 / last $125.28 vs base Nov 18 close $127.305 (-1.59%) → sell-the-news, no positive confirmation. Open scoreboard row 2026-11-17 → no new row.
+- **PANW — FAIL (chase risk).** Catalyst Nov 18 AMC (FQ1 beat + FY27 guide raise; two-source per pre-market). Chase base = close before catalyst date: Nov 17 $309.17; 20-min bars open $355.655 / hi $370.00 / last $362.00 → **+17.09% realized (≥15%)** → excluded. Also XLK weakest 5-sess. Open row 2026-11-19 → no new row.
+- **WSM — FAIL (catalyst reaction negative / print unconfirmed).** Q3 BMO today; bars open $243.44 / last $244.135 vs base Nov 18 close $259.94 (-6.08%). Open row 2026-11-19 → no new row.
+- **ROST** (AMC today), **BJ** (BMO Nov 20) → Nov 20 hard-check.
+
+No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 1.
