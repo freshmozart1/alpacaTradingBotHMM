@@ -3365,3 +3365,19 @@ At open MRVL $252.05 (unrealized_plpc -0.10137), below -7% cut (~$260.85) and tr
 - **ROST** (AMC today), **BJ** (BMO Nov 20) → Nov 20 hard-check.
 
 No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 1.
+
+### Nov 19 — Midday Scan (Day 98, Thursday)
+
+**Run:** fired 16:10 UTC (sched 16:07). Equity $95,950.83 | Cash $59,316.38 (61.8%).
+
+**STEP 3 (cut losers):** None ≤ -7% (min TGT -0.78%; L-044 ✓). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +6.81%) — no change.
+
+**STEP 5 (thesis check):** CEG $260.10 (-0.12% vs entry; ~-1.7% vs Nov 18 close) — opening gap faded from ~$269.5; Perplexity: no CEG-specific news/downgrade today, IPP/AI-power softness (VST -16% 1-mo, Texas data-center policy) + Bernstein PT →$293 (Nov 17, Outperform kept). Thesis intact; cushion **~1.4%** to $256.473 — GTC trail governs, -7% cut line $242.19. DGX $259.405 +6.81%, intact, cushion ~8.7%. RTX $196.75 +1.76%, ex-div Nov 20, intact, cushion ~5.9%. TGT $167.355 -0.78%, post-earnings hold, intact, cushion ~7.5% to $154.719 (HWM $171.91). No thesis breaks → no cuts.
+
+**STEP 6 (research):** 1 Perplexity query (CEG fade) → RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47, TGT 55. `orders`: 4 GTC trails status new — TGT 7d9b79c5 (10%) $154.719/HWM $171.91; CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~38.2% deployed — below 75-85% band; 4/6, 2 open slots. Week 20: 1/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
