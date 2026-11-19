@@ -3381,3 +3381,14 @@ No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 1.
 **STEP 7 (verify):** `positions`: CEG 35, DGX 35, RTX 47, TGT 55. `orders`: 4 GTC trails status new — TGT 7d9b79c5 (10%) $154.719/HWM $171.91; CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~38.2% deployed — below 75-85% band; 4/6, 2 open slots. Week 20: 1/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 19 — EOD Snapshot (Day 98, Thursday)
+**Portfolio:** $95,604.46 | **Cash:** $68,290.03 (71.43%) | **Day P&L:** -$543.61 (-0.57%) | **Phase P&L:** -$4,395.54 (-4.40%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $258.685 | -0.39% | +$553.53 (+6.51%) | $236.844 (10% trail, GTC 30c44a67, HWM $263.16) |
+| RTX | 47 | $193.34 | $193.44 | -2.03% | +$4.70 (+0.05%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $166.705 | +0.47% | -$108.52 (-1.17%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
+
+**Notes:** 1st consecutive no-trade day (CEG trailing-stop fill was passive — no orders placed). CEG 10% trail f45ae140 filled 35 @ $256.39 (16:59 UTC, after midday flagged ~1.4% cushion) — realized -$141.05 (-1.55%), **failed Utilities trade #2** (consecutive after NRG Nov 17) → strategy rule: exit Utilities sector; no Utilities positions remain; sector blocked for new entries. Week 20: 1/3 new trades. Day P&L vs Nov 18 logged EOD $96,148.07 (Alpaca last_equity $96,007.73; $140.34 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,395.54 (-4.40%) vs $100,000 start. 3 positions, 28.57% deployed / 71.43% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.47% (DGX), A&D 9.51% (RTX), Staples 9.59% (TGT), Utilities 0%. All <+15% → no trail tightening. No position at -7% cut. Stop cushions: RTX ~4.3% (tightest; ex-div Nov 20), TGT ~7.2%, DGX ~8.4%. 3 GTC stops resting. L-046: pre-market 9f24d8d (13:12), market-open aefff2d (14:51, deliberate bars wait), midday 2096f26 (16:11) all on origin/main, on time → no alert. ROST AMC tonight; BJ BMO Nov 20.
