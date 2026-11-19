@@ -5632,3 +5632,7 @@ Week 20: 1/3 used. 4/6. ~38.3% deployed. L-043 off → max 2 entries.
 
 ### Decision
 **HOLD pre-market.** WMT flagged for market-open hard-check (needs 2nd source/bars); PANW secondary (sector-momentum caveat). Max 2 entries. ROST/BJ to Nov 20. No ClickUp (nothing urgent).
+
+### 2026-11-19 — Midday Addendum
+- CEG $260.10 at 16:10 UTC, faded from ~$269.5 open high (~-1.7% vs Nov 18 close). Perplexity: no company news/downgrade today; sector drag = IPP/AI-power unwind (VST -16% 1-mo on Texas data-center policy; KeyBanc flagged VST/CEG exposure, CEG less so). Bernstein PT $293 (Nov 17, Outperform). Thesis intact; stop $256.473 ~1.4% away — let GTC trail work.
+- DGX/RTX/TGT: no sharp moves (<1% vs prior close). No research needed.
