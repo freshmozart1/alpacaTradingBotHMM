@@ -5572,3 +5572,63 @@ Week 20: 0/3 used. 3/6. ~28.6% deployed. L-043: max 1 entry today. Post-fill sec
 
 ### Decision
 **HOLD pre-market.** TGT flagged for market-open hard-check (1 entry max, L-043 SPY 30-min > $732.41; needs 2nd source/bars). GLNG secondary. WMT/WWD to own sessions. No new scoreboard rows. No ClickUp (nothing urgent).
+
+## 2026-11-19 — Pre-market Research
+
+On-time run (fired 13:08 UTC). Data 13:08-13:40 UTC.
+
+### Account
+- Equity: $96,068.26 | last_equity $96,007.73 | Cash: $59,316.38 (61.74%) | Buying power: $340,170.78 (margin, effective) | `balance_asof` 2026-11-18.
+- Position MV: $36,751.88 (CEG 35, DGX 35, RTX 47, TGT 55) — **38.26% deployed (below 75-85% band)**. 4 GTC trailing stops, status new: CEG f45ae140 (10%) $256.473/HWM $284.97; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $154.719/HWM $171.91. Expiries Jan 15-Feb 16 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 98, Thursday, **Week 20: 1/3 used** (TGT). 4/6, 2 open slots. **No-trade streak 0** (TGT Nov 18).
+- Market regime (HMM, SPY 2y daily): **Mixed/Uncertain, confidence 30%** (500 obs) — flipped from Bear/High-Vol 67%; low confidence → neutral. Advisory only.
+- Held (`positions` marks): CEG $268.75 +3.20% (4.6% to stop; -7% cut $242.19); DGX $258.53 +6.45% (8.4%); RTX $196.73 +1.75% (5.9%); TGT $164.56 -2.44% (6.0%; -7% cut $156.87). None at -7%. No tighten triggers (<+15%).
+- Exposure: Utilities 9.79% (CEG); HC 9.42% (DGX); A&D 9.62% (RTX); Staples 9.42% (TGT).
+
+### Market Context
+- Perplexity: 23/23 exit 0 (16 hit HTTP 429 on parallel burst → re-run sequentially, all succeeded). No fallback; 2 WebSearch used as 2nd-source checks (WMT, PANW).
+- WTI/Brent: **WTI $82.27, Brent $89.35** (09:50 UTC futures). Not a repeat (Nov 18: $85.93/$92.70). Spread <10%. Oil ~-20% in Nov.
+- S&P futures: **+80 pts (~+1.1%)** 7,420.50 (3:52 ET) vs S&P close 7,323.63 (-0.23% Nov 18). SPY pre-mkt $739.74 mid vs Nov 18 close $730.33 = **+1.29%**. Bars govern.
+- VIX: Perplexity **21.88 indicated, prior close 24.56** (Cboe, Nov 18). Not a repeat of 24.89/25.46. **Prior close <25.**
+- Today: Initial claims 8:30 ET (cons 198K), Philly Fed. No CPI/PPI/FOMC/jobs (JOLTS Dec 1, jobs Dec 4, CPI Dec 10, PPI Dec 15). Anthropic IPO priced $83, debuts today. PANW +~9.6% pre-mkt (beat/raise).
+- Earnings BMO today: WMT, BABA, PDD, WSM, BBWI, FUTU, NTES, WMG, ROAD, VVV. AMC: ROST, GAP, INTU, KEYS, POST, ESTC. Nov 20 BMO: BJ, FRO, IESC, BKE.
+- Sector momentum: Perplexity YTD (thru Nov 13): Energy +59.9% (**inconsistent vs +41.5% logged Nov 18 — suspect**), HC +21.8%, Staples +20.2%, RE +19.7%, Materials +18.3%, Industrials +16.0%, Tech +10.7%, Financials +6.9%, Utilities +3.9%, Disc +2.6%, Comm -6.7%. `bars` 5-sess Nov 11→18: **XLP -0.27%, XLU -0.66%, XLY -1.48%**, XLE -3.24%, XLI -3.66%, XLF -3.72%, SPY -3.88%, XLV -4.12%, XLB -4.83%, XLK -6.08%. Leaders: Staples, Utilities (defensive). Energy lost leadership.
+- Held tickers:
+  - **CEG**: no new catalyst; Q3 beat/raise digest, LS Power $5B plant sale closing by YE. Thesis intact.
+  - **DGX**: no new catalyst; Boston Partners trimmed 2.2%; near 52-wk high $263.19. Thesis intact.
+  - **RTX**: DeepStrike JR3 3rd test; S&P upgrade to A- (undated); **ex-div Nov 20 ($0.73)** — trail stop may shift on ex-date. Thesis intact.
+  - **TGT**: Stifel PT →$160, Jefferies PT →$195 (both Nov 19-dated); $0.50 tariff-refund EPS caveat. -0.83% day mark. Thesis intact.
+
+### Stall-Breaker
+Not armed (streak 0 < 3). No forced refresh; watchlist pruned on merit (below).
+
+### Lessons Check
+- L-046 (EOD verifies routine commits) — pre-market `git log origin/main`: Nov 18 pre-market dc7a277 (13:11), market-open f0c49f2 (15:02), midday ba42fbf (16:11), EOD 9672b28 (20:15) all on main → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 5 names / 3 sectors: WMT (Staples, Q3 BMO today), PANW (Tech, FQ1 AMC Nov 18), WSM (Disc, Q3 BMO today), ROST (Disc, Q3 AMC today), BJ (Staples, Q3 BMO Nov 20). Complied.
+- L-044 (-7% execute same session) — no position at -7% (min TGT -2.44%). Complied.
+- L-043 (Bear/High-Vol throttle) — **NOT triggered: HMM Mixed/Uncertain 30%, VIX prior close 24.56 <25.** Standard gate; up to 2 entries (Week 20 cap 2 left). Log regime/VIX/SPY at gate. Complied.
+- Operational: GTC expiries none within 5 sessions ✓. Ex-div: RTX Nov 20 ✓. Deployment <75% → fully-specified ideas below ✓. Gap check: Nov 18 has Market-Open/Midday/EOD ✓.
+
+### Yesterday's Skip Check
+Quotes stale/wide (Nov 18 21:00 IEX) → Nov 18 bars close vs Ref: ACM +16.73%, ENR +15.86%, GLNG -2.17%, WMT -0.88%, WWD -3.64%, CVI -13.77% (TGT entered, n/a) — ACM/ENR skips look wrong so far (post-print drift, both now >15% chase); CVI/WWD/GLNG skips right; WMT neutral.
+
+### Watchlist Changes
+- DROP: GLNG (Q3 mixed, rev -32% y/y, -2.17% vs Ref, no fresh catalyst); CVI ($1.25B notes + equity financing, -11% Nov 18 → thesis broken); ACM / ENR (>15% realized → chase-excluded; skip px ACM $82.33, ENR $28.23); WWD (FY27 EPS guide below consensus, -1% AH).
+- ADD: PANW (Tech), WSM (Disc), ROST (Disc), BJ (Staples).
+
+### Trade Ideas
+Week 20: 1/3 used. 4/6. ~38.3% deployed. L-043 off → max 2 entries.
+1. **WMT** (Staples, leader XLP; Q3 BMO today: adj EPS $0.65 vs $0.64, FY27 adj EPS guide raised → $2.84-2.89, FY net-sales guide raised to 4.9-5.2% (still < ~5.5% consensus), US e-com +23%, ads +25%; Symbotic $6B automation deal — Perplexity, snippet dated 2026-11-19 (Walmart earnings release) ✓ earnings-print rule; WebSearch 2nd source NOT indexed yet; pre-mkt ~+0.7% $128.30) — **fully-specified market-open hard-check:** needs WebSearch/8-K 2nd source or bars confirming positive post-release reaction. Chase: catalyst Nov 19, base Nov 18 close $127.305; 15% bar $146.40. Entry ≤$131 limit; size ~$9,360 (~9.7% eq, 72 sh @ $130); cut -7% (~$120.90 at $130); 10% GTC trail; target +15% (~$149.50, ≥2:1). Post-fill Staples count 2 (TGT+WMT), 19.2% eq (<40%); big-box retail theme 19.2% (<25%). Risk: modest beat, sales guide < consensus → sell-the-news.
+2. **PANW** (Tech; FQ1 AMC Nov 18: rev $3.44B +39% y/y vs guide $3.30-3.31B, non-GAAP EPS $1.05 vs ~$0.97, FY27 rev guide $14.10-14.20B → $14.52-14.57B, EPS → $4.26-4.30; Applied Compute $4.5B acquisition — two-source: Perplexity + SEC 8-K ex99.1 via WebSearch) — secondary hard-check. Chase: catalyst Nov 18 AMC, base Nov 18 close $339.68 (note Nov 18 session itself +9.87% from $309.17 pre-release); 15% bar $390.63; pre-mkt ~$370-372 (~+9.6%). Entry ≤$380 limit; size ~$9,120 (24 sh); cut -7% (~$353.40 at $380); 10% trail; target +15% (~$437). Post-fill Tech count 1, 9.5%. **Sector-momentum fail risk: XLK weakest (-6.08% 5-sess)** → only if XLK green after first 30 min; lower conviction than WMT.
+3. **ROST** (Disc; Q3 AMC today, cons EPS ~$1.82, whisper $1.91, guide $1.75-1.83) — Nov 20 hard-check on beat + guide raise. **BJ** (Staples; Q3 BMO Nov 20, cons ~$1.25) — Nov 20 hard-check; 3rd Staples blocked if WMT entered (L-030).
+- **WSM** (Disc; Q3 BMO today, print not indexed; cons EPS ~$2.18) — market-open check only on beat + guide raise confirmed by bars.
+- New scoreboard rows: PANW, WSM, ROST, BJ.
+
+### Risk Factors
+- HMM regime flipped to low-confidence Mixed (30%) — not a confirmed Bull; VIX still ~22-25.
+- Futures +1.1% gap → fade risk; Anthropic IPO debut = AI-sentiment swing.
+- CEG thinnest cushion (4.6%); TGT -2.44% post-entry (cut $156.87); RTX ex-div Nov 20.
+- Fed officials hawkish (Dec hike talk); oil -20% in Nov weighing on Energy.
+
+### Decision
+**HOLD pre-market.** WMT flagged for market-open hard-check (needs 2nd source/bars); PANW secondary (sector-momentum caveat). Max 2 entries. ROST/BJ to Nov 20. No ClickUp (nothing urgent).
