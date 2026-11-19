@@ -312,3 +312,7 @@ than 10 sessions are pruned.
 | 2026-11-17 | WMT | HOLD — stall-breaker refresh add (Staples, leader), Q3 BMO Nov 19 hard-dated, no catalyst yet; Nov 19 hard-check | 128.44 | | |
 | 2026-11-17 | CVI | HOLD — stall-breaker refresh add (Energy), Mizuho Underperform→Neutral Nov 16 w/ PT cut $52→$47 — weak, thin vol | 39.14 | | |
 | 2026-11-17 | GLNG | HOLD — stall-breaker refresh add (Energy), Q3 Nov 18 hard-dated, no catalyst yet | 41.39 | | |
+| 2026-11-19 | PANW | HOLD pre-market — new watchlist add (Tech), FQ1 AMC Nov 18 beat + FY27 rev/EPS guide raise (two-source: Perplexity + SEC 8-K), pre-mkt ~+9.6%; XLK weakest sector; secondary market-open hard-check, entry ≤$380 / -7% cut / target ~$437 | 339.68 | | |
+| 2026-11-19 | WSM | HOLD — new watchlist add (Disc), Q3 BMO today, print not yet indexed | 259.94 | | |
+| 2026-11-19 | ROST | HOLD — new watchlist add (Disc), Q3 AMC today hard-dated, no catalyst yet; Nov 20 hard-check | 227.61 | | |
+| 2026-11-19 | BJ | HOLD — new watchlist add (Staples), Q3 BMO Nov 20 hard-dated, no catalyst yet | 110.90 | | |
