@@ -3392,3 +3392,17 @@ No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 1.
 | TGT | 55 | $168.678 | $166.705 | +0.47% | -$108.52 (-1.17%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
 
 **Notes:** 1st consecutive no-trade day (CEG trailing-stop fill was passive — no orders placed). CEG 10% trail f45ae140 filled 35 @ $256.39 (16:59 UTC, after midday flagged ~1.4% cushion) — realized -$141.05 (-1.55%), **failed Utilities trade #2** (consecutive after NRG Nov 17) → strategy rule: exit Utilities sector; no Utilities positions remain; sector blocked for new entries. Week 20: 1/3 new trades. Day P&L vs Nov 18 logged EOD $96,148.07 (Alpaca last_equity $96,007.73; $140.34 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,395.54 (-4.40%) vs $100,000 start. 3 positions, 28.57% deployed / 71.43% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.47% (DGX), A&D 9.51% (RTX), Staples 9.59% (TGT), Utilities 0%. All <+15% → no trail tightening. No position at -7% cut. Stop cushions: RTX ~4.3% (tightest; ex-div Nov 20), TGT ~7.2%, DGX ~8.4%. 3 GTC stops resting. L-046: pre-market 9f24d8d (13:12), market-open aefff2d (14:51, deliberate bars wait), midday 2096f26 (16:11) all on origin/main, on time → no alert. ROST AMC tonight; BJ BMO Nov 20.
+
+### Nov 20 — Market-Open (Day 99, Friday)
+
+**Operational Rule check:** Nov 19 has Market-Open + Midday + EOD ✓ (aefff2d, 2096f26, 7ae917a). Nov 20 pre-market 61f97e7 ✓. Routine fired 13:19 UTC (sched 13:15) — pre-open; waited to 15:01 UTC for L-043 SPY 30-min check.
+
+**Account (15:01 UTC):** Equity $95,916.92 | last_equity $95,659.96 | Cash $68,289.83 (71.2%) | `balance_asof` 2026-11-19. 3 positions (DGX 35 +7.10% $260.12; RTX 47 +1.02% $195.32; TGT 55 +0.71% $169.87). 3 GTC trails status new (DGX 30c44a67 $236.844; RTX 313ded6c $185.0535; TGT 7d9b79c5 $154.719). Daytrade count not returned; no day trades. Week 20: 1/3 used. 3/6. ~28.8% deployed.
+
+**Lessons compliance:** L-044 no position at -7% (min TGT +0.71%) ✓; L-043 **triggered** (HMM Bear/High-Vol 94%, VIX 28.44) — SPY first 30 min (IEX 1-min) open $713.56 / hi $717.24 / lo $711.75 / 15:00 close $717.24 vs Nov 19 close $715.84 → opened below, closed window +0.20% above (marginal); max 1 entry; L-045 per-name pass/fail below ✓; L-046 EOD directive (N/A here).
+
+**Buy gate (15:01 UTC):**
+- **BJ — FAIL (catalyst reaction negative).** Q3 BMO today beat + FY guide raise (two-source per pre-market ✓). Chase base Nov 19 close $110.87; 30-min bars open $107.91 / hi $109.125 / lo $105.285 / last $106.20 → **-4.21%** sell-the-news, no positive confirmation. Quote spread wide ($104.97/$112.35). Open scoreboard row 2026-11-19 → no new row.
+- **A** (AMC Nov 23), **MDT** / **DLTR** (BMO Nov 24) → not yet catalyzed; Nov 24 hard-checks.
+
+No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 2.
