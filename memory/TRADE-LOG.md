@@ -3422,3 +3422,14 @@ No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 2.
 **STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $154.719/HWM $171.91; DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~28.7% deployed — well below 75-85% band; 3/6, 3 open slots. Week 20: 1/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 20 — EOD Snapshot (Day 99, Friday)
+**Portfolio:** $95,604.80 | **Cash:** $68,289.83 (71.43%) | **Day P&L:** +$0.34 (+0.00%) | **Phase P&L:** -$4,395.20 (-4.40%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $260.42 | +0.51% | +$614.25 (+7.23%) | $236.844 (10% trail, GTC 30c44a67, HWM $263.16) |
+| RTX | 47 | $193.34 | $191.9547 | -0.77% | -$65.11 (-0.72%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $166.88 | -0.35% | -$98.89 (-1.07%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
+
+**Notes:** 3rd consecutive no-trade day (BJ failed gate — negative reaction; L-043 triggered, HMM Bear/High-Vol 94%, VIX 28.44). Week 20 closes 1/3 new trades. Day P&L vs Nov 19 logged EOD $95,604.46 (Alpaca last_equity $95,659.96; $55.50 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,395.20 (-4.40%) vs $100,000 start. 3 positions, 28.57% deployed / 71.43% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.53% (DGX), A&D 9.44% (RTX), Staples 9.60% (TGT); Utilities blocked. All <+15% → no trail tightening. No position at -7% cut. Stop cushions: RTX ~3.6% (tightest; ex-div today, near 3% floor), TGT ~7.3%, DGX ~9.1%. 3 GTC stops resting. L-046: pre-market 61f97e7 (13:11), market-open 9c3c028 (15:02, deliberate L-043 30-min wait), midday 9cb18a4 (16:11) all on origin/main, on time → no alert. Next catalysts: A AMC Nov 23; MDT/DLTR BMO Nov 24.
