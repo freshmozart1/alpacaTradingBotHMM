@@ -316,3 +316,6 @@ than 10 sessions are pruned.
 | 2026-11-19 | WSM | HOLD — new watchlist add (Disc), Q3 BMO today, print not yet indexed | 259.94 | | |
 | 2026-11-19 | ROST | HOLD — new watchlist add (Disc), Q3 AMC today hard-dated, no catalyst yet; Nov 20 hard-check | 227.61 | | |
 | 2026-11-19 | BJ | HOLD — new watchlist add (Staples), Q3 BMO Nov 20 hard-dated, no catalyst yet | 110.90 | | |
+| 2026-11-20 | DLTR | HOLD — new watchlist add (Staples/Disc), Q3 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 140.285 | | |
+| 2026-11-20 | MDT | HOLD — new watchlist add (Health Care), FQ2 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 100.63 | | |
+| 2026-11-20 | A | HOLD — new watchlist add (Health Care), FQ4 AMC Nov 23 hard-dated, no catalyst yet (L-045 pipeline) | 175.415 | | |
