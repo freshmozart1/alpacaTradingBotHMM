@@ -1562,3 +1562,84 @@ Deployment 37.72% / cash 62.28% — **below 75-85% band** all week. 4/6 position
 - New L-045/L-046. L-043/L-044 carry to Nov 20. Not a zero-trade week — no STEP 5 escalation. No risk rules touched.
 
 ### Overall Grade: C+ (2 clean entries, CEG working, gate dodged five 4-10% losers, zero rule breaches — but -1.75% vs S&P with 62% cash, thin pipeline left a weekly slot unused, and two routine-reliability slips)
+
+## Week ending 2026-11-20
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $97,093.94 (Nov 13 logged EOD) |
+| Ending portfolio | $95,604.80 (Nov 20 logged EOD, 20:14 UTC marks; live pull $95,611.05, `balance_asof` 2026-11-19 — provisional) |
+| Week return | -$1,489.14 (-1.53%) |
+| S&P 500 week | -7.98% (SPY 754.27 -> 694.05, Nov 13 close -> Nov 20 20:16 UTC pre-close via `alpaca.sh bars`); Perplexity -5.0% (preliminary; its own 7,023.40 close implies ~-7.1% — inconsistent, discarded) |
+| Bot vs S&P | +6.45% |
+| Trades | 1 new entry (TGT Nov 18); 2 closed (NRG -7% cut Nov 17, CEG trail stop Nov 19); open: 3 (DGX, RTX, TGT); 1/3 weekly cap used |
+| Win rate | 0% (0/2 closed) |
+| Best trade | DGX +7.23% open (+$614.25); best closed CEG -1.55% (-$141.05) |
+| Worst trade | NRG -7.42% (-$651.15) |
+| Profit factor | 0.00 ($0 / $792.20); realized -$792.20. Exit slippage: NRG -0.45% vs $92.74 cut (-$36.96), CEG -0.03% vs $256.473 stop (-$2.91) — total -$39.87 |
+
+### Skip Scoreboard
+
+| Ticker | Ref | +5d close | +5d % (Ref) | Verdict |
+|--------|-----|-----------|-------------|---------|
+| B | 40.56 | 36.49 (Nov 16) | -10.03% | avoided-loss |
+| TDG | 1221.06 | 1187.135 (Nov 17) | -2.78% | skip-right |
+| BN | 42.05 | 38.95 (Nov 19) | -7.37% | avoided-loss |
+| CEG / NRG | 249.77 / 88.42 | 277.75 / 93.99 (Nov 16) | +11.20% / +6.30% | n/a — entered (CEG trail -1.55%, NRG -7% cut) |
+
+Verdicts: missed 0 / skip-right 1 / avoided-loss 2 (-17.40%) — missed:avoided 0:2. **[no-cat] subset:** no rows; cumulative 3:0 unchanged. **Chase skip (L-039 rule):** ACM interim +12.42% by Ref but -1.85% from skip px $80.785 (Nov 20) — chase bar right. **Gate calibration verdict: calibrated** — 3rd straight avoided-heavy week (10 avoided vs 3 missed over 3 weeks). This week 5 of 6 earnings candidates (ARMK, GLNG, WMT, WSM, BJ) sold the news; bars-confirmation filter kept all out. Nov 16-20 rows score next week. **Pruned:** Nov 2-5 rows (IDXX, ET, MLM, PFE, AMGN, MPC, NVO, CVS, CVE, WLK, APD) — verdicts reported 2026-11-13.
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| NRG | $99.72 (88 sh, Nov 11) | $92.32 (Nov 17, mkt sell 8b7b20ef) | -$651.15 (-7.42%) | -7% cut same session per L-044 (midday -7.21%); slippage -0.45% vs cut line. Failed Utilities #1 |
+| CEG | $260.42 (35 sh, Nov 9) | $256.39 (Nov 19, trail f45ae140) | -$141.05 (-1.55%) | 10% trail fill after HWM $284.97 (+9.4% peak); slippage -0.03%. Failed Utilities #2 → sector exit, Utilities blocked |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| DGX | $242.87 (35 sh) | $260.42 | +$614.25 (+7.23%) | 10% trailing GTC 30c44a67, stop $236.844, HWM $263.16 |
+| RTX | $193.34 (47 sh) | $191.9547 | -$65.11 (-0.72%) | 10% trailing GTC 313ded6c, stop $185.0535, HWM $205.615; -7% cut $179.81 |
+| TGT | $168.678 (55 sh) | $166.88 | -$98.89 (-1.07%) | 10% trailing GTC 7d9b79c5, stop $154.719, HWM $171.91; -7% cut $156.87 |
+
+Deployment 28.57% / cash 71.43% — **well below 75-85% band**. 3/6 positions. Sector: HC 9.53%, A&D 9.44%, Staples 9.60%; Utilities blocked (2 consecutive failures). HMM Bear/High-Vol 94%, VIX 28.44, SPY 6-session losing streak. All stops GTC, verified each session.
+
+### What Worked
+
+- Cash cushion: -1.53% vs SPY -7.98% (+6.45% relative) in the worst S&P week since Apr 2025.
+- L-044 executed cleanly: NRG cut same session at -7.21% mark, slippage only -0.45% (vs 83% gap-throughs Nov 3-6).
+- Bars-confirmation filter: 5 beat/raise prints (ARMK, GLNG, WMT, WSM, BJ) sold the news — none bought.
+- L-043 throttle: blocked Nov 17 entries (SPY never above prior close), allowed one (TGT) Nov 18; ACM chase skip right from skip px.
+- Skip scoreboard 0:2 avoided (B -10.03%, BN -7.37%); zero rule breaches, no stop lowered.
+
+### What Didn't Work
+
+- 0/2 closed; realized -$792.20. Phase P&L -4.40%.
+- CEG+NRG AI-power pair moved as one: both failed within 3 sessions → forced Utilities sector exit. 18.8% same-theme cap was legal but not diversifying.
+- CEG ran to +9.4% (HWM $284.97) then round-tripped to the 10% trail — no profit locked below the +15% tighten trigger.
+- Deployment 28-38% all week; L-045 pipeline produced 6 gated names but only 1 entry.
+
+### Key Lessons
+
+- In a Bear/High-Vol tape, "beat + raise" prints are sold — bars confirmation is the binding filter; keep it.
+- Two names in one theme = one bet; the second failure triggers a sector exit, so a pair doubles exit risk.
+- Absolute skip verdicts in a -8% week are mostly beta; need SPY-relative scoring to judge selection.
+- Utilities exit has no stated re-entry condition — define it.
+
+### Adjustments for Next Week
+
+- While HMM is Bear/High-Vol or VIX >= 25, max 1 held position per sub-industry/theme (tightens the 25% theme cap) (L-047).
+- Weekly review scores every skip row's +5d % vs SPY over the same window and reports a relative verdict alongside the absolute one (L-048).
+- Utilities stays blocked for new entries until a 2026-12-04 review; re-entry only with XLU 5-session momentum positive and a two-source dated catalyst (L-049).
+
+### Rule Changes This Week
+
+- L-044 (execute -7% breach same session) promoted to Sell-Side Rules — complied Nov 6-20; fired once (NRG Nov 17, -0.45% slippage). Tightening/clarification only. Changelog row added.
+- L-043 (Bear/High-Vol throttle) promoted to Buy-Side Gate — complied every gate check Nov 6-20 (Nov 17 block, Nov 18 1-entry, Nov 20 check). Tightening only. Changelog row added.
+- New L-047/L-048/L-049. L-045/L-046 carry to Nov 27. Not a zero-trade week (TGT) — no STEP 5 escalation. No risk rules loosened.
+
+### Overall Grade: B- (+6.45% vs S&P via disciplined cash and filters, clean same-session -7% cut, zero rule breaches — but 0/2 closed, correlated Utilities pair forced a sector exit, CEG +9% gain round-tripped, deployment 29%)

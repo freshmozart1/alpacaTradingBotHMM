@@ -7,6 +7,37 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
+### L-049 — Utilities blocked after 2 consecutive failures; defined re-entry
+- Date: 2026-11-20 | Source: WEEKLY-REVIEW 2026-11-20 (NRG -7% cut Nov
+  17 -$651.15, CEG trail stop Nov 19 -$141.05 → Utilities sector exit;
+  strategy rule has no stated re-entry condition)
+- Lesson: "Exit a sector after 2 failed trades" lacked a re-entry bar.
+- Directive: No new Utilities entry before 2026-12-04; after that, only
+  if XLU 5-session momentum is positive AND the catalyst is two-source
+  dated. Every gate check on a Utilities name logs "L-049 blocked/pass".
+- Status: active | Review-by: 2026-12-04
+
+### L-048 — Score skips vs SPY as well as absolute
+- Date: 2026-11-20 | Source: WEEKLY-REVIEW 2026-11-20 (SPY -7.98% week;
+  absolute avoided-loss verdicts in a broad selloff are mostly beta)
+- Lesson: Absolute +5d verdicts can't separate selection from market drift.
+- Directive: Each weekly review logs every scored row's SPY +5d % over
+  the same window and a relative verdict (rel = row % - SPY %; missed
+  >= +3, avoided <= -3) next to the absolute verdict. Measurement only.
+- Status: active | Review-by: 2026-12-04
+
+### L-047 — One position per theme while regime is Bear/High-Vol
+- Date: 2026-11-20 | Source: WEEKLY-REVIEW 2026-11-20 (CEG+NRG AI-power
+  pair, 18.8% < 25% theme cap, both failed Nov 17/19 → forced Utilities
+  exit, -$792.20 combined)
+- Lesson: Two same-theme names are one correlated bet with double
+  sector-exit risk.
+- Directive: While HMM regime is Bear/High-Vol or VIX >= 25, an entry
+  that would hold a 2nd position in the same sub-industry/theme is a
+  concentration skip; log the theme count at every gate check.
+  Tightening only.
+- Status: active | Review-by: 2026-12-04
+
 ### L-046 — Verify routine commits on main at EOD; alert same session
 - Date: 2026-11-13 | Source: WEEKLY-REVIEW 2026-11-13 (Nov 10 midday
   left on unmerged branch, noted at EOD, alerted next pre-market; Nov 13
@@ -33,29 +64,6 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
   unchanged.
 - Status: active | Review-by: 2026-11-27
 
-### L-044 — Execute a -7% breach the session it is found
-- Date: 2026-11-06 | Source: WEEKLY-REVIEW 2026-11-06 (MLM -7.17% at
-  Nov 5 EOD marks, cut deferred "EOD = no trades", filled -8.66% Nov 6
-  open — ~$143 extra; Nov 5 midday missing)
-- Lesson: "Close immediately" was treated as "close next session".
-- Directive: Any routine (midday, EOD, ad-hoc) that finds a position at
-  -7% or worse while the market is open (EOD fires ~20:14 UTC, close
-  21:00 UTC) cancels its GTC stop, market-sells, verifies via
-  `orders`/`positions`, and sends a same-session ClickUp alert.
-- Status: active | Review-by: 2026-11-20
-
-### L-043 — Throttle entries in a Bear/High-Vol regime
-- Date: 2026-11-06 | Source: WEEKLY-REVIEW 2026-11-06 (NVO Nov 4, MLM
-  Nov 5 both -7% cut within 2 sessions, -$1,528.55; HMM Bull 93% -> 72%
-  Nov 2, flipped Bear/High-Vol 100% Nov 6; VIX ~26; S&P -4.4% Nov 5)
-- Lesson: Fresh earnings entries in a decaying/flipped regime get
-  stopped out before the thesis can work.
-- Directive: While HMM regime is Bear/High-Vol or VIX >= 25, allow at
-  most 1 new entry per session, only after SPY's first 30 min trades
-  above its prior close; log regime/VIX/SPY check at every gate check.
-  Tightening only — the gate still decides.
-- Status: active | Review-by: 2026-11-20
-
 Template:
 
 ### L-NNN — <short title>
@@ -65,6 +73,15 @@ Template:
 - Status: active | Review-by: YYYY-MM-DD
 
 ## Retired Lessons
+
+- L-044, "Execute a -7% breach the session it is found", retired
+  2026-11-20, promoted to a permanent Sell-Side Rule after 2 straight
+  weeks of compliance (Nov 6-20): NRG cut same session Nov 17 at -7.21%
+  mark, slippage -0.45% vs cut line.
+- L-043, "Throttle entries in a Bear/High-Vol regime", retired
+  2026-11-20, promoted to a permanent Buy-Side Gate rule after 2 straight
+  weeks of compliance (Nov 6-20): Nov 17 entries blocked, Nov 18 capped
+  at 1 (TGT), Nov 20 checked; SPY -7.98% week.
 
 - L-036, "Log gap-through slippage on every exit", retired 2026-11-13,
   promoted to a permanent Operational Rule (measurement only) — logged
@@ -287,22 +304,11 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-11-02 | IDXX | HOLD — slot-blocked (L-040, 6/6); stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS raise today (two-source: Perplexity + SEC 8-K), pre-mkt ~-1.3% (Perplexity, bars unconfirmed); Nov 3 dropped as chase skip (+21.86%), skip px $672.06 (L-039) | 551.48 | +28.24% (vs skip px $672.06: +5.23%) | missed (slot-blocked, then chase) |
-| 2026-11-02 | ET | HOLD — stall-breaker refresh add (Energy), Q3 Nov 3 hard-dated, no catalyst yet; 3rd Energy (L-030) | 20.92 | -8.56% | avoided-loss |
-| 2026-11-02 | MLM | HOLD — stall-breaker refresh add (Materials, 3rd leg), Q3 Nov 4 BMO hard-dated, no catalyst yet | 540.425 | -1.78% | n/a — entered Nov 5 (-7% cut) |
-| 2026-11-03 | PFE | HOLD — stall-breaker refresh add (Health Care), Q3 beat + FY26 guide raise today, single-source (WebSearch unconfirmed, no bars print); conditional next-slot candidate | 30.71 | -4.40% | avoided-loss |
-| 2026-11-03 | AMGN | HOLD — stall-breaker refresh add (Health Care), Q3 AMC Nov 3 hard-dated, no catalyst yet | 465.45 | -0.09% | skip-right |
-| 2026-11-03 | MPC | HOLD — stall-breaker refresh add (Energy), Q3 beat today, single-source; concentration-blocked as 3rd Energy (L-030) | 430.48 | -9.48% | avoided-loss |
-| 2026-11-04 | NVO | HOLD pre-market — stall-breaker refresh add (Health Care), Q3 beat + FY26 outlook raise today (two-source: Perplexity + SEC 6-K), ~+6% early (Perplexity, bars unconfirmed); flagged for market-open hard-check (L-041 candidate) | 40.21 | +2.21% | n/a — entered Nov 4 (-7% cut) |
-| 2026-11-04 | CVS | HOLD — stall-breaker refresh add (Health Care), Q3 beat + FY26 EPS raise + split plan today, single-source; pre-mkt weak (MA stars) | 91.45 | -2.17% | skip-right |
-| 2026-11-04 | CVE | HOLD — stall-breaker refresh add (Energy), Q3 BMO today, result not yet indexed; hard-check at open | 30.72 | -7.52% | avoided-loss |
-| 2026-11-04 | WLK | HOLD — stall-breaker refresh add (Materials, 3rd leg, loosened floor), Q3 adj EPS miss today, single-source; +3% pre-mkt (Perplexity) | 68.50 | -6.80% | avoided-loss |
-| 2026-11-05 | APD | HOLD — new watchlist add (Materials), FY Q4 BMO today: adj EPS $3.61 vs $3.60 in-line, FY27 guide "growth" (vague), single-source; not gate-clearing | 318.885 | -0.86% | skip-right |
-| 2026-11-09 | CEG | HOLD pre-market — new watchlist add (Utilities/IPP), Q3 beat + FY26 guide raise today (Perplexity; WebSearch 2nd source unconfirmed), weak sector momentum (XLU -0.7% 5-sess); flagged for market-open hard-check, entry ≤$270 / -7% cut / target ~$324 | 249.77 | | |
-| 2026-11-09 | NRG | HOLD — new watchlist add (Utilities/IPP), Q3 today, FY26 reaffirmed + 2027 guide initiated (no raise), single-source | 88.42 | | |
-| 2026-11-09 | B | HOLD — new watchlist add (Materials, gold), Q3 today: adj EPS beat / rev miss / FY26 reaffirmed, single-source | 40.56 | | |
-| 2026-11-10 | TDG | HOLD — new watchlist add (A&D), FQ4 BMO today: adj EPS $12.44 +15% / sales +23% (SEC 8-K), FY27 EPS guide below consensus (Perplexity), pre-mkt ~-1.4%; not gate-clearing | 1221.06 | | |
-| 2026-11-12 | BN | HOLD — new watchlist add (Financials), Q3 BMO today: DE $0.73/sh +16% y/y, $900M YTD buybacks, single-source; no pre-mkt print, Financials not leading | 42.05 | | |
+| 2026-11-09 | CEG | HOLD pre-market — new watchlist add (Utilities/IPP), Q3 beat + FY26 guide raise today (Perplexity; WebSearch 2nd source unconfirmed), weak sector momentum (XLU -0.7% 5-sess); flagged for market-open hard-check, entry ≤$270 / -7% cut / target ~$324 | 249.77 | +11.20% | n/a — entered Nov 9 (trail stop -1.55%) |
+| 2026-11-09 | NRG | HOLD — new watchlist add (Utilities/IPP), Q3 today, FY26 reaffirmed + 2027 guide initiated (no raise), single-source | 88.42 | +6.30% | n/a — entered Nov 11 (-7% cut) |
+| 2026-11-09 | B | HOLD — new watchlist add (Materials, gold), Q3 today: adj EPS beat / rev miss / FY26 reaffirmed, single-source | 40.56 | -10.03% | avoided-loss |
+| 2026-11-10 | TDG | HOLD — new watchlist add (A&D), FQ4 BMO today: adj EPS $12.44 +15% / sales +23% (SEC 8-K), FY27 EPS guide below consensus (Perplexity), pre-mkt ~-1.4%; not gate-clearing | 1221.06 | -2.78% | skip-right |
+| 2026-11-12 | BN | HOLD — new watchlist add (Financials), Q3 BMO today: DE $0.73/sh +16% y/y, $900M YTD buybacks, single-source; no pre-mkt print, Financials not leading | 42.05 | -7.37% | avoided-loss |
 | 2026-11-16 | ARMK | HOLD pre-market — new watchlist add (Disc), FQ4 BMO today, print not yet indexed; flagged for market-open hard-check, entry ≤$57.50 / -7% cut / target $66.10 | 53.89 | | |
 | 2026-11-16 | ACM | HOLD — new watchlist add (Industrials, leader), FQ4 AMC today hard-dated, no catalyst yet; Nov 17 hard-check, entry ≤$75 / -7% cut / target ~$86 | 70.53 | | |
 | 2026-11-16 | TGT | HOLD — new watchlist add (Staples), Q3 BMO Nov 18 hard-dated, no catalyst yet; +70% YTD chase-sensitive | 161.44 | | |
