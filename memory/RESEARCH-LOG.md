@@ -5636,3 +5636,60 @@ Week 20: 1/3 used. 4/6. ~38.3% deployed. L-043 off → max 2 entries.
 ### 2026-11-19 — Midday Addendum
 - CEG $260.10 at 16:10 UTC, faded from ~$269.5 open high (~-1.7% vs Nov 18 close). Perplexity: no company news/downgrade today; sector drag = IPP/AI-power unwind (VST -16% 1-mo on Texas data-center policy; KeyBanc flagged VST/CEG exposure, CEG less so). Bernstein PT $293 (Nov 17, Outperform). Thesis intact; stop $256.473 ~1.4% away — let GTC trail work.
 - DGX/RTX/TGT: no sharp moves (<1% vs prior close). No research needed.
+
+## 2026-11-20 — Pre-market Research
+
+On-time run (fired 13:08 UTC). Data 13:08-13:30 UTC.
+
+### Account
+- Equity: $95,694.68 | last_equity $95,659.96 | Cash: $68,289.83 (71.36%) | Buying power: $349,892.90 (margin, effective) | `balance_asof` 2026-11-19.
+- Position MV: $27,404.85 (DGX 35, RTX 47, TGT 55) — **28.64% deployed (below 75-85% band)**. 3 GTC trailing stops, status new: DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $154.719/HWM $171.91. Expiries Jan 15-Feb 16 2027 — none within 5 sessions. CEG stopped out Nov 19 (f45ae140 filled $256.39).
+- Daytrade count: not returned; no day trades. Day 99, Friday, **Week 20: 1/3 used** (TGT). 3/6, 3 open slots. **No-trade streak 1.**
+- Market regime (HMM, SPY 2y daily): **Bear/High-Vol, confidence 94%**, days_in_regime 15 (500 obs) — up from Mixed 30%. Advisory only.
+- Held (`positions` marks): DGX $259.09 +6.68% (8.6% to stop); RTX $192.40 -0.49% (**3.8% to stop**; -7% cut $179.81; ex-div today $0.73); TGT $168.98 +0.18% (8.4%; -7% cut $156.87). None at -7%. No tighten triggers (<+15%).
+- Exposure: HC 9.48% (DGX); A&D 9.45% (RTX); Staples 9.71% (TGT).
+
+### Market Context
+- Perplexity: 16/16 sequential, exit 0. No fallback; 1 WebSearch as 2nd-source (BJ).
+- WTI/Brent: **WTI $82.26, Brent $91.69** (futures, ~11-min delayed); TECHi daily close WTI $80.89 / Brent $87.79. WTI near-match to Nov 19 $82.27 → flagged suspect, cross-checked vs TECHi (different, -2.79% d/d) → not a stale repeat. Dispersion <10%.
+- S&P futures: Perplexity 7,175.75 (-0.30%), timestamp Nov 19 → stale/suspect. SPY pre-mkt $709.43 mid vs Nov 19 close $715.84 = **-0.90%**. Nov 19 SPY **-1.98%** (gap-up reversal). Bars govern.
+- VIX: **prior close 28.44** (Nov 19, +15.8%; late print 29.13). Not a repeat of 24.56. **≥25.**
+- Today: UMich sentiment final 10:00 ET. No CPI/PPI/FOMC/jobs (FOMC Dec 9, jobs Dec 4, CPI Dec 10, PPI Dec 15). Anthropic post-IPO drop weighing on AI names; Black Friday read-through.
+- Earnings BMO today: BJ, FRO, IESC, RLX, WRD. Nov 23 AMC: HPE, ZM, A, J, SYM. Nov 24 BMO: ADI, MDT, BBY, DLTR, BURL, DKS, ANF, KSS; AMC: DELL, ADSK, HPQ, WDAY.
+- Sector momentum: Perplexity YTD (Nov 19): Energy +39.8%, HC +26.1%, Tech +23.6%, Staples +21.1%, RE +15.3%, Materials +12.8%, Industrials +12.0%, Utilities +5.4%, Financials +5.3%, Disc +4.4%, Comm -9.5%. `bars` 5-sess Nov 12→19: **XLP -1.28%, XLU -1.83%, XLY -3.81%**, XLF -4.47%, XLI -4.78%, XLE -5.30%, SPY -5.46%, XLV -5.51%, XLB -5.51%, XLK -7.49%. Leaders: Staples, Utilities (blocked — sector exit), Disc.
+- Held tickers:
+  - **DGX**: no fresh catalyst; Q3 beat/raise digest, PAMA 2027 ~1% rev risk. Thesis intact.
+  - **RTX**: ex-div today $0.73 (mechanical drop); Dec 11 stopgap-funding expiry risk. Thesis intact; tightest cushion.
+  - **TGT**: Jefferies $195 / TD Cowen $175 / Stifel $160 PTs (Nov 19-dated); November sales reportedly accelerating; tariff-refund EPS caveat. Thesis intact.
+
+### Stall-Breaker
+Not armed (streak 1 < 3). No forced refresh; watchlist pruned on merit (below).
+
+### Lessons Check
+- L-046 (EOD verifies routine commits) — pre-market `git log origin/main`: Nov 19 pre-market 9f24d8d (13:12), market-open aefff2d (14:51), midday 2096f26 (16:11), EOD 7ae917a (20:15) all on main → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 4 names / 2 sectors: BJ (Staples, Q3 BMO today), DLTR (Staples/Disc, Q3 BMO Nov 24), MDT (HC, FQ2 BMO Nov 24), A (HC, FQ4 AMC Nov 23). Complied.
+- L-044 (-7% execute same session) — no position at -7% (min RTX -0.49%). Complied.
+- L-043 (Bear/High-Vol throttle) — **TRIGGERED: HMM Bear/High-Vol 94% + VIX prior close 28.44 ≥25.** Max 1 new entry today, only after SPY's first 30 min trades above Nov 19 close **$715.84** (pre-mkt -0.90%). Complied (passed to market-open).
+- Operational: GTC expiries none within 5 sessions ✓. Ex-div: RTX today ✓. Deployment <75% → fully-specified idea below ✓. Gap check: Nov 19 has Market-Open/Midday/EOD ✓.
+
+### Yesterday's Skip Check
+Quotes stale/wide (Nov 19 21:00 IEX) → Nov 19 bars close vs Ref: PANW +6.50%, BJ -0.03%, WMT -1.87%, ROST -3.32%, WSM -14.95% — PANW skip looks wrong so far (chase-excluded, +17.0% from $309.17 base); WSM/ROST/WMT skips right; BJ neutral (prints today).
+
+### Watchlist Changes
+- DROP: WSM (in-line Q3, no guide raise, -14.95% vs Ref → thesis broken); ROST (Q3 beat but tepid holiday guide, ~-10% AH, Baird PT cut); WMT (Nov 19 catalyst, Nov 19 close $126.04 < base $127.305 → follow-through fails); PANW (chase: catalyst Nov 18, base Nov 17 $309.17, Nov 19 close $361.745 = **+17.00%** ≥15% → excluded; skip px $361.745).
+- ADD: DLTR (Staples/Disc), MDT (HC), A (HC). BJ carried (prints today).
+
+### Trade Ideas
+Week 20: 1/3 used. 3/6. ~28.6% deployed. L-043: max 1 entry today.
+1. **BJ** (Staples, leader XLP; Q3 BMO today: adj EPS $1.73 vs ~$1.25-1.29, comp club sales +13.5% (ex-gas +4.1%), membership fee income +9.5% to $138.4M, FY comp + EPS guidance raised — two-source: Perplexity (today-dated snippets) + SEC 8-K ex99.1 via WebSearch ✓) — **fully-specified market-open hard-check:** needs bars confirming positive post-release reaction (pre-mkt bars null). Chase: catalyst Nov 20, base Nov 19 close $110.87; 15% bar $127.50. Entry ≤$120 limit, only after SPY first 30 min > $715.84 (L-043); size ~$9,360 (~9.8% eq, 78 sh @ $120); cut -7% (~$111.60 at $120); 10% GTC trail; target +15% (~$138, ≥2:1). Post-fill Staples count 2 (TGT+BJ), ~19.5% eq (<40%); big-box/warehouse retail theme ~19.5% (<25%). Risk: comp inflated by gasoline (ex-gas +4.1%), capex ~$800M, sell-the-news in risk-off tape.
+2. **A** (HC; FQ4 AMC Nov 23) — Nov 24 hard-check on beat + FY27 guide ≥ consensus. **MDT** (HC; FQ2 BMO Nov 24) / **DLTR** (Staples/Disc; Q3 BMO Nov 24) — Nov 24 hard-checks. HC lagging 5-sess (-5.51%) → sector-momentum caveat for A/MDT.
+- New scoreboard rows: DLTR, MDT, A (BJ already on board).
+
+### Risk Factors
+- HMM Bear/High-Vol 94%, VIX 28.44 (+15.8%); SPY -1.98% Nov 19 reversal, pre-mkt -0.9% → L-043 gate likely blocks.
+- Anthropic post-IPO slide → AI/tech de-risking; XLK weakest.
+- RTX cushion 3.8% (ex-div today); stopgap funding expires Dec 11.
+- TGT/BJ retail concentration into Black Friday; tariff-refund EPS optics.
+
+### Decision
+**HOLD pre-market.** BJ flagged for market-open hard-check (1 entry max; L-043 SPY 30-min > $715.84; needs positive bars reaction). A/MDT/DLTR to Nov 23-24. No ClickUp (nothing urgent).
