@@ -325,3 +325,6 @@ than 10 sessions are pruned.
 | 2026-11-20 | DLTR | HOLD — new watchlist add (Staples/Disc), Q3 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 140.285 | | |
 | 2026-11-20 | MDT | HOLD — new watchlist add (Health Care), FQ2 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 100.63 | | |
 | 2026-11-20 | A | HOLD — new watchlist add (Health Care), FQ4 AMC Nov 23 hard-dated, no catalyst yet (L-045 pipeline) | 175.415 | | |
+| 2026-11-23 | SJM | HOLD — stall-breaker refresh add (Staples/packaged foods), FQ2 BMO Nov 24 hard-dated, no catalyst yet | 133.68 | | |
+| 2026-11-23 | UNH | HOLD pre-market — stall-breaker refresh add (HC/managed care), TD Cowen Hold→Buy PT $455 dated Nov 20, single-source (WebSearch unconfirmed); market-open hard-check, entry ≤$355 / -7% cut / target ~$398 | 340.03 | | |
+| 2026-11-23 | BURL | HOLD — stall-breaker refresh add (Disc/off-price), Q3 BMO Nov 24 hard-dated, no catalyst yet | 245.43 | | |

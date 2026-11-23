@@ -5693,3 +5693,66 @@ Week 20: 1/3 used. 3/6. ~28.6% deployed. L-043: max 1 entry today.
 
 ### Decision
 **HOLD pre-market.** BJ flagged for market-open hard-check (1 entry max; L-043 SPY 30-min > $715.84; needs positive bars reaction). A/MDT/DLTR to Nov 23-24. No ClickUp (nothing urgent).
+
+## 2026-11-23 — Pre-market Research
+
+On-time run (fired 13:09 UTC). Data 13:09-13:35 UTC.
+
+### Account
+- Equity: $95,670.63 | last_equity $95,388.27 | Cash: $68,289.83 (71.38%) | Buying power: $349,825.56 (margin, effective) | `balance_asof` 2026-11-20.
+- Position MV: $27,380.80 (DGX 35, RTX 47, TGT 55) — **28.62% deployed (below 75-85% band)**. 3 GTC trailing stops, status new: DGX 30c44a67 (10%) $236.844/HWM $263.16; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $154.719/HWM $171.91. Expiries Jan 15-Feb 16 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 100, Monday, **Week 21: 0/3 used**. 3/6, 3 open slots. **No-trade streak 3.** Holiday week: Thu Nov 26 closed, Fri Nov 27 early close.
+- Market regime (HMM, SPY 2y daily): **Bear/High-Vol, confidence 100%**, days_in_regime 16 (498 obs). Advisory only.
+- Held (`positions` marks): DGX $260.30 +7.18% (9.0% to stop); RTX $193.00 -0.18% (4.1% to stop; Nov 20 close $190.17 = 2.7% cushion; -7% cut $179.81); TGT $167.26 -0.84% (7.5%; -7% cut $156.87). None at -7%. No tighten triggers (<+15%).
+- Exposure: HC 9.52% (DGX); A&D 9.48% (RTX); Staples 9.62% (TGT).
+- Note: Nov 20 EOD logged $95,604.80 (20:14 UTC pre-close marks) vs Alpaca last_equity $95,388.27 — $216.53 drift (late-session selloff).
+
+### Market Context
+- Perplexity: 21 queries; 4 hit HTTP 429 on parallel burst (exit 22, not 3) → re-run sequentially, all exit 0. No fallback. 1 WebSearch as 2nd-source (UNH/HUM).
+- WTI/Brent: **WTI $83.39, Brent $92.84** (~01:00 ET delayed). Not a repeat of Nov 20 $82.26/$91.69. Dispersion <10%.
+- S&P futures: **7,125.50 +2.75%** (07:03 ET). SPY pre-mkt $708.44 mid vs Nov 20 close **$690.68** = **+2.57%** ✓ consistent. Nov 20 SPY **-3.51%** (5-sess -8.43%) — AI-led rout (NVDA SEC probe/leadership turmoil, Anthropic post-IPO slide, data-center votes); relief rally today on Asia support measures + lower yields.
+- VIX: **Nov 20 close 35.89** (19-mo high; was 28.44 Nov 19 — not a repeat). Futures ~26-30 overnight. **≥25.**
+- Today: S&P flash PMIs, Fed Williams. Week: **Wed Nov 25 core PCE + GDP 2nd est + claims, Beige Book**; no CPI/PPI/FOMC/jobs (jobs Dec 4, FOMC Dec 9).
+- Earnings today BMO: GDRX, VNET, DAVA. AMC: **A**, HPE, ZM, J, SYM, SMTC, AMTM. Nov 24 BMO: **MDT, DLTR, SJM, BURL, BBY**, ADI, DKS, ANF, KSS; AMC: DELL, ADSK, HPQ, WDAY.
+- Sector momentum: Perplexity YTD (Nov 20): Energy +33-35%, Staples +17.8%, HC +14.3-14.6%, RE +6%, Materials +5.4%, Industrials +0.6%, Utilities -0.7%, Financials -0.5%, Disc -5.2%, Tech/Comm deeply negative. `bars` 5-sess Nov 13→20: **XLP -1.98%, XLU -3.00%, XLRE -4.25%**, XLV -6.12%, XLY -6.23%, XLE -6.70%, XLF -6.92%, XLI -7.31%, XLB -7.39%, XLC -7.98%, SPY -8.43%, XLK -12.39%. Leaders: Staples, Utilities (blocked, L-049), RE; HC 3rd on YTD.
+- Held tickers:
+  - **DGX**: pre-mkt ~$261.61 (+1.29%); no fresh catalyst; Co-Lab/consumer growth, PAMA 2027 ~1% rev risk. Thesis intact.
+  - **RTX**: Nov 20 close $190.17 (-1.69%, ex-div $0.73); $120M Navy mod, record $340B backlog — no new catalyst. Thesis intact; tightest cushion.
+  - **TGT**: ~$166; Q3 beat/raise digest, Jefferies $195 PT; tariff-refund EPS caveat, valuation near highs. Thesis intact.
+
+### Stall-Breaker
+**FIRED** (streak 3 ≥ 3). Dropped BJ; added SJM, UNH, BURL. Screen: top-2 eligible sectors Staples (XLP 5-sess leader, YTD #2) + Health Care (YTD #3; Utilities blocked by L-049) + Disc (L-045 2nd/3rd-sector coverage). Each cross-checked via `bars`.
+
+### Lessons Check
+- L-049 (Utilities blocked to Dec 4) — no Utilities names screened/added. "L-049 blocked" N/A — complied.
+- L-048 (score skips vs SPY) — weekly-review measurement; skip check below logs SPY reference. Complied.
+- L-047 (1 position per theme while Bear/High-Vol/VIX≥25) — **active (HMM 100%, VIX 35.89)**. DLTR shares TGT's Consumer Staples Merchandise Retail sub-industry → **concentration skip if it clears**. SJM (packaged foods), UNH (managed care), MDT (HC equipment), A (life-sci tools), BURL (apparel retail) → theme count 0 held each. Complied.
+- L-046 (routine commits on main) — `git log origin/main`: Nov 20 pre-market 61f97e7 (13:11), market-open 9c3c028 (15:02), midday 9cb18a4 (16:11), EOD 96b537c (20:15), weekly 5ebc661 (20:18) → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 6 names / 3 sectors: A (HC, AMC today), MDT (HC, BMO Nov 24), SJM (Staples, BMO Nov 24), DLTR (Staples, BMO Nov 24), BURL (Disc, BMO Nov 24), UNH (HC, Nov 20 upgrade). Complied.
+- Gate rule (Bear/High-Vol throttle) — **TRIGGERED**: max 1 new entry, only after SPY first 30 min trades above Nov 20 close **$690.68** (pre-mkt +2.57%).
+- Operational: GTC expiries none within 5 sessions ✓. Gap check: Nov 20 Market-Open/Midday/EOD ✓. Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+Quotes stale/wide (Nov 20 21:00 IEX) → Nov 20 bars close vs Ref (SPY Nov 19→20 -3.51%): BJ -5.60%, A -2.91%, DLTR -1.62%, MDT -0.68% — skips look right so far (all beat SPY but absolute negative; BJ sell-the-news confirmed).
+
+### Watchlist Changes
+- DROP: BJ (Nov 20 catalyst failed bars confirmation, -5.60% vs Ref; no further hard-dated event).
+- ADD: **SJM** (Staples/packaged foods, FQ2 BMO Nov 24, 5-sess +0.77%); **UNH** (HC/managed care, TD Cowen Hold→Buy PT $402→$455 dated Nov 20 — Perplexity only; WebSearch could not confirm → single-source); **BURL** (Disc/off-price, Q3 BMO Nov 24, guide $1.60-1.70, UBS sees miss risk; 5-sess +1.06%).
+- Carry: A, MDT, DLTR.
+
+### Trade Ideas
+Week 21: 0/3 used. 3/6. ~28.6% deployed. Gate throttle: max 1 entry today.
+1. **UNH** (HC; TD Cowen upgrade to Buy, PT $455, dated Nov 20 — 1 session prior) — **fully-specified market-open hard-check, conditional on 2nd-source confirmation** (currently single-source → fails gate as-is). Follow-through ✓: catalyst Nov 20, base Nov 19 close $330.355, Nov 20 close $340.03 = **+2.93%** (<15% chase bar $379.91). Entry ≤$355 limit, after SPY first 30 min > $690.68; size ~$9,000 (~9.4% eq, 26 sh @ ≤$346); cut -7% (~$321.8 at $346); 10% GTC trail; target +15% (~$398, ≥2:1). Post-fill HC count 2 (DGX+UNH) ~19% eq (<40%); managed-care theme 0 held (L-047 ✓). Risk: -16.6% 5-sess falling knife (Medicare Advantage pressure), dateless-PT rule needs dated source.
+2. **A** (HC; FQ4 AMC today, cons EPS $1.73 / rev $1.99B, ~10% implied move) — Nov 24 hard-check on beat + FY27 guide ≥ consensus; needs positive bars reaction.
+3. **MDT / SJM / BURL** — Nov 24 BMO hard-checks (beat + guide, positive bars). **DLTR** — Nov 24 print, but L-047 theme skip vs TGT while Bear/VIX≥25.
+- Per-name today: A/MDT/SJM/BURL/DLTR not yet catalyzed (events after today's open) → no same-day entry possible.
+- New scoreboard rows: SJM, UNH, BURL (A/MDT/DLTR already on board).
+
+### Risk Factors
+- HMM Bear/High-Vol 100%, VIX 35.89; SPY -8.43% 5-sess; today's +2.6% futures bounce could fade (AI/NVDA overhang).
+- Holiday-thin week; core PCE Wed; market closed Thu, half-day Fri.
+- RTX cushion 2.7% at Nov 20 close (stop $185.05) — likely stop-out on any renewed selloff.
+- Retail earnings cluster Nov 24 (TGT read-through); sell-the-news pattern (5 of 6 last week).
+
+### Decision
+**HOLD pre-market.** UNH flagged for market-open hard-check (needs 2nd source + L-043 SPY 30-min > $690.68; 1 entry max). A/MDT/SJM/BURL to Nov 24. No ClickUp (nothing urgent).
