@@ -3447,3 +3447,19 @@ No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 2.
 - **A** (AMC today), **MDT / SJM / BURL / DLTR** (BMO Nov 24) → not yet catalyzed; Nov 24 hard-checks (DLTR L-047 theme skip vs TGT).
 
 No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 4.
+
+### Nov 23 — Midday Scan (Day 100, Monday)
+
+**Run:** fired 16:10 UTC (sched 16:07). Equity $95,806.88 | Cash $68,289.83 (71.3%).
+
+**STEP 3 (cut losers):** None ≤ -7% (min TGT -0.87%; L-044 ✓). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +8.21%) — no change.
+
+**STEP 5 (thesis check):** DGX $262.81 +8.21% (+1.75% day), intact, cushion ~9.9%. RTX $194.105 +0.40% (+2.07% day), intact, cushion ~4.7% (tightest). TGT $167.215 -0.87% (+0.84% day), post-earnings hold, intact, cushion ~7.5%. Broad risk-on tape (SPY +4.4% open window); no sharp idiosyncratic moves, no thesis breaks → no cuts.
+
+**STEP 6 (research):** Nothing moving sharply without cause → no Perplexity query, no RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $154.719/HWM $171.91; DGX 30c44a67 (10%) $236.9205/HWM $263.245; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~28.7% deployed — well below 75-85% band; 3/6, 3 open slots. Week 21: 0/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
