@@ -3433,3 +3433,17 @@ No trades. Week 20: 1/3 used. No ClickUp (no trade). No-trade streak 2.
 | TGT | 55 | $168.678 | $166.88 | -0.35% | -$98.89 (-1.07%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
 
 **Notes:** 3rd consecutive no-trade day (BJ failed gate — negative reaction; L-043 triggered, HMM Bear/High-Vol 94%, VIX 28.44). Week 20 closes 1/3 new trades. Day P&L vs Nov 19 logged EOD $95,604.46 (Alpaca last_equity $95,659.96; $55.50 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,395.20 (-4.40%) vs $100,000 start. 3 positions, 28.57% deployed / 71.43% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.53% (DGX), A&D 9.44% (RTX), Staples 9.60% (TGT); Utilities blocked. All <+15% → no trail tightening. No position at -7% cut. Stop cushions: RTX ~3.6% (tightest; ex-div today, near 3% floor), TGT ~7.3%, DGX ~9.1%. 3 GTC stops resting. L-046: pre-market 61f97e7 (13:11), market-open 9c3c028 (15:02, deliberate L-043 30-min wait), midday 9cb18a4 (16:11) all on origin/main, on time → no alert. Next catalysts: A AMC Nov 23; MDT/DLTR BMO Nov 24.
+
+### Nov 23 — Market-Open (Day 100, Monday)
+
+**Operational Rule check:** Nov 20 has Market-Open + Midday + EOD ✓ (9c3c028, 9cb18a4, 96b537c). Nov 23 pre-market 1da29cd ✓. Routine fired 13:22 UTC (sched 13:15) — pre-open; waited to 15:01 UTC for L-043 SPY 30-min check.
+
+**Account (15:01 UTC):** Equity $95,559.43 | last_equity $95,388.27 | Cash $68,289.83 (71.5%) | `balance_asof` 2026-11-20. 3 positions (DGX 35 +7.18%; RTX 47 -0.18%; TGT 55 -0.75% at 13:23 marks). 3 GTC trails status new (DGX $236.844; RTX $185.0535; TGT $154.719). Daytrade count not returned; no day trades. Week 21: 0/3 used. 3/6. ~28.5% deployed.
+
+**Lessons compliance:** L-049 no Utilities names ✓; L-047 UNH managed-care theme count 0 held ✓; L-045 per-name pass/fail below ✓; L-043/gate throttle **triggered** (HMM Bear/High-Vol 100%, VIX 35.89 Nov 20) — SPY first 30 min (IEX 1-min) open $724.295 / hi $724.76 / lo $713.57 / 15:00 close $721.255 vs Nov 20 close $690.68 → entire window above (+4.4%) ✓; max 1 entry.
+
+**Buy gate (15:01 UTC):**
+- **UNH — SKIP (thesis broken / catalyst invalidated).** Catalyst TD Cowen Hold→Buy PT $402→$455 dated Nov 20 — 2nd source now confirmed (CNBC 2026-11-20 + Investing.com/TipRanks) ✓. Follow-through: base Nov 19 close $330.355, Nov 20 close $340.03 (+2.93%, <15%) ✓. Position/cash/sector checks would pass (HC 2, ~19% eq). BUT same-day negative catalyst: CMS proposed Medicare Advantage Star Ratings overhaul (~$107B MA payment cut 2028-37 per TD Cowen) — managed-care peers (HUM/CVS/ELV) down. UNH 30-min bars open $321.04 / lo $321.04 / hi $330.96 / last $330.95 = **+0.18% vs pre-catalyst base** (upgrade reaction fully erased) on a +4.4% SPY tape; quote wide ($332/$340). Upgrade thesis (MA benefit-design recovery) directly undercut. Skip px $330.95. Open scoreboard row 2026-11-23 → no new row.
+- **A** (AMC today), **MDT / SJM / BURL / DLTR** (BMO Nov 24) → not yet catalyzed; Nov 24 hard-checks (DLTR L-047 theme skip vs TGT).
+
+No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 4.
