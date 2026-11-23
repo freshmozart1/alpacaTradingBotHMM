@@ -3463,3 +3463,14 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 4.
 **STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $154.719/HWM $171.91; DGX 30c44a67 (10%) $236.9205/HWM $263.245; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~28.7% deployed — well below 75-85% band; 3/6, 3 open slots. Week 21: 0/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 23 — EOD Snapshot (Day 100, Monday)
+**Portfolio:** $95,956.17 | **Cash:** $68,289.83 (71.17%) | **Day P&L:** +$351.37 (+0.37%) | **Phase P&L:** -$4,043.83 (-4.04%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $264.14 | +2.27% | +$744.45 (+8.76%) | $237.852 (10% trail, GTC 30c44a67, HWM $264.28) |
+| RTX | 47 | $193.34 | $194.32 | +2.18% | +$46.06 (+0.51%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $168.91 | +1.86% | +$12.76 (+0.14%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
+
+**Notes:** 4th consecutive no-trade day (UNH skipped at gate — upgrade reaction erased by CMS MA Star Ratings proposal; L-043 triggered, max 1 entry). Week 21: 0/3 new trades. Broad risk-on tape (SPY +4.4% open window); all 3 names up ~2%. Day P&L vs Nov 20 logged EOD $95,604.80 (Alpaca last_equity $95,388.27; $216.53 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,043.83 (-4.04%) vs $100,000 start. 3 positions, 28.83% deployed / 71.17% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.63% (DGX), A&D 9.52% (RTX), Staples 9.68% (TGT); Utilities blocked. All <+15% → no trail tightening. No position at -7% cut. DGX trail ratcheted (HWM $264.28 → stop $237.852). Stop cushions: RTX ~4.8% (tightest), TGT ~8.4%, DGX ~10.0%. 3 GTC stops resting. L-046: pre-market 1da29cd (13:13), market-open 60eaa21 (15:02, deliberate L-043 30-min wait), midday e79cf4d (16:11) all on origin/main, on time → no alert. Next catalysts: A AMC tonight; MDT/SJM/BURL/DLTR BMO Nov 24.
