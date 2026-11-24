@@ -3474,3 +3474,18 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 4.
 | TGT | 55 | $168.678 | $168.91 | +1.86% | +$12.76 (+0.14%) | $154.719 (10% trail, GTC 7d9b79c5, HWM $171.91) |
 
 **Notes:** 4th consecutive no-trade day (UNH skipped at gate — upgrade reaction erased by CMS MA Star Ratings proposal; L-043 triggered, max 1 entry). Week 21: 0/3 new trades. Broad risk-on tape (SPY +4.4% open window); all 3 names up ~2%. Day P&L vs Nov 20 logged EOD $95,604.80 (Alpaca last_equity $95,388.27; $216.53 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$4,043.83 (-4.04%) vs $100,000 start. 3 positions, 28.83% deployed / 71.17% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.63% (DGX), A&D 9.52% (RTX), Staples 9.68% (TGT); Utilities blocked. All <+15% → no trail tightening. No position at -7% cut. DGX trail ratcheted (HWM $264.28 → stop $237.852). Stop cushions: RTX ~4.8% (tightest), TGT ~8.4%, DGX ~10.0%. 3 GTC stops resting. L-046: pre-market 1da29cd (13:13), market-open 60eaa21 (15:02, deliberate L-043 30-min wait), midday e79cf4d (16:11) all on origin/main, on time → no alert. Next catalysts: A AMC tonight; MDT/SJM/BURL/DLTR BMO Nov 24.
+
+### Nov 24 — Market-Open (Day 101, Tuesday)
+
+**Operational Rule check:** Nov 23 has Market-Open + Midday + EOD ✓ (60eaa21, e79cf4d, 11b0136). Nov 24 pre-market 44a015d ✓. Routine fired 13:20 UTC (sched 13:15) — pre-open; waited to 15:01 UTC for L-043 SPY 30-min check.
+
+**Account (15:01 UTC):** Equity $96,374.48 | last_equity $95,903.67 | Cash $68,289.83 (70.9%) | `balance_asof` 2026-11-23. 3 positions (DGX 35 +9.01%; RTX 47 +1.59%; TGT 55 +3.34%). 3 GTC trails status new (DGX 30c44a67 $239.346/HWM $265.94; RTX 313ded6c $185.0535/HWM $205.615; TGT 7d9b79c5 $157.662/HWM $175.18). Daytrade count not returned; no day trades. Week 21: 0/3 used. 3/6. ~29.1% deployed.
+
+**Lessons compliance:** L-049 no Utilities names ✓; L-047 theme counts A (life-sci tools) 0 / BBY (electronics retail) 0 held ✓; L-045 per-name pass/fail below ✓; L-043/gate throttle **triggered** (HMM Bear/High-Vol 100%, VIX 29.05) — SPY first 30 min (IEX 1-min) open $715.30 / hi $720.89 / lo $712.165 / 15:00 close $719.64 vs Nov 23 close $722.56 → **entire window below prior close ✗** → 0 entries allowed.
+
+**Buy gate (15:01 UTC):**
+- **A — SKIP (gate-fail: Bear/High-Vol SPY 30-min check).** Catalyst FQ4 beat + FY27 guide above cons (AMC Nov 23, two-source ✓). Chase: catalyst Nov 23 AMC, base Nov 23 close $175.97, 30-min bars open $186.245 / hi $187.52 / lo $182.535 / last $184.78 = +5.01% (<15%) ✓; quote wide ($175.75/$194.69). Other checks would pass (HC 2 post-fill, ~19% eq; theme 0). Skip px $184.78. Open scoreboard row 2026-11-20 → no new row.
+- **BBY — SKIP (gate-fail: Bear/High-Vol SPY 30-min check; also reaction faded).** Q3 beat + FY27 raise today (two-source ✓). Base Nov 23 close $97.01; 30-min bars open $99.425 / hi $100.59 / lo $96.28 / last $96.765 = -0.25% (beat reaction erased). Skip px $96.765. Open scoreboard row 2026-11-24 → no new row.
+- **BURL** watch only (guide trim); **DELL** (AMC today) / **DE** (BMO Nov 25) → Nov 25 hard-checks.
+
+No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 5.
