@@ -3505,3 +3505,14 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 5.
 **STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $158.103/HWM $175.67; DGX 30c44a67 (10%) $240.003/HWM $266.67; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~29.2% deployed — well below 75-85% band; 3/6, 3 open slots. Week 21: 0/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 24 — EOD Snapshot (Day 101, Tuesday)
+**Portfolio:** $96,513.72 | **Cash:** $68,289.83 (70.76%) | **Day P&L:** +$557.55 (+0.58%) | **Phase P&L:** -$3,486.28 (-3.49%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $266.995 | +1.47% | +$844.38 (+9.93%) | $241.533 (10% trail, GTC 30c44a67, HWM $268.37) |
+| RTX | 47 | $193.34 | $196.655 | +0.97% | +$155.81 (+1.72%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $175.2051 | +4.17% | +$358.99 (+3.87%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
+
+**Notes:** 5th consecutive no-trade day (A and BBY skipped at gate — L-043 SPY 30-min window fully below prior close → 0 entries; BBY reaction also faded). Week 21: 0/3 new trades. TGT +4.2% on retail peer read-through (BBY/DLTR beats). Day P&L vs Nov 23 logged EOD $95,956.17 (Alpaca last_equity $95,903.67; $52.50 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,486.28 (-3.49%) vs $100,000 start. 3 positions, 29.24% deployed / 70.76% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.68% (DGX), A&D 9.58% (RTX), Staples 9.98% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +9.93% closest). No position at -7% cut. Trails ratcheted: DGX (HWM $268.37 → stop $241.533), TGT (HWM $176.73 → stop $159.057). Stop cushions: RTX ~5.9% (tightest), TGT ~9.2%, DGX ~9.5%. 3 GTC stops resting. L-046: pre-market 44a015d (13:12), market-open 2767520 (15:02, deliberate L-043 30-min wait), midday 99389d7 (16:11) all on origin/main, on time → no alert. Next catalysts: DELL AMC tonight; DE BMO Nov 25.
