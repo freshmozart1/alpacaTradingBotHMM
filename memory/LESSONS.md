@@ -328,3 +328,7 @@ than 10 sessions are pruned.
 | 2026-11-23 | SJM | HOLD — stall-breaker refresh add (Staples/packaged foods), FQ2 BMO Nov 24 hard-dated, no catalyst yet | 133.68 | | |
 | 2026-11-23 | UNH | HOLD pre-market — stall-breaker refresh add (HC/managed care), TD Cowen Hold→Buy PT $455 dated Nov 20, single-source (WebSearch unconfirmed); market-open hard-check, entry ≤$355 / -7% cut / target ~$398 | 340.03 | | |
 | 2026-11-23 | BURL | HOLD — stall-breaker refresh add (Disc/off-price), Q3 BMO Nov 24 hard-dated, no catalyst yet | 245.43 | | |
+| 2026-11-24 | BBY | HOLD pre-market — stall-breaker refresh add (Disc, leader), Q3 FY27 beat + FY27 guide raise today (two-source: Perplexity + CNBC/8-K); alternate market-open hard-check, entry ≤$106 / -7% cut / target +15% | 97.01 | | |
+| 2026-11-24 | DELL | HOLD — stall-breaker refresh add (Tech), FQ3 AMC today hard-dated, no catalyst yet; Nov 25 hard-check | 335.46 | | |
+| 2026-11-24 | DE | HOLD — stall-breaker refresh add (Industrials), FQ4 BMO Nov 25 hard-dated, no catalyst yet | 633.255 | | |
+| 2026-11-24 | DKS | HOLD — chase skip (Disc), Q3 beat + FY EPS raise Nov 24 (Perplexity), pre-mkt +16.40% vs Nov 23 base $133.58 ≥15% bar; skip px $155.49 | 133.58 | | |
