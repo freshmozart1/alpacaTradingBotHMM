@@ -3489,3 +3489,19 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 4.
 - **BURL** watch only (guide trim); **DELL** (AMC today) / **DE** (BMO Nov 25) → Nov 25 hard-checks.
 
 No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 5.
+
+### Nov 24 — Midday Scan (Day 101, Tuesday)
+
+**Run:** fired 16:10 UTC (sched 16:07). Equity $96,407.54 | Cash $68,289.83 (70.8%).
+
+**STEP 3 (cut losers):** None ≤ -7% (min RTX +1.17%; L-044 ✓). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +9.04%) — no change.
+
+**STEP 5 (thesis check):** DGX $264.82 +9.04% (+0.65% day), intact, cushion ~9.4%. RTX $195.60 +1.17% (+0.43% day), intact, cushion ~5.4% (tightest). TGT $175.56 +4.08% (+4.38% day), holiday read-through from BBY/DLTR beats per pre-market thesis, intact, cushion ~9.9%. SPY opened below prior close; no thesis breaks → no cuts.
+
+**STEP 6 (research):** TGT +4.4% has plausible cause (retail peer beats, Black Friday event) and is favorable → no Perplexity query, no RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $158.103/HWM $175.67; DGX 30c44a67 (10%) $240.003/HWM $266.67; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~29.2% deployed — well below 75-85% band; 3/6, 3 open slots. Week 21: 0/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
