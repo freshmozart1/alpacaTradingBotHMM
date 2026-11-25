@@ -3531,3 +3531,14 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 5.
 - **DELL** watch only (single-source, XLK weakest); open row 2026-11-24 → no new row.
 
 No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
+
+### Nov 25 — EOD Snapshot (Day 102, Wednesday)
+**Portfolio:** $96,211.11 | **Cash:** $68,289.83 (70.98%) | **Day P&L:** -$302.61 (-0.31%) | **Phase P&L:** -$3,788.89 (-3.79%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $266.235 | +0.24% | +$817.78 (+9.62%) | $241.533 (10% trail, GTC 30c44a67, HWM $268.37) |
+| RTX | 47 | $193.34 | $195.44 | +0.06% | +$98.70 (+1.09%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $171.225 | -2.75% | +$140.09 (+1.51%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
+
+**Notes:** 6th consecutive no-trade day (A and BBY skipped at gate — L-043 SPY 30-min window fully below prior close → 0 entries; DELL watch only). Week 21: 0/3 new trades. Broad risk-off tape (SPY ~-2.9% midday, VIX >30); TGT gave back Nov 24 peer read-through, DGX/RTX flat — book outperformed SPY. Day P&L vs Nov 24 logged EOD $96,513.72 (Alpaca last_equity $96,449.99; $63.73 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,788.89 (-3.79%) vs $100,000 start. 3 positions, 29.02% deployed / 70.98% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.69% (DGX), A&D 9.55% (RTX), Staples 9.79% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +9.62% closest). No position at -7% cut. No trail ratchets today. Stop cushions: RTX ~5.3% (tightest), TGT ~7.1%, DGX ~9.3%. 3 GTC stops resting. L-046: pre-market efc6a47 (13:12) and market-open 66df5a7 (15:01) on origin/main ✓; **midday 4dc8ce2 (16:10, on time) left off-main on branch claude/dreamy-curie-d0k7wf — unmerged → alerted** (no actions in it; no cuts). Next catalysts: DE (reported BMO today) for pre-market review; market closed Nov 26 (Thanksgiving), half-day Nov 27.
