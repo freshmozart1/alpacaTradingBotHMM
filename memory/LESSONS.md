@@ -332,3 +332,6 @@ than 10 sessions are pruned.
 | 2026-11-24 | DELL | HOLD — stall-breaker refresh add (Tech), FQ3 AMC today hard-dated, no catalyst yet; Nov 25 hard-check | 335.46 | | |
 | 2026-11-24 | DE | HOLD — stall-breaker refresh add (Industrials), FQ4 BMO Nov 25 hard-dated, no catalyst yet | 633.255 | | |
 | 2026-11-24 | DKS | HOLD — chase skip (Disc), Q3 beat + FY EPS raise Nov 24 (Perplexity), pre-mkt +16.40% vs Nov 23 base $133.58 ≥15% bar; skip px $155.49 | 133.58 | | |
+| 2026-11-25 | ANF | HOLD — chase skip (Disc), Q3 beat + FY raise Nov 24 (Perplexity), Nov 24 close +19.88% vs Nov 23 base $140.28 ≥15% bar; skip px $168.165 (Nov 24 close, no pre-mkt print) | 168.165 | | |
+| 2026-11-25 | KSS | HOLD — chase skip (Disc), Q3 beat + FY raise Nov 24 (one-off-heavy EPS, Perplexity), Nov 24 close +19.52% vs Nov 23 base $21.21 ≥15% bar; skip px $25.35 (Nov 24 close) | 25.35 | | |
+| 2026-11-25 | EMBC | HOLD — chase skip (HC), FQ4 beat Nov 24 BMO (Perplexity), Nov 24 close +40.35% vs Nov 23 base $5.75 ≥15% bar; skip px $8.07 (Nov 24 close) | 8.07 | | |

@@ -5818,3 +5818,63 @@ Week 21: 0/3 used. 3/6. ~28.9% deployed. Gate throttle: max 1 entry today.
 
 ### Decision
 **HOLD pre-market.** A flagged for market-open hard-check (BBY alternate; 1 entry max; L-043 SPY 30-min > $722.56; positive bars needed). DELL/DE to Nov 25. No ClickUp (nothing urgent).
+
+## 2026-11-25 — Pre-market Research
+
+On-time run (fired 13:08 UTC). Data 13:08-13:30 UTC.
+
+### Account
+- Equity: $96,582.64 | last_equity $96,449.99 | Cash: $68,289.83 (70.71%) | Buying power: $352,379.19 (margin, effective) | `balance_asof` 2026-11-24 ✓.
+- Position MV: $28,292.81 (DGX 35, RTX 47, TGT 55) — **29.29% deployed (below 75-85% band)**. 3 GTC trailing stops, status new: DGX 30c44a67 (10%) $241.533/HWM $268.37; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $159.057/HWM $176.73. Expiries Jan 15-Feb 16 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 102, Wednesday, **Week 21: 0/3 used**. 3/6, 3 open slots. **No-trade streak 5.** Holiday week: Thu Nov 26 closed, Fri Nov 27 early close.
+- Market regime (HMM, SPY 2y daily): **Bear/High-Vol, confidence 74.5%** (down from 100%), days_in_regime 18 (500 obs). Advisory only.
+- Held (`positions` marks): DGX $269.50 +10.97% (10.4% to stop); RTX $194.53 +0.62% (4.9% to stop, tightest; -7% cut $179.81); TGT $176.68 +4.74% (10.0%; -7% cut $156.87). None at -7%. No tighten triggers (<+15%; DGX closest).
+- Exposure: HC 9.77% (DGX); A&D 9.47% (RTX); Staples 10.06% (TGT).
+
+### Market Context
+- Perplexity: 23 queries, all exit 0 (sequential). No fallback.
+- WTI/Brent: **WTI $81.44 (-0.74%), Brent $91.02 (-0.42%)**. Not a repeat of Nov 24 $80.10/$88.78. Dispersion <10%. USO Nov 24 $135.45 (+1.55%).
+- S&P futures: 7,156.50 -0.85%. SPY pre-mkt (IEX 13:10) **$705.10 vs Nov 24 close $718.91 = -1.92%** (operative). Nov 24 SPY -0.51%.
+- VIX: **30.78 (+16.8%) vs prior close 26.36** (Nov 24 pre-mkt 29.05 — not a repeat). **≥25.** 10y ~4.46% pressuring AI/long-duration.
+- Today: core PCE (Oct), GDP Q3 2nd est, jobless claims (cons 201k), durable goods, new home sales, Beige Book. No CPI/PPI/FOMC/jobs (CPI Dec 10, FOMC Dec 9, jobs Dec 4). Thin pre-holiday liquidity.
+- Earnings today BMO: **DE**, LI, BZ, NNOX. AMC: none major. DELL reported Nov 24 AMC. Next: Dec 1 MRVL/CRDO/NTAP/OKTA AMC, CPRT BMO; Dec 2 CRM/SNOW AMC; Nov 30 RBRK AMC.
+- Sector momentum: Perplexity YTD (Nov 20, mixed-date) → `bars` operative. 5-sess Nov 17→24: **XLY +0.50%, XLP +0.44%**, XLU -0.05% (blocked, L-049), XLV -0.28%, XLRE -0.32%, XLC -0.76%, XLB -1.29%, XLF -1.66%, SPY -1.84%, XLI -1.89%, XLK -3.81%, XLE -4.61%. Leaders: Disc, Staples; HC 3rd (ex-Utilities).
+- Held tickers:
+  - **DGX**: Nov 24 close $265.69 (+0.95%), new high; Mizuho Buy maintained (dateless); State Street 5.48M sh sale overhang. Thesis intact.
+  - **RTX**: Bernstein PT $214→$231 Mkt Perform (dateless, excluded); Q3 beat/raise, $340B backlog; Navy SLCM-N selection. Thesis intact; tightest cushion.
+  - **TGT**: Nov 24 close $176.00 (+4.65%), 52-wk high on retail peer read-through; Truist Hold $172 — now above several PTs (valuation risk). Thesis intact.
+
+### Stall-Breaker
+**FIRED** (streak 5 ≥ 3). Dropped DE, BURL; added ANF, KSS, EMBC as chase-excluded scoreboard rows (no gate-eligible fresh add). Screen: top-2 5-sess sectors Disc (XLY) + Staples (XLP) + 3rd HC (XLV; prior cycle no gate-clear). Disc leg: ANF/KSS/DKS/DLTR all ≥15% or theme-blocked. Staples leg: **empty** — no dated catalyst (TSN/WMT stale, PEP/MDLZ/KDP/MNST valuation/dateless BofA picks). HC leg: EMBC chase-excluded; UNH/HUM TD Cowen upgrades dated Nov 20 (stale >2 sessions). Each cross-checked via `bars`.
+
+### Lessons Check
+- L-049 (Utilities blocked to Dec 4) — no Utilities names screened/added. Complied.
+- L-048 (score skips vs SPY) — skip check logs SPY reference. Complied.
+- L-047 (1 position per theme while Bear/High-Vol/VIX≥25) — **active (HMM 74.5%, VIX 30.78)**. A (life-sci tools) 0 held; BBY (electronics retail) 0 held; DELL (AI hardware) 0 held. Complied.
+- L-046 (routine commits on main) — `git log origin/main`: Nov 24 pre-market 44a015d (13:12), market-open 2767520 (15:02), midday 99389d7 (16:11), EOD 74eff43 (20:15) → no alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 4 names / 3 sectors: A (HC, Nov 23 AMC, in 2-session window), BBY (Disc, Nov 24 BMO), DELL (Tech, Nov 24 AMC — first reaction today), DE (Industrials, BMO today — miss, dropped). Calendar scan: holiday week thin; next hard dates Nov 30 (RBRK) / Dec 1-2. Complied.
+- Gate rule (Bear/High-Vol throttle) — **TRIGGERED**: max 1 new entry, only after SPY first 30 min trades above Nov 24 close **$718.91** (pre-mkt -1.92% → likely blocks).
+- Operational: GTC expiries none within 5 sessions ✓. Gap check: Nov 24 Market-Open/Midday/EOD ✓. Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+Quotes stale/wide (Nov 24 21:00 IEX) → Nov 24 bars close vs Ref (SPY Nov 24 -0.51%): A +4.62%, BBY +2.74%, BURL -0.48%, DE -3.15%, DELL -12.37%, DKS +14.69% (vs skip px $155.49: -1.47%) — A/BBY skips look wrong so far (gate-blocked by SPY 30-min rule, both rallied vs SPY); DELL/DE/BURL right; DKS chase skip right from skip px.
+
+### Watchlist Changes
+- DROP: **DE** (FQ4 EPS $3.89 vs $4.03 miss, PPA sales -15%, cautious FY27 NI $4.50-5.25B + pension charge risk, pre-mkt down — Perplexity); **BURL** (FY EPS guide trimmed, Q4 guide below cons; catalyst aging).
+- Chase-excluded (scoreboard rows, not carried): **ANF** (Q3 Nov 24 beat/raise; base Nov 23 $140.28 → Nov 24 $168.165 = **+19.88%**), **KSS** (Q3 Nov 24 beat/raise, one-off-heavy EPS; base $21.21 → $25.35 = **+19.52%**), **EMBC** (FQ4 Nov 24 BMO beat; base $5.75 → $8.07 = **+40.35%**). Skip px = Nov 24 close (no pre-mkt IEX print).
+- Carry: A, BBY, DELL.
+
+### Trade Ideas
+Week 21: 0/3 used. 3/6. ~29.3% deployed. Gate throttle: max 1 entry today.
+1. **A** (HC/life-sci tools; FQ4 Nov 23 AMC beat + FY27 guide above cons — two-source ✓ (Perplexity + Agilent IR/8-K, logged Nov 24); within 2-session window; bars: Nov 24 close $183.525 > pre-catalyst Nov 23 close $175.97 ✓; chase: catalyst Nov 23, base Nov 23 close $175.97, realized **+4.29%** <15%, 15% bar $202.37) — **fully-specified market-open hard-check:** entry ≤$190 limit, only after SPY first 30 min > $718.91; size ~$9,120 (48 sh, ~9.4% eq); cut -7% (~$176.70 at $190); 10% GTC trail; target +15% (~$218.50, ≥2:1). Post-fill HC count 2 (DGX+A) ~19.2% eq (<40%); life-sci tools theme 0 held (L-047 ✓). Ex-div/analyst: check at open. Risk: XLV -0.28% 5-sess; $0.07 tariff-refund EPS.
+2. **BBY** (Disc, sector leader; Q3 Nov 24 beat/raise, two-source ✓; bars Nov 24 $99.665 > Nov 23 $97.01 ✓; chase: base $97.01, realized +2.74%, 15% bar $111.56) — alternate: entry ≤$106 limit, ~$9,010 (85 sh, ~9.3% eq), cut -7% / 10% trail / target +15%. Post-fill Disc count 1, theme 0.
+3. **DELL** (Tech; FQ3 Nov 24 AMC blowout: rev $54.94B vs $49.3B, EPS $9.45 vs $6.59, FY27 guide $202B/$29.68, +$25B buyback — single-source; base Nov 23 $335.46, Nov 24 close $293.98 = -12.37% pre-print; ~+4% AH) — watch only: XLK weakest 5-sess (-3.81%), AI-hardware theme vol, needs two-source + positive bars.
+- New scoreboard rows: ANF, KSS, EMBC (A/BBY/DELL already on board).
+
+### Risk Factors
+- HMM Bear/High-Vol 74.5%, VIX 30.78 (+17%); SPY pre-mkt -1.9% → L-043 30-min gate likely blocks.
+- Core PCE/GDP/claims 8:30-10:00 ET; 10y ~4.46%; AI-financing jitters; thin pre-holiday tape (Thu closed, Fri half-day).
+- RTX cushion 4.9% (stop $185.05) — tightest; TGT above several PTs after +4.7% day.
+
+### Decision
+**HOLD pre-market.** A flagged for market-open hard-check (BBY alternate; 1 entry max; L-043 SPY 30-min > $718.91; positive bars needed). DELL watch-only. No ClickUp (nothing urgent).
