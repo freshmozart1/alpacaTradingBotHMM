@@ -3531,3 +3531,19 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 5.
 - **DELL** watch only (single-source, XLK weakest); open row 2026-11-24 → no new row.
 
 No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
+
+### Nov 25 — Midday Scan (Day 102, Wednesday)
+
+**Run:** fired 16:09 UTC (sched 16:07). Equity $96,230.71 | Cash $68,289.83 (71.0%).
+
+**STEP 3 (cut losers):** None ≤ -7% (min RTX +0.85%; L-044 ✓). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +9.46%) — no change.
+
+**STEP 5 (thesis check):** SPY $698.2 (IEX 16:10) vs Nov 24 close $718.91 = -2.9% (broad risk-off, VIX ≥30). DGX $265.84 +9.46% (+0.09% day), intact, cushion ~9.1%. RTX $194.975 +0.85% (-0.18% day), intact, cushion ~5.1% (tightest). TGT $172.23 +2.11% (-2.18% day), giveback of Nov 24 peer read-through in line with tape, no stock-specific news, intact, cushion ~7.6%. All outperforming SPY intraday; no thesis breaks → no cuts.
+
+**STEP 6 (research):** No sharp unexplained move (TGT -2.2% < SPY -2.9%) → no Perplexity query, no RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 (10%) $159.057/HWM $176.73; DGX 30c44a67 (10%) $241.533/HWM $268.37; RTX 313ded6c (10%) $185.0535/HWM $205.615. ~29.0% deployed — well below 75-85% band; 3/6, 3 open slots. Week 21: 0/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
