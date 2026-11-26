@@ -3542,3 +3542,19 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
 | TGT | 55 | $168.678 | $171.225 | -2.75% | +$140.09 (+1.51%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
 
 **Notes:** 6th consecutive no-trade day (A and BBY skipped at gate — L-043 SPY 30-min window fully below prior close → 0 entries; DELL watch only). Week 21: 0/3 new trades. Broad risk-off tape (SPY ~-2.9% midday, VIX >30); TGT gave back Nov 24 peer read-through, DGX/RTX flat — book outperformed SPY. Day P&L vs Nov 24 logged EOD $96,513.72 (Alpaca last_equity $96,449.99; $63.73 drift — logged value used; marks 20:14 UTC, pre-close). Phase P&L -$3,788.89 (-3.79%) vs $100,000 start. 3 positions, 29.02% deployed / 70.98% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.69% (DGX), A&D 9.55% (RTX), Staples 9.79% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +9.62% closest). No position at -7% cut. No trail ratchets today. Stop cushions: RTX ~5.3% (tightest), TGT ~7.1%, DGX ~9.3%. 3 GTC stops resting. L-046: pre-market efc6a47 (13:12) and market-open 66df5a7 (15:01) on origin/main ✓; **midday 4dc8ce2 (16:10, on time) left off-main on branch claude/dreamy-curie-d0k7wf — unmerged → alerted** (no actions in it; no cuts). Next catalysts: DE (reported BMO today) for pre-market review; market closed Nov 26 (Thanksgiving), half-day Nov 27.
+
+### Nov 26 — Midday Scan (Day 103, Thursday — market closed, Thanksgiving)
+
+**Run:** fired 16:08 UTC. Market closed (holiday); prices = Nov 25 close, change_today 0.
+
+**STEP 3 (cut losers):** None ≤ -7% (min RTX +1.47%). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +9.38%) — no change.
+
+**STEP 5 (thesis check):** DGX $265.64 +9.38%, RTX $196.19 +1.47%, TGT $172.22 +2.10% — no session, no news-driven breaks → no cuts.
+
+**STEP 6 (research):** No session → no Perplexity query, no RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 $159.057/HWM $176.73; DGX 30c44a67 $241.533/HWM $268.37; RTX 313ded6c $185.0535/HWM $205.615. 3/6. Week 21: 0/3 used. Half-day Nov 27.
+
+**STEP 8 (notify):** No action → no ClickUp.
