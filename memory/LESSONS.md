@@ -335,3 +335,7 @@ than 10 sessions are pruned.
 | 2026-11-25 | ANF | HOLD — chase skip (Disc), Q3 beat + FY raise Nov 24 (Perplexity), Nov 24 close +19.88% vs Nov 23 base $140.28 ≥15% bar; skip px $168.165 (Nov 24 close, no pre-mkt print) | 168.165 | | |
 | 2026-11-25 | KSS | HOLD — chase skip (Disc), Q3 beat + FY raise Nov 24 (one-off-heavy EPS, Perplexity), Nov 24 close +19.52% vs Nov 23 base $21.21 ≥15% bar; skip px $25.35 (Nov 24 close) | 25.35 | | |
 | 2026-11-25 | EMBC | HOLD — chase skip (HC), FQ4 beat Nov 24 BMO (Perplexity), Nov 24 close +40.35% vs Nov 23 base $5.75 ≥15% bar; skip px $8.07 (Nov 24 close) | 8.07 | | |
+| 2026-11-26 | SNY | HOLD — chase skip (HC/pharma), Insmed $41B acquisition Nov 24 (Perplexity, bars-confirmed), Nov 25 close +16.23% vs Nov 23 base $46.77 ≥15% bar; skip px $54.36 (Nov 25 close) | 54.36 | | |
+| 2026-11-26 | ECL | HOLD — stall-breaker refresh add (Materials, leader), PT raises/Investor Day Nov 13-19 stale (>2 sessions), no fresh catalyst | 308.81 | | |
+| 2026-11-26 | DD | HOLD — stall-breaker refresh add (Materials, leader), BMO top pick Nov 19 stale (>2 sessions), no fresh catalyst | 153.60 | | |
+| 2026-11-26 | RBRK | HOLD — new watchlist add (Tech), FQ3 AMC Nov 30 hard-dated, no catalyst yet (L-045 pipeline); XLK weakest | 107.945 | | |

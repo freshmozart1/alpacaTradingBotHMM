@@ -5878,3 +5878,65 @@ Week 21: 0/3 used. 3/6. ~29.3% deployed. Gate throttle: max 1 entry today.
 
 ### Decision
 **HOLD pre-market.** A flagged for market-open hard-check (BBY alternate; 1 entry max; L-043 SPY 30-min > $718.91; positive bars needed). DELL watch-only. No ClickUp (nothing urgent).
+
+## 2026-11-26 — Pre-market Research
+
+On-time run (fired 13:07 UTC). Data 13:07-13:30 UTC. **US markets CLOSED (Thanksgiving)** — no session today; research targets Fri Nov 27 half-day (close 18:00 UTC / 1pm ET).
+
+### Account
+- Equity: $96,280.26 | last_equity $96,280.26 | Cash: $68,289.83 (70.93%) | Buying power: $351,532.52 (margin, effective) | `balance_asof` 2026-11-25 ✓ (holiday).
+- Position MV: $27,990.43 (DGX 35, RTX 47, TGT 55) — **29.07% deployed (below 75-85% band)**. 3 GTC trailing stops, status new: DGX 30c44a67 (10%) $241.533/HWM $268.37; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $159.057/HWM $176.73. Expiries Jan 15-Feb 16 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 103 (holiday), Thursday, **Week 21: 0/3 used**. 3/6, 3 open slots. **No-trade streak 6.**
+- Market regime (HMM, SPY 2y daily): **Mixed/Uncertain, confidence 60.2%** (from Bear/High-Vol 74.5%), 500 obs. Advisory only.
+- Held (`positions` marks, Nov 25 close): DGX $265.64 +9.38% (9.1% to stop); RTX $196.19 +1.47% (5.7% to stop, tightest; -7% cut $179.81); TGT $172.22 +2.10% (7.6% to stop; -7% cut $156.87). None at -7%. No tighten triggers (<+15%).
+- Exposure: HC 9.66% (DGX); A&D 9.58% (RTX); Staples 9.84% (TGT).
+
+### Market Context
+- Perplexity: 23 queries, all exit 0. No fallback.
+- WTI/Brent: **WTI $83.91 (+0.27%), Brent $94.80 (+0.20%)** — timestamp "9:40 p.m. ET Nov 26" is in the future → **suspect**; direction cross-checked: USO Nov 25 close $139.89 (+3.28%) — oil up on Hormuz tanker / Saudi refinery headlines (Perplexity). Not a repeat of Nov 25 $81.44/$91.02. Dispersion <10%.
+- S&P futures: **7,223.25 +0.38%** (06:06 ET). SPY Nov 25 close **$716.735 (-0.30%)**; quote stale (Nov 25 21:00, wide).
+- VIX: Perplexity **26.84 (-5.1%) vs prior close 28.29** — **suspect** (Cboe closed today; print likely futures-implied). Operative: Nov 25 close ~28.29 → **≥25**. Not a repeat of logged 30.78.
+- Today: no US data (holiday). ECB minutes, French PPI. Jobless claims ran Nov 25. Next: jobs Dec 4, FOMC Dec 9, CPI Dec 10.
+- Earnings: today NAT only (US). Next: Nov 30 RBRK AMC; Dec 1 CPRT/NIO BMO, CRWD/MRVL/MDB/NTAP/OKTA/CRDO AMC; Dec 2 CRM/SNOW/AEO.
+- Sector momentum: Perplexity YTD (Nov 20, partial: Energy +34.8%, Staples +17.8%, HC +14.3%, Materials +5.4%) → `bars` operative. 5-sess Nov 18→25: **XLB +1.47%, XLV +1.34%, XLP +1.20%**, XLRE +0.53%, XLU +0.15% (blocked, L-049), XLF +0.11%, XLC -0.28%, XLE -0.70%, XLI -1.09%, XLY -1.43%, SPY -1.86%, XLK -4.84%. Leaders: Materials, HC; Staples 3rd. Disc rolled from 1st to 10th.
+- Held tickers:
+  - **DGX**: no new catalyst; Q3 beat/raise thesis; minor insider 10b5 sale (1k sh). Intact.
+  - **RTX**: no dated catalyst; $340B backlog, $2.53B P&W Navy award (dateless), Bernstein PT $231 (dateless, excluded — logged Nov 25). Defense-budget headline risk. Intact; tightest cushion.
+  - **TGT**: Black Friday test tomorrow (stores reopen 6am); Q3 quality ($300M tariff refunds) debate. Intact.
+
+### Stall-Breaker
+**FIRED** (streak 6 ≥ 5). Dropped A, DELL; added SNY, ECL, DD, RBRK. Screen: top-2 5-sess Materials (XLB) + HC (XLV) + 3rd Staples (XLP). Materials: ECL (Nov 13-19 PT raises/Investor Day — stale), DD (BMO top pick Nov 19 — stale), MP (no dated catalyst, not added). HC: **SNY** (Insmed $41B acquisition Nov 24 — chase-excluded), INSM (target, $175 cash deal cap → no upside, not added). Staples: **empty again** (PEP/GIS/KMB/CL no dated catalyst; GIS earnings Dec 16) — 2nd consecutive empty Staples leg → next refresh loosens liquidity/market-cap floor for Staples. Each cross-checked via `bars`.
+
+### Lessons Check
+- L-049 (Utilities blocked to Dec 4) — no Utilities names screened/added. Complied.
+- L-048 (score skips vs SPY) — skip check logs SPY reference. Complied.
+- L-047 (1 position per theme while Bear/High-Vol/VIX≥25) — **active (VIX ~28.3 ≥25; HMM now Mixed 60%)**. BBY (electronics retail) 0 held; SNY (pharma) 0; ECL/DD (specialty chem) 0. Complied.
+- L-046 (routine commits on main) — `git log origin/main`: Nov 25 pre-market efc6a47 (13:12), market-open 66df5a7 (15:01), EOD 6767032 (20:15) ✓; **midday 4dc8ce2 still off-main on claude/dreamy-curie-d0k7wf** — already alerted Nov 25 EOD (1 incident / 1 alert) → no duplicate alert. Complied.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 3 names / 3 sectors: BBY (Disc, Nov 24 BMO, in window to Nov 27), SNY (HC, Nov 24 deal, in window — chase-excluded), RBRK (Tech, AMC Nov 30 = 2nd session). Calendar scan: holiday week; Nov 27 half-day no notable reports; Dec 1 CPRT BMO is session 3. Complied.
+- Gate rule (Bear/High-Vol/VIX≥25 throttle) — **TRIGGERED (VIX ≥25)**: max 1 new entry Nov 27, only after SPY first 30 min trades above Nov 25 close **$716.735** (futures +0.38%).
+- Operational: GTC expiries none within 5 sessions ✓. Gap check: Nov 25 Market-Open/Midday/EOD TRADE-LOG ✓ (midday commit off-main). Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+Nov 25 bars close vs Ref (SPY Nov 25 -0.30%): BBY +5.70%, ANF +5.21%, KSS +5.44%, A +1.66%, EMBC -1.80%, DELL -11.46% — BBY/ANF/KSS skips look wrong so far (BBY gate-blocked by SPY 30-min rule; ANF/KSS chase); A mildly wrong; DELL/EMBC right.
+
+### Watchlist Changes
+- DROP: **A** (Nov 23 catalyst exits 2-session window on Nov 27; Nov 25 -2.84% faded); **DELL** (XLK weakest -4.84% 5-sess, AI-hardware supply-chain worries post-HPE, single-source; next event UBS conf Dec 1).
+- Chase-excluded (scoreboard row, not carried): **SNY** (Insmed acquisition Nov 24 — Perplexity, bars-confirmed; base Nov 23 $46.77 → Nov 25 $54.36 = **+16.23%** ≥15%; skip px $54.36).
+- ADD: **ECL** (Materials; PT raises Nov 13-19 + Investor Day 2030 targets — stale, no fresh catalyst; watch); **DD** (Materials; BMO top pick Nov 19 — stale; watch); **RBRK** (Tech; FQ3 AMC Nov 30 hard-dated, no catalyst yet; XLK weakest — L-045 pipeline).
+- Carry: **BBY**.
+
+### Trade Ideas
+Week 21: 0/3 used. 3/6. ~29.1% deployed. Gate throttle: max 1 entry Nov 27 (half-day).
+1. **BBY** (Disc; Q3 FY27 beat + FY27 guide raise Nov 24 — two-source ✓ (Perplexity + CNBC/8-K, logged Nov 24); within 2-session window on Nov 27 (Nov 24, 25); bars: Nov 25 close $102.54 > pre-catalyst Nov 23 close $97.01 ✓; chase: catalyst Nov 24, base Nov 23 $97.01, realized **+5.70%** <15%, 15% bar $111.56) — **fully-specified Nov 27 market-open hard-check:** entry ≤$106 limit, only after SPY first 30 min > $716.735; size ~$9,010 (85 sh, ~9.4% eq); cut -7% (~$98.58 at $106); 10% GTC trail; target +15% (~$121.90, ≥2:1). Post-fill Disc count 1 (~9.4% eq <40%); electronics-retail theme 0 (L-047 ✓). Ex-div: $0.96, record Dec 15 (ex ~Dec 15, outside week) — log at open. Risk: XLY 5-sess -1.43% (sector momentum rolled over); Q4 comp guide decel; half-day thin tape.
+2. **ECL / DD** (Materials, sector leader) — watch only: no catalyst dated within 2 sessions (Nov 19 latest) → not gate-eligible.
+3. **RBRK** (Nov 30 AMC) — Dec 1 hard-check if print clears.
+- New scoreboard rows: SNY, ECL, DD, RBRK (BBY already on board).
+
+### Risk Factors
+- VIX ~28 (≥25) → L-043 throttle; HMM eased to Mixed/Uncertain 60%. Futures +0.4%.
+- Half-day Nov 27: thin liquidity, 30-min gate eats ~1/7 of session; Black Friday read for TGT/BBY.
+- Oil up on Hormuz/Saudi refinery headlines (inflation/geopolitical); tariff hikes headline risk; AI-valuation jitters (NVDA -3.9%).
+- RTX cushion 5.7% (tightest); TGT 7.6%.
+
+### Decision
+**HOLD (market closed).** BBY flagged for Nov 27 market-open hard-check (1 entry max; SPY 30-min > $716.735; ≤$106). No ClickUp (nothing urgent; Nov 25 midday off-main already alerted).
