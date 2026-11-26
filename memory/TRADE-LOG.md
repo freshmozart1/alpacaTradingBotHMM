@@ -3558,3 +3558,14 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
 **STEP 7 (verify):** `positions`: DGX 35, RTX 47, TGT 55. `orders`: 3 GTC trails status new — TGT 7d9b79c5 $159.057/HWM $176.73; DGX 30c44a67 $241.533/HWM $268.37; RTX 313ded6c $185.0535/HWM $205.615. 3/6. Week 21: 0/3 used. Half-day Nov 27.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 26 — EOD Snapshot (Day 103, Thursday — market closed, Thanksgiving)
+**Portfolio:** $96,280.26 | **Cash:** $68,289.83 (70.93%) | **Day P&L:** +$69.15 (+0.07%) | **Phase P&L:** -$3,719.74 (-3.72%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $265.64 | 0.00% (holiday) | +$796.95 (+9.38%) | $241.533 (10% trail, GTC 30c44a67, HWM $268.37) |
+| RTX | 47 | $193.34 | $196.19 | 0.00% (holiday) | +$133.95 (+1.47%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $172.22 | 0.00% (holiday) | +$194.81 (+2.10%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
+
+**Notes:** 7th consecutive no-trade day (market closed — Thanksgiving; no session, no market-open run). Week 21: 0/3 new trades. Day P&L +$69.15 is mark drift only: Nov 25 logged EOD $96,211.11 used 20:14 UTC pre-close marks; Alpaca final Nov 25 equity $96,280.26 (= last_equity; no session today). Phase P&L -$3,719.74 (-3.72%) vs $100,000 start. 3 positions, 29.07% deployed / 70.93% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.66% (DGX), A&D 9.58% (RTX), Staples 9.84% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +9.38% closest). No position at -7% cut. No trail ratchets. Stop cushions: RTX ~5.7% (tightest), TGT ~7.6%, DGX ~9.1%. 3 GTC stops resting. L-046: pre-market 95ffb2c (13:10) and midday 9c3ba4e (16:08) on origin/main ✓; no market-open run expected (holiday) → no alert. Next: half-day session Nov 27 (13:00 ET close) — Black Friday read for TGT.
