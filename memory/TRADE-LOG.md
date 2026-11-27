@@ -3604,3 +3604,15 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
 **STEP 7 (verify):** `positions`: DGX 35, HUM 22, RTX 47, TGT 55. `orders`: 4 GTC trails status new — HUM a28fe058 $364.9275/HWM $405.475; TGT 7d9b79c5 $159.057/HWM $176.73; DGX 30c44a67 $241.533/HWM $268.37; RTX 313ded6c $185.0535/HWM $205.615. 4/6. Week 21: 1/3 used.
 
 **STEP 8 (notify):** No action → no ClickUp.
+
+### Nov 27 — EOD Snapshot (Day 104, Friday — half-day, close 18:00 UTC)
+**Portfolio:** $96,081.79 | **Cash:** $59,361.57 (61.78%) | **Day P&L:** -$198.47 (-0.21%) | **Phase P&L:** -$3,918.21 (-3.92%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| DGX | 35 | $242.87 | $257.83 | -2.94% | +$523.50 (+6.16%) | $241.533 (10% trail, GTC 30c44a67, HWM $268.37) |
+| HUM | 22 | $405.83 | $405.46 | -0.26% | -$8.14 (-0.09%) | $366.84 (10% trail, GTC a28fe058, HWM $407.60) |
+| RTX | 47 | $193.34 | $198.10 | +0.97% | +$223.72 (+2.46%) | $185.0535 (10% trail, GTC 313ded6c, HWM $205.615) |
+| TGT | 55 | $168.678 | $172.10 | -0.07% | +$188.16 (+2.03%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
+
+**Notes:** Streak reset — trade(s) placed today (HUM 22 @ $405.83, KeyBanc upgrade; was 7 no-trade days). Week 21: 1/3 new trades. Half-day session; DGX -2.94% drove the day loss, RTX +0.97% partial offset, TGT flat on Black Friday read. Day P&L vs Nov 26 logged EOD $96,280.26 (= Alpaca last_equity; no drift). Phase P&L -$3,918.21 (-3.92%) vs $100,000 start. 4 positions, 38.22% deployed / 61.78% cash — **below 75-85% band**; 2 open slots. Sector: HC 18.67% (DGX 9.39% + HUM 9.28%), A&D 9.69% (RTX), Staples 9.85% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +6.16% closest). No position at -7% cut. HUM trail ratcheted (HWM $405.165→$407.60, stop $364.65→$366.84). Stop cushions: DGX ~6.3% (tightest), RTX ~6.6%, TGT ~7.6%, HUM ~9.5%. 4 GTC stops resting. L-046: pre-market 2c00f09 (13:11), market-open 0ae56c8 (15:02), midday 0513e4e (16:09) on origin/main ✓ → no alert. Next: Nov 30 Monday; RBRK (Nov 30 AMC) gate Dec 1.
