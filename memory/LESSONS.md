@@ -7,6 +7,41 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
 
 ## Active Lessons
 
+### L-052 — Pipeline weights the leading defensive sector in Bear/High-Vol
+- Date: 2026-11-27 | Source: WEEKLY-REVIEW 2026-11-27 (Staples skips
+  TSN +6.89% / ENR +14.98% / WMT +3.03% all missed while XLP led and
+  SPY fell -2.9% to -4.2% over the same windows)
+- Lesson: In a Bear/High-Vol tape, follow-through concentrated in the
+  leading defensive sector; pipeline was spread thin across laggards.
+- Directive: While HMM is Bear/High-Vol or VIX >= 25, every pre-market's
+  L-045-rule pipeline includes >=1 name from the top 5-session-momentum
+  sector, logged with that sector's 5-sess %. Process only — gate
+  unchanged.
+- Status: active | Review-by: 2026-12-11
+
+### L-051 — Score throttle-blocked skips as their own subset
+- Date: 2026-11-27 | Source: WEEKLY-REVIEW 2026-11-27 (Bear/High-Vol
+  throttle blocked A and BBY Nov 24-25; interim A -2.44% / BBY +7.56%
+  from skip px; S&P +5.6% week)
+- Lesson: The throttle's cost in V-shaped rebounds is unmeasured.
+- Directive: Tag every gate skip caused by the Bear/High-Vol/VIX>=25
+  throttle "[throttle]" with skip px in the Decision cell; each weekly
+  review reports the [throttle] subset's +5d % from skip px and its
+  missed:avoided ratio. Measurement only — throttle unchanged.
+- Status: active | Review-by: 2026-12-11
+
+### L-050 — Don't drop a day-1 fade inside its 2-session window
+- Date: 2026-11-27 | Source: WEEKLY-REVIEW 2026-11-27 (WMT dropped Nov
+  20 after Nov 19 close $126.04 < base $127.305; Nov 20 close $128.04
+  re-cleared base inside window; +5d +3.03% Ref / +5.63% from skip px)
+- Lesson: The 2-session catalyst window lets a faded name re-qualify;
+  dropping it after day 1 forfeits that.
+- Directive: Keep every fade-skipped earnings/catalyst name on the
+  watchlist through its full 2-session window; each market-open logs
+  criterion (b) (prior close vs pre-catalyst close) pass/fail per such
+  name before any drop. Process only — gate unchanged.
+- Status: active | Review-by: 2026-12-11
+
 ### L-049 — Utilities blocked after 2 consecutive failures; defined re-entry
 - Date: 2026-11-20 | Source: WEEKLY-REVIEW 2026-11-20 (NRG -7% cut Nov
   17 -$651.15, CEG trail stop Nov 19 -$141.05 → Utilities sector exit;
@@ -38,32 +73,6 @@ review retires/promotes/prunes (see weekly-review STEP 4.5).
   Tightening only.
 - Status: active | Review-by: 2026-12-04
 
-### L-046 — Verify routine commits on main at EOD; alert same session
-- Date: 2026-11-13 | Source: WEEKLY-REVIEW 2026-11-13 (Nov 10 midday
-  left on unmerged branch, noted at EOD, alerted next pre-market; Nov 13
-  pre-market missing at open, market-open fired ~2h late; supersedes
-  L-042: 4 incidents / 4 alerts over 2 weeks, 2 one session late)
-- Lesson: Gaps found at EOD were deferred to the next pre-market alert.
-- Directive: Every EOD runs `git log origin/main` for today's 4 routine
-  commits (pre-market, market-open, midday, EOD-in-progress); any
-  missing, off-main, or >30 min late run gets one ClickUp alert that
-  session, logged "alerted" in the EOD notes.
-- Status: active | Review-by: 2026-11-27
-
-### L-045 — Forward candidate pipeline while deployment <50%
-- Date: 2026-11-13 | Source: WEEKLY-REVIEW 2026-11-13 (deployment
-  28-38% all week; only 5 names reached a gate in 5 sessions; Nov 12-13
-  one candidate each, both failed; 1 weekly slot + 2 position slots
-  unused; -1.75% vs S&P on 62% cash)
-- Lesson: Under-deployment is candidate supply, not gate tightness
-  (scoreboard 8 avoided : 3 missed over 2 weeks).
-- Directive: While deployment <50%, every pre-market lists >=3 named
-  candidates from >=2 sectors, each with a hard-dated catalyst (earnings
-  / event) today or in the next 2 sessions; market-open logs pass/fail
-  per name. If <3 exist, log the calendar scan used. Process only — gate
-  unchanged.
-- Status: active | Review-by: 2026-11-27
-
 Template:
 
 ### L-NNN — <short title>
@@ -73,6 +82,15 @@ Template:
 - Status: active | Review-by: YYYY-MM-DD
 
 ## Retired Lessons
+
+- L-046, "Verify routine commits on main at EOD; alert same session",
+  retired 2026-11-27, promoted to a permanent Operational Rule after 2
+  straight weeks of compliance (Nov 13-27): every EOD checked; Nov 25
+  midday off-main (dreamy-curie-d0k7wf) alerted same session.
+- L-045, "Forward candidate pipeline while deployment <50%", retired
+  2026-11-27, promoted to a permanent Buy-Side Gate rule (process only)
+  after 2 straight weeks of compliance (Nov 16-27; 3-6 names / 2-4
+  sectors every pre-market); produced the HUM entry Nov 27.
 
 - L-044, "Execute a -7% breach the session it is found", retired
   2026-11-20, promoted to a permanent Sell-Side Rule after 2 straight
@@ -304,24 +322,19 @@ than 10 sessions are pruned.
 
 | Date | Ticker | Decision | Ref close | +5d % | Verdict |
 |------|--------|----------|-----------|-------|---------|
-| 2026-11-09 | CEG | HOLD pre-market — new watchlist add (Utilities/IPP), Q3 beat + FY26 guide raise today (Perplexity; WebSearch 2nd source unconfirmed), weak sector momentum (XLU -0.7% 5-sess); flagged for market-open hard-check, entry ≤$270 / -7% cut / target ~$324 | 249.77 | +11.20% | n/a — entered Nov 9 (trail stop -1.55%) |
-| 2026-11-09 | NRG | HOLD — new watchlist add (Utilities/IPP), Q3 today, FY26 reaffirmed + 2027 guide initiated (no raise), single-source | 88.42 | +6.30% | n/a — entered Nov 11 (-7% cut) |
-| 2026-11-09 | B | HOLD — new watchlist add (Materials, gold), Q3 today: adj EPS beat / rev miss / FY26 reaffirmed, single-source | 40.56 | -10.03% | avoided-loss |
-| 2026-11-10 | TDG | HOLD — new watchlist add (A&D), FQ4 BMO today: adj EPS $12.44 +15% / sales +23% (SEC 8-K), FY27 EPS guide below consensus (Perplexity), pre-mkt ~-1.4%; not gate-clearing | 1221.06 | -2.78% | skip-right |
-| 2026-11-12 | BN | HOLD — new watchlist add (Financials), Q3 BMO today: DE $0.73/sh +16% y/y, $900M YTD buybacks, single-source; no pre-mkt print, Financials not leading | 42.05 | -7.37% | avoided-loss |
-| 2026-11-16 | ARMK | HOLD pre-market — new watchlist add (Disc), FQ4 BMO today, print not yet indexed; flagged for market-open hard-check, entry ≤$57.50 / -7% cut / target $66.10 | 53.89 | | |
-| 2026-11-16 | ACM | HOLD — new watchlist add (Industrials, leader), FQ4 AMC today hard-dated, no catalyst yet; Nov 17 hard-check, entry ≤$75 / -7% cut / target ~$86 | 70.53 | | |
-| 2026-11-16 | TGT | HOLD — new watchlist add (Staples), Q3 BMO Nov 18 hard-dated, no catalyst yet; +70% YTD chase-sensitive | 161.44 | | |
-| 2026-11-16 | WWD | HOLD — new watchlist add (Industrials/A&D), FQ4 AMC Nov 18 hard-dated, no catalyst yet | 329.82 | | |
-| 2026-11-16 | TSN | HOLD — new watchlist add (Staples), FQ4 BMO today, print not yet indexed; consensus EPS -43% y/y, weak setup | 58.86 | | |
-| 2026-11-17 | ENR | HOLD — stall-breaker refresh add (Staples), FQ4 BMO today: adj EPS $1.37 vs $1.31 beat / rev miss / FY27 organic flat-to-down, single-source; mixed | 24.365 | | |
-| 2026-11-17 | WMT | HOLD — stall-breaker refresh add (Staples, leader), Q3 BMO Nov 19 hard-dated, no catalyst yet; Nov 19 hard-check | 128.44 | | |
-| 2026-11-17 | CVI | HOLD — stall-breaker refresh add (Energy), Mizuho Underperform→Neutral Nov 16 w/ PT cut $52→$47 — weak, thin vol | 39.14 | | |
-| 2026-11-17 | GLNG | HOLD — stall-breaker refresh add (Energy), Q3 Nov 18 hard-dated, no catalyst yet | 41.39 | | |
-| 2026-11-19 | PANW | HOLD pre-market — new watchlist add (Tech), FQ1 AMC Nov 18 beat + FY27 rev/EPS guide raise (two-source: Perplexity + SEC 8-K), pre-mkt ~+9.6%; XLK weakest sector; secondary market-open hard-check, entry ≤$380 / -7% cut / target ~$437 | 339.68 | | |
-| 2026-11-19 | WSM | HOLD — new watchlist add (Disc), Q3 BMO today, print not yet indexed | 259.94 | | |
-| 2026-11-19 | ROST | HOLD — new watchlist add (Disc), Q3 AMC today hard-dated, no catalyst yet; Nov 20 hard-check | 227.61 | | |
-| 2026-11-19 | BJ | HOLD — new watchlist add (Staples), Q3 BMO Nov 20 hard-dated, no catalyst yet | 110.90 | | |
+| 2026-11-16 | ARMK | HOLD pre-market — new watchlist add (Disc), FQ4 BMO today, print not yet indexed; flagged for market-open hard-check, entry ≤$57.50 / -7% cut / target $66.10 | 53.89 | +5.27% | missed (rel +9.47 missed; fade, no bars) |
+| 2026-11-16 | ACM | HOLD — new watchlist add (Industrials, leader), FQ4 AMC today hard-dated, no catalyst yet; Nov 17 hard-check, entry ≤$75 / -7% cut / target ~$86 | 70.53 | +14.45% | missed by Ref (rel +18.66 missed); skip px $80.785 -> -0.07% skip-right |
+| 2026-11-16 | TGT | HOLD — new watchlist add (Staples), Q3 BMO Nov 18 hard-dated, no catalyst yet; +70% YTD chase-sensitive | 161.44 | +4.17% | n/a — entered Nov 18 |
+| 2026-11-16 | WWD | HOLD — new watchlist add (Industrials/A&D), FQ4 AMC Nov 18 hard-dated, no catalyst yet | 329.82 | +5.78% | missed (rel +9.99 missed) |
+| 2026-11-16 | TSN | HOLD — new watchlist add (Staples), FQ4 BMO today, print not yet indexed; consensus EPS -43% y/y, weak setup | 58.86 | +6.89% | missed (rel +11.09 missed) |
+| 2026-11-17 | ENR | HOLD — stall-breaker refresh add (Staples), FQ4 BMO today: adj EPS $1.37 vs $1.31 beat / rev miss / FY27 organic flat-to-down, single-source; mixed | 24.365 | +14.98% | missed (rel +17.84 missed) |
+| 2026-11-17 | WMT | HOLD — stall-breaker refresh add (Staples, leader), Q3 BMO Nov 19 hard-dated, no catalyst yet; Nov 19 hard-check | 128.44 | +3.03% | missed (rel +5.88 missed); fade px $125.28 -> +5.63% |
+| 2026-11-17 | CVI | HOLD — stall-breaker refresh add (Energy), Mizuho Underperform→Neutral Nov 16 w/ PT cut $52→$47 — weak, thin vol | 39.14 | -19.52% | avoided-loss (rel -16.66 avoided) |
+| 2026-11-17 | GLNG | HOLD — stall-breaker refresh add (Energy), Q3 Nov 18 hard-dated, no catalyst yet | 41.39 | -4.34% | avoided-loss (rel -1.48 neutral); fade px $41.00 -> -3.43% |
+| 2026-11-19 | PANW | HOLD pre-market — new watchlist add (Tech), FQ1 AMC Nov 18 beat + FY27 rev/EPS guide raise (two-source: Perplexity + SEC 8-K), pre-mkt ~+9.6%; XLK weakest sector; secondary market-open hard-check, entry ≤$380 / -7% cut / target ~$437 | 339.68 | +7.99% | missed by Ref (rel +8.19 missed); skip px $362.00 -> +1.33% skip-right |
+| 2026-11-19 | WSM | HOLD — new watchlist add (Disc), Q3 BMO today, print not yet indexed | 259.94 | -18.16% | avoided-loss (rel -17.95 avoided); fade px $244.135 -> -12.86% |
+| 2026-11-19 | ROST | HOLD — new watchlist add (Disc), Q3 AMC today hard-dated, no catalyst yet; Nov 20 hard-check | 227.61 | -1.59% | skip-right (rel -1.39 neutral) |
+| 2026-11-19 | BJ | HOLD — new watchlist add (Staples), Q3 BMO Nov 20 hard-dated, no catalyst yet | 110.90 | -9.43% | avoided-loss (rel -9.23 avoided); fade px $106.20 -> -5.42% |
 | 2026-11-20 | DLTR | HOLD — new watchlist add (Staples/Disc), Q3 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 140.285 | | |
 | 2026-11-20 | MDT | HOLD — new watchlist add (Health Care), FQ2 BMO Nov 24 hard-dated, no catalyst yet (L-045 pipeline) | 100.63 | | |
 | 2026-11-20 | A | HOLD — new watchlist add (Health Care), FQ4 AMC Nov 23 hard-dated, no catalyst yet (L-045 pipeline) | 175.415 | | |

@@ -1643,3 +1643,94 @@ Deployment 28.57% / cash 71.43% — **well below 75-85% band**. 3/6 positions. S
 - New L-047/L-048/L-049. L-045/L-046 carry to Nov 27. Not a zero-trade week (TGT) — no STEP 5 escalation. No risk rules loosened.
 
 ### Overall Grade: B- (+6.45% vs S&P via disciplined cash and filters, clean same-session -7% cut, zero rule breaches — but 0/2 closed, correlated Utilities pair forced a sector exit, CEG +9% gain round-tripped, deployment 29%)
+
+## Week ending 2026-11-27
+
+### Stats
+
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $95,604.80 (Nov 20 logged EOD) |
+| Ending portfolio | $96,081.79 (Nov 27 half-day close, live pull; `balance_asof` 2026-11-25 — provisional) |
+| Week return | +$476.99 (+0.50%) |
+| S&P 500 week | +5.60% (Perplexity/AP: 7,297.49, +387.10 pts, best week since Apr 2025); SPY 690.68 -> 728.86 (+5.53%, Nov 20 -> Nov 27 close via `alpaca.sh bars`) — consistent |
+| Bot vs S&P | -5.10% |
+| Trades | 1 new entry (HUM Nov 27); 0 closed; open: 4 (DGX, RTX, TGT, HUM); 1/3 weekly cap used |
+| Win rate | n/a (0 closed) |
+| Best trade | DGX +6.16% open (+$523.50; peak +10.5% at HWM $268.37) |
+| Worst trade | HUM -0.09% open (-$8.14) |
+| Profit factor | n/a (no closed trades); realized $0. Exit slippage: none (0 exits) |
+
+### Skip Scoreboard
+
+| Ticker | Ref | +5d close | +5d % (Ref) | SPY +5d | Rel | Skip px -> +5d % | Verdict (abs / rel) |
+|--------|-----|-----------|-------------|---------|-----|------------------|---------------------|
+| ARMK | 53.89 | 56.73 (Nov 23) | +5.27% | -4.20% | +9.47 | fade, no bars | missed / missed |
+| ACM | 70.53 | 80.725 (Nov 23) | +14.45% | -4.20% | +18.66 | chase $80.785 -> -0.07% | missed / missed (skip-right from skip px) |
+| WWD | 329.82 | 348.89 (Nov 23) | +5.78% | -4.20% | +9.99 | — | missed / missed |
+| TSN | 58.86 | 62.915 (Nov 23) | +6.89% | -4.20% | +11.09 | — | missed / missed |
+| ENR | 24.365 | 28.015 (Nov 24) | +14.98% | -2.86% | +17.84 | — | missed / missed |
+| WMT | 128.44 | 132.33 (Nov 24) | +3.03% | -2.86% | +5.88 | fade $125.28 -> +5.63% | missed / missed |
+| CVI | 39.14 | 31.50 (Nov 24) | -19.52% | -2.86% | -16.66 | — | avoided-loss / avoided |
+| GLNG | 41.39 | 39.595 (Nov 24) | -4.34% | -2.86% | -1.48 | fade $41.00 -> -3.43% | avoided-loss / neutral |
+| PANW | 339.68 | 366.81 (Nov 27) | +7.99% | -0.20% | +8.19 | chase $362.00 -> +1.33% | missed / missed (skip-right from skip px) |
+| WSM | 259.94 | 212.745 (Nov 27) | -18.16% | -0.20% | -17.95 | fade $244.135 -> -12.86% | avoided-loss / avoided |
+| ROST | 227.61 | 223.99 (Nov 27) | -1.59% | -0.20% | -1.39 | — | skip-right / neutral |
+| BJ | 110.90 | 100.445 (Nov 27) | -9.43% | -0.20% | -9.23 | fade $106.20 -> -5.42% | avoided-loss / avoided |
+| TGT | 161.44 | 168.18 (Nov 23) | +4.17% | -4.20% | +8.38 | — | n/a — entered Nov 18 (open +2.03%) |
+
+Verdicts (abs, by Ref): missed 7 (+58.39%) / skip-right 1 / avoided-loss 4 (-51.45%) — missed:avoided 7:4. Relative (L-048): missed 7 / neutral 2 / avoided 3. From skip px: chase bar right 2/2 (ACM -0.07%, PANW +1.33%); fade filter right 3/4 (GLNG, WSM, BJ; WMT missed +5.63%). Adjusted (chase rows by skip px): 5 missed : 4 avoided. **[no-cat] subset:** no scored rows; cumulative 3:0 unchanged. **[throttle] interim (unscored):** A skip px $184.78 (Nov 24) -> $180.28 Nov 27 (-2.44%); BBY $96.765 (Nov 24) -> $104.08 (+7.56%). **Gate calibration verdict: calibrated, watch** — first missed-heavy week after 3 avoided-heavy (4-wk cumulative 10 missed : 14 avoided). Misses cluster in (a) Staples defensive rotation (TSN/ENR/WMT all missed while XLP led) and (b) WMT dropped after a day-1 fade though Nov 20 close $128.04 > base $127.305 re-qualified it inside the 2-session window — process, not gate tightness. **Pruned:** Nov 9-12 rows (CEG, NRG, B, TDG, BN) — verdicts reported 2026-11-20.
+
+### Closed Trades
+
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No exits this week |
+
+### Open Positions at Week End
+
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| DGX | $242.87 (35 sh) | $257.83 | +$523.50 (+6.16%) | 10% trailing GTC 30c44a67, stop $241.533, HWM $268.37 |
+| RTX | $193.34 (47 sh) | $198.10 | +$223.72 (+2.46%) | 10% trailing GTC 313ded6c, stop $185.0535, HWM $205.615 |
+| TGT | $168.678 (55 sh) | $172.10 | +$188.16 (+2.03%) | 10% trailing GTC 7d9b79c5, stop $159.057, HWM $176.73 |
+| HUM | $405.83 (22 sh) | $405.46 | -$8.14 (-0.09%) | 10% trailing GTC a28fe058, stop $366.84, HWM $407.60; -7% cut $377.42 |
+
+Deployment 38.22% / cash 61.78% — **below 75-85% band**. 4/6 positions, 2 open slots. Sector: HC 18.67% (DGX+HUM), A&D 9.69%, Staples 9.85%; Utilities blocked to Dec 4 (L-049). VIX 25.44 (Nov 27) — throttle still live. All stops GTC, verified each session. Phase P&L -3.92%.
+
+### What Worked
+
+- Zero rule breaches; no stop lowered; all 4 stops GTC and verified every session.
+- Chase bar right on both chase skips by skip px (ACM -0.07%, PANW +1.33%).
+- Fade filter right 3/4 (WSM -12.86%, BJ -5.42%, GLNG -3.43% from skip px); CVI -19.52% avoided.
+- UNH skip (Nov 23) — CMS Medicare Advantage proposal erased the upgrade; thesis-break call clean.
+- HUM entry Nov 27 executed per throttle (SPY 30-min above prior close), two-source dated catalyst, 9.3% size.
+
+### What Didn't Work
+
+- -5.10% vs S&P in its best week since Apr 2025 — 62-71% cash all week.
+- Bear/High-Vol throttle blocked entries Nov 24 and Nov 25 (A, BBY twice); BBY then ran +7.56% from skip px.
+- Scoreboard 7:4 missed by Ref; Staples skips (TSN, ENR, WMT) all missed during defensive rotation.
+- WMT dropped from watchlist Nov 20 on a day-1 fade; Nov 20 close re-cleared its base inside the 2-session window — never re-checked.
+- DGX gave back from +10.5% peak to +6.16% (2nd straight sub-+15% round-trip after CEG).
+
+### Key Lessons
+
+- Day-1 fade ≠ dead catalyst: the 2-session window exists so a name can re-qualify; dropping it on day 1 forfeits that.
+- In a Bear/High-Vol regime, the leading defensive sector's prints are where follow-through lives — pipeline should weight it.
+- The throttle has a cost in V-shaped rebounds; measure it before judging it (n=2 so far, 1 miss / 1 skip-right interim).
+- L-045/L-046 complied 2 straight weeks — promoted.
+
+### Adjustments for Next Week
+
+- Keep every fade-skipped earnings name on watch through its full 2-session catalyst window; each market-open logs criterion (b) (prior close vs pre-catalyst close) pass/fail per name before any drop (L-050).
+- Tag every throttle-blocked gate skip "[throttle]" with skip px; weekly review reports the [throttle] subset's +5d from skip px and missed:avoided ratio. Measurement only (L-051).
+- While HMM is Bear/High-Vol or VIX >= 25, at least 1 of the L-045 pipeline names must come from the top 5-session-momentum sector (logged with its 5-sess %) (L-052).
+
+### Rule Changes This Week
+
+- L-046 (EOD verifies today's routine commits on main; same-session alert) promoted to Operational Rules — complied every EOD Nov 13-27; caught Nov 25 midday off-main (dreamy-curie-d0k7wf) and alerted same session. Process only. Changelog row added.
+- L-045 (forward pipeline >=3 names / >=2 sectors while deployment <50%) promoted to Buy-Side Gate — complied every pre-market Nov 16-27 (3-6 names, 2-4 sectors each); produced HUM entry. Process only, gate unchanged. Changelog row added.
+- New L-050/L-051/L-052. L-047/L-048/L-049 carry to Dec 4. Not a zero-trade week (HUM) — no STEP 5 escalation. No risk rules loosened.
+
+### Overall Grade: C (zero breaches, chase/fade filters mostly right, HUM entered cleanly — but -5.10% vs S&P on 62-71% cash in a +5.6% week, 7:4 missed skips, WMT re-qualification missed, DGX gain partially round-tripped)
