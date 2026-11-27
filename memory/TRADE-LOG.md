@@ -3569,3 +3569,22 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
 | TGT | 55 | $168.678 | $172.22 | 0.00% (holiday) | +$194.81 (+2.10%) | $159.057 (10% trail, GTC 7d9b79c5, HWM $176.73) |
 
 **Notes:** 7th consecutive no-trade day (market closed — Thanksgiving; no session, no market-open run). Week 21: 0/3 new trades. Day P&L +$69.15 is mark drift only: Nov 25 logged EOD $96,211.11 used 20:14 UTC pre-close marks; Alpaca final Nov 25 equity $96,280.26 (= last_equity; no session today). Phase P&L -$3,719.74 (-3.72%) vs $100,000 start. 3 positions, 29.07% deployed / 70.93% cash — **well below 75-85% band**; 3 open slots. Sector: HC 9.66% (DGX), A&D 9.58% (RTX), Staples 9.84% (TGT); Utilities blocked. All <+15% → no trail tightening (DGX +9.38% closest). No position at -7% cut. No trail ratchets. Stop cushions: RTX ~5.7% (tightest), TGT ~7.6%, DGX ~9.1%. 3 GTC stops resting. L-046: pre-market 95ffb2c (13:10) and midday 9c3ba4e (16:08) on origin/main ✓; no market-open run expected (holiday) → no alert. Next: half-day session Nov 27 (13:00 ET close) — Black Friday read for TGT.
+
+### Nov 27 — Market-Open (Day 104, Friday — half-day, close 18:00 UTC)
+
+**Operational Rule check:** Nov 26 holiday (Midday 9c3ba4e + EOD a340d4e on main; no market-open expected). Nov 27 pre-market ✓. Routine fired 13:16 UTC — pre-open; waited to 15:01 UTC for SPY 30-min check.
+
+**Account (13:17 UTC):** Equity $96,384.15 | last_equity $96,280.26 | Cash $68,289.83 (70.9%). 3 positions (DGX 35 +9.81%; RTX 47 +1.95%; TGT 55 +2.36%). 3 GTC trails status new (DGX 30c44a67 $241.533; RTX 313ded6c $185.0535; TGT 7d9b79c5 $159.057). Daytrade count not returned; no day trades. Week 21: 0/3 used. 3/6.
+
+**Lessons compliance:** L-049 no Utilities names ✓; L-047 theme count HUM (managed care) 0 held → 1 post-fill ✓ (DGX = diagnostics labs, different theme); L-045 per-name pass/fail below ✓; Bear/High-Vol/VIX≥25 throttle **triggered** (VIX 25.44) → max 1 entry; SPY first 30 min (IEX 1-min, 31 bars) open $725.88 / hi $726.05 / lo $719.91 / 15:00 close $720.68 vs Nov 25 close $716.735 → **entire window above ✓** → 1 entry allowed.
+
+**Buy gate (15:01 UTC):**
+- **HUM — PASS → BOUGHT.** Catalyst ✓: KeyBanc Sector Weight→Overweight PT $500 (Nov 24), two-source (gngresearch Nov 24 + fintel Nov 25), within 2-session window; bars Nov 25 close $406.43 > Nov 23 $383.525 ✓. Chase: 30-min open $411.305 / hi $411.305 / lo $404.98 / last $404.98 = +5.59% vs base (<15% ✓; ≤$420 cap ✓). Positions 4/6 ✓; Week 21 1/3 ✓; size $8,928 = 9.3% eq ≤20% ✓; ≤ cash ✓; PDT ok (equity >$25k, no day trades) ✓; stock ✓. Post-fill HC count 2 (DGX+HUM) ~18.4% eq (<40%). Note: faded off open in first 30 min. Risks: Medicare Advantage policy headlines; upgrade-only catalyst.
+- **BBY — not entered (1-entry throttle used by HUM; alternate only).** 30-min open $104.415 / hi $105.91 / lo $102.62 / last $102.91 (+6.08% vs $97.01 base). Last gate-eligible day → expires. Open scoreboard row 2026-11-24 → no new row.
+- **RBRK** (Nov 30 AMC) → Dec 1. **LIN/NUE/DD/VLGEA** watch only (no in-window catalyst).
+
+| Date | Ticker | Side | Shares | Entry | Stop | Thesis | Target | R:R |
+|------|--------|------|--------|-------|------|--------|--------|-----|
+| 2026-11-27 | HUM | BUY | 22 | $405.83 (fill, order 8da37a8e, ~15:01 UTC) | $364.6485 (10% trail, GTC a28fe058, HWM $405.165); -7% cut $377.42 | KeyBanc upgrade to Overweight PT $500 (Nov 24) + TD Cowen Buy (Nov 20), two-source; HC sector #2 5-sess (XLV +1.34%); SPY 30-min check passed | +15% ~$466.70 | ~2.1:1 (vs -7% cut) |
+
+**Post-actions:** Verified `orders` (4 GTC trails status new: HUM a28fe058 $364.6485; TGT 7d9b79c5 $159.057; DGX 30c44a67 $241.533; RTX 313ded6c $185.0535) + `positions` (DGX 35, HUM 22, RTX 47, TGT 55). Account post: Equity $96,183.40 | Cash $59,361.57 (61.7%) | **~38.3% deployed — below 75-85% band**; 4/6, 2 open slots. Week 21: 1/3 used. No-trade streak 0 (was 7). ClickUp sent (HUM buy).
