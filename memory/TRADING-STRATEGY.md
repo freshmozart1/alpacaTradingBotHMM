@@ -116,6 +116,10 @@ If any fail, the trade is skipped and the reason is logged.
 - While the HMM regime is Bear/High-Vol or VIX >= 25, allow at most 1
   new entry per session, only after SPY's first 30 min trades above its
   prior close; log regime/VIX/SPY check at every gate check.
+- While deployment is below 50%, every pre-market lists >=3 named
+  candidates from >=2 sectors, each with a hard-dated catalyst (earnings
+  / event) today or in the next 2 sessions; market-open logs pass/fail
+  per name. If <3 exist, log the calendar scan used. Process only.
 
 ## Sell-Side Rules
 
@@ -162,6 +166,10 @@ Evaluated at the midday scan and opportunistically:
 - At every EOD, list GTC stop expiries within 5 trading sessions; renew
   at the next market-open (cancel + re-place at the same or higher stop,
   never lower) and verify via `alpaca.sh orders`.
+- At every EOD, run `git log origin/main` for today's routine commits
+  (pre-market, market-open, midday); any missing, off-main, or >30 min
+  late run gets one ClickUp alert that same session, logged "alerted" in
+  the EOD notes.
 - For every chase or fade skip, log the skip-time price in the
   scoreboard Decision cell; each weekly review reports +5d % from both
   Ref and skip-time price.
@@ -212,3 +220,5 @@ max 3 trades/week, no options) may be tightened but NEVER loosened.
 | 2026-11-13 | Operational Rules | (none) -> log fill vs cut/stop % slippage on every exit; review reports total | Promoted from LESSONS.md L-036 (2026-10-16), complied on all 6 exits Nov 3-6 (total -$388.70; LMT/MLM gap-throughs 83%) and reported in 2 reviews (Nov 6, Nov 13). Measurement only, not a risk-rule change. |
 | 2026-11-20 | Sell-Side Rules | -7% "close immediately" -> executed the same session it is found by any routine while market open (cancel GTC, market-sell, verify, alert) | Promoted from LESSONS.md L-044 (2026-11-06), complied for 2 straight weeks (Nov 6-20): NRG cut same session Nov 17 at -7.21% mark, filled -7.42%, slippage -0.45% vs MLM's deferred cut costing ~$143 (Nov 5-6). Tightening/clarification only, not a risk-rule loosening. |
 | 2026-11-20 | Buy-Side Gate | (none) -> Bear/High-Vol or VIX >= 25: max 1 entry/session, only after SPY first 30 min > prior close | Promoted from LESSONS.md L-043 (2026-11-06), complied at every gate check for 2 straight weeks (Nov 6-20): Nov 10 NRG and Nov 17 ACM sessions blocked, Nov 18 capped at 1 (TGT), Nov 20 logged; SPY -7.98% week Nov 13-20, bot -1.53%. Tightening only, not a risk-rule loosening. |
+| 2026-11-27 | Operational Rules | (none) -> EOD verifies today's routine commits on origin/main; missing/off-main/late -> same-session ClickUp alert | Promoted from LESSONS.md L-046 (2026-11-13), complied every EOD for 2 straight weeks (Nov 13-27); caught Nov 25 midday left off-main (dreamy-curie-d0k7wf) and alerted same session. Process only, not a risk-rule change. |
+| 2026-11-27 | Buy-Side Gate | (none) -> while deployment <50%, pre-market lists >=3 hard-dated candidates from >=2 sectors; market-open logs pass/fail per name | Promoted from LESSONS.md L-045 (2026-11-13), complied every pre-market for 2 straight weeks (Nov 16-27; 3-6 names / 2-4 sectors); produced HUM entry Nov 27 (deployment 29% -> 38%). Process only — gate unchanged, not a risk-rule loosening. |
