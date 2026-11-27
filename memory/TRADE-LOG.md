@@ -3588,3 +3588,19 @@ No trades. Week 21: 0/3 used. No ClickUp (no trade). No-trade streak 6.
 | 2026-11-27 | HUM | BUY | 22 | $405.83 (fill, order 8da37a8e, ~15:01 UTC) | $364.6485 (10% trail, GTC a28fe058, HWM $405.165); -7% cut $377.42 | KeyBanc upgrade to Overweight PT $500 (Nov 24) + TD Cowen Buy (Nov 20), two-source; HC sector #2 5-sess (XLV +1.34%); SPY 30-min check passed | +15% ~$466.70 | ~2.1:1 (vs -7% cut) |
 
 **Post-actions:** Verified `orders` (4 GTC trails status new: HUM a28fe058 $364.6485; TGT 7d9b79c5 $159.057; DGX 30c44a67 $241.533; RTX 313ded6c $185.0535) + `positions` (DGX 35, HUM 22, RTX 47, TGT 55). Account post: Equity $96,183.40 | Cash $59,361.57 (61.7%) | **~38.3% deployed — below 75-85% band**; 4/6, 2 open slots. Week 21: 1/3 used. No-trade streak 0 (was 7). ClickUp sent (HUM buy).
+
+### Nov 27 — Midday Scan (Day 104, Friday — half-day, close 18:00 UTC)
+
+**Run:** fired 16:09 UTC.
+
+**STEP 3 (cut losers):** None ≤ -7% (min HUM -0.51%). No cuts.
+
+**STEP 4 (tighten trails):** All <+15% (max DGX +8.26%) — no change.
+
+**STEP 5 (thesis check):** DGX $262.94 +8.26% (-1.02% day), HUM $403.75 -0.51% (-0.68% day), RTX $196.425 +1.60% (+0.12% day), TGT $171.925 +1.93% (-0.17% day) — no sharp moves, theses intact → no cuts.
+
+**STEP 6 (research):** Nothing moving sharply → no Perplexity query, no RESEARCH-LOG addendum.
+
+**STEP 7 (verify):** `positions`: DGX 35, HUM 22, RTX 47, TGT 55. `orders`: 4 GTC trails status new — HUM a28fe058 $364.9275/HWM $405.475; TGT 7d9b79c5 $159.057/HWM $176.73; DGX 30c44a67 $241.533/HWM $268.37; RTX 313ded6c $185.0535/HWM $205.615. 4/6. Week 21: 1/3 used.
+
+**STEP 8 (notify):** No action → no ClickUp.
