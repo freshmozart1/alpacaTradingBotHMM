@@ -5940,3 +5940,64 @@ Week 21: 0/3 used. 3/6. ~29.1% deployed. Gate throttle: max 1 entry Nov 27 (half
 
 ### Decision
 **HOLD (market closed).** BBY flagged for Nov 27 market-open hard-check (1 entry max; SPY 30-min > $716.735; ≤$106). No ClickUp (nothing urgent; Nov 25 midday off-main already alerted).
+
+## 2026-11-27 — Pre-market Research
+
+On-time run (fired 13:07 UTC). Data 13:07-13:45 UTC. **Half-day session** (close 18:00 UTC / 1pm ET).
+
+### Account
+- Equity: $96,384.15 | last_equity $96,280.26 | Cash: $68,289.83 (70.85%) | Buying power: $351,823.41 (margin, effective) | `balance_asof` 2026-11-25 (no Nov 26 session) ✓.
+- Position MV: $28,094.32 (DGX 35, RTX 47, TGT 55) — **29.15% deployed (below 75-85% band)**. 3 GTC trailing stops, status new: DGX 30c44a67 (10%) $241.533/HWM $268.37; RTX 313ded6c (10%) $185.0535/HWM $205.615; TGT 7d9b79c5 (10%) $159.057/HWM $176.73. Expiries Jan 15-Feb 16 2027 — none within 5 sessions.
+- Daytrade count: not returned; no day trades. Day 104, Friday, **Week 21: 0/3 used**. 3/6, 3 open slots. **No-trade streak 7.**
+- Market regime (HMM, SPY 2y daily): **Mixed/Uncertain, confidence 60.2%** (unch), 499 obs. Advisory only.
+- Held (pre-mkt marks): DGX $266.70 +9.81% (9.4% to stop); RTX $197.11 +1.95% (6.1% to stop, tightest; -7% cut $179.81); TGT $172.65 +2.36% (7.9% to stop; -7% cut $156.87). None at -7%. No tighten triggers (<+15%).
+- Exposure: HC 9.68% (DGX); A&D 9.61% (RTX); Staples 9.85% (TGT).
+
+### Market Context
+- Perplexity: 23 queries, all exit 0 (first parallel batch hit 429 rate limit → re-run sequentially; no WebSearch fallback needed).
+- WTI/Brent: **WTI $85.42 (+2.08%), Brent $96.81 (+0.25%)** (11:28 GMT). Not a repeat of logged $83.91/$94.80. Dispersion <10%.
+- S&P futures: **7,307.6 +1.74%** (2nd quote 7,306 +1.53%). SPY live pre-mkt **~$728.81 (+1.68% vs Nov 25 close $716.735)** — consistent. Nasdaq 100 fut >+2% (AI/semis rebound: NVDA, MU, AMD, MRVL).
+- VIX: **25.44 (-5.07%) vs prior close 26.80** (12:47 UTC). Not a repeat of logged ~28.29. Still **≥25**.
+- Today: no US data. Next: jobs Dec 4, FOMC Dec 9, CPI Dec 10, PPI Dec 15.
+- Earnings today: XYF only (US BMO). Next: Nov 30 RBRK AMC; Dec 1 BMO CPRT/NIO/VSTS/CTRN/VLGEA (unconfirmed); Dec 2 BMO M/SIG/CBRL/DCI.
+- Sector momentum: Perplexity YTD (Energy +38.9%, Staples +17.8%, Industrials +11.0%, Disc +9.2%, HC +5.9% — mixed dates) → `bars` operative. 5-sess Nov 18→25 (no new session): **XLB +1.47%, XLV +1.34%, XLP +1.20%**, XLRE +0.53%, XLU +0.15% (blocked, L-049), XLF +0.11%, XLC -0.28%, XLE -0.70%, XLI -1.09%, XLY -1.43%, XLK -4.84%. Leaders: Materials, HC; Staples 3rd.
+- Held tickers:
+  - **DGX**: Baird PT $262→$266 (Nov 25); Waters at-home cervical screening collab (2027); institutional/insider selling; $0.86 div. Intact.
+  - **RTX**: Navy next-gen sub-launched nuclear cruise missile work (dateless); $340B backlog; Bernstein PT $231 (logged Nov 25). Defense-budget headline risk. Intact.
+  - **TGT**: Black Friday event Nov 22-29 (first real holiday-demand test today); Q3 beat/raise thesis; near 52-wk high. Intact.
+
+### Stall-Breaker
+**FIRED** (streak 7 ≥ 5). Dropped ECL; added HUM, LIN, NUE, VLGEA. Screen: top-2 5-sess Materials (XLB) + HC (XLV) + 3rd Staples (XLP, loosened floor — empty 2 cycles). Materials: **LIN** (Q3 beat + Barclays PT raise — dateless; XLB top weight, bars +2.43% 5-sess), **NUE** (UBS Neutral→Buy, PT $256→$307, Nov 16 — stale; record shipments/2027 outlook), STLD (5-sess -2.61%, not added), GPK/HWKN/MOS (momentum only, not added). HC: **HUM** (KeyBanc Sector Weight→Overweight PT $500 **Nov 24** + TD Cowen Hold→Buy Nov 20; two outlets: gngresearch Nov 24 + fintel Nov 25). Staples (loosened): **VLGEA** (Village Super Market, small-cap, ADV ~2.1k sh — thin, 60-min bars window applies; FQ1 earnings likely Dec 1 BMO, unconfirmed). Each cross-checked via `bars`.
+
+### Lessons Check
+- L-049 (Utilities blocked to Dec 4) — no Utilities names screened/added. Complied.
+- L-048 (score skips vs SPY) — skip check logs SPY reference. Complied.
+- L-047 (1 position per theme while Bear/High-Vol/VIX≥25) — **active (VIX 25.44 ≥25)**. HUM (managed care) 0 held — DGX is diagnostics labs, different theme; BBY (electronics retail) 0; LIN/NUE/DD 0. Complied.
+- L-046 (routine commits on main) — `git log origin/main`: Nov 26 pre-market 95ffb2c (13:10), midday 9c3ba4e (16:08), EOD a340d4e (20:14) ✓ (holiday, no market-open). Prior trading session Nov 25: 3/4 on main, midday off-main already alerted → no duplicate alert. Complied. Review-by today → weekly review.
+- L-045 (≥3 candidates, ≥2 sectors, hard-dated ≤2 sessions while <50%) — 4 names / 4 sectors: HUM (HC, Nov 24 upgrade in window), BBY (Disc, Nov 24 print, last eligible day), RBRK (Tech, Nov 30 AMC = session 1), DD (Materials, ex-div Nov 30 — corporate event, not a catalyst), VLGEA (Staples, ~Dec 1 BMO = session 2, unconfirmed). Complied. Review-by today → weekly review.
+- Gate rule (Bear/High-Vol/VIX≥25 throttle) — **TRIGGERED (VIX 25.44 ≥25)**: max 1 new entry today, only after SPY first 30 min trades above Nov 25 close **$716.735** (pre-mkt $728.8, +1.68% → likely passes).
+- Operational: GTC expiries none within 5 sessions ✓. Gap check: Nov 26 holiday (no session); Nov 25 Market-Open/Midday/EOD ✓. Deployment <75% → fully-specified idea below ✓.
+
+### Yesterday's Skip Check
+No Nov 26 session; IEX quotes stale (Nov 25 21:00, wide) for BBY/ECL/DD/RBRK → unchanged vs last check (BBY +5.70% vs Ref $97.01; ECL/DD/RBRK 0.0% vs Nov 25 Ref). Live pre-mkt: SNY mid $52.75 **-2.96%** vs Ref $54.36 (SPY pre-mkt +1.68%) — SNY chase skip looks right; BBY skip wrong so far; ECL/DD/RBRK n/a.
+
+### Watchlist Changes
+- DROP: **ECL** (no today-dated catalyst 5+ sessions — Nov 13-19 PT raises/Investor Day; next hard event Q4 ~Feb 10).
+- KEEP despite stale: **DD** (ex-div $0.60 Nov 30 = hard-dated corporate event within 5 sessions; Goldman conf Dec — undated).
+- ADD: **HUM** (HC/managed care), **LIN** (Materials, [no-cat]), **NUE** (Materials, stale Nov 16 upgrade), **VLGEA** (Staples, loosened leg).
+- Carry: **BBY** (last gate-eligible day), **RBRK** (Nov 30 AMC).
+
+### Trade Ideas
+Week 21: 0/3 used. 3/6. ~29.2% deployed. Gate throttle: max 1 entry today (half-day).
+1. **HUM** (HC, sector #2 5-sess; KeyBanc upgrade to Overweight PT $500 dated **Nov 24** — two-source ✓ (gngresearch Nov 24 + fintel Nov 25), plus TD Cowen Buy Nov 20; within 2-session window (Nov 24, 25); bars: Nov 25 close $406.43 > pre-catalyst Nov 23 close $383.525 ✓; chase: catalyst Nov 24, base Nov 23 $383.525, realized **+5.97%** <15%, 15% bar $441.05) — **fully-specified market-open hard-check (primary):** entry ≤$420 limit, only after SPY first 30 min > $716.735; size ~$9,240 (22 sh, ~9.6% eq); cut -7% (~$390.60 at $420); 10% GTC trail; target +15% (~$483, ≥2:1). Post-fill HC count 2 (DGX+HUM), HC exposure ~19.3% eq (<40%); managed-care theme 0 held (L-047 ✓, <25%). Ex-div/analyst: check at open. Risk: Medicare Advantage policy headlines; upgrade-only catalyst (no print).
+2. **BBY** (Disc; Q3 FY27 beat/raise Nov 24 — two-source ✓; last day in 2-session window; bars Nov 25 $102.54 > Nov 23 $97.01 ✓; chase: base $97.01, +5.70% <15%, 15% bar $111.56) — **alternate** (only if HUM fails): entry ≤$106 limit, ~$9,010 (85 sh, ~9.3% eq); cut -7% (~$98.58) / 10% trail / target +15% (~$121.90). Ex-div $0.96 record Dec 15 (outside week). Risk: XLY -1.43% 5-sess (rolled); Black Friday read cuts both ways.
+3. **RBRK** (Nov 30 AMC) — Dec 1 hard-check if print clears. LIN/NUE/DD/VLGEA — watch only (no catalyst within 2 sessions).
+- New scoreboard rows: HUM, LIN, NUE, VLGEA (BBY/DD/RBRK already on board).
+
+### Risk Factors
+- VIX 25.44 (≥25) → L-043 throttle; HMM Mixed 60%. Futures +1.7% gap-up → chase/fade risk on half-day thin tape; 30-min gate eats ~1/7 of session.
+- Oil WTI +2.1% (Hormuz/Saudi headlines); proposed tariffs; AI-valuation / NVDA governance overhang.
+- RTX cushion 6.1% (tightest); TGT Black Friday read near 52-wk high.
+
+### Decision
+**HOLD pre-market.** HUM flagged for market-open hard-check (primary; BBY alternate; 1 entry max; SPY 30-min > $716.735). No ClickUp (nothing urgent).

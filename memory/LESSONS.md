@@ -339,3 +339,7 @@ than 10 sessions are pruned.
 | 2026-11-26 | ECL | HOLD — stall-breaker refresh add (Materials, leader), PT raises/Investor Day Nov 13-19 stale (>2 sessions), no fresh catalyst | 308.81 | | |
 | 2026-11-26 | DD | HOLD — stall-breaker refresh add (Materials, leader), BMO top pick Nov 19 stale (>2 sessions), no fresh catalyst | 153.60 | | |
 | 2026-11-26 | RBRK | HOLD — new watchlist add (Tech), FQ3 AMC Nov 30 hard-dated, no catalyst yet (L-045 pipeline); XLK weakest | 107.945 | | |
+| 2026-11-27 | HUM | HOLD pre-market — stall-breaker refresh add (HC/managed care), KeyBanc Overweight PT $500 Nov 24 + TD Cowen Buy Nov 20 (two-source: gngresearch + fintel); primary market-open hard-check, entry ≤$420 / -7% cut / target ~$483 | 406.43 | | |
+| 2026-11-27 | LIN | HOLD — stall-breaker refresh add (Materials, leader) [no-cat], Q3 beat + Barclays PT raise dateless | 524.54 | | |
+| 2026-11-27 | NUE | HOLD — stall-breaker refresh add (Materials, leader), UBS Neutral→Buy PT $307 Nov 16 stale (>2 sessions) | 248.125 | | |
+| 2026-11-27 | VLGEA | HOLD — stall-breaker refresh add (Staples, loosened floor, ADV ~2.1k), FQ1 BMO ~Dec 1 hard-dated (unconfirmed), no catalyst yet | 39.61 | | |
